@@ -14,10 +14,8 @@ Usage:
 import argparse
 from pathlib import Path
 
-import cv2
-
 from ic_io import parse_ic_xml
-from viz_utils import load_scaled_image, draw_labeled_box
+from viz_utils import load_scaled_image, draw_labeled_box, check_image_suffix, write_image
 
 # BGR colors, grouped by category so misclassifications between categories
 # (e.g. a neume mistaken for skip.*) jump out by color alone.
@@ -45,6 +43,7 @@ def _color_for(class_name: str, state: str) -> tuple:
 
 def run(image_path: Path, ic_xml_path: Path, output_path: Path,
         scale: float = 2.5, show_confidence: bool = False, show_text: bool = False):
+    check_image_suffix(output_path)  # before the render, not after
     glyphs = parse_ic_xml(ic_xml_path)
     n_total = len(glyphs)
     if not show_text:
@@ -62,7 +61,7 @@ def run(image_path: Path, ic_xml_path: Path, output_path: Path,
             label = f"{label} ({g.confidence:.2f})"
         draw_labeled_box(img, g.ulx, g.uly, g.ncols, g.nrows, label, color, scale)
 
-    cv2.imwrite(str(output_path), img)
+    write_image(output_path, img)
     hidden_note = "" if show_text else f" ({n_total - len(glyphs)} text/unclassified bboxes hidden, use --show-text to include)"
     print(f"{len(glyphs)} glyphs drawn{hidden_note}. Wrote {output_path} (scale={scale}x)")
     print("Colors: green=neume/custos, blue=clef, purple=divisio/accidental, "
@@ -83,7 +82,10 @@ def main():
                               "when judging IC's classification accuracy).")
     args = parser.parse_args()
 
-    run(args.image, args.ic_xml, args.output, args.scale, args.show_confidence, args.show_text)
+    try:
+        run(args.image, args.ic_xml, args.output, args.scale, args.show_confidence, args.show_text)
+    except ValueError as exc:  # bad --output path: a usage error, not a crash
+        parser.error(str(exc))
 
 
 if __name__ == "__main__":

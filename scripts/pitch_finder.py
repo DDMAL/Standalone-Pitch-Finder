@@ -37,8 +37,19 @@ STAVE_MARGIN_STEPS = 2
 
 @dataclass
 class NoteComponent:
+    """One note of a (possibly multi-note) neume.
+
+    center_x / center_y are the page-pixel point this component's pitch was
+    read from: center_x is the glyph's horizontal center (the x the stave was
+    queried at), center_y is stave_step converted back to pixels. Recording it
+    is what lets the debug overlay mark each computed notehead center, so a
+    wrong pitch can be told apart into "the center landed in the wrong place"
+    vs "the center is right and the step-to-pitch lookup is wrong".
+    """
     interval_from_first: int
     stave_step: Optional[float]
+    center_x: Optional[float] = None
+    center_y: Optional[float] = None
     pitch: Optional[dict] = None
 
 
@@ -99,14 +110,14 @@ def assign_stave(glyph: Glyph, staves: list[Stave]) -> tuple[Optional[Stave], li
     return candidates[0][1], []
 
 
-def _decompose(glyph: Glyph, stave: Stave, shapes: NeumeShapeTable) -> Optional[tuple[list[tuple[int, float]], list[str]]]:
+def _decompose(glyph: Glyph, stave: Stave, shapes: NeumeShapeTable) -> Optional[tuple[list[NoteComponent], list[str]]]:
     """Map glyph bbox top/bottom onto the neume's known interval span.
 
-    Returns [(interval_from_first, stave_step), ...] plus any flags from the
-    step interpolation. Classes missing from the shape table fall back to a
-    single-note approximation (see approximate_unknown_shape below); this
-    only returns None in the (now rare) case where the stave has no line
-    coverage at the glyph's x at all.
+    Returns one NoteComponent per note (step plus its page-pixel center) and
+    any flags from the step interpolation. Classes missing from the shape
+    table fall back to a single-note approximation (see
+    approximate_unknown_shape below); this only returns None in the (now rare)
+    case where the stave has no line coverage at the glyph's x at all.
     """
     intervals = shapes.intervals_for(glyph.class_name)
     approx_flags = []
@@ -132,14 +143,17 @@ def _decompose(glyph: Glyph, stave: Stave, shapes: NeumeShapeTable) -> Optional[
     else:
         step0 = step_bottom + (0 - lo) * (step_top - step_bottom) / (hi - lo)
 
-    return [(iv, step0 + iv) for iv in intervals], flags
+    components = [NoteComponent(iv, step0 + iv, center_x=cx,
+                                center_y=stave.y_at_step(cx, step0 + iv))
+                  for iv in intervals]
+    return components, flags
 
 
 def find_pitches(glyphs: list[Glyph], staves: list[Stave], shapes: NeumeShapeTable) -> list[GlyphResult]:
     results: dict[int, GlyphResult] = {}
-    # stave_id -> list of (glyph_index, center_x, class_name, step) for
-    # clefs successfully anchored during pass 1.
-    clefs_by_stave: dict[int, list[tuple[int, float, str, float]]] = {}
+    # stave_id -> list of (glyph_index, center_x, class_name, pname, octave,
+    # step) for clefs successfully anchored during pass 1.
+    clefs_by_stave: dict[int, list[tuple[int, float, str, str, int, float]]] = {}
 
     # Pass 1: stave assignment + geometric decomposition (clef-independent).
     for g in glyphs:
@@ -165,8 +179,7 @@ def find_pitches(glyphs: list[Glyph], staves: list[Stave], shapes: NeumeShapeTab
             )
             continue
 
-        components, decomp_flags = decomposition
-        note_components = [NoteComponent(iv, step) for iv, step in components]
+        note_components, decomp_flags = decomposition
         result = GlyphResult(
             g.index, ic_dict, stave_id=stave.stave_id,
             stave_assignment_flags=stave_flags, note_components=note_components,
@@ -182,7 +195,8 @@ def find_pitches(glyphs: list[Glyph], staves: list[Stave], shapes: NeumeShapeTab
             result.reason = None
             result.flags.extend(octave_flags)
             clefs_by_stave.setdefault(stave.stave_id, []).append(
-                (g.index, g.center_x, g.class_name, pname, octave, components[0][1])
+                (g.index, g.center_x, g.class_name, pname, octave,
+                 note_components[0].stave_step)
             )
 
     # Pass 2: resolve clef for every non-clef glyph that has a stave + decomposition.

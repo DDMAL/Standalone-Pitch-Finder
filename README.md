@@ -61,6 +61,16 @@ Debug-viz color legend: green = pitch found, amber = fell back to a
 single-note approximation (class missing from the CSV, algorithm #1 only),
 blue = clef, grey = pitchless, red = no stave/clef found.
 
+Every pitched glyph also gets a crosshair at each **computed notehead
+center** — the exact point the staff position was read from. The label above
+a box lists every note of the neume in note order (`A3-C4-F3`); in algorithm
+#1 each crosshair is labelled `<note no>:<pitch>` so you can see which note
+of a multi-note neume landed where (numbers, not top-to-bottom order: a
+torculus goes up then down, and notes sharing a step share one marker).
+Algorithm #2 is one pitch per glyph, so its single crosshair is unlabelled —
+it marks the raw ink centroid *before* the line/space snap, at that
+algorithm's own reference x (the bbox's left edge, not its center).
+
 ## Which algorithm
 
 **`pitch_finder.py`** is pure geometry, no pixel access. The

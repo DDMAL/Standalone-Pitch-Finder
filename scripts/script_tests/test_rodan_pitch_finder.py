@@ -204,3 +204,8 @@ def test_virga_pixel_reference_feeds_through_to_a_real_pitch():
     # Reference should land near the notehead (top line, step ~6), not
     # dragged down toward the stem's midpoint (which would read much lower).
     assert virga_result.stave_step >= 4
+    # The un-snapped centroid is reported too, for the debug overlay's
+    # notehead-center marker: inside the notehead's own ink rows (94-103),
+    # at Rodan's reference x (the bbox's left edge).
+    assert virga_result.center_x == virga_ulx
+    assert virga_uly <= virga_result.center_y <= virga_uly + 10

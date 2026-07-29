@@ -86,6 +86,33 @@ def test_multi_note_neume_decomposes_into_separate_pitches():
     assert pitches == [{"pname": "F", "oct": 4}, {"pname": "E", "oct": 4}]
 
 
+def test_each_note_component_records_its_own_pixel_center():
+    """Every component carries the page-pixel point its pitch was read from,
+    so the debug overlay can mark each notehead center of a multi-note neume
+    (and so a wrong pitch can be traced to a mis-placed center)."""
+    staves = [make_stave()]
+    shapes = make_shapes()
+    stave = staves[0]
+
+    clef = Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
+                 confidence=0.9, state="AUTOMATIC")
+    clivis = Glyph(index=1, ulx=50, uly=110, nrows=10, ncols=10, class_name="neume.clivis2",
+                   confidence=0.9, state="AUTOMATIC")
+
+    components = find_pitches([clef, clivis], staves, shapes)[1].note_components
+    centers = [(nc.center_x, nc.center_y) for nc in components]
+    print(f"clivis2 centers: {centers}")
+
+    # x is the glyph's horizontal center (the x the stave was queried at)...
+    assert all(nc.center_x == clivis.center_x for nc in components)
+    # ...and y is each component's own step converted back to pixels. steps
+    # [5, 4] on this stave (1 step = 10px, step 6 = y100) are y=110 and y=120,
+    # i.e. this clivis's bbox top and bottom edges.
+    assert [nc.center_y for nc in components] == [110.0, 120.0]
+    for nc in components:
+        assert nc.center_y == stave.y_at_step(nc.center_x, nc.stave_step)
+
+
 def test_missing_clef_still_reports_stave_and_step():
     staves = [make_stave()]
     shapes = make_shapes()

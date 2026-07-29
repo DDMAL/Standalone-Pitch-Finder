@@ -78,6 +78,13 @@ class RodanNoteResult:
     ic: dict
     stave_id: Optional[int] = None
     stave_step: Optional[float] = None   # plays the role of Rodan's strt_pos; see _stave_position
+    # The page-pixel notehead center this glyph's pitch was read from: the
+    # row-projection centroid of the per-class crop (see glyph_pixels), at
+    # Rodan's own reference x (the bbox's left edge). Recorded so the debug
+    # overlay can mark it -- unlike stave_step it is NOT discretized, so
+    # comparing the two shows how far the line/space snap had to move.
+    center_x: Optional[float] = None
+    center_y: Optional[float] = None
     pitch: Optional[dict] = None
     clef_used: Optional[str] = None
     reason: Optional[str] = None
@@ -211,9 +218,10 @@ def find_pitches_rodan(glyphs: list[Glyph], staves: list[Stave], image: np.ndarr
     avg_punctum = average_punctum(music_glyphs)
 
     results: dict[int, RodanNoteResult] = {}
-    # (glyph, stave, stave_step, flags) for glyphs eligible for a pitch --
-    # collected here so they can be sorted into global reading order before
-    # the clef-propagation pass, matching Rodan's _sort_glyphs.
+    # (glyph, stave, stave_step, flags, center_x, center_y) for glyphs
+    # eligible for a pitch -- collected here so they can be sorted into global
+    # reading order before the clef-propagation pass, matching Rodan's
+    # _sort_glyphs.
     pending: list[tuple] = []
 
     for g in glyphs:
@@ -246,16 +254,17 @@ def find_pitches_rodan(glyphs: list[Glyph], staves: list[Stave], image: np.ndarr
             # Should be rare now that _stave_position clamps x into range --
             # only happens if the assigned stave has no lines at all.
             results[g.index] = RodanNoteResult(g.index, _ic_dict(g), stave_id=stave.stave_id,
+                                                center_x=ref_x, center_y=ref_y,
                                                 reason="no_line_coverage", flags=flags)
             continue
 
-        pending.append((g, stave, step, flags))
+        pending.append((g, stave, step, flags, ref_x, ref_y))
 
     # Global clef propagation in (stave, x) reading order.
     pending.sort(key=lambda t: (t[1].stave_id, t[0].ulx))
     current_clef = None  # (pname, own_step); None until a real clef is seen anywhere on the page
 
-    for g, stave, step, flags in pending:
+    for g, stave, step, flags, ref_x, ref_y in pending:
         gtype = _gtype(g.class_name)
 
         if gtype == "clef":
@@ -264,6 +273,7 @@ def find_pitches_rodan(glyphs: list[Glyph], staves: list[Stave], image: np.ndarr
             current_clef = (pname, step)
             results[g.index] = RodanNoteResult(
                 g.index, _ic_dict(g), stave_id=stave.stave_id, stave_step=step,
+                center_x=ref_x, center_y=ref_y,
                 pitch={"pname": pname, "oct": octave}, clef_used=f"clef.{pname.lower()}",
                 flags=flags + octave_flags,
             )
@@ -271,7 +281,8 @@ def find_pitches_rodan(glyphs: list[Glyph], staves: list[Stave], image: np.ndarr
 
         if current_clef is None:
             results[g.index] = RodanNoteResult(g.index, _ic_dict(g), stave_id=stave.stave_id,
-                                                stave_step=step, reason="missing_clef", flags=flags)
+                                                stave_step=step, center_x=ref_x, center_y=ref_y,
+                                                reason="missing_clef", flags=flags)
             continue
 
         clef_pname, clef_step = current_clef
@@ -279,6 +290,7 @@ def find_pitches_rodan(glyphs: list[Glyph], staves: list[Stave], image: np.ndarr
         pname, octave = clef_rules.step_to_pitch(step - clef_step, clef_pname, clef_octave)
         results[g.index] = RodanNoteResult(
             g.index, _ic_dict(g), stave_id=stave.stave_id, stave_step=step,
+            center_x=ref_x, center_y=ref_y,
             pitch={"pname": pname, "oct": octave}, clef_used=f"clef.{clef_pname.lower()}",
             flags=flags + octave_flags,
         )

@@ -94,6 +94,33 @@ class Stave:
         step = step_top + t * (step_bottom - step_top)
         return step, []
 
+    def y_at_step(self, x: float, step: float) -> Optional[float]:
+        """Page-pixel y of a (possibly fractional) step at page-pixel x.
+
+        The exact inverse of continuous_step_at_y -- same two anchor points,
+        same single-line scale_unit fallback -- so a step computed from a y
+        maps back to that y. Pitch-finding works in steps, but a debug
+        overlay has to draw in pixels; this is what converts a computed note
+        position back into something drawable. None if the stave has no line
+        coverage at x.
+        """
+        pairs = self.step_at_x(x)
+        if not pairs:
+            return None
+
+        pairs = sorted(pairs, key=lambda p: p[1])  # sort by y ascending (top to bottom)
+        if len(pairs) == 1:
+            step0, y0 = pairs[0]
+            scale_unit = self.lines[0].scale_unit or 1.0
+            half_gap = scale_unit / 2 if scale_unit else 1.0
+            return y0 - (step - step0) * half_gap
+
+        (step_top, y_top), (step_bottom, y_bottom) = pairs[0], pairs[-1]
+        if step_bottom == step_top:
+            return float(y_top)
+        t = (step - step_top) / (step_bottom - step_top)
+        return y_top + t * (y_bottom - y_top)
+
     def nearest_line_distance(self, x: float, y: float) -> Optional[float]:
         """Vertical pixel distance from y to the nearest line of this stave at x."""
         pairs = self.step_at_x(x)
