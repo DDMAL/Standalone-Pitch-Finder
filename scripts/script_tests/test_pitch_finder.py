@@ -12,12 +12,17 @@ and step decreases linearly by 1 per 10px going down.
 import sys
 from pathlib import Path
 
+import numpy as np
+
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ic_io import Glyph
 from staff_io import StaffLine, Stave
 from neume_shapes import NeumeShapeTable
 from pitch_finder import find_pitches
+
+BACKGROUND = 220  # light parchment
+INK = 20          # dark ink
 
 
 def make_stave():
@@ -35,10 +40,24 @@ def make_shapes():
         neume_intervals={
             "neume.punctum": [0],
             "neume.clivis2": [0, -1],
+            "neume.virga": [0],
+            "neume.podatus3": [0, 2],
         },
         clef_classes={"clef.c": "C"},
         pitchless_classes=set(),
     )
+
+
+def blank_page(width=200, height=200):
+    return np.full((height, width), BACKGROUND, dtype=np.uint8)
+
+
+def make_clef():
+    """A clef.c on the y=140 line (step 2). Small enough (10x8) that pixel
+    analysis is skipped for it, so it anchors geometrically in both modes and
+    the same pitch reference applies to every test below."""
+    return Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
+                 confidence=0.9, state="AUTOMATIC")
 
 
 def test_clef_and_note_on_same_stave_resolve_pitch():
@@ -163,6 +182,139 @@ def test_unknown_class_falls_back_to_single_note_approximation():
     assert "approximate_unknown_shape" in mystery_result.flags
     # Single-note fallback == bbox top/bottom center, same as punctum: step 6.
     assert round(mystery_result.note_components[0].stave_step) == 6
+
+
+def test_pixel_anchor_reads_a_virga_from_its_notehead_not_its_stem():
+    """The whole point of borrowing rodan's notehead finding: a virga's stem
+    makes the bbox span a lie, and the bbox-span anchor lands nearly 3 steps
+    below the head that actually carries the pitch."""
+    staves, shapes = [make_stave()], make_shapes()
+
+    # Notehead centered on the top line (y=100, step 6), stem trailing to y=159.
+    # Drawn narrower than the crop so Otsu has background to threshold against.
+    img = blank_page()
+    img[94:107, 51:59] = INK      # notehead
+    img[107:160, 55:57] = INK     # stem
+
+    clef = make_clef()
+    virga = Glyph(index=1, ulx=50, uly=94, nrows=66, ncols=12,
+                  class_name="neume.virga", confidence=0.9, state="AUTOMATIC")
+
+    pixel = find_pitches([clef, virga], staves, shapes, image=img)[1]
+    bbox = find_pitches([clef, virga], staves, shapes)[1]
+    pixel_step = pixel.note_components[0].stave_step
+    bbox_step = bbox.note_components[0].stave_step
+    print(f"virga step: pixel {pixel_step:.2f} vs bbox-span {bbox_step:.2f}")
+
+    # The head sits on the top line, so the anchor must round to step 6...
+    assert round(pixel_step) == 6
+    assert pixel.anchor.source == "pixel_centroid"
+    assert pixel.anchor.region == "top"      # virga crop = top band
+    assert pixel.anchor.interval == 0.0
+    # ...while the bbox span, averaging head and stem, lands way low.
+    assert bbox_step < 4
+    assert bbox.anchor.source == "bbox_span"
+    # A whole-pitch difference, not a rounding one: G4 (top line) vs D4.
+    assert pixel.note_components[0].pitch == {"pname": "G", "oct": 4}
+    assert bbox.note_components[0].pitch == {"pname": "D", "oct": 4}
+
+
+def test_bottom_left_crop_anchors_the_podatus_lowest_note():
+    """A bottom-left crop isolates the ligature's lower head, so it anchors
+    min(intervals) and the interval table places the upper head -- landing it
+    on the very ink the crop deliberately excluded."""
+    staves, shapes = [make_stave()], make_shapes()
+
+    # podatus3 = [0, +2]: lower head on y=140 (step 2), upper head on y=120
+    # (step 4) and further right. The bottom-left crop sees only the former.
+    img = blank_page()
+    img[115:126, 62:72] = INK     # upper-right head
+    img[135:146, 51:59] = INK     # lower-left head
+    img[20:30, 11:19] = INK       # the punctum below, so avg_punctum is real
+
+    clef = make_clef()
+    punctum = Glyph(index=1, ulx=10, uly=20, nrows=10, ncols=12,
+                    class_name="neume.punctum", confidence=0.9, state="AUTOMATIC")
+    podatus = Glyph(index=2, ulx=50, uly=114, nrows=33, ncols=24,
+                    class_name="neume.podatus3", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, punctum, podatus], staves, shapes, image=img)[2]
+    steps = [round(nc.stave_step) for nc in result.note_components]
+    print(f"podatus3 steps: {steps}, anchor: {result.anchor}")
+
+    assert result.anchor.region == "bottom_left"
+    assert result.anchor.interval == 0.0     # the crop IS the neume's first/lowest note
+    assert steps == [2, 4]
+
+    # bbox-span mode reads both edges instead and misses both heads by a step.
+    bbox_steps = [round(nc.stave_step)
+                  for nc in find_pitches([clef, punctum, podatus], staves, shapes)[2].note_components]
+    print(f"podatus3 bbox-span steps: {bbox_steps}")
+    assert bbox_steps == [1, 3]
+
+
+def test_full_bbox_crop_anchors_the_middle_of_the_note_span():
+    """For classes rodan has no crop rule for, the centroid covers the whole
+    shape and belongs to no single head -- so it anchors the span's midpoint
+    (a fractional interval), and the notes straddle it symmetrically."""
+    staves, shapes = [make_stave()], make_shapes()
+
+    # clivis2 = [0, -1]: heads on y=120 (step 4) and y=130 (step 3), drawn as
+    # one block so the ink centroid sits midway between them.
+    img = blank_page()
+    img[115:136, 51:59] = INK
+    img[20:30, 11:19] = INK       # punctum, for avg_punctum
+
+    clef = make_clef()
+    punctum = Glyph(index=1, ulx=10, uly=20, nrows=10, ncols=12,
+                    class_name="neume.punctum", confidence=0.9, state="AUTOMATIC")
+    clivis = Glyph(index=2, ulx=50, uly=114, nrows=36, ncols=14,
+                   class_name="neume.clivis2", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, punctum, clivis], staves, shapes, image=img)[2]
+    steps = [nc.stave_step for nc in result.note_components]
+    print(f"clivis2 steps: {steps}, anchor step {result.anchor.stave_step:.2f}")
+
+    assert result.anchor.region == "full"
+    assert result.anchor.interval == -0.5             # midpoint of [0, -1]
+    assert steps[0] - steps[1] == 1                   # exactly the CSV interval
+    assert sum(steps) / 2 == result.anchor.stave_step  # straddling the centroid
+    assert [round(s) for s in steps] == [4, 3]
+
+
+def test_unmeasurable_ink_falls_back_to_geometry_and_says_so():
+    """A crop with no ink in it must not anchor the neume at the bbox's top
+    edge (what rodan's 0.0 centroid would mean here) -- fall back to the
+    geometric anchor and flag it, so a page of silent fallbacks is visible."""
+    staves, shapes = [make_stave()], make_shapes()
+    blank = blank_page()   # glyphs sit on empty parchment
+
+    clef = make_clef()
+    virga = Glyph(index=1, ulx=50, uly=94, nrows=66, ncols=12,
+                  class_name="neume.virga", confidence=0.9, state="AUTOMATIC")
+
+    with_image = find_pitches([clef, virga], staves, shapes, image=blank)[1]
+    without = find_pitches([clef, virga], staves, shapes)[1]
+
+    assert "pixel_anchor_unavailable" in with_image.flags
+    assert with_image.anchor.source == "bbox_span"
+    assert with_image.note_components[0].stave_step == without.note_components[0].stave_step
+
+
+def test_page_with_no_punctum_or_virga_cannot_size_the_crops():
+    """avg_punctum is the crop scale; with no punctum/virga on the page it is 0
+    and the crops would collapse to a 1px sliver. Fall back to geometry."""
+    staves, shapes = [make_stave()], make_shapes()
+    img = blank_page()
+    img[115:136, 51:59] = INK
+
+    clef = make_clef()
+    clivis = Glyph(index=1, ulx=50, uly=114, nrows=36, ncols=14,
+                   class_name="neume.clivis2", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, clivis], staves, shapes, image=img)[1]
+    assert "pixel_anchor_unavailable" in result.flags
+    assert result.anchor.source == "bbox_span"
 
 
 def test_glyph_far_from_any_stave_is_missing_staff():

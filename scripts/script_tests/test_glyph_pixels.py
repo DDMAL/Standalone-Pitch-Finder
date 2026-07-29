@@ -9,6 +9,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from ic_io import Glyph
 from glyph_pixels import (
     average_punctum, crop_and_binarize, row_projection_centroid, reference_row,
+    reference_point, reference_region,
+    REGION_FULL, REGION_TOP, REGION_BOTTOM_LEFT, REGION_F_CLEF_RIGHT,
 )
 
 BACKGROUND = 220  # light parchment
@@ -83,18 +85,28 @@ def test_virga_reference_excludes_the_stem():
     # thin 1px-wide stem trailing far below. The reference row should land
     # near the notehead, not dragged down toward the bbox's geometric center
     # by the long stem.
+    #
+    # The notehead is drawn narrower than the bbox on purpose: Otsu needs both
+    # ink and background inside the crop to find a threshold, and a crop that
+    # is uniformly ink binarizes to *no* ink at all (centroid 0.0), which would
+    # satisfy the "not dragged down" assertions without measuring anything.
     img = blank_page()
     ulx, uly, ncols, nrows = 20, 20, 12, 80
     avg_punctum = 12.0
-    img[uly:uly + 12, ulx:ulx + ncols] = INK               # notehead block, rows 0-11
+    img[uly:uly + 12, ulx + 1:ulx + 9] = INK                # notehead block, rows 0-11
     img[uly + 12:uly + nrows, ulx + 5:ulx + 7] = INK        # thin stem, rows 12-79
 
     g = make_glyph(0, ulx, uly, ncols, nrows, "neume.virga")
     offset = reference_row(img, g, avg_punctum=avg_punctum, discard_size=12)
 
-    bbox_center = nrows / 2  # naive full-bbox centroid would be way down here (~40)
-    assert offset < bbox_center
-    assert offset < 12  # centroid should stay within the notehead block itself
+    # Same bbox, but a class with no special case -- the full-height crop that
+    # the stem does drag down. That is the value the virga rule exists to avoid.
+    naive = reference_row(img, make_glyph(1, ulx, uly, ncols, nrows, "neume.punctum"),
+                          avg_punctum=avg_punctum, discard_size=12)
+
+    print(f"virga offset {offset:.2f} vs full-height offset {naive:.2f}")
+    assert 0 < offset <= 12          # inside the notehead block, and measured
+    assert offset < naive - 10       # decisively above the stem-biased value
 
 
 def test_podatus_bottom_left_reference_excludes_top_right_ink():
@@ -129,3 +141,58 @@ def test_f_clef_uses_right_half_only():
 
     # Should land within the right-side block's row range (10-19), not the dots.
     assert 8 <= offset <= 22
+
+
+def test_reference_region_labels_which_crop_rule_fired():
+    """The region label is what tells a decomposing caller which notehead the
+    centroid is (see pitch_finder._anchor_interval), so each crop rule has to
+    report itself."""
+    img = blank_page()
+    cases = [
+        ("neume.punctum", REGION_FULL),
+        ("neume.virga", REGION_TOP),
+        ("neume.podatus3", REGION_BOTTOM_LEFT),
+        ("neume.scandicus22b", REGION_BOTTOM_LEFT),
+        ("clef.f2", REGION_F_CLEF_RIGHT),
+        ("neume.clivis2", REGION_FULL),
+    ]
+    for class_name, expected in cases:
+        g = make_glyph(0, 20, 20, 30, 40, class_name)
+        region = reference_region(img, g, avg_punctum=12.0)
+        assert region is not None
+        assert region.region == expected, f"{class_name} -> {region.region}"
+
+
+def test_reference_point_x_is_the_crops_own_center():
+    """The centroid y was measured from the crop's columns, so x has to be that
+    band's center -- not the bbox center (which for a wide ligature is a column
+    the measurement never looked at)."""
+    img = blank_page()
+    ulx, uly, ncols, nrows = 20, 20, 40, 30
+    img[uly + 5:uly + 25, ulx + 1:ulx + 9] = INK
+
+    g = make_glyph(0, ulx, uly, ncols, nrows, "neume.clivis2")
+    point = reference_point(img, g, avg_punctum=12.0)
+
+    # avg_punctum 12 -> crop width = round(12 * 0.8) = 10, starting at ulx.
+    assert point.x == ulx + 10 / 2
+    assert point.x != g.center_x          # bbox center is 20px further right
+    assert point.y == uly + reference_row(img, g, avg_punctum=12.0)
+
+
+def test_reference_point_is_none_when_nothing_could_be_measured():
+    """None, not a silent 0.0: a caller anchoring a whole neume needs to know
+    the difference between "no measurement" and "measured at the top edge"."""
+    img = blank_page()
+
+    tiny = make_glyph(0, 5, 5, 8, 8, "neume.punctum")
+    assert reference_point(img, tiny, avg_punctum=15.0) is None
+
+    # Big enough to analyze, but blank parchment -- no ink to centroid.
+    blank = make_glyph(1, 20, 20, 30, 30, "neume.punctum")
+    assert reference_point(img, blank, avg_punctum=12.0) is None
+    # reference_row, being Rodan-faithful, cannot say so and returns 0.0.
+    assert reference_row(img, blank, avg_punctum=12.0) == 0.0
+
+    off_image = make_glyph(2, 1000, 1000, 30, 30, "neume.punctum")
+    assert reference_point(img, off_image, avg_punctum=12.0) is None
