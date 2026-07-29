@@ -2,6 +2,7 @@
   "image": "McGill_MS234-064/McGill_MS234-064.jpg",
   "ic_xml": "McGill_MS234-064/ic-session-McGill_MS234-064-manual-neumes.xml",
   "staff_json": "McGill_MS234-064/McGill_MS234-064_stafflines.json",
+  "anchor_mode": "pixel",
   "glyphs": [
     {
       "glyph_index": 0,
@@ -19,25 +20,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.7384615384615314,
-          "center_x": 575.5,
-          "center_y": 2154.0,
+          "stave_step": 0.20014640160270503,
+          "center_x": 569.5,
+          "center_y": 2165.076984126984,
           "pitch": {
-            "pname": "E",
+            "pname": "D",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": -0.2615384615384686,
-          "center_x": 575.5,
-          "center_y": 2174.5833333333335,
+          "stave_step": -0.799853598397295,
+          "center_x": 569.5,
+          "center_y": 2185.6769841269843,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 569.5,
+        "y": 2175.376984126984,
+        "stave_step": -0.299853598397295,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -61,9 +70,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.351329572925064,
-          "center_x": 1312.0,
-          "center_y": 1830.0,
+          "stave_step": 4.014615178331985,
+          "center_x": 1286.5,
+          "center_y": 1836.9305555555557,
           "pitch": {
             "pname": "A",
             "oct": 3
@@ -71,9 +80,9 @@
         },
         {
           "interval_from_first": 2,
-          "stave_step": 6.351329572925064,
-          "center_x": 1312.0,
-          "center_y": 1788.6333333333334,
+          "stave_step": 6.014615178331985,
+          "center_x": 1286.5,
+          "center_y": 1795.4972222222223,
           "pitch": {
             "pname": "C",
             "oct": 4
@@ -81,15 +90,23 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.3513295729250636,
-          "center_x": 1312.0,
-          "center_y": 1871.3666666666666,
+          "stave_step": 2.014615178331985,
+          "center_x": 1286.5,
+          "center_y": 1878.363888888889,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1286.5,
+        "y": 1836.9305555555557,
+        "stave_step": 4.014615178331985,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -113,15 +130,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.3060240963855376,
-          "center_x": 1249.0,
-          "center_y": 1851.5,
+          "stave_step": 3.4974425769606428,
+          "center_x": 1241.5,
+          "center_y": 1847.5280665280666,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1241.5,
+        "y": 1847.5280665280666,
+        "stave_step": 3.4974425769606428,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -147,25 +172,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.0478468899521571,
-          "center_x": 1034.5,
-          "center_y": 1898.0,
+          "stave_step": 2.117925668164901,
+          "center_x": 1020.5,
+          "center_y": 1875.5353535353536,
           "pitch": {
-            "pname": "E",
+            "pname": "F",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.047846889952157,
-          "center_x": 1034.5,
-          "center_y": 1877.1,
+          "stave_step": 3.117925668164901,
+          "center_x": 1020.5,
+          "center_y": 1854.6353535353535,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 1020.5,
+        "y": 1875.5353535353536,
+        "stave_step": 2.117925668164901,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -189,25 +222,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.6063745019920272,
-          "center_x": 969.0,
-          "center_y": 1886.0,
+          "stave_step": 2.653040196970502,
+          "center_x": 954.5,
+          "center_y": 1864.063025210084,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.6063745019920272,
-          "center_x": 969.0,
-          "center_y": 1865.0833333333333,
+          "stave_step": 3.653040196970502,
+          "center_x": 954.5,
+          "center_y": 1843.1296918767507,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 954.5,
+        "y": 1864.063025210084,
+        "stave_step": 2.653040196970502,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -231,15 +272,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.7802547770700627,
-          "center_x": 884.5,
-          "center_y": 1861.0,
+          "stave_step": 2.889587494321832,
+          "center_x": 876.5,
+          "center_y": 1858.6631419939577,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 876.5,
+        "y": 1858.6631419939577,
+        "stave_step": 2.889587494321832,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -265,15 +314,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.567524115755626,
+          "stave_step": 1.93230665087155,
           "center_x": 492.0,
-          "center_y": 2136.5,
+          "center_y": 2128.936842105263,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 492.0,
+        "y": 2128.936842105263,
+        "stave_step": 1.93230665087155,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -297,25 +354,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.1136000000000017,
-          "center_x": 555.0,
-          "center_y": 1893.0,
+          "stave_step": 2.2604036697247722,
+          "center_x": 539.5,
+          "center_y": 1868.908256880734,
           "pitch": {
-            "pname": "E",
+            "pname": "F",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.1136000000000017,
-          "center_x": 555.0,
-          "center_y": 1872.1666666666667,
+          "stave_step": 3.2604036697247722,
+          "center_x": 539.5,
+          "center_y": 1848.0749235474007,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 539.5,
+        "y": 1868.908256880734,
+        "stave_step": 2.2604036697247722,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -339,15 +404,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.2102728731942234,
+          "stave_step": 2.329423960962128,
           "center_x": 472.0,
-          "center_y": 2123.0,
+          "center_y": 2120.525629077353,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 472.0,
+        "y": 2120.525629077353,
+        "stave_step": 2.329423960962128,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -373,15 +446,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.037647058823537805,
+          "stave_step": 0.09229186756670327,
           "center_x": 258.5,
-          "center_y": 2167.5,
+          "center_y": 2166.3387978142077,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 258.5,
+        "y": 2166.3387978142077,
+        "stave_step": 0.09229186756670327,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -405,15 +486,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.14386239249413,
+          "stave_step": 2.06483740314824,
           "center_x": 233.0,
-          "center_y": 2122.5,
+          "center_y": 2124.184549356223,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 233.0,
+        "y": 2124.184549356223,
+        "stave_step": 2.06483740314824,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -437,15 +526,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.8864000000000054,
-          "center_x": 435.5,
-          "center_y": 2129.5,
+          "stave_step": 1.9177201927778205,
+          "center_x": 430.5,
+          "center_y": 2128.8155339805826,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 430.5,
+        "y": 2128.8155339805826,
+        "stave_step": 1.9177201927778205,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -471,15 +568,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.07131537242472286,
-          "center_x": 339.5,
-          "center_y": 2170.0,
+          "stave_step": -0.0761687389694572,
+          "center_x": 334.5,
+          "center_y": 2170.103351955307,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 334.5,
+        "y": 2170.103351955307,
+        "stave_step": -0.0761687389694572,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -503,15 +608,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.209508460918614,
+          "stave_step": 2.721552904489559,
           "center_x": 376.0,
-          "center_y": 1868.0,
+          "center_y": 1857.409214092141,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 376.0,
+        "y": 1857.409214092141,
+        "stave_step": 2.721552904489559,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -535,25 +648,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.8044009779951065,
-          "center_x": 208.5,
-          "center_y": 1833.0,
+          "stave_step": 3.0712642025025234,
+          "center_x": 200.5,
+          "center_y": 1847.8926470588235,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.8044009779951065,
-          "center_x": 208.5,
-          "center_y": 1853.45,
+          "stave_step": 2.0712642025025234,
+          "center_x": 200.5,
+          "center_y": 1868.3426470588233,
           "pitch": {
-            "pname": "G",
+            "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 200.5,
+        "y": 1858.1176470588234,
+        "stave_step": 2.5712642025025234,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -577,25 +698,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.778137651821858,
-          "center_x": 309.5,
-          "center_y": 1876.0,
+          "stave_step": 2.9118275493209573,
+          "center_x": 296.5,
+          "center_y": 1852.4648829431437,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.778137651821858,
-          "center_x": 309.5,
-          "center_y": 1855.4166666666667,
+          "stave_step": 3.9118275493209573,
+          "center_x": 296.5,
+          "center_y": 1831.8815496098105,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 296.5,
+        "y": 1852.4648829431437,
+        "stave_step": 2.9118275493209573,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -619,15 +748,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.5118367346938797,
+          "stave_step": 3.6832653061224514,
           "center_x": 173.0,
-          "center_y": 1838.5,
+          "center_y": 1835.0,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 173.0,
+        "y": 1835.0,
+        "stave_step": 3.6832653061224514,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -653,25 +790,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.704545454545457,
+          "stave_step": 4.0184552289815425,
           "center_x": 268.5,
-          "center_y": 1570.0,
+          "center_y": 1584.0877192982457,
           "pitch": {
-            "pname": "B",
+            "pname": "A",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.704545454545457,
+          "stave_step": 3.018455228981542,
           "center_x": 268.5,
-          "center_y": 1590.5333333333333,
+          "center_y": 1604.621052631579,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 268.5,
+        "y": 1594.3543859649124,
+        "stave_step": 3.518455228981542,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -695,25 +840,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.0072992700729895,
-          "center_x": 342.5,
-          "center_y": 1564.0,
+          "stave_step": 3.967686936386901,
+          "center_x": 331.5,
+          "center_y": 1585.264033457249,
           "pitch": {
-            "pname": "B",
+            "pname": "A",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 4.0072992700729895,
-          "center_x": 342.5,
-          "center_y": 1584.55,
+          "stave_step": 2.967686936386901,
+          "center_x": 331.5,
+          "center_y": 1605.8140334572493,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 331.5,
+        "y": 1595.5390334572492,
+        "stave_step": 3.467686936386901,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -737,15 +890,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.247974068071314,
+          "stave_step": 3.392847806765308,
           "center_x": 461.5,
-          "center_y": 1600.5,
+          "center_y": 1597.5204301075269,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 461.5,
+        "y": 1597.5204301075269,
+        "stave_step": 3.392847806765308,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -771,25 +932,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.792207792207795,
-          "center_x": 229.0,
-          "center_y": 1568.0,
+          "stave_step": 4.2010354510354535,
+          "center_x": 220.5,
+          "center_y": 1580.1387387387388,
           "pitch": {
-            "pname": "B",
+            "pname": "A",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.792207792207795,
-          "center_x": 229.0,
-          "center_y": 1588.5333333333333,
+          "stave_step": 3.2010354510354535,
+          "center_x": 220.5,
+          "center_y": 1600.672072072072,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 220.5,
+        "y": 1590.4054054054054,
+        "stave_step": 3.7010354510354535,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -813,15 +982,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.008097165991902,
+          "stave_step": 3.980213692125046,
           "center_x": 498.0,
-          "center_y": 1585.0,
+          "center_y": 1585.5739348370928,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 498.0,
+        "y": 1585.5739348370928,
+        "stave_step": 3.980213692125046,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -847,15 +1024,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.95631067961165,
-          "center_x": 535.0,
-          "center_y": 1565.5,
+          "stave_step": 5.021763672239295,
+          "center_x": 528.5,
+          "center_y": 1564.1516683518705,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 528.5,
+        "y": 1564.1516683518705,
+        "stave_step": 5.021763672239295,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -881,15 +1066,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.0909090909090917,
-          "center_x": 544.0,
-          "center_y": 1356.5,
+          "stave_step": 3.212850507302857,
+          "center_x": 531.5,
+          "center_y": 1354.0184921763869,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 531.5,
+        "y": 1354.0184921763869,
+        "stave_step": 3.212850507302857,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -915,25 +1108,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7998359310910574,
-          "center_x": 617.0,
-          "center_y": 1342.0,
+          "stave_step": 3.3016393442622967,
+          "center_x": 607.5,
+          "center_y": 1352.1666666666665,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.7998359310910574,
-          "center_x": 617.0,
-          "center_y": 1362.3166666666666,
+          "stave_step": 2.3016393442622967,
+          "center_x": 607.5,
+          "center_y": 1372.5,
           "pitch": {
-            "pname": "G",
+            "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 607.5,
+        "y": 1362.3333333333333,
+        "stave_step": 2.8016393442622967,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -957,25 +1158,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.031147540983604,
-          "center_x": 582.5,
-          "center_y": 1317.0,
+          "stave_step": 4.075139892584984,
+          "center_x": 577.5,
+          "center_y": 1336.4388221841052,
           "pitch": {
-            "pname": "B",
+            "pname": "A",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 4.031147540983604,
-          "center_x": 582.5,
-          "center_y": 1337.3333333333333,
+          "stave_step": 3.0751398925849833,
+          "center_x": 577.5,
+          "center_y": 1356.7721555174387,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 577.5,
+        "y": 1346.605488850772,
+        "stave_step": 3.5751398925849833,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -999,15 +1208,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.35209003215433876,
-          "center_x": 1048.0,
-          "center_y": 1676.0,
+          "stave_step": 0.04315927720664714,
+          "center_x": 1038.5,
+          "center_y": 1667.805164319249,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1038.5,
+        "y": 1667.805164319249,
+        "stave_step": 0.04315927720664714,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1031,9 +1248,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.251845775225593,
-          "center_x": 894.0,
-          "center_y": 1312.0,
+          "stave_step": 4.385366124671287,
+          "center_x": 880.5,
+          "center_y": 1329.6770676691729,
           "pitch": {
             "pname": "B",
             "oct": 3
@@ -1041,15 +1258,23 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 4.251845775225593,
-          "center_x": 894.0,
-          "center_y": 1332.3166666666666,
+          "stave_step": 3.385366124671287,
+          "center_x": 880.5,
+          "center_y": 1349.977067669173,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 880.5,
+        "y": 1339.827067669173,
+        "stave_step": 3.885366124671287,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1073,15 +1298,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1699029126213594,
-          "center_x": 620.5,
-          "center_y": 1602.5,
+          "stave_step": 3.87385610347615,
+          "center_x": 615.5,
+          "center_y": 1587.934,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 615.5,
+        "y": 1587.934,
+        "stave_step": 3.87385610347615,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1105,25 +1338,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.3906633906633896,
-          "center_x": 1035.5,
-          "center_y": 1390.0,
+          "stave_step": 2.7840987840987808,
+          "center_x": 1009.5,
+          "center_y": 1361.7435897435898,
           "pitch": {
-            "pname": "E",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.3906633906633896,
-          "center_x": 1035.5,
-          "center_y": 1369.65,
+          "stave_step": 3.7840987840987808,
+          "center_x": 1009.5,
+          "center_y": 1341.39358974359,
           "pitch": {
-            "pname": "F",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 1009.5,
+        "y": 1361.7435897435898,
+        "stave_step": 2.7840987840987808,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1147,25 +1388,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.835351089588377,
-          "center_x": 772.5,
-          "center_y": 1589.0,
+          "stave_step": 3.1830974363012383,
+          "center_x": 757.5,
+          "center_y": 1602.4690379403794,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.835351089588377,
-          "center_x": 772.5,
-          "center_y": 1609.65,
+          "stave_step": 2.1830974363012383,
+          "center_x": 757.5,
+          "center_y": 1623.1190379403795,
           "pitch": {
-            "pname": "G",
+            "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 757.5,
+        "y": 1612.7940379403794,
+        "stave_step": 2.6830974363012383,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1189,15 +1438,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.4338412189254184,
+          "stave_step": 2.00432866837399,
           "center_x": 1166.5,
-          "center_y": 1639.0,
+          "center_y": 1627.1433691756272,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1166.5,
+        "y": 1627.1433691756272,
+        "stave_step": 2.00432866837399,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1219,6 +1476,7 @@
       "stave_id": null,
       "stave_assignment_flags": [],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
       "flags": []
@@ -1239,25 +1497,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.831460674157303,
-          "center_x": 1136.0,
-          "center_y": 1610.0,
+          "stave_step": 2.2421532942976166,
+          "center_x": 1129.5,
+          "center_y": 1622.2379499217527,
           "pitch": {
-            "pname": "G",
+            "pname": "F",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 1.8314606741573032,
-          "center_x": 1136.0,
-          "center_y": 1630.7666666666667,
+          "stave_step": 1.2421532942976166,
+          "center_x": 1129.5,
+          "center_y": 1643.0046165884194,
           "pitch": {
-            "pname": "F",
+            "pname": "E",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1129.5,
+        "y": 1632.6212832550862,
+        "stave_step": 1.7421532942976166,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1281,25 +1547,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.4253061224489754,
-          "center_x": 1142.0,
-          "center_y": 1389.0,
+          "stave_step": 2.773119975959728,
+          "center_x": 1116.5,
+          "center_y": 1361.6283524904215,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.4253061224489754,
-          "center_x": 1142.0,
-          "center_y": 1368.5833333333333,
+          "stave_step": 3.773119975959728,
+          "center_x": 1116.5,
+          "center_y": 1341.2283524904215,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 1116.5,
+        "y": 1361.6283524904215,
+        "stave_step": 2.773119975959728,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1323,15 +1597,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.060113728675875,
-          "center_x": 1263.5,
-          "center_y": 1334.5,
+          "stave_step": 4.1076784101174315,
+          "center_x": 1257.5,
+          "center_y": 1333.5925925925926,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1257.5,
+        "y": 1333.5925925925926,
+        "stave_step": 4.1076784101174315,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1355,6 +1637,7 @@
       "stave_id": null,
       "stave_assignment_flags": [],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
       "flags": []
@@ -1375,15 +1658,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.510948905109493,
-          "center_x": 1308.0,
-          "center_y": 1325.0,
+          "stave_step": 4.631807122318076,
+          "center_x": 1299.5,
+          "center_y": 1322.5163636363636,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1299.5,
+        "y": 1322.5163636363636,
+        "stave_step": 4.631807122318076,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1409,15 +1700,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.085829959514166,
+          "stave_step": 4.152285078600869,
           "center_x": 1339.0,
-          "center_y": 1333.5,
+          "center_y": 1332.132132132132,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1339.0,
+        "y": 1332.132132132132,
+        "stave_step": 4.152285078600869,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -1441,15 +1740,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1266932270916374,
-          "center_x": 1491.0,
-          "center_y": 1603.5,
+          "stave_step": 3.3014753951773965,
+          "center_x": 1480.5,
+          "center_y": 1599.8441396508729,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1480.5,
+        "y": 1599.8441396508729,
+        "stave_step": 3.3014753951773965,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -1475,15 +1782,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.978790259230168,
+          "stave_step": 2.9066258562654457,
           "center_x": 1440.0,
-          "center_y": 1098.5,
+          "center_y": 1100.0310880829015,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1440.0,
+        "y": 1100.0310880829015,
+        "stave_step": 2.9066258562654457,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1507,15 +1822,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.426551453260019,
-          "center_x": 1428.5,
-          "center_y": 1089.0,
+          "stave_step": 3.881682202120166,
+          "center_x": 1424.5,
+          "center_y": 1079.343642611684,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1424.5,
+        "y": 1079.343642611684,
+        "stave_step": 3.881682202120166,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1539,25 +1862,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -1.6457680250783708,
-          "center_x": 1311.0,
-          "center_y": 1197.0,
-          "pitch": {
-            "pname": "B",
-            "oct": 2
-          }
-        },
-        {
-          "interval_from_first": 1,
-          "stave_step": -0.6457680250783708,
-          "center_x": 1311.0,
-          "center_y": 1175.7333333333333,
+          "stave_step": -0.7197282176658533,
+          "center_x": 1286.5,
+          "center_y": 1177.3062200956938,
           "pitch": {
             "pname": "C",
             "oct": 3
           }
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 0.28027178233414674,
+          "center_x": 1286.5,
+          "center_y": 1156.0395534290271,
+          "pitch": {
+            "pname": "D",
+            "oct": 3
+          }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 1286.5,
+        "y": 1177.3062200956938,
+        "stave_step": -0.7197282176658533,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1581,25 +1912,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.971698113207548,
-          "center_x": 1514.5,
-          "center_y": 802.0,
+          "stave_step": 4.300390791964339,
+          "center_x": 1501.5,
+          "center_y": 816.231715210356,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.971698113207548,
-          "center_x": 1514.5,
-          "center_y": 823.2,
+          "stave_step": 3.3003907919643387,
+          "center_x": 1501.5,
+          "center_y": 837.4317152103561,
           "pitch": {
-            "pname": "C",
-            "oct": 4
+            "pname": "B",
+            "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1501.5,
+        "y": 826.831715210356,
+        "stave_step": 3.8003907919643387,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -1623,9 +1962,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.240566037735851,
-          "center_x": 1456.5,
-          "center_y": 817.5,
+          "stave_step": 3.9656717359752633,
+          "center_x": 1428.5,
+          "center_y": 823.3277591973244,
           "pitch": {
             "pname": "C",
             "oct": 4
@@ -1633,9 +1972,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.240566037735851,
-          "center_x": 1456.5,
-          "center_y": 796.3,
+          "stave_step": 4.965671735975263,
+          "center_x": 1428.5,
+          "center_y": 802.1277591973244,
           "pitch": {
             "pname": "D",
             "oct": 4
@@ -1643,15 +1982,23 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.240566037735851,
-          "center_x": 1456.5,
-          "center_y": 838.6999999999999,
+          "stave_step": 2.9656717359752633,
+          "center_x": 1428.5,
+          "center_y": 844.5277591973245,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1428.5,
+        "y": 823.3277591973244,
+        "stave_step": 3.9656717359752633,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -1675,15 +2022,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 6.197492163009406,
+          "stave_step": 6.31476855019652,
           "center_x": 1104.0,
-          "center_y": 1030.5,
+          "center_y": 1028.0059221658207,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1104.0,
+        "y": 1028.0059221658207,
+        "stave_step": 6.31476855019652,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1709,15 +2064,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.825882352941175,
-          "center_x": 1071.0,
-          "center_y": 1038.5,
+          "stave_step": 6.087110347788749,
+          "center_x": 1060.5,
+          "center_y": 1032.948905109489,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1060.5,
+        "y": 1032.948905109489,
+        "stave_step": 6.087110347788749,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1743,15 +2106,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.8066825775656317,
-          "center_x": 904.0,
-          "center_y": 849.0,
+          "stave_step": 3.8828946358683143,
+          "center_x": 897.5,
+          "center_y": 826.5180722891566,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 897.5,
+        "y": 826.5180722891566,
+        "stave_step": 3.8828946358683143,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -1775,15 +2146,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1179282868525875,
-          "center_x": 866.0,
-          "center_y": 863.5,
+          "stave_step": 2.0734223375224845,
+          "center_x": 860.5,
+          "center_y": 864.46547314578,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 860.5,
+        "y": 864.46547314578,
+        "stave_step": 2.0734223375224845,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -1809,15 +2188,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.092053501180175,
-          "center_x": 858.5,
-          "center_y": 1097.0,
+          "stave_step": 3.078066264533615,
+          "center_x": 852.5,
+          "center_y": 1097.2962962962963,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 852.5,
+        "y": 1097.2962962962963,
+        "stave_step": 3.078066264533615,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1841,15 +2228,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.11146496815287,
-          "center_x": 545.5,
-          "center_y": 1055.5,
+          "stave_step": 5.887442356558024,
+          "center_x": 541.5,
+          "center_y": 1039.3543307086613,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 541.5,
+        "y": 1039.3543307086613,
+        "stave_step": 5.887442356558024,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1873,25 +2268,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.944,
-          "center_x": 767.0,
-          "center_y": 805.0,
+          "stave_step": 4.03040583941606,
+          "center_x": 752.5,
+          "center_y": 824.1332116788321,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.944,
-          "center_x": 767.0,
-          "center_y": 825.8333333333334,
+          "stave_step": 3.0304058394160602,
+          "center_x": 752.5,
+          "center_y": 844.9665450121654,
           "pitch": {
-            "pname": "C",
-            "oct": 4
+            "pname": "B",
+            "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 752.5,
+        "y": 834.5498783454988,
+        "stave_step": 3.5304058394160602,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -1915,15 +2318,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.8933121019108308,
+          "stave_step": 3.861661555398287,
           "center_x": 556.0,
-          "center_y": 1081.0,
+          "center_y": 1081.6625514403293,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 556.0,
+        "y": 1081.6625514403293,
+        "stave_step": 3.861661555398287,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1947,9 +2358,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.921615201900235,
-          "center_x": 660.0,
-          "center_y": 1059.0,
+          "stave_step": 4.413220799818745,
+          "center_x": 648.5,
+          "center_y": 1069.7488095238095,
           "pitch": {
             "pname": "B",
             "oct": 3
@@ -1957,15 +2368,23 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.9216152019002353,
-          "center_x": 660.0,
-          "center_y": 1080.05,
+          "stave_step": 3.413220799818746,
+          "center_x": 648.5,
+          "center_y": 1090.765476190476,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 648.5,
+        "y": 1080.2571428571428,
+        "stave_step": 3.913220799818746,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -1989,15 +2408,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.078758949880667,
+          "stave_step": 3.063089125141626,
           "center_x": 568.5,
-          "center_y": 1098.0,
+          "center_y": 1098.328282828283,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 568.5,
+        "y": 1098.328282828283,
+        "stave_step": 3.063089125141626,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2021,15 +2448,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.035971223021586,
-          "center_x": 478.5,
-          "center_y": 1057.5,
+          "stave_step": 5.298477795303869,
+          "center_x": 472.5,
+          "center_y": 1052.0267379679144,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 472.5,
+        "y": 1052.0267379679144,
+        "stave_step": 5.298477795303869,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2055,15 +2490,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.095693779904303,
-          "center_x": 513.5,
-          "center_y": 1056.0,
+          "stave_step": 5.186902015003422,
+          "center_x": 509.5,
+          "center_y": 1054.1801962533452,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 509.5,
+        "y": 1054.1801962533452,
+        "stave_step": 5.186902015003422,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2089,15 +2532,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.735576923076925,
+          "stave_step": 5.714352467187246,
           "center_x": 426.0,
-          "center_y": 1064.0,
+          "center_y": 1043.6414686825053,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 426.0,
+        "y": 1043.6414686825053,
+        "stave_step": 5.714352467187246,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2121,15 +2572,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9469879518072335,
+          "stave_step": 3.9042168674698816,
           "center_x": 400.0,
-          "center_y": 1080.5,
+          "center_y": 1081.3875,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 400.0,
+        "y": 1081.3875,
+        "stave_step": 3.9042168674698816,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2153,15 +2612,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.140065146579809,
-          "center_x": 206.0,
-          "center_y": 1057.0,
+          "stave_step": 5.246804966848524,
+          "center_x": 200.5,
+          "center_y": 1054.9028384279477,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 200.5,
+        "y": 1054.9028384279477,
+        "stave_step": 5.246804966848524,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2187,15 +2654,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.977142857142859,
+          "stave_step": 4.036037346112537,
           "center_x": 170.5,
-          "center_y": 1081.0,
+          "center_y": 1079.7975708502024,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 170.5,
+        "y": 1079.7975708502024,
+        "stave_step": 4.036037346112537,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2219,15 +2694,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.9855305466237967,
+          "stave_step": 2.9774919614147897,
           "center_x": 392.5,
-          "center_y": 1100.5,
+          "center_y": 1100.6666666666667,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 392.5,
+        "y": 1100.6666666666667,
+        "stave_step": 2.9774919614147897,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2251,15 +2734,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.928221859706358,
+          "stave_step": 4.914126340953677,
           "center_x": 179.0,
-          "center_y": 1061.5,
+          "center_y": 1061.7880184331798,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 179.0,
+        "y": 1061.7880184331798,
+        "stave_step": 4.914126340953677,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2283,15 +2774,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1941747572815533,
-          "center_x": 288.5,
-          "center_y": 1096.5,
+          "stave_step": 3.2295842796484653,
+          "center_x": 273.5,
+          "center_y": 1095.8243902439024,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 273.5,
+        "y": 1095.8243902439024,
+        "stave_step": 3.2295842796484653,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -2317,15 +2816,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.4327155519742134,
-          "center_x": 582.5,
-          "center_y": 837.5,
+          "stave_step": 4.00201612903226,
+          "center_x": 576.5,
+          "center_y": 825.7916666666666,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 576.5,
+        "y": 825.7916666666666,
+        "stave_step": 4.00201612903226,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -2349,15 +2856,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9305331179321477,
-          "center_x": 543.0,
-          "center_y": 827.5,
+          "stave_step": 3.9360134961627575,
+          "center_x": 534.5,
+          "center_y": 827.4869215291751,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 534.5,
+        "y": 827.4869215291751,
+        "stave_step": 3.9360134961627575,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -2383,15 +2898,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.046079223928859,
+          "stave_step": 3.062471308254043,
           "center_x": 508.0,
-          "center_y": 846.0,
+          "center_y": 845.6620498614958,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 508.0,
+        "y": 845.6620498614958,
+        "stave_step": 3.062471308254043,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -2417,25 +2940,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.916666666666667,
-          "center_x": 315.0,
-          "center_y": 850.0,
+          "stave_step": 1.7004549437438659,
+          "center_x": 299.5,
+          "center_y": 874.8674009790833,
           "pitch": {
-            "pname": "B",
+            "pname": "A",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 1.916666666666667,
-          "center_x": 315.0,
-          "center_y": 870.4,
+          "stave_step": 0.7004549437438659,
+          "center_x": 299.5,
+          "center_y": 895.23406764575,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 299.5,
+        "y": 885.0507343124166,
+        "stave_step": 1.2004549437438659,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -2459,25 +2990,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.234567901234568,
-          "center_x": 190.5,
-          "center_y": 885.0,
+          "stave_step": 2.481735047203782,
+          "center_x": 175.5,
+          "center_y": 859.8862275449102,
           "pitch": {
-            "pname": "G",
+            "pname": "B",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.234567901234568,
-          "center_x": 190.5,
-          "center_y": 864.75,
+          "stave_step": 3.481735047203782,
+          "center_x": 175.5,
+          "center_y": 839.6528942115768,
           "pitch": {
-            "pname": "A",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 175.5,
+        "y": 859.8862275449102,
+        "stave_step": 2.481735047203782,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -2501,15 +3040,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0861244019138776,
-          "center_x": 710.0,
-          "center_y": 614.0,
+          "stave_step": 2.028848860118209,
+          "center_x": 705.5,
+          "center_y": 615.1970588235295,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 705.5,
+        "y": 615.1970588235295,
+        "stave_step": 2.028848860118209,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2535,15 +3082,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9889328063241116,
+          "stave_step": 4.071706064194646,
           "center_x": 1409.5,
-          "center_y": 572.0,
+          "center_y": 570.2548638132296,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1409.5,
+        "y": 570.2548638132296,
+        "stave_step": 4.071706064194646,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2567,25 +3122,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9952494061757724,
-          "center_x": 1447.0,
-          "center_y": 614.0,
+          "stave_step": 2.6490864158876404,
+          "center_x": 1429.5,
+          "center_y": 600.1925795053004,
           "pitch": {
-            "pname": "A",
+            "pname": "B",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.9952494061757724,
-          "center_x": 1447.0,
-          "center_y": 592.95,
+          "stave_step": 3.6490864158876404,
+          "center_x": 1429.5,
+          "center_y": 579.1259128386337,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 1429.5,
+        "y": 600.1925795053004,
+        "stave_step": 2.6490864158876404,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2609,15 +3172,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.507109004739337,
-          "center_x": 1387.0,
-          "center_y": 561.0,
+          "stave_step": 4.486168875132992,
+          "center_x": 1381.5,
+          "center_y": 561.4418367346939,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1381.5,
+        "y": 561.4418367346939,
+        "stave_step": 4.486168875132992,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2643,15 +3214,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.35364875701684,
-          "center_x": 1361.0,
-          "center_y": 339.0,
+          "stave_step": 3.9896637850988625,
+          "center_x": 1342.5,
+          "center_y": 325.6479820627803,
           "pitch": {
-            "pname": "D",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1342.5,
+        "y": 325.6479820627803,
+        "stave_step": 3.9896637850988625,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2675,25 +3254,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.012009607686149,
-          "center_x": 1453.0,
-          "center_y": 347.0,
+          "stave_step": 2.303626979638011,
+          "center_x": 1448.5,
+          "center_y": 361.6845588235294,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.012009607686149,
-          "center_x": 1453.0,
-          "center_y": 367.81666666666666,
+          "stave_step": 1.303626979638011,
+          "center_x": 1448.5,
+          "center_y": 382.48455882352937,
           "pitch": {
-            "pname": "C",
-            "oct": 4
+            "pname": "B",
+            "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1448.5,
+        "y": 372.0845588235294,
+        "stave_step": 1.803626979638011,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2717,15 +3304,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.240384615384616,
-          "center_x": 1400.0,
-          "center_y": 362.5,
+          "stave_step": 2.7323807522026162,
+          "center_x": 1393.5,
+          "center_y": 352.21202003338897,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1393.5,
+        "y": 352.21202003338897,
+        "stave_step": 2.7323807522026162,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2749,6 +3344,7 @@
         "missing_staff"
       ],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "missing_staff",
       "flags": []
@@ -2769,15 +3365,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1419406575781883,
-          "center_x": 1311.5,
-          "center_y": 343.0,
+          "stave_step": 3.274245982830821,
+          "center_x": 1307.5,
+          "center_y": 340.25025432349946,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1307.5,
+        "y": 340.25025432349946,
+        "stave_step": 3.274245982830821,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2803,25 +3407,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.890850722311396,
-          "center_x": 1234.0,
-          "center_y": 327.0,
+          "stave_step": 3.2556626506024102,
+          "center_x": 1225.5,
+          "center_y": 340.145,
           "pitch": {
-            "pname": "E",
+            "pname": "D",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.890850722311396,
-          "center_x": 1234.0,
-          "center_y": 347.76666666666665,
+          "stave_step": 2.2556626506024102,
+          "center_x": 1225.5,
+          "center_y": 360.895,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1225.5,
+        "y": 350.52,
+        "stave_step": 2.7556626506024102,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2845,15 +3457,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.06099518459069,
-          "center_x": 1192.0,
-          "center_y": 302.5,
+          "stave_step": 5.149191852430451,
+          "center_x": 1183.5,
+          "center_y": 300.668449197861,
           "pitch": {
             "pname": "F",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1183.5,
+        "y": 300.668449197861,
+        "stave_step": 5.149191852430451,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2879,15 +3499,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.069020866773675,
+          "stave_step": 4.09798396433379,
           "center_x": 1154.5,
-          "center_y": 323.0,
+          "center_y": 322.39853300733495,
           "pitch": {
             "pname": "E",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1154.5,
+        "y": 322.39853300733495,
+        "stave_step": 4.09798396433379,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -2913,9 +3541,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.862559241706162,
-          "center_x": 1031.5,
-          "center_y": 554.0,
+          "stave_step": 4.516079380306699,
+          "center_x": 1017.5,
+          "center_y": 561.4107250755287,
           "pitch": {
             "pname": "D",
             "oct": 4
@@ -2923,15 +3551,23 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.862559241706162,
-          "center_x": 1031.5,
-          "center_y": 575.1,
+          "stave_step": 3.5160793803066994,
+          "center_x": 1017.5,
+          "center_y": 582.5107250755286,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1017.5,
+        "y": 571.9607250755287,
+        "stave_step": 4.016079380306699,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2955,15 +3591,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.8798418972331996,
-          "center_x": 964.0,
-          "center_y": 575.0,
+          "stave_step": 3.929746835443037,
+          "center_x": 956.5,
+          "center_y": 574.0133333333333,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 956.5,
+        "y": 574.0133333333333,
+        "stave_step": 3.929746835443037,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -2987,15 +3631,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.4195583596214512,
+          "stave_step": 2.0806731687552444,
           "center_x": 1114.0,
-          "center_y": 626.5,
+          "center_y": 612.5284403669725,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1114.0,
+        "y": 612.5284403669725,
+        "stave_step": 2.0806731687552444,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3019,15 +3671,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7381703470031558,
-          "center_x": 1111.5,
-          "center_y": 577.5,
+          "stave_step": 3.8885410907671796,
+          "center_x": 1106.5,
+          "center_y": 574.3221649484536,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1106.5,
+        "y": 574.3221649484536,
+        "stave_step": 3.8885410907671796,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3051,25 +3711,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.786516853932584,
-          "center_x": 1113.0,
-          "center_y": 308.0,
+          "stave_step": 3.9490514975669417,
+          "center_x": 1106.5,
+          "center_y": 325.357181425486,
           "pitch": {
-            "pname": "F",
+            "pname": "E",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.786516853932584,
-          "center_x": 1113.0,
-          "center_y": 328.76666666666665,
+          "stave_step": 2.9490514975669417,
+          "center_x": 1106.5,
+          "center_y": 346.107181425486,
           "pitch": {
-            "pname": "E",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1106.5,
+        "y": 335.732181425486,
+        "stave_step": 3.4490514975669417,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3093,15 +3761,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.2825040128410907,
-          "center_x": 983.0,
-          "center_y": 360.0,
+          "stave_step": 2.375609689822425,
+          "center_x": 970.5,
+          "center_y": 358.0665054413543,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 970.5,
+        "y": 358.0665054413543,
+        "stave_step": 2.375609689822425,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3125,15 +3801,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.090332805071314,
+          "stave_step": 3.0749864591065013,
           "center_x": 1479.0,
-          "center_y": 591.0,
+          "center_y": 591.3227848101266,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1479.0,
+        "y": 591.3227848101266,
+        "stave_step": 3.0749864591065013,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3157,15 +3841,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.033175355450237,
+          "stave_step": 4.053202197710021,
           "center_x": 1351.5,
-          "center_y": 571.0,
+          "center_y": 570.5774336283185,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1351.5,
+        "y": 570.5774336283185,
+        "stave_step": 4.053202197710021,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3189,15 +3881,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0597014925373163,
+          "stave_step": 2.049120669477537,
           "center_x": 1455.5,
-          "center_y": 1118.0,
+          "center_y": 1118.2244897959183,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1455.5,
+        "y": 1118.2244897959183,
+        "stave_step": 2.049120669477537,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -3221,15 +3921,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.067984189723321,
+          "stave_step": 2.1263731770478436,
           "center_x": 1426.5,
-          "center_y": 612.5,
+          "center_y": 611.2689655172413,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1426.5,
+        "y": 611.2689655172413,
+        "stave_step": 2.1263731770478436,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3253,15 +3961,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.957613814756673,
+          "stave_step": 2.9435194628103964,
           "center_x": 1398.5,
-          "center_y": 1099.0,
+          "center_y": 1099.2992700729926,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1398.5,
+        "y": 1099.2992700729926,
+        "stave_step": 2.9435194628103964,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -3285,15 +4001,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0867469879518077,
+          "stave_step": 2.1195245628980586,
           "center_x": 1072.0,
-          "center_y": 364.0,
+          "center_y": 363.3198653198653,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1072.0,
+        "y": 363.3198653198653,
+        "stave_step": 2.1195245628980586,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3317,15 +4041,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.0864995957962855,
+          "stave_step": 1.0333567462263318,
           "center_x": 658.5,
-          "center_y": 1645.5,
+          "center_y": 1646.5956284153006,
           "pitch": {
             "pname": "E",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 658.5,
+        "y": 1646.5956284153006,
+        "stave_step": 1.0333567462263318,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3349,15 +4081,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.026506024096386,
+          "stave_step": 2.9427509293680307,
           "center_x": 1082.0,
-          "center_y": 344.5,
+          "center_y": 346.2379182156134,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1082.0,
+        "y": 346.2379182156134,
+        "stave_step": 2.9427509293680307,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3381,15 +4121,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1632329635499197,
+          "stave_step": 2.207357314981656,
           "center_x": 1489.5,
-          "center_y": 610.5,
+          "center_y": 609.5719178082192,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1489.5,
+        "y": 609.5719178082192,
+        "stave_step": 2.207357314981656,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3413,15 +4161,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.028846153846153,
+          "stave_step": 2.035540408958129,
           "center_x": 1411.0,
-          "center_y": 367.0,
+          "center_y": 366.8607594936709,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1411.0,
+        "y": 366.8607594936709,
+        "stave_step": 2.035540408958129,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3445,15 +4201,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1082598235765837,
+          "stave_step": 3.0749491086299434,
           "center_x": 1279.0,
-          "center_y": 343.5,
+          "center_y": 344.1923076923077,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1279.0,
+        "y": 344.1923076923077,
+        "stave_step": 3.0749491086299434,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3477,15 +4241,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.808407437348427,
+          "stave_step": 2.7980136274396585,
           "center_x": 631.0,
-          "center_y": 1610.0,
+          "center_y": 1610.2142857142858,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 631.0,
+        "y": 1610.2142857142858,
+        "stave_step": 2.7980136274396585,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3509,15 +4281,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.192307692307693,
+          "stave_step": 1.2004761015683343,
           "center_x": 1423.5,
-          "center_y": 384.5,
+          "center_y": 384.33009708737865,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1423.5,
+        "y": 384.33009708737865,
+        "stave_step": 1.2004761015683343,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3541,15 +4321,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.133437990580848,
+          "stave_step": 2.1420438425601978,
           "center_x": 1387.0,
-          "center_y": 1116.5,
+          "center_y": 1116.3172690763051,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1387.0,
+        "y": 1116.3172690763051,
+        "stave_step": 2.1420438425601978,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -3573,15 +4361,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.124797406807132,
+          "stave_step": 2.1370645175679885,
           "center_x": 422.5,
-          "center_y": 1623.5,
+          "center_y": 1623.2477064220184,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 422.5,
+        "y": 1623.2477064220184,
+        "stave_step": 2.1370645175679885,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3605,15 +4401,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1428571428571423,
+          "stave_step": 2.167782719680952,
           "center_x": 1268.5,
-          "center_y": 363.5,
+          "center_y": 362.98237885462555,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1268.5,
+        "y": 362.98237885462555,
+        "stave_step": 2.167782719680952,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3637,15 +4441,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.8383185125303192,
+          "stave_step": 1.844434290534605,
           "center_x": 644.0,
-          "center_y": 1630.0,
+          "center_y": 1629.8739130434783,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 644.0,
+        "y": 1629.8739130434783,
+        "stave_step": 1.844434290534605,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3669,15 +4481,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.0243111831442464,
+          "stave_step": 3.0207707195795557,
           "center_x": 434.5,
-          "center_y": 1605.0,
+          "center_y": 1605.0728155339805,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 434.5,
+        "y": 1605.0728155339805,
+        "stave_step": 3.0207707195795557,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3701,15 +4521,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.1348762968874717,
+          "stave_step": 1.1309188526049896,
           "center_x": 682.5,
-          "center_y": 634.0,
+          "center_y": 634.0826446280992,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 682.5,
+        "y": 634.0826446280992,
+        "stave_step": 1.1309188526049896,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3733,15 +4561,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9550561797752815,
+          "stave_step": 1.9102561031120482,
           "center_x": 898.5,
-          "center_y": 367.0,
+          "center_y": 367.9303482587065,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 898.5,
+        "y": 367.9303482587065,
+        "stave_step": 1.9102561031120482,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3765,15 +4601,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.8747993579454256,
+          "stave_step": 2.8305621049559537,
           "center_x": 884.0,
-          "center_y": 348.0,
+          "center_y": 348.91866028708137,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 884.0,
+        "y": 348.91866028708137,
+        "stave_step": 2.8305621049559537,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -3797,25 +4641,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.1631663974151865,
-          "center_x": 694.5,
-          "center_y": 1644.0,
+          "stave_step": 2.2413429795603035,
+          "center_x": 670.5,
+          "center_y": 1621.7536231884058,
           "pitch": {
-            "pname": "E",
+            "pname": "F",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 2.1631663974151865,
-          "center_x": 694.5,
-          "center_y": 1623.3666666666668,
+          "stave_step": 3.2413429795603035,
+          "center_x": 670.5,
+          "center_y": 1601.1202898550723,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 670.5,
+        "y": 1621.7536231884058,
+        "stave_step": 2.2413429795603035,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -3839,25 +4691,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.19246190858059276,
-          "center_x": 598.0,
-          "center_y": 662.0,
+          "stave_step": 0.8005324355009193,
+          "center_x": 580.5,
+          "center_y": 641.4756097560976,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 0.8075380914194072,
-          "center_x": 598.0,
-          "center_y": 641.2166666666667,
+          "stave_step": 1.8005324355009193,
+          "center_x": 580.5,
+          "center_y": 620.7089430894309,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 580.5,
+        "y": 641.4756097560976,
+        "stave_step": 0.8005324355009193,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3881,15 +4741,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.0760608486789422,
+          "stave_step": 1.0967506678610208,
           "center_x": 629.5,
-          "center_y": 635.5,
+          "center_y": 635.0693069306931,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 629.5,
+        "y": 635.0693069306931,
+        "stave_step": 1.0967506678610208,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3913,25 +4781,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.661211129296237,
-          "center_x": 316.5,
-          "center_y": 544.0,
+          "stave_step": 5.031480010872631,
+          "center_x": 304.5,
+          "center_y": 557.009381778742,
           "pitch": {
-            "pname": "E",
+            "pname": "D",
             "oct": 4
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": 4.661211129296237,
-          "center_x": 316.5,
-          "center_y": 564.3666666666667,
+          "stave_step": 4.031480010872631,
+          "center_x": 304.5,
+          "center_y": 577.3593817787419,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 304.5,
+        "y": 567.1843817787419,
+        "stave_step": 4.531480010872631,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3955,15 +4831,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.047658175842235,
+          "stave_step": 4.671868296478357,
           "center_x": 263.5,
-          "center_y": 577.5,
+          "center_y": 564.8389380530973,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 263.5,
+        "y": 564.8389380530973,
+        "stave_step": 4.671868296478357,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -3987,15 +4871,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9917559769167354,
+          "stave_step": 3.9310499887581494,
           "center_x": 238.5,
-          "center_y": 579.0,
+          "center_y": 580.2272727272727,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 238.5,
+        "y": 580.2272727272727,
+        "stave_step": 3.9310499887581494,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -4019,15 +4911,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.977741137675186,
+          "stave_step": 3.0011180250482763,
           "center_x": 234.0,
-          "center_y": 599.5,
+          "center_y": 599.027397260274,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 234.0,
+        "y": 599.027397260274,
+        "stave_step": 3.0011180250482763,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -4051,15 +4951,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.43062200956937824,
+          "stave_step": -0.2706727520924357,
           "center_x": 222.5,
-          "center_y": 1429.0,
+          "center_y": 1425.657060518732,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 222.5,
+        "y": 1425.657060518732,
+        "stave_step": -0.2706727520924357,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -4083,25 +4991,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.6706586826347305,
+          "stave_step": 0.22984264030079515,
           "center_x": 197.5,
-          "center_y": 1406.0,
+          "center_y": 1415.202034883721,
           "pitch": {
-            "pname": "E",
+            "pname": "D",
             "oct": 3
           }
         },
         {
           "interval_from_first": -1,
-          "stave_step": -0.3293413173652695,
+          "stave_step": -0.7701573596992048,
           "center_x": 197.5,
-          "center_y": 1426.875,
+          "center_y": 1436.077034883721,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 197.5,
+        "y": 1425.639534883721,
+        "stave_step": -0.27015735969920485,
+        "interval": -0.5
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -4125,9 +5041,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.2285485164394543,
-          "center_x": 817.0,
-          "center_y": 341.0,
+          "stave_step": 3.1140784394173933,
+          "center_x": 792.5,
+          "center_y": 343.47906976744184,
           "pitch": {
             "pname": "D",
             "oct": 4
@@ -4135,9 +5051,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 4.228548516439455,
-          "center_x": 817.0,
-          "center_y": 320.21666666666664,
+          "stave_step": 4.114078439417393,
+          "center_x": 792.5,
+          "center_y": 322.6957364341085,
           "pitch": {
             "pname": "E",
             "oct": 4
@@ -4145,15 +5061,23 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.2285485164394543,
-          "center_x": 817.0,
-          "center_y": 361.78333333333336,
+          "stave_step": 2.1140784394173933,
+          "center_x": 792.5,
+          "center_y": 364.26240310077515,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 792.5,
+        "y": 343.47906976744184,
+        "stave_step": 3.1140784394173933,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4177,15 +5101,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.211878009630819,
-          "center_x": 873.0,
-          "center_y": 341.0,
+          "stave_step": 3.855981493129982,
+          "center_x": 867.5,
+          "center_y": 327.6598513011152,
           "pitch": {
-            "pname": "D",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 867.5,
+        "y": 327.6598513011152,
+        "stave_step": 3.855981493129982,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4209,15 +5141,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.8173076923076934,
+          "stave_step": 2.832422785547786,
           "center_x": 743.0,
-          "center_y": 350.0,
+          "center_y": 349.68560606060606,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 743.0,
+        "y": 349.68560606060606,
+        "stave_step": 2.832422785547786,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4241,15 +5181,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.792031872509959,
-          "center_x": 453.5,
-          "center_y": 354.0,
+          "stave_step": 2.724832513521334,
+          "center_x": 447.5,
+          "center_y": 355.50558659217876,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 447.5,
+        "y": 355.50558659217876,
+        "stave_step": 2.724832513521334,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4273,25 +5221,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.47980997624703114,
-          "center_x": 224.0,
-          "center_y": 407.0,
+          "stave_step": 1.914106136201644,
+          "center_x": 201.5,
+          "center_y": 377.344262295082,
           "pitch": {
-            "pname": "A",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         },
         {
           "interval_from_first": 1,
-          "stave_step": 1.4798099762470311,
-          "center_x": 224.0,
-          "center_y": 385.95,
+          "stave_step": 2.914106136201644,
+          "center_x": 201.5,
+          "center_y": 356.2609289617487,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "D",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 201.5,
+        "y": 377.344262295082,
+        "stave_step": 1.914106136201644,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4315,15 +5271,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.5024549918166918,
-          "center_x": 143.5,
-          "center_y": 1131.5,
+          "stave_step": 1.9684746174572396,
+          "center_x": 152.0,
+          "center_y": 1122.0087336244542,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "f_clef_right",
+        "x": 152.0,
+        "y": 1122.0087336244542,
+        "stave_step": 1.9684746174572396,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.f2",
         "glyph_index": 122
@@ -4347,15 +5311,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.3394342762063203,
-          "center_x": 147.0,
-          "center_y": 667.0,
+          "stave_step": -0.11619996835943436,
+          "center_x": 155.5,
+          "center_y": 662.531746031746,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "f_clef_right",
+        "x": 155.5,
+        "y": 662.531746031746,
+        "stave_step": -0.11619996835943436,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.f2",
         "glyph_index": 123
@@ -4379,15 +5351,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.3043478260869541,
-          "center_x": 148.5,
-          "center_y": 916.5,
+          "stave_step": -0.26949802052852156,
+          "center_x": 156.5,
+          "center_y": 915.6483516483516,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "f_clef_right",
+        "x": 156.5,
+        "y": 915.6483516483516,
+        "stave_step": -0.26949802052852156,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.f2",
         "glyph_index": 124
@@ -4411,15 +5391,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9008935824532913,
-          "center_x": 146.0,
-          "center_y": 1627.0,
+          "stave_step": 2.295462457931995,
+          "center_x": 154.0,
+          "center_y": 1619.0047619047618,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "f_clef_right",
+        "x": 154.0,
+        "y": 1619.0047619047618,
+        "stave_step": 2.295462457931995,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.f2",
         "glyph_index": 125
@@ -4443,15 +5431,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.926888708367182,
+          "stave_step": 6.0187949076891245,
           "center_x": 157.0,
-          "center_y": 1544.5,
+          "center_y": 1542.6143911439115,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 157.0,
+        "y": 1542.6143911439115,
+        "stave_step": 6.0187949076891245,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -4475,15 +5471,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.849882720875682,
-          "center_x": 231.5,
-          "center_y": 2043.5,
+          "stave_step": 5.800664062499997,
+          "center_x": 223.5,
+          "center_y": 2044.4525,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 223.5,
+        "y": 2044.4525,
+        "stave_step": 5.800664062499997,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -4507,15 +5511,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.8723404255319185,
+          "stave_step": 5.832181927814628,
           "center_x": 150.0,
-          "center_y": 1042.5,
+          "center_y": 1043.3178947368422,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 150.0,
+        "y": 1043.3178947368422,
+        "stave_step": 5.832181927814628,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -4539,15 +5551,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.913875598086127,
+          "stave_step": 5.839222920389694,
           "center_x": 148.5,
-          "center_y": 1296.5,
+          "center_y": 1298.0602409638554,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 148.5,
+        "y": 1298.0602409638554,
+        "stave_step": 5.839222920389694,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -4571,15 +5591,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.882160392798687,
+          "stave_step": 5.891413823492378,
           "center_x": 154.5,
-          "center_y": 1790.0,
+          "center_y": 1789.8115384615385,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 154.5,
+        "y": 1789.8115384615385,
+        "stave_step": 5.891413823492378,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -4603,15 +5631,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.088397790055249,
-          "center_x": 146.0,
-          "center_y": 375.0,
+          "stave_step": 1.936923739767341,
+          "center_x": 140.5,
+          "center_y": 376.3009478672986,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 140.5,
+        "y": 376.3009478672986,
+        "stave_step": 1.936923739767341,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4635,15 +5671,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.01980198019802,
-          "center_x": 150.5,
-          "center_y": 829.0,
+          "stave_step": 3.8847020933977463,
+          "center_x": 146.5,
+          "center_y": 829.7866666666666,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 146.5,
+        "y": 829.7866666666666,
+        "stave_step": 3.8847020933977463,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -4667,15 +5711,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.903494176372713,
-          "center_x": 148.0,
-          "center_y": 582.0,
+          "stave_step": 3.8849518405444017,
+          "center_x": 141.5,
+          "center_y": 582.4362139917696,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 141.5,
+        "y": 582.4362139917696,
+        "stave_step": 3.8849518405444017,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -4699,21 +5751,31 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.332280978689818,
+          "stave_step": 5.243488555643251,
           "center_x": 145.0,
-          "center_y": 306.5,
+          "center_y": 308.375,
           "pitch": {
             "pname": "G",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 145.0,
+        "y": 308.375,
+        "stave_step": 5.243488555643251,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.g",
         "glyph_index": 134
       },
       "reason": null,
-      "flags": []
+      "flags": [
+        "anchor_x_fell_back_to_center"
+      ]
     },
     {
       "glyph_index": 135,
@@ -4731,15 +5793,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.2606596942880173,
-          "center_x": 976.0,
-          "center_y": 1674.0,
+          "stave_step": 0.143206974732478,
+          "center_x": 965.5,
+          "center_y": 1665.6332288401254,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 965.5,
+        "y": 1665.6332288401254,
+        "stave_step": 0.143206974732478,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -4763,15 +5833,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.346368715083799,
-          "center_x": 544.5,
-          "center_y": 362.0,
+          "stave_step": 3.2061605338676555,
+          "center_x": 535.5,
+          "center_y": 344.1446808510638,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 535.5,
+        "y": 344.1446808510638,
+        "stave_step": 3.2061605338676555,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4795,15 +5873,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.2403609515996732,
-          "center_x": 254.5,
-          "center_y": 884.5,
+          "stave_step": 1.9031836808213631,
+          "center_x": 245.5,
+          "center_y": 871.1336515513126,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 245.5,
+        "y": 871.1336515513126,
+        "stave_step": 1.9031836808213631,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -4827,15 +5913,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1483253588516775,
+          "stave_step": 2.438014467448241,
           "center_x": 663.5,
-          "center_y": 1872.5,
+          "center_y": 1866.4454976303318,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 663.5,
+        "y": 1866.4454976303318,
+        "stave_step": 2.438014467448241,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -4859,15 +5953,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.2577565632458243,
-          "center_x": 377.5,
-          "center_y": 366.5,
+          "stave_step": 3.1318859083050086,
+          "center_x": 368.5,
+          "center_y": 348.3347921225383,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 368.5,
+        "y": 348.3347921225383,
+        "stave_step": 3.1318859083050086,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -4891,15 +5993,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.37296416938111,
-          "center_x": 375.5,
-          "center_y": 569.5,
+          "stave_step": 5.3414900280870485,
+          "center_x": 367.5,
+          "center_y": 549.7665289256198,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 367.5,
+        "y": 549.7665289256198,
+        "stave_step": 5.3414900280870485,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -4923,15 +6033,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.3241267262388288,
+          "stave_step": 3.8948908362867836,
           "center_x": 182.0,
-          "center_y": 1598.0,
+          "center_y": 1586.2898230088495,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 182.0,
+        "y": 1586.2898230088495,
+        "stave_step": 3.8948908362867836,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -4955,15 +6073,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1657048639736143,
-          "center_x": 1041.5,
-          "center_y": 2106.5,
+          "stave_step": 3.9688584930854685,
+          "center_x": 1033.5,
+          "center_y": 2090.262910798122,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1033.5,
+        "y": 2090.262910798122,
+        "stave_step": 3.9688584930854685,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -4987,15 +6113,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.42404549147033954,
-          "center_x": 615.5,
-          "center_y": 2178.0,
+          "stave_step": -0.029898511650321424,
+          "center_x": 604.5,
+          "center_y": 2169.9144144144143,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 604.5,
+        "y": 2169.9144144144143,
+        "stave_step": -0.029898511650321424,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -5019,15 +6153,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.4881889763779528,
-          "center_x": 1504.0,
-          "center_y": 1130.0,
+          "stave_step": 2.0782419705385173,
+          "center_x": 1498.5,
+          "center_y": 1117.575907590759,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1498.5,
+        "y": 1117.575907590759,
+        "stave_step": 2.0782419705385173,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -5051,15 +6193,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.131056393963463,
-          "center_x": 814.0,
-          "center_y": 591.5,
+          "stave_step": 3.9563937934724436,
+          "center_x": 805.5,
+          "center_y": 574.2157303370786,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 805.5,
+        "y": 574.2157303370786,
+        "stave_step": 3.9563937934724436,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -5083,15 +6233,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.271013354281225,
-          "center_x": 944.0,
-          "center_y": 1093.0,
+          "stave_step": 4.098722667920205,
+          "center_x": 930.5,
+          "center_y": 1075.5387673956263,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 930.5,
+        "y": 1075.5387673956263,
+        "stave_step": 4.098722667920205,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -5115,15 +6273,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.18676122931442,
-          "center_x": 1274.0,
-          "center_y": 840.0,
+          "stave_step": 3.999992879065166,
+          "center_x": 1263.5,
+          "center_y": 822.8668171557562,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1263.5,
+        "y": 822.8668171557562,
+        "stave_step": 3.999992879065166,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5147,15 +6313,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.4072289156626527,
-          "center_x": 1485.5,
-          "center_y": 1346.5,
+          "stave_step": 4.053575472125363,
+          "center_x": 1467.5,
+          "center_y": 1333.2558685446008,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1467.5,
+        "y": 1333.2558685446008,
+        "stave_step": 4.053575472125363,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -5179,15 +6353,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -0.4359183673469431,
-          "center_x": 699.5,
-          "center_y": 2178.5,
+          "stave_step": -0.0877499146401508,
+          "center_x": 686.5,
+          "center_y": 2171.2930232558138,
           "pitch": {
             "pname": "D",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 686.5,
+        "y": 2171.2930232558138,
+        "stave_step": -0.0877499146401508,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -5211,15 +6393,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1581431943351674,
-          "center_x": 1389.5,
-          "center_y": 840.5,
+          "stave_step": 3.8883851080124416,
+          "center_x": 1379.5,
+          "center_y": 825.0310421286031,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1379.5,
+        "y": 825.0310421286031,
+        "stave_step": 3.8883851080124416,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5243,15 +6433,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.3230268510984553,
-          "center_x": 400.5,
-          "center_y": 882.0,
+          "stave_step": 1.9758243194814158,
+          "center_x": 390.5,
+          "center_y": 868.7285318559557,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 390.5,
+        "y": 868.7285318559557,
+        "stave_step": 1.9758243194814158,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5275,15 +6473,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.4410339256865927,
-          "center_x": 1387.5,
-          "center_y": 1346.5,
+          "stave_step": 4.1340658871421185,
+          "center_x": 1378.5,
+          "center_y": 1332.2004405286343,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1378.5,
+        "y": 1332.2004405286343,
+        "stave_step": 4.1340658871421185,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -5307,15 +6513,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.2459807073954967,
-          "center_x": 646.5,
-          "center_y": 841.0,
+          "stave_step": 4.006669300779332,
+          "center_x": 635.5,
+          "center_y": 825.3283898305085,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 635.5,
+        "y": 825.3283898305085,
+        "stave_step": 4.006669300779332,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5339,15 +6553,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1000000000000014,
-          "center_x": 990.0,
-          "center_y": 842.5,
+          "stave_step": 3.922489112870098,
+          "center_x": 978.5,
+          "center_y": 825.2931034482758,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 978.5,
+        "y": 825.2931034482758,
+        "stave_step": 3.922489112870098,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5371,15 +6593,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.333333333333335,
-          "center_x": 449.5,
-          "center_y": 840.5,
+          "stave_step": 4.011585005903187,
+          "center_x": 441.5,
+          "center_y": 826.6287878787879,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 441.5,
+        "y": 826.6287878787879,
+        "stave_step": 4.011585005903187,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5403,15 +6633,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1242038216560495,
-          "center_x": 750.5,
-          "center_y": 592.0,
+          "stave_step": 4.133481323545288,
+          "center_x": 738.5,
+          "center_y": 570.9724576271186,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 738.5,
+        "y": 570.9724576271186,
+        "stave_step": 4.133481323545288,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -5435,15 +6673,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.615763546798026,
-          "center_x": 709.5,
-          "center_y": 1366.0,
+          "stave_step": 3.2512528522380686,
+          "center_x": 696.5,
+          "center_y": 1353.0995670995671,
           "pitch": {
             "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 696.5,
+        "y": 1353.0995670995671,
+        "stave_step": 3.2512528522380686,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -5467,15 +6713,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.338788870703763,
-          "center_x": 495.0,
-          "center_y": 1351.5,
+          "stave_step": 4.148415531579682,
+          "center_x": 487.5,
+          "center_y": 1334.9414634146342,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 487.5,
+        "y": 1334.9414634146342,
+        "stave_step": 4.148415531579682,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -5499,15 +6753,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.0782608695652165,
-          "center_x": 1171.0,
-          "center_y": 842.5,
+          "stave_step": 3.9844210932227897,
+          "center_x": 1160.5,
+          "center_y": 823.3951219512195,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1160.5,
+        "y": 823.3951219512195,
+        "stave_step": 3.9844210932227897,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5531,15 +6793,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.3319638455217717,
-          "center_x": 812.0,
-          "center_y": 1371.5,
+          "stave_step": 3.1598601620848563,
+          "center_x": 801.5,
+          "center_y": 1354.7548387096774,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 801.5,
+        "y": 1354.7548387096774,
+        "stave_step": 3.1598601620848563,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -5563,15 +6833,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.3007103393843735,
-          "center_x": 1296.0,
-          "center_y": 586.5,
+          "stave_step": 4.107172911973322,
+          "center_x": 1286.5,
+          "center_y": 569.4701986754967,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1286.5,
+        "y": 569.4701986754967,
+        "stave_step": 4.107172911973322,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -5595,15 +6873,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.268533772652392,
-          "center_x": 980.5,
-          "center_y": 2124.5,
+          "stave_step": 3.082127085769798,
+          "center_x": 967.5,
+          "center_y": 2107.9896640826873,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 967.5,
+        "y": 2107.9896640826873,
+        "stave_step": 3.082127085769798,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -5627,15 +6913,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1828978622327804,
-          "center_x": 1083.5,
-          "center_y": 840.5,
+          "stave_step": 3.883426115625874,
+          "center_x": 1076.5,
+          "center_y": 825.7538802660754,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1076.5,
+        "y": 825.7538802660754,
+        "stave_step": 3.883426115625874,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 132
@@ -5659,15 +6953,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.397117694155323,
-          "center_x": 662.0,
-          "center_y": 359.5,
+          "stave_step": 3.289193566835035,
+          "center_x": 652.5,
+          "center_y": 341.0299539170507,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 652.5,
+        "y": 341.0299539170507,
+        "stave_step": 3.289193566835035,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -5691,15 +6993,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.4074662430500373,
-          "center_x": 598.0,
-          "center_y": 1091.0,
+          "stave_step": 3.9629648935338473,
+          "center_x": 587.5,
+          "center_y": 1079.4098360655737,
           "pitch": {
             "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 587.5,
+        "y": 1079.4098360655737,
+        "stave_step": 3.9629648935338473,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -5723,15 +7033,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.35584843492585705,
-          "center_x": 923.5,
-          "center_y": 2163.0,
+          "stave_step": 0.9370923161967779,
+          "center_x": 912.5,
+          "center_y": 2151.223880597015,
           "pitch": {
             "pname": "E",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 912.5,
+        "y": 2151.223880597015,
+        "stave_step": 0.9370923161967779,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 127
@@ -5755,15 +7073,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.2513966480446927,
+          "stave_step": 3.7155041640520765,
           "center_x": 1427.0,
-          "center_y": 1601.0,
+          "center_y": 1591.3078880407124,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1427.0,
+        "y": 1591.3078880407124,
+        "stave_step": 3.7155041640520765,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -5787,15 +7113,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.2902967121090603,
+          "stave_step": 2.6553166448397065,
           "center_x": 467.5,
-          "center_y": 1867.5,
+          "center_y": 1859.913669064748,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 467.5,
+        "y": 1859.913669064748,
+        "stave_step": 2.6553166448397065,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -5819,15 +7153,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.207006369426751,
+          "stave_step": 2.488599291030552,
           "center_x": 810.0,
-          "center_y": 1872.5,
+          "center_y": 1866.6053215077604,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 810.0,
+        "y": 1866.6053215077604,
+        "stave_step": 2.488599291030552,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -5851,15 +7193,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.2304038004750604,
-          "center_x": 893.0,
-          "center_y": 589.0,
+          "stave_step": 3.953122487884424,
+          "center_x": 885.5,
+          "center_y": 573.8526570048309,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 885.5,
+        "y": 573.8526570048309,
+        "stave_step": 3.953122487884424,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -5883,15 +7233,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.149681528662422,
+          "stave_step": 2.433997969168286,
           "center_x": 720.5,
-          "center_y": 1873.0,
+          "center_y": 1867.048309178744,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 720.5,
+        "y": 1867.048309178744,
+        "stave_step": 2.433997969168286,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -5915,15 +7273,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1513210568454753,
+          "stave_step": 3.6642336290557145,
           "center_x": 1167.5,
-          "center_y": 1854.5,
+          "center_y": 1843.8228699551569,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1167.5,
+        "y": 1843.8228699551569,
+        "stave_step": 3.6642336290557145,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -5947,15 +7313,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.3019169329073517,
+          "stave_step": 3.7393735241005674,
           "center_x": 1380.0,
-          "center_y": 1600.0,
+          "center_y": 1590.871739130435,
           "pitch": {
-            "pname": "G",
+            "pname": "A",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1380.0,
+        "y": 1590.871739130435,
+        "stave_step": 3.7393735241005674,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -5979,15 +7353,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1230031948881756,
+          "stave_step": 2.569050581017267,
           "center_x": 610.0,
-          "center_y": 1872.5,
+          "center_y": 1863.1924778761063,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 610.0,
+        "y": 1863.1924778761063,
+        "stave_step": 2.569050581017267,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 130
@@ -6009,6 +7391,7 @@
       "stave_id": null,
       "stave_assignment_flags": [],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
       "flags": []
@@ -6029,15 +7412,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.7053642914331464,
+          "stave_step": 2.136208967173739,
           "center_x": 1483.5,
-          "center_y": 374.5,
+          "center_y": 365.53125,
           "pitch": {
             "pname": "C",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1483.5,
+        "y": 365.53125,
+        "stave_step": 2.136208967173739,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 131
@@ -6061,15 +7452,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.0946372239747637,
+          "stave_step": 3.3816248620087417,
           "center_x": 1150.0,
-          "center_y": 591.0,
+          "center_y": 584.9349945828819,
           "pitch": {
             "pname": "B",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1150.0,
+        "y": 584.9349945828819,
+        "stave_step": 3.3816248620087417,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 133
@@ -6093,15 +7492,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.7219512195121927,
+          "stave_step": 2.1693388876522413,
           "center_x": 305.5,
-          "center_y": 1364.0,
+          "center_y": 1375.328552803129,
           "pitch": {
-            "pname": "G",
+            "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 305.5,
+        "y": 1375.328552803129,
+        "stave_step": 2.1693388876522413,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129
@@ -6123,6 +7530,7 @@
       "stave_id": null,
       "stave_assignment_flags": [],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
       "flags": []
@@ -6143,15 +7551,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1708299758259484,
+          "stave_step": 2.0839162593239413,
           "center_x": 829.5,
-          "center_y": 1623.5,
+          "center_y": 1625.2976653696498,
           "pitch": {
             "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 829.5,
+        "y": 1625.2976653696498,
+        "stave_step": 2.0839162593239413,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 126
@@ -6173,6 +7589,7 @@
       "stave_id": null,
       "stave_assignment_flags": [],
       "note_components": [],
+      "anchor": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
       "flags": []
@@ -6193,15 +7610,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 6.05172413793103,
-          "center_x": 1143.0,
-          "center_y": 1033.5,
+          "stave_step": 6.621245906445048,
+          "center_x": 1129.5,
+          "center_y": 1021.3778162911611,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 4
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 1129.5,
+        "y": 1021.3778162911611,
+        "stave_step": 6.621245906445048,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -6225,15 +7650,23 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.2311320754716957,
+          "stave_step": 1.2506152584085246,
           "center_x": 1473.0,
-          "center_y": 1135.5,
+          "center_y": 1135.0869565217392,
           "pitch": {
             "pname": "E",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 1473.0,
+        "y": 1135.0869565217392,
+        "stave_step": 1.2506152584085246,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 128
@@ -6257,25 +7690,33 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": -1.1737012987012942,
-          "center_x": 271.0,
-          "center_y": 1444.0,
+          "stave_step": -0.15893692682012883,
+          "center_x": 255.5,
+          "center_y": 1423.1661538461537,
           "pitch": {
-            "pname": "C",
+            "pname": "D",
             "oct": 3
           }
         },
         {
           "interval_from_first": 2,
-          "stave_step": 0.8262987012987058,
-          "center_x": 271.0,
-          "center_y": 1402.9333333333334,
+          "stave_step": 1.8410630731798712,
+          "center_x": 255.5,
+          "center_y": 1382.0661538461536,
           "pitch": {
-            "pname": "E",
+            "pname": "F",
             "oct": 3
           }
         }
       ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 255.5,
+        "y": 1423.1661538461537,
+        "stave_step": -0.15893692682012883,
+        "interval": 0.0
+      },
       "clef_used": {
         "class_name": "clef.c",
         "glyph_index": 129

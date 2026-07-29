@@ -20,7 +20,18 @@ used for the row-projection centroid:
   - everything else: full height, width capped at the average punctum size
     (so an unusually wide multi-note glyph doesn't get diluted by grabbing
     a neighboring symbol)
+
+Two entry points read that region:
+  - reference_row: the row offset alone, for rodan_pitch_finder's
+    one-pitch-per-glyph flow (unchanged, still Rodan-faithful).
+  - reference_point: the full (x, y, region) point, for pitch_finder's
+    multi-note decomposition. It needs the region label because *which*
+    notehead the centroid represents depends on which crop produced it --
+    see REGION_* below.
 """
+
+from dataclasses import dataclass
+from typing import Optional
 
 import numpy as np
 import cv2
@@ -29,6 +40,35 @@ from ic_io import Glyph
 
 BOTTOM_LEFT_CLASSES = {"neume.podatus2b", "neume.podatus3", "neume.podatus4",
                         "neume.podatus5", "neume.scandicus22b"}
+
+# Which sub-region of the bbox the centroid was measured from. Rodan itself
+# never needs this (one pitch per glyph, so the point is simply "the" pitch),
+# but a caller that decomposes a neume into several notes does: a bottom-left
+# crop lands on the neume's LOWEST notehead, a top crop on its HIGHEST, and a
+# full-bbox crop is the ink centroid of the whole shape and so belongs to no
+# single note. Getting that wrong offsets every note of the neume at once.
+REGION_FULL = "full"
+REGION_TOP = "top"
+REGION_BOTTOM_LEFT = "bottom_left"
+REGION_F_CLEF_RIGHT = "f_clef_right"
+
+
+@dataclass
+class ReferenceRegion:
+    """The page-pixel rectangle a glyph's pitch reference is measured from."""
+    ulx: int
+    uly: int
+    ncols: int
+    nrows: int
+    region: str
+
+
+@dataclass
+class ReferencePoint:
+    """A measured pitch reference: page-pixel point + the crop it came from."""
+    x: float
+    y: float
+    region: str
 
 
 def average_punctum(glyphs: list[Glyph]) -> float:
@@ -87,23 +127,24 @@ def _f_clef_right_region(image: np.ndarray, glyph: Glyph) -> tuple:
     return right_ulx, glyph.uly + top, right_ncols, bottom - top + 1, float(top)
 
 
-def reference_row(image: np.ndarray, glyph: Glyph, avg_punctum: float,
-                   discard_size: int = 12, subimage_width_factor: float = 0.8) -> float:
-    """The pitch-reference row, as an offset from the glyph's own top edge
-    (uly). Add to glyph.uly to get a page-pixel y coordinate.
+def reference_region(image: np.ndarray, glyph: Glyph, avg_punctum: float,
+                      discard_size: int = 12,
+                      subimage_width_factor: float = 0.8) -> Optional[ReferenceRegion]:
+    """The sub-region of the glyph's bbox whose ink centroid is the pitch
+    reference -- the per-class crop rules described in the module docstring.
 
-    Tiny glyphs (both dims <= discard_size) skip pixel analysis entirely,
-    matching Rodan's center_of_mass=0 fallback for glyphs too small to
-    meaningfully binarize/project.
+    None for glyphs too small for pixel analysis to mean anything (both dims
+    <= discard_size), which is Rodan's discard_size behavior.
     """
     if glyph.ncols <= discard_size and glyph.nrows <= discard_size:
-        return 0.0
+        return None
 
     ulx, uly, ncols, nrows = glyph.ulx, glyph.uly, glyph.ncols, glyph.nrows
-    y_add = 0.0
+    region = REGION_FULL
 
     if glyph.class_name.startswith("clef.f"):
-        ulx, uly, ncols, nrows, y_add = _f_clef_right_region(image, glyph)
+        ulx, uly, ncols, nrows, _y_add = _f_clef_right_region(image, glyph)
+        region = REGION_F_CLEF_RIGHT
 
     extend_cols = ncols if ncols < avg_punctum else avg_punctum * subimage_width_factor
     extend_rows = nrows if nrows < avg_punctum else avg_punctum
@@ -111,14 +152,58 @@ def reference_row(image: np.ndarray, glyph: Glyph, avg_punctum: float,
     extend_rows = max(1, round(extend_rows))
 
     if glyph.class_name in BOTTOM_LEFT_CLASSES:
-        crop_uly = uly + nrows - extend_rows
-        crop = crop_and_binarize(image, ulx, crop_uly, extend_cols, extend_rows)
-        return y_add + (nrows - extend_rows) + row_projection_centroid(crop)
+        return ReferenceRegion(ulx, uly + nrows - extend_rows, extend_cols,
+                               extend_rows, REGION_BOTTOM_LEFT)
 
     if glyph.class_name == "neume.virga":
-        crop = crop_and_binarize(image, ulx, uly, extend_cols, extend_rows)
-        return y_add + row_projection_centroid(crop)
+        return ReferenceRegion(ulx, uly, extend_cols, extend_rows, REGION_TOP)
 
     # Default: full height, width capped to avoid grabbing a neighbor.
-    crop = crop_and_binarize(image, ulx, uly, extend_cols, nrows)
-    return y_add + row_projection_centroid(crop)
+    return ReferenceRegion(ulx, uly, extend_cols, nrows, region)
+
+
+def reference_row(image: np.ndarray, glyph: Glyph, avg_punctum: float,
+                   discard_size: int = 12, subimage_width_factor: float = 0.8) -> float:
+    """The pitch-reference row, as an offset from the glyph's own top edge
+    (uly). Add to glyph.uly to get a page-pixel y coordinate.
+
+    Tiny glyphs (both dims <= discard_size) skip pixel analysis entirely and
+    get 0.0, matching Rodan's center_of_mass=0 fallback for glyphs too small
+    to meaningfully binarize/project. A crop with no ink at all also
+    centroids to 0.0 (row_projection_centroid) -- indistinguishable from a
+    real measurement at the top edge, again as in Rodan. Callers that need to
+    tell those apart should use reference_point instead.
+    """
+    region = reference_region(image, glyph, avg_punctum, discard_size, subimage_width_factor)
+    if region is None:
+        return 0.0
+    crop = crop_and_binarize(image, region.ulx, region.uly, region.ncols, region.nrows)
+    return (region.uly - glyph.uly) + row_projection_centroid(crop)
+
+
+def reference_point(image: np.ndarray, glyph: Glyph, avg_punctum: float,
+                     discard_size: int = 12,
+                     subimage_width_factor: float = 0.8) -> Optional[ReferencePoint]:
+    """The pitch reference as a page-pixel point, or None if it couldn't be
+    measured (glyph too small, crop off-image, or no ink in the crop).
+
+    x is the center of the crop's own x-range, not the glyph bbox's center:
+    the centroid y was computed from the rows of *that* column band, so that
+    is the x it belongs to, and it's the x a curved staff line should be
+    sampled at. (Rodan instead reads its staff position at the bbox's left
+    edge, which is the band's left edge rather than its middle.)
+
+    Returning None rather than a silent 0.0 is the difference from
+    reference_row: a caller placing a notehead needs "no measurement" to be
+    distinguishable from "measured at the bbox's top edge", so it can fall
+    back to geometry instead of anchoring a whole neume on the wrong row.
+    """
+    region = reference_region(image, glyph, avg_punctum, discard_size, subimage_width_factor)
+    if region is None:
+        return None
+    crop = crop_and_binarize(image, region.ulx, region.uly, region.ncols, region.nrows)
+    if crop.size == 0 or not (crop != 0).any():
+        return None
+    return ReferencePoint(x=region.ulx + region.ncols / 2,
+                          y=region.uly + row_projection_centroid(crop),
+                          region=region.region)

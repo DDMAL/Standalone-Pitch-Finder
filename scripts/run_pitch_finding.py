@@ -19,12 +19,18 @@ the overlay after --output, so this works too:
 
     python run_pitch_finding.py --image page.jpg --ic-xml ... --staff-json ... \\
         --output out_dir/ --debug-viz
+
+--anchor-mode picks how each glyph's notehead position is found: "pixel"
+(default) reads rodan-style per-class ink centroids off the image, "bbox"
+uses bbox geometry only. See pitch_finder's module docstring.
 """
 
 import argparse
 import json
 from collections import Counter
 from pathlib import Path
+
+import cv2
 
 from ic_io import parse_ic_xml
 from staff_io import load_staves
@@ -46,7 +52,8 @@ _COLOR_PROBLEM = (40, 40, 220)       # red: missing_clef / missing_staff / no_li
 
 
 def run(image_path: Path, ic_xml_path: Path, staff_json_path: Path, output_path: Path,
-        neume_csv_path: Path, debug_viz: str = None, debug_scale: float = 2.5):
+        neume_csv_path: Path, debug_viz: str = None, debug_scale: float = 2.5,
+        anchor_mode: str = "pixel"):
     # Resolve both artifact paths before doing any work: an unwritable
     # --debug-viz should be reported now, not after the debug render.
     output_path = resolve_output_path(output_path, image_path, "_pitch_finding.json")
@@ -57,24 +64,53 @@ def run(image_path: Path, ic_xml_path: Path, staff_json_path: Path, output_path:
     staves = load_staves(staff_json_path)
     shapes = load_neume_shapes(neume_csv_path)
 
-    results = find_pitches(glyphs, staves, shapes)
+    image = None
+    if anchor_mode == "pixel":
+        image = cv2.imread(str(image_path))
+        if image is None:
+            raise FileNotFoundError(
+                f"Could not load image: {image_path} (needed for "
+                "--anchor-mode pixel; --anchor-mode bbox needs no pixels)")
+
+    results = find_pitches(glyphs, staves, shapes, image)
 
     page = {
         "image": str(image_path),
         "ic_xml": str(ic_xml_path),
         "staff_json": str(staff_json_path),
+        "anchor_mode": anchor_mode,
         "glyphs": [r.to_dict() for r in results],
     }
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(json.dumps(page, indent=2))
 
     reasons = Counter(r.reason or "pitch_ok" for r in results)
-    print(f"{len(results)} glyphs processed. Breakdown: {dict(reasons)}")
+    print(f"{len(results)} glyphs processed (anchor mode: {anchor_mode}). "
+          f"Breakdown: {dict(reasons)}")
+    _print_anchor_summary(results)
     print(f"Wrote {output_path}")
 
     if debug_viz_path:
         _render_debug_viz(image_path, results, staves, debug_viz_path, debug_scale)
         print(f"Wrote debug viz {debug_viz_path} (scale={debug_scale}x)")
+
+
+def _print_anchor_summary(results):
+    """Report how many glyphs actually got a measured anchor, per class.
+
+    A silent fall back to geometry on the classes the pixel crops exist for
+    (virga's stem, podatus's second head) would look exactly like a working
+    run, so count them out loud.
+    """
+    fell_back = Counter(r.ic["class_name"] for r in results
+                        if "pixel_anchor_unavailable" in r.flags)
+    if fell_back:
+        print(f"  {sum(fell_back.values())} glyph(s) fell back to bbox geometry "
+              f"(no measurable ink): {dict(fell_back)}")
+    off_range = sum(1 for r in results if "anchor_x_fell_back_to_center" in r.flags)
+    if off_range:
+        print(f"  {off_range} glyph(s) had their anchor x clamped to the bbox center "
+              "(crop band outside the detected staff lines)")
 
 
 def _pitch_str(pitch: dict) -> str:
@@ -192,11 +228,15 @@ def main():
                               "pass the flag bare to name it after --output.")
     parser.add_argument("--debug-scale", type=float, default=2.5,
                          help="Upscale factor for the debug viz canvas (bigger = more legible labels).")
+    parser.add_argument("--anchor-mode", choices=("pixel", "bbox"), default="pixel",
+                         help="How to find each glyph's notehead: 'pixel' (default) "
+                              "uses rodan-style per-class ink centroids from the image; "
+                              "'bbox' uses bbox top/bottom geometry only.")
     args = parser.parse_args()
 
     try:
         run(args.image, args.ic_xml, args.staff_json, args.output, args.neume_csv,
-            args.debug_viz, args.debug_scale)
+            args.debug_viz, args.debug_scale, args.anchor_mode)
     except ValueError as exc:  # bad --debug-viz path: a usage error, not a crash
         parser.error(str(exc))
 
