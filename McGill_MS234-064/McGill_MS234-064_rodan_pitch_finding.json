@@ -1,7 +1,7 @@
 {
-  "image": "/Users/kunfang/Projects/DDMAL/pitch-finding/McGill_MS234-064/McGill_MS234-064.jpg",
-  "ic_xml": "/Users/kunfang/Projects/DDMAL/pitch-finding/McGill_MS234-064/ic-session-McGill_MS234-064-manual-neumes.xml",
-  "staff_json": "/Users/kunfang/Projects/DDMAL/pitch-finding/McGill_MS234-064/McGill_MS234-064_stafflines.json",
+  "image": "../McGill_MS234-064/McGill_MS234-064.jpg",
+  "ic_xml": "../McGill_MS234-064/ic-session-McGill_MS234-064-manual-neumes.xml",
+  "staff_json": "../McGill_MS234-064/McGill_MS234-064_stafflines.json",
   "algorithm": "rodan_style",
   "glyphs": [
     {
@@ -17,6 +17,8 @@
       },
       "stave_id": 7,
       "stave_step": 0,
+      "center_x": 555,
+      "center_y": 2175.376984126984,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -38,6 +40,8 @@
       },
       "stave_id": 6,
       "stave_step": 4,
+      "center_x": 1272,
+      "center_y": 1836.9305555555557,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -59,6 +63,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 1227,
+      "center_y": 1847.5280665280666,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -80,6 +86,8 @@
       },
       "stave_id": 6,
       "stave_step": 2,
+      "center_x": 1006,
+      "center_y": 1875.5353535353536,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -101,6 +109,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 940,
+      "center_y": 1864.063025210084,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -122,6 +132,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 862,
+      "center_y": 1858.6631419939577,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -143,6 +155,8 @@
       },
       "stave_id": 7,
       "stave_step": 2,
+      "center_x": 475,
+      "center_y": 2128.936842105263,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -164,6 +178,8 @@
       },
       "stave_id": 6,
       "stave_step": 2,
+      "center_x": 525,
+      "center_y": 1868.908256880734,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -185,6 +201,8 @@
       },
       "stave_id": 7,
       "stave_step": 2,
+      "center_x": 454,
+      "center_y": 2120.525629077353,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -206,6 +224,8 @@
       },
       "stave_id": 7,
       "stave_step": 0,
+      "center_x": 243,
+      "center_y": 2166.3387978142077,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -227,6 +247,8 @@
       },
       "stave_id": 7,
       "stave_step": 2,
+      "center_x": 218,
+      "center_y": 2124.184549356223,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -248,6 +270,8 @@
       },
       "stave_id": 7,
       "stave_step": 2,
+      "center_x": 416,
+      "center_y": 2128.8155339805826,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -269,6 +293,8 @@
       },
       "stave_id": 7,
       "stave_step": 0,
+      "center_x": 320,
+      "center_y": 2170.103351955307,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -290,6 +316,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 358,
+      "center_y": 1857.409214092141,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -311,6 +339,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 186,
+      "center_y": 1858.1176470588234,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -332,6 +362,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 282,
+      "center_y": 1852.4648829431437,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -353,6 +385,8 @@
       },
       "stave_id": 6,
       "stave_step": 4,
+      "center_x": 158,
+      "center_y": 1835.0,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -374,6 +408,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 251,
+      "center_y": 1594.3543859649124,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -395,6 +431,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 317,
+      "center_y": 1595.5390334572492,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -416,6 +454,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 444,
+      "center_y": 1597.5204301075269,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -437,6 +477,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 206,
+      "center_y": 1590.4054054054054,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -458,6 +500,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 480,
+      "center_y": 1585.5739348370928,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -479,6 +523,8 @@
       },
       "stave_id": 5,
       "stave_step": 5,
+      "center_x": 514,
+      "center_y": 1564.1516683518705,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -500,6 +546,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 517,
+      "center_y": 1354.0184921763869,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -521,6 +569,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 593,
+      "center_y": 1362.3333333333333,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -542,6 +592,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 563,
+      "center_y": 1346.605488850772,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -563,6 +615,8 @@
       },
       "stave_id": 5,
       "stave_step": 0,
+      "center_x": 1024,
+      "center_y": 1667.805164319249,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -584,6 +638,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 866,
+      "center_y": 1339.827067669173,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -605,6 +661,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 601,
+      "center_y": 1587.934,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -626,6 +684,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 995,
+      "center_y": 1361.7435897435898,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -647,6 +707,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 743,
+      "center_y": 1612.7940379403794,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -668,6 +730,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 1150,
+      "center_y": 1627.1433691756272,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -689,6 +753,8 @@
       },
       "stave_id": 5,
       "stave_step": null,
+      "center_x": null,
+      "center_y": null,
       "pitch": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
@@ -707,6 +773,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 1115,
+      "center_y": 1632.6212832550862,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -728,6 +796,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 1102,
+      "center_y": 1361.6283524904215,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -749,6 +819,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 1243,
+      "center_y": 1333.5925925925926,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -770,6 +842,8 @@
       },
       "stave_id": 4,
       "stave_step": null,
+      "center_x": null,
+      "center_y": null,
       "pitch": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
@@ -788,6 +862,8 @@
       },
       "stave_id": 4,
       "stave_step": 5,
+      "center_x": 1285,
+      "center_y": 1322.5163636363636,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -809,6 +885,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 1327,
+      "center_y": 1332.132132132132,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -830,6 +908,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 1466,
+      "center_y": 1599.8441396508729,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -851,6 +931,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 1427,
+      "center_y": 1100.0310880829015,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -872,6 +954,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 1410,
+      "center_y": 1079.343642611684,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -893,6 +977,8 @@
       },
       "stave_id": 3,
       "stave_step": -1,
+      "center_x": 1272,
+      "center_y": 1177.3062200956938,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -914,6 +1000,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1487,
+      "center_y": 826.831715210356,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -935,6 +1023,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1414,
+      "center_y": 823.3277591973244,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -956,6 +1046,8 @@
       },
       "stave_id": 3,
       "stave_step": 6,
+      "center_x": 1086,
+      "center_y": 1028.0059221658207,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -977,6 +1069,8 @@
       },
       "stave_id": 3,
       "stave_step": 6,
+      "center_x": 1046,
+      "center_y": 1032.948905109489,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -998,6 +1092,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 883,
+      "center_y": 826.5180722891566,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1019,6 +1115,8 @@
       },
       "stave_id": 2,
       "stave_step": 2,
+      "center_x": 846,
+      "center_y": 864.46547314578,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -1040,6 +1138,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 838,
+      "center_y": 1097.2962962962963,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1061,6 +1161,8 @@
       },
       "stave_id": 3,
       "stave_step": 6,
+      "center_x": 527,
+      "center_y": 1039.3543307086613,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1082,6 +1184,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 738,
+      "center_y": 834.5498783454988,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1103,6 +1207,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 546,
+      "center_y": 1081.6625514403293,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1124,6 +1230,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 634,
+      "center_y": 1080.2571428571428,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1145,6 +1253,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 559,
+      "center_y": 1098.328282828283,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1166,6 +1276,8 @@
       },
       "stave_id": 3,
       "stave_step": 5,
+      "center_x": 458,
+      "center_y": 1052.0267379679144,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1187,6 +1299,8 @@
       },
       "stave_id": 3,
       "stave_step": 5,
+      "center_x": 495,
+      "center_y": 1054.1801962533452,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1208,6 +1322,8 @@
       },
       "stave_id": 3,
       "stave_step": 6,
+      "center_x": 411,
+      "center_y": 1043.6414686825053,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1229,6 +1345,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 389,
+      "center_y": 1081.3875,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1250,6 +1368,8 @@
       },
       "stave_id": 3,
       "stave_step": 5,
+      "center_x": 186,
+      "center_y": 1054.9028384279477,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1271,6 +1391,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 159,
+      "center_y": 1079.7975708502024,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1292,6 +1414,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 382,
+      "center_y": 1100.6666666666667,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1313,6 +1437,8 @@
       },
       "stave_id": 3,
       "stave_step": 5,
+      "center_x": 169,
+      "center_y": 1061.7880184331798,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1334,6 +1460,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 259,
+      "center_y": 1095.8243902439024,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1355,6 +1483,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 562,
+      "center_y": 825.7916666666666,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1376,6 +1506,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 520,
+      "center_y": 827.4869215291751,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1397,6 +1529,8 @@
       },
       "stave_id": 2,
       "stave_step": 3,
+      "center_x": 491,
+      "center_y": 845.6620498614958,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1418,6 +1552,8 @@
       },
       "stave_id": 2,
       "stave_step": 1,
+      "center_x": 285,
+      "center_y": 885.0507343124166,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -1439,6 +1575,8 @@
       },
       "stave_id": 2,
       "stave_step": 2,
+      "center_x": 161,
+      "center_y": 859.8862275449102,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -1460,6 +1598,8 @@
       },
       "stave_id": 1,
       "stave_step": 2,
+      "center_x": 691,
+      "center_y": 615.1970588235295,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1481,6 +1621,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1394,
+      "center_y": 570.2548638132296,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1502,6 +1644,8 @@
       },
       "stave_id": 1,
       "stave_step": 3,
+      "center_x": 1415,
+      "center_y": 600.1925795053004,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1523,6 +1667,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1367,
+      "center_y": 561.4418367346939,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1544,6 +1690,8 @@
       },
       "stave_id": 0,
       "stave_step": 4,
+      "center_x": 1328,
+      "center_y": 325.6479820627803,
       "pitch": {
         "pname": "G",
         "oct": 4
@@ -1565,6 +1713,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 1434,
+      "center_y": 372.0845588235294,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -1586,6 +1736,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1379,
+      "center_y": 352.21202003338897,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -1607,6 +1759,8 @@
       },
       "stave_id": 1,
       "stave_step": 2,
+      "center_x": 1490,
+      "center_y": 611.1984924623116,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1628,6 +1782,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1293,
+      "center_y": 340.25025432349946,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -1649,6 +1805,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1211,
+      "center_y": 350.52,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -1670,6 +1828,8 @@
       },
       "stave_id": 0,
       "stave_step": 5,
+      "center_x": 1169,
+      "center_y": 300.668449197861,
       "pitch": {
         "pname": "A",
         "oct": 4
@@ -1691,6 +1851,8 @@
       },
       "stave_id": 0,
       "stave_step": 4,
+      "center_x": 1138,
+      "center_y": 322.39853300733495,
       "pitch": {
         "pname": "G",
         "oct": 4
@@ -1712,6 +1874,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1003,
+      "center_y": 571.9607250755287,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1733,6 +1897,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 942,
+      "center_y": 574.0133333333333,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1754,6 +1920,8 @@
       },
       "stave_id": 1,
       "stave_step": 2,
+      "center_x": 1100,
+      "center_y": 612.5284403669725,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1775,6 +1943,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1092,
+      "center_y": 574.3221649484536,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1796,6 +1966,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1092,
+      "center_y": 335.732181425486,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -1817,6 +1989,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 956,
+      "center_y": 358.0665054413543,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -1838,6 +2012,8 @@
       },
       "stave_id": 1,
       "stave_step": 3,
+      "center_x": 1467,
+      "center_y": 591.3227848101266,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -1859,6 +2035,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1334,
+      "center_y": 570.5774336283185,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -1880,6 +2058,8 @@
       },
       "stave_id": 3,
       "stave_step": 2,
+      "center_x": 1444,
+      "center_y": 1118.2244897959183,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -1901,6 +2081,8 @@
       },
       "stave_id": 1,
       "stave_step": 2,
+      "center_x": 1414,
+      "center_y": 611.2689655172413,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -1922,6 +2104,8 @@
       },
       "stave_id": 3,
       "stave_step": 3,
+      "center_x": 1389,
+      "center_y": 1099.2992700729926,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -1943,6 +2127,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 1059,
+      "center_y": 363.3198653198653,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -1964,6 +2150,8 @@
       },
       "stave_id": 5,
       "stave_step": 1,
+      "center_x": 651,
+      "center_y": 1646.5956284153006,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -1985,6 +2173,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1071,
+      "center_y": 346.2379182156134,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2006,6 +2196,8 @@
       },
       "stave_id": 1,
       "stave_step": 2,
+      "center_x": 1478,
+      "center_y": 609.5719178082192,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -2027,6 +2219,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 1401,
+      "center_y": 366.8607594936709,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -2048,6 +2242,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 1267,
+      "center_y": 344.1923076923077,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2069,6 +2265,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 623,
+      "center_y": 1610.2142857142858,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -2090,6 +2288,8 @@
       },
       "stave_id": 0,
       "stave_step": 1,
+      "center_x": 1415,
+      "center_y": 384.33009708737865,
       "pitch": {
         "pname": "D",
         "oct": 4
@@ -2111,6 +2311,8 @@
       },
       "stave_id": 3,
       "stave_step": 2,
+      "center_x": 1377,
+      "center_y": 1116.3172690763051,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2132,6 +2334,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 411,
+      "center_y": 1623.2477064220184,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2153,6 +2357,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 1258,
+      "center_y": 362.98237885462555,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -2174,6 +2380,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 632,
+      "center_y": 1629.8739130434783,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2195,6 +2403,8 @@
       },
       "stave_id": 5,
       "stave_step": 3,
+      "center_x": 424,
+      "center_y": 1605.0728155339805,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -2216,6 +2426,8 @@
       },
       "stave_id": 1,
       "stave_step": 1,
+      "center_x": 671,
+      "center_y": 634.0826446280992,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -2237,6 +2449,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 889,
+      "center_y": 367.9303482587065,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -2258,6 +2472,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 874,
+      "center_y": 348.91866028708137,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2279,6 +2495,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 656,
+      "center_y": 1621.7536231884058,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2300,6 +2518,8 @@
       },
       "stave_id": 1,
       "stave_step": 1,
+      "center_x": 566,
+      "center_y": 641.4756097560976,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -2321,6 +2541,8 @@
       },
       "stave_id": 1,
       "stave_step": 1,
+      "center_x": 619,
+      "center_y": 635.0693069306931,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -2342,6 +2564,8 @@
       },
       "stave_id": 1,
       "stave_step": 5,
+      "center_x": 290,
+      "center_y": 567.1843817787419,
       "pitch": {
         "pname": "D",
         "oct": 4
@@ -2363,6 +2587,8 @@
       },
       "stave_id": 1,
       "stave_step": 5,
+      "center_x": 246,
+      "center_y": 564.8389380530973,
       "pitch": {
         "pname": "D",
         "oct": 4
@@ -2384,6 +2610,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 229,
+      "center_y": 580.2272727272727,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2405,6 +2633,8 @@
       },
       "stave_id": 1,
       "stave_step": 3,
+      "center_x": 224,
+      "center_y": 599.027397260274,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -2426,6 +2656,8 @@
       },
       "stave_id": 4,
       "stave_step": 0,
+      "center_x": 213,
+      "center_y": 1425.657060518732,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -2447,6 +2679,8 @@
       },
       "stave_id": 4,
       "stave_step": 0,
+      "center_x": 181,
+      "center_y": 1425.639534883721,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -2468,6 +2702,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 778,
+      "center_y": 343.47906976744184,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2489,6 +2725,8 @@
       },
       "stave_id": 0,
       "stave_step": 4,
+      "center_x": 853,
+      "center_y": 327.6598513011152,
       "pitch": {
         "pname": "G",
         "oct": 4
@@ -2510,6 +2748,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 726,
+      "center_y": 349.68560606060606,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2531,6 +2771,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 433,
+      "center_y": 355.50558659217876,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2552,6 +2794,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 187,
+      "center_y": 377.344262295082,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -2573,6 +2817,8 @@
       },
       "stave_id": 3,
       "stave_step": 0,
+      "center_x": 126,
+      "center_y": 1122.0087336244542,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2597,6 +2843,8 @@
       },
       "stave_id": 1,
       "stave_step": 0,
+      "center_x": 130,
+      "center_y": 662.531746031746,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2620,6 +2868,8 @@
       },
       "stave_id": 2,
       "stave_step": 0,
+      "center_x": 132,
+      "center_y": 915.6483516483516,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2644,6 +2894,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 130,
+      "center_y": 1619.0047619047618,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2667,6 +2919,8 @@
       },
       "stave_id": 5,
       "stave_step": 6,
+      "center_x": 141,
+      "center_y": 1542.6143911439115,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2688,6 +2942,8 @@
       },
       "stave_id": 7,
       "stave_step": 6,
+      "center_x": 209,
+      "center_y": 2044.4525,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2709,6 +2965,8 @@
       },
       "stave_id": 3,
       "stave_step": 6,
+      "center_x": 133,
+      "center_y": 1043.3178947368422,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2733,6 +2991,8 @@
       },
       "stave_id": 4,
       "stave_step": 8,
+      "center_x": 132,
+      "center_y": 1298.0602409638554,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2757,6 +3017,8 @@
       },
       "stave_id": 6,
       "stave_step": 10,
+      "center_x": 138,
+      "center_y": 1789.8115384615385,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2780,6 +3042,8 @@
       },
       "stave_id": 0,
       "stave_step": 0,
+      "center_x": 126,
+      "center_y": 376.3009478672986,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2804,6 +3068,8 @@
       },
       "stave_id": 2,
       "stave_step": 6,
+      "center_x": 132,
+      "center_y": 829.7866666666666,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2828,6 +3094,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 127,
+      "center_y": 582.4362139917696,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -2851,6 +3119,8 @@
       },
       "stave_id": 0,
       "stave_step": 4,
+      "center_x": 117,
+      "center_y": 308.375,
       "pitch": {
         "pname": "G",
         "oct": 4
@@ -2875,6 +3145,8 @@
       },
       "stave_id": 5,
       "stave_step": 0,
+      "center_x": 951,
+      "center_y": 1665.6332288401254,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -2896,6 +3168,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 521,
+      "center_y": 344.1446808510638,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2917,6 +3191,8 @@
       },
       "stave_id": 2,
       "stave_step": 2,
+      "center_x": 231,
+      "center_y": 871.1336515513126,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -2938,6 +3214,8 @@
       },
       "stave_id": 6,
       "stave_step": 2,
+      "center_x": 646,
+      "center_y": 1866.4454976303318,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -2959,6 +3237,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 354,
+      "center_y": 348.3347921225383,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -2980,6 +3260,8 @@
       },
       "stave_id": 1,
       "stave_step": 5,
+      "center_x": 353,
+      "center_y": 549.7665289256198,
       "pitch": {
         "pname": "D",
         "oct": 4
@@ -3001,6 +3283,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 164,
+      "center_y": 1586.2898230088495,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3022,6 +3306,8 @@
       },
       "stave_id": 7,
       "stave_step": 4,
+      "center_x": 1019,
+      "center_y": 2090.262910798122,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3043,6 +3329,8 @@
       },
       "stave_id": 7,
       "stave_step": 0,
+      "center_x": 590,
+      "center_y": 2169.9144144144143,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -3064,6 +3352,8 @@
       },
       "stave_id": 3,
       "stave_step": 2,
+      "center_x": 1484,
+      "center_y": 1117.575907590759,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3085,6 +3375,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 791,
+      "center_y": 574.2157303370786,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -3106,6 +3398,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 916,
+      "center_y": 1075.5387673956263,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3127,6 +3421,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1249,
+      "center_y": 822.8668171557562,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3148,6 +3444,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 1453,
+      "center_y": 1333.2558685446008,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3169,6 +3467,8 @@
       },
       "stave_id": 7,
       "stave_step": 0,
+      "center_x": 672,
+      "center_y": 2171.2930232558138,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -3190,6 +3490,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1365,
+      "center_y": 825.0310421286031,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3211,6 +3513,8 @@
       },
       "stave_id": 2,
       "stave_step": 2,
+      "center_x": 376,
+      "center_y": 868.7285318559557,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3232,6 +3536,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 1364,
+      "center_y": 1332.2004405286343,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3253,6 +3559,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 621,
+      "center_y": 825.3283898305085,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3274,6 +3582,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 964,
+      "center_y": 825.2931034482758,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3295,6 +3605,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 427,
+      "center_y": 826.6287878787879,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3316,6 +3628,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 724,
+      "center_y": 570.9724576271186,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -3337,6 +3651,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 682,
+      "center_y": 1353.0995670995671,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -3358,6 +3674,8 @@
       },
       "stave_id": 4,
       "stave_step": 4,
+      "center_x": 473,
+      "center_y": 1334.9414634146342,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3379,6 +3697,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1146,
+      "center_y": 823.3951219512195,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3400,6 +3720,8 @@
       },
       "stave_id": 4,
       "stave_step": 3,
+      "center_x": 787,
+      "center_y": 1354.7548387096774,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -3421,6 +3743,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 1272,
+      "center_y": 569.4701986754967,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -3442,6 +3766,8 @@
       },
       "stave_id": 7,
       "stave_step": 3,
+      "center_x": 953,
+      "center_y": 2107.9896640826873,
       "pitch": {
         "pname": "G",
         "oct": 3
@@ -3463,6 +3789,8 @@
       },
       "stave_id": 2,
       "stave_step": 4,
+      "center_x": 1062,
+      "center_y": 825.7538802660754,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3484,6 +3812,8 @@
       },
       "stave_id": 0,
       "stave_step": 3,
+      "center_x": 638,
+      "center_y": 341.0299539170507,
       "pitch": {
         "pname": "F",
         "oct": 4
@@ -3505,6 +3835,8 @@
       },
       "stave_id": 3,
       "stave_step": 4,
+      "center_x": 573,
+      "center_y": 1079.4098360655737,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3526,6 +3858,8 @@
       },
       "stave_id": 7,
       "stave_step": 1,
+      "center_x": 898,
+      "center_y": 2151.223880597015,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -3547,6 +3881,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 1412,
+      "center_y": 1591.3078880407124,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3568,6 +3904,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 450,
+      "center_y": 1859.913669064748,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -3589,6 +3927,8 @@
       },
       "stave_id": 6,
       "stave_step": 2,
+      "center_x": 793,
+      "center_y": 1866.6053215077604,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -3610,6 +3950,8 @@
       },
       "stave_id": 1,
       "stave_step": 4,
+      "center_x": 871,
+      "center_y": 573.8526570048309,
       "pitch": {
         "pname": "C",
         "oct": 4
@@ -3631,6 +3973,8 @@
       },
       "stave_id": 6,
       "stave_step": 2,
+      "center_x": 705,
+      "center_y": 1867.048309178744,
       "pitch": {
         "pname": "B",
         "oct": 2
@@ -3652,6 +3996,8 @@
       },
       "stave_id": 6,
       "stave_step": 4,
+      "center_x": 1150,
+      "center_y": 1843.8228699551569,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -3673,6 +4019,8 @@
       },
       "stave_id": 5,
       "stave_step": 4,
+      "center_x": 1364,
+      "center_y": 1590.871739130435,
       "pitch": {
         "pname": "A",
         "oct": 3
@@ -3694,6 +4042,8 @@
       },
       "stave_id": 6,
       "stave_step": 3,
+      "center_x": 592,
+      "center_y": 1863.1924778761063,
       "pitch": {
         "pname": "C",
         "oct": 3
@@ -3715,6 +4065,8 @@
       },
       "stave_id": 3,
       "stave_step": null,
+      "center_x": null,
+      "center_y": null,
       "pitch": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
@@ -3733,6 +4085,8 @@
       },
       "stave_id": 0,
       "stave_step": 2,
+      "center_x": 1471,
+      "center_y": 365.53125,
       "pitch": {
         "pname": "E",
         "oct": 4
@@ -3754,6 +4108,8 @@
       },
       "stave_id": 1,
       "stave_step": 3,
+      "center_x": 1135,
+      "center_y": 584.9349945828819,
       "pitch": {
         "pname": "B",
         "oct": 3
@@ -3775,6 +4131,8 @@
       },
       "stave_id": 4,
       "stave_step": 2,
+      "center_x": 294,
+      "center_y": 1375.328552803129,
       "pitch": {
         "pname": "D",
         "oct": 3
@@ -3796,6 +4154,8 @@
       },
       "stave_id": 1,
       "stave_step": null,
+      "center_x": null,
+      "center_y": null,
       "pitch": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
@@ -3814,6 +4174,8 @@
       },
       "stave_id": 5,
       "stave_step": 2,
+      "center_x": 818,
+      "center_y": 1625.2976653696498,
       "pitch": {
         "pname": "F",
         "oct": 3
@@ -3835,6 +4197,8 @@
       },
       "stave_id": 3,
       "stave_step": null,
+      "center_x": null,
+      "center_y": null,
       "pitch": null,
       "clef_used": null,
       "reason": "pitchless_symbol",
@@ -3853,6 +4217,8 @@
       },
       "stave_id": 3,
       "stave_step": 7,
+      "center_x": 1115,
+      "center_y": 1021.3778162911611,
       "pitch": {
         "pname": "D",
         "oct": 4
@@ -3874,6 +4240,8 @@
       },
       "stave_id": 3,
       "stave_step": 1,
+      "center_x": 1461,
+      "center_y": 1135.0869565217392,
       "pitch": {
         "pname": "E",
         "oct": 3
@@ -3895,6 +4263,8 @@
       },
       "stave_id": 4,
       "stave_step": 0,
+      "center_x": 241,
+      "center_y": 1423.1661538461537,
       "pitch": {
         "pname": "B",
         "oct": 2

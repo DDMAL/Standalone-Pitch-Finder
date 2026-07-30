@@ -8,17 +8,17 @@ couldn't be computed). Optionally renders a debug overlay on the manuscript
 image, in the same spirit as staff-finding's *_stave_grouping.png artifacts.
 
 Usage:
-    python run_pitch_finding.py \\
-        --image page.jpg --ic-xml ic_output/ic-session-page.xml \\
-        --staff-json page_stafflines.json --output page_pitch_finding.json \\
-        [--neume-csv neumes-cheatsheet/csv-square_notation_neume_level_newest.csv] \\
-        [--debug-viz page_pitch_finding_debug.jpg]
+    python run_pitch_finding.py ../McGill_MS234-064 --debug-viz
 
---output also accepts a directory, and --debug-viz can be passed bare to name
-the overlay after --output, so this works too:
+One argument: the page folder. page_inputs finds the image, IC XML and staff
+JSON inside it, and the artifacts are written next to them
+(<image stem>_pitch_finding.json, plus _debug.jpg and _debug_nolabels.jpg with
+--debug-viz -- the same overlay with and without captions, since the captions
+are what makes a densely notated page unreadable). Any of those paths can
+still be given explicitly to override discovery:
 
-    python run_pitch_finding.py --image page.jpg --ic-xml ... --staff-json ... \\
-        --output out_dir/ --debug-viz
+    python run_pitch_finding.py page_dir/ --ic-xml other/ic.xml \\
+        --output out_dir/ --debug-viz overlay.jpg
 
 --anchor-mode picks how each glyph's notehead position is found: "pixel"
 (default) reads rodan-style per-class ink centroids off the image, "bbox"
@@ -33,12 +33,13 @@ from pathlib import Path
 import cv2
 
 from ic_io import parse_ic_xml
-from staff_io import load_staves
+from staff_io import load_staves_with_report
 from neume_shapes import load_neume_shapes
+from page_inputs import PageInputs, resolve_page_inputs
 from pitch_finder import find_pitches
 from viz_utils import (load_scaled_image, draw_labeled_box, draw_note_center,
                        draw_stafflines, resolve_output_path, resolve_debug_viz_path,
-                       write_image)
+                       unlabeled_variant_path, write_image)
 
 DEFAULT_NEUME_CSV = Path(__file__).parent.parent / "neumes-cheatsheet" / "csv-square_notation_neume_level_newest.csv"
 
@@ -51,33 +52,39 @@ _COLOR_PITCHLESS = (150, 150, 150)   # grey: pitchless_symbol / not music
 _COLOR_PROBLEM = (40, 40, 220)       # red: missing_clef / missing_staff / no_line_coverage
 
 
-def run(image_path: Path, ic_xml_path: Path, staff_json_path: Path, output_path: Path,
-        neume_csv_path: Path, debug_viz: str = None, debug_scale: float = 2.5,
-        anchor_mode: str = "pixel"):
+def run(inputs: PageInputs, output_path: Path = None, *,
+        neume_csv_path: Path = DEFAULT_NEUME_CSV, debug_viz: str = None,
+        debug_scale: float = 2.5, anchor_mode: str = "pixel",
+        regroup_staves: bool = True):
     # Resolve both artifact paths before doing any work: an unwritable
-    # --debug-viz should be reported now, not after the debug render.
-    output_path = resolve_output_path(output_path, image_path, "_pitch_finding.json")
+    # --debug-viz should be reported now, not after the debug render. With no
+    # --output, both land in the page folder alongside the inputs.
+    output_path = resolve_output_path(output_path or inputs.page_dir, inputs.image,
+                                     "_pitch_finding.json")
     debug_viz_path = resolve_debug_viz_path(
         debug_viz, output_path.with_name(f"{output_path.stem}_debug.jpg"))
 
-    glyphs = parse_ic_xml(ic_xml_path)
-    staves = load_staves(staff_json_path)
+    glyphs = parse_ic_xml(inputs.ic_xml)
+    staves, regroup_report = load_staves_with_report(inputs.staff_json,
+                                                     regroup=regroup_staves)
+    if regroup_report:
+        print(regroup_report.summary())
     shapes = load_neume_shapes(neume_csv_path)
 
     image = None
     if anchor_mode == "pixel":
-        image = cv2.imread(str(image_path))
+        image = cv2.imread(str(inputs.image))
         if image is None:
             raise FileNotFoundError(
-                f"Could not load image: {image_path} (needed for "
+                f"Could not load image: {inputs.image} (needed for "
                 "--anchor-mode pixel; --anchor-mode bbox needs no pixels)")
 
     results = find_pitches(glyphs, staves, shapes, image)
 
     page = {
-        "image": str(image_path),
-        "ic_xml": str(ic_xml_path),
-        "staff_json": str(staff_json_path),
+        "image": str(inputs.image),
+        "ic_xml": str(inputs.ic_xml),
+        "staff_json": str(inputs.staff_json),
         "anchor_mode": anchor_mode,
         "glyphs": [r.to_dict() for r in results],
     }
@@ -91,8 +98,17 @@ def run(image_path: Path, ic_xml_path: Path, staff_json_path: Path, output_path:
     print(f"Wrote {output_path}")
 
     if debug_viz_path:
-        _render_debug_viz(image_path, results, staves, debug_viz_path, debug_scale)
+        _render_debug_viz(inputs.image, results, staves, debug_viz_path, debug_scale)
         print(f"Wrote debug viz {debug_viz_path} (scale={debug_scale}x)")
+        # Same overlay, no text. Rendered from a second load of the page rather
+        # than by peeling labels off the first canvas: the labelled pass draws
+        # white-backed text over the boxes it has already drawn, so there is
+        # nothing left to remove afterwards.
+        plain_path = unlabeled_variant_path(debug_viz_path)
+        _render_debug_viz(inputs.image, results, staves, plain_path, debug_scale,
+                          labels=False)
+        print(f"Wrote debug viz {plain_path} (scale={debug_scale}x, boxes and "
+              "note centers only)")
 
 
 def _print_anchor_summary(results):
@@ -153,7 +169,7 @@ def _box_label(r) -> str:
     return None
 
 
-def _draw_note_centers(img, r, color: tuple, scale: float):
+def _draw_note_centers(img, r, color: tuple, scale: float, labels: bool = True):
     """One crosshair per computed notehead center, labelled "<note no>:<pitch>".
 
     Components are numbered in note order (1 = the neume's first note), which
@@ -166,7 +182,8 @@ def _draw_note_centers(img, r, color: tuple, scale: float):
     overstruck label. "1,3:d4" says the same thing honestly.
 
     Single-note glyphs get an unlabelled marker -- the box label already names
-    the only pitch there is, so a second copy of it is noise.
+    the only pitch there is, so a second copy of it is noise. With labels=False
+    every marker is unlabelled, for the text-free copy of the overlay.
     """
     groups = {}  # rounded page-pixel (x, y) -> (x, y, [note numbers], pitch)
     for note_no, nc in enumerate(r.note_components, start=1):
@@ -181,7 +198,7 @@ def _draw_note_centers(img, r, color: tuple, scale: float):
     multi_note = len(r.note_components) > 1
     for x, y, note_nos, pitch in groups.values():
         label = None
-        if multi_note and pitch:
+        if labels and multi_note and pitch:
             label = f"{','.join(str(n) for n in note_nos)}:{_pitch_str(pitch)}"
         # Labels start at the box's right edge so they never cover the glyph's
         # own ink -- with up to four of them stacked inside one bbox, that ink
@@ -190,54 +207,87 @@ def _draw_note_centers(img, r, color: tuple, scale: float):
                          label_x=r.ic["ulx"] + r.ic["ncols"])
 
 
-def _render_debug_viz(image_path: Path, results, staves, out_path: Path, scale: float = 2.5):
+def _render_debug_viz(image_path: Path, results, staves, out_path: Path,
+                      scale: float = 2.5, labels: bool = True):
+    """Draw the overlay for one page and write it to out_path.
+
+    labels=False suppresses every caption -- pitch labels, per-note marker
+    labels and staff-line tags -- leaving only staff lines, glyph boxes and
+    note-center crosshairs. On a full page the labelled version is unreadable
+    where the notation is dense (labels are wider than the glyphs they belong
+    to, so they collide), and this is the copy where the geometry actually being
+    debugged, box vs marker vs staff line, is visible. Both are rendered at the
+    same scale, so the same page pixel is the same pixel in both files.
+    """
     img = load_scaled_image(image_path, scale)
     if img is None:
         print(f"  Could not load {image_path} for debug viz; skipping.")
         return
 
     # Staff lines first, so glyph boxes and labels stay legible on top of them.
-    draw_stafflines(img, staves, scale, label_lines=True)
+    draw_stafflines(img, staves, scale, label_lines=labels)
 
     colored = [(r, _color_for(r)) for r in results]
 
     for r, color in colored:
         draw_labeled_box(img, r.ic["ulx"], r.ic["uly"], r.ic["ncols"], r.ic["nrows"],
-                         _box_label(r), color, scale)
+                         _box_label(r) if labels else None, color, scale)
 
     # Markers in a second pass, after every box and label: a marker sits inside
     # its own box, but glyphs here are close enough together that a neighbour's
     # white-backed label would paint over it if they were drawn glyph by glyph.
     for r, color in colored:
-        _draw_note_centers(img, r, color, scale)
+        _draw_note_centers(img, r, color, scale, labels)
 
     write_image(out_path, img)
 
 
 def main():
     parser = argparse.ArgumentParser(description="Mothra pitch-finding prototype")
-    parser.add_argument("--image", required=True, type=Path)
-    parser.add_argument("--ic-xml", required=True, type=Path)
-    parser.add_argument("--staff-json", required=True, type=Path)
-    parser.add_argument("--output", required=True, type=Path,
+    parser.add_argument("page", type=Path,
+                         help="Page folder holding the image, IC XML and staff JSON "
+                              "(or the page image itself, to pick one of two pages "
+                              "sharing a folder).")
+    parser.add_argument("--output", type=Path, default=None,
                          help="JSON file to write, or a directory to write "
-                              "<image stem>_pitch_finding.json into.")
-    parser.add_argument("--neume-csv", type=Path, default=DEFAULT_NEUME_CSV)
+                              "<image stem>_pitch_finding.json into. "
+                              "Defaults to the page folder.")
     parser.add_argument("--debug-viz", nargs="?", const="auto", default=None,
-                         help="Render the debug overlay. Give an image filename, or "
+                         help="Render the debug overlay, twice: as given, plus a "
+                              "text-free '_nolabels' copy with only boxes, note "
+                              "centers and staff lines. Give an image filename, or "
                               "pass the flag bare to name it after --output.")
     parser.add_argument("--debug-scale", type=float, default=2.5,
-                         help="Upscale factor for the debug viz canvas (bigger = more legible labels).")
+                         help="Upscale factor for the debug viz canvas. Label text "
+                              "grows with its square root, so a bigger scale means "
+                              "labels that are both more legible and less crowded.")
     parser.add_argument("--anchor-mode", choices=("pixel", "bbox"), default="pixel",
                          help="How to find each glyph's notehead: 'pixel' (default) "
                               "uses rodan-style per-class ink centroids from the image; "
                               "'bbox' uses bbox top/bottom geometry only.")
+    parser.add_argument("--no-regroup", dest="regroup_staves", action="store_false",
+                         help="Trust staff-finding's own stave_id / "
+                              "within_stave_index instead of re-deriving the "
+                              "grouping from line geometry. Its grouping is by y "
+                              "alone, so on a two-column page it merges the two "
+                              "columns' lines into single eight-line staves.")
+    # Overrides for anything discovery gets wrong or can't see, e.g. an IC XML
+    # kept outside the page folder.
+    override_help = "Use this file instead of discovering one in the page folder."
+    parser.add_argument("--image", type=Path, default=None, help=override_help)
+    parser.add_argument("--ic-xml", type=Path, default=None, help=override_help)
+    parser.add_argument("--staff-json", type=Path, default=None, help=override_help)
+    parser.add_argument("--neume-csv", type=Path, default=DEFAULT_NEUME_CSV)
     args = parser.parse_args()
 
     try:
-        run(args.image, args.ic_xml, args.staff_json, args.output, args.neume_csv,
-            args.debug_viz, args.debug_scale, args.anchor_mode)
-    except ValueError as exc:  # bad --debug-viz path: a usage error, not a crash
+        inputs = resolve_page_inputs(args.page, args.image, args.ic_xml, args.staff_json)
+        print(f"Page {inputs.page_dir}: image={inputs.image.name}, "
+              f"ic_xml={inputs.ic_xml.name}, staff_json={inputs.staff_json.name}")
+        run(inputs, args.output, neume_csv_path=args.neume_csv,
+            debug_viz=args.debug_viz, debug_scale=args.debug_scale,
+            anchor_mode=args.anchor_mode, regroup_staves=args.regroup_staves)
+    except ValueError as exc:  # unresolvable input / bad --debug-viz path
         parser.error(str(exc))
 
 

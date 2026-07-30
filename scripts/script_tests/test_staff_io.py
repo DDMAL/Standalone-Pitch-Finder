@@ -100,3 +100,26 @@ def test_sparse_stave_flag_with_one_line():
     stave = Stave(stave_id=0, lines=lines)
     step, flags = stave.continuous_step_at_y(50, 100.0)
     assert "sparse_stave_lines" in flags
+
+
+def test_fragments_of_one_line_collapse_to_a_single_step():
+    # Two fragments of one physical line (same within_stave_index), split by an
+    # initial, whose spans overlap slightly. Both cover x=45, and two anchors at
+    # the same step define no slope -- so they have to collapse to one.
+    lines = [make_flat_line(y=100, within_idx=0, x_start=0, x_end=50),
+             make_flat_line(y=104, within_idx=0, x_start=40, x_end=99)]
+    stave = Stave(stave_id=0, lines=lines)
+    assert stave.step_at_x(45) == [(0, 102.0)]
+
+
+def test_overlapping_fragments_do_not_freeze_the_step():
+    # The failure this guards: with two same-step anchors, interpolation used to
+    # return that step for every y, so a whole stave read as one pitch.
+    lines = [make_flat_line(y=100, within_idx=0, x_start=0, x_end=50, scale_unit=10.0),
+             make_flat_line(y=104, within_idx=0, x_start=40, x_end=99, scale_unit=10.0)]
+    stave = Stave(stave_id=0, lines=lines)
+    on_line, flags = stave.continuous_step_at_y(45, 102.0)
+    above, _ = stave.continuous_step_at_y(45, 97.0)
+    assert on_line == 0
+    assert above == 1        # 5px up = scale_unit/2 = one step
+    assert "sparse_stave_lines" in flags

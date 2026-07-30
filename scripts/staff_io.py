@@ -1,25 +1,31 @@
 """
 Staff-finding JSON I/O.
 
-Parses the per-page staff-finding output (list of fitted staff lines, each
-already tagged with stave_id / within_stave_index by staff-finding's Stage 2
-grouping) into Stave objects that pitch_finder.py can query for "what
-diatonic step is at pixel (x, y)".
+Parses the per-page staff-finding output (a list of fitted staff lines) into
+Stave objects that pitch_finder.py can query for "what diatonic step is at
+pixel (x, y)".
 
 Step convention: within a stave, the bottom-most *detected* line is step 0;
-each detected line is 2 steps apart (the space between two adjacent lines is
+each line index is 2 steps apart (the space between two adjacent lines is
 step 1, 3, 5, ...). This mirrors standard staff notation (adjacent lines are
-a third apart = 2 diatonic degrees). See plan doc "known limitations": this
-trusts within_stave_index to be a correct top-to-bottom ordering of the
-lines that were actually detected -- if staff-finding under/over-detected
-lines for a stave, the step-0 anchor can be off by whole steps. That's
-surfaced via the sparse_stave_lines flag, not fixed here.
+a third apart = 2 diatonic degrees).
+
+The stave_id / within_stave_index in the file are staff-finding's own Stage 2
+grouping, which groups by y alone and so merges the two columns of a
+two-column page into single staves of eight lines. Loading therefore re-derives
+the grouping from the line geometry by default (see staff_regroup); pass
+regroup=False to take the file's grouping as-is. Either way the numbering
+trusts that the lines of a stave were detected: if the *bottom* line of a stave
+is missing, the step-0 anchor is off by whole steps. That is surfaced via the
+sparse_stave_lines flag and the regrouping report, not fixed here.
 """
 
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 import json
+
+from staff_regroup import RegroupReport, regroup_entries
 
 
 @dataclass
@@ -54,14 +60,22 @@ class Stave:
 
     def step_at_x(self, x: float) -> Optional[list[tuple[float, float]]]:
         """(step, y) pairs at page-pixel x for every line of this stave that
-        covers x. None if no line covers x."""
+        covers x, one pair per distinct step. None if no line covers x.
+
+        Two lines can share a within_stave_index -- they are fragments of one
+        physical line, split by an initial sitting in the stave -- and where
+        their spans happen to overlap, both cover x. Collapsing them to a single
+        averaged y keeps the steps distinct, which the interpolation below needs:
+        two anchors at the same step define no slope, and silently return that
+        step for every y.
+        """
         max_idx = self._max_within_index()
-        pairs = []
+        by_step: dict[float, list[float]] = {}
         for ln in self.lines:
             y = ln.y_at_x(x)
             if y is not None:
-                step = 2 * (max_idx - ln.within_stave_index)
-                pairs.append((step, y))
+                by_step.setdefault(2 * (max_idx - ln.within_stave_index), []).append(y)
+        pairs = [(step, sum(ys) / len(ys)) for step, ys in by_step.items()]
         return pairs or None
 
     def continuous_step_at_y(self, x: float, y: float) -> tuple[Optional[float], list[str]]:
@@ -148,14 +162,30 @@ class Stave:
         return (self.lines[0].scale_unit or 1.0) / 2
 
 
-def load_staves(path: Path) -> list[Stave]:
-    """Parse a staff-finding JSON file into a list of Staves.
+def load_staves(path: Path, *, regroup: bool = True) -> list[Stave]:
+    """Parse a staff-finding JSON file into a list of Staves."""
+    return load_staves_with_report(path, regroup=regroup)[0]
 
-    Lines with stave_id or within_stave_index missing (staff-finding
-    couldn't group them) are skipped -- they can't be assigned a step
-    position, so they're not useful to pitch-finding.
+
+def load_staves_with_report(path: Path, *, regroup: bool = True
+                            ) -> tuple[list[Stave], Optional[RegroupReport]]:
+    """Parse a staff-finding JSON file into (Staves, regrouping report).
+
+    With regroup=True (the default) the file's stave_id / within_stave_index are
+    re-derived from the line geometry, and the report says what that did -- it is
+    the only place a caller can see that, say, a page turned out to have two
+    columns, so the runners print it. The report is None with regroup=False.
+
+    Lines with stave_id or within_stave_index missing (staff-finding couldn't
+    group them) are skipped -- they can't be assigned a step position, so they're
+    not useful to pitch-finding. Regrouping assigns all of them, so this only
+    drops lines when regrouping is off.
     """
     data = json.loads(Path(path).read_text())
+    report = None
+    if regroup:
+        data, report = regroup_entries(data)
+
     by_stave: dict[int, list[StaffLine]] = {}
     for entry in data:
         stave_id = entry.get("stave_id")
@@ -180,4 +210,4 @@ def load_staves(path: Path) -> list[Stave]:
         lines.sort(key=lambda ln: ln.within_stave_index)
         staves.append(Stave(stave_id=stave_id, lines=lines))
     staves.sort(key=lambda s: s.stave_id)
-    return staves
+    return staves, report

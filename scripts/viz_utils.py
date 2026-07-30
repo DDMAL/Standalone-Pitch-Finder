@@ -4,10 +4,10 @@ three CLIs (run_pitch_finding / run_rodan_pitch_finding / render_ic_debug)
 have in common.
 
 Glyph bboxes on these manuscript scans are ~20-30px, too small to caption
-legibly at native resolution. load_scaled_image upscales the canvas first
-so labels get enough real pixels to be readable without shrinking relative
-to the glyphs; draw_labeled_box then draws a box plus a white-backed label
-so text doesn't get lost against parchment texture / dark ink.
+legibly at native resolution. load_scaled_image upscales the canvas first so
+labels get enough real pixels to be readable (see label_font_scale for how big
+they end up); draw_labeled_box then draws a box plus a white-backed label so
+text doesn't get lost against parchment texture / dark ink.
 
 draw_stafflines draws the fitted staff centerlines that pitch-finding
 actually queried, so a wrong pitch can be read as either "the staff fit is
@@ -20,12 +20,22 @@ read from, which is the one quantity neither the box nor the staff lines
 show. A bbox says where the glyph is, not which pixel row inside it the
 algorithm treated as the notehead -- and for multi-note neumes there is more
 than one such row per box.
+
+All three take their text as an optional argument, because on a densely
+notated page the labels are the part that stops scaling: a caption is as wide
+as the glyph it belongs to or wider, so neighbouring labels overlap each other
+and cover the very ink and markers you are checking. Raising --debug-scale
+thins that out (label_font_scale), and the callers also render the same overlay
+twice -- once labelled, once text-free (see unlabeled_variant_path) -- so
+geometry can be judged on the clean copy and read off the labelled one.
 """
 
 from pathlib import Path
 
 import cv2
 import numpy as np
+
+from page_inputs import IMAGE_SUFFIXES
 
 # BGR magenta: deliberately outside the palettes the callers use for glyph
 # boxes (green/blue/purple/orange/grey/red), so staff lines never read as
@@ -37,14 +47,24 @@ STAFFLINE_COLOR = (255, 0, 255)
 # without needing a seventh category color.
 MARKER_HALO_COLOR = (255, 255, 255)
 
-# Extensions cv2.imwrite can pick an encoder for. Anything else fails deep
-# inside imwrite_ with "could not find a writer for the specified extension",
-# which says nothing about which argument was wrong -- so check it ourselves.
-IMAGE_SUFFIXES = frozenset({".jpg", ".jpeg", ".png", ".tif", ".tiff", ".bmp", ".webp"})
+# IMAGE_SUFFIXES (imported above) doubles as the set cv2.imwrite can pick an
+# encoder for. Anything else fails deep inside imwrite_ with "could not find a
+# writer for the specified extension", which says nothing about which argument
+# was wrong -- so check_image_suffix checks it ourselves.
 
 # --debug-viz reads like an on/off flag, so it gets passed like one. Treat a
 # bare flag or any of these as "render it, you pick the filename".
 _AUTO_TOKENS = frozenset({"1", "true", "yes", "on", "auto"})
+
+# Appended to the labelled overlay's stem to name its text-free twin. Also
+# listed in page_inputs._DERIVED_MARKERS, so the extra file never becomes a
+# candidate for the page image itself.
+UNLABELED_SUFFIX = "_nolabels"
+
+# cv2 font size at --debug-scale 1, and how it grows from there. See
+# label_font_scale: the exponent is what makes --debug-scale a crowding knob.
+LABEL_FONT_SCALE = 0.45
+LABEL_FONT_EXPONENT = 0.5
 
 
 def check_image_suffix(path: Path):
@@ -89,6 +109,16 @@ def resolve_debug_viz_path(value, auto_path: Path):
     return path
 
 
+def unlabeled_variant_path(path: Path) -> Path:
+    """Where to write the text-free twin of the overlay at path.
+
+    Same folder and format, stem + UNLABELED_SUFFIX, so the pair sorts together
+    and the clean copy is obviously derived from the labelled one rather than a
+    render of something else.
+    """
+    return path.with_name(f"{path.stem}{UNLABELED_SUFFIX}{path.suffix}")
+
+
 def write_image(path: Path, img):
     """cv2.imwrite that fails loudly.
 
@@ -110,6 +140,31 @@ def load_scaled_image(image_path: Path, scale: float):
     return cv2.resize(img, None, fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC)
 
 
+def label_font_scale(scale: float) -> tuple:
+    """(font_scale, thickness) for label text on a canvas upscaled by scale.
+
+    Text grows with scale ** LABEL_FONT_EXPONENT (0.5, i.e. sqrt), which is
+    what makes --debug-scale mean something for crowding. The two degenerate
+    exponents are why:
+
+    - 1.0 (what this used to do) keeps text a fixed size *relative to the
+      glyphs*: label and notation are upscaled by the same factor, so a bigger
+      --debug-scale bought a bigger file and pixel-for-pixel identical label
+      collisions. The flag could not fix the thing it looked like it should.
+    - 0.0 pins text to an absolute pixel size, so --debug-scale 1 renders
+      captions no page ever has room for.
+
+    Anything in between trades the two off, and sqrt splits it evenly: doubling
+    --debug-scale gives ~1.4x the text pixels (more legible in absolute terms)
+    while the label covers ~0.7x the page area it used to (less crowded). At
+    the 2.5 default a pitch label is now about one glyph wide instead of ~1.6.
+    Thickness follows the same curve -- a heavier stroke on smaller text just
+    fills its own counters in.
+    """
+    growth = scale ** LABEL_FONT_EXPONENT
+    return LABEL_FONT_SCALE * growth, max(1, round(0.7 * growth))
+
+
 def _draw_label(img, label: str, org: tuple, color: tuple, scale: float,
                 center_v: bool = False):
     """White-backed text at org (bottom-left of the text), clamped into frame.
@@ -118,8 +173,7 @@ def _draw_label(img, label: str, org: tuple, color: tuple, scale: float,
     instead of its baseline -- for labelling a point marker, where the text
     should read as level with the point it belongs to.
     """
-    font_scale = 0.45 * scale
-    font_thickness = max(1, round(scale * 0.7))
+    font_scale, font_thickness = label_font_scale(scale)
     (tw, th), baseline = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, font_scale, font_thickness)
     if center_v:
         org = (org[0], org[1] + round((th - baseline) / 2))
