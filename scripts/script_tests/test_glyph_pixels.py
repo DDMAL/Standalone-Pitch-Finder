@@ -126,6 +126,84 @@ def test_podatus_bottom_left_reference_excludes_top_right_ink():
     assert 24 <= offset <= 40
 
 
+def make_torculus_page():
+    """A torculus23-shaped glyph: up a second, then down a second past where it
+    started, so the bbox's lowest ink is the THIRD note, not the first.
+
+        note2 (high, middle)        rows  0-11
+        |  connector down the left band
+        note1 (left)                rows 30-41
+                  note3 (right)     rows 48-59   <- sets the bbox bottom
+
+    Returns (image, glyph, avg_punctum). Heads are drawn narrower than the crop
+    so Otsu has background to threshold against.
+    """
+    img = blank_page(120, 120)
+    ulx, uly, ncols, nrows = 20, 20, 36, 60
+    img[uly:uly + 12, ulx + 12:ulx + 22] = INK             # note 2, highest
+    img[uly:uly + 30, ulx + 6:ulx + 8] = INK               # connector, in the left band
+    img[uly + 30:uly + 42, ulx:ulx + 8] = INK              # note 1, bottom-left
+    img[uly + 48:uly + 60, ulx + 24:ulx + 32] = INK        # note 3, lowest
+    return img, make_glyph(0, ulx, uly, ncols, nrows, "neume.torculus23"), 12.0
+
+
+def test_torculus_reference_is_its_first_notehead():
+    """The torculus rule has to isolate note 1 without either the ascending
+    connector above it (which the old full-height column average included) or
+    the bbox's bottom edge below it (which for this subclass is note 3, a step
+    lower and on the far side of the glyph)."""
+    img, g, avg_punctum = make_torculus_page()
+
+    region = reference_region(img, g, avg_punctum, extended_rules=True)
+    offset = (region.uly - g.uly) + row_projection_centroid(
+        crop_and_binarize(img, region.ulx, region.uly, region.ncols, region.nrows))
+
+    print(f"torculus first-head offset {offset:.2f}; region rows "
+          f"{region.uly - g.uly}..{region.uly - g.uly + region.nrows - 1}")
+
+    assert region.region == REGION_BOTTOM_LEFT
+    assert 30 <= offset <= 43           # inside note 1 (rows 30-41)
+
+    # Not dragged up by the connector: that is what the untrimmed full-height
+    # left band does, and it is what this rule replaced.
+    naive = reference_row(img, make_glyph(1, g.ulx, g.uly, g.ncols, g.nrows,
+                                          "neume.clivis2"), avg_punctum)
+    print(f"full-height column offset {naive:.2f}")
+    assert offset > naive + 5
+
+    # Nor pulled down to note 3: a band measured from the bbox bottom edge (the
+    # podatus rule) lands on rows 48-59, two steps below note 1.
+    assert offset < 46
+
+
+def test_rodan_path_keeps_its_own_torculus_behavior():
+    """reference_row feeds rodan_pitch_finder, which is only useful as a
+    comparison if it keeps Rodan's own crop rules -- and Rodan has no torculus
+    rule. The extra rule must not leak onto that path."""
+    img, g, avg_punctum = make_torculus_page()
+
+    assert reference_region(img, g, avg_punctum).region == REGION_FULL
+    # Same value a class with no crop rule of its own gets: the default crop.
+    plain = make_glyph(1, g.ulx, g.uly, g.ncols, g.nrows, "neume.clivis2")
+    assert reference_row(img, g, avg_punctum) == reference_row(img, plain, avg_punctum)
+
+
+def test_torculus_with_no_ink_in_the_left_band_is_unmeasurable():
+    """An empty left band must not report a confident first-notehead region --
+    reference_point's None path is what makes the caller fall back to geometry
+    instead of anchoring three notes on nothing."""
+    img = blank_page(120, 120)
+    ulx, uly, ncols, nrows = 20, 20, 36, 40
+    img[uly:uly + 12, ulx + 24:ulx + 34] = INK    # ink only on the right
+
+    g = make_glyph(0, ulx, uly, ncols, nrows, "neume.torculus22")
+    region = reference_region(img, g, avg_punctum=12.0, extended_rules=True)
+
+    assert region.region == REGION_BOTTOM_LEFT
+    assert region.nrows == nrows                   # untrimmed: nothing to trim to
+    assert reference_point(img, g, avg_punctum=12.0) is None
+
+
 def test_f_clef_uses_right_half_only():
     # Two dots on the left (should be excluded), a solid block on the right
     # (should be the reference). class_name uses the generalized clef.f*
@@ -155,10 +233,12 @@ def test_reference_region_labels_which_crop_rule_fired():
         ("neume.scandicus22b", REGION_BOTTOM_LEFT),
         ("clef.f2", REGION_F_CLEF_RIGHT),
         ("neume.clivis2", REGION_FULL),
+        # Only under extended_rules; see test_rodan_path_keeps_its_own_torculus_behavior.
+        ("neume.torculus33", REGION_BOTTOM_LEFT),
     ]
     for class_name, expected in cases:
         g = make_glyph(0, 20, 20, 30, 40, class_name)
-        region = reference_region(img, g, avg_punctum=12.0)
+        region = reference_region(img, g, avg_punctum=12.0, extended_rules=True)
         assert region is not None
         assert region.region == expected, f"{class_name} -> {region.region}"
 

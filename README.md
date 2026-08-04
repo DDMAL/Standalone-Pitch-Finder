@@ -132,9 +132,12 @@ byte-identical either way. `--no-regroup` restores staff-finding's own grouping.
 ## Which algorithm
 
 **`pitch_finder.py`** decomposes multi-note neumes. The neumes-cheatsheet CSV
-tells us how many notes a neume class has and each note's interval offset
-from the first one (e.g. `neume.clivis2` = 2 notes, second one a step below),
-so **one anchor point on the glyph determines every note**: read that point's
+tells us how many notes a neume class has and each note's melodic interval
+(e.g. `neume.clivis2` = 2 notes, second one a step below). MEI's `@intm` is
+measured from the *preceding* note, so those are accumulated into offsets from
+the neume's first note: `neume.torculus22`'s `1S, -1S` is `[0, 1, 0]`, up a
+second and back down to where it started. From there
+**one anchor point on the glyph determines every note**: read that point's
 line/space position, then step off it by the known intervals. Stave
 assignment picks the closest stave within a margin derived from that stave's
 own local line spacing; clef lookup only looks within the same stave (nearest
@@ -147,8 +150,11 @@ neighboring stave's.
   the ink centroid of a per-class crop of the bbox (`glyph_pixels.py`), whose
   whole purpose is to exclude a virga's stem or a podatus's upper head. Which
   crop fired also says *which* note the point is — a bottom-left crop is the
-  neume's lowest note, a top crop its highest, a full-bbox crop the middle of
+  neume's first note, a top crop its highest, a full-bbox crop the middle of
   the span — and that is what ties the measured point to the interval table.
+  Torculus gets one crop rule of its own that algorithm #2 does not have (its
+  first notehead, found from the left band's own ink extent); everything else
+  is shared, so algorithm #2 stays an independent baseline.
 - **`bbox`** is the original geometry-only path: no pixel access, the bbox's
   top and bottom edges are mapped onto the interval span. It assumes the
   outermost noteheads' centers sit on the ink extremes, which any stem or

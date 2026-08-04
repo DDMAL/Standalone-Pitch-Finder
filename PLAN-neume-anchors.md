@@ -1,6 +1,7 @@
 # Plan: per-class note anchoring for `pitch_finder.py`
 
-Status: proposed, not implemented. Supersedes the bbox-span decomposition in
+Status: Phase 0's `@intm` fix and the `neume.torculus*` anchor rule are
+implemented; the rest is proposed. Supersedes the bbox-span decomposition in
 [`scripts/pitch_finder.py`](scripts/pitch_finder.py) `_decompose`.
 
 ## Problem
@@ -44,18 +45,24 @@ disagreement matches the direction of the overshoot. `custos` is the warning
 case: two methods that both average the whole shape agree with each other
 while both being wrong.
 
-## Prerequisite bug: `@intm` is relative to the *previous* note
+## Prerequisite bug: `@intm` is relative to the *previous* note — **fixed**
 
-[`neume_shapes.py:36`](scripts/neume_shapes.py#L36) reads each `intm` as an
-offset from the neume's first note. MEI defines `@intm` on `<nc>` as the
-melodic interval from the **preceding** component. `_extract_intervals` must
-accumulate.
+`_extract_intervals` read each `intm` as an offset from the neume's first
+note. MEI defines `@intm` on `<nc>` as the melodic interval from the
+**preceding** component, so it now accumulates.
 
-This must be fixed first, because the interval list is the input to every
+This had to be fixed first, because the interval list is the input to every
 anchor rule below, and it also changes *which component is the vertical
 extreme* (`torculus33` goes from span [−2,+2] to [0,+2]).
 
-| class | MEI | current | correct |
+It also could not land alone. The old span was symmetric for `torculusAB` with
+A = B, which made `_anchor_interval`'s `REGION_FULL` midpoint come out at
+exactly 0 and so accidentally reasonable. Under the correct intervals that
+midpoint moves to +0.5 … +1.5, which would have shifted every note of those
+neumes *down* by that much — the interval fix on its own regresses the pages
+it is meant to fix. Hence the torculus anchor rule below shipped with it.
+
+| class | MEI | was | now |
 |---|---|---|---|
 | `neume.torculus22` | `1S, -1S` | `[0, 1, -1]` | `[0, 1, 0]` |
 | `neume.torculus23` | `1S, -2S` | `[0, 1, -2]` | `[0, 1, -1]` |
@@ -132,10 +139,51 @@ min-interval component, a `top` anchor the max-interval one. After the
 | `neume.oblique*` | top | left | 0.5 | diagonal ligature; higher note is top-left |
 | `neume.podatus*`, `neume.pescephalicus*` | bottom | left | 0.5 | bimodal profile; matches Rodan's bottom-left crop |
 | `neume.scandicus*` | bottom | left | 0.5 | `114r scandicus32`: bottom-left square is the lowest note |
-| `neume.torculus*` | bottom | full | 0.5 | `009r torculus22/33`: two clean bottom heads, thin top stroke |
+| `neume.torculus*` | bottom of the *left band's own ink* | left | — | **implemented**, see below |
 | `neume.liquescent.up/down` | top | full | 0.5 | `liquescent.down` peak band 2 |
 | `clef.*` | center | full | 0 | + `snap="line"` (see below) |
 | `custos` | — | — | — | **unresolved**, see Open questions |
+
+### The torculus rule, as implemented
+
+This row started as `bottom | full | 0.5` and changed on contact with the
+subclasses. Two corrections:
+
+**`x_region` is `left`, not `full`.** A full-width bottom band contains *two*
+heads — notes 1 and 3 — and those are only at the same height when A = B
+(`torculus22`, `torculus33`). For every other subclass its centroid is an
+average of two different pitches, belonging to neither. The left band contains
+note 1 alone, and note 1 is interval 0 by definition, so nothing has to be
+derived. `_anchor_interval` binds `REGION_BOTTOM_LEFT` to the neume's **first**
+note rather than to `min(intervals)`; for podatus and scandicus those are the
+same component, so that is a no-op there and correct here.
+
+**The band is positioned by the left band's own ink, not the bbox bottom.**
+A bbox-bottom band assumes the first note is also the lowest. That fails
+whenever the descent outruns the ascent (`torculus23/24/34`, e.g. `[0, 1, -2]`),
+where the bbox bottom is set by note 3 on the far side of the glyph — the band
+would sit one or two steps below note 1 and miss it completely. Cropping the
+left column band, trimming to *its* ink extent, then taking the bottom
+notehead of that is the same trick `_f_clef_right_region` already uses.
+(`glyph_pixels._first_head_ink_region`.)
+
+The extra rule is gated behind `extended_rules`, on for `reference_point`
+(the decomposition path) and off for `reference_row`, so `rodan_pitch_finder`
+keeps Rodan's own crop rules — Rodan has no torculus case, and a baseline
+that silently inherits this module's opinions is not a baseline. Verified: the
+Rodan output JSON is byte-identical across the change.
+
+Measured on the two sample pages, against note 3 read independently off the
+bottom-**right** band (a mirror of the rule, and ink the anchor never touches):
+
+| page | n | before, median \|err\| | after | within ½ step, before → after |
+|---|---|---|---|---|
+| `Breviarium_ad_usum` | 10 | 0.60 steps | **0.10** | 1/10 → 10/10 |
+| `McGill_MS234-064` | 3 | 1.41 steps | **0.42** | 0/3 → 2/3 |
+
+Nothing else moved: 13 torculus glyphs changed across both pages, the other
+395 glyphs are bit-identical. McGill's residual is one badly degraded
+`torculus33` whose strokes have merged — an ink problem, not a rule problem.
 
 ### Metric: per-page measurements
 
@@ -218,7 +266,7 @@ decomposition with a per-class anchor needs no viz change.
 
 | Phase | Work | Verifiable by |
 |---|---|---|
-| 0 | `@intm` cumulative fix; prefix-based pitchless test | generator-vs-CSV test; `divisio.maior` no longer pitched |
+| 0 | ~~`@intm` cumulative fix~~ **done**, with the torculus anchor rule it depends on. Still open: prefix-based pitchless test | generator-vs-CSV test (landed); `divisio.maior` no longer pitched (open) |
 | 1 | `page_metrics.py`; anchor table; rewrite `_decompose` (geometry only) | per-class step diff vs Rodan collapses |
 | 2 | Optional pixel refinement + rejection bound | refined vs geometric agree within a notehead |
 | 3 | `span_mismatch` / clef snap / new flags; debug viz shows all components | flag counts on both sample pages |
@@ -228,9 +276,14 @@ Phase 0 is independent of the redesign and worth landing on its own.
 
 ## Tests
 
-- **Generator vs CSV** — name-derived intervals equal CSV-derived intervals
-  for all 33 overlapping classes. This single test would have caught the
-  `@intm` bug, and guards it permanently.
+- **Generator vs CSV** — ~~name-derived intervals equal CSV-derived intervals
+  for all overlapping classes.~~ **Done**
+  (`test_csv_intervals_match_intervals_derived_from_the_class_names`): all 27
+  multi-note classes in the CSV, cross-checked against
+  `intervals_from_class_name`, which shares no code with the parser. The test
+  also asserts its own coverage, so a regex that stopped matching can't make
+  it pass by checking nothing. This is the test that would have caught the
+  `@intm` bug, and it guards it permanently.
 - **Anchor unit tests** on synthetic staves — a virga whose bbox top sits on
   a line resolves to *that* line's step, not one step below; a clivis with a
   stem extending 3 steps below the lower head is unaffected by the stem.

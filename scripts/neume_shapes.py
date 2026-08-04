@@ -3,11 +3,11 @@ Neume shape table, parsed from the square-notation neume cheatsheet CSV.
 
 That CSV (neumes-cheatsheet/csv-square_notation_neume_level_newest.csv) maps
 every Gamera classification name to its MEI skeleton, and critically, each
-note component's interval offset from the neume's first note is already
-encoded there as intm="1S" / intm="-2S" (S = diatonic scale steps). This
-lets pitch_finder.py decompose a multi-note neume glyph (podatus, clivis,
-torculus, scandicus, ...) into individually-pitched note components instead
-of only reporting one anchor pitch per glyph.
+note component's melodic interval is already encoded there as intm="1S" /
+intm="-2S" (S = diatonic scale steps). This lets pitch_finder.py decompose a
+multi-note neume glyph (podatus, clivis, torculus, scandicus, ...) into
+individually-pitched note components instead of only reporting one anchor
+pitch per glyph.
 
 Classes with no intm attributes at all (single-note neumes like punctum,
 virga) get an interval list of just [0].
@@ -33,7 +33,25 @@ _ALWAYS_PITCHLESS_PREFIXES = ("skip.", "text")
 
 
 def _extract_intervals(mei: str) -> list[int]:
-    return [0] + [int(m) for m in _INTM_RE.findall(mei)]
+    """Each note component's offset from the neume's FIRST note, in steps.
+
+    MEI defines @intm on <nc> as the melodic interval from the *preceding*
+    component, so the CSV's values are deltas and have to accumulate rather
+    than being read as offsets from note 1. torculus22's `1S, -1S` is "up a
+    second, then back down a second", i.e. [0, 1, 0] -- notes 1 and 3 on the
+    same pitch, which is what the cheatsheet images show -- not [0, 1, -1].
+
+    Reading them as absolute offsets inverted the contour of every neume that
+    changes direction: it put a torculus's third note a full ascent below its
+    first, and left a scandicus unable to ascend at all (`1S, 1S` came out as
+    a repeated pitch). script_tests/test_neume_shapes.py cross-checks the
+    whole table against intervals derived independently from the class names,
+    which pins this permanently.
+    """
+    offsets = [0]
+    for delta in _INTM_RE.findall(mei):
+        offsets.append(offsets[-1] + int(delta))
+    return offsets
 
 
 class NeumeShapeTable:

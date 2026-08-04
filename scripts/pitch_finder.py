@@ -24,10 +24,11 @@ Step 3 has two anchoring modes (see _decompose):
     assumes the outermost noteheads' centers sit exactly on the ink extremes
     -- which stems, tails and ligature strokes routinely break.
   - pixel_centroid (image supplied): the anchor is the ink centroid of a
-    per-class sub-region of the bbox, borrowed wholesale from
-    rodan_pitch_finder's notehead finding (glyph_pixels.reference_point) --
-    the crop rules there exist precisely to exclude a virga's stem or a
-    podatus's second head. Rodan uses that point as its one pitch per glyph;
+    per-class sub-region of the bbox, borrowed from rodan_pitch_finder's
+    notehead finding (glyph_pixels.reference_point) -- the crop rules there
+    exist precisely to exclude a virga's stem or a podatus's second head, plus
+    the torculus rule this module needs and Rodan has no use for (see
+    glyph_pixels' extended_rules). Rodan uses that point as its one pitch per glyph;
     here it instead anchors this module's own stave/clef/decomposition math,
     which is the combination of the two algorithms' better halves.
 
@@ -156,19 +157,24 @@ def _anchor_interval(region: str, intervals: list[int]) -> float:
     pitch per glyph). Decomposing a neume does, because every other note is
     placed relative to this one.
 
-      - bottom-left crop (podatus*, scandicus22b): the ligature's reference
-        head is its bottom-left one, i.e. the neume's LOWEST note.
+      - bottom-left crop (podatus*, scandicus22b, torculus*): the ligature is
+        drawn starting from its bottom-left head, so that crop lands on the
+        neume's FIRST note -- interval 0 by definition. For the ascending
+        ligatures the first note is also the lowest, so this reads the same as
+        min(intervals); for a torculus it does not (torculus23 = [0, 1, -1]
+        ends below where it started), and binding to the first note is what
+        stays correct for both.
       - top crop (virga): the notehead above the stem -- the HIGHEST note.
       - full bbox: an ink centroid over the whole shape, which belongs to no
         single note. Best available reading is the middle of the note span,
         so a fractional interval is returned. Single-note classes collapse to
-        0 here, and multi-note ones (clivis, torculus, oblique -- the classes
-        Rodan has no special case for) get the honest midpoint rather than a
-        pretend notehead.
+        0 here, and multi-note ones (clivis, oblique -- the classes with no
+        crop rule of their own) get the honest midpoint rather than a pretend
+        notehead.
     """
     lo, hi = float(min(intervals)), float(max(intervals))
     if region == REGION_BOTTOM_LEFT:
-        return lo
+        return 0.0
     if region == REGION_TOP:
         return hi
     return (lo + hi) / 2

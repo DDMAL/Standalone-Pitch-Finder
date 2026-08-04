@@ -42,6 +42,7 @@ def make_shapes():
             "neume.clivis2": [0, -1],
             "neume.virga": [0],
             "neume.podatus3": [0, 2],
+            "neume.torculus22": [0, 1, 0],
         },
         clef_classes={"clef.c": "C"},
         pitchless_classes=set(),
@@ -251,6 +252,45 @@ def test_bottom_left_crop_anchors_the_podatus_lowest_note():
                   for nc in find_pitches([clef, punctum, podatus], staves, shapes)[2].note_components]
     print(f"podatus3 bbox-span steps: {bbox_steps}")
     assert bbox_steps == [1, 3]
+
+
+def test_torculus_anchors_its_first_head_and_returns_to_that_pitch():
+    """A torculus22 goes up a second and back down, so notes 1 and 3 share a
+    pitch. Two things have to hold at once for that to come out right: the
+    interval list must be cumulative ([0, 1, 0], not [0, 1, -1]), and the
+    anchor must bind to note 1 rather than to the span's midpoint -- for
+    [0, 1, 0] that midpoint is +0.5, which would drag all three notes half a
+    step down and land them between staff positions.
+    """
+    staves, shapes = [make_stave()], make_shapes()
+
+    # notes 1 and 3 on y=140 (step 2), note 2 on y=130 (step 3), plus the
+    # ascending connector that used to drag the anchor upward.
+    img = blank_page()
+    img[135:146, 51:60] = INK     # note 1, bottom-left
+    img[125:136, 57:60] = INK     # connector up to note 2
+    img[125:136, 62:71] = INK     # note 2, highest
+    img[135:146, 74:83] = INK     # note 3, back down to note 1's step
+    img[20:30, 11:19] = INK       # punctum, for avg_punctum
+
+    clef = make_clef()
+    punctum = Glyph(index=1, ulx=10, uly=20, nrows=10, ncols=12,
+                    class_name="neume.punctum", confidence=0.9, state="AUTOMATIC")
+    torculus = Glyph(index=2, ulx=50, uly=125, nrows=21, ncols=34,
+                     class_name="neume.torculus22", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, punctum, torculus], staves, shapes, image=img)[2]
+    steps = [nc.stave_step for nc in result.note_components]
+    pitches = [nc.pitch for nc in result.note_components]
+    print(f"torculus22 steps: {[round(s, 2) for s in steps]}, pitches: {pitches}, "
+          f"anchor: {result.anchor}")
+
+    assert result.anchor.region == "bottom_left"
+    assert result.anchor.interval == 0.0        # the crop IS note 1
+    assert [round(s) for s in steps] == [2, 3, 2]
+    assert steps[0] == steps[2]                 # the defining property
+    assert pitches == [{"pname": "C", "oct": 4}, {"pname": "D", "oct": 4},
+                       {"pname": "C", "oct": 4}]
 
 
 def test_full_bbox_crop_anchors_the_middle_of_the_note_span():

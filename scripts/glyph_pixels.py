@@ -28,6 +28,13 @@ Two entry points read that region:
     multi-note decomposition. It needs the region label because *which*
     notehead the centroid represents depends on which crop produced it --
     see REGION_* below.
+
+Only the decomposition path adds crop rules of its own (extended_rules,
+currently torculus). Rodan has one pitch per glyph and can settle for an
+ink centroid that belongs to no particular notehead; a caller that places
+three notes off that one point cannot. Keeping those rules off the
+reference_row path is what leaves rodan_pitch_finder an independent
+baseline instead of a copy of this module's opinions.
 """
 
 from dataclasses import dataclass
@@ -41,10 +48,18 @@ from ic_io import Glyph
 BOTTOM_LEFT_CLASSES = {"neume.podatus2b", "neume.podatus3", "neume.podatus4",
                         "neume.podatus5", "neume.scandicus22b"}
 
+# Classes cropped to their first notehead on the decomposition path only (see
+# the module docstring's note on extended_rules). Rodan has no torculus rule,
+# so a torculus took the default full-height crop: a narrow column at the
+# bbox's left edge, averaged over the whole glyph height, which is a column
+# average rather than any notehead. Anchoring three notes on it put the whole
+# neume up to a step off, and which way depended only on the subclass.
+FIRST_HEAD_INK_CLASSES = ("neume.torculus",)
+
 # Which sub-region of the bbox the centroid was measured from. Rodan itself
 # never needs this (one pitch per glyph, so the point is simply "the" pitch),
 # but a caller that decomposes a neume into several notes does: a bottom-left
-# crop lands on the neume's LOWEST notehead, a top crop on its HIGHEST, and a
+# crop lands on the neume's FIRST notehead, a top crop on its HIGHEST, and a
 # full-bbox crop is the ink centroid of the whole shape and so belongs to no
 # single note. Getting that wrong offsets every note of the neume at once.
 REGION_FULL = "full"
@@ -127,11 +142,44 @@ def _f_clef_right_region(image: np.ndarray, glyph: Glyph) -> tuple:
     return right_ulx, glyph.uly + top, right_ncols, bottom - top + 1, float(top)
 
 
+def _first_head_ink_region(image: np.ndarray, glyph: Glyph, extend_cols: int,
+                            extend_rows: int) -> ReferenceRegion:
+    """The neume's first notehead: the bottom of the *left column band's own*
+    ink extent, rather than the bottom of the whole bbox.
+
+    Same intent as the bottom-left crop, positioned differently. A bbox-bottom
+    band assumes the neume's first note is also its lowest, which holds for the
+    ascending ligatures (podatus, scandicus) but not for a torculus: the bbox
+    bottom is set by whichever head hangs lowest, and that is the *third* note
+    whenever the descent outruns the ascent (torculus23/24/34, e.g. [0, 1, -2]).
+    There the band would sit one or two steps below the first head and miss it
+    entirely. Trimming to the left band's own ink is what makes one rule hold
+    for every subclass -- the same trick _f_clef_right_region uses.
+
+    A left band with no ink at all is handed back as the untrimmed full-height
+    band, so the caller's own no-ink path decides what to do about it.
+    """
+    band = crop_and_binarize(image, glyph.ulx, glyph.uly, extend_cols, glyph.nrows)
+    rows_with_ink = np.where((band != 0).any(axis=1))[0]
+    if len(rows_with_ink) == 0:
+        return ReferenceRegion(glyph.ulx, glyph.uly, extend_cols, glyph.nrows,
+                               REGION_BOTTOM_LEFT)
+    ink_top, ink_bottom = int(rows_with_ink[0]), int(rows_with_ink[-1])
+    band_top = max(ink_top, ink_bottom + 1 - extend_rows)
+    return ReferenceRegion(glyph.ulx, glyph.uly + band_top, extend_cols,
+                           ink_bottom + 1 - band_top, REGION_BOTTOM_LEFT)
+
+
 def reference_region(image: np.ndarray, glyph: Glyph, avg_punctum: float,
                       discard_size: int = 12,
-                      subimage_width_factor: float = 0.8) -> Optional[ReferenceRegion]:
+                      subimage_width_factor: float = 0.8, *,
+                      extended_rules: bool = False) -> Optional[ReferenceRegion]:
     """The sub-region of the glyph's bbox whose ink centroid is the pitch
     reference -- the per-class crop rules described in the module docstring.
+
+    extended_rules adds the crop rules Rodan does not have (FIRST_HEAD_INK_CLASSES);
+    it defaults off so this stays Rodan-faithful for reference_row's caller, and
+    reference_point turns it on.
 
     None for glyphs too small for pixel analysis to mean anything (both dims
     <= discard_size), which is Rodan's discard_size behavior.
@@ -150,6 +198,9 @@ def reference_region(image: np.ndarray, glyph: Glyph, avg_punctum: float,
     extend_rows = nrows if nrows < avg_punctum else avg_punctum
     extend_cols = max(1, round(extend_cols))
     extend_rows = max(1, round(extend_rows))
+
+    if extended_rules and glyph.class_name.startswith(FIRST_HEAD_INK_CLASSES):
+        return _first_head_ink_region(image, glyph, extend_cols, extend_rows)
 
     if glyph.class_name in BOTTOM_LEFT_CLASSES:
         return ReferenceRegion(ulx, uly + nrows - extend_rows, extend_cols,
@@ -197,8 +248,12 @@ def reference_point(image: np.ndarray, glyph: Glyph, avg_punctum: float,
     reference_row: a caller placing a notehead needs "no measurement" to be
     distinguishable from "measured at the bbox's top edge", so it can fall
     back to geometry instead of anchoring a whole neume on the wrong row.
+
+    extended_rules is on unconditionally: this entry point exists for the
+    decomposition path, which is the caller those extra crop rules are for.
     """
-    region = reference_region(image, glyph, avg_punctum, discard_size, subimage_width_factor)
+    region = reference_region(image, glyph, avg_punctum, discard_size,
+                              subimage_width_factor, extended_rules=True)
     if region is None:
         return None
     crop = crop_and_binarize(image, region.ulx, region.uly, region.ncols, region.nrows)
