@@ -12,7 +12,7 @@
         "nrows": 10,
         "ncols": 8,
         "class_name": "neume.inclinatum",
-        "confidence": 0.150745,
+        "confidence": 0.150997,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -54,7 +54,7 @@
         "nrows": 12,
         "ncols": 11,
         "class_name": "neume.inclinatum",
-        "confidence": 0.200332,
+        "confidence": 0.200533,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -90,7 +90,7 @@
         "nrows": 24,
         "ncols": 11,
         "class_name": "neume.podatus2a",
-        "confidence": 0.201321,
+        "confidence": 0.202259,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -140,7 +140,7 @@
         "nrows": 15,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.209707,
+        "confidence": 0.210021,
         "state": "AUTOMATIC"
       },
       "stave_id": 12,
@@ -174,7 +174,7 @@
         "nrows": 14,
         "ncols": 6,
         "class_name": "neume.punctum",
-        "confidence": 0.212046,
+        "confidence": 0.212404,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -214,7 +214,7 @@
         "nrows": 24,
         "ncols": 13,
         "class_name": "neume.podatus2a",
-        "confidence": 0.21345,
+        "confidence": 0.213301,
         "state": "AUTOMATIC"
       },
       "stave_id": 8,
@@ -255,7 +255,7 @@
         "nrows": 28,
         "ncols": 9,
         "class_name": "neume.podatus2a",
-        "confidence": 0.214341,
+        "confidence": 0.214534,
         "state": "AUTOMATIC"
       },
       "stave_id": 2,
@@ -305,7 +305,7 @@
         "nrows": 28,
         "ncols": 11,
         "class_name": "neume.podatus2a",
-        "confidence": 0.219239,
+        "confidence": 0.21939,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -350,54 +350,12 @@
     {
       "glyph_index": 8,
       "ic": {
-        "ulx": 607,
-        "uly": 602,
-        "nrows": 11,
-        "ncols": 8,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.221757,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 16,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 3.990361445783136,
-          "center_x": 611.0,
-          "center_y": 607.5,
-          "pitch": {
-            "pname": "C",
-            "oct": 4
-          }
-        }
-      ],
-      "anchor": {
-        "source": "bbox_span",
-        "region": null,
-        "x": 611.0,
-        "y": 607.5,
-        "stave_step": 3.990361445783136,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 220
-      },
-      "reason": null,
-      "flags": [
-        "pixel_anchor_unavailable"
-      ]
-    },
-    {
-      "glyph_index": 9,
-      "ic": {
         "ulx": 538,
         "uly": 783,
         "nrows": 22,
         "ncols": 16,
         "class_name": "neume.clivis2",
-        "confidence": 0.22178,
+        "confidence": 0.221708,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -440,6 +398,48 @@
       "flags": []
     },
     {
+      "glyph_index": 9,
+      "ic": {
+        "ulx": 607,
+        "uly": 602,
+        "nrows": 11,
+        "ncols": 8,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.222066,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 16,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.990361445783136,
+          "center_x": 611.0,
+          "center_y": 607.5,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 611.0,
+        "y": 607.5,
+        "stave_step": 3.990361445783136,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 220
+      },
+      "reason": null,
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
       "glyph_index": 10,
       "ic": {
         "ulx": 398,
@@ -447,7 +447,7 @@
         "nrows": 24,
         "ncols": 14,
         "class_name": "neume.podatus2a",
-        "confidence": 0.223404,
+        "confidence": 0.223556,
         "state": "AUTOMATIC"
       },
       "stave_id": 3,
@@ -497,7 +497,7 @@
         "nrows": 21,
         "ncols": 14,
         "class_name": "neume.virga",
-        "confidence": 0.22566,
+        "confidence": 0.225543,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -537,7 +537,7 @@
         "nrows": 16,
         "ncols": 11,
         "class_name": "neume.inclinatum",
-        "confidence": 0.226635,
+        "confidence": 0.227239,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -577,7 +577,7 @@
         "nrows": 26,
         "ncols": 8,
         "class_name": "neume.virga",
-        "confidence": 0.2277,
+        "confidence": 0.227719,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -617,7 +617,7 @@
         "nrows": 17,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.229505,
+        "confidence": 0.230086,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -657,7 +657,7 @@
         "nrows": 23,
         "ncols": 10,
         "class_name": "neume.podatus2a",
-        "confidence": 0.229666,
+        "confidence": 0.230275,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -698,7 +698,7 @@
         "nrows": 25,
         "ncols": 18,
         "class_name": "neume.clivis2",
-        "confidence": 0.230485,
+        "confidence": 0.230808,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -748,7 +748,7 @@
         "nrows": 26,
         "ncols": 10,
         "class_name": "neume.virga",
-        "confidence": 0.233647,
+        "confidence": 0.234472,
         "state": "AUTOMATIC"
       },
       "stave_id": 2,
@@ -783,12 +783,52 @@
     {
       "glyph_index": 18,
       "ic": {
+        "ulx": 227,
+        "uly": 442,
+        "nrows": 15,
+        "ncols": 11,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.237304,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.9508879023307477,
+          "center_x": 232.5,
+          "center_y": 449.6470588235294,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 232.5,
+        "y": 449.6470588235294,
+        "stave_step": 2.9508879023307477,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 211
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 19,
+      "ic": {
         "ulx": 419,
         "uly": 528,
         "nrows": 28,
         "ncols": 13,
         "class_name": "neume.podatus2a",
-        "confidence": 0.236969,
+        "confidence": 0.237341,
         "state": "AUTOMATIC"
       },
       "stave_id": 3,
@@ -831,46 +871,6 @@
       "flags": []
     },
     {
-      "glyph_index": 19,
-      "ic": {
-        "ulx": 227,
-        "uly": 442,
-        "nrows": 15,
-        "ncols": 11,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.237141,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 2,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.9508879023307477,
-          "center_x": 232.5,
-          "center_y": 449.6470588235294,
-          "pitch": {
-            "pname": "D",
-            "oct": 4
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 232.5,
-        "y": 449.6470588235294,
-        "stave_step": 2.9508879023307477,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 211
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
       "glyph_index": 20,
       "ic": {
         "ulx": 517,
@@ -878,7 +878,7 @@
         "nrows": 11,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.238416,
+        "confidence": 0.238312,
         "state": "AUTOMATIC"
       },
       "stave_id": 19,
@@ -914,7 +914,7 @@
         "nrows": 17,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.242355,
+        "confidence": 0.242565,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -954,7 +954,7 @@
         "nrows": 16,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.243484,
+        "confidence": 0.243871,
         "state": "AUTOMATIC"
       },
       "stave_id": 15,
@@ -994,7 +994,7 @@
         "nrows": 19,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.24701,
+        "confidence": 0.247447,
         "state": "AUTOMATIC"
       },
       "stave_id": 10,
@@ -1028,7 +1028,7 @@
         "nrows": 23,
         "ncols": 12,
         "class_name": "neume.podatus2a",
-        "confidence": 0.247427,
+        "confidence": 0.247473,
         "state": "AUTOMATIC"
       },
       "stave_id": 19,
@@ -1069,7 +1069,7 @@
         "nrows": 26,
         "ncols": 14,
         "class_name": "neume.clivis2",
-        "confidence": 0.247859,
+        "confidence": 0.247629,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -1114,12 +1114,46 @@
     {
       "glyph_index": 26,
       "ic": {
+        "ulx": 609,
+        "uly": 248,
+        "nrows": 28,
+        "ncols": 15,
+        "class_name": "neume.virga",
+        "confidence": 0.248457,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.763466042154565,
+          "center_x": 613.5,
+          "center_y": 256.0,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 613.5,
+        "y": 256.0,
+        "stave_step": 4.763466042154565,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 27,
+      "ic": {
         "ulx": 772,
         "uly": 149,
         "nrows": 24,
         "ncols": 17,
         "class_name": "neume.clivis2",
-        "confidence": 0.248119,
+        "confidence": 0.248681,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -1153,40 +1187,6 @@
       "flags": []
     },
     {
-      "glyph_index": 27,
-      "ic": {
-        "ulx": 609,
-        "uly": 248,
-        "nrows": 28,
-        "ncols": 15,
-        "class_name": "neume.virga",
-        "confidence": 0.248394,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 12,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 4.763466042154565,
-          "center_x": 613.5,
-          "center_y": 256.0,
-          "pitch": null
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "top",
-        "x": 613.5,
-        "y": 256.0,
-        "stave_step": 4.763466042154565,
-        "interval": 0.0
-      },
-      "clef_used": null,
-      "reason": "missing_clef",
-      "flags": []
-    },
-    {
       "glyph_index": 28,
       "ic": {
         "ulx": 213,
@@ -1194,7 +1194,7 @@
         "nrows": 22,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.248747,
+        "confidence": 0.248917,
         "state": "AUTOMATIC"
       },
       "stave_id": 8,
@@ -1223,12 +1223,46 @@
     {
       "glyph_index": 29,
       "ic": {
+        "ulx": 524,
+        "uly": 844,
+        "nrows": 13,
+        "ncols": 11,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.250645,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 19,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.006317329432096,
+          "center_x": 529.5,
+          "center_y": 850.1232876712329,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 529.5,
+        "y": 850.1232876712329,
+        "stave_step": 5.006317329432096,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 30,
+      "ic": {
         "ulx": 711,
         "uly": 779,
         "nrows": 28,
         "ncols": 19,
         "class_name": "neume.clivis2",
-        "confidence": 0.250779,
+        "confidence": 0.251629,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -1271,40 +1305,6 @@
       "flags": []
     },
     {
-      "glyph_index": 30,
-      "ic": {
-        "ulx": 524,
-        "uly": 844,
-        "nrows": 13,
-        "ncols": 11,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.250801,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 19,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 5.006317329432096,
-          "center_x": 529.5,
-          "center_y": 850.1232876712329,
-          "pitch": null
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 529.5,
-        "y": 850.1232876712329,
-        "stave_step": 5.006317329432096,
-        "interval": 0.0
-      },
-      "clef_used": null,
-      "reason": "missing_clef",
-      "flags": []
-    },
-    {
       "glyph_index": 31,
       "ic": {
         "ulx": 538,
@@ -1312,7 +1312,7 @@
         "nrows": 26,
         "ncols": 23,
         "class_name": "neume.clivis2",
-        "confidence": 0.251774,
+        "confidence": 0.252052,
         "state": "AUTOMATIC"
       },
       "stave_id": 19,
@@ -1348,46 +1348,12 @@
     {
       "glyph_index": 32,
       "ic": {
-        "ulx": 218,
-        "uly": 1037,
-        "nrows": 13,
-        "ncols": 10,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.252939,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 9,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.5644609754634105,
-          "center_x": 223.0,
-          "center_y": 1044.0632911392406,
-          "pitch": null
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 223.0,
-        "y": 1044.0632911392406,
-        "stave_step": 2.5644609754634105,
-        "interval": 0.0
-      },
-      "clef_used": null,
-      "reason": "missing_clef",
-      "flags": []
-    },
-    {
-      "glyph_index": 33,
-      "ic": {
         "ulx": 284,
         "uly": 364,
         "nrows": 27,
         "ncols": 16,
         "class_name": "neume.clivis2",
-        "confidence": 0.252995,
+        "confidence": 0.25285,
         "state": "AUTOMATIC"
       },
       "stave_id": 1,
@@ -1421,6 +1387,40 @@
       "flags": []
     },
     {
+      "glyph_index": 33,
+      "ic": {
+        "ulx": 218,
+        "uly": 1037,
+        "nrows": 13,
+        "ncols": 10,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.252985,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.5644609754634105,
+          "center_x": 223.0,
+          "center_y": 1044.0632911392406,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 223.0,
+        "y": 1044.0632911392406,
+        "stave_step": 2.5644609754634105,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
       "glyph_index": 34,
       "ic": {
         "ulx": 736,
@@ -1428,7 +1428,7 @@
         "nrows": 26,
         "ncols": 15,
         "class_name": "neume.podatus2a",
-        "confidence": 0.254603,
+        "confidence": 0.255362,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -1469,7 +1469,7 @@
         "nrows": 25,
         "ncols": 14,
         "class_name": "neume.clivis2",
-        "confidence": 0.257486,
+        "confidence": 0.257972,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -1519,7 +1519,7 @@
         "nrows": 33,
         "ncols": 16,
         "class_name": "neume.virga",
-        "confidence": 0.259967,
+        "confidence": 0.260056,
         "state": "AUTOMATIC"
       },
       "stave_id": 12,
@@ -1553,7 +1553,7 @@
         "nrows": 31,
         "ncols": 14,
         "class_name": "neume.clivis2",
-        "confidence": 0.260944,
+        "confidence": 0.260802,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -1598,52 +1598,12 @@
     {
       "glyph_index": 38,
       "ic": {
-        "ulx": 608,
-        "uly": 519,
-        "nrows": 18,
-        "ncols": 9,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.265837,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 15,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.4976525821596285,
-          "center_x": 612.5,
-          "center_y": 528.1666666666666,
-          "pitch": {
-            "pname": "C",
-            "oct": 4
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 612.5,
-        "y": 528.1666666666666,
-        "stave_step": 2.4976525821596285,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 218
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
-      "glyph_index": 39,
-      "ic": {
         "ulx": 600,
         "uly": 512,
         "nrows": 30,
         "ncols": 8,
         "class_name": "neume.virga",
-        "confidence": 0.266242,
+        "confidence": 0.266371,
         "state": "AUTOMATIC"
       },
       "stave_id": 15,
@@ -1676,6 +1636,46 @@
       "flags": []
     },
     {
+      "glyph_index": 39,
+      "ic": {
+        "ulx": 608,
+        "uly": 519,
+        "nrows": 18,
+        "ncols": 9,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.266511,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 15,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.4976525821596285,
+          "center_x": 612.5,
+          "center_y": 528.1666666666666,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 612.5,
+        "y": 528.1666666666666,
+        "stave_step": 2.4976525821596285,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 218
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
       "glyph_index": 40,
       "ic": {
         "ulx": 688,
@@ -1683,7 +1683,7 @@
         "nrows": 16,
         "ncols": 13,
         "class_name": "neume.inclinatum",
-        "confidence": 0.266969,
+        "confidence": 0.267485,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -1723,7 +1723,7 @@
         "nrows": 14,
         "ncols": 11,
         "class_name": "neume.inclinatum",
-        "confidence": 0.267284,
+        "confidence": 0.268282,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -1757,7 +1757,7 @@
         "nrows": 30,
         "ncols": 13,
         "class_name": "neume.podatus2a",
-        "confidence": 0.271932,
+        "confidence": 0.272235,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -1798,7 +1798,7 @@
         "nrows": 14,
         "ncols": 9,
         "class_name": "neume.inclinatum",
-        "confidence": 0.272458,
+        "confidence": 0.273433,
         "state": "AUTOMATIC"
       },
       "stave_id": 19,
@@ -1832,7 +1832,7 @@
         "nrows": 26,
         "ncols": 19,
         "class_name": "neume.clivis2",
-        "confidence": 0.273457,
+        "confidence": 0.273548,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -1882,7 +1882,7 @@
         "nrows": 21,
         "ncols": 12,
         "class_name": "neume.virga",
-        "confidence": 0.274659,
+        "confidence": 0.274482,
         "state": "AUTOMATIC"
       },
       "stave_id": 15,
@@ -1922,7 +1922,7 @@
         "nrows": 26,
         "ncols": 14,
         "class_name": "neume.podatus2a",
-        "confidence": 0.275339,
+        "confidence": 0.275456,
         "state": "AUTOMATIC"
       },
       "stave_id": 2,
@@ -1967,46 +1967,12 @@
     {
       "glyph_index": 47,
       "ic": {
-        "ulx": 670,
-        "uly": 255,
-        "nrows": 16,
-        "ncols": 12,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.275668,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 12,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 3.523470115059564,
-          "center_x": 674.5,
-          "center_y": 263.72463768115944,
-          "pitch": null
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 674.5,
-        "y": 263.72463768115944,
-        "stave_step": 3.523470115059564,
-        "interval": 0.0
-      },
-      "clef_used": null,
-      "reason": "missing_clef",
-      "flags": []
-    },
-    {
-      "glyph_index": 48,
-      "ic": {
         "ulx": 138,
         "uly": 1028,
         "nrows": 28,
         "ncols": 17,
         "class_name": "neume.podatus2a",
-        "confidence": 0.276011,
+        "confidence": 0.275826,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -2040,6 +2006,40 @@
       "flags": []
     },
     {
+      "glyph_index": 48,
+      "ic": {
+        "ulx": 670,
+        "uly": 255,
+        "nrows": 16,
+        "ncols": 12,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.276005,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.523470115059564,
+          "center_x": 674.5,
+          "center_y": 263.72463768115944,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 674.5,
+        "y": 263.72463768115944,
+        "stave_step": 3.523470115059564,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
       "glyph_index": 49,
       "ic": {
         "ulx": 521,
@@ -2047,7 +2047,7 @@
         "nrows": 27,
         "ncols": 15,
         "class_name": "neume.virga",
-        "confidence": 0.277856,
+        "confidence": 0.277637,
         "state": "AUTOMATIC"
       },
       "stave_id": 15,
@@ -2087,7 +2087,7 @@
         "nrows": 23,
         "ncols": 14,
         "class_name": "neume.virga",
-        "confidence": 0.278547,
+        "confidence": 0.278168,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -2122,53 +2122,12 @@
     {
       "glyph_index": 51,
       "ic": {
-        "ulx": 637,
-        "uly": 238,
-        "nrows": 28,
-        "ncols": 21,
-        "class_name": "neume.oblique2",
-        "confidence": 0.279498,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 12,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 5.666744730679156,
-          "center_x": 641.5,
-          "center_y": 248.97166666666666,
-          "pitch": null
-        },
-        {
-          "interval_from_first": -1,
-          "stave_step": 4.666744730679156,
-          "center_x": 641.5,
-          "center_y": 256.08833333333337,
-          "pitch": null
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 641.5,
-        "y": 252.53,
-        "stave_step": 5.166744730679156,
-        "interval": -0.5
-      },
-      "clef_used": null,
-      "reason": "missing_clef",
-      "flags": []
-    },
-    {
-      "glyph_index": 52,
-      "ic": {
         "ulx": 510,
         "uly": 777,
         "nrows": 14,
         "ncols": 10,
         "class_name": "neume.inclinatum",
-        "confidence": 0.280284,
+        "confidence": 0.280039,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -2201,14 +2160,14 @@
       "flags": []
     },
     {
-      "glyph_index": 53,
+      "glyph_index": 52,
       "ic": {
         "ulx": 656,
         "uly": 849,
         "nrows": 29,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.288946,
+        "confidence": 0.288854,
         "state": "AUTOMATIC"
       },
       "stave_id": 19,
@@ -2235,14 +2194,14 @@
       "flags": []
     },
     {
-      "glyph_index": 54,
+      "glyph_index": 53,
       "ic": {
         "ulx": 658,
         "uly": 676,
         "nrows": 26,
         "ncols": 15,
         "class_name": "neume.podatus2a",
-        "confidence": 0.290044,
+        "confidence": 0.290113,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -2285,14 +2244,14 @@
       "flags": []
     },
     {
-      "glyph_index": 55,
+      "glyph_index": 54,
       "ic": {
         "ulx": 679,
         "uly": 774,
         "nrows": 30,
         "ncols": 10,
         "class_name": "neume.virga",
-        "confidence": 0.293633,
+        "confidence": 0.293814,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -2325,14 +2284,14 @@
       "flags": []
     },
     {
-      "glyph_index": 56,
+      "glyph_index": 55,
       "ic": {
         "ulx": 130,
         "uly": 777,
         "nrows": 27,
         "ncols": 17,
         "class_name": "neume.clivis2",
-        "confidence": 0.293964,
+        "confidence": 0.294281,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -2375,56 +2334,14 @@
       "flags": []
     },
     {
-      "glyph_index": 57,
-      "ic": {
-        "ulx": 613,
-        "uly": 609,
-        "nrows": 12,
-        "ncols": 10,
-        "class_name": "neume.inclinatum",
-        "confidence": 0.293995,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 16,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.8695652173912993,
-          "center_x": 618.0,
-          "center_y": 615.0,
-          "pitch": {
-            "pname": "B",
-            "oct": 3
-          }
-        }
-      ],
-      "anchor": {
-        "source": "bbox_span",
-        "region": null,
-        "x": 618.0,
-        "y": 615.0,
-        "stave_step": 2.8695652173912993,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 220
-      },
-      "reason": null,
-      "flags": [
-        "pixel_anchor_unavailable"
-      ]
-    },
-    {
-      "glyph_index": 58,
+      "glyph_index": 56,
       "ic": {
         "ulx": 626,
         "uly": 612,
         "nrows": 25,
         "ncols": 18,
         "class_name": "neume.clivis2",
-        "confidence": 0.294062,
+        "confidence": 0.294346,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -2467,6 +2384,88 @@
       "flags": []
     },
     {
+      "glyph_index": 57,
+      "ic": {
+        "ulx": 613,
+        "uly": 609,
+        "nrows": 12,
+        "ncols": 10,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.294367,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 16,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.8695652173912993,
+          "center_x": 618.0,
+          "center_y": 615.0,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 618.0,
+        "y": 615.0,
+        "stave_step": 2.8695652173912993,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 220
+      },
+      "reason": null,
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 58,
+      "ic": {
+        "ulx": 754,
+        "uly": 612,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.296345,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 16,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.739900387382403,
+          "center_x": 758.5,
+          "center_y": 619.1076923076923,
+          "pitch": {
+            "pname": "A",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 758.5,
+        "y": 619.1076923076923,
+        "stave_step": 1.739900387382403,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 220
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
       "glyph_index": 59,
       "ic": {
         "ulx": 631,
@@ -2474,7 +2473,7 @@
         "nrows": 26,
         "ncols": 19,
         "class_name": "neume.clivis2",
-        "confidence": 0.296187,
+        "confidence": 0.296355,
         "state": "AUTOMATIC"
       },
       "stave_id": 15,
@@ -2519,112 +2518,12 @@
     {
       "glyph_index": 60,
       "ic": {
-        "ulx": 754,
-        "uly": 612,
-        "nrows": 19,
-        "ncols": 12,
-        "class_name": "neume.virga",
-        "confidence": 0.296337,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 16,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 1.739900387382403,
-          "center_x": 758.5,
-          "center_y": 619.1076923076923,
-          "pitch": {
-            "pname": "A",
-            "oct": 3
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "top",
-        "x": 758.5,
-        "y": 619.1076923076923,
-        "stave_step": 1.739900387382403,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 220
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
-      "glyph_index": 61,
-      "ic": {
-        "ulx": 195,
-        "uly": 429,
-        "nrows": 31,
-        "ncols": 22,
-        "class_name": "neume.torculus22",
-        "confidence": 0.302678,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 2,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.9172477440525046,
-          "center_x": 199.5,
-          "center_y": 450.6847826086956,
-          "pitch": {
-            "pname": "D",
-            "oct": 4
-          }
-        },
-        {
-          "interval_from_first": 1,
-          "stave_step": 3.9172477440525046,
-          "center_x": 199.5,
-          "center_y": 443.61811594202896,
-          "pitch": {
-            "pname": "E",
-            "oct": 4
-          }
-        },
-        {
-          "interval_from_first": -1,
-          "stave_step": 1.9172477440525046,
-          "center_x": 199.5,
-          "center_y": 457.7514492753623,
-          "pitch": {
-            "pname": "C",
-            "oct": 4
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "full",
-        "x": 199.5,
-        "y": 450.6847826086956,
-        "stave_step": 2.9172477440525046,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 211
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
-      "glyph_index": 62,
-      "ic": {
         "ulx": 379,
         "uly": 1023,
         "nrows": 28,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.304579,
+        "confidence": 0.304843,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -2651,14 +2550,54 @@
       "flags": []
     },
     {
-      "glyph_index": 63,
+      "glyph_index": 61,
+      "ic": {
+        "ulx": 724,
+        "uly": 342,
+        "nrows": 21,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 0.306653,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.2067932067932063,
+          "center_x": 728.5,
+          "center_y": 349.1714285714286,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 728.5,
+        "y": 349.1714285714286,
+        "stave_step": 3.2067932067932063,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 212
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 62,
       "ic": {
         "ulx": 191,
         "uly": 1019,
         "nrows": 27,
         "ncols": 16,
         "class_name": "neume.clivis2",
-        "confidence": 0.306183,
+        "confidence": 0.306795,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -2692,54 +2631,14 @@
       "flags": []
     },
     {
-      "glyph_index": 64,
-      "ic": {
-        "ulx": 724,
-        "uly": 342,
-        "nrows": 21,
-        "ncols": 14,
-        "class_name": "neume.virga",
-        "confidence": 0.306603,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 13,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 3.2067932067932063,
-          "center_x": 728.5,
-          "center_y": 349.1714285714286,
-          "pitch": {
-            "pname": "B",
-            "oct": 3
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "top",
-        "x": 728.5,
-        "y": 349.1714285714286,
-        "stave_step": 3.2067932067932063,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 212
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
-      "glyph_index": 65,
+      "glyph_index": 63,
       "ic": {
         "ulx": 713,
         "uly": 154,
         "nrows": 22,
         "ncols": 15,
         "class_name": "neume.virga",
-        "confidence": 0.309823,
+        "confidence": 0.310126,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -2766,14 +2665,14 @@
       "flags": []
     },
     {
-      "glyph_index": 66,
+      "glyph_index": 64,
       "ic": {
         "ulx": 557,
         "uly": 163,
         "nrows": 20,
         "ncols": 14,
         "class_name": "neume.virga",
-        "confidence": 0.312039,
+        "confidence": 0.312063,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -2800,14 +2699,14 @@
       "flags": []
     },
     {
-      "glyph_index": 67,
+      "glyph_index": 65,
       "ic": {
         "ulx": 256,
         "uly": 590,
         "nrows": 24,
         "ncols": 16,
         "class_name": "neume.podatus2a",
-        "confidence": 0.312855,
+        "confidence": 0.312636,
         "state": "AUTOMATIC"
       },
       "stave_id": 4,
@@ -2850,14 +2749,14 @@
       "flags": []
     },
     {
-      "glyph_index": 68,
+      "glyph_index": 66,
       "ic": {
         "ulx": 212,
         "uly": 782,
         "nrows": 17,
         "ncols": 9,
         "class_name": "neume.inclinatum",
-        "confidence": 0.314762,
+        "confidence": 0.314636,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -2890,14 +2789,14 @@
       "flags": []
     },
     {
-      "glyph_index": 69,
+      "glyph_index": 67,
       "ic": {
         "ulx": 497,
         "uly": 608,
         "nrows": 23,
         "ncols": 15,
         "class_name": "neume.virga",
-        "confidence": 0.316877,
+        "confidence": 0.316913,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -2930,14 +2829,14 @@
       "flags": []
     },
     {
-      "glyph_index": 70,
+      "glyph_index": 68,
       "ic": {
         "ulx": 730,
         "uly": 686,
         "nrows": 25,
         "ncols": 16,
         "class_name": "neume.virga",
-        "confidence": 0.31829,
+        "confidence": 0.3179,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -2970,14 +2869,14 @@
       "flags": []
     },
     {
-      "glyph_index": 71,
+      "glyph_index": 69,
       "ic": {
         "ulx": 210,
         "uly": 1031,
         "nrows": 25,
         "ncols": 8,
         "class_name": "neume.virga",
-        "confidence": 0.319988,
+        "confidence": 0.320092,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -3004,14 +2903,14 @@
       "flags": []
     },
     {
-      "glyph_index": 72,
+      "glyph_index": 70,
       "ic": {
         "ulx": 759,
         "uly": 229,
         "nrows": 27,
         "ncols": 23,
         "class_name": "neume.torculus22",
-        "confidence": 0.320169,
+        "confidence": 0.320177,
         "state": "AUTOMATIC"
       },
       "stave_id": 12,
@@ -3019,32 +2918,32 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 6.1136950904392755,
+          "stave_step": 5.866712946893442,
           "center_x": 763.5,
-          "center_y": 244.1851851851852,
+          "center_y": 245.955223880597,
           "pitch": null
         },
         {
           "interval_from_first": 1,
-          "stave_step": 7.1136950904392755,
+          "stave_step": 6.866712946893442,
           "center_x": 763.5,
-          "center_y": 237.01851851851853,
+          "center_y": 238.78855721393035,
           "pitch": null
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 5.1136950904392755,
+          "interval_from_first": 0,
+          "stave_step": 5.866712946893442,
           "center_x": 763.5,
-          "center_y": 251.35185185185185,
+          "center_y": 245.955223880597,
           "pitch": null
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 763.5,
-        "y": 244.1851851851852,
-        "stave_step": 6.1136950904392755,
+        "y": 245.955223880597,
+        "stave_step": 5.866712946893442,
         "interval": 0.0
       },
       "clef_used": null,
@@ -3052,54 +2951,14 @@
       "flags": []
     },
     {
-      "glyph_index": 73,
-      "ic": {
-        "ulx": 290,
-        "uly": 441,
-        "nrows": 19,
-        "ncols": 13,
-        "class_name": "neume.virga",
-        "confidence": 0.320194,
-        "state": "AUTOMATIC"
-      },
-      "stave_id": 2,
-      "stave_assignment_flags": [],
-      "note_components": [
-        {
-          "interval_from_first": 0,
-          "stave_step": 2.895089905926244,
-          "center_x": 294.5,
-          "center_y": 448.79661016949154,
-          "pitch": {
-            "pname": "D",
-            "oct": 4
-          }
-        }
-      ],
-      "anchor": {
-        "source": "pixel_centroid",
-        "region": "top",
-        "x": 294.5,
-        "y": 448.79661016949154,
-        "stave_step": 2.895089905926244,
-        "interval": 0.0
-      },
-      "clef_used": {
-        "class_name": "clef.c",
-        "glyph_index": 211
-      },
-      "reason": null,
-      "flags": []
-    },
-    {
-      "glyph_index": 74,
+      "glyph_index": 71,
       "ic": {
         "ulx": 134,
         "uly": 861,
         "nrows": 29,
         "ncols": 14,
         "class_name": "neume.virga",
-        "confidence": 0.320758,
+        "confidence": 0.320636,
         "state": "AUTOMATIC"
       },
       "stave_id": 7,
@@ -3132,14 +2991,54 @@
       "flags": []
     },
     {
-      "glyph_index": 75,
+      "glyph_index": 72,
+      "ic": {
+        "ulx": 290,
+        "uly": 441,
+        "nrows": 19,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.320761,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.895089905926244,
+          "center_x": 294.5,
+          "center_y": 448.79661016949154,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 294.5,
+        "y": 448.79661016949154,
+        "stave_step": 2.895089905926244,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 211
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 73,
       "ic": {
         "ulx": 378,
         "uly": 438,
         "nrows": 24,
         "ncols": 15,
         "class_name": "neume.virga",
-        "confidence": 0.321354,
+        "confidence": 0.32188,
         "state": "AUTOMATIC"
       },
       "stave_id": 2,
@@ -3172,14 +3071,14 @@
       "flags": []
     },
     {
-      "glyph_index": 76,
+      "glyph_index": 74,
       "ic": {
         "ulx": 523,
         "uly": 249,
         "nrows": 27,
         "ncols": 17,
         "class_name": "neume.podatus2a",
-        "confidence": 0.32396,
+        "confidence": 0.323992,
         "state": "AUTOMATIC"
       },
       "stave_id": 12,
@@ -3213,14 +3112,14 @@
       "flags": []
     },
     {
-      "glyph_index": 77,
+      "glyph_index": 75,
       "ic": {
         "ulx": 765,
         "uly": 684,
         "nrows": 29,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.325357,
+        "confidence": 0.325244,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -3253,14 +3152,14 @@
       "flags": []
     },
     {
-      "glyph_index": 78,
+      "glyph_index": 76,
       "ic": {
         "ulx": 360,
         "uly": 962,
         "nrows": 25,
         "ncols": 20,
         "class_name": "neume.clivis2",
-        "confidence": 0.326127,
+        "confidence": 0.326463,
         "state": "AUTOMATIC"
       },
       "stave_id": 8,
@@ -3294,14 +3193,14 @@
       "flags": []
     },
     {
-      "glyph_index": 79,
+      "glyph_index": 77,
       "ic": {
         "ulx": 531,
         "uly": 157,
         "nrows": 26,
         "ncols": 15,
         "class_name": "neume.podatus2a",
-        "confidence": 0.331587,
+        "confidence": 0.33148,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -3335,14 +3234,14 @@
       "flags": []
     },
     {
-      "glyph_index": 80,
+      "glyph_index": 78,
       "ic": {
         "ulx": 692,
         "uly": 603,
         "nrows": 29,
         "ncols": 13,
         "class_name": "neume.podatus2a",
-        "confidence": 0.333693,
+        "confidence": 0.333908,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -3385,14 +3284,14 @@
       "flags": []
     },
     {
-      "glyph_index": 81,
+      "glyph_index": 79,
       "ic": {
         "ulx": 599,
         "uly": 597,
         "nrows": 28,
         "ncols": 9,
         "class_name": "neume.virga",
-        "confidence": 0.339582,
+        "confidence": 0.33982,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -3425,14 +3324,14 @@
       "flags": []
     },
     {
-      "glyph_index": 82,
+      "glyph_index": 80,
       "ic": {
         "ulx": 166,
         "uly": 450,
         "nrows": 16,
         "ncols": 9,
         "class_name": "neume.inclinatum",
-        "confidence": 0.340223,
+        "confidence": 0.341363,
         "state": "AUTOMATIC"
       },
       "stave_id": 2,
@@ -3465,14 +3364,14 @@
       "flags": []
     },
     {
-      "glyph_index": 83,
+      "glyph_index": 81,
       "ic": {
         "ulx": 499,
         "uly": 698,
         "nrows": 20,
         "ncols": 13,
         "class_name": "neume.virga",
-        "confidence": 0.342059,
+        "confidence": 0.341705,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -3505,14 +3404,14 @@
       "flags": []
     },
     {
-      "glyph_index": 84,
+      "glyph_index": 82,
       "ic": {
         "ulx": 519,
         "uly": 784,
         "nrows": 13,
         "ncols": 11,
         "class_name": "neume.inclinatum",
-        "confidence": 0.345234,
+        "confidence": 0.345558,
         "state": "AUTOMATIC"
       },
       "stave_id": 18,
@@ -3545,14 +3444,14 @@
       "flags": []
     },
     {
-      "glyph_index": 85,
+      "glyph_index": 83,
       "ic": {
         "ulx": 486,
         "uly": 167,
         "nrows": 13,
         "ncols": 11,
         "class_name": "neume.inclinatum",
-        "confidence": 0.353008,
+        "confidence": 0.353936,
         "state": "AUTOMATIC"
       },
       "stave_id": 11,
@@ -3579,14 +3478,14 @@
       "flags": []
     },
     {
-      "glyph_index": 86,
+      "glyph_index": 84,
       "ic": {
         "ulx": 244,
         "uly": 696,
         "nrows": 28,
         "ncols": 15,
         "class_name": "neume.virga",
-        "confidence": 0.35868,
+        "confidence": 0.358739,
         "state": "AUTOMATIC"
       },
       "stave_id": 5,
@@ -3619,14 +3518,14 @@
       "flags": []
     },
     {
-      "glyph_index": 87,
+      "glyph_index": 85,
       "ic": {
         "ulx": 269,
         "uly": 1020,
         "nrows": 28,
         "ncols": 16,
         "class_name": "neume.podatus2a",
-        "confidence": 0.359989,
+        "confidence": 0.359903,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -3660,14 +3559,14 @@
       "flags": []
     },
     {
-      "glyph_index": 88,
+      "glyph_index": 86,
       "ic": {
         "ulx": 581,
         "uly": 238,
         "nrows": 25,
         "ncols": 17,
         "class_name": "neume.podatus2a",
-        "confidence": 0.367573,
+        "confidence": 0.367893,
         "state": "AUTOMATIC"
       },
       "stave_id": 12,
@@ -3701,14 +3600,14 @@
       "flags": []
     },
     {
-      "glyph_index": 89,
+      "glyph_index": 87,
       "ic": {
         "ulx": 585,
         "uly": 689,
         "nrows": 27,
         "ncols": 16,
         "class_name": "neume.podatus2a",
-        "confidence": 0.371197,
+        "confidence": 0.371325,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -3751,14 +3650,14 @@
       "flags": []
     },
     {
-      "glyph_index": 90,
+      "glyph_index": 88,
       "ic": {
         "ulx": 167,
         "uly": 1024,
         "nrows": 26,
         "ncols": 17,
         "class_name": "neume.clivis2",
-        "confidence": 0.375779,
+        "confidence": 0.375511,
         "state": "AUTOMATIC"
       },
       "stave_id": 9,
@@ -3792,14 +3691,14 @@
       "flags": []
     },
     {
-      "glyph_index": 91,
+      "glyph_index": 89,
       "ic": {
         "ulx": 262,
         "uly": 769,
         "nrows": 26,
         "ncols": 20,
         "class_name": "neume.torculus22",
-        "confidence": 0.391453,
+        "confidence": 0.391838,
         "state": "AUTOMATIC"
       },
       "stave_id": 6,
@@ -3807,9 +3706,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.119452662721893,
+          "stave_step": 3.772435897435897,
           "center_x": 266.5,
-          "center_y": 781.5384615384615,
+          "center_y": 783.9444444444445,
           "pitch": {
             "pname": "E",
             "oct": 4
@@ -3817,31 +3716,31 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.119452662721893,
+          "stave_step": 4.772435897435897,
           "center_x": 266.5,
-          "center_y": 774.6051282051283,
+          "center_y": 777.0111111111111,
           "pitch": {
             "pname": "F",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 3.1194526627218933,
+          "interval_from_first": 0,
+          "stave_step": 3.772435897435897,
           "center_x": 266.5,
-          "center_y": 788.4717948717948,
+          "center_y": 783.9444444444445,
           "pitch": {
-            "pname": "D",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 266.5,
-        "y": 781.5384615384615,
-        "stave_step": 4.119452662721893,
+        "y": 783.9444444444445,
+        "stave_step": 3.772435897435897,
         "interval": 0.0
       },
       "clef_used": {
@@ -3852,14 +3751,14 @@
       "flags": []
     },
     {
-      "glyph_index": 92,
+      "glyph_index": 90,
       "ic": {
         "ulx": 629,
         "uly": 688,
         "nrows": 25,
         "ncols": 15,
         "class_name": "neume.podatus2a",
-        "confidence": 0.399939,
+        "confidence": 0.400504,
         "state": "AUTOMATIC"
       },
       "stave_id": 17,
@@ -3902,14 +3801,14 @@
       "flags": []
     },
     {
-      "glyph_index": 93,
+      "glyph_index": 91,
       "ic": {
         "ulx": 154,
         "uly": 862,
         "nrows": 28,
         "ncols": 17,
         "class_name": "neume.clivis2",
-        "confidence": 0.402441,
+        "confidence": 0.402663,
         "state": "AUTOMATIC"
       },
       "stave_id": 7,
@@ -3952,14 +3851,14 @@
       "flags": []
     },
     {
-      "glyph_index": 94,
+      "glyph_index": 92,
       "ic": {
         "ulx": 727,
         "uly": 611,
         "nrows": 20,
         "ncols": 12,
         "class_name": "neume.virga",
-        "confidence": 0.418338,
+        "confidence": 0.418923,
         "state": "AUTOMATIC"
       },
       "stave_id": 16,
@@ -3992,14 +3891,14 @@
       "flags": []
     },
     {
-      "glyph_index": 95,
+      "glyph_index": 93,
       "ic": {
         "ulx": 597,
         "uly": 430,
         "nrows": 29,
         "ncols": 17,
         "class_name": "neume.podatus2a",
-        "confidence": 0.463576,
+        "confidence": 0.463681,
         "state": "AUTOMATIC"
       },
       "stave_id": 14,
@@ -4042,14 +3941,14 @@
       "flags": []
     },
     {
-      "glyph_index": 96,
+      "glyph_index": 94,
       "ic": {
         "ulx": 630,
         "uly": 429,
         "nrows": 28,
         "ncols": 16,
         "class_name": "neume.podatus2a",
-        "confidence": 0.472436,
+        "confidence": 0.472338,
         "state": "AUTOMATIC"
       },
       "stave_id": 14,
@@ -4089,6 +3988,107 @@
         "glyph_index": 217
       },
       "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 95,
+      "ic": {
+        "ulx": 195,
+        "uly": 429,
+        "nrows": 31,
+        "ncols": 22,
+        "class_name": "neume.torculus33",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.885908018867924,
+          "center_x": 199.5,
+          "center_y": 450.90625,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 2,
+          "stave_step": 4.885908018867924,
+          "center_x": 199.5,
+          "center_y": 436.7729166666667,
+          "pitch": {
+            "pname": "F",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.885908018867924,
+          "center_x": 199.5,
+          "center_y": 450.90625,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 199.5,
+        "y": 450.90625,
+        "stave_step": 2.885908018867924,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 211
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 96,
+      "ic": {
+        "ulx": 637,
+        "uly": 238,
+        "nrows": 28,
+        "ncols": 21,
+        "class_name": "neume.oblique2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.666744730679156,
+          "center_x": 641.5,
+          "center_y": 248.97166666666666,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 4.666744730679156,
+          "center_x": 641.5,
+          "center_y": 256.08833333333337,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 641.5,
+        "y": 252.53,
+        "stave_step": 5.166744730679156,
+        "interval": -0.5
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
       "flags": []
     },
     {
@@ -4449,29 +4449,29 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.374301087846534,
+          "stave_step": 2.7010194624652404,
           "center_x": 183.5,
-          "center_y": 866.5610841423947,
+          "center_y": 871.2179487179487,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 3.7010194624652404,
+          "center_x": 183.5,
+          "center_y": 864.3012820512821,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         },
         {
-          "interval_from_first": 1,
-          "stave_step": 4.3743010878465345,
+          "interval_from_first": -1,
+          "stave_step": 1.7010194624652404,
           "center_x": 183.5,
-          "center_y": 859.6444174757281,
-          "pitch": {
-            "pname": "E",
-            "oct": 4
-          }
-        },
-        {
-          "interval_from_first": -2,
-          "stave_step": 1.374301087846534,
-          "center_x": 183.5,
-          "center_y": 880.3944174757281,
+          "center_y": 878.1346153846154,
           "pitch": {
             "pname": "B",
             "oct": 3
@@ -4480,11 +4480,11 @@
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 183.5,
-        "y": 870.0194174757281,
-        "stave_step": 2.874301087846534,
-        "interval": -0.5
+        "y": 871.2179487179487,
+        "stave_step": 2.7010194624652404,
+        "interval": 0.0
       },
       "clef_used": {
         "class_name": "clef.c",
@@ -4980,7 +4980,7 @@
         "uly": 514,
         "nrows": 23,
         "ncols": 20,
-        "class_name": "neume.oblique2",
+        "class_name": "neume.oblique3",
         "confidence": 1.0,
         "state": "MANUAL"
       },
@@ -4989,19 +4989,19 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.175862979341295,
+          "stave_step": 5.675862979341295,
           "center_x": 189.5,
-          "center_y": 519.827752293578,
+          "center_y": 516.3527522935781,
           "pitch": {
-            "pname": "F",
+            "pname": "G",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 4.175862979341295,
+          "interval_from_first": -2,
+          "stave_step": 3.6758629793412947,
           "center_x": 189.5,
-          "center_y": 526.777752293578,
+          "center_y": 530.2527522935779,
           "pitch": {
             "pname": "E",
             "oct": 4
@@ -5014,7 +5014,7 @@
         "x": 189.5,
         "y": 523.302752293578,
         "stave_step": 4.675862979341295,
-        "interval": -0.5
+        "interval": -1.0
       },
       "clef_used": {
         "class_name": "clef.c",
@@ -5501,9 +5501,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1054957105076317,
+          "stave_step": 2.813291720212951,
           "center_x": 129.5,
-          "center_y": 706.1132882882883,
+          "center_y": 708.1538461538462,
           "pitch": {
             "pname": "D",
             "oct": 4
@@ -5511,32 +5511,32 @@
         },
         {
           "interval_from_first": 2,
-          "stave_step": 5.105495710507632,
+          "stave_step": 4.813291720212951,
           "center_x": 129.5,
-          "center_y": 692.1466216216216,
+          "center_y": 694.1871794871795,
           "pitch": {
             "pname": "F",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 2.1054957105076317,
+          "interval_from_first": 1,
+          "stave_step": 3.813291720212951,
           "center_x": 129.5,
-          "center_y": 713.0966216216217,
+          "center_y": 701.1705128205128,
           "pitch": {
-            "pname": "C",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 129.5,
-        "y": 702.6216216216217,
-        "stave_step": 3.6054957105076317,
-        "interval": 0.5
+        "y": 708.1538461538462,
+        "stave_step": 2.813291720212951,
+        "interval": 0.0
       },
       "clef_used": {
         "class_name": "clef.c",
@@ -6048,9 +6048,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.161543492478745,
+          "stave_step": 3.8955270566155784,
           "center_x": 595.5,
-          "center_y": 774.9772727272727,
+          "center_y": 776.8260869565217,
           "pitch": {
             "pname": "E",
             "oct": 4
@@ -6058,31 +6058,31 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.161543492478745,
+          "stave_step": 4.895527056615578,
           "center_x": 595.5,
-          "center_y": 768.0272727272727,
+          "center_y": 769.8760869565218,
           "pitch": {
             "pname": "F",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 3.161543492478745,
+          "interval_from_first": 0,
+          "stave_step": 3.8955270566155784,
           "center_x": 595.5,
-          "center_y": 781.9272727272728,
+          "center_y": 776.8260869565217,
           "pitch": {
-            "pname": "D",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 595.5,
-        "y": 774.9772727272727,
-        "stave_step": 4.161543492478745,
+        "y": 776.8260869565217,
+        "stave_step": 3.8955270566155784,
         "interval": 0.0
       },
       "clef_used": {
@@ -6227,32 +6227,32 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.719663865546221,
+          "stave_step": 5.70934256055364,
           "center_x": 288.5,
-          "center_y": 1022.9857142857143,
+          "center_y": 1023.0588235294117,
           "pitch": null
         },
         {
           "interval_from_first": 1,
-          "stave_step": 6.719663865546221,
+          "stave_step": 6.70934256055364,
           "center_x": 288.5,
-          "center_y": 1015.9023809523809,
+          "center_y": 1015.9754901960783,
           "pitch": null
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 4.719663865546221,
+          "interval_from_first": 0,
+          "stave_step": 5.70934256055364,
           "center_x": 288.5,
-          "center_y": 1030.0690476190475,
+          "center_y": 1023.0588235294117,
           "pitch": null
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 288.5,
-        "y": 1022.9857142857143,
-        "stave_step": 5.719663865546221,
+        "y": 1023.0588235294117,
+        "stave_step": 5.70934256055364,
         "interval": 0.0
       },
       "clef_used": null,
@@ -6423,7 +6423,7 @@
         "uly": 1112,
         "nrows": 26,
         "ncols": 20,
-        "class_name": "neume.oblique2",
+        "class_name": "neume.oblique3",
         "confidence": 1.0,
         "state": "MANUAL"
       },
@@ -6432,16 +6432,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.6580553738827,
+          "stave_step": 4.1580553738827,
           "center_x": 242.5,
-          "center_y": 1121.6765151515153,
+          "center_y": 1118.2015151515152,
           "pitch": null
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 2.6580553738827,
+          "interval_from_first": -2,
+          "stave_step": 2.1580553738827,
           "center_x": 242.5,
-          "center_y": 1128.6265151515152,
+          "center_y": 1132.1015151515153,
           "pitch": null
         }
       ],
@@ -6451,7 +6451,7 @@
         "x": 242.5,
         "y": 1125.1515151515152,
         "stave_step": 3.1580553738827,
-        "interval": -0.5
+        "interval": -1.0
       },
       "clef_used": null,
       "reason": "missing_clef",
@@ -7409,7 +7409,7 @@
         "uly": 612,
         "nrows": 29,
         "ncols": 26,
-        "class_name": "neume.oblique2",
+        "class_name": "neume.oblique3",
         "confidence": 1.0,
         "state": "MANUAL"
       },
@@ -7418,19 +7418,19 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.5629654206296575,
+          "stave_step": 3.0629654206296575,
           "center_x": 225.5,
-          "center_y": 622.4436868686869,
+          "center_y": 619.0186868686868,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 1.5629654206296575,
+          "interval_from_first": -2,
+          "stave_step": 1.0629654206296575,
           "center_x": 225.5,
-          "center_y": 629.2936868686868,
+          "center_y": 632.7186868686869,
           "pitch": {
             "pname": "A",
             "oct": 3
@@ -7443,7 +7443,7 @@
         "x": 225.5,
         "y": 625.8686868686868,
         "stave_step": 2.0629654206296575,
-        "interval": -0.5
+        "interval": -1.0
       },
       "clef_used": {
         "class_name": "clef.c",
@@ -7917,32 +7917,32 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.4845196615231533,
+          "stave_step": 2.0438337341119963,
           "center_x": 329.5,
-          "center_y": 958.6224489795918,
+          "center_y": 961.6338028169014,
           "pitch": null
         },
         {
           "interval_from_first": 1,
-          "stave_step": 3.4845196615231533,
+          "stave_step": 3.0438337341119963,
           "center_x": 329.5,
-          "center_y": 951.7891156462584,
+          "center_y": 954.800469483568,
           "pitch": null
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 1.4845196615231533,
+          "interval_from_first": 0,
+          "stave_step": 2.0438337341119963,
           "center_x": 329.5,
-          "center_y": 965.4557823129252,
+          "center_y": 961.6338028169014,
           "pitch": null
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 329.5,
-        "y": 958.6224489795918,
-        "stave_step": 2.4845196615231533,
+        "y": 961.6338028169014,
+        "stave_step": 2.0438337341119963,
         "interval": 0.0
       },
       "clef_used": null,
@@ -8340,9 +8340,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.132756937665601,
+          "stave_step": 3.7217358203273787,
           "center_x": 684.5,
-          "center_y": 515.2574257425742,
+          "center_y": 518.1756756756756,
           "pitch": {
             "pname": "E",
             "oct": 4
@@ -8350,31 +8350,31 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.132756937665601,
+          "stave_step": 4.721735820327378,
           "center_x": 684.5,
-          "center_y": 508.1574257425742,
+          "center_y": 511.0756756756756,
           "pitch": {
             "pname": "F",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 3.132756937665601,
+          "interval_from_first": 0,
+          "stave_step": 3.7217358203273787,
           "center_x": 684.5,
-          "center_y": 522.3574257425743,
+          "center_y": 518.1756756756756,
           "pitch": {
-            "pname": "D",
+            "pname": "E",
             "oct": 4
           }
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 684.5,
-        "y": 515.2574257425742,
-        "stave_step": 4.132756937665601,
+        "y": 518.1756756756756,
+        "stave_step": 3.7217358203273787,
         "interval": 0.0
       },
       "clef_used": {
@@ -8592,9 +8592,9 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1716812081849914,
+          "stave_step": 1.8758949880668299,
           "center_x": 396.5,
-          "center_y": 875.9344262295082,
+          "center_y": 878.0,
           "pitch": {
             "pname": "C",
             "oct": 4
@@ -8602,31 +8602,31 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 3.1716812081849914,
+          "stave_step": 2.87589498806683,
           "center_x": 396.5,
-          "center_y": 868.9510928961748,
+          "center_y": 871.0166666666667,
           "pitch": {
             "pname": "D",
             "oct": 4
           }
         },
         {
-          "interval_from_first": -1,
-          "stave_step": 1.1716812081849914,
+          "interval_from_first": 0,
+          "stave_step": 1.8758949880668299,
           "center_x": 396.5,
-          "center_y": 882.9177595628415,
+          "center_y": 878.0,
           "pitch": {
-            "pname": "B",
-            "oct": 3
+            "pname": "C",
+            "oct": 4
           }
         }
       ],
       "anchor": {
         "source": "pixel_centroid",
-        "region": "full",
+        "region": "bottom_left",
         "x": 396.5,
-        "y": 875.9344262295082,
-        "stave_step": 2.1716812081849914,
+        "y": 878.0,
+        "stave_step": 1.8758949880668299,
         "interval": 0.0
       },
       "clef_used": {

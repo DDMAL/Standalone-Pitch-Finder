@@ -3,7 +3,7 @@
   <glyphs>
     <glyph uly="791" ulx="221" nrows="10" ncols="8">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.150745"/>
+        <id name="neume.inclinatum" confidence="0.150997"/>
       </ids>
       <data>10 3 5 5 3 6 2 6 1 15 1 7 1 7 1 7</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -19,7 +19,7 @@
     </glyph>
     <glyph uly="173" ulx="495" nrows="12" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.200332"/>
+        <id name="neume.inclinatum" confidence="0.200533"/>
       </ids>
       <data>0 1 3 2 9 4 7 6 4 8 3 8 3 8 2 9 2 8 3 8 4 7 6 4 9 2 2</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -35,7 +35,7 @@
     </glyph>
     <glyph uly="774" ulx="200" nrows="24" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.201321"/>
+        <id name="neume.podatus2a" confidence="0.202259"/>
       </ids>
       <data>26 7 3 8 4 7 3 8 3 7 4 7 4 7 1 22 9 1 3 8 2 9 2 9 2 9 2 9 2 9 2 9 2 10 1 10 7 4 9 13</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -51,7 +51,7 @@
     </glyph>
     <glyph uly="249" ulx="660" nrows="15" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.209707"/>
+        <id name="neume.inclinatum" confidence="0.210021"/>
       </ids>
       <data>21 4 6 7 3 7 2 8 2 8 2 8 2 7 3 7 4 6 4 6 2 11 20</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -67,7 +67,7 @@
     </glyph>
     <glyph uly="778" ulx="635" nrows="14" ncols="6">
       <ids state="AUTOMATIC">
-        <id name="neume.punctum" confidence="0.212046"/>
+        <id name="neume.punctum" confidence="0.212404"/>
       </ids>
       <data>5 67 12</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -83,7 +83,7 @@
     </glyph>
     <glyph uly="925" ulx="182" nrows="24" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.213450"/>
+        <id name="neume.podatus2a" confidence="0.213301"/>
       </ids>
       <data>5 5 7 6 8 6 6 7 6 6 7 6 7 7 2 13 5 6 6 2 3 2 5 8 5 8 5 8 5 8 5 8 5 8 5 8 5 8 6 7 11 2 2 13 5 5 1 2 26</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -99,7 +99,7 @@
     </glyph>
     <glyph uly="437" ulx="147" nrows="28" ncols="9">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.214341"/>
+        <id name="neume.podatus2a" confidence="0.214534"/>
       </ids>
       <data>12 5 3 7 2 6 3 7 2 7 2 16 1 8 2 6 2 7 5 1 1 2 2 8 1 8 1 8 1 8 1 8 1 44 8 1 45</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -115,7 +115,7 @@
     </glyph>
     <glyph uly="783" ulx="369" nrows="28" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.219239"/>
+        <id name="neume.podatus2a" confidence="0.219390"/>
       </ids>
       <data>36 6 5 7 4 7 4 7 4 7 3 8 3 8 1 22 7 3 9 2 2 9 2 9 2 9 2 9 2 8 3 8 3 9 1 9 2 10 2 4 17 11 22</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -129,25 +129,9 @@
         <feature name="hu_moment">0.27970768297131066 0.04091891539733195 0.00011403130998786594 2.1318159989056437e-06 -6.687119378657478e-12 3.02271924866062e-07 -3.2558500840251574e-11</feature>
       </features>
     </glyph>
-    <glyph uly="602" ulx="607" nrows="11" ncols="8">
-      <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.221757"/>
-      </ids>
-      <data>10 2 6 4 3 7 1 30 1 7 1 7 3 4 2</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.7272727272727273</feature>
-        <feature name="volume">0.6931818181818182</feature>
-        <feature name="nrows_feature">11.0</feature>
-        <feature name="ncols_feature">8.0</feature>
-        <feature name="compactness">0.9847976790146487</feature>
-        <feature name="nholes">2.0</feature>
-        <feature name="volume16regions">0.0 0.6666666666666666 0.3333333333333333 0.0 0.6666666666666666 1.0 1.0 1.0 1.0 1.0 1.0 0.6666666666666666 0.5 1.0 1.0 0.25</feature>
-        <feature name="hu_moment">0.16602270674637976 0.0014394417921027038 2.4421592294713643e-05 1.5540888935137874e-06 9.574092540493699e-12 3.104486182401681e-08 3.647936688114222e-14</feature>
-      </features>
-    </glyph>
     <glyph uly="783" ulx="538" nrows="22" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.221780"/>
+        <id name="neume.clivis2" confidence="0.221708"/>
       </ids>
       <data>20 1 15 6 10 6 10 6 10 6 10 6 6 32 3 7 9 13 3 1 4 8 9 7 9 7 9 7 9 7 9 7 9 7 9 7 8 5 21 3 3 1 2 2 1 1 1</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -161,9 +145,25 @@
         <feature name="hu_moment">0.2693930634466327 0.01873657102745737 0.0006149392013073313 0.0005012380905913897 -3.529315562973005e-08 -5.238550327357279e-05 2.7603300754972626e-07</feature>
       </features>
     </glyph>
+    <glyph uly="602" ulx="607" nrows="11" ncols="8">
+      <ids state="AUTOMATIC">
+        <id name="neume.inclinatum" confidence="0.222066"/>
+      </ids>
+      <data>10 2 6 4 3 7 1 30 1 7 1 7 3 4 2</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7272727272727273</feature>
+        <feature name="volume">0.6931818181818182</feature>
+        <feature name="nrows_feature">11.0</feature>
+        <feature name="ncols_feature">8.0</feature>
+        <feature name="compactness">0.9847976790146487</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.6666666666666666 0.3333333333333333 0.0 0.6666666666666666 1.0 1.0 1.0 1.0 1.0 1.0 0.6666666666666666 0.5 1.0 1.0 0.25</feature>
+        <feature name="hu_moment">0.16602270674637976 0.0014394417921027038 2.4421592294713643e-05 1.5540888935137874e-06 9.574092540493699e-12 3.104486182401681e-08 3.647936688114222e-14</feature>
+      </features>
+    </glyph>
     <glyph uly="536" ulx="398" nrows="24" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.223404"/>
+        <id name="neume.podatus2a" confidence="0.223556"/>
       </ids>
       <data>42 14 5 7 7 6 8 6 8 6 8 6 7 7 7 7 7 7 7 7 12 2 12 2 6 8 6 7 4 11 1 2 2 8 7 7 7 7 2 1 3 8 6 8 6 7 2 1 2</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -179,7 +179,7 @@
     </glyph>
     <glyph uly="698" ulx="523" nrows="21" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.225660"/>
+        <id name="neume.virga" confidence="0.225543"/>
       </ids>
       <data>21 5 6 8 6 8 6 8 6 8 2 14 1 12 5 8 6 8 6 8 128 14</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -195,7 +195,7 @@
     </glyph>
     <glyph uly="801" ulx="389" nrows="16" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.226635"/>
+        <id name="neume.inclinatum" confidence="0.227239"/>
       </ids>
       <data>0 1 10 1 15 1 9 3 8 5 6 6 1 22 3 7 3 7 4 7 5 6 6 4 9 2 2 1 10 1 10 1</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -211,7 +211,7 @@
     </glyph>
     <glyph uly="771" ulx="503" nrows="26" ncols="8">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.227700"/>
+        <id name="neume.virga" confidence="0.227719"/>
       </ids>
       <data>8 6 2 6 2 6 2 6 2 6 2 15 1 7 1 6 7 1 7 1 7 1 7 1 7 1 9 1 7 1 13 1 2 11 1 4 40</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -227,7 +227,7 @@
     </glyph>
     <glyph uly="787" ulx="699" nrows="17" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.229505"/>
+        <id name="neume.inclinatum" confidence="0.230086"/>
       </ids>
       <data>0 20 3 3 7 5 4 8 2 8 2 8 2 8 2 7 2 8 2 8 3 7 6 4 8 2 3 18 10</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -243,7 +243,7 @@
     </glyph>
     <glyph uly="157" ulx="477" nrows="23" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.229666"/>
+        <id name="neume.podatus2a" confidence="0.230275"/>
       </ids>
       <data>10 10 3 5 5 6 4 6 4 6 4 6 3 7 3 7 3 7 3 7 7 3 8 1 3 7 3 8 1 10 1 8 2 7 3 7 3 7 2 8 2 8 12</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -259,7 +259,7 @@
     </glyph>
     <glyph uly="680" ulx="689" nrows="25" ncols="18">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.230485"/>
+        <id name="neume.clivis2" confidence="0.230808"/>
       </ids>
       <data>21 6 12 6 12 6 12 6 12 6 8 19 3 6 11 7 12 6 1 5 6 2 2 8 6 1 3 8 6 1 3 8 6 1 3 8 5 2 3 8 5 2 3 8 5 2 3 8 5 2 3 8 6 1 3 6 1 1 3 25 2 1 4 2 4 2 15 2 17 1 17 1 15</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -275,7 +275,7 @@
     </glyph>
     <glyph uly="437" ulx="218" nrows="26" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.233647"/>
+        <id name="neume.virga" confidence="0.234472"/>
       </ids>
       <data>23 6 3 8 2 18 1 9 2 8 1 8 2 8 2 8 2 2 4 2 9 1 9 1 9 1 9 1 9 1 9 1 9 1 1 10 60</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -289,25 +289,9 @@
         <feature name="hu_moment">0.3324179131791606 0.037591156501019234 0.012769159080957104 0.01802429180778079 0.0002708538031929292 0.003493851935258541 3.754811418693697e-05</feature>
       </features>
     </glyph>
-    <glyph uly="528" ulx="419" nrows="28" ncols="13">
-      <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.236969"/>
-      </ids>
-      <data>44 2 4 1 6 7 6 7 6 7 6 7 6 7 5 8 5 8 1 13 4 8 9 4 5 8 5 7 6 7 6 7 5 8 5 8 5 8 5 8 5 8 28 3 1 5 1 2 27</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.4642857142857143</feature>
-        <feature name="volume">0.4340659340659341</feature>
-        <feature name="nrows_feature">28.0</feature>
-        <feature name="ncols_feature">13.0</feature>
-        <feature name="compactness">0.4404297522299587</feature>
-        <feature name="nholes">1.0</feature>
-        <feature name="volume16regions">0.0 0.38095238095238093 0.42857142857142855 0.3333333333333333 0.14285714285714285 0.7619047619047619 0.9523809523809523 0.7142857142857143 0.10714285714285714 1.0 1.0 0.38095238095238093 0.17857142857142858 0.42857142857142855 0.38095238095238093 0.19047619047619047</feature>
-        <feature name="hu_moment">0.28099729433168563 0.041055552542810896 7.679628631990831e-05 0.0002801262497279276 4.065156825873946e-08 4.886751962367653e-05 5.9635130395209145e-09</feature>
-      </features>
-    </glyph>
     <glyph uly="442" ulx="227" nrows="15" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.237141"/>
+        <id name="neume.inclinatum" confidence="0.237304"/>
       </ids>
       <data>0 12 10 1 3 1 9 6 5 7 3 8 3 8 3 7 3 8 3 8 3 8 4 6 9 2 14 7 1 1 1 1</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -321,9 +305,25 @@
         <feature name="hu_moment">0.2530484851460578 0.013145446416001821 0.00025870907643735897 4.421932463118538e-05 3.684222680799902e-09 -2.359528912375045e-06 -2.96573362852841e-09</feature>
       </features>
     </glyph>
+    <glyph uly="528" ulx="419" nrows="28" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2a" confidence="0.237341"/>
+      </ids>
+      <data>44 2 4 1 6 7 6 7 6 7 6 7 6 7 5 8 5 8 1 13 4 8 9 4 5 8 5 7 6 7 6 7 5 8 5 8 5 8 5 8 5 8 28 3 1 5 1 2 27</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.4642857142857143</feature>
+        <feature name="volume">0.4340659340659341</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.4404297522299587</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.38095238095238093 0.42857142857142855 0.3333333333333333 0.14285714285714285 0.7619047619047619 0.9523809523809523 0.7142857142857143 0.10714285714285714 1.0 1.0 0.38095238095238093 0.17857142857142858 0.42857142857142855 0.38095238095238093 0.19047619047619047</feature>
+        <feature name="hu_moment">0.28099729433168563 0.041055552542810896 7.679628631990831e-05 0.0002801262497279276 4.065156825873946e-08 4.886751962367653e-05 5.9635130395209145e-09</feature>
+      </features>
+    </glyph>
     <glyph uly="839" ulx="517" nrows="11" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.238416"/>
+        <id name="neume.inclinatum" confidence="0.238312"/>
       </ids>
       <data>3 1 9 4 5 7 3 7 1 10 1 7 3 7 3 7 1 1 1 7 1 1 3 4 2 1 5 2 2 1</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -339,7 +339,7 @@
     </glyph>
     <glyph uly="795" ulx="381" nrows="17" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.242355"/>
+        <id name="neume.inclinatum" confidence="0.242565"/>
       </ids>
       <data>13 1 9 2 7 5 5 7 3 7 3 7 2 8 2 7 2 8 3 7 5 5 3 1 1 17 30</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -355,7 +355,7 @@
     </glyph>
     <glyph uly="525" ulx="617" nrows="16" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.243484"/>
+        <id name="neume.inclinatum" confidence="0.243871"/>
       </ids>
       <data>12 1 8 4 6 6 4 7 3 8 1 19 1 8 2 8 3 7 5 5 7 3 32</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -371,7 +371,7 @@
     </glyph>
     <glyph uly="1131" ulx="189" nrows="19" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.247010"/>
+        <id name="neume.virga" confidence="0.247447"/>
       </ids>
       <data>0 1 6 1 5 13 20 3 6 8 5 8 5 8 5 8 5 8 5 8 4 9 4 9 4 9 12 1 15 13 4 7 1 1 26</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -387,7 +387,7 @@
     </glyph>
     <glyph uly="842" ulx="562" nrows="23" ncols="12">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.247427"/>
+        <id name="neume.podatus2a" confidence="0.247473"/>
       </ids>
       <data>5 3 1 2 3 10 4 7 5 7 5 7 4 8 4 8 4 8 4 8 4 8 10 2 15 8 4 9 1 24 2 9 2 10 2 9 3 9 3 9 9 1 16</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -403,7 +403,7 @@
     </glyph>
     <glyph uly="775" ulx="619" nrows="26" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.247859"/>
+        <id name="neume.clivis2" confidence="0.247629"/>
       </ids>
       <data>2 2 1 4 1 18 2 2 12 7 7 7 7 7 7 7 7 6 8 6 8 6 8 6 8 6 13 1 3 2 2 2 4 21 1 2 4 7 7 7 7 7 7 7 7 7 7 7 7 7 7 2 47</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -417,25 +417,9 @@
         <feature name="hu_moment">0.34622710585494826 0.05194737989286941 0.002393791018866469 0.00035123066241796316 -4.806674652517081e-08 -6.655751735390691e-05 3.184490934863029e-07</feature>
       </features>
     </glyph>
-    <glyph uly="149" ulx="772" nrows="24" ncols="17">
-      <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.248119"/>
-      </ids>
-      <data>4 1 15 7 10 7 10 6 11 6 8 10 10 6 2 4 5 6 11 6 10 7 10 1 4 8 10 7 9 8 9 8 9 8 9 8 9 8 9 8 4 1 4 8 2 17 2 1 65</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.7083333333333334</feature>
-        <feature name="volume">0.38480392156862747</feature>
-        <feature name="nrows_feature">24.0</feature>
-        <feature name="ncols_feature">17.0</feature>
-        <feature name="compactness">0.3705221072692632</feature>
-        <feature name="nholes">3.0</feature>
-        <feature name="volume16regions">0.4666666666666667 0.8333333333333334 0.125 0.0 0.3333333333333333 0.7916666666666666 0.4166666666666667 0.25 0.0 0.5 1.0 0.5 0.23333333333333334 0.25 0.3333333333333333 0.25</feature>
-        <feature name="hu_moment">0.2969694510933506 0.027152849889386224 0.0025172601001835844 0.00025394878041346843 -1.9644208087636036e-07 -1.1587387991942581e-05 -5.134258983242813e-08</feature>
-      </features>
-    </glyph>
     <glyph uly="248" ulx="609" nrows="28" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.248394"/>
+        <id name="neume.virga" confidence="0.248457"/>
       </ids>
       <data>37 4 8 8 7 8 7 8 7 8 7 8 7 8 6 9 6 9 6 8 7 2 3 16 1 2 73 1 14 1 14 1 14 1 14 2 13 2 13 2 14 1 13 2 2 13 3</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -449,9 +433,25 @@
         <feature name="hu_moment">0.5335561704877312 0.15111568205024273 0.059026803049918405 0.10238501556562721 0.00791849938324307 0.03977173919297801 0.0008056645226779658</feature>
       </features>
     </glyph>
+    <glyph uly="149" ulx="772" nrows="24" ncols="17">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2" confidence="0.248681"/>
+      </ids>
+      <data>4 1 15 7 10 7 10 6 11 6 8 10 10 6 2 4 5 6 11 6 10 7 10 1 4 8 10 7 9 8 9 8 9 8 9 8 9 8 9 8 4 1 4 8 2 17 2 1 65</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7083333333333334</feature>
+        <feature name="volume">0.38480392156862747</feature>
+        <feature name="nrows_feature">24.0</feature>
+        <feature name="ncols_feature">17.0</feature>
+        <feature name="compactness">0.3705221072692632</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.4666666666666667 0.8333333333333334 0.125 0.0 0.3333333333333333 0.7916666666666666 0.4166666666666667 0.25 0.0 0.5 1.0 0.5 0.23333333333333334 0.25 0.3333333333333333 0.25</feature>
+        <feature name="hu_moment">0.2969694510933506 0.027152849889386224 0.0025172601001835844 0.00025394878041346843 -1.9644208087636036e-07 -1.1587387991942581e-05 -5.134258983242813e-08</feature>
+      </features>
+    </glyph>
     <glyph uly="933" ulx="213" nrows="22" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.248747"/>
+        <id name="neume.virga" confidence="0.248917"/>
       </ids>
       <data>0 3 1 9 4 3 9 6 7 6 7 6 7 6 7 6 7 6 7 6 7 7 6 7 12 1 12 1 3 13 9 1 12 1 12 1 12 1 12 2 11 2 11 2 12 1 2</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -465,25 +465,9 @@
         <feature name="hu_moment">0.38757364357223234 0.06783519453912056 0.01720883420907459 0.009631908656626654 0.00012369795117957925 0.0023433473137741733 -8.74158685511066e-06</feature>
       </features>
     </glyph>
-    <glyph uly="779" ulx="711" nrows="28" ncols="19">
-      <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.250779"/>
-      </ids>
-      <data>41 1 18 6 13 6 13 6 13 6 12 8 1 36 12 6 13 6 2 5 6 1 4 8 6 1 4 8 6 1 4 8 11 8 11 8 11 8 11 8 11 8 11 8 6 1 4 2 4 3 1 24 9 1 1 1 80</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.6785714285714286</feature>
-        <feature name="volume">0.36278195488721804</feature>
-        <feature name="nrows_feature">28.0</feature>
-        <feature name="ncols_feature">19.0</feature>
-        <feature name="compactness">0.20346960102879616</feature>
-        <feature name="nholes">4.0</feature>
-        <feature name="volume16regions">0.2571428571428571 0.45714285714285713 0.0 0.0 0.6 0.7428571428571429 0.6857142857142857 0.2857142857142857 0.02857142857142857 0.6 1.0 0.0 0.2571428571428571 0.2 0.2571428571428571 0.25</feature>
-        <feature name="hu_moment">0.28479256737010156 0.01194133748885469 0.0005286500118509362 0.00012101192185672622 2.8411024009831296e-08 -4.9231534134531245e-06 1.1385355062020937e-08</feature>
-      </features>
-    </glyph>
     <glyph uly="844" ulx="524" nrows="13" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.250801"/>
+        <id name="neume.inclinatum" confidence="0.250645"/>
       </ids>
       <data>0 1 2 2 6 1 2 4 4 1 1 7 2 1 1 8 3 7 4 7 3 8 3 8 3 8 4 7 7 4 9 1 3 2 2 3 4</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -497,9 +481,25 @@
         <feature name="hu_moment">0.20084960937500002 0.0041782120704650936 0.0003674200582243493 0.00014666776368394677 -1.3870034529191805e-08 -5.589909654170062e-06 3.1094128531018555e-08</feature>
       </features>
     </glyph>
+    <glyph uly="779" ulx="711" nrows="28" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2" confidence="0.251629"/>
+      </ids>
+      <data>41 1 18 6 13 6 13 6 13 6 12 8 1 36 12 6 13 6 2 5 6 1 4 8 6 1 4 8 6 1 4 8 11 8 11 8 11 8 11 8 11 8 11 8 6 1 4 2 4 3 1 24 9 1 1 1 80</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6785714285714286</feature>
+        <feature name="volume">0.36278195488721804</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.20346960102879616</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.2571428571428571 0.45714285714285713 0.0 0.0 0.6 0.7428571428571429 0.6857142857142857 0.2857142857142857 0.02857142857142857 0.6 1.0 0.0 0.2571428571428571 0.2 0.2571428571428571 0.25</feature>
+        <feature name="hu_moment">0.28479256737010156 0.01194133748885469 0.0005286500118509362 0.00012101192185672622 2.8411024009831296e-08 -4.9231534134531245e-06 1.1385355062020937e-08</feature>
+      </features>
+    </glyph>
     <glyph uly="847" ulx="538" nrows="26" ncols="23">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.251774"/>
+        <id name="neume.clivis2" confidence="0.252052"/>
       </ids>
       <data>75 5 18 5 18 5 18 5 17 6 17 6 14 2 1 7 1 33 5 6 1 4 12 2 3 8 10 1 4 8 10 1 2 1 1 8 16 7 15 8 15 8 15 8 15 8 15 8 15 1 5 2 10 1 7 1 1 1 5 1 1 30 1 2 1 4 31</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -513,25 +513,9 @@
         <feature name="hu_moment">0.30522936844706205 0.005314816651399101 0.0028724981153786465 0.0007975581708244183 8.612814705991507e-07 -3.57640000824049e-05 8.4586474088581e-07</feature>
       </features>
     </glyph>
-    <glyph uly="1037" ulx="218" nrows="13" ncols="10">
-      <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.252939"/>
-      </ids>
-      <data>3 2 7 6 4 7 3 7 2 8 2 8 2 7 3 7 3 7 3 7 4 6 2 10 10</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.7692307692307693</feature>
-        <feature name="volume">0.6307692307692307</feature>
-        <feature name="nrows_feature">13.0</feature>
-        <feature name="ncols_feature">10.0</feature>
-        <feature name="compactness">0.8561607670373618</feature>
-        <feature name="nholes">2.0</feature>
-        <feature name="volume16regions">0.25 0.9166666666666666 0.75 0.25 0.6666666666666666 1.0 1.0 0.3333333333333333 0.6666666666666666 1.0 1.0 0.0 0.4444444444444444 0.6666666666666666 0.6666666666666666 0.3333333333333333</feature>
-        <feature name="hu_moment">0.18776026174895893 0.005616529456416405 0.0001290582306571554 1.0986500872927382e-05 9.01087412027464e-11 3.1722885410487704e-07 4.0376389953763247e-10</feature>
-      </features>
-    </glyph>
     <glyph uly="364" ulx="284" nrows="27" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.252995"/>
+        <id name="neume.clivis2" confidence="0.252850"/>
       </ids>
       <data>2 6 10 6 10 6 9 7 9 6 10 7 8 23 6 2 2 6 10 2 3 8 9 7 8 8 9 7 9 7 8 8 8 8 8 8 8 8 8 8 19 1 2 1 1 22 84</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -545,9 +529,25 @@
         <feature name="hu_moment">0.31112197668129854 0.031911808351608124 0.002713684617263872 0.00035132693490411425 -3.270872526827287e-07 -6.0885632558544394e-05 1.0339973367787461e-07</feature>
       </features>
     </glyph>
+    <glyph uly="1037" ulx="218" nrows="13" ncols="10">
+      <ids state="AUTOMATIC">
+        <id name="neume.inclinatum" confidence="0.252985"/>
+      </ids>
+      <data>3 2 7 6 4 7 3 7 2 8 2 8 2 7 3 7 3 7 3 7 4 6 2 10 10</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7692307692307693</feature>
+        <feature name="volume">0.6307692307692307</feature>
+        <feature name="nrows_feature">13.0</feature>
+        <feature name="ncols_feature">10.0</feature>
+        <feature name="compactness">0.8561607670373618</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.25 0.9166666666666666 0.75 0.25 0.6666666666666666 1.0 1.0 0.3333333333333333 0.6666666666666666 1.0 1.0 0.0 0.4444444444444444 0.6666666666666666 0.6666666666666666 0.3333333333333333</feature>
+        <feature name="hu_moment">0.18776026174895893 0.005616529456416405 0.0001290582306571554 1.0986500872927382e-05 9.01087412027464e-11 3.1722885410487704e-07 4.0376389953763247e-10</feature>
+      </features>
+    </glyph>
     <glyph uly="144" ulx="736" nrows="26" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.254603"/>
+        <id name="neume.podatus2a" confidence="0.255362"/>
       </ids>
       <data>22 7 7 8 7 8 7 8 7 8 7 7 7 8 7 8 7 8 4 11 1 1 48 8 7 8 7 8 7 8 7 8 7 8 7 8 6 9 34 15 15</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -563,7 +563,7 @@
     </glyph>
     <glyph uly="789" ulx="323" nrows="25" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.257486"/>
+        <id name="neume.clivis2" confidence="0.257972"/>
       </ids>
       <data>30 5 9 5 9 5 7 23 7 5 9 5 8 6 8 6 8 2 3 7 2 1 4 7 2 1 5 6 2 1 5 6 2 1 4 7 2 1 4 10 4 8 1 1 4 7 1 28 1 1 54</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -579,7 +579,7 @@
     </glyph>
     <glyph uly="249" ulx="552" nrows="33" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.259967"/>
+        <id name="neume.virga" confidence="0.260056"/>
       </ids>
       <data>0 14 38 7 9 7 9 7 9 7 8 8 8 8 8 8 8 8 8 8 15 1 15 1 5 12 212 13 67</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -595,7 +595,7 @@
     </glyph>
     <glyph uly="777" ulx="248" nrows="31" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.260944"/>
+        <id name="neume.clivis2" confidence="0.260802"/>
       </ids>
       <data>16 6 7 7 8 6 7 7 7 8 5 14 1 7 7 7 7 7 7 1 5 6 2 1 5 7 1 1 5 7 1 1 4 8 1 1 4 8 1 1 4 8 1 1 4 8 1 1 4 8 1 1 4 24 1 1 1 1 9 1 13 1 13 1 110</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -609,25 +609,9 @@
         <feature name="hu_moment">0.2863601922334112 0.017353153887337196 0.003890752710835149 0.00029038078670872043 -1.507612739600782e-07 -3.7736326729373184e-05 2.6932673735532896e-07</feature>
       </features>
     </glyph>
-    <glyph uly="519" ulx="608" nrows="18" ncols="9">
-      <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.265837"/>
-      </ids>
-      <data>19 2 7 6 3 7 2 7 2 7 1 8 1 8 1 8 1 8 2 7 1 17 37</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.5</feature>
-        <feature name="volume">0.5246913580246914</feature>
-        <feature name="nrows_feature">18.0</feature>
-        <feature name="ncols_feature">9.0</feature>
-        <feature name="compactness">0.8288045230906316</feature>
-        <feature name="nholes">2.0</feature>
-        <feature name="volume16regions">0.4 0.4 0.4 0.1 0.8666666666666667 1.0 1.0 0.5 0.9166666666666666 1.0 1.0 0.625 0.0 0.0 0.0 0.0</feature>
-        <feature name="hu_moment">0.17910360268674952 0.00416230852477316 0.0001784900917093926 3.807283891481573e-06 4.202779479501049e-11 1.5113274221423763e-07 -8.991218627197944e-11</feature>
-      </features>
-    </glyph>
     <glyph uly="512" ulx="600" nrows="30" ncols="8">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.266242"/>
+        <id name="neume.virga" confidence="0.266371"/>
       </ids>
       <data>10 6 2 6 1 7 1 23 1 7 1 7 1 7 1 1 4 2 64 16 72</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -641,9 +625,25 @@
         <feature name="hu_moment">0.5088089987086666 0.15876654619096503 0.08521561352846545 0.09554610279756544 0.008620685852562242 0.03806700378821705 0.00011289018812594509</feature>
       </features>
     </glyph>
+    <glyph uly="519" ulx="608" nrows="18" ncols="9">
+      <ids state="AUTOMATIC">
+        <id name="neume.inclinatum" confidence="0.266511"/>
+      </ids>
+      <data>19 2 7 6 3 7 2 7 2 7 1 8 1 8 1 8 1 8 2 7 1 17 37</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5</feature>
+        <feature name="volume">0.5246913580246914</feature>
+        <feature name="nrows_feature">18.0</feature>
+        <feature name="ncols_feature">9.0</feature>
+        <feature name="compactness">0.8288045230906316</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.4 0.4 0.4 0.1 0.8666666666666667 1.0 1.0 0.5 0.9166666666666666 1.0 1.0 0.625 0.0 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.17910360268674952 0.00416230852477316 0.0001784900917093926 3.807283891481573e-06 4.202779479501049e-11 1.5113274221423763e-07 -8.991218627197944e-11</feature>
+      </features>
+    </glyph>
     <glyph uly="781" ulx="688" nrows="16" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.266969"/>
+        <id name="neume.inclinatum" confidence="0.267485"/>
       </ids>
       <data>42 4 9 7 6 8 2 26 2 9 4 8 5 8 5 8 7 6 11 2 28 1</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -659,7 +659,7 @@
     </glyph>
     <glyph uly="1042" ulx="228" nrows="14" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.267284"/>
+        <id name="neume.inclinatum" confidence="0.268282"/>
       </ids>
       <data>3 2 9 5 6 7 3 8 3 8 3 8 1 11 1 9 2 9 3 8 6 4 9 2 24</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -675,7 +675,7 @@
     </glyph>
     <glyph uly="155" ulx="670" nrows="30" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.271932"/>
+        <id name="neume.podatus2a" confidence="0.272235"/>
       </ids>
       <data>18 1 12 6 6 7 6 7 6 7 6 7 6 7 6 7 6 7 6 7 12 1 18 7 3 14 1 8 5 8 5 8 5 8 5 8 5 8 5 8 5 1 67 4 3 14 13</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -691,7 +691,7 @@
     </glyph>
     <glyph uly="853" ulx="574" nrows="14" ncols="9">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.272458"/>
+        <id name="neume.inclinatum" confidence="0.273433"/>
       </ids>
       <data>11 2 7 5 2 18 1 8 1 8 1 7 1 8 1 8 3 6 6 3 19</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -707,7 +707,7 @@
     </glyph>
     <glyph uly="784" ulx="761" nrows="26" ncols="19">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.273457"/>
+        <id name="neume.clivis2" confidence="0.273548"/>
       </ids>
       <data>19 1 1 3 1 32 23 5 13 6 13 6 12 8 11 7 12 7 12 7 12 7 12 7 12 13 6 1 5 8 5 1 4 31 1 3 4 9 3 2 5 8 4 2 5 8 4 2 5 8 4 2 5 8 4 2 5 8 4 2 5 1 6 1 5 1 17 2 16</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -723,7 +723,7 @@
     </glyph>
     <glyph uly="518" ulx="565" nrows="21" ncols="12">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.274659"/>
+        <id name="neume.virga" confidence="0.274482"/>
       </ids>
       <data>0 12 26 7 5 7 4 8 4 8 4 8 4 8 4 8 4 8 4 8 10 2 3 2 1 21 72</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -739,7 +739,7 @@
     </glyph>
     <glyph uly="412" ulx="355" nrows="26" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.275339"/>
+        <id name="neume.podatus2a" confidence="0.275456"/>
       </ids>
       <data>3 4 6 1 4 3 2 1 7 7 6 8 6 8 6 8 6 8 6 7 7 8 6 8 6 8 6 3 2 3 10 4 4 10 1 3 2 8 7 7 6 8 6 8 6 8 6 8 6 8 6 8 6 2 5 1 46</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -753,25 +753,9 @@
         <feature name="hu_moment">0.27257260791221255 0.03877333363528377 5.4164235044814577e-05 2.1714768416976014e-05 1.9080959983007949e-10 3.8325539928112775e-06 7.198538712412768e-10</feature>
       </features>
     </glyph>
-    <glyph uly="255" ulx="670" nrows="16" ncols="12">
-      <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.275668"/>
-      </ids>
-      <data>39 4 8 6 3 1 1 9 1 12 2 8 4 8 3 9 3 9 4 8 6 5 10 2 27</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.75</feature>
-        <feature name="volume">0.421875</feature>
-        <feature name="nrows_feature">16.0</feature>
-        <feature name="ncols_feature">12.0</feature>
-        <feature name="compactness">0.753116602040124</feature>
-        <feature name="nholes">1.0</feature>
-        <feature name="volume16regions">0.0 0.25 0.08333333333333333 0.0 0.5 1.0 1.0 0.5 0.5 1.0 1.0 0.3333333333333333 0.0 0.16666666666666666 0.4166666666666667 0.0</feature>
-        <feature name="hu_moment">0.16961431278354516 0.00018593437731160526 0.00013773561660902566 1.91994435397184e-08 1.0496292094315302e-14 -1.7186497265357506e-10 -2.940442755984506e-14</feature>
-      </features>
-    </glyph>
     <glyph uly="1028" ulx="138" nrows="28" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.276011"/>
+        <id name="neume.podatus2a" confidence="0.275826"/>
       </ids>
       <data>23 4 12 7 10 7 6 1 1 11 3 17 4 8 9 8 9 8 9 7 10 7 16 1 16 1 16 1 16 1 16 1 10 7 9 8 6 34 3 8 9 8 9 8 9 8 9 8 13 3 41</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -785,9 +769,25 @@
         <feature name="hu_moment">0.36929366974047567 0.06221223363701213 0.0002834978283561094 7.390968786766768e-05 5.862434366813727e-09 1.8052395155468787e-05 8.949407215445754e-09</feature>
       </features>
     </glyph>
+    <glyph uly="255" ulx="670" nrows="16" ncols="12">
+      <ids state="AUTOMATIC">
+        <id name="neume.inclinatum" confidence="0.276005"/>
+      </ids>
+      <data>39 4 8 6 3 1 1 9 1 12 2 8 4 8 3 9 3 9 4 8 6 5 10 2 27</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.75</feature>
+        <feature name="volume">0.421875</feature>
+        <feature name="nrows_feature">16.0</feature>
+        <feature name="ncols_feature">12.0</feature>
+        <feature name="compactness">0.753116602040124</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.25 0.08333333333333333 0.0 0.5 1.0 1.0 0.5 0.5 1.0 1.0 0.3333333333333333 0.0 0.16666666666666666 0.4166666666666667 0.0</feature>
+        <feature name="hu_moment">0.16961431278354516 0.00018593437731160526 0.00013773561660902566 1.91994435397184e-08 1.0496292094315302e-14 -1.7186497265357506e-10 -2.940442755984506e-14</feature>
+      </features>
+    </glyph>
     <glyph uly="519" ulx="521" nrows="27" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.277856"/>
+        <id name="neume.virga" confidence="0.277637"/>
       </ids>
       <data>0 22 2 2 7 7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 14 1 21 2 1 4 1 25 66 1 14 1 14 1 14 1 14 1 14 1 14 1 14 1 4</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -803,7 +803,7 @@
     </glyph>
     <glyph uly="611" ulx="709" nrows="23" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.278547"/>
+        <id name="neume.virga" confidence="0.278168"/>
       </ids>
       <data>45 7 7 7 7 7 7 25 2 8 7 6 7 7 7 7 13 1 117 14 1 1 3 9</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -817,25 +817,9 @@
         <feature name="hu_moment">0.5324338167925557 0.11152032880863257 0.03808867501249085 0.0704057787039156 0.0036459375123106476 0.023368512853513632 8.466412246830582e-06</feature>
       </features>
     </glyph>
-    <glyph uly="238" ulx="637" nrows="28" ncols="21">
-      <ids state="AUTOMATIC">
-        <id name="neume.oblique2" confidence="0.279498"/>
-      </ids>
-      <data>37 1 20 5 16 5 15 6 2 2 11 6 2 3 10 6 2 5 8 5 2 8 1 1 3 7 1 12 1 7 2 11 3 4 3 13 4 1 2 16 5 18 5 17 5 16 2 1 4 14 9 11 3 1 8 9 14 7 2 1 14 4 19 2 2 8 1 14 2 1 4 1 2 1 1 7 18 2 19 2 19 2 22</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.75</feature>
-        <feature name="volume">0.44727891156462585</feature>
-        <feature name="nrows_feature">28.0</feature>
-        <feature name="ncols_feature">21.0</feature>
-        <feature name="compactness">0.22478508412654885</feature>
-        <feature name="nholes">1.0</feature>
-        <feature name="volume16regions">0.11904761904761904 0.0 0.08571428571428572 0.7428571428571429 0.7619047619047619 0.8571428571428571 0.6571428571428571 0.6571428571428571 0.19047619047619047 0.5428571428571428 0.8571428571428571 0.6857142857142857 0.21428571428571427 0.14285714285714285 0.22857142857142856 0.5142857142857142</feature>
-        <feature name="hu_moment">0.2560651717260315 8.575227845411665e-06 0.00402132964817183 1.5178864584150768e-05 6.618449359347567e-10 2.3549054138555822e-08 3.691242446883407e-09</feature>
-      </features>
-    </glyph>
     <glyph uly="777" ulx="510" nrows="14" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.280284"/>
+        <id name="neume.inclinatum" confidence="0.280039"/>
       </ids>
       <data>0 10 12 3 7 5 5 7 3 7 2 8 2 7 3 7 2 8 2 8 5 5 7 3 2 10</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -851,7 +835,7 @@
     </glyph>
     <glyph uly="849" ulx="656" nrows="29" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.288946"/>
+        <id name="neume.virga" confidence="0.288854"/>
       </ids>
       <data>41 7 5 9 4 8 5 8 5 8 4 26 1 8 5 8 5 8 11 2 11 2 12 1 12 1 12 1 12 1 11 2 12 1 5 5 1 2 4 13 5 1 1 2 3 1 65</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -867,7 +851,7 @@
     </glyph>
     <glyph uly="676" ulx="658" nrows="26" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.290044"/>
+        <id name="neume.podatus2a" confidence="0.290113"/>
       </ids>
       <data>51 6 8 7 8 7 2 1 5 7 2 1 4 8 2 1 4 8 2 1 4 8 7 8 2 16 4 2 1 1 2 2 2 1 8 4 2 1 3 9 6 8 7 8 7 8 7 8 7 8 3 1 3 8 7 8 7 8 19 23 2 1 4</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -883,7 +867,7 @@
     </glyph>
     <glyph uly="774" ulx="679" nrows="30" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.293633"/>
+        <id name="neume.virga" confidence="0.293814"/>
       </ids>
       <data>0 18 1 1 1 7 3 8 2 8 2 8 2 8 2 8 2 8 2 8 2 7 3 8 15 16 3 1 3 2 38 1 82 13 3 2 2</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -899,7 +883,7 @@
     </glyph>
     <glyph uly="777" ulx="130" nrows="27" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.293964"/>
+        <id name="neume.clivis2" confidence="0.294281"/>
       </ids>
       <data>38 5 11 6 11 6 11 6 11 6 8 12 1 21 3 6 11 6 1 6 4 13 9 8 9 8 9 8 9 8 9 8 9 8 9 8 9 8 4 2 9 2 1 17 3 2 6 1 9 1 16 1 46</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -913,25 +897,9 @@
         <feature name="hu_moment">0.2713563722987419 0.012654780695773495 0.002112558079644284 0.0005353403291065486 -3.837086132869951e-08 -5.575447491143892e-05 5.680160543707949e-07</feature>
       </features>
     </glyph>
-    <glyph uly="609" ulx="613" nrows="12" ncols="10">
-      <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.293995"/>
-      </ids>
-      <data>0 1 2 3 4 1 1 6 2 1 1 7 3 7 2 8 2 8 2 8 2 7 3 7 4 6 7 3 2 10</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.8333333333333334</feature>
-        <feature name="volume">0.6916666666666667</feature>
-        <feature name="nrows_feature">12.0</feature>
-        <feature name="ncols_feature">10.0</feature>
-        <feature name="compactness">0.7182696478376572</feature>
-        <feature name="nholes">1.0</feature>
-        <feature name="volume16regions">0.5555555555555556 1.0 0.6666666666666666 0.16666666666666666 0.5555555555555556 1.0 1.0 0.5 0.6666666666666666 1.0 1.0 0.16666666666666666 0.4444444444444444 0.7777777777777778 1.0 0.3333333333333333</feature>
-        <feature name="hu_moment">0.19678656562671065 0.005290455045904724 1.8525118741051954e-05 4.404048515930057e-05 1.0200961206965797e-09 1.3082759515898739e-06 7.360758006883993e-10</feature>
-      </features>
-    </glyph>
     <glyph uly="612" ulx="626" nrows="25" ncols="18">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.294062"/>
+        <id name="neume.clivis2" confidence="0.294346"/>
       </ids>
       <data>58 5 12 6 12 6 12 6 12 6 3 4 1 29 2 1 8 6 12 6 3 3 6 1 4 7 11 7 11 7 11 7 11 7 11 7 11 7 5 1 4 8 5 1 4 7 11 1 12 3 2 1 2 15 29</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -945,25 +913,25 @@
         <feature name="hu_moment">0.3076552856387567 0.014752922891565736 0.002045246681127147 0.0006916080984030972 5.945461502381434e-07 -2.937237153105639e-05 5.68423603025154e-07</feature>
       </features>
     </glyph>
-    <glyph uly="522" ulx="631" nrows="26" ncols="19">
+    <glyph uly="609" ulx="613" nrows="12" ncols="10">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.296187"/>
+        <id name="neume.inclinatum" confidence="0.294367"/>
       </ids>
-      <data>61 7 12 7 11 8 11 8 11 8 10 36 3 8 11 7 12 2 8 4 5 1 6 7 5 1 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 1 6 8 4 1 6 8 4 1 16 22 1 2 32</data>
+      <data>0 1 2 3 4 1 1 6 2 1 1 7 3 7 2 8 2 8 2 8 2 7 3 7 4 6 7 3 2 10</data>
       <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.7307692307692307</feature>
-        <feature name="volume">0.402834008097166</feature>
-        <feature name="nrows_feature">26.0</feature>
-        <feature name="ncols_feature">19.0</feature>
-        <feature name="compactness">0.1919424139470859</feature>
-        <feature name="nholes">3.0</feature>
-        <feature name="volume16regions">0.17142857142857143 0.5714285714285714 0.11428571428571428 0.0 0.4857142857142857 0.7142857142857143 0.5428571428571428 0.42857142857142855 0.36666666666666664 0.0 1.0 0.5 0.4 0.26666666666666666 0.5 0.3333333333333333</feature>
-        <feature name="hu_moment">0.3068018052942422 0.008698363130901592 0.0020717912109742974 0.0007098078931085313 8.398154004280259e-07 -1.4193313953381014e-05 -1.8874643477197161e-07</feature>
+        <feature name="aspect_ratio">0.8333333333333334</feature>
+        <feature name="volume">0.6916666666666667</feature>
+        <feature name="nrows_feature">12.0</feature>
+        <feature name="ncols_feature">10.0</feature>
+        <feature name="compactness">0.7182696478376572</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.5555555555555556 1.0 0.6666666666666666 0.16666666666666666 0.5555555555555556 1.0 1.0 0.5 0.6666666666666666 1.0 1.0 0.16666666666666666 0.4444444444444444 0.7777777777777778 1.0 0.3333333333333333</feature>
+        <feature name="hu_moment">0.19678656562671065 0.005290455045904724 1.8525118741051954e-05 4.404048515930057e-05 1.0200961206965797e-09 1.3082759515898739e-06 7.360758006883993e-10</feature>
       </features>
     </glyph>
     <glyph uly="612" ulx="754" nrows="19" ncols="12">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.296337"/>
+        <id name="neume.virga" confidence="0.296345"/>
       </ids>
       <data>27 7 4 8 4 9 1 12 2 8 4 7 5 7 5 7 5 7 11 1 11 1 75</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -977,25 +945,25 @@
         <feature name="hu_moment">0.17411851223027255 0.0002161149718379834 0.0003061793526261488 2.2162911793632274e-05 -7.048893506282555e-12 -1.971918079429262e-07 -1.825681186610902e-09</feature>
       </features>
     </glyph>
-    <glyph uly="429" ulx="195" nrows="31" ncols="22">
+    <glyph uly="522" ulx="631" nrows="26" ncols="19">
       <ids state="AUTOMATIC">
-        <id name="neume.torculus22" confidence="0.302678"/>
+        <id name="neume.clivis2" confidence="0.296355"/>
       </ids>
-      <data>9 2 43 1 21 6 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 1 4 2 15 1 2 1 1 29 25 8 4 7 3 8 4 7 3 8 4 7 3 7 5 7 2 8 5 7 2 8 5 7 2 8 4 8 2 8 4 8 2 8 4 8 2 5 1 2 5 7 9 1 18 1 1 20 2 2 57</data>
+      <data>61 7 12 7 11 8 11 8 11 8 10 36 3 8 11 7 12 2 8 4 5 1 6 7 5 1 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 2 6 7 4 1 6 8 4 1 6 8 4 1 16 22 1 2 32</data>
       <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.7096774193548387</feature>
-        <feature name="volume">0.40175953079178883</feature>
-        <feature name="nrows_feature">31.0</feature>
-        <feature name="ncols_feature">22.0</feature>
-        <feature name="compactness">0.16611659572708418</feature>
-        <feature name="nholes">2.0</feature>
-        <feature name="volume16regions">0.0 0.3541666666666667 0.5 0.0 0.125 0.4166666666666667 0.675 0.225 0.75 0.5625 0.65 0.8 0.38095238095238093 0.30952380952380953 0.34285714285714286 0.37142857142857144</feature>
-        <feature name="hu_moment">0.2932316663639725 0.005106384591188869 0.009008996134883792 0.0001960353384382996 7.894572920960936e-08 4.483826689842058e-06 -2.482696718775051e-07</feature>
+        <feature name="aspect_ratio">0.7307692307692307</feature>
+        <feature name="volume">0.402834008097166</feature>
+        <feature name="nrows_feature">26.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.1919424139470859</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.17142857142857143 0.5714285714285714 0.11428571428571428 0.0 0.4857142857142857 0.7142857142857143 0.5428571428571428 0.42857142857142855 0.36666666666666664 0.0 1.0 0.5 0.4 0.26666666666666666 0.5 0.3333333333333333</feature>
+        <feature name="hu_moment">0.3068018052942422 0.008698363130901592 0.0020717912109742974 0.0007098078931085313 8.398154004280259e-07 -1.4193313953381014e-05 -1.8874643477197161e-07</feature>
       </features>
     </glyph>
     <glyph uly="1023" ulx="379" nrows="28" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.304579"/>
+        <id name="neume.virga" confidence="0.304843"/>
       </ids>
       <data>0 13 30 7 6 7 6 7 5 8 5 8 5 8 5 8 5 8 5 8 11 2 2 2 1 4 2 2 2 13 5 6 8 1 2 1 12 1 12 1 107 2 2 1 3 1 4</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1009,25 +977,9 @@
         <feature name="hu_moment">0.3484703817265908 0.04588053543371613 0.012574723631436663 0.01382969852714969 0.00018073628960003018 0.0027448809692465215 2.4402706692638884e-05</feature>
       </features>
     </glyph>
-    <glyph uly="1019" ulx="191" nrows="27" ncols="16">
-      <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.306183"/>
-      </ids>
-      <data>0 1 2 2 11 16 4 4 11 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 1 3 8 4 1 3 8 1 32 8 7 3 1 5 7 3 1 5 7 8 8 8 8 8 4 3 1 81</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.5925925925925926</feature>
-        <feature name="volume">0.3958333333333333</feature>
-        <feature name="nrows_feature">27.0</feature>
-        <feature name="ncols_feature">16.0</feature>
-        <feature name="compactness">0.29074110405389214</feature>
-        <feature name="nholes">5.0</feature>
-        <feature name="volume16regions">0.35714285714285715 0.8928571428571429 0.2857142857142857 0.14285714285714285 0.25 0.7857142857142857 0.4642857142857143 0.21428571428571427 0.35714285714285715 0.35714285714285715 1.0 0.8214285714285714 0.0 0.041666666666666664 0.125 0.041666666666666664</feature>
-        <feature name="hu_moment">0.30494473133233785 0.031070060267902606 0.0012387927468655423 0.0007242986839498205 6.566874308076349e-07 7.909461117885155e-05 1.9867006448897445e-07</feature>
-      </features>
-    </glyph>
     <glyph uly="342" ulx="724" nrows="21" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.306603"/>
+        <id name="neume.virga" confidence="0.306653"/>
       </ids>
       <data>14 19 3 1 12 3 7 7 7 7 7 7 6 8 6 8 6 8 6 8 6 8 6 8 13 1 13 1 3 22 2 1 60</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1041,9 +993,25 @@
         <feature name="hu_moment">0.2767747264788684 0.01420688400176019 3.9031050469549966e-05 4.012742045611723e-05 -3.19288603741398e-10 4.3521781322467783e-07 1.5556317827765384e-09</feature>
       </features>
     </glyph>
+    <glyph uly="1019" ulx="191" nrows="27" ncols="16">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2" confidence="0.306795"/>
+      </ids>
+      <data>0 1 2 2 11 16 4 4 11 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 1 3 8 4 1 3 8 1 32 8 7 3 1 5 7 3 1 5 7 8 8 8 8 8 4 3 1 81</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5925925925925926</feature>
+        <feature name="volume">0.3958333333333333</feature>
+        <feature name="nrows_feature">27.0</feature>
+        <feature name="ncols_feature">16.0</feature>
+        <feature name="compactness">0.29074110405389214</feature>
+        <feature name="nholes">5.0</feature>
+        <feature name="volume16regions">0.35714285714285715 0.8928571428571429 0.2857142857142857 0.14285714285714285 0.25 0.7857142857142857 0.4642857142857143 0.21428571428571427 0.35714285714285715 0.35714285714285715 1.0 0.8214285714285714 0.0 0.041666666666666664 0.125 0.041666666666666664</feature>
+        <feature name="hu_moment">0.30494473133233785 0.031070060267902606 0.0012387927468655423 0.0007242986839498205 6.566874308076349e-07 7.909461117885155e-05 1.9867006448897445e-07</feature>
+      </features>
+    </glyph>
     <glyph uly="154" ulx="713" nrows="22" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.309823"/>
+        <id name="neume.virga" confidence="0.310126"/>
       </ids>
       <data>0 15 21 5 8 7 8 7 8 7 7 8 7 8 7 8 7 7 8 7 8 4 1 2 14 1 14 2 1 1 2 15 9 1 14 1 14 1 14 1 50</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1059,7 +1027,7 @@
     </glyph>
     <glyph uly="163" ulx="557" nrows="20" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.312039"/>
+        <id name="neume.virga" confidence="0.312063"/>
       </ids>
       <data>47 5 7 7 7 8 6 8 6 8 3 14 3 7 7 7 7 7 116</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1075,7 +1043,7 @@
     </glyph>
     <glyph uly="590" ulx="256" nrows="24" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.312855"/>
+        <id name="neume.podatus2a" confidence="0.312636"/>
       </ids>
       <data>20 6 10 7 9 7 9 7 9 7 9 6 10 6 7 1 1 8 1 4 1 1 1 8 14 1 13 1 1 1 9 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 10 6 22 16 2 1 1 7 2 1 2</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1091,7 +1059,7 @@
     </glyph>
     <glyph uly="782" ulx="212" nrows="17" ncols="9">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.314762"/>
+        <id name="neume.inclinatum" confidence="0.314636"/>
       </ids>
       <data>9 10 1 3 1 1 5 2 7 4 4 7 2 7 2 7 2 7 1 7 2 7 2 7 4 5 6 3 7 2 1 9 9</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1107,7 +1075,7 @@
     </glyph>
     <glyph uly="608" ulx="497" nrows="23" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.316877"/>
+        <id name="neume.virga" confidence="0.316913"/>
       </ids>
       <data>0 4 4 4 3 15 20 1 1 1 10 7 8 7 8 7 8 7 7 8 7 8 7 8 7 8 7 8 7 1 6 1 5 15 1 1 3 10 9 1 14 1 80</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1123,7 +1091,7 @@
     </glyph>
     <glyph uly="686" ulx="730" nrows="25" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.318290"/>
+        <id name="neume.virga" confidence="0.317900"/>
       </ids>
       <data>0 7 6 2 9 3 9 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 7 9 15 1 5 31 10 2 14 1 149</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1139,7 +1107,7 @@
     </glyph>
     <glyph uly="1031" ulx="210" nrows="25" ncols="8">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.319988"/>
+        <id name="neume.virga" confidence="0.320092"/>
       </ids>
       <data>1 5 2 7 1 7 1 15 1 7 1 7 1 7 1 7 1 6 7 1 42 4 1 11 56</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1155,7 +1123,7 @@
     </glyph>
     <glyph uly="229" ulx="759" nrows="27" ncols="23">
       <ids state="AUTOMATIC">
-        <id name="neume.torculus22" confidence="0.320169"/>
+        <id name="neume.torculus22" confidence="0.320177"/>
       </ids>
       <data>31 3 20 6 17 6 17 6 16 6 17 6 17 6 17 6 17 6 17 6 22 1 11 6 5 7 4 7 5 7 4 7 5 7 4 7 4 8 4 30 4 8 4 7 4 8 4 7 4 8 4 7 4 8 4 1 10 3 124</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1169,25 +1137,9 @@
         <feature name="hu_moment">0.2885806112133818 0.00012713225012750317 0.013633050437911224 0.0001297899177918012 8.325115411657181e-08 -6.667720735541929e-07 -1.5124841742124887e-07</feature>
       </features>
     </glyph>
-    <glyph uly="441" ulx="290" nrows="19" ncols="13">
-      <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.320194"/>
-      </ids>
-      <data>0 13 4 1 12 7 5 8 5 8 5 8 5 8 5 8 5 8 4 9 4 9 4 9 25 1 2 13 10 1 41</data>
-      <features scaling="1.0" version="ic-core/v1">
-        <feature name="aspect_ratio">0.6842105263157895</feature>
-        <feature name="volume">0.4493927125506073</feature>
-        <feature name="nrows_feature">19.0</feature>
-        <feature name="ncols_feature">13.0</feature>
-        <feature name="compactness">0.43137862896453505</feature>
-        <feature name="nholes">1.0</feature>
-        <feature name="volume16regions">0.3 0.8666666666666667 0.8 0.4 0.3 1.0 1.0 0.3333333333333333 0.4 0.6 0.6 0.4 0.0 0.0 0.0 0.08333333333333333</feature>
-        <feature name="hu_moment">0.240057442394915 0.009875870370372297 2.070790986034034e-06 7.41921308941106e-05 -7.672458665050236e-10 5.941225008480432e-06 -5.069724486822962e-10</feature>
-      </features>
-    </glyph>
     <glyph uly="861" ulx="134" nrows="29" ncols="14">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.320758"/>
+        <id name="neume.virga" confidence="0.320636"/>
       </ids>
       <data>14 14 17 7 6 8 6 8 6 8 7 7 6 8 6 8 6 8 6 8 13 1 13 1 4 28 9 1 13 1 144 14</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1201,9 +1153,25 @@
         <feature name="hu_moment">0.5149931725079655 0.12929852771883035 0.0684749051152557 0.09869073066784347 0.00811054321837515 0.035483997292435336 -0.00019872332511617643</feature>
       </features>
     </glyph>
+    <glyph uly="441" ulx="290" nrows="19" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.320761"/>
+      </ids>
+      <data>0 13 4 1 12 7 5 8 5 8 5 8 5 8 5 8 5 8 4 9 4 9 4 9 25 1 2 13 10 1 41</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6842105263157895</feature>
+        <feature name="volume">0.4493927125506073</feature>
+        <feature name="nrows_feature">19.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.43137862896453505</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.3 0.8666666666666667 0.8 0.4 0.3 1.0 1.0 0.3333333333333333 0.4 0.6 0.6 0.4 0.0 0.0 0.0 0.08333333333333333</feature>
+        <feature name="hu_moment">0.240057442394915 0.009875870370372297 2.070790986034034e-06 7.41921308941106e-05 -7.672458665050236e-10 5.941225008480432e-06 -5.069724486822962e-10</feature>
+      </features>
+    </glyph>
     <glyph uly="438" ulx="378" nrows="24" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.321354"/>
+        <id name="neume.virga" confidence="0.321880"/>
       </ids>
       <data>15 15 19 7 7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 7 8 14 1 14 1 4 15 10 1 109</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1219,7 +1187,7 @@
     </glyph>
     <glyph uly="249" ulx="523" nrows="27" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.323960"/>
+        <id name="neume.podatus2a" confidence="0.323992"/>
       </ids>
       <data>10 1 1 5 26 4 10 7 10 7 10 7 10 7 10 7 10 7 9 8 9 8 9 7 16 1 9 8 9 9 2 18 5 8 9 8 9 8 9 8 9 8 9 8 9 1 80</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1235,7 +1203,7 @@
     </glyph>
     <glyph uly="684" ulx="765" nrows="29" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.325357"/>
+        <id name="neume.virga" confidence="0.325244"/>
       </ids>
       <data>0 15 1 2 11 7 5 8 5 8 5 8 5 8 5 8 5 8 5 8 5 8 5 3 3 2 12 1 7 1 2 19 8 2 11 2 11 1 12 1 12 1 12 1 90 1 4 13</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1251,7 +1219,7 @@
     </glyph>
     <glyph uly="962" ulx="360" nrows="25" ncols="20">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.326127"/>
+        <id name="neume.clivis2" confidence="0.326463"/>
       </ids>
       <data>0 40 24 4 16 7 13 7 13 7 13 7 13 7 13 7 13 7 13 7 1 3 8 13 7 2 4 7 4 6 1 9 7 17 3 2 4 7 7 2 4 7 7 2 4 7 8 1 4 7 7 2 4 8 6 2 4 2 5 1 7 1 19 1 19 1 9 1 5</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1267,7 +1235,7 @@
     </glyph>
     <glyph uly="157" ulx="531" nrows="26" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.331587"/>
+        <id name="neume.podatus2a" confidence="0.331480"/>
       </ids>
       <data>15 11 3 1 5 3 12 7 8 7 8 6 9 6 9 6 9 6 9 6 9 6 12 3 14 1 22 24 6 7 8 7 8 7 8 7 8 7 8 7 8 7 50</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1283,7 +1251,7 @@
     </glyph>
     <glyph uly="603" ulx="692" nrows="29" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.333693"/>
+        <id name="neume.podatus2a" confidence="0.333908"/>
       </ids>
       <data>26 13 4 7 6 7 6 7 6 7 6 7 5 8 5 8 5 7 6 7 10 3 9 4 5 8 3 26 2 8 5 8 5 7 6 7 6 7 6 7 12 1 38 1 30</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1299,7 +1267,7 @@
     </glyph>
     <glyph uly="597" ulx="599" nrows="28" ncols="9">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.339582"/>
+        <id name="neume.virga" confidence="0.339820"/>
       </ids>
       <data>12 5 2 7 2 7 2 7 2 7 1 8 1 8 1 8 1 7 2 18 8 1 8 1 8 1 77 1 2 14 23</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1315,7 +1283,7 @@
     </glyph>
     <glyph uly="450" ulx="166" nrows="16" ncols="9">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.340223"/>
+        <id name="neume.inclinatum" confidence="0.341363"/>
       </ids>
       <data>20 3 6 5 4 6 2 8 2 7 1 17 1 8 1 8 3 5 5 4 7 2 19</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1331,7 +1299,7 @@
     </glyph>
     <glyph uly="698" ulx="499" nrows="20" ncols="13">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.342059"/>
+        <id name="neume.virga" confidence="0.341705"/>
       </ids>
       <data>42 6 6 7 6 7 6 8 3 13 2 7 6 7 6 7 6 7 108</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1347,7 +1315,7 @@
     </glyph>
     <glyph uly="784" ulx="519" nrows="13" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.345234"/>
+        <id name="neume.inclinatum" confidence="0.345558"/>
       </ids>
       <data>14 3 8 5 5 7 4 8 3 8 1 22 1 9 3 7 6 4 9 2 14</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1363,7 +1331,7 @@
     </glyph>
     <glyph uly="167" ulx="486" nrows="13" ncols="11">
       <ids state="AUTOMATIC">
-        <id name="neume.inclinatum" confidence="0.353008"/>
+        <id name="neume.inclinatum" confidence="0.353936"/>
       </ids>
       <data>15 3 7 7 4 8 3 19 1 9 3 7 3 8 4 7 7 3 25</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1379,7 +1347,7 @@
     </glyph>
     <glyph uly="696" ulx="244" nrows="28" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.358680"/>
+        <id name="neume.virga" confidence="0.358739"/>
       </ids>
       <data>15 15 35 8 7 8 7 7 8 7 7 8 7 8 7 8 7 8 7 8 14 1 3 15 11 1 183</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1395,7 +1363,7 @@
     </glyph>
     <glyph uly="1020" ulx="269" nrows="28" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.359989"/>
+        <id name="neume.podatus2a" confidence="0.359903"/>
       </ids>
       <data>0 1 19 3 3 6 6 3 13 7 9 7 8 8 8 7 9 7 9 7 9 7 9 7 9 7 12 4 10 6 4 12 4 16 4 7 9 7 9 7 8 8 8 8 8 8 8 8 85</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1411,7 +1379,7 @@
     </glyph>
     <glyph uly="238" ulx="581" nrows="25" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.367573"/>
+        <id name="neume.podatus2a" confidence="0.367893"/>
       </ids>
       <data>23 6 10 7 10 7 10 7 10 7 9 8 9 8 9 8 8 23 1 2 26 8 9 8 9 8 9 8 9 8 8 9 8 9 8 9 9 7 49 11 2 1 11</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1427,7 +1395,7 @@
     </glyph>
     <glyph uly="689" ulx="585" nrows="27" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.371197"/>
+        <id name="neume.podatus2a" confidence="0.371325"/>
       </ids>
       <data>0 16 3 2 4 1 9 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 31 1 8 25 1 1 5 8 8 8 8 8 8 8 8 8 8 8 8 9 7 2 3 3 70</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1443,7 +1411,7 @@
     </glyph>
     <glyph uly="1024" ulx="167" nrows="26" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.375779"/>
+        <id name="neume.clivis2" confidence="0.375511"/>
       </ids>
       <data>54 1 3 1 12 6 11 6 11 6 11 6 10 7 8 34 2 7 10 7 1 4 5 2 4 6 5 1 5 6 10 7 10 7 5 1 4 7 10 7 5 1 4 7 5 1 4 7 5 1 4 7 4 2 4 2 1 1 1 1 4 17 1 2 1 1 6 6 2 1 14</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1459,7 +1427,7 @@
     </glyph>
     <glyph uly="769" ulx="262" nrows="26" ncols="20">
       <ids state="AUTOMATIC">
-        <id name="neume.torculus22" confidence="0.391453"/>
+        <id name="neume.torculus22" confidence="0.391838"/>
       </ids>
       <data>0 13 1 4 10 5 15 5 15 5 15 4 15 5 15 5 15 5 15 5 15 5 10 6 3 1 2 4 3 7 4 6 3 7 4 6 3 29 1 8 2 7 4 6 3 7 4 6 3 7 4 6 3 7 3 7 3 3 7 7 122</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1475,7 +1443,7 @@
     </glyph>
     <glyph uly="688" ulx="629" nrows="25" ncols="15">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.399939"/>
+        <id name="neume.podatus2a" confidence="0.400504"/>
       </ids>
       <data>0 15 4 6 8 8 7 7 8 8 7 7 8 7 8 7 8 7 8 7 10 2 2 1 8 7 8 8 4 27 1 2 3 7 8 7 8 7 7 8 7 8 8 3 2 2 65</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1491,7 +1459,7 @@
     </glyph>
     <glyph uly="862" ulx="154" nrows="28" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.clivis2" confidence="0.402441"/>
+        <id name="neume.clivis2" confidence="0.402663"/>
       </ids>
       <data>0 17 3 1 6 4 6 6 11 7 10 7 10 7 10 7 10 7 10 6 11 7 10 7 11 6 1 3 11 7 2 2 1 12 1 18 4 1 3 7 6 1 3 7 6 1 3 7 6 1 3 7 6 1 3 7 6 1 3 7 6 1 10 1 5 1 10 1 5 1 16 1 16 1 16 1 12 17</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1507,7 +1475,7 @@
     </glyph>
     <glyph uly="611" ulx="727" nrows="20" ncols="12">
       <ids state="AUTOMATIC">
-        <id name="neume.virga" confidence="0.418338"/>
+        <id name="neume.virga" confidence="0.418923"/>
       </ids>
       <data>39 7 5 7 5 7 2 24 2 7 5 7 5 7 5 7 11 1 71 1 15</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1523,7 +1491,7 @@
     </glyph>
     <glyph uly="430" ulx="597" nrows="29" ncols="17">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.463576"/>
+        <id name="neume.podatus2a" confidence="0.463681"/>
       </ids>
       <data>17 24 2 2 1 1 10 4 12 7 9 8 9 8 9 7 10 7 10 7 10 7 10 7 10 7 16 1 11 8 2 30 1 1 2 1 4 8 9 8 9 8 9 8 9 8 9 8 9 8 91</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1539,7 +1507,7 @@
     </glyph>
     <glyph uly="429" ulx="630" nrows="28" ncols="16">
       <ids state="AUTOMATIC">
-        <id name="neume.podatus2a" confidence="0.472436"/>
+        <id name="neume.podatus2a" confidence="0.472338"/>
       </ids>
       <data>32 16 4 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 9 7 15 1 15 1 5 15 1 16 2 9 8 8 7 9 7 9 7 9 7 9 7 8 70</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -1551,6 +1519,38 @@
         <feature name="nholes">3.0</feature>
         <feature name="volume16regions">0.14285714285714285 0.7142857142857143 0.5714285714285714 0.14285714285714285 0.0 0.8571428571428571 0.6785714285714286 0.0 0.5357142857142857 0.8571428571428571 0.75 0.25 0.21428571428571427 0.42857142857142855 0.2857142857142857 0.0</feature>
         <feature name="hu_moment">0.30059036351165985 0.03914859121735177 0.00041936565121175693 0.0004180970898920437 1.575323848471151e-07 8.13587883123155e-05 7.637480583110655e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="429" ulx="195" nrows="31" ncols="22">
+      <ids state="MANUAL">
+        <id name="neume.torculus33" confidence="1.000000"/>
+      </ids>
+      <data>9 2 43 1 21 6 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 1 4 2 15 1 2 1 1 29 25 8 4 7 3 8 4 7 3 8 4 7 3 7 5 7 2 8 5 7 2 8 5 7 2 8 4 8 2 8 4 8 2 8 4 8 2 5 1 2 5 7 9 1 18 1 1 20 2 2 57</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7096774193548387</feature>
+        <feature name="volume">0.40175953079178883</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.16611659572708418</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.3541666666666667 0.5 0.0 0.125 0.4166666666666667 0.675 0.225 0.75 0.5625 0.65 0.8 0.38095238095238093 0.30952380952380953 0.34285714285714286 0.37142857142857144</feature>
+        <feature name="hu_moment">0.2932316663639725 0.005106384591188869 0.009008996134883792 0.0001960353384382996 7.894572920960936e-08 4.483826689842058e-06 -2.482696718775051e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="238" ulx="637" nrows="28" ncols="21">
+      <ids state="MANUAL">
+        <id name="neume.oblique2" confidence="1.000000"/>
+      </ids>
+      <data>37 1 20 5 16 5 15 6 2 2 11 6 2 3 10 6 2 5 8 5 2 8 1 1 3 7 1 12 1 7 2 11 3 4 3 13 4 1 2 16 5 18 5 17 5 16 2 1 4 14 9 11 3 1 8 9 14 7 2 1 14 4 19 2 2 8 1 14 2 1 4 1 2 1 1 7 18 2 19 2 19 2 22</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.75</feature>
+        <feature name="volume">0.44727891156462585</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.22478508412654885</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.11904761904761904 0.0 0.08571428571428572 0.7428571428571429 0.7619047619047619 0.8571428571428571 0.6571428571428571 0.6571428571428571 0.19047619047619047 0.5428571428571428 0.8571428571428571 0.6857142857142857 0.21428571428571427 0.14285714285714285 0.22857142857142856 0.5142857142857142</feature>
+        <feature name="hu_moment">0.2560651717260315 8.575227845411665e-06 0.00402132964817183 1.5178864584150768e-05 6.618449359347567e-10 2.3549054138555822e-08 3.691242446883407e-09</feature>
       </features>
     </glyph>
     <glyph uly="431" ulx="571" nrows="30" ncols="18">
@@ -1875,7 +1875,7 @@
     </glyph>
     <glyph uly="514" ulx="185" nrows="23" ncols="20">
       <ids state="MANUAL">
-        <id name="neume.oblique2" confidence="1.000000"/>
+        <id name="neume.oblique3" confidence="1.000000"/>
       </ids>
       <data>0 22 10 7 2 2 9 6 3 3 8 6 3 5 6 6 2 7 5 6 2 8 4 6 2 10 1 7 2 18 2 18 2 13 7 15 5 1 2 14 3 1 3 14 2 21 6 10 3 1 7 9 3 1 8 8 3 1 9 6 16 4 17 3 19 1 24</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -2387,7 +2387,7 @@
     </glyph>
     <glyph uly="1112" ulx="238" nrows="26" ncols="20">
       <ids state="MANUAL">
-        <id name="neume.oblique2" confidence="1.000000"/>
+        <id name="neume.oblique3" confidence="1.000000"/>
       </ids>
       <data>15 1 18 5 15 5 4 2 9 5 4 2 9 5 4 4 7 5 3 6 5 6 1 20 2 9 2 7 2 9 4 4 3 10 5 1 4 11 4 1 4 12 3 1 4 1 1 11 2 1 4 1 2 11 6 1 3 12 4 1 4 10 11 9 12 8 13 7 3 3 1 5 1 7 3 20 1 1 12 3 4 1 13 2 4 1 19 1 18</data>
       <features scaling="1.0" version="ic-core/v1">
@@ -2771,7 +2771,7 @@
     </glyph>
     <glyph uly="612" ulx="221" nrows="29" ncols="26">
       <ids state="MANUAL">
-        <id name="neume.oblique2" confidence="1.000000"/>
+        <id name="neume.oblique3" confidence="1.000000"/>
       </ids>
       <data>0 26 4 8 1 3 1 2 1 5 19 3 11 1 11 5 8 2 11 5 8 4 8 6 8 5 7 6 8 6 6 6 8 8 4 6 8 9 3 6 8 11 2 5 8 12 3 3 8 14 3 1 3 52 5 2 2 13 9 1 5 11 9 1 6 10 9 1 7 9 9 1 9 7 9 1 11 5 9 1 12 4 9 1 14 2 9 1 98 3 1 2 1 4 9 4 1 27</data>
       <features scaling="1.0" version="ic-core/v1">
