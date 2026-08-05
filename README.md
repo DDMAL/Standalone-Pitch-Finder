@@ -36,40 +36,46 @@ pip install numpy opencv-python pytest
 
 ## Quick start
 
-Both sample folders already have image + IC XML + staff JSON, so pitch-finding
-takes just the folder — it finds the three inputs inside it and writes
-`<image stem>_pitch_finding.json` (+ `_debug.jpg` and `_debug_nolabels.jpg`)
-back into it:
+Each page folder holds its image + IC XML + staff JSON in `input/`, so
+pitch-finding takes just the folder — it finds the three inputs in `input/` and
+writes `<image stem>_pitch_finding.json` (+ `_debug.jpg` and
+`_debug_nolabels.jpg`) to `output/`, creating it if needed:
 
 ```bash
 cd scripts
 
+python run_pitch_finding.py ../McGill_MS234-064
+# -> ../McGill_MS234-064/output/McGill_MS234-064_pitch_finding.json
 python run_pitch_finding.py ../McGill_MS234-064 --debug-viz
 ```
+
+Keeping inputs and artifacts in separate folders is what lets a page be re-run
+without a previous run's renders becoming candidate inputs.
 
 Pass the page image instead of the folder to pick one of two pages sharing a
 folder, and `--image` / `--ic-xml` / `--staff-json` / `--output` to override
 any path discovery gets wrong:
 
 ```bash
-python run_pitch_finding.py ../McGill_MS234-064/McGill_MS234-064.jpg \
+python run_pitch_finding.py ../McGill_MS234-064/input/McGill_MS234-064.jpg \
   --ic-xml ../elsewhere/ic-session-manual-neumes.xml \
   --output ../McGill_MS234-064/out.json --debug-viz ../McGill_MS234-064/out_debug.jpg
 ```
 
-The other two CLIs still take their inputs one flag at a time:
+The other two CLIs still take their inputs one flag at a time, and have no
+notion of the `input/` / `output/` split — name the paths on both sides:
 
 ```bash
 python run_rodan_pitch_finding.py \
-  --image ../McGill_MS234-064/McGill_MS234-064.jpg \
-  --ic-xml ../McGill_MS234-064/ic-session-McGill_MS234-064-manual-neumes.xml \
-  --staff-json ../McGill_MS234-064/McGill_MS234-064_stafflines.json \
-  --output ../McGill_MS234-064/out_rodan.json --debug-viz ../McGill_MS234-064/out_rodan_debug.jpg
+  --image ../McGill_MS234-064/input/McGill_MS234-064.jpg \
+  --ic-xml ../McGill_MS234-064/input/ic-session-McGill_MS234-064-page.xml \
+  --staff-json ../McGill_MS234-064/input/McGill_MS234-064_stafflines.json \
+  --output ../McGill_MS234-064/output/ --debug-viz
 
 python render_ic_debug.py \
-  --image ../McGill_MS234-064/McGill_MS234-064.jpg \
-  --ic-xml ../McGill_MS234-064/ic-session-McGill_MS234-064-manual-neumes.xml \
-  --output ../McGill_MS234-064/ic_debug.jpg
+  --image ../McGill_MS234-064/input/McGill_MS234-064.jpg \
+  --ic-xml ../McGill_MS234-064/input/ic-session-McGill_MS234-064-page.xml \
+  --output ../McGill_MS234-064/output/ic_debug.jpg
 ```
 
 Debug-viz color legend: green = pitch found, amber = fell back to a

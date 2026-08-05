@@ -11,11 +11,13 @@ Usage:
     python run_pitch_finding.py ../McGill_MS234-064 --debug-viz
 
 One argument: the page folder. page_inputs finds the image, IC XML and staff
-JSON inside it, and the artifacts are written next to them
-(<image stem>_pitch_finding.json, plus _debug.jpg and _debug_nolabels.jpg with
---debug-viz -- the same overlay with and without captions, since the captions
-are what makes a densely notated page unreadable). Any of those paths can
-still be given explicitly to override discovery:
+JSON in its input/ subfolder, and the artifacts are written to its output/
+subfolder (<image stem>_pitch_finding.json, plus _debug.jpg and
+_debug_nolabels.jpg with --debug-viz -- the same overlay with and without
+captions, since the captions are what makes a densely notated page unreadable).
+Keeping the two apart is what lets a page be re-run without its own artifacts
+becoming candidate inputs; output/ is created on the first write. Any of those
+paths can still be given explicitly to override discovery:
 
     python run_pitch_finding.py page_dir/ --ic-xml other/ic.xml \\
         --output out_dir/ --debug-viz overlay.jpg
@@ -60,8 +62,8 @@ def run(inputs: PageInputs, output_path: Path = None, *,
         regroup_staves: bool = True):
     # Resolve both artifact paths before doing any work: an unwritable
     # --debug-viz should be reported now, not after the debug render. With no
-    # --output, both land in the page folder alongside the inputs.
-    output_path = resolve_output_path(output_path or inputs.page_dir, inputs.image,
+    # --output, both land in the page folder's output/ (created at write time).
+    output_path = resolve_output_path(output_path or inputs.output_dir, inputs.image,
                                      "_pitch_finding.json")
     debug_viz_path = resolve_debug_viz_path(
         debug_viz, output_path.with_name(f"{output_path.stem}_debug.jpg"))
@@ -252,13 +254,13 @@ def _render_debug_viz(image_path: Path, results, staves, out_path: Path,
 def main():
     parser = argparse.ArgumentParser(description="Mothra pitch-finding prototype")
     parser.add_argument("page", type=Path,
-                         help="Page folder holding the image, IC XML and staff JSON "
-                              "(or the page image itself, to pick one of two pages "
-                              "sharing a folder).")
+                         help="Page folder whose input/ subfolder holds the image, "
+                              "IC XML and staff JSON (or the page image itself, to "
+                              "pick one of two pages sharing a folder).")
     parser.add_argument("--output", type=Path, default=None,
                          help="JSON file to write, or a directory to write "
                               "<image stem>_pitch_finding.json into. "
-                              "Defaults to the page folder.")
+                              "Defaults to the page folder's output/ subfolder.")
     parser.add_argument("--debug-viz", nargs="?", const="auto", default=None,
                          help="Render the debug overlay, twice: as given, plus a "
                               "text-free '_nolabels' copy with only boxes, note "
@@ -280,7 +282,8 @@ def main():
                               "columns' lines into single eight-line staves.")
     # Overrides for anything discovery gets wrong or can't see, e.g. an IC XML
     # kept outside the page folder.
-    override_help = "Use this file instead of discovering one in the page folder."
+    override_help = ("Use this file instead of discovering one in the page's "
+                     "input/ folder.")
     parser.add_argument("--image", type=Path, default=None, help=override_help)
     parser.add_argument("--ic-xml", type=Path, default=None, help=override_help)
     parser.add_argument("--staff-json", type=Path, default=None, help=override_help)
