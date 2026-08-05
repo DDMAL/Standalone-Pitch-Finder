@@ -1,7 +1,7 @@
 {
-  "image": "McGill_MS234-064/McGill_MS234-064.jpg",
-  "ic_xml": "McGill_MS234-064/ic-session-McGill_MS234-064-page.xml",
-  "staff_json": "McGill_MS234-064/McGill_MS234-064_stafflines.json",
+  "image": "../McGill_MS234-064/input/McGill_MS234-064.jpg",
+  "ic_xml": "../McGill_MS234-064/input/ic-session-McGill_MS234-064-page.xml",
+  "staff_json": "../McGill_MS234-064/input/McGill_MS234-064_stafflines.json",
   "anchor_mode": "pixel",
   "glyphs": [
     {

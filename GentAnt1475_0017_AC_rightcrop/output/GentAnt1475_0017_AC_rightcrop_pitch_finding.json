@@ -1,0 +1,6361 @@
+{
+  "image": "../GentAnt1475_0017_AC_rightcrop/input/GentAnt1475_0017_AC_rightcrop.jpg",
+  "ic_xml": "../GentAnt1475_0017_AC_rightcrop/input/ic-session-GentAnt1475_0017_AC_rightcrop-page.xml",
+  "staff_json": "../GentAnt1475_0017_AC_rightcrop/input/GentAnt1475_0017_AC_rightcrop_stafflines.json",
+  "anchor_mode": "pixel",
+  "glyphs": [
+    {
+      "glyph_index": 0,
+      "ic": {
+        "ulx": 431,
+        "uly": 653,
+        "nrows": 26,
+        "ncols": 9,
+        "class_name": "neume.virga",
+        "confidence": 0.097917,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.856382978723399,
+          "center_x": 435.5,
+          "center_y": 658.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 435.5,
+        "y": 658.5,
+        "stave_step": 2.856382978723399,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 1,
+      "ic": {
+        "ulx": 140,
+        "uly": 1008,
+        "nrows": 27,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.138272,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.386275594908694,
+          "center_x": 144.5,
+          "center_y": 1014.876923076923,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 144.5,
+        "y": 1014.876923076923,
+        "stave_step": 4.386275594908694,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 2,
+      "ic": {
+        "ulx": 588,
+        "uly": 503,
+        "nrows": 26,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.158402,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.7388888888888863,
+          "center_x": 592.5,
+          "center_y": 509.575,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 592.5,
+        "y": 509.575,
+        "stave_step": 2.7388888888888863,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 3,
+      "ic": {
+        "ulx": 245,
+        "uly": 506,
+        "nrows": 20,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.18523,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.5670329670329495,
+          "center_x": 249.5,
+          "center_y": 512.72,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 249.5,
+        "y": 512.72,
+        "stave_step": 2.5670329670329495,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 4,
+      "ic": {
+        "ulx": 322,
+        "uly": 341,
+        "nrows": 25,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.186883,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.027798647633354,
+          "center_x": 327.5,
+          "center_y": 346.9818181818182,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 327.5,
+        "y": 346.9818181818182,
+        "stave_step": 5.027798647633354,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 5,
+      "ic": {
+        "ulx": 521,
+        "uly": 138,
+        "nrows": 18,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.193481,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0875576036866343,
+          "center_x": 525.5,
+          "center_y": 143.21428571428572,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 525.5,
+        "y": 143.21428571428572,
+        "stave_step": 2.0875576036866343,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 6,
+      "ic": {
+        "ulx": 98,
+        "uly": 931,
+        "nrows": 21,
+        "ncols": 15,
+        "class_name": "neume.clivis2",
+        "confidence": 0.195179,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 7.2804940813175385,
+          "center_x": 102.5,
+          "center_y": 937.2068965517242,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 6.2804940813175385,
+          "center_x": 102.5,
+          "center_y": 939.4402298850575,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 102.5,
+        "y": 937.2068965517242,
+        "stave_step": 7.2804940813175385,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 7,
+      "ic": {
+        "ulx": 130,
+        "uly": 727,
+        "nrows": 14,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.195318,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.000821220333414,
+          "center_x": 135.5,
+          "center_y": 733.2407407407408,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 135.5,
+        "y": 733.2407407407408,
+        "stave_step": 2.000821220333414,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 8,
+      "ic": {
+        "ulx": 450,
+        "uly": 124,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.197113,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.557876628164168,
+          "center_x": 455.5,
+          "center_y": 130.52307692307693,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 455.5,
+        "y": 130.52307692307693,
+        "stave_step": 4.557876628164168,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 9,
+      "ic": {
+        "ulx": 338,
+        "uly": 125,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.199118,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.353078062195898,
+          "center_x": 343.5,
+          "center_y": 131.44827586206895,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 343.5,
+        "y": 131.44827586206895,
+        "stave_step": 4.353078062195898,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 10,
+      "ic": {
+        "ulx": 664,
+        "uly": 223,
+        "nrows": 18,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.201677,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.2577903682719569,
+          "center_x": 669.5,
+          "center_y": 229.61666666666667,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 669.5,
+        "y": 229.61666666666667,
+        "stave_step": -0.2577903682719569,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 11,
+      "ic": {
+        "ulx": 164,
+        "uly": 421,
+        "nrows": 17,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.205492,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.301236418134134,
+          "center_x": 169.0,
+          "center_y": 427.4901960784314,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 169.0,
+        "y": 427.4901960784314,
+        "stave_step": 4.301236418134134,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 12,
+      "ic": {
+        "ulx": 517,
+        "uly": 217,
+        "nrows": 17,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.205822,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.0010713520462833,
+          "center_x": 521.5,
+          "center_y": 223.4102564102564,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 521.5,
+        "y": 223.4102564102564,
+        "stave_step": 1.0010713520462833,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 13,
+      "ic": {
+        "ulx": 651,
+        "uly": 575,
+        "nrows": 20,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.206509,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.926748057713657,
+          "center_x": 656.0,
+          "center_y": 581.0196078431372,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 656.0,
+        "y": 581.0196078431372,
+        "stave_step": 3.926748057713657,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 14,
+      "ic": {
+        "ulx": 74,
+        "uly": 475,
+        "nrows": 23,
+        "ncols": 11,
+        "class_name": "clef.c",
+        "confidence": 0.208471,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.07890410958903733,
+          "center_x": 79.5,
+          "center_y": 487.8082191780822,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 79.5,
+        "y": 487.8082191780822,
+        "stave_step": 0.07890410958903733,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 14
+      },
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines"
+      ]
+    },
+    {
+      "glyph_index": 15,
+      "ic": {
+        "ulx": 280,
+        "uly": 124,
+        "nrows": 20,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.209499,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.4235230644726204,
+          "center_x": 284.5,
+          "center_y": 130.85454545454544,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 3.4235230644726204,
+          "center_x": 284.5,
+          "center_y": 136.47121212121212,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 284.5,
+        "y": 130.85454545454544,
+        "stave_step": 4.4235230644726204,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 16,
+      "ic": {
+        "ulx": 377,
+        "uly": 795,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.211873,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 10,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0705331773357853,
+          "center_x": 382.5,
+          "center_y": 801.4193548387096,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 382.5,
+        "y": 801.4193548387096,
+        "stave_step": 2.0705331773357853,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 17,
+      "ic": {
+        "ulx": 375,
+        "uly": 200,
+        "nrows": 19,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.212574,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.8570035749106273,
+          "center_x": 379.5,
+          "center_y": 207.52941176470588,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 379.5,
+        "y": 207.52941176470588,
+        "stave_step": 3.8570035749106273,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 18,
+      "ic": {
+        "ulx": 343,
+        "uly": 1027,
+        "nrows": 16,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.214365,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.5245332175423316,
+          "center_x": 347.5,
+          "center_y": 1032.5238095238096,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 347.5,
+        "y": 1032.5238095238096,
+        "stave_step": 0.5245332175423316,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 19,
+      "ic": {
+        "ulx": 86,
+        "uly": 510,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.218247,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.679999999999988,
+          "center_x": 91.5,
+          "center_y": 517.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 91.5,
+        "y": 517.5,
+        "stave_step": 1.679999999999988,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 20,
+      "ic": {
+        "ulx": 299,
+        "uly": 433,
+        "nrows": 21,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.22046,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.095805471124621,
+          "center_x": 303.5,
+          "center_y": 438.5744680851064,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 303.5,
+        "y": 438.5744680851064,
+        "stave_step": 2.095805471124621,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 21,
+      "ic": {
+        "ulx": 440,
+        "uly": 656,
+        "nrows": 14,
+        "ncols": 9,
+        "class_name": "neume.inclinatum",
+        "confidence": 0.221158,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.057845744680856,
+          "center_x": 444.5,
+          "center_y": 663.6041666666666,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 444.5,
+        "y": 663.6041666666666,
+        "stave_step": 2.057845744680856,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 22,
+      "ic": {
+        "ulx": 99,
+        "uly": 219,
+        "nrows": 18,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 0.221333,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6916500427472183,
+          "center_x": 103.5,
+          "center_y": 227.02272727272728,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 103.5,
+        "y": 227.02272727272728,
+        "stave_step": 0.6916500427472183,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 23,
+      "ic": {
+        "ulx": 249,
+        "uly": 874,
+        "nrows": 19,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.226116,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.8361774744027324,
+          "center_x": 254.0,
+          "center_y": 881.1333333333333,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 254.0,
+        "y": 881.1333333333333,
+        "stave_step": 3.8361774744027324,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 24,
+      "ic": {
+        "ulx": 560,
+        "uly": 138,
+        "nrows": 17,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.227395,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.9077138849929893,
+          "center_x": 565.0,
+          "center_y": 144.04347826086956,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 565.0,
+        "y": 144.04347826086956,
+        "stave_step": 1.9077138849929893,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 25,
+      "ic": {
+        "ulx": 263,
+        "uly": 432,
+        "nrows": 26,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.228271,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0852570021545116,
+          "center_x": 268.5,
+          "center_y": 438.6140350877193,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 268.5,
+        "y": 438.6140350877193,
+        "stave_step": 2.0852570021545116,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 26,
+      "ic": {
+        "ulx": 286,
+        "uly": 211,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.228806,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.3518299881936238,
+          "center_x": 291.5,
+          "center_y": 217.57142857142858,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 291.5,
+        "y": 217.57142857142858,
+        "stave_step": 2.3518299881936238,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 27,
+      "ic": {
+        "ulx": 453,
+        "uly": 212,
+        "nrows": 15,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.231847,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.9191481994459831,
+          "center_x": 458.5,
+          "center_y": 218.453125,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 458.5,
+        "y": 218.453125,
+        "stave_step": 1.9191481994459831,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 28,
+      "ic": {
+        "ulx": 142,
+        "uly": 292,
+        "nrows": 16,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.232314,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.0162141779788891,
+          "center_x": 147.0,
+          "center_y": 299.2156862745098,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 147.0,
+        "y": 299.2156862745098,
+        "stave_step": 1.0162141779788891,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 29,
+      "ic": {
+        "ulx": 339,
+        "uly": 883,
+        "nrows": 18,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.233031,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.8869863013698485,
+          "center_x": 343.5,
+          "center_y": 889.95,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 343.5,
+        "y": 889.95,
+        "stave_step": 1.8869863013698485,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 30,
+      "ic": {
+        "ulx": 543,
+        "uly": 507,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.233372,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.9301075268817112,
+          "center_x": 547.5,
+          "center_y": 513.625,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 547.5,
+        "y": 513.625,
+        "stave_step": 1.9301075268817112,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 31,
+      "ic": {
+        "ulx": 148,
+        "uly": 931,
+        "nrows": 18,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.238773,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 7.126984126984123,
+          "center_x": 153.5,
+          "center_y": 937.4285714285714,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 153.5,
+        "y": 937.4285714285714,
+        "stave_step": 7.126984126984123,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 32,
+      "ic": {
+        "ulx": 408,
+        "uly": 199,
+        "nrows": 20,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.2393,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.070818684078354,
+          "center_x": 412.5,
+          "center_y": 205.93939393939394,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 412.5,
+        "y": 205.93939393939394,
+        "stave_step": 4.070818684078354,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 33,
+      "ic": {
+        "ulx": 370,
+        "uly": 358,
+        "nrows": 20,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.240653,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.151339548164949,
+          "center_x": 374.5,
+          "center_y": 364.53061224489795,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 374.5,
+        "y": 364.53061224489795,
+        "stave_step": 2.151339548164949,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 34,
+      "ic": {
+        "ulx": 93,
+        "uly": 358,
+        "nrows": 16,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.241547,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0784780023781146,
+          "center_x": 98.5,
+          "center_y": 364.3448275862069,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 98.5,
+        "y": 364.3448275862069,
+        "stave_step": 2.0784780023781146,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 35,
+      "ic": {
+        "ulx": 520,
+        "uly": 434,
+        "nrows": 23,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 0.24221,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.1499522445081154,
+          "center_x": 524.5,
+          "center_y": 441.19444444444446,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 524.5,
+        "y": 441.19444444444446,
+        "stave_step": 2.1499522445081154,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 36,
+      "ic": {
+        "ulx": 429,
+        "uly": 497,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.246593,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.282947077135953,
+          "center_x": 434.5,
+          "center_y": 502.8135593220339,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 434.5,
+        "y": 502.8135593220339,
+        "stave_step": 4.282947077135953,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 37,
+      "ic": {
+        "ulx": 450,
+        "uly": 1079,
+        "nrows": 26,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.247657,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 10.807185628742541,
+          "center_x": 454.5,
+          "center_y": 1086.32,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 454.5,
+        "y": 1086.32,
+        "stave_step": 10.807185628742541,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 38,
+      "ic": {
+        "ulx": 297,
+        "uly": 870,
+        "nrows": 23,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.247686,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.656758870795706,
+          "center_x": 302.0,
+          "center_y": 876.5918367346939,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 302.0,
+        "y": 876.5918367346939,
+        "stave_step": 4.656758870795706,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 39,
+      "ic": {
+        "ulx": 252,
+        "uly": 371,
+        "nrows": 17,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.248046,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.08171301993600011,
+          "center_x": 256.5,
+          "center_y": 377.5882352941176,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 256.5,
+        "y": 377.5882352941176,
+        "stave_step": -0.08171301993600011,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 40,
+      "ic": {
+        "ulx": 512,
+        "uly": 360,
+        "nrows": 20,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.24859,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.9858135905802223,
+          "center_x": 517.0,
+          "center_y": 365.42105263157896,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 517.0,
+        "y": 365.42105263157896,
+        "stave_step": 1.9858135905802223,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 41,
+      "ic": {
+        "ulx": 542,
+        "uly": 143,
+        "nrows": 16,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.248656,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.2024193548387103,
+          "center_x": 547.0,
+          "center_y": 147.6875,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 547.0,
+        "y": 147.6875,
+        "stave_step": 1.2024193548387103,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 42,
+      "ic": {
+        "ulx": 232,
+        "uly": 293,
+        "nrows": 17,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.248939,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.3681644026471602,
+          "center_x": 236.5,
+          "center_y": 298.32758620689657,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 236.5,
+        "y": 298.32758620689657,
+        "stave_step": 1.3681644026471602,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 43,
+      "ic": {
+        "ulx": 89,
+        "uly": 578,
+        "nrows": 21,
+        "ncols": 15,
+        "class_name": "neume.clivis2",
+        "confidence": 0.256261,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.1622948304954814,
+          "center_x": 93.5,
+          "center_y": 584.3018867924528,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.1622948304954814,
+          "center_x": 93.5,
+          "center_y": 590.4518867924528,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 93.5,
+        "y": 584.3018867924528,
+        "stave_step": 2.1622948304954814,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 44,
+      "ic": {
+        "ulx": 127,
+        "uly": 432,
+        "nrows": 18,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.259085,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.372093023255812,
+          "center_x": 131.5,
+          "center_y": 438.0,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 131.5,
+        "y": 438.0,
+        "stave_step": 2.372093023255812,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 45,
+      "ic": {
+        "ulx": 162,
+        "uly": 936,
+        "nrows": 18,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.261476,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.791086350974924,
+          "center_x": 167.5,
+          "center_y": 942.8125,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 167.5,
+        "y": 942.8125,
+        "stave_step": 5.791086350974924,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 46,
+      "ic": {
+        "ulx": 316,
+        "uly": 118,
+        "nrows": 24,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.264376,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.602754820936639,
+          "center_x": 320.5,
+          "center_y": 124.48484848484848,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 4.602754820936639,
+          "center_x": 320.5,
+          "center_y": 129.9848484848485,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 320.5,
+        "y": 124.48484848484848,
+        "stave_step": 5.602754820936639,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 47,
+      "ic": {
+        "ulx": 235,
+        "uly": 631,
+        "nrows": 22,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.265512,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 6.277360066833764,
+          "center_x": 239.5,
+          "center_y": 637.6190476190476,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 5.277360066833764,
+          "center_x": 239.5,
+          "center_y": 643.3190476190476,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 239.5,
+        "y": 637.6190476190476,
+        "stave_step": 6.277360066833764,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 48,
+      "ic": {
+        "ulx": 609,
+        "uly": 508,
+        "nrows": 23,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.266762,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.7439024390243927,
+          "center_x": 613.5,
+          "center_y": 513.9268292682926,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 0.7439024390243927,
+          "center_x": 613.5,
+          "center_y": 518.3268292682926,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 613.5,
+        "y": 513.9268292682926,
+        "stave_step": 1.7439024390243927,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 49,
+      "ic": {
+        "ulx": 481,
+        "uly": 1011,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.267845,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.163957108267035,
+          "center_x": 486.5,
+          "center_y": 1017.6326530612245,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 486.5,
+        "y": 1017.6326530612245,
+        "stave_step": 3.163957108267035,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 50,
+      "ic": {
+        "ulx": 498,
+        "uly": 134,
+        "nrows": 24,
+        "ncols": 19,
+        "class_name": "neume.clivis2",
+        "confidence": 0.268992,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.6083601286173606,
+          "center_x": 502.5,
+          "center_y": 140.58,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.6083601286173606,
+          "center_x": 502.5,
+          "center_y": 145.76333333333335,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 502.5,
+        "y": 140.58,
+        "stave_step": 2.6083601286173606,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 51,
+      "ic": {
+        "ulx": 549,
+        "uly": 347,
+        "nrows": 16,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.269619,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.066677352139761,
+          "center_x": 553.5,
+          "center_y": 352.72549019607845,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 553.5,
+        "y": 352.72549019607845,
+        "stave_step": 4.066677352139761,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 52,
+      "ic": {
+        "ulx": 180,
+        "uly": 428,
+        "nrows": 16,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.269981,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.0623546511627957,
+          "center_x": 185.0,
+          "center_y": 433.7674418604651,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 185.0,
+        "y": 433.7674418604651,
+        "stave_step": 3.0623546511627957,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 53,
+      "ic": {
+        "ulx": 333,
+        "uly": 1085,
+        "nrows": 24,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.270991,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 8.962575452716305,
+          "center_x": 338.5,
+          "center_y": 1092.2857142857142,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 338.5,
+        "y": 1092.2857142857142,
+        "stave_step": 8.962575452716305,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 54,
+      "ic": {
+        "ulx": 568,
+        "uly": 883,
+        "nrows": 20,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.271905,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.278890600924509,
+          "center_x": 572.5,
+          "center_y": 889.0545454545454,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 572.5,
+        "y": 889.0545454545454,
+        "stave_step": 2.278890600924509,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 55,
+      "ic": {
+        "ulx": 346,
+        "uly": 731,
+        "nrows": 17,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.272218,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.1282426013883797,
+          "center_x": 350.5,
+          "center_y": 737.6304347826087,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 350.5,
+        "y": 737.6304347826087,
+        "stave_step": 1.1282426013883797,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 56,
+      "ic": {
+        "ulx": 198,
+        "uly": 432,
+        "nrows": 21,
+        "ncols": 13,
+        "class_name": "neume.clivis2",
+        "confidence": 0.273792,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.2196969696969697,
+          "center_x": 202.5,
+          "center_y": 438.1136363636364,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.2196969696969697,
+          "center_x": 202.5,
+          "center_y": 443.51363636363635,
+          "pitch": {
+            "pname": "A",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 202.5,
+        "y": 438.1136363636364,
+        "stave_step": 2.2196969696969697,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 57,
+      "ic": {
+        "ulx": 354,
+        "uly": 274,
+        "nrows": 21,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.275053,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.825218190169958,
+          "center_x": 359.5,
+          "center_y": 280.5892857142857,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 359.5,
+        "y": 280.5892857142857,
+        "stave_step": 4.825218190169958,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 58,
+      "ic": {
+        "ulx": 282,
+        "uly": 1008,
+        "nrows": 21,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.27612,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.944800777453847,
+          "center_x": 287.5,
+          "center_y": 1014.4897959183673,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 287.5,
+        "y": 1014.4897959183673,
+        "stave_step": 3.944800777453847,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 59,
+      "ic": {
+        "ulx": 109,
+        "uly": 507,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.277234,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.7844155844156164,
+          "center_x": 113.5,
+          "center_y": 513.18,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 113.5,
+        "y": 513.18,
+        "stave_step": 2.7844155844156164,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 60,
+      "ic": {
+        "ulx": 269,
+        "uly": 877,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.279546,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.385341302296335,
+          "center_x": 274.5,
+          "center_y": 882.9272727272727,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 274.5,
+        "y": 882.9272727272727,
+        "stave_step": 3.385341302296335,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 61,
+      "ic": {
+        "ulx": 285,
+        "uly": 631,
+        "nrows": 25,
+        "ncols": 15,
+        "class_name": "neume.clivis2",
+        "confidence": 0.280004,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 6.035527450416794,
+          "center_x": 289.5,
+          "center_y": 638.4897959183673,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 5.035527450416794,
+          "center_x": 289.5,
+          "center_y": 644.406462585034,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 289.5,
+        "y": 638.4897959183673,
+        "stave_step": 6.035527450416794,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 62,
+      "ic": {
+        "ulx": 635,
+        "uly": 210,
+        "nrows": 25,
+        "ncols": 19,
+        "class_name": "neume.clivis2",
+        "confidence": 0.281592,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.129136400322842,
+          "center_x": 639.5,
+          "center_y": 215.73809523809524,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.129136400322842,
+          "center_x": 639.5,
+          "center_y": 221.63809523809525,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 639.5,
+        "y": 215.73809523809524,
+        "stave_step": 2.129136400322842,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 63,
+      "ic": {
+        "ulx": 325,
+        "uly": 1028,
+        "nrows": 17,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.282912,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.41758020718093913,
+          "center_x": 330.0,
+          "center_y": 1033.1311475409836,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 330.0,
+        "y": 1033.1311475409836,
+        "stave_step": 0.41758020718093913,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 64,
+      "ic": {
+        "ulx": 395,
+        "uly": 123,
+        "nrows": 21,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.285681,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.642633228840122,
+          "center_x": 400.5,
+          "center_y": 130.01666666666668,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 400.5,
+        "y": 130.01666666666668,
+        "stave_step": 4.642633228840122,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 65,
+      "ic": {
+        "ulx": 590,
+        "uly": 273,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.287876,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.086956521739131,
+          "center_x": 595.5,
+          "center_y": 279.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 595.5,
+        "y": 279.5,
+        "stave_step": 4.086956521739131,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 66,
+      "ic": {
+        "ulx": 521,
+        "uly": 502,
+        "nrows": 25,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.288489,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.101654846335694,
+          "center_x": 526.5,
+          "center_y": 508.22222222222223,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 526.5,
+        "y": 508.22222222222223,
+        "stave_step": 3.101654846335694,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 67,
+      "ic": {
+        "ulx": 359,
+        "uly": 645,
+        "nrows": 22,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.288612,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.7189189189189102,
+          "center_x": 363.5,
+          "center_y": 652.4666666666667,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 363.5,
+        "y": 652.4666666666667,
+        "stave_step": 3.7189189189189102,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 68,
+      "ic": {
+        "ulx": 360,
+        "uly": 731,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.289491,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.1704545454545427,
+          "center_x": 365.5,
+          "center_y": 737.0,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 365.5,
+        "y": 737.0,
+        "stave_step": 1.1704545454545427,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 69,
+      "ic": {
+        "ulx": 425,
+        "uly": 736,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.290061,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.3033953997809533,
+          "center_x": 430.5,
+          "center_y": 743.1818181818181,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 430.5,
+        "y": 743.1818181818181,
+        "stave_step": 0.3033953997809533,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 70,
+      "ic": {
+        "ulx": 146,
+        "uly": 505,
+        "nrows": 21,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.292255,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.072052917552552,
+          "center_x": 150.5,
+          "center_y": 511.45098039215685,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 2.072052917552552,
+          "center_x": 150.5,
+          "center_y": 515.6009803921569,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 150.5,
+        "y": 511.45098039215685,
+        "stave_step": 3.072052917552552,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 71,
+      "ic": {
+        "ulx": 494,
+        "uly": 447,
+        "nrows": 23,
+        "ncols": 15,
+        "class_name": "neume.clivis2",
+        "confidence": 0.295418,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.08782742681047484,
+          "center_x": 498.5,
+          "center_y": 453.3818181818182,
+          "pitch": {
+            "pname": "G",
+            "oct": 3
+          }
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": -0.9121725731895252,
+          "center_x": 498.5,
+          "center_y": 459.28181818181815,
+          "pitch": {
+            "pname": "F",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 498.5,
+        "y": 453.3818181818182,
+        "stave_step": 0.08782742681047484,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 72,
+      "ic": {
+        "ulx": 669,
+        "uly": 140,
+        "nrows": 20,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 0.295577,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.677406281661602,
+          "center_x": 673.5,
+          "center_y": 144.89361702127658,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 673.5,
+        "y": 144.89361702127658,
+        "stave_step": 1.677406281661602,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 73,
+      "ic": {
+        "ulx": 318,
+        "uly": 432,
+        "nrows": 22,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.30482,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0132575757575704,
+          "center_x": 322.5,
+          "center_y": 439.0888888888889,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 322.5,
+        "y": 439.0888888888889,
+        "stave_step": 2.0132575757575704,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 74,
+      "ic": {
+        "ulx": 575,
+        "uly": 145,
+        "nrows": 20,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 0.304911,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6387096774193566,
+          "center_x": 579.5,
+          "center_y": 150.5,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": -0.3612903225806434,
+          "center_x": 579.5,
+          "center_y": 155.66666666666666,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 579.5,
+        "y": 150.5,
+        "stave_step": 0.6387096774193566,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 75,
+      "ic": {
+        "ulx": 237,
+        "uly": 124,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.305021,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.081307423367753,
+          "center_x": 242.5,
+          "center_y": 130.48979591836735,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 242.5,
+        "y": 130.48979591836735,
+        "stave_step": 4.081307423367753,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 76,
+      "ic": {
+        "ulx": 326,
+        "uly": 649,
+        "nrows": 25,
+        "ncols": 19,
+        "class_name": "neume.clivis2",
+        "confidence": 0.30865,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.0598825831702428,
+          "center_x": 330.5,
+          "center_y": 656.2857142857143,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 2.0598825831702428,
+          "center_x": 330.5,
+          "center_y": 662.3690476190477,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 330.5,
+        "y": 656.2857142857143,
+        "stave_step": 3.0598825831702428,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 77,
+      "ic": {
+        "ulx": 562,
+        "uly": 506,
+        "nrows": 24,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 0.311372,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.946124763705113,
+          "center_x": 566.5,
+          "center_y": 513.3478260869565,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 0.9461247637051129,
+          "center_x": 566.5,
+          "center_y": 517.9478260869564,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 566.5,
+        "y": 513.3478260869565,
+        "stave_step": 1.946124763705113,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 78,
+      "ic": {
+        "ulx": 303,
+        "uly": 731,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.312303,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.323407775020672,
+          "center_x": 308.5,
+          "center_y": 736.6923076923077,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 308.5,
+        "y": 736.6923076923077,
+        "stave_step": 1.323407775020672,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 79,
+      "ic": {
+        "ulx": 264,
+        "uly": 645,
+        "nrows": 26,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.316926,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.841269841269832,
+          "center_x": 269.5,
+          "center_y": 651.4285714285714,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 269.5,
+        "y": 651.4285714285714,
+        "stave_step": 3.841269841269832,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 80,
+      "ic": {
+        "ulx": 434,
+        "uly": 201,
+        "nrows": 20,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.319105,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.7852301526492598,
+          "center_x": 438.5,
+          "center_y": 207.4255319148936,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 438.5,
+        "y": 207.4255319148936,
+        "stave_step": 3.7852301526492598,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 81,
+      "ic": {
+        "ulx": 445,
+        "uly": 737,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.321151,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.16825341872944222,
+          "center_x": 449.5,
+          "center_y": 743.9245283018868,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 449.5,
+        "y": 743.9245283018868,
+        "stave_step": 0.16825341872944222,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 82,
+      "ic": {
+        "ulx": 540,
+        "uly": 654,
+        "nrows": 19,
+        "ncols": 10,
+        "class_name": "neume.virga",
+        "confidence": 0.325639,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.882394665910069,
+          "center_x": 545.0,
+          "center_y": 659.8771929824561,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 545.0,
+        "y": 659.8771929824561,
+        "stave_step": 2.882394665910069,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 83,
+      "ic": {
+        "ulx": 231,
+        "uly": 938,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.326207,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.695889343463853,
+          "center_x": 236.5,
+          "center_y": 945.1206896551724,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 236.5,
+        "y": 945.1206896551724,
+        "stave_step": 4.695889343463853,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 84,
+      "ic": {
+        "ulx": 397,
+        "uly": 949,
+        "nrows": 24,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 0.327564,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.3797909407665454,
+          "center_x": 401.5,
+          "center_y": 956.1219512195122,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 0.3797909407665454,
+          "center_x": 401.5,
+          "center_y": 960.6719512195122,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 401.5,
+        "y": 956.1219512195122,
+        "stave_step": 1.3797909407665454,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 85,
+      "ic": {
+        "ulx": 353,
+        "uly": 346,
+        "nrows": 23,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.330819,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.035519606119221,
+          "center_x": 357.5,
+          "center_y": 353.0851063829787,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 357.5,
+        "y": 353.0851063829787,
+        "stave_step": 4.035519606119221,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 86,
+      "ic": {
+        "ulx": 229,
+        "uly": 880,
+        "nrows": 18,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.331259,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.705989662511419,
+          "center_x": 233.5,
+          "center_y": 887.1818181818181,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 233.5,
+        "y": 887.1818181818181,
+        "stave_step": 2.705989662511419,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 87,
+      "ic": {
+        "ulx": 586,
+        "uly": 1084,
+        "nrows": 20,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.334397,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 8.28076496674063,
+          "center_x": 590.5,
+          "center_y": 1090.6097560975609,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 590.5,
+        "y": 1090.6097560975609,
+        "stave_step": 8.28076496674063,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 88,
+      "ic": {
+        "ulx": 220,
+        "uly": 723,
+        "nrows": 22,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.334764,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.2038567493112877,
+          "center_x": 224.5,
+          "center_y": 729.5757575757576,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 224.5,
+        "y": 729.5757575757576,
+        "stave_step": 2.2038567493112877,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 89,
+      "ic": {
+        "ulx": 357,
+        "uly": 130,
+        "nrows": 21,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.342044,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.5575048732943477,
+          "center_x": 361.5,
+          "center_y": 135.78947368421052,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 361.5,
+        "y": 135.78947368421052,
+        "stave_step": 3.5575048732943477,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 90,
+      "ic": {
+        "ulx": 505,
+        "uly": 946,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.342403,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.127393225331356,
+          "center_x": 510.5,
+          "center_y": 952.4821428571429,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 510.5,
+        "y": 952.4821428571429,
+        "stave_step": 2.127393225331356,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 91,
+      "ic": {
+        "ulx": 265,
+        "uly": 1000,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.343501,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.475228161668843,
+          "center_x": 270.5,
+          "center_y": 1006.728813559322,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 270.5,
+        "y": 1006.728813559322,
+        "stave_step": 5.475228161668843,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 92,
+      "ic": {
+        "ulx": 251,
+        "uly": 934,
+        "nrows": 23,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 0.344971,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.669842904970395,
+          "center_x": 255.5,
+          "center_y": 940.1818181818181,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 4.669842904970395,
+          "center_x": 255.5,
+          "center_y": 944.5943181818182,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 255.5,
+        "y": 940.1818181818181,
+        "stave_step": 5.669842904970395,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 93,
+      "ic": {
+        "ulx": 370,
+        "uly": 1079,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 0.3457,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 11.189639222941759,
+          "center_x": 374.5,
+          "center_y": 1085.8297872340424,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 374.5,
+        "y": 1085.8297872340424,
+        "stave_step": 11.189639222941759,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 94,
+      "ic": {
+        "ulx": 123,
+        "uly": 860,
+        "nrows": 18,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.359586,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 6.881856304165498,
+          "center_x": 128.5,
+          "center_y": 867.1020408163265,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 128.5,
+        "y": 867.1020408163265,
+        "stave_step": 6.881856304165498,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 95,
+      "ic": {
+        "ulx": 331,
+        "uly": 796,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.359629,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 10,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.8907156673114085,
+          "center_x": 336.5,
+          "center_y": 803.2272727272727,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 336.5,
+        "y": 803.2272727272727,
+        "stave_step": 1.8907156673114085,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 96,
+      "ic": {
+        "ulx": 446,
+        "uly": 495,
+        "nrows": 24,
+        "ncols": 18,
+        "class_name": "neume.clivis2",
+        "confidence": 0.372824,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.544128740256458,
+          "center_x": 450.5,
+          "center_y": 501.5609756097561,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 3.5441287402564576,
+          "center_x": 450.5,
+          "center_y": 506.4109756097561,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 450.5,
+        "y": 501.5609756097561,
+        "stave_step": 4.544128740256458,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 97,
+      "ic": {
+        "ulx": 118,
+        "uly": 1022,
+        "nrows": 19,
+        "ncols": 13,
+        "class_name": "neume.virga",
+        "confidence": 0.385031,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.598523985239864,
+          "center_x": 122.5,
+          "center_y": 1028.08,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 122.5,
+        "y": 1028.08,
+        "stave_step": 1.598523985239864,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 98,
+      "ic": {
+        "ulx": 376,
+        "uly": 136,
+        "nrows": 20,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 0.386823,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.279504455553141,
+          "center_x": 380.5,
+          "center_y": 142.6046511627907,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 380.5,
+        "y": 142.6046511627907,
+        "stave_step": 2.279504455553141,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 99,
+      "ic": {
+        "ulx": 608,
+        "uly": 732,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 0.39796,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6319403182148213,
+          "center_x": 613.5,
+          "center_y": 738.6078431372549,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 613.5,
+        "y": 738.6078431372549,
+        "stave_step": 0.6319403182148213,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 100,
+      "ic": {
+        "ulx": 75,
+        "uly": 412,
+        "nrows": 24,
+        "ncols": 10,
+        "class_name": "clef.c",
+        "confidence": 0.427774,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.2475675675675726,
+          "center_x": 80.0,
+          "center_y": 425.7432432432432,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 80.0,
+        "y": 425.7432432432432,
+        "stave_step": 3.2475675675675726,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines"
+      ]
+    },
+    {
+      "glyph_index": 101,
+      "ic": {
+        "ulx": 478,
+        "uly": 657,
+        "nrows": 24,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 0.448849,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.121615087040611,
+          "center_x": 482.5,
+          "center_y": 663.7045454545455,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.121615087040611,
+          "center_x": 482.5,
+          "center_y": 669.9712121212121,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 482.5,
+        "y": 663.7045454545455,
+        "stave_step": 2.121615087040611,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 102,
+      "ic": {
+        "ulx": 447,
+        "uly": 669,
+        "nrows": 15,
+        "ncols": 10,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.04848608837970758,
+          "center_x": 452.0,
+          "center_y": 676.9038461538462,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 452.0,
+        "y": 676.9038461538462,
+        "stave_step": -0.04848608837970758,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 103,
+      "ic": {
+        "ulx": 213,
+        "uly": 579,
+        "nrows": 22,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.289227088456167,
+          "center_x": 217.5,
+          "center_y": 586.0975609756098,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.2892270884561672,
+          "center_x": 217.5,
+          "center_y": 592.2142276422765,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 217.5,
+        "y": 586.0975609756098,
+        "stave_step": 2.289227088456167,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 104,
+      "ic": {
+        "ulx": 145,
+        "uly": 641,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.577669902912617,
+          "center_x": 150.5,
+          "center_y": 648.125,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 150.5,
+        "y": 648.125,
+        "stave_step": 4.577669902912617,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 105,
+      "ic": {
+        "ulx": 121,
+        "uly": 645,
+        "nrows": 22,
+        "ncols": 18,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.8820166320166436,
+          "center_x": 125.5,
+          "center_y": 651.9487179487179,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 2.8820166320166436,
+          "center_x": 125.5,
+          "center_y": 656.8820512820512,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 125.5,
+        "y": 651.9487179487179,
+        "stave_step": 3.8820166320166436,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 106,
+      "ic": {
+        "ulx": 68,
+        "uly": 620,
+        "nrows": 27,
+        "ncols": 12,
+        "class_name": "clef.c",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": null,
+      "stave_assignment_flags": [
+        "missing_staff"
+      ],
+      "note_components": [],
+      "anchor": null,
+      "clef_used": null,
+      "reason": "missing_staff",
+      "flags": []
+    },
+    {
+      "glyph_index": 107,
+      "ic": {
+        "ulx": 125,
+        "uly": 930,
+        "nrows": 25,
+        "ncols": 12,
+        "class_name": "neume.podatus3",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.8481886141461015,
+          "center_x": 129.5,
+          "center_y": 949.5744680851063,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 2,
+          "stave_step": 3.8481886141461015,
+          "center_x": 129.5,
+          "center_y": 944.6411347517729,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 129.5,
+        "y": 949.5744680851063,
+        "stave_step": 1.8481886141461015,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 108,
+      "ic": {
+        "ulx": 358,
+        "uly": 511,
+        "nrows": 9,
+        "ncols": 9,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.7938144329896917,
+          "center_x": 362.5,
+          "center_y": 515.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 362.5,
+        "y": 515.5,
+        "stave_step": 1.7938144329896917,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 109,
+      "ic": {
+        "ulx": 364,
+        "uly": 504,
+        "nrows": 11,
+        "ncols": 11,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.0309278350515414,
+          "center_x": 369.5,
+          "center_y": 509.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 369.5,
+        "y": 509.5,
+        "stave_step": 3.0309278350515414,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 110,
+      "ic": {
+        "ulx": 378,
+        "uly": 492,
+        "nrows": 11,
+        "ncols": 10,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.9866666666666636,
+          "center_x": 383.0,
+          "center_y": 497.5,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 383.0,
+        "y": 497.5,
+        "stave_step": -0.9866666666666636,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 14
+      },
+      "reason": null,
+      "flags": [
+        "pixel_anchor_unavailable",
+        "sparse_stave_lines"
+      ]
+    },
+    {
+      "glyph_index": 111,
+      "ic": {
+        "ulx": 371,
+        "uly": 498,
+        "nrows": 13,
+        "ncols": 10,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -2.009259259259261,
+          "center_x": 376.0,
+          "center_y": 505.06944444444446,
+          "pitch": {
+            "pname": "A",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 376.0,
+        "y": 505.06944444444446,
+        "stave_step": -2.009259259259261,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 14
+      },
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines"
+      ]
+    },
+    {
+      "glyph_index": 112,
+      "ic": {
+        "ulx": 688,
+        "uly": 430,
+        "nrows": 13,
+        "ncols": 10,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.058609722853252,
+          "center_x": 693.0,
+          "center_y": 436.8169014084507,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 693.0,
+        "y": 436.8169014084507,
+        "stave_step": 3.058609722853252,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 113,
+      "ic": {
+        "ulx": 679,
+        "uly": 422,
+        "nrows": 14,
+        "ncols": 9,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.235038363171361,
+          "center_x": 683.5,
+          "center_y": 430.1014492753623,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 683.5,
+        "y": 430.1014492753623,
+        "stave_step": 4.235038363171361,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 114,
+      "ic": {
+        "ulx": 669,
+        "uly": 417,
+        "nrows": 11,
+        "ncols": 9,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.5588235294117645,
+          "center_x": 673.5,
+          "center_y": 422.5,
+          "pitch": {
+            "pname": "E",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 673.5,
+        "y": 422.5,
+        "stave_step": 5.5588235294117645,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 115,
+      "ic": {
+        "ulx": 640,
+        "uly": 423,
+        "nrows": 21,
+        "ncols": 30,
+        "class_name": "neume.oblique2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.349579831932779,
+          "center_x": 644.5,
+          "center_y": 429.15238095238095,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 3.3495798319327785,
+          "center_x": 644.5,
+          "center_y": 434.8190476190476,
+          "pitch": {
+            "pname": "C",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 644.5,
+        "y": 431.98571428571427,
+        "stave_step": 3.8495798319327785,
+        "interval": -0.5
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 116,
+      "ic": {
+        "ulx": 632,
+        "uly": 505,
+        "nrows": 21,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.0930232558139612,
+          "center_x": 636.5,
+          "center_y": 516.5,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 2.093023255813961,
+          "center_x": 636.5,
+          "center_y": 512.1999999999999,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 636.5,
+        "y": 516.5,
+        "stave_step": 1.0930232558139612,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 117,
+      "ic": {
+        "ulx": 273,
+        "uly": 942,
+        "nrows": 19,
+        "ncols": 14,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.550396190006973,
+          "center_x": 277.5,
+          "center_y": 953.2463768115942,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 3.550396190006973,
+          "center_x": 277.5,
+          "center_y": 948.8338768115942,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 277.5,
+        "y": 953.2463768115942,
+        "stave_step": 2.550396190006973,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 118,
+      "ic": {
+        "ulx": 83,
+        "uly": 848,
+        "nrows": 18,
+        "ncols": 15,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 8.205405405405397,
+          "center_x": 87.5,
+          "center_y": 858.5135135135135,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 9.205405405405397,
+          "center_x": 87.5,
+          "center_y": 851.7635135135135,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 87.5,
+        "y": 858.5135135135135,
+        "stave_step": 8.205405405405397,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 119,
+      "ic": {
+        "ulx": 89,
+        "uly": 416,
+        "nrows": 20,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.6621648460774585,
+          "center_x": 93.5,
+          "center_y": 427.75471698113205,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 5.6621648460774585,
+          "center_x": 93.5,
+          "center_y": 423.00471698113205,
+          "pitch": {
+            "pname": "E",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 93.5,
+        "y": 427.75471698113205,
+        "stave_step": 4.6621648460774585,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 120,
+      "ic": {
+        "ulx": 602,
+        "uly": 579,
+        "nrows": 21,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.929266709928621,
+          "center_x": 606.5,
+          "center_y": 592.5671641791045,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 2.929266709928621,
+          "center_x": 606.5,
+          "center_y": 586.4338308457711,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 606.5,
+        "y": 592.5671641791045,
+        "stave_step": 1.929266709928621,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 121,
+      "ic": {
+        "ulx": 298,
+        "uly": 118,
+        "nrows": 22,
+        "ncols": 15,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.047380714047381,
+          "center_x": 302.5,
+          "center_y": 133.03703703703704,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 5.047380714047381,
+          "center_x": 302.5,
+          "center_y": 127.48703703703704,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 302.5,
+        "y": 133.03703703703704,
+        "stave_step": 4.047380714047381,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 122,
+      "ic": {
+        "ulx": 316,
+        "uly": 571,
+        "nrows": 21,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.1449170872386474,
+          "center_x": 320.5,
+          "center_y": 582.3684210526316,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 4.144917087238648,
+          "center_x": 320.5,
+          "center_y": 576.2850877192982,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 320.5,
+        "y": 582.3684210526316,
+        "stave_step": 3.1449170872386474,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 123,
+      "ic": {
+        "ulx": 557,
+        "uly": 417,
+        "nrows": 21,
+        "ncols": 19,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.8842945874001824,
+          "center_x": 561.5,
+          "center_y": 431.265306122449,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 4.884294587400182,
+          "center_x": 561.5,
+          "center_y": 425.515306122449,
+          "pitch": {
+            "pname": "E",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 561.5,
+        "y": 431.265306122449,
+        "stave_step": 3.8842945874001824,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 124,
+      "ic": {
+        "ulx": 668,
+        "uly": 574,
+        "nrows": 21,
+        "ncols": 15,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.121434536105125,
+          "center_x": 672.5,
+          "center_y": 586.2950819672132,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 4.1214345361051254,
+          "center_x": 672.5,
+          "center_y": 580.0784153005465,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 672.5,
+        "y": 586.2950819672132,
+        "stave_step": 3.121434536105125,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 125,
+      "ic": {
+        "ulx": 250,
+        "uly": 730,
+        "nrows": 18,
+        "ncols": 17,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.8426395939086255,
+          "center_x": 254.5,
+          "center_y": 742.5,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 1.8426395939086255,
+          "center_x": 254.5,
+          "center_y": 732.65,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 254.5,
+        "y": 742.5,
+        "stave_step": 0.8426395939086255,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 126,
+      "ic": {
+        "ulx": 583,
+        "uly": 416,
+        "nrows": 21,
+        "ncols": 19,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.206438806525648,
+          "center_x": 587.5,
+          "center_y": 429.5531914893617,
+          "pitch": {
+            "pname": "D",
+            "oct": 4
+          }
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 5.206438806525648,
+          "center_x": 587.5,
+          "center_y": 423.8365248226951,
+          "pitch": {
+            "pname": "E",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 587.5,
+        "y": 429.5531914893617,
+        "stave_step": 4.206438806525648,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 127,
+      "ic": {
+        "ulx": 209,
+        "uly": 286,
+        "nrows": 21,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.2514442079659505,
+          "center_x": 213.5,
+          "center_y": 298.76363636363635,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 2.2514442079659505,
+          "center_x": 213.5,
+          "center_y": 293.780303030303,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 213.5,
+        "y": 298.76363636363635,
+        "stave_step": 1.2514442079659505,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 128,
+      "ic": {
+        "ulx": 352,
+        "uly": 1074,
+        "nrows": 20,
+        "ncols": 16,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 10.844835164835214,
+          "center_x": 356.5,
+          "center_y": 1086.7692307692307,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 11.844835164835214,
+          "center_x": 356.5,
+          "center_y": 1083.852564102564,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 356.5,
+        "y": 1086.7692307692307,
+        "stave_step": 10.844835164835214,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 129,
+      "ic": {
+        "ulx": 603,
+        "uly": 137,
+        "nrows": 21,
+        "ncols": 18,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.5281350482315137,
+          "center_x": 607.5,
+          "center_y": 151.0625,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 1.5281350482315137,
+          "center_x": 607.5,
+          "center_y": 145.87916666666666,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 607.5,
+        "y": 151.0625,
+        "stave_step": 0.5281350482315137,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 130,
+      "ic": {
+        "ulx": 591,
+        "uly": 208,
+        "nrows": 22,
+        "ncols": 19,
+        "class_name": "neume.podatus2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.0755873340142994,
+          "center_x": 595.5,
+          "center_y": 222.3181818181818,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 2.0755873340142994,
+          "center_x": 595.5,
+          "center_y": 216.38484848484848,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 595.5,
+        "y": 222.3181818181818,
+        "stave_step": 1.0755873340142994,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 131,
+      "ic": {
+        "ulx": 183,
+        "uly": 867,
+        "nrows": 13,
+        "ncols": 9,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.6810499105189844,
+          "center_x": 187.5,
+          "center_y": 873.1063829787234,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 187.5,
+        "y": 873.1063829787234,
+        "stave_step": 5.6810499105189844,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 132,
+      "ic": {
+        "ulx": 175,
+        "uly": 859,
+        "nrows": 15,
+        "ncols": 10,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 6.812488687782815,
+          "center_x": 180.0,
+          "center_y": 867.1323529411765,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 180.0,
+        "y": 867.1323529411765,
+        "stave_step": 6.812488687782815,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 133,
+      "ic": {
+        "ulx": 167,
+        "uly": 854,
+        "nrows": 11,
+        "ncols": 9,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 8.218181818181826,
+          "center_x": 171.5,
+          "center_y": 859.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 171.5,
+        "y": 859.5,
+        "stave_step": 8.218181818181826,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 134,
+      "ic": {
+        "ulx": 138,
+        "uly": 860,
+        "nrows": 18,
+        "ncols": 31,
+        "class_name": "neume.oblique2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 7.405791788856313,
+          "center_x": 142.5,
+          "center_y": 863.9860215053762,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 6.405791788856313,
+          "center_x": 142.5,
+          "center_y": 869.8526881720429,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 142.5,
+        "y": 866.9193548387096,
+        "stave_step": 6.905791788856313,
+        "interval": -0.5
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 135,
+      "ic": {
+        "ulx": 160,
+        "uly": 711,
+        "nrows": 30,
+        "ncols": 11,
+        "class_name": "neume.podatus4",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.833563218390799,
+          "center_x": 165.5,
+          "center_y": 734.46,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 3,
+          "stave_step": 4.833563218390799,
+          "center_x": 165.5,
+          "center_y": 701.835,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 165.5,
+        "y": 734.46,
+        "stave_step": 1.833563218390799,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 136,
+      "ic": {
+        "ulx": 498,
+        "uly": 653,
+        "nrows": 23,
+        "ncols": 20,
+        "class_name": "neume.torculus22",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.033126760563391,
+          "center_x": 502.5,
+          "center_y": 664.4929577464789,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 3.033126760563391,
+          "center_x": 502.5,
+          "center_y": 658.2429577464789,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.033126760563391,
+          "center_x": 502.5,
+          "center_y": 664.4929577464789,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 502.5,
+        "y": 664.4929577464789,
+        "stave_step": 2.033126760563391,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 137,
+      "ic": {
+        "ulx": 234,
+        "uly": 801,
+        "nrows": 27,
+        "ncols": 13,
+        "class_name": "neume.clivis3",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 10,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.5043859649122782,
+          "center_x": 238.5,
+          "center_y": 806.4375,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -2,
+          "stave_step": -0.49561403508772184,
+          "center_x": 238.5,
+          "center_y": 823.5374999999999,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 238.5,
+        "y": 806.4375,
+        "stave_step": 1.5043859649122782,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 138,
+      "ic": {
+        "ulx": 315,
+        "uly": 201,
+        "nrows": 27,
+        "ncols": 15,
+        "class_name": "neume.clivis3",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.031997414350356,
+          "center_x": 319.5,
+          "center_y": 207.0392156862745,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -2,
+          "stave_step": 2.0319974143503563,
+          "center_x": 319.5,
+          "center_y": 219.17254901960783,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 319.5,
+        "y": 207.0392156862745,
+        "stave_step": 4.031997414350356,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 139,
+      "ic": {
+        "ulx": 118,
+        "uly": 579,
+        "nrows": 26,
+        "ncols": 13,
+        "class_name": "neume.podatus3",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.11003970504822114,
+          "center_x": 122.5,
+          "center_y": 598.9767441860465,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 2,
+          "stave_step": 1.8899602949517789,
+          "center_x": 122.5,
+          "center_y": 586.6767441860466,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 122.5,
+        "y": 598.9767441860465,
+        "stave_step": -0.11003970504822114,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 140,
+      "ic": {
+        "ulx": 137,
+        "uly": 580,
+        "nrows": 29,
+        "ncols": 12,
+        "class_name": "neume.clivis4",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.0617222498755625,
+          "center_x": 141.5,
+          "center_y": 586.0204081632653,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -3,
+          "stave_step": -0.9382777501244375,
+          "center_x": 141.5,
+          "center_y": 604.4704081632653,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 141.5,
+        "y": 586.0204081632653,
+        "stave_step": 2.0617222498755625,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 141,
+      "ic": {
+        "ulx": 71,
+        "uly": 547,
+        "nrows": 23,
+        "ncols": 10,
+        "class_name": "clef.c",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": null,
+      "stave_assignment_flags": [
+        "missing_staff"
+      ],
+      "note_components": [],
+      "anchor": null,
+      "clef_used": null,
+      "reason": "missing_staff",
+      "flags": []
+    },
+    {
+      "glyph_index": 142,
+      "ic": {
+        "ulx": 220,
+        "uly": 432,
+        "nrows": 23,
+        "ncols": 18,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.1137048192771077,
+          "center_x": 224.5,
+          "center_y": 438.6041666666667,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.1137048192771077,
+          "center_x": 224.5,
+          "center_y": 444.13750000000005,
+          "pitch": {
+            "pname": "A",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 224.5,
+        "y": 438.6041666666667,
+        "stave_step": 2.1137048192771077,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 143,
+      "ic": {
+        "ulx": 453,
+        "uly": 950,
+        "nrows": 23,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.2553191489361648,
+          "center_x": 457.5,
+          "center_y": 956.5,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 0.2553191489361648,
+          "center_x": 457.5,
+          "center_y": 961.2,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 457.5,
+        "y": 956.5,
+        "stave_step": 1.2553191489361648,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 144,
+      "ic": {
+        "ulx": 476,
+        "uly": 946,
+        "nrows": 23,
+        "ncols": 23,
+        "class_name": "neume.torculus22",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6315789473684212,
+          "center_x": 480.5,
+          "center_y": 959.5,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 1,
+          "stave_step": 1.6315789473684212,
+          "center_x": 480.5,
+          "center_y": 954.75,
+          "pitch": null
+        },
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6315789473684212,
+          "center_x": 480.5,
+          "center_y": 959.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "bottom_left",
+        "x": 480.5,
+        "y": 959.5,
+        "stave_step": 0.6315789473684212,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 145,
+      "ic": {
+        "ulx": 479,
+        "uly": 1076,
+        "nrows": 24,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 12.182906913445832,
+          "center_x": 483.5,
+          "center_y": 1082.090909090909,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 483.5,
+        "y": 1082.090909090909,
+        "stave_step": 12.182906913445832,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 146,
+      "ic": {
+        "ulx": 516,
+        "uly": 1081,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 9.69230769230769,
+          "center_x": 521.5,
+          "center_y": 1088.2,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 521.5,
+        "y": 1088.2,
+        "stave_step": 9.69230769230769,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 147,
+      "ic": {
+        "ulx": 528,
+        "uly": 1005,
+        "nrows": 21,
+        "ncols": 19,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.223453370267774,
+          "center_x": 532.5,
+          "center_y": 1011.3888888888889,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 3.223453370267774,
+          "center_x": 532.5,
+          "center_y": 1017.4055555555556,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 532.5,
+        "y": 1011.3888888888889,
+        "stave_step": 4.223453370267774,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 148,
+      "ic": {
+        "ulx": 471,
+        "uly": 218,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.880128205128206,
+          "center_x": 476.5,
+          "center_y": 224.51923076923077,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 476.5,
+        "y": 224.51923076923077,
+        "stave_step": 0.880128205128206,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 149,
+      "ic": {
+        "ulx": 410,
+        "uly": 129,
+        "nrows": 22,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.537711499856611,
+          "center_x": 414.5,
+          "center_y": 135.9090909090909,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 414.5,
+        "y": 135.9090909090909,
+        "stave_step": 3.537711499856611,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 150,
+      "ic": {
+        "ulx": 537,
+        "uly": 221,
+        "nrows": 17,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.09420150260065263,
+          "center_x": 542.5,
+          "center_y": 228.63793103448276,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 542.5,
+        "y": 228.63793103448276,
+        "stave_step": 0.09420150260065263,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 151,
+      "ic": {
+        "ulx": 310,
+        "uly": 1027,
+        "nrows": 18,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 13,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.24223602484471307,
+          "center_x": 315.5,
+          "center_y": 1034.0,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 315.5,
+        "y": 1034.0,
+        "stave_step": 0.24223602484471307,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 152,
+      "ic": {
+        "ulx": 404,
+        "uly": 651,
+        "nrows": 21,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 8,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.0239999999999965,
+          "center_x": 408.5,
+          "center_y": 657.2,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 408.5,
+        "y": 657.2,
+        "stave_step": 3.0239999999999965,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 153,
+      "ic": {
+        "ulx": 319,
+        "uly": 883,
+        "nrows": 18,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 11,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.166089965397914,
+          "center_x": 323.5,
+          "center_y": 888.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 323.5,
+        "y": 888.5,
+        "stave_step": 2.166089965397914,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 154,
+      "ic": {
+        "ulx": 129,
+        "uly": 502,
+        "nrows": 19,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.217183169564117,
+          "center_x": 134.5,
+          "center_y": 507.0204081632653,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 134.5,
+        "y": 507.0204081632653,
+        "stave_step": 4.217183169564117,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 155,
+      "ic": {
+        "ulx": 148,
+        "uly": 414,
+        "nrows": 23,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 5.646601941747574,
+          "center_x": 153.5,
+          "center_y": 420.92,
+          "pitch": {
+            "pname": "E",
+            "oct": 4
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 153.5,
+        "y": 420.92,
+        "stave_step": 5.646601941747574,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 156,
+      "ic": {
+        "ulx": 604,
+        "uly": 1084,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 8.155988857938727,
+          "center_x": 608.5,
+          "center_y": 1090.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 608.5,
+        "y": 1090.5,
+        "stave_step": 8.155988857938727,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 157,
+      "ic": {
+        "ulx": 531,
+        "uly": 571,
+        "nrows": 27,
+        "ncols": 19,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.072314049586777,
+          "center_x": 535.5,
+          "center_y": 578.5625,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 3.072314049586777,
+          "center_x": 535.5,
+          "center_y": 584.6125,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 535.5,
+        "y": 578.5625,
+        "stave_step": 4.072314049586777,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 158,
+      "ic": {
+        "ulx": 517,
+        "uly": 580,
+        "nrows": 10,
+        "ncols": 9,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.983516483516489,
+          "center_x": 521.5,
+          "center_y": 585.0,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 521.5,
+        "y": 585.0,
+        "stave_step": 2.983516483516489,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 159,
+      "ic": {
+        "ulx": 484,
+        "uly": 585,
+        "nrows": 25,
+        "ncols": 35,
+        "class_name": "neume.oblique3",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.5555135094225507,
+          "center_x": 488.5,
+          "center_y": 587.2817351598173,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -2,
+          "stave_step": 0.5555135094225507,
+          "center_x": 488.5,
+          "center_y": 599.348401826484,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 488.5,
+        "y": 593.3150684931506,
+        "stave_step": 1.5555135094225507,
+        "interval": -1.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 160,
+      "ic": {
+        "ulx": 475,
+        "uly": 597,
+        "nrows": 12,
+        "ncols": 7,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": -0.06629834254143274,
+          "center_x": 478.5,
+          "center_y": 603.0,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "bbox_span",
+        "region": null,
+        "x": 478.5,
+        "y": 603.0,
+        "stave_step": -0.06629834254143274,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": [
+        "pixel_anchor_unavailable"
+      ]
+    },
+    {
+      "glyph_index": 161,
+      "ic": {
+        "ulx": 435,
+        "uly": 583,
+        "nrows": 27,
+        "ncols": 16,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.2996355942165163,
+          "center_x": 439.5,
+          "center_y": 588.4255319148937,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.2996355942165163,
+          "center_x": 439.5,
+          "center_y": 594.458865248227,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 439.5,
+        "y": 588.4255319148937,
+        "stave_step": 2.2996355942165163,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 162,
+      "ic": {
+        "ulx": 577,
+        "uly": 719,
+        "nrows": 26,
+        "ncols": 17,
+        "class_name": "neume.clivis2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.2930368160553316,
+          "center_x": 581.5,
+          "center_y": 726.2448979591836,
+          "pitch": null
+        },
+        {
+          "interval_from_first": -1,
+          "stave_step": 1.2930368160553316,
+          "center_x": 581.5,
+          "center_y": 733.7698979591836,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 581.5,
+        "y": 726.2448979591836,
+        "stave_step": 2.2930368160553316,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 163,
+      "ic": {
+        "ulx": 544,
+        "uly": 732,
+        "nrows": 26,
+        "ncols": 14,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.6928104575163361,
+          "center_x": 548.5,
+          "center_y": 738.5,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 548.5,
+        "y": 738.5,
+        "stave_step": 0.6928104575163361,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 164,
+      "ic": {
+        "ulx": 531,
+        "uly": 736,
+        "nrows": 14,
+        "ncols": 8,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.052277819268115255,
+          "center_x": 535.0,
+          "center_y": 743.5961538461538,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 535.0,
+        "y": 743.5961538461538,
+        "stave_step": 0.052277819268115255,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 165,
+      "ic": {
+        "ulx": 525,
+        "uly": 729,
+        "nrows": 16,
+        "ncols": 7,
+        "class_name": "neume.inclinatum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 0.7354838709677476,
+          "center_x": 528.5,
+          "center_y": 738.4,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "full",
+        "x": 528.5,
+        "y": 738.4,
+        "stave_step": 0.7354838709677476,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 166,
+      "ic": {
+        "ulx": 515,
+        "uly": 727,
+        "nrows": 22,
+        "ncols": 9,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 9,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 1.4882260596546373,
+          "center_x": 519.5,
+          "center_y": 732.5918367346939,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 519.5,
+        "y": 732.5918367346939,
+        "stave_step": 1.4882260596546373,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 167,
+      "ic": {
+        "ulx": 633,
+        "uly": 580,
+        "nrows": 19,
+        "ncols": 12,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 3.1712479029552147,
+          "center_x": 637.5,
+          "center_y": 585.3968253968254,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 637.5,
+        "y": 585.3968253968254,
+        "stave_step": 3.1712479029552147,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 168,
+      "ic": {
+        "ulx": 589,
+        "uly": 935,
+        "nrows": 20,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 12,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 4.167429692609549,
+          "center_x": 594.5,
+          "center_y": 942.9772727272727,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 594.5,
+        "y": 942.9772727272727,
+        "stave_step": 4.167429692609549,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    },
+    {
+      "glyph_index": 169,
+      "ic": {
+        "ulx": 411,
+        "uly": 432,
+        "nrows": 23,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 2.082872928176796,
+          "center_x": 416.5,
+          "center_y": 439.3333333333333,
+          "pitch": {
+            "pname": "B",
+            "oct": 3
+          }
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 416.5,
+        "y": 439.3333333333333,
+        "stave_step": 2.082872928176796,
+        "interval": 0.0
+      },
+      "clef_used": {
+        "class_name": "clef.c",
+        "glyph_index": 100
+      },
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 170,
+      "ic": {
+        "ulx": 394,
+        "uly": 1080,
+        "nrows": 23,
+        "ncols": 11,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 14,
+      "stave_assignment_flags": [],
+      "note_components": [
+        {
+          "interval_from_first": 0,
+          "stave_step": 10.661538461538518,
+          "center_x": 399.5,
+          "center_y": 1087.1923076923076,
+          "pitch": null
+        }
+      ],
+      "anchor": {
+        "source": "pixel_centroid",
+        "region": "top",
+        "x": 399.5,
+        "y": 1087.1923076923076,
+        "stave_step": 10.661538461538518,
+        "interval": 0.0
+      },
+      "clef_used": null,
+      "reason": "missing_clef",
+      "flags": []
+    }
+  ]
+}

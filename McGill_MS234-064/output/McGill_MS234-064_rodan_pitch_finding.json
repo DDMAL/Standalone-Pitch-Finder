@@ -1,0 +1,6325 @@
+{
+  "image": "../McGill_MS234-064/input/McGill_MS234-064.jpg",
+  "ic_xml": "../McGill_MS234-064/input/ic-session-McGill_MS234-064-page.xml",
+  "staff_json": "../McGill_MS234-064/input/McGill_MS234-064_stafflines.json",
+  "algorithm": "rodan_style",
+  "glyphs": [
+    {
+      "glyph_index": 0,
+      "ic": {
+        "ulx": 160,
+        "uly": 1067,
+        "nrows": 24,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 0.173007,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 160,
+      "center_y": 1079.5390946502057,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 1,
+      "ic": {
+        "ulx": 399,
+        "uly": 529,
+        "nrows": 152,
+        "ncols": 26,
+        "class_name": "divisio.maxima",
+        "confidence": 0.176411,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 2,
+      "ic": {
+        "ulx": 383,
+        "uly": 1087,
+        "nrows": 24,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.184018,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 383,
+      "center_y": 1099.88,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 3,
+      "ic": {
+        "ulx": 294,
+        "uly": 1280,
+        "nrows": 168,
+        "ncols": 23,
+        "class_name": "divisio.maxima",
+        "confidence": 0.205184,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 4,
+      "ic": {
+        "ulx": 1069,
+        "uly": 1024,
+        "nrows": 22,
+        "ncols": 16,
+        "class_name": "neume.punctum",
+        "confidence": 0.210006,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 1069,
+      "center_y": 1035.357142857143,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 5,
+      "ic": {
+        "ulx": 1154,
+        "uly": 1608,
+        "nrows": 63,
+        "ncols": 29,
+        "class_name": "neume.virga",
+        "confidence": 0.210324,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 1154,
+      "center_y": 1627.0055865921788,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 6,
+      "ic": {
+        "ulx": 1419,
+        "uly": 580,
+        "nrows": 26,
+        "ncols": 31,
+        "class_name": "neume.punctum",
+        "confidence": 0.212198,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 3,
+      "center_x": 1419,
+      "center_y": 595.4057649667405,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 7,
+      "ic": {
+        "ulx": 1446,
+        "uly": 551,
+        "nrows": 68,
+        "ncols": 35,
+        "class_name": "neume.virga",
+        "confidence": 0.214194,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1446,
+      "center_y": 572.1860465116279,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 8,
+      "ic": {
+        "ulx": 1408,
+        "uly": 1059,
+        "nrows": 65,
+        "ncols": 40,
+        "class_name": "neume.virga",
+        "confidence": 0.221323,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 1408,
+      "center_y": 1079.2041587901701,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 9,
+      "ic": {
+        "ulx": 1142,
+        "uly": 1007,
+        "nrows": 163,
+        "ncols": 29,
+        "class_name": "divisio.maxima",
+        "confidence": 0.229176,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 10,
+      "ic": {
+        "ulx": 1468,
+        "uly": 576,
+        "nrows": 27,
+        "ncols": 21,
+        "class_name": "neume.punctum",
+        "confidence": 0.234572,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 3,
+      "center_x": 1468,
+      "center_y": 590.7266666666667,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 11,
+      "ic": {
+        "ulx": 1453,
+        "uly": 1310,
+        "nrows": 73,
+        "ncols": 65,
+        "class_name": "neume.virga",
+        "confidence": 0.236342,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 1453,
+      "center_y": 1332.9947916666667,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 12,
+      "ic": {
+        "ulx": 1138,
+        "uly": 309,
+        "nrows": 29,
+        "ncols": 14,
+        "class_name": "neume.punctum",
+        "confidence": 0.241061,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 4,
+      "center_x": 1138,
+      "center_y": 322.2741116751269,
+      "pitch": {
+        "pname": "G",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 13,
+      "ic": {
+        "ulx": 877,
+        "uly": 336,
+        "nrows": 28,
+        "ncols": 18,
+        "class_name": "neume.punctum",
+        "confidence": 0.241733,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 877,
+      "center_y": 349.2190476190476,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 14,
+      "ic": {
+        "ulx": 416,
+        "uly": 2118,
+        "nrows": 25,
+        "ncols": 41,
+        "class_name": "neume.distropha",
+        "confidence": 0.242664,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 2,
+      "center_x": 416,
+      "center_y": 2128.7010676156583,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 15,
+      "ic": {
+        "ulx": 623,
+        "uly": 1598,
+        "nrows": 22,
+        "ncols": 18,
+        "class_name": "neume.punctum",
+        "confidence": 0.25236,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 3,
+      "center_x": 623,
+      "center_y": 1610.1030927835052,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 16,
+      "ic": {
+        "ulx": 1430,
+        "uly": 1082,
+        "nrows": 32,
+        "ncols": 21,
+        "class_name": "neume.punctum",
+        "confidence": 0.253073,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 1430,
+      "center_y": 1099.6277777777777,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 17,
+      "ic": {
+        "ulx": 1331,
+        "uly": 558,
+        "nrows": 25,
+        "ncols": 38,
+        "class_name": "neume.distropha",
+        "confidence": 0.2534,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1331,
+      "center_y": 570.1907894736842,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 18,
+      "ic": {
+        "ulx": 559,
+        "uly": 1087,
+        "nrows": 21,
+        "ncols": 21,
+        "class_name": "neume.punctum",
+        "confidence": 0.257786,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 559,
+      "center_y": 1098.2135416666667,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 19,
+      "ic": {
+        "ulx": 547,
+        "uly": 1067,
+        "nrows": 25,
+        "ncols": 21,
+        "class_name": "neume.punctum",
+        "confidence": 0.259582,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 547,
+      "center_y": 1081.5753968253969,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 20,
+      "ic": {
+        "ulx": 170,
+        "uly": 1051,
+        "nrows": 20,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.262587,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 5,
+      "center_x": 170,
+      "center_y": 1061.010101010101,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 21,
+      "ic": {
+        "ulx": 1386,
+        "uly": 1085,
+        "nrows": 26,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 0.265076,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 1386,
+      "center_y": 1099.5352112676057,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 22,
+      "ic": {
+        "ulx": 530,
+        "uly": 1020,
+        "nrows": 74,
+        "ncols": 33,
+        "class_name": "neume.virga",
+        "confidence": 0.268595,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 530,
+      "center_y": 1038.5383177570093,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 23,
+      "ic": {
+        "ulx": 1401,
+        "uly": 354,
+        "nrows": 22,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.27422,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 1401,
+      "center_y": 366.6609442060086,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 24,
+      "ic": {
+        "ulx": 433,
+        "uly": 336,
+        "nrows": 36,
+        "ncols": 41,
+        "class_name": "neume.punctum",
+        "confidence": 0.277216,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 433,
+      "center_y": 355.4928366762178,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 25,
+      "ic": {
+        "ulx": 1365,
+        "uly": 802,
+        "nrows": 77,
+        "ncols": 49,
+        "class_name": "neume.virga",
+        "confidence": 0.279889,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1365,
+      "center_y": 824.6470588235294,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 26,
+      "ic": {
+        "ulx": 481,
+        "uly": 1573,
+        "nrows": 26,
+        "ncols": 36,
+        "class_name": "neume.distropha",
+        "confidence": 0.282678,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 481,
+      "center_y": 1585.4509202453987,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 27,
+      "ic": {
+        "ulx": 564,
+        "uly": 805,
+        "nrows": 63,
+        "ncols": 40,
+        "class_name": "neume.virga",
+        "confidence": 0.28377,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 564,
+      "center_y": 825.3791102514507,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 28,
+      "ic": {
+        "ulx": 649,
+        "uly": 1635,
+        "nrows": 21,
+        "ncols": 17,
+        "class_name": "neume.punctum",
+        "confidence": 0.285629,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 1,
+      "center_x": 649,
+      "center_y": 1646.5956284153006,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 29,
+      "ic": {
+        "ulx": 940,
+        "uly": 1826,
+        "nrows": 60,
+        "ncols": 58,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.285875,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 940,
+      "center_y": 1864.267543859649,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 30,
+      "ic": {
+        "ulx": 473,
+        "uly": 1311,
+        "nrows": 81,
+        "ncols": 44,
+        "class_name": "neume.virga",
+        "confidence": 0.289625,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 473,
+      "center_y": 1334.4883720930231,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 31,
+      "ic": {
+        "ulx": 1135,
+        "uly": 519,
+        "nrows": 144,
+        "ncols": 30,
+        "class_name": "divisio.maxima",
+        "confidence": 0.290999,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 32,
+      "ic": {
+        "ulx": 1258,
+        "uly": 352,
+        "nrows": 22,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.293361,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 1258,
+      "center_y": 363.05309734513276,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 33,
+      "ic": {
+        "ulx": 214,
+        "uly": 1407,
+        "nrows": 45,
+        "ncols": 18,
+        "class_name": "neume.virga",
+        "confidence": 0.294899,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 0,
+      "center_x": 214,
+      "center_y": 1425.9855491329479,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 34,
+      "ic": {
+        "ulx": 218,
+        "uly": 2106,
+        "nrows": 33,
+        "ncols": 30,
+        "class_name": "neume.punctum",
+        "confidence": 0.296623,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 2,
+      "center_x": 218,
+      "center_y": 2124.184549356223,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 35,
+      "ic": {
+        "ulx": 1060,
+        "uly": 353,
+        "nrows": 23,
+        "ncols": 23,
+        "class_name": "neume.punctum",
+        "confidence": 0.298196,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 1060,
+      "center_y": 363.76344086021504,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 36,
+      "ic": {
+        "ulx": 601,
+        "uly": 1567,
+        "nrows": 79,
+        "ncols": 37,
+        "class_name": "neume.virga",
+        "confidence": 0.299432,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 601,
+      "center_y": 1588.1506024096386,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 37,
+      "ic": {
+        "ulx": 592,
+        "uly": 1841,
+        "nrows": 63,
+        "ncols": 36,
+        "class_name": "neume.virga",
+        "confidence": 0.304342,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 592,
+      "center_y": 1862.6301703163017,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 38,
+      "ic": {
+        "ulx": 1414,
+        "uly": 600,
+        "nrows": 23,
+        "ncols": 27,
+        "class_name": "neume.punctum",
+        "confidence": 0.304702,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 2,
+      "center_x": 1414,
+      "center_y": 610.7120253164557,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 39,
+      "ic": {
+        "ulx": 1272,
+        "uly": 1138,
+        "nrows": 59,
+        "ncols": 78,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.313358,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": -1,
+      "center_x": 1272,
+      "center_y": 1178.4114441416893,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 40,
+      "ic": {
+        "ulx": 883,
+        "uly": 805,
+        "nrows": 88,
+        "ncols": 42,
+        "class_name": "neume.virga",
+        "confidence": 0.315404,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 883,
+      "center_y": 826.2526096033403,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 41,
+      "ic": {
+        "ulx": 1050,
+        "uly": 1023,
+        "nrows": 27,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.325817,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 1050,
+      "center_y": 1035.6814516129032,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 42,
+      "ic": {
+        "ulx": 247,
+        "uly": 543,
+        "nrows": 67,
+        "ncols": 38,
+        "class_name": "neume.virga",
+        "confidence": 0.326646,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 5,
+      "center_x": 247,
+      "center_y": 562.9520697167756,
+      "pitch": {
+        "pname": "D",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 43,
+      "ic": {
+        "ulx": 521,
+        "uly": 323,
+        "nrows": 78,
+        "ncols": 47,
+        "class_name": "neume.virga",
+        "confidence": 0.326666,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 521,
+      "center_y": 343.76681614349775,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 44,
+      "ic": {
+        "ulx": 475,
+        "uly": 2113,
+        "nrows": 45,
+        "ncols": 35,
+        "class_name": "neume.liquescent.up",
+        "confidence": 0.327417,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 2,
+      "center_x": 475,
+      "center_y": 2128.402027027027,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 45,
+      "ic": {
+        "ulx": 1477,
+        "uly": 1093,
+        "nrows": 78,
+        "ncols": 49,
+        "class_name": "neume.virga",
+        "confidence": 0.329384,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 2,
+      "center_x": 1477,
+      "center_y": 1115.7775330396476,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 46,
+      "ic": {
+        "ulx": 1153,
+        "uly": 311,
+        "nrows": 25,
+        "ncols": 16,
+        "class_name": "neume.punctum",
+        "confidence": 0.332937,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 4,
+      "center_x": 1153,
+      "center_y": 322.62626262626264,
+      "pitch": {
+        "pname": "G",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 47,
+      "ic": {
+        "ulx": 1072,
+        "uly": 332,
+        "nrows": 26,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 0.335199,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1072,
+      "center_y": 345.9850746268657,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 48,
+      "ic": {
+        "ulx": 1374,
+        "uly": 1105,
+        "nrows": 24,
+        "ncols": 25,
+        "class_name": "neume.punctum",
+        "confidence": 0.340872,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 2,
+      "center_x": 1374,
+      "center_y": 1116.0931899641578,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 49,
+      "ic": {
+        "ulx": 1364,
+        "uly": 1572,
+        "nrows": 56,
+        "ncols": 32,
+        "class_name": "neume.virga",
+        "confidence": 0.343593,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 1364,
+      "center_y": 1590.6070640176602,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 50,
+      "ic": {
+        "ulx": 634,
+        "uly": 1616,
+        "nrows": 26,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.344527,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 634,
+      "center_y": 1629.8325991189427,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 51,
+      "ic": {
+        "ulx": 845,
+        "uly": 852,
+        "nrows": 26,
+        "ncols": 40,
+        "class_name": "neume.distropha",
+        "confidence": 0.34646,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 2,
+      "center_x": 845,
+      "center_y": 864.5042253521127,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 52,
+      "ic": {
+        "ulx": 228,
+        "uly": 567,
+        "nrows": 23,
+        "ncols": 19,
+        "class_name": "neume.punctum",
+        "confidence": 0.346797,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 228,
+      "center_y": 579.981308411215,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 53,
+      "ic": {
+        "ulx": 1267,
+        "uly": 333,
+        "nrows": 23,
+        "ncols": 24,
+        "class_name": "neume.punctum",
+        "confidence": 0.347336,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1267,
+      "center_y": 344.2824427480916,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 54,
+      "ic": {
+        "ulx": 646,
+        "uly": 1845,
+        "nrows": 55,
+        "ncols": 35,
+        "class_name": "neume.virga",
+        "confidence": 0.349423,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 2,
+      "center_x": 646,
+      "center_y": 1866.1642512077294,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 55,
+      "ic": {
+        "ulx": 1412,
+        "uly": 1572,
+        "nrows": 58,
+        "ncols": 30,
+        "class_name": "neume.virga",
+        "confidence": 0.351598,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 1412,
+      "center_y": 1590.9610389610389,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 56,
+      "ic": {
+        "ulx": 1381,
+        "uly": 331,
+        "nrows": 64,
+        "ncols": 40,
+        "class_name": "neume.virga",
+        "confidence": 0.355237,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1381,
+      "center_y": 351.44102564102565,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 57,
+      "ic": {
+        "ulx": 1006,
+        "uly": 1827,
+        "nrows": 71,
+        "ncols": 57,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.360083,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 2,
+      "center_x": 1006,
+      "center_y": 1876.8915662650602,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 58,
+      "ic": {
+        "ulx": 889,
+        "uly": 354,
+        "nrows": 28,
+        "ncols": 19,
+        "class_name": "neume.punctum",
+        "confidence": 0.36273,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 889,
+      "center_y": 367.906862745098,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 59,
+      "ic": {
+        "ulx": 1479,
+        "uly": 597,
+        "nrows": 27,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 0.364537,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 2,
+      "center_x": 1479,
+      "center_y": 609.3676975945017,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 60,
+      "ic": {
+        "ulx": 793,
+        "uly": 1846,
+        "nrows": 53,
+        "ncols": 34,
+        "class_name": "neume.virga",
+        "confidence": 0.368732,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 2,
+      "center_x": 793,
+      "center_y": 1866.3626126126126,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 61,
+      "ic": {
+        "ulx": 1443,
+        "uly": 1103,
+        "nrows": 29,
+        "ncols": 25,
+        "class_name": "neume.punctum",
+        "confidence": 0.371031,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 2,
+      "center_x": 1443,
+      "center_y": 1117.9058171745153,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 62,
+      "ic": {
+        "ulx": 231,
+        "uly": 849,
+        "nrows": 71,
+        "ncols": 47,
+        "class_name": "neume.virga",
+        "confidence": 0.372977,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 2,
+      "center_x": 231,
+      "center_y": 870.7914572864322,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 63,
+      "ic": {
+        "ulx": 1102,
+        "uly": 1311,
+        "nrows": 78,
+        "ncols": 80,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.373522,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 1102,
+      "center_y": 1362.2936170212765,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 64,
+      "ic": {
+        "ulx": 818,
+        "uly": 1556,
+        "nrows": 135,
+        "ncols": 23,
+        "class_name": "divisio.maxima",
+        "confidence": 0.373581,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 65,
+      "ic": {
+        "ulx": 354,
+        "uly": 328,
+        "nrows": 77,
+        "ncols": 47,
+        "class_name": "neume.virga",
+        "confidence": 0.374038,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 354,
+      "center_y": 348.02771362586606,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 66,
+      "ic": {
+        "ulx": 995,
+        "uly": 1316,
+        "nrows": 74,
+        "ncols": 81,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.376494,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 995,
+      "center_y": 1362.7857142857142,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 67,
+      "ic": {
+        "ulx": 389,
+        "uly": 1069,
+        "nrows": 22,
+        "ncols": 23,
+        "class_name": "neume.punctum",
+        "confidence": 0.377821,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 389,
+      "center_y": 1081.1016949152543,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 68,
+      "ic": {
+        "ulx": 525,
+        "uly": 1819,
+        "nrows": 74,
+        "ncols": 60,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.381255,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 2,
+      "center_x": 525,
+      "center_y": 1870.1720430107528,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 69,
+      "ic": {
+        "ulx": 425,
+        "uly": 1595,
+        "nrows": 20,
+        "ncols": 19,
+        "class_name": "neume.punctum",
+        "confidence": 0.385359,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 3,
+      "center_x": 425,
+      "center_y": 1604.9704433497536,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 70,
+      "ic": {
+        "ulx": 141,
+        "uly": 1519,
+        "nrows": 51,
+        "ncols": 32,
+        "class_name": "clef.c",
+        "confidence": 0.385425,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 6,
+      "center_x": 141,
+      "center_y": 1542.6143911439115,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 71,
+      "ic": {
+        "ulx": 682,
+        "uly": 1017,
+        "nrows": 143,
+        "ncols": 29,
+        "class_name": "divisio.maxima",
+        "confidence": 0.392302,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 72,
+      "ic": {
+        "ulx": 1415,
+        "uly": 373,
+        "nrows": 22,
+        "ncols": 18,
+        "class_name": "neume.punctum",
+        "confidence": 0.393718,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 1,
+      "center_x": 1415,
+      "center_y": 384.30288461538464,
+      "pitch": {
+        "pname": "D",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 73,
+      "ic": {
+        "ulx": 1364,
+        "uly": 1309,
+        "nrows": 75,
+        "ncols": 47,
+        "class_name": "neume.virga",
+        "confidence": 0.40038,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 1364,
+      "center_y": 1331.8041958041958,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 74,
+      "ic": {
+        "ulx": 682,
+        "uly": 1331,
+        "nrows": 70,
+        "ncols": 55,
+        "class_name": "neume.virga",
+        "confidence": 0.40234,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 682,
+      "center_y": 1352.75,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 75,
+      "ic": {
+        "ulx": 951,
+        "uly": 1637,
+        "nrows": 74,
+        "ncols": 50,
+        "class_name": "neume.virga",
+        "confidence": 0.405904,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 0,
+      "center_x": 951,
+      "center_y": 1665.051724137931,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 76,
+      "ic": {
+        "ulx": 412,
+        "uly": 1613,
+        "nrows": 22,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 0.408918,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 412,
+      "center_y": 1623.2477064220184,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 77,
+      "ic": {
+        "ulx": 787,
+        "uly": 1334,
+        "nrows": 75,
+        "ncols": 50,
+        "class_name": "neume.virga",
+        "confidence": 0.41188,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 787,
+      "center_y": 1354.3477272727273,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 78,
+      "ic": {
+        "ulx": 224,
+        "uly": 589,
+        "nrows": 21,
+        "ncols": 20,
+        "class_name": "neume.punctum",
+        "confidence": 0.414371,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 3,
+      "center_x": 224,
+      "center_y": 599.027397260274,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 79,
+      "ic": {
+        "ulx": 573,
+        "uly": 1057,
+        "nrows": 68,
+        "ncols": 50,
+        "class_name": "neume.virga",
+        "confidence": 0.423702,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 573,
+      "center_y": 1078.987593052109,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 80,
+      "ic": {
+        "ulx": 1328,
+        "uly": 303,
+        "nrows": 72,
+        "ncols": 66,
+        "class_name": "neume.virga",
+        "confidence": 0.426925,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 4,
+      "center_x": 1328,
+      "center_y": 325.29716981132077,
+      "pitch": {
+        "pname": "G",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 81,
+      "ic": {
+        "ulx": 1249,
+        "uly": 800,
+        "nrows": 80,
+        "ncols": 50,
+        "class_name": "neume.virga",
+        "confidence": 0.440929,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1249,
+      "center_y": 822.4261904761905,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 82,
+      "ic": {
+        "ulx": 412,
+        "uly": 1023,
+        "nrows": 84,
+        "ncols": 29,
+        "class_name": "neume.virga",
+        "confidence": 0.443757,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 412,
+      "center_y": 1042.4965034965035,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 83,
+      "ic": {
+        "ulx": 209,
+        "uly": 2026,
+        "nrows": 35,
+        "ncols": 45,
+        "class_name": "clef.c",
+        "confidence": 0.445874,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 6,
+      "center_x": 209,
+      "center_y": 2044.7979002624672,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 84,
+      "ic": {
+        "ulx": 1178,
+        "uly": 1566,
+        "nrows": 136,
+        "ncols": 30,
+        "class_name": "divisio.maxima",
+        "confidence": 0.445934,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 85,
+      "ic": {
+        "ulx": 490,
+        "uly": 834,
+        "nrows": 24,
+        "ncols": 34,
+        "class_name": "neume.distropha",
+        "confidence": 0.449248,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 3,
+      "center_x": 490,
+      "center_y": 845.6843575418994,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 86,
+      "ic": {
+        "ulx": 898,
+        "uly": 2128,
+        "nrows": 70,
+        "ncols": 51,
+        "class_name": "neume.virga",
+        "confidence": 0.449822,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 1,
+      "center_x": 898,
+      "center_y": 2150.7074468085107,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 87,
+      "ic": {
+        "ulx": 953,
+        "uly": 2085,
+        "nrows": 79,
+        "ncols": 55,
+        "class_name": "neume.virga",
+        "confidence": 0.451817,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 3,
+      "center_x": 953,
+      "center_y": 2107.621387283237,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 88,
+      "ic": {
+        "ulx": 358,
+        "uly": 1835,
+        "nrows": 66,
+        "ncols": 36,
+        "class_name": "neume.virga",
+        "confidence": 0.45192,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 358,
+      "center_y": 1857.2915451895044,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 89,
+      "ic": {
+        "ulx": 724,
+        "uly": 548,
+        "nrows": 88,
+        "ncols": 53,
+        "class_name": "neume.virga",
+        "confidence": 0.452199,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 724,
+      "center_y": 570.5080091533181,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 90,
+      "ic": {
+        "ulx": 621,
+        "uly": 802,
+        "nrows": 78,
+        "ncols": 51,
+        "class_name": "neume.virga",
+        "confidence": 0.454374,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 621,
+      "center_y": 824.9196428571429,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 91,
+      "ic": {
+        "ulx": 1150,
+        "uly": 1826,
+        "nrows": 57,
+        "ncols": 35,
+        "class_name": "neume.virga",
+        "confidence": 0.463562,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 4,
+      "center_x": 1150,
+      "center_y": 1843.658371040724,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 92,
+      "ic": {
+        "ulx": 1272,
+        "uly": 546,
+        "nrows": 81,
+        "ncols": 48,
+        "class_name": "neume.virga",
+        "confidence": 0.46708,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1272,
+      "center_y": 569.0510440835267,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 93,
+      "ic": {
+        "ulx": 638,
+        "uly": 320,
+        "nrows": 79,
+        "ncols": 48,
+        "class_name": "neume.virga",
+        "confidence": 0.469114,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 638,
+      "center_y": 340.6068796068796,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 94,
+      "ic": {
+        "ulx": 427,
+        "uly": 804,
+        "nrows": 73,
+        "ncols": 45,
+        "class_name": "neume.virga",
+        "confidence": 0.469203,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 427,
+      "center_y": 826.3050397877984,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 95,
+      "ic": {
+        "ulx": 871,
+        "uly": 552,
+        "nrows": 74,
+        "ncols": 44,
+        "class_name": "neume.virga",
+        "confidence": 0.474187,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 871,
+      "center_y": 573.4896907216495,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 96,
+      "ic": {
+        "ulx": 450,
+        "uly": 1838,
+        "nrows": 59,
+        "ncols": 35,
+        "class_name": "neume.virga",
+        "confidence": 0.477241,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 450,
+      "center_y": 1859.6731707317074,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 97,
+      "ic": {
+        "ulx": 705,
+        "uly": 1844,
+        "nrows": 58,
+        "ncols": 31,
+        "class_name": "neume.virga",
+        "confidence": 0.484779,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 2,
+      "center_x": 705,
+      "center_y": 1866.595,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 98,
+      "ic": {
+        "ulx": 916,
+        "uly": 1053,
+        "nrows": 80,
+        "ncols": 56,
+        "class_name": "neume.virga",
+        "confidence": 0.497087,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 916,
+      "center_y": 1075.0252100840337,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 99,
+      "ic": {
+        "ulx": 126,
+        "uly": 351,
+        "nrows": 48,
+        "ncols": 40,
+        "class_name": "clef.c",
+        "confidence": 0.502909,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 0,
+      "center_x": 126,
+      "center_y": 376.5487804878049,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 100,
+      "ic": {
+        "ulx": 282,
+        "uly": 1815,
+        "nrows": 61,
+        "ncols": 55,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.502955,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 282,
+      "center_y": 1852.7482269503546,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 101,
+      "ic": {
+        "ulx": 964,
+        "uly": 801,
+        "nrows": 83,
+        "ncols": 52,
+        "class_name": "neume.virga",
+        "confidence": 0.512496,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 964,
+      "center_y": 824.8059360730593,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 102,
+      "ic": {
+        "ulx": 1146,
+        "uly": 800,
+        "nrows": 85,
+        "ncols": 50,
+        "class_name": "neume.virga",
+        "confidence": 0.51748,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1146,
+      "center_y": 822.9248704663213,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 103,
+      "ic": {
+        "ulx": 726,
+        "uly": 334,
+        "nrows": 32,
+        "ncols": 34,
+        "class_name": "neume.punctum",
+        "confidence": 0.518739,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 726,
+      "center_y": 349.68560606060606,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 104,
+      "ic": {
+        "ulx": 320,
+        "uly": 2153,
+        "nrows": 34,
+        "ncols": 39,
+        "class_name": "neume.punctum",
+        "confidence": 0.524007,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 0,
+      "center_x": 320,
+      "center_y": 2170.0919540229884,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 105,
+      "ic": {
+        "ulx": 1062,
+        "uly": 803,
+        "nrows": 75,
+        "ncols": 43,
+        "class_name": "neume.virga",
+        "confidence": 0.529962,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1062,
+      "center_y": 825.344262295082,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 106,
+      "ic": {
+        "ulx": 161,
+        "uly": 808,
+        "nrows": 77,
+        "ncols": 59,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.540906,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 2,
+      "center_x": 161,
+      "center_y": 860.1067615658363,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 107,
+      "ic": {
+        "ulx": 656,
+        "uly": 1565,
+        "nrows": 79,
+        "ncols": 77,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.550032,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 656,
+      "center_y": 1623.2672064777328,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 108,
+      "ic": {
+        "ulx": 132,
+        "uly": 1275,
+        "nrows": 43,
+        "ncols": 33,
+        "class_name": "clef.c",
+        "confidence": 0.556694,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 4,
+      "stave_step": 8,
+      "center_x": 132,
+      "center_y": 1298.0602409638554,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 109,
+      "ic": {
+        "ulx": 838,
+        "uly": 1080,
+        "nrows": 34,
+        "ncols": 41,
+        "class_name": "neume.punctum",
+        "confidence": 0.563511,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 838,
+      "center_y": 1097.2307692307693,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 110,
+      "ic": {
+        "ulx": 164,
+        "uly": 1565,
+        "nrows": 66,
+        "ncols": 36,
+        "class_name": "neume.virga",
+        "confidence": 0.574719,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 164,
+      "center_y": 1586.11,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 111,
+      "ic": {
+        "ulx": 791,
+        "uly": 552,
+        "nrows": 79,
+        "ncols": 46,
+        "class_name": "neume.virga",
+        "confidence": 0.581004,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 791,
+      "center_y": 573.829383886256,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 112,
+      "ic": {
+        "ulx": 353,
+        "uly": 532,
+        "nrows": 75,
+        "ncols": 45,
+        "class_name": "neume.virga",
+        "confidence": 0.583474,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 5,
+      "center_x": 353,
+      "center_y": 549.4557235421166,
+      "pitch": {
+        "pname": "D",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 113,
+      "ic": {
+        "ulx": 672,
+        "uly": 2149,
+        "nrows": 59,
+        "ncols": 55,
+        "class_name": "neume.virga",
+        "confidence": 0.584216,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 0,
+      "center_x": 672,
+      "center_y": 2170.877450980392,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 114,
+      "ic": {
+        "ulx": 133,
+        "uly": 1020,
+        "nrows": 45,
+        "ncols": 34,
+        "class_name": "clef.c",
+        "confidence": 0.587713,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 133,
+      "center_y": 1043.3178947368422,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 115,
+      "ic": {
+        "ulx": 243,
+        "uly": 2150,
+        "nrows": 35,
+        "ncols": 31,
+        "class_name": "neume.punctum",
+        "confidence": 0.605643,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 7,
+      "stave_step": 0,
+      "center_x": 243,
+      "center_y": 2166.3387978142077,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 116,
+      "ic": {
+        "ulx": 187,
+        "uly": 335,
+        "nrows": 72,
+        "ncols": 74,
+        "class_name": "neume.podatus2b",
+        "confidence": 0.605935,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 187,
+      "center_y": 377.7420814479638,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 117,
+      "ic": {
+        "ulx": 942,
+        "uly": 553,
+        "nrows": 44,
+        "ncols": 44,
+        "class_name": "neume.punctum",
+        "confidence": 0.633525,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 942,
+      "center_y": 573.9340909090909,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 118,
+      "ic": {
+        "ulx": 127,
+        "uly": 557,
+        "nrows": 50,
+        "ncols": 42,
+        "class_name": "clef.c",
+        "confidence": 0.638081,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 127,
+      "center_y": 582.6196581196581,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 119,
+      "ic": {
+        "ulx": 376,
+        "uly": 845,
+        "nrows": 74,
+        "ncols": 49,
+        "class_name": "neume.virga",
+        "confidence": 0.654746,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 2,
+      "center_x": 376,
+      "center_y": 868.3460410557185,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 120,
+      "ic": {
+        "ulx": 1024,
+        "uly": 1643,
+        "nrows": 66,
+        "ncols": 48,
+        "class_name": "neume.virga",
+        "confidence": 0.699359,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 5,
+      "stave_step": 0,
+      "center_x": 1024,
+      "center_y": 1667.3915211970075,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 121,
+      "ic": {
+        "ulx": 132,
+        "uly": 805,
+        "nrows": 48,
+        "ncols": 37,
+        "class_name": "clef.c",
+        "confidence": 0.720742,
+        "state": "AUTOMATIC"
+      },
+      "stave_id": 2,
+      "stave_step": 6,
+      "center_x": 132,
+      "center_y": 829.8671171171171,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 122,
+      "ic": {
+        "ulx": 130,
+        "uly": 1596,
+        "nrows": 62,
+        "ncols": 32,
+        "class_name": "clef.f2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 130,
+      "center_y": 1619.0047619047618,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": [
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 123,
+      "ic": {
+        "ulx": 521,
+        "uly": 796,
+        "nrows": 69,
+        "ncols": 43,
+        "class_name": "neume.clivis3a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 521,
+      "center_y": 827.3817258883249,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 124,
+      "ic": {
+        "ulx": 456,
+        "uly": 2090,
+        "nrows": 60,
+        "ncols": 34,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_step": 2,
+      "center_x": 456,
+      "center_y": 2119.9990494296576,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 125,
+      "ic": {
+        "ulx": 238,
+        "uly": 1358,
+        "nrows": 89,
+        "ncols": 65,
+        "class_name": "neume.podatus3b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 0,
+      "center_x": 238,
+      "center_y": 1413.4307304785893,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 126,
+      "ic": {
+        "ulx": 181,
+        "uly": 1409,
+        "nrows": 36,
+        "ncols": 31,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 0,
+      "center_x": 181,
+      "center_y": 1425.6024096385543,
+      "pitch": {
+        "pname": "B",
+        "oct": 2
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 127,
+      "ic": {
+        "ulx": 590,
+        "uly": 2149,
+        "nrows": 58,
+        "ncols": 51,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_step": 0,
+      "center_x": 590,
+      "center_y": 2169.6075650118205,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 128,
+      "ic": {
+        "ulx": 554,
+        "uly": 2153,
+        "nrows": 51,
+        "ncols": 42,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_step": 0,
+      "center_x": 554,
+      "center_y": 2174.3981693363844,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 129,
+      "ic": {
+        "ulx": 189,
+        "uly": 1028,
+        "nrows": 63,
+        "ncols": 36,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 5,
+      "center_x": 189,
+      "center_y": 1054.5058823529412,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 130,
+      "ic": {
+        "ulx": 517,
+        "uly": 1532,
+        "nrows": 70,
+        "ncols": 36,
+        "class_name": "neume.clivis3a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 5,
+      "center_x": 517,
+      "center_y": 1564.099811676083,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 131,
+      "ic": {
+        "ulx": 445,
+        "uly": 1573,
+        "nrows": 56,
+        "ncols": 33,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 3,
+      "center_x": 445,
+      "center_y": 1597.5308775731312,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 132,
+      "ic": {
+        "ulx": 1293,
+        "uly": 313,
+        "nrows": 61,
+        "ncols": 38,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1293,
+      "center_y": 340.33404255319147,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 133,
+      "ic": {
+        "ulx": 1207,
+        "uly": 1281,
+        "nrows": 53,
+        "ncols": 44,
+        "class_name": "accidental.flat",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 134,
+      "ic": {
+        "ulx": 138,
+        "uly": 1774,
+        "nrows": 32,
+        "ncols": 33,
+        "class_name": "clef.c",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 10,
+      "center_x": 138,
+      "center_y": 1789.8115384615385,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines"
+      ]
+    },
+    {
+      "glyph_index": 135,
+      "ic": {
+        "ulx": 1092,
+        "uly": 555,
+        "nrows": 45,
+        "ncols": 39,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1092,
+      "center_y": 574.3394736842105,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 136,
+      "ic": {
+        "ulx": 126,
+        "uly": 1105,
+        "nrows": 53,
+        "ncols": 35,
+        "class_name": "clef.f2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 0,
+      "center_x": 126,
+      "center_y": 1122.0087336244542,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 137,
+      "ic": {
+        "ulx": 130,
+        "uly": 642,
+        "nrows": 50,
+        "ncols": 34,
+        "class_name": "clef.f2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 0,
+      "center_x": 130,
+      "center_y": 662.531746031746,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": [
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 138,
+      "ic": {
+        "ulx": 132,
+        "uly": 897,
+        "nrows": 39,
+        "ncols": 33,
+        "class_name": "clef.f2",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 0,
+      "center_x": 132,
+      "center_y": 915.6483516483516,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 139,
+      "ic": {
+        "ulx": 117,
+        "uly": 275,
+        "nrows": 63,
+        "ncols": 56,
+        "class_name": "clef.g",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 4,
+      "center_x": 117,
+      "center_y": 308.3759124087591,
+      "pitch": {
+        "pname": "G",
+        "oct": 4
+      },
+      "clef_used": "clef.g",
+      "reason": null,
+      "flags": [
+        "sparse_stave_lines",
+        "x_clamped_to_stave_range"
+      ]
+    },
+    {
+      "glyph_index": 140,
+      "ic": {
+        "ulx": 1272,
+        "uly": 1786,
+        "nrows": 88,
+        "ncols": 80,
+        "class_name": "neume.torculus33",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 4,
+      "center_x": 1272,
+      "center_y": 1836.402088772846,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 141,
+      "ic": {
+        "ulx": 1420,
+        "uly": 791,
+        "nrows": 55,
+        "ncols": 71,
+        "class_name": "neume.torculus22",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1420,
+      "center_y": 823.6309523809524,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 142,
+      "ic": {
+        "ulx": 1115,
+        "uly": 1000,
+        "nrows": 67,
+        "ncols": 37,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 7,
+      "center_x": 1115,
+      "center_y": 1020.7196261682243,
+      "pitch": {
+        "pname": "D",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 143,
+      "ic": {
+        "ulx": 1393,
+        "uly": 554,
+        "nrows": 38,
+        "ncols": 32,
+        "class_name": "neume.liquescent.up",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1393,
+      "center_y": 570.4740740740741,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 144,
+      "ic": {
+        "ulx": 158,
+        "uly": 1816,
+        "nrows": 44,
+        "ncols": 29,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 4,
+      "center_x": 158,
+      "center_y": 1835.0117845117845,
+      "pitch": {
+        "pname": "D",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 145,
+      "ic": {
+        "ulx": 689,
+        "uly": 602,
+        "nrows": 27,
+        "ncols": 44,
+        "class_name": "neume.distropha",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 2,
+      "center_x": 689,
+      "center_y": 615.4020618556701,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 146,
+      "ic": {
+        "ulx": 668,
+        "uly": 623,
+        "nrows": 23,
+        "ncols": 28,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 1,
+      "center_x": 668,
+      "center_y": 634.074074074074,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 147,
+      "ic": {
+        "ulx": 619,
+        "uly": 624,
+        "nrows": 24,
+        "ncols": 22,
+        "class_name": "neume.punctum",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 1,
+      "center_x": 619,
+      "center_y": 635.0693069306931,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 148,
+      "ic": {
+        "ulx": 566,
+        "uly": 598,
+        "nrows": 64,
+        "ncols": 64,
+        "class_name": "neume.podatus2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 1,
+      "center_x": 566,
+      "center_y": 641.7621621621622,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 149,
+      "ic": {
+        "ulx": 187,
+        "uly": 1833,
+        "nrows": 48,
+        "ncols": 42,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 187,
+      "center_y": 1857.8568994889267,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 150,
+      "ic": {
+        "ulx": 1368,
+        "uly": 535,
+        "nrows": 51,
+        "ncols": 38,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1368,
+      "center_y": 561.227414330218,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 151,
+      "ic": {
+        "ulx": 1169,
+        "uly": 268,
+        "nrows": 68,
+        "ncols": 47,
+        "class_name": "neume.clivis3a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 5,
+      "center_x": 1169,
+      "center_y": 300.50517403574787,
+      "pitch": {
+        "pname": "A",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 152,
+      "ic": {
+        "ulx": 1019,
+        "uly": 2067,
+        "nrows": 79,
+        "ncols": 45,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 7,
+      "stave_step": 4,
+      "center_x": 1019,
+      "center_y": 2089.878712871287,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 153,
+      "ic": {
+        "ulx": 1094,
+        "uly": 308,
+        "nrows": 63,
+        "ncols": 40,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1094,
+      "center_y": 335.6219382321619,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 154,
+      "ic": {
+        "ulx": 1112,
+        "uly": 1611,
+        "nrows": 47,
+        "ncols": 43,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 2,
+      "center_x": 1112,
+      "center_y": 1631.2053388090349,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 155,
+      "ic": {
+        "ulx": 780,
+        "uly": 313,
+        "nrows": 62,
+        "ncols": 75,
+        "class_name": "neume.torculus22",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 780,
+      "center_y": 343.80645161290323,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 156,
+      "ic": {
+        "ulx": 1328,
+        "uly": 1310,
+        "nrows": 47,
+        "ncols": 21,
+        "class_name": "neume.liquescent.up",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 1328,
+      "center_y": 1331.6729559748428,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 157,
+      "ic": {
+        "ulx": 1243,
+        "uly": 1315,
+        "nrows": 39,
+        "ncols": 41,
+        "class_name": "neume.distropha",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 1243,
+      "center_y": 1333.3355263157894,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 158,
+      "ic": {
+        "ulx": 1287,
+        "uly": 1293,
+        "nrows": 61,
+        "ncols": 41,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 5,
+      "center_x": 1287,
+      "center_y": 1322.3646922183507,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 159,
+      "ic": {
+        "ulx": 1490,
+        "uly": 593,
+        "nrows": 54,
+        "ncols": 59,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 2,
+      "center_x": 1490,
+      "center_y": 611.065274151436,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 160,
+      "ic": {
+        "ulx": 251,
+        "uly": 1570,
+        "nrows": 52,
+        "ncols": 35,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 251,
+      "center_y": 1594.3543859649124,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 161,
+      "ic": {
+        "ulx": 866,
+        "uly": 1312,
+        "nrows": 83,
+        "ncols": 56,
+        "class_name": "neume.clivis3b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 866,
+      "center_y": 1337.1907514450868,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 162,
+      "ic": {
+        "ulx": 738,
+        "uly": 805,
+        "nrows": 101,
+        "ncols": 58,
+        "class_name": "neume.clivis4b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 738,
+      "center_y": 831.6074270557029,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 163,
+      "ic": {
+        "ulx": 563,
+        "uly": 1317,
+        "nrows": 78,
+        "ncols": 39,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 4,
+      "center_x": 563,
+      "center_y": 1346.3155963302752,
+      "pitch": {
+        "pname": "F",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 164,
+      "ic": {
+        "ulx": 317,
+        "uly": 1564,
+        "nrows": 73,
+        "ncols": 51,
+        "class_name": "neume.clivis3b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 317,
+      "center_y": 1594.4928425357873,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 165,
+      "ic": {
+        "ulx": 1434,
+        "uly": 347,
+        "nrows": 51,
+        "ncols": 38,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 2,
+      "center_x": 1434,
+      "center_y": 371.7996108949416,
+      "pitch": {
+        "pname": "E",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 166,
+      "ic": {
+        "ulx": 290,
+        "uly": 544,
+        "nrows": 55,
+        "ncols": 53,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 5,
+      "center_x": 290,
+      "center_y": 566.6180555555555,
+      "pitch": {
+        "pname": "D",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 167,
+      "ic": {
+        "ulx": 743,
+        "uly": 1589,
+        "nrows": 55,
+        "ncols": 59,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 3,
+      "center_x": 743,
+      "center_y": 1612.1461988304093,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 168,
+      "ic": {
+        "ulx": 1487,
+        "uly": 802,
+        "nrows": 57,
+        "ncols": 55,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 4,
+      "center_x": 1487,
+      "center_y": 826.3948275862069,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 169,
+      "ic": {
+        "ulx": 1211,
+        "uly": 327,
+        "nrows": 51,
+        "ncols": 46,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 3,
+      "center_x": 1211,
+      "center_y": 350.01015228426394,
+      "pitch": {
+        "pname": "F",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 170,
+      "ic": {
+        "ulx": 634,
+        "uly": 1059,
+        "nrows": 51,
+        "ncols": 52,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 4,
+      "center_x": 634,
+      "center_y": 1079.296875,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 171,
+      "ic": {
+        "ulx": 206,
+        "uly": 1568,
+        "nrows": 53,
+        "ncols": 46,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 4,
+      "center_x": 206,
+      "center_y": 1589.7278106508875,
+      "pitch": {
+        "pname": "A",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 172,
+      "ic": {
+        "ulx": 593,
+        "uly": 1342,
+        "nrows": 61,
+        "ncols": 48,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 593,
+      "center_y": 1361.4069478908189,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 173,
+      "ic": {
+        "ulx": 1003,
+        "uly": 554,
+        "nrows": 52,
+        "ncols": 57,
+        "class_name": "neume.clivis2b",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 1,
+      "stave_step": 4,
+      "center_x": 1003,
+      "center_y": 571.5886075949367,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 174,
+      "ic": {
+        "ulx": 1471,
+        "uly": 317,
+        "nrows": 115,
+        "ncols": 25,
+        "class_name": "divisio.maxima",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 175,
+      "ic": {
+        "ulx": 855,
+        "uly": 306,
+        "nrows": 73,
+        "ncols": 38,
+        "class_name": "neume.virga",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 0,
+      "stave_step": 4,
+      "center_x": 855,
+      "center_y": 327.3219696969697,
+      "pitch": {
+        "pname": "G",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 176,
+      "ic": {
+        "ulx": 285,
+        "uly": 850,
+        "nrows": 69,
+        "ncols": 60,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 2,
+      "stave_step": 1,
+      "center_x": 285,
+      "center_y": 885.4697802197802,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.f",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 177,
+      "ic": {
+        "ulx": 862,
+        "uly": 1830,
+        "nrows": 62,
+        "ncols": 45,
+        "class_name": "neume.clivis3a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 862,
+      "center_y": 1858.5464743589744,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 178,
+      "ic": {
+        "ulx": 1227,
+        "uly": 1826,
+        "nrows": 51,
+        "ncols": 44,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 6,
+      "stave_step": 3,
+      "center_x": 1227,
+      "center_y": 1847.5333333333333,
+      "pitch": {
+        "pname": "C",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 179,
+      "ic": {
+        "ulx": 517,
+        "uly": 1323,
+        "nrows": 67,
+        "ncols": 54,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 4,
+      "stave_step": 3,
+      "center_x": 517,
+      "center_y": 1354.1933534743202,
+      "pitch": {
+        "pname": "E",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 180,
+      "ic": {
+        "ulx": 259,
+        "uly": 1063,
+        "nrows": 67,
+        "ncols": 59,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 3,
+      "center_x": 259,
+      "center_y": 1096.340567612688,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 181,
+      "ic": {
+        "ulx": 458,
+        "uly": 1018,
+        "nrows": 79,
+        "ncols": 41,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 5,
+      "center_x": 458,
+      "center_y": 1052.2637517630465,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 182,
+      "ic": {
+        "ulx": 1466,
+        "uly": 1562,
+        "nrows": 83,
+        "ncols": 50,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 5,
+      "stave_step": 3,
+      "center_x": 1466,
+      "center_y": 1599.936114732725,
+      "pitch": {
+        "pname": "G",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 183,
+      "ic": {
+        "ulx": 495,
+        "uly": 1018,
+        "nrows": 76,
+        "ncols": 37,
+        "class_name": "neume.clivis3a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 5,
+      "center_x": 495,
+      "center_y": 1054.078449053201,
+      "pitch": {
+        "pname": "B",
+        "oct": 3
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 184,
+      "ic": {
+        "ulx": 1088,
+        "uly": 1001,
+        "nrows": 60,
+        "ncols": 33,
+        "class_name": "neume.clivis2a",
+        "confidence": 1.0,
+        "state": "MANUAL"
+      },
+      "stave_id": 3,
+      "stave_step": 6,
+      "center_x": 1088,
+      "center_y": 1027.6547515257193,
+      "pitch": {
+        "pname": "C",
+        "oct": 4
+      },
+      "clef_used": "clef.c",
+      "reason": null,
+      "flags": []
+    },
+    {
+      "glyph_index": 185,
+      "ic": {
+        "ulx": 1202,
+        "uly": 500,
+        "nrows": 242,
+        "ncols": 74,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 186,
+      "ic": {
+        "ulx": 151,
+        "uly": 435,
+        "nrows": 83,
+        "ncols": 158,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 187,
+      "ic": {
+        "ulx": 1244,
+        "uly": 1419,
+        "nrows": 102,
+        "ncols": 195,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 188,
+      "ic": {
+        "ulx": 614,
+        "uly": 417,
+        "nrows": 110,
+        "ncols": 251,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 189,
+      "ic": {
+        "ulx": 258,
+        "uly": 1931,
+        "nrows": 85,
+        "ncols": 174,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 190,
+      "ic": {
+        "ulx": 1322,
+        "uly": 667,
+        "nrows": 87,
+        "ncols": 182,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 191,
+      "ic": {
+        "ulx": 847,
+        "uly": 659,
+        "nrows": 99,
+        "ncols": 160,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 192,
+      "ic": {
+        "ulx": 433,
+        "uly": 1934,
+        "nrows": 75,
+        "ncols": 71,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 193,
+      "ic": {
+        "ulx": 918,
+        "uly": 417,
+        "nrows": 92,
+        "ncols": 275,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 194,
+      "ic": {
+        "ulx": 1248,
+        "uly": 912,
+        "nrows": 123,
+        "ncols": 261,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 195,
+      "ic": {
+        "ulx": 345,
+        "uly": 927,
+        "nrows": 88,
+        "ncols": 223,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 196,
+      "ic": {
+        "ulx": 708,
+        "uly": 912,
+        "nrows": 101,
+        "ncols": 215,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 197,
+      "ic": {
+        "ulx": 938,
+        "uly": 1935,
+        "nrows": 86,
+        "ncols": 119,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 198,
+      "ic": {
+        "ulx": 401,
+        "uly": 1687,
+        "nrows": 81,
+        "ncols": 85,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 199,
+      "ic": {
+        "ulx": 1007,
+        "uly": 670,
+        "nrows": 86,
+        "ncols": 149,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 200,
+      "ic": {
+        "ulx": 582,
+        "uly": 929,
+        "nrows": 83,
+        "ncols": 127,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 201,
+      "ic": {
+        "ulx": 1010,
+        "uly": 1172,
+        "nrows": 89,
+        "ncols": 139,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 202,
+      "ic": {
+        "ulx": 758,
+        "uly": 1917,
+        "nrows": 110,
+        "ncols": 158,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 203,
+      "ic": {
+        "ulx": 614,
+        "uly": 1181,
+        "nrows": 84,
+        "ncols": 136,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 204,
+      "ic": {
+        "ulx": 958,
+        "uly": 1432,
+        "nrows": 94,
+        "ncols": 282,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 205,
+      "ic": {
+        "ulx": 708,
+        "uly": 1693,
+        "nrows": 81,
+        "ncols": 147,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 206,
+      "ic": {
+        "ulx": 1361,
+        "uly": 422,
+        "nrows": 83,
+        "ncols": 138,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 207,
+      "ic": {
+        "ulx": 152,
+        "uly": 1688,
+        "nrows": 84,
+        "ncols": 116,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 208,
+      "ic": {
+        "ulx": 1440,
+        "uly": 1432,
+        "nrows": 82,
+        "ncols": 81,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 209,
+      "ic": {
+        "ulx": 507,
+        "uly": 1916,
+        "nrows": 96,
+        "ncols": 114,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 210,
+      "ic": {
+        "ulx": 279,
+        "uly": 1686,
+        "nrows": 101,
+        "ncols": 116,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 211,
+      "ic": {
+        "ulx": 242,
+        "uly": 672,
+        "nrows": 92,
+        "ncols": 185,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 212,
+      "ic": {
+        "ulx": 568,
+        "uly": 663,
+        "nrows": 112,
+        "ncols": 280,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 213,
+      "ic": {
+        "ulx": 228,
+        "uly": 1178,
+        "nrows": 95,
+        "ncols": 327,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 214,
+      "ic": {
+        "ulx": 650,
+        "uly": 1422,
+        "nrows": 102,
+        "ncols": 302,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 215,
+      "ic": {
+        "ulx": 926,
+        "uly": 920,
+        "nrows": 119,
+        "ncols": 318,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 216,
+      "ic": {
+        "ulx": 765,
+        "uly": 2191,
+        "nrows": 103,
+        "ncols": 70,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 217,
+      "ic": {
+        "ulx": 1223,
+        "uly": 415,
+        "nrows": 91,
+        "ncols": 109,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 218,
+      "ic": {
+        "ulx": 308,
+        "uly": 426,
+        "nrows": 107,
+        "ncols": 307,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 219,
+      "ic": {
+        "ulx": 232,
+        "uly": 2193,
+        "nrows": 101,
+        "ncols": 175,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 220,
+      "ic": {
+        "ulx": 156,
+        "uly": 929,
+        "nrows": 98,
+        "ncols": 184,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 221,
+      "ic": {
+        "ulx": 566,
+        "uly": 1692,
+        "nrows": 80,
+        "ncols": 105,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 222,
+      "ic": {
+        "ulx": 1209,
+        "uly": 2046,
+        "nrows": 106,
+        "ncols": 315,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 223,
+      "ic": {
+        "ulx": 681,
+        "uly": 1936,
+        "nrows": 78,
+        "ncols": 74,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 224,
+      "ic": {
+        "ulx": 1192,
+        "uly": 2182,
+        "nrows": 98,
+        "ncols": 339,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 225,
+      "ic": {
+        "ulx": 1347,
+        "uly": 1175,
+        "nrows": 85,
+        "ncols": 117,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 226,
+      "ic": {
+        "ulx": 421,
+        "uly": 619,
+        "nrows": 143,
+        "ncols": 156,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 227,
+      "ic": {
+        "ulx": 291,
+        "uly": 1433,
+        "nrows": 83,
+        "ncols": 70,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 228,
+      "ic": {
+        "ulx": 990,
+        "uly": 1671,
+        "nrows": 111,
+        "ncols": 215,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 229,
+      "ic": {
+        "ulx": 1073,
+        "uly": 2028,
+        "nrows": 265,
+        "ncols": 92,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 230,
+      "ic": {
+        "ulx": 434,
+        "uly": 532,
+        "nrows": 81,
+        "ncols": 74,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 231,
+      "ic": {
+        "ulx": 1143,
+        "uly": 1921,
+        "nrows": 98,
+        "ncols": 157,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 232,
+      "ic": {
+        "ulx": 411,
+        "uly": 2163,
+        "nrows": 148,
+        "ncols": 357,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 233,
+      "ic": {
+        "ulx": 619,
+        "uly": 1936,
+        "nrows": 78,
+        "ncols": 59,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 234,
+      "ic": {
+        "ulx": 1146,
+        "uly": 1154,
+        "nrows": 85,
+        "ncols": 74,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 235,
+      "ic": {
+        "ulx": 155,
+        "uly": 1431,
+        "nrows": 85,
+        "ncols": 135,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 236,
+      "ic": {
+        "ulx": 168,
+        "uly": 607,
+        "nrows": 149,
+        "ncols": 82,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 237,
+      "ic": {
+        "ulx": 1150,
+        "uly": 658,
+        "nrows": 84,
+        "ncols": 62,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 238,
+      "ic": {
+        "ulx": 754,
+        "uly": 1102,
+        "nrows": 158,
+        "ncols": 241,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 239,
+      "ic": {
+        "ulx": 1270,
+        "uly": 675,
+        "nrows": 79,
+        "ncols": 59,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 240,
+      "ic": {
+        "ulx": 1201,
+        "uly": 501,
+        "nrows": 253,
+        "ncols": 77,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 241,
+      "ic": {
+        "ulx": 93,
+        "uly": 2144,
+        "nrows": 170,
+        "ncols": 159,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 242,
+      "ic": {
+        "ulx": 863,
+        "uly": 1584,
+        "nrows": 194,
+        "ncols": 114,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 243,
+      "ic": {
+        "ulx": 367,
+        "uly": 1422,
+        "nrows": 99,
+        "ncols": 209,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 244,
+      "ic": {
+        "ulx": 891,
+        "uly": 2193,
+        "nrows": 90,
+        "ncols": 188,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 245,
+      "ic": {
+        "ulx": 1345,
+        "uly": 1678,
+        "nrows": 99,
+        "ncols": 165,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 246,
+      "ic": {
+        "ulx": 1296,
+        "uly": 1916,
+        "nrows": 102,
+        "ncols": 106,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 247,
+      "ic": {
+        "ulx": 365,
+        "uly": 1278,
+        "nrows": 243,
+        "ncols": 213,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 248,
+      "ic": {
+        "ulx": 366,
+        "uly": 1382,
+        "nrows": 138,
+        "ncols": 214,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 249,
+      "ic": {
+        "ulx": 1232,
+        "uly": 1530,
+        "nrows": 234,
+        "ncols": 119,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 250,
+      "ic": {
+        "ulx": 366,
+        "uly": 1280,
+        "nrows": 240,
+        "ncols": 112,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 251,
+      "ic": {
+        "ulx": 518,
+        "uly": 1725,
+        "nrows": 84,
+        "ncols": 49,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 252,
+      "ic": {
+        "ulx": 1166,
+        "uly": 2200,
+        "nrows": 79,
+        "ncols": 35,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 253,
+      "ic": {
+        "ulx": 818,
+        "uly": 2141,
+        "nrows": 132,
+        "ncols": 82,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 254,
+      "ic": {
+        "ulx": 1163,
+        "uly": 1071,
+        "nrows": 192,
+        "ncols": 142,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 255,
+      "ic": {
+        "ulx": 1275,
+        "uly": 1186,
+        "nrows": 76,
+        "ncols": 55,
+        "class_name": "text",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 256,
+      "ic": {
+        "ulx": 140,
+        "uly": 272,
+        "nrows": 30,
+        "ncols": 1404,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 257,
+      "ic": {
+        "ulx": 142,
+        "uly": 315,
+        "nrows": 32,
+        "ncols": 1380,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 258,
+      "ic": {
+        "ulx": 142,
+        "uly": 356,
+        "nrows": 32,
+        "ncols": 1368,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 259,
+      "ic": {
+        "ulx": 140,
+        "uly": 398,
+        "nrows": 32,
+        "ncols": 1369,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 260,
+      "ic": {
+        "ulx": 132,
+        "uly": 515,
+        "nrows": 35,
+        "ncols": 1395,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 261,
+      "ic": {
+        "ulx": 133,
+        "uly": 567,
+        "nrows": 19,
+        "ncols": 1382,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 262,
+      "ic": {
+        "ulx": 137,
+        "uly": 609,
+        "nrows": 18,
+        "ncols": 1353,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 263,
+      "ic": {
+        "ulx": 136,
+        "uly": 647,
+        "nrows": 27,
+        "ncols": 1369,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 264,
+      "ic": {
+        "ulx": 133,
+        "uly": 770,
+        "nrows": 25,
+        "ncols": 1405,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 265,
+      "ic": {
+        "ulx": 138,
+        "uly": 812,
+        "nrows": 25,
+        "ncols": 1393,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 266,
+      "ic": {
+        "ulx": 137,
+        "uly": 855,
+        "nrows": 23,
+        "ncols": 1391,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 267,
+      "ic": {
+        "ulx": 132,
+        "uly": 897,
+        "nrows": 25,
+        "ncols": 1386,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 268,
+      "ic": {
+        "ulx": 141,
+        "uly": 1025,
+        "nrows": 23,
+        "ncols": 1410,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 269,
+      "ic": {
+        "ulx": 141,
+        "uly": 1068,
+        "nrows": 21,
+        "ncols": 1386,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 270,
+      "ic": {
+        "ulx": 145,
+        "uly": 1107,
+        "nrows": 21,
+        "ncols": 1368,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 271,
+      "ic": {
+        "ulx": 133,
+        "uly": 1155,
+        "nrows": 18,
+        "ncols": 1383,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 272,
+      "ic": {
+        "ulx": 133,
+        "uly": 1281,
+        "nrows": 23,
+        "ncols": 1411,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 273,
+      "ic": {
+        "ulx": 137,
+        "uly": 1323,
+        "nrows": 23,
+        "ncols": 1392,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 274,
+      "ic": {
+        "ulx": 138,
+        "uly": 1363,
+        "nrows": 24,
+        "ncols": 1388,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 275,
+      "ic": {
+        "ulx": 142,
+        "uly": 1406,
+        "nrows": 24,
+        "ncols": 1372,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 276,
+      "ic": {
+        "ulx": 147,
+        "uly": 1534,
+        "nrows": 18,
+        "ncols": 1387,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 277,
+      "ic": {
+        "ulx": 138,
+        "uly": 1580,
+        "nrows": 14,
+        "ncols": 1402,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 278,
+      "ic": {
+        "ulx": 134,
+        "uly": 1618,
+        "nrows": 16,
+        "ncols": 1392,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 279,
+      "ic": {
+        "ulx": 142,
+        "uly": 1661,
+        "nrows": 16,
+        "ncols": 1380,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 280,
+      "ic": {
+        "ulx": 134,
+        "uly": 1778,
+        "nrows": 29,
+        "ncols": 1386,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 281,
+      "ic": {
+        "ulx": 137,
+        "uly": 1818,
+        "nrows": 32,
+        "ncols": 1372,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 282,
+      "ic": {
+        "ulx": 155,
+        "uly": 1862,
+        "nrows": 29,
+        "ncols": 1348,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 283,
+      "ic": {
+        "ulx": 134,
+        "uly": 1903,
+        "nrows": 27,
+        "ncols": 1356,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 284,
+      "ic": {
+        "ulx": 119,
+        "uly": 2029,
+        "nrows": 25,
+        "ncols": 1400,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 285,
+      "ic": {
+        "ulx": 123,
+        "uly": 2070,
+        "nrows": 27,
+        "ncols": 1392,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 286,
+      "ic": {
+        "ulx": 131,
+        "uly": 2110,
+        "nrows": 30,
+        "ncols": 1383,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    },
+    {
+      "glyph_index": 287,
+      "ic": {
+        "ulx": 129,
+        "uly": 2149,
+        "nrows": 35,
+        "ncols": 1382,
+        "class_name": "staff",
+        "confidence": 0.0,
+        "state": "UNCLASSIFIED"
+      },
+      "stave_id": null,
+      "stave_step": null,
+      "center_x": null,
+      "center_y": null,
+      "pitch": null,
+      "clef_used": null,
+      "reason": "pitchless_symbol",
+      "flags": []
+    }
+  ]
+}
