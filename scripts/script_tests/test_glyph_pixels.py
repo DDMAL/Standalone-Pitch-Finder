@@ -8,8 +8,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ic_io import Glyph
 from glyph_pixels import (
-    average_punctum, crop_and_binarize, row_projection_centroid, reference_row,
-    reference_point, reference_region,
+    average_punctum, notehead_height, crop_and_binarize, row_projection_centroid,
+    reference_row, reference_point, reference_region, TOP_HEAD_DEPTH_FRACTION,
     REGION_FULL, REGION_TOP, REGION_BOTTOM_LEFT, REGION_F_CLEF_RIGHT,
 )
 
@@ -37,6 +37,20 @@ def test_average_punctum():
 
 def test_average_punctum_empty():
     assert average_punctum([]) == 0.0
+
+
+def test_notehead_height_is_a_height_and_excludes_the_virga():
+    """average_punctum is a *width*, and using it as a depth made the
+    first-head band ~40% too deep on McGill_MS234-064 (35 px against a 25 px
+    notehead). virga is excluded because its bbox includes the stem."""
+    glyphs = [
+        make_glyph(0, 0, 0, 40, 24, "neume.punctum"),
+        make_glyph(1, 0, 0, 40, 26, "neume.inclinatum"),
+        make_glyph(2, 0, 0, 40, 90, "neume.virga"),      # stem: not a notehead height
+        make_glyph(3, 0, 0, 40, 70, "neume.clivis2"),    # multi-note: not counted
+    ]
+    assert notehead_height(glyphs) == 25.0
+    assert notehead_height([]) == 0.0
 
 
 def test_crop_and_binarize_marks_ink_as_foreground():
@@ -124,6 +138,190 @@ def test_podatus_bottom_left_reference_excludes_top_right_ink():
 
     # Offset is relative to glyph top; bottom-left block spans rows 28-39.
     assert 24 <= offset <= 40
+
+
+def make_podatus_page(with_staff_line=False):
+    """A podatus drawn the way the manuscripts draw it, with the two things
+    that pulled its anchor below its first notehead:
+
+        note2 (high, right)                rows  0-11
+        |  ligature stroke on the right, descending PAST note 1
+        note1 (low, left)                  rows 24-35
+        |  (optional staff line crossing)  rows 42-44
+        stroke foot                        rows      -47  <- sets the bbox bottom
+
+    The bbox bottom is the stroke's, 12 rows below note 1, so a band hanging
+    off the bbox bottom clips note 1's top off and centroids low. Returns
+    (image, glyph, avg_punctum, notehead_h).
+    """
+    img = blank_page(120, 120)
+    ulx, uly, ncols, nrows = 20, 20, 36, 48
+    img[uly:uly + 12, ulx + 22:ulx + 32] = INK              # note 2, highest, right
+    img[uly:uly + 48, ulx + 26:ulx + 29] = INK              # ligature stroke, right side
+    img[uly + 24:uly + 36, ulx:ulx + 10] = INK              # note 1, bottom-left
+    if with_staff_line:
+        img[uly + 42:uly + 45, :] = INK                     # staff line, full width
+    return img, make_glyph(0, ulx, uly, ncols, nrows, "neume.podatus2b"), 12.0, 12.0
+
+
+def test_podatus_reference_is_its_first_notehead_not_the_bbox_bottom():
+    """The reported bug: a podatus's anchor sat a little below its notehead.
+
+    The band was positioned from the bbox's bottom edge, but that edge belongs
+    to the descending ligature stroke, not to the first head -- so the band
+    slid down past the head and kept only its lower rows. Measured at 0.27
+    steps low on McGill_MS234-064's podatus2b (worst case 0.96), against the
+    0.5-step threshold at which the pitch is simply wrong.
+    """
+    img, g, avg_punctum, nh = make_podatus_page()
+
+    region = reference_region(img, g, avg_punctum, extended_rules=True, notehead_h=nh)
+    offset = (region.uly - g.uly) + row_projection_centroid(
+        crop_and_binarize(img, region.ulx, region.uly, region.ncols, region.nrows))
+
+    print(f"podatus first-head offset {offset:.2f}; region rows "
+          f"{region.uly - g.uly}..{region.uly - g.uly + region.nrows - 1}")
+
+    assert region.region == REGION_BOTTOM_LEFT
+    assert 24 <= offset <= 36           # inside note 1 (rows 24-35)
+
+    # A band measured from the bbox bottom (rows 36-47) holds no note-1 ink at
+    # all here; where it does overlap the head it keeps only its bottom rows.
+    # That is the bias this replaced, and Rodan's path still has it.
+    bbox_band = reference_row(img, g, avg_punctum)
+    print(f"bbox-bottom band offset {bbox_band:.2f}")
+    assert bbox_band > offset
+
+
+def test_podatus_reference_ignores_a_staff_line_crossing_the_band():
+    """Staff lines ink the column band just as densely as a notehead does.
+
+    They are only 2-3 rows against a head's 12+, so weighing each run of ink
+    tells them apart -- and it has to, because a staff line below the first
+    head is exactly what a fixed-depth band averages into the anchor.
+    """
+    img, g, avg_punctum, nh = make_podatus_page(with_staff_line=True)
+
+    region = reference_region(img, g, avg_punctum, extended_rules=True, notehead_h=nh)
+    offset = (region.uly - g.uly) + row_projection_centroid(
+        crop_and_binarize(img, region.ulx, region.uly, region.ncols, region.nrows))
+
+    print(f"podatus offset with a staff line crossing: {offset:.2f}")
+    assert 24 <= offset <= 36           # still inside note 1, not pulled to row 43
+
+    clean_img, _, _, _ = make_podatus_page()
+    clean = reference_region(clean_img, g, avg_punctum, extended_rules=True, notehead_h=nh)
+    assert (region.uly, region.nrows) == (clean.uly, clean.nrows)
+
+
+def test_first_head_band_is_capped_at_one_notehead_deep():
+    """When a head is fused to its own stroke the band is one long run, so the
+    depth cap is the only thing keeping the stroke out of the centroid."""
+    img = blank_page(120, 120)
+    ulx, uly, ncols, nrows = 20, 20, 36, 48
+    img[uly:uly + 36, ulx:ulx + 10] = INK        # head and stroke, one solid run
+    g = make_glyph(0, ulx, uly, ncols, nrows, "neume.podatus2b")
+
+    shallow = reference_region(img, g, 12.0, extended_rules=True, notehead_h=12.0)
+    deep = reference_region(img, g, 12.0, extended_rules=True, notehead_h=30.0)
+
+    print(f"depth 12 -> {shallow.nrows} rows, depth 30 -> {deep.nrows} rows")
+    assert shallow.nrows == 12
+    assert deep.nrows == 30
+    # Both end at the run's bottom (row 35); the cap only moves the top.
+    assert shallow.uly + shallow.nrows == deep.uly + deep.nrows
+
+
+def test_rodan_path_keeps_its_own_podatus_behavior():
+    """reference_row is rodan_pitch_finder's, and a baseline that quietly
+    adopts this module's rules stops being a baseline. Rodan crops podatus2b
+    to a band on the bbox's bottom edge; that must not change."""
+    img, g, avg_punctum, nh = make_podatus_page()
+
+    rodan = reference_region(img, g, avg_punctum)          # extended_rules off
+    assert rodan.region == REGION_BOTTOM_LEFT
+    assert rodan.uly + rodan.nrows == g.uly + g.nrows      # flush with the bbox bottom
+
+    # ...and passing notehead_h cannot reach it either.
+    assert reference_region(img, g, avg_punctum, notehead_h=nh) == rodan
+
+
+def make_clivis_page():
+    """A clivis drawn as the manuscripts draw it -- a Pi, not two loose heads:
+
+        note1 (top bar, spans the width)   rows  0-11
+        |  left stem, FUSED to the bar and inside the left band
+        |                          right stem
+        |                          note2 (foot)   rows 48-59
+
+    The left band's ink is therefore one run 60 rows long, five times a
+    notehead, so the depth cap is the only thing separating bar from stem.
+    Returns (image, glyph, avg_punctum, notehead_h).
+    """
+    img = blank_page(120, 120)
+    ulx, uly, ncols, nrows = 20, 20, 36, 60
+    img[uly:uly + 12, ulx:ulx + 32] = INK                   # note 1, the top bar
+    img[uly + 12:uly + 48, ulx + 1:ulx + 5] = INK           # left stem, in the band
+    img[uly + 12:uly + 48, ulx + 24:ulx + 28] = INK         # right stem
+    img[uly + 48:uly + 60, ulx + 22:ulx + 32] = INK         # note 2, the foot
+    return img, make_glyph(0, ulx, uly, ncols, nrows, "neume.clivis2"), 12.0, 12.0
+
+
+def test_clivis_reference_is_its_top_notehead():
+    """A clivis descends, so its first note is the top-left head.
+
+    The midpoint anchor this replaced read the left band's whole-height
+    centroid as the point *between* the two notes, which put the first note
+    half the neume's span too high -- 1.15 steps for `clivis4b` on
+    McGill_MS234-064, far enough to leave the glyph's own bbox.
+    """
+    img, g, avg_punctum, nh = make_clivis_page()
+
+    region = reference_region(img, g, avg_punctum, extended_rules=True, notehead_h=nh)
+    offset = (region.uly - g.uly) + row_projection_centroid(
+        crop_and_binarize(img, region.ulx, region.uly, region.ncols, region.nrows))
+
+    print(f"clivis top-head offset {offset:.2f}; region rows "
+          f"{region.uly - g.uly}..{region.uly - g.uly + region.nrows - 1}")
+
+    # REGION_TOP so _anchor_interval binds it to max(intervals) -- for a
+    # descending neume that is the first note.
+    assert region.region == REGION_TOP
+    assert 0 <= offset <= 12            # inside the top bar (rows 0-11)
+
+    # The full-height column average is what the midpoint rule measured, and it
+    # sits down among the stems -- a third of the way down the glyph or worse.
+    naive = reference_row(img, make_glyph(1, g.ulx, g.uly, g.ncols, g.nrows,
+                                          "neume.oblique2"), avg_punctum)
+    print(f"full-height column offset {naive:.2f}")
+    assert offset < naive - 5
+
+
+def test_clivis_crop_is_capped_tighter_than_a_whole_notehead():
+    """The cap is load-bearing here, unlike on the ascending ligatures.
+
+    A podatus keeps its stroke on the right, outside the left band, so the
+    band's lowest run is the bare head and the cap rarely engages. A clivis's
+    left stem is *inside* the band and fused to the head, so every pixel of the
+    cap moves the anchor -- which is why it is a fraction of a notehead.
+    """
+    img, g, avg_punctum, nh = make_clivis_page()
+    region = reference_region(img, g, avg_punctum, extended_rules=True, notehead_h=nh)
+
+    assert region.nrows == max(1, round(nh * TOP_HEAD_DEPTH_FRACTION))
+    assert region.uly == g.uly          # anchored to the run's top, not the bbox's
+    assert TOP_HEAD_DEPTH_FRACTION < 1.0
+
+
+def test_rodan_path_keeps_its_own_clivis_behavior():
+    """clivis has no crop rule in Rodan at all -- it takes the default
+    full-height left band. reference_row must still do exactly that."""
+    img, g, avg_punctum, nh = make_clivis_page()
+
+    rodan = reference_region(img, g, avg_punctum)          # extended_rules off
+    assert rodan.region == REGION_FULL
+    assert (rodan.uly, rodan.nrows) == (g.uly, g.nrows)   # the whole bbox height
+    assert reference_region(img, g, avg_punctum, notehead_h=nh) == rodan
 
 
 def make_torculus_page():
@@ -232,9 +430,11 @@ def test_reference_region_labels_which_crop_rule_fired():
         ("neume.podatus3", REGION_BOTTOM_LEFT),
         ("neume.scandicus22b", REGION_BOTTOM_LEFT),
         ("clef.f2", REGION_F_CLEF_RIGHT),
-        ("neume.clivis2", REGION_FULL),
-        # Only under extended_rules; see test_rodan_path_keeps_its_own_torculus_behavior.
+        # oblique is the one multi-note class with no crop rule of its own.
+        ("neume.oblique2", REGION_FULL),
+        # Only under extended_rules; see the rodan-path tests.
         ("neume.torculus33", REGION_BOTTOM_LEFT),
+        ("neume.clivis2", REGION_TOP),      # descends: first note is also highest
     ]
     for class_name, expected in cases:
         g = make_glyph(0, 20, 20, 30, 40, class_name)
@@ -251,7 +451,9 @@ def test_reference_point_x_is_the_crops_own_center():
     ulx, uly, ncols, nrows = 20, 20, 40, 30
     img[uly + 5:uly + 25, ulx + 1:ulx + 9] = INK
 
-    g = make_glyph(0, ulx, uly, ncols, nrows, "neume.clivis2")
+    # oblique2 takes the default full-height crop on both entry points, so the
+    # two agree on y and this test is only about x.
+    g = make_glyph(0, ulx, uly, ncols, nrows, "neume.oblique2")
     point = reference_point(img, g, avg_punctum=12.0)
 
     # avg_punctum 12 -> crop width = round(12 * 0.8) = 10, starting at ulx.

@@ -45,8 +45,10 @@ DEFAULT_NEUME_CSV = Path(__file__).parent.parent / "neumes-cheatsheet" / "csv-sq
 
 # BGR colors for the debug overlay.
 _COLOR_PITCH_OK = (60, 170, 60)      # green: a note with pitch computed, CSV-backed
-_COLOR_APPROX = (10, 165, 230)       # amber: pitch computed via the single-note fallback
-                                      #        for a class missing from the neume CSV
+_COLOR_APPROX = (10, 165, 230)       # amber: the neume's shape is not CSV-backed --
+                                      #        either the single-note fallback for an
+                                      #        undecodable class, or intervals decoded
+                                      #        from the class name (neume.distropha)
 _COLOR_CLEF = (200, 130, 0)          # blue: clef (the pitch *reference*, not a note itself)
 _COLOR_PITCHLESS = (150, 150, 150)   # grey: pitchless_symbol / not music
 _COLOR_PROBLEM = (40, 40, 220)       # red: missing_clef / missing_staff / no_line_coverage
@@ -142,7 +144,7 @@ def _color_for(r) -> tuple:
         return _COLOR_PITCHLESS
     if r.reason in ("missing_clef", "missing_staff", "no_line_coverage"):
         return _COLOR_PROBLEM
-    if "approximate_unknown_shape" in r.flags:
+    if {"approximate_unknown_shape", "shape_from_class_name"} & set(r.flags):
         return _COLOR_APPROX
     return _COLOR_PITCH_OK
 
@@ -163,6 +165,11 @@ def _box_label(r) -> str:
             # Flag that this pitch is a guess (single-note fallback, not a
             # CSV-backed decomposition) and show what IC called it.
             label = f"~{label} ({r.ic['class_name']})"
+        elif "shape_from_class_name" in r.flags:
+            # Properly decomposed, but on intervals read off the class name
+            # rather than the CSV -- neume.distropha's unison is still an
+            # unconfirmed reading (see the plan doc).
+            label = f"?{label} ({r.ic['class_name']})"
         return label
     if r.reason and r.reason != "pitchless_symbol":
         return r.reason

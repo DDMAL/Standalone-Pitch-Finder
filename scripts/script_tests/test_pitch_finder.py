@@ -170,10 +170,12 @@ def test_unknown_class_falls_back_to_single_note_approximation():
 
     clef = Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
                  confidence=0.9, state="AUTOMATIC")
-    # "neume.clivis1" is not in make_shapes()'s neume_intervals -- not a
-    # clef, not pitchless, just missing from the CSV-derived table.
-    mystery = Glyph(index=1, ulx=50, uly=96, nrows=8, ncols=10, class_name="neume.clivis1",
-                     confidence=0.9, state="AUTOMATIC")
+    # Not a clef, not pitchless, missing from the CSV-derived table -- and
+    # unlike neume.distropha, its name carries no intervals either, so both
+    # of intervals_with_source's fallbacks miss too.
+    mystery = Glyph(index=1, ulx=50, uly=96, nrows=8, ncols=10,
+                    class_name="neume.totally_made_up",
+                    confidence=0.9, state="AUTOMATIC")
 
     results = find_pitches([clef, mystery], staves, shapes)
     mystery_result = results[1]
@@ -183,6 +185,77 @@ def test_unknown_class_falls_back_to_single_note_approximation():
     assert "approximate_unknown_shape" in mystery_result.flags
     # Single-note fallback == bbox top/bottom center, same as punctum: step 6.
     assert round(mystery_result.note_components[0].stave_step) == 6
+
+
+def test_repeated_note_neume_gets_one_pitch_and_no_flag():
+    """neume.distropha is 7 glyphs on McGill_MS234-064 and in no CSV row, so it
+    used to take the flagged single-note fallback above.
+
+    It resolves to one note now -- deliberately, not by fallback. Every
+    notehead of a distropha is on the same pitch, so splitting it into repeats
+    adds no pitch information. That leaves no interval to be unsure about,
+    hence no flag, and the debug overlay draws it as a normal pitch.
+    """
+    staves, shapes = [make_stave()], make_shapes()
+    clef = Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
+                 confidence=0.9, state="AUTOMATIC")
+    distropha = Glyph(index=1, ulx=50, uly=96, nrows=8, ncols=20,
+                      class_name="neume.distropha", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, distropha], staves, shapes)[1]
+
+    print(f"distropha components: {result.note_components}, flags: {result.flags}")
+    assert len(result.note_components) == 1
+    assert result.note_components[0].pitch is not None
+    assert result.flags == []
+
+
+def test_class_decoded_from_its_name_is_decomposed_and_flagged():
+    """A class the CSV omits whose name does carry intervals still decomposes,
+    but says where the intervals came from -- the CSV's MEI never confirmed
+    them, so this is the flag that finds every glyph depending on the decode.
+    """
+    staves, shapes = [make_stave()], make_shapes()
+    assert "neume.scandicus32" not in shapes.neume_intervals
+
+    clef = Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
+                 confidence=0.9, state="AUTOMATIC")
+    scandicus = Glyph(index=1, ulx=50, uly=96, nrows=30, ncols=20,
+                      class_name="neume.scandicus32", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, scandicus], staves, shapes)[1]
+
+    intervals = [nc.interval_from_first for nc in result.note_components]
+    print(f"scandicus32 intervals: {intervals}, flags: {result.flags}")
+    assert intervals == [0, 2, 3]                       # up a 3rd, then up a 2nd
+    assert "shape_from_class_name" in result.flags
+    assert "approximate_unknown_shape" not in result.flags
+
+
+def test_variant_letter_is_ignored_when_looking_up_intervals():
+    """neume.clivis2a and neume.clivis2b are two ways of drawing a clivis2.
+
+    The trailing letter says which stroke carries the ligature, never what the
+    neume sounds like -- but the CSV only lists "neume.clivis2", so every
+    variant-suffixed class in real IC output (31 clivis and a podatus3b on
+    McGill_MS234-064) fell through to the single-note fallback. They inherit
+    the base class's intervals, and unflagged: those intervals are the CSV's.
+    """
+    staves, shapes = [make_stave()], make_shapes()
+    clef = Glyph(index=0, ulx=0, uly=136, nrows=8, ncols=10, class_name="clef.c",
+                 confidence=0.9, state="AUTOMATIC")
+    variant = Glyph(index=1, ulx=50, uly=110, nrows=10, ncols=10,
+                    class_name="neume.clivis2a", confidence=0.9, state="AUTOMATIC")
+    plain = Glyph(index=2, ulx=50, uly=110, nrows=10, ncols=10,
+                  class_name="neume.clivis2", confidence=0.9, state="AUTOMATIC")
+
+    variant_result, plain_result = find_pitches([clef, variant, plain], staves, shapes)[1:]
+
+    assert [nc.interval_from_first for nc in variant_result.note_components] == [0, -1]
+    assert ([nc.stave_step for nc in variant_result.note_components]
+            == [nc.stave_step for nc in plain_result.note_components])
+    assert "shape_from_class_name" not in variant_result.flags
+    assert "approximate_unknown_shape" not in variant_result.flags
 
 
 def test_pixel_anchor_reads_a_virga_from_its_notehead_not_its_stem():
@@ -294,12 +367,17 @@ def test_torculus_anchors_its_first_head_and_returns_to_that_pitch():
 
 
 def test_full_bbox_crop_anchors_the_middle_of_the_note_span():
-    """For classes rodan has no crop rule for, the centroid covers the whole
-    shape and belongs to no single head -- so it anchors the span's midpoint
-    (a fractional interval), and the notes straddle it symmetrically."""
+    """neume.oblique* is the one multi-note class left without a crop rule.
+
+    It is a solid diagonal parallelogram, so its heads share every column band
+    and no ink run separates them -- but that same symmetry means its centroid
+    really is the midpoint of the two notes, so the span's midpoint (a
+    fractional interval) is the honest anchor and the notes straddle it.
+    Forcing the clivis top-head rule on it instead triples oblique3's error.
+    """
     staves, shapes = [make_stave()], make_shapes()
 
-    # clivis2 = [0, -1]: heads on y=120 (step 4) and y=130 (step 3), drawn as
+    # oblique2 = [0, -1]: heads on y=120 (step 4) and y=130 (step 3), drawn as
     # one block so the ink centroid sits midway between them.
     img = blank_page()
     img[115:136, 51:59] = INK
@@ -308,18 +386,68 @@ def test_full_bbox_crop_anchors_the_middle_of_the_note_span():
     clef = make_clef()
     punctum = Glyph(index=1, ulx=10, uly=20, nrows=10, ncols=12,
                     class_name="neume.punctum", confidence=0.9, state="AUTOMATIC")
-    clivis = Glyph(index=2, ulx=50, uly=114, nrows=36, ncols=14,
-                   class_name="neume.clivis2", confidence=0.9, state="AUTOMATIC")
+    oblique = Glyph(index=2, ulx=50, uly=114, nrows=36, ncols=14,
+                    class_name="neume.oblique2", confidence=0.9, state="AUTOMATIC")
 
-    result = find_pitches([clef, punctum, clivis], staves, shapes, image=img)[2]
+    result = find_pitches([clef, punctum, oblique], staves, shapes, image=img)[2]
     steps = [nc.stave_step for nc in result.note_components]
-    print(f"clivis2 steps: {steps}, anchor step {result.anchor.stave_step:.2f}")
+    print(f"oblique2 steps: {steps}, anchor step {result.anchor.stave_step:.2f}")
 
     assert result.anchor.region == "full"
     assert result.anchor.interval == -0.5             # midpoint of [0, -1]
     assert steps[0] - steps[1] == 1                   # exactly the CSV interval
     assert sum(steps) / 2 == result.anchor.stave_step  # straddling the centroid
     assert [round(s) for s in steps] == [4, 3]
+
+
+def test_wide_clivis_keeps_its_first_note_inside_the_glyph():
+    """The reported bug, at its most visible: a `clivis4b`'s first note was
+    drawn *above the glyph's own bounding box*.
+
+    The midpoint anchor placed note 1 half the neume's span above the left
+    band's centroid, so the error grew with the interval -- harmless on a
+    clivis2, a whole wrong pitch by clivis4 (span 3, so +1.5 steps). A computed
+    notehead outside the ink it was measured from is wrong regardless of which
+    oracle you trust, which makes this the one assertion that needs no page.
+    """
+    staves, shapes = [make_stave()], make_shapes()
+
+    # A clivis4-shaped glyph on a 10px-per-step stave: top bar (note 1) at
+    # y=100-109, left stem fused below it, and the foot (note 2) three steps
+    # lower at y=129-140. The stave puts step 6 at y=100 and rises 1 step per
+    # 10px, so the two heads really are the [0, -3] the class name claims.
+    img = blank_page()
+    ulx, uly, ncols, nrows = 50, 100, 30, 50
+    img[uly:uly + 10, ulx:ulx + 26] = INK               # note 1, the top bar
+    img[uly + 10:uly + 41, ulx + 1:ulx + 5] = INK       # left stem, fused to the bar
+    img[uly + 29:uly + 41, ulx + 16:ulx + 26] = INK     # note 2, the foot
+    img[20:36, 11:19] = INK                             # punctum, for the page metrics
+
+    clef = make_clef()
+    # 12 wide, 16 tall: avg_punctum (a width) is 12, notehead_height 16, so the
+    # top-head crop is 12 rows deep and reaches past the 10-row bar into the
+    # stem -- which is also what leaves Otsu some background to threshold.
+    punctum = Glyph(index=1, ulx=10, uly=20, nrows=16, ncols=12,
+                    class_name="neume.punctum", confidence=0.9, state="AUTOMATIC")
+    clivis = Glyph(index=2, ulx=ulx, uly=uly, nrows=nrows, ncols=ncols,
+                   class_name="neume.clivis4b", confidence=0.9, state="AUTOMATIC")
+
+    result = find_pitches([clef, punctum, clivis], staves, shapes, image=img)[2]
+    centers = [nc.center_y for nc in result.note_components]
+    print(f"clivis4b note centers {centers} vs bbox {uly}..{uly + nrows}; "
+          f"anchor region {result.anchor.region}")
+
+    assert result.anchor.region == "top"
+    assert result.anchor.interval == 0.0          # the crop IS note 1
+    assert [nc.interval_from_first for nc in result.note_components] == [0, -3]
+    # Every computed notehead inside the bbox it was measured from.
+    for y in centers:
+        assert uly <= y <= uly + nrows
+    # Note 1 on the bar (y=100-109), not down among the stems.
+    assert uly <= centers[0] <= uly + 12
+    # Note 2 lands on the foot's ink (y=129-140) -- and the anchor never looked
+    # at that ink, so this is an independent check on the whole placement.
+    assert uly + 29 <= centers[1] <= uly + 41
 
 
 def test_unmeasurable_ink_falls_back_to_geometry_and_says_so():

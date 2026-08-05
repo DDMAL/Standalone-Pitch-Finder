@@ -45,9 +45,9 @@ import numpy as np
 import clef_rules
 from ic_io import Glyph
 from staff_io import Stave
-from neume_shapes import NeumeShapeTable
-from glyph_pixels import (average_punctum, reference_point, ReferencePoint,
-                          REGION_TOP, REGION_BOTTOM_LEFT)
+from neume_shapes import NeumeShapeTable, SOURCE_CLASS_NAME
+from glyph_pixels import (average_punctum, notehead_height, reference_point,
+                          ReferencePoint, REGION_TOP, REGION_BOTTOM_LEFT)
 
 # How many extra diatonic steps beyond a stave's detected line span still
 # count as "on this stave" (notes routinely sit above/below the staff).
@@ -157,20 +157,24 @@ def _anchor_interval(region: str, intervals: list[int]) -> float:
     pitch per glyph). Decomposing a neume does, because every other note is
     placed relative to this one.
 
-      - bottom-left crop (podatus*, scandicus22b, torculus*): the ligature is
+      - bottom-left crop (the ascending ligatures -- podatus*, pescephalicus*,
+        scandicus*, torculus*): the ligature is
         drawn starting from its bottom-left head, so that crop lands on the
         neume's FIRST note -- interval 0 by definition. For the ascending
         ligatures the first note is also the lowest, so this reads the same as
         min(intervals); for a torculus it does not (torculus23 = [0, 1, -1]
         ends below where it started), and binding to the first note is what
         stays correct for both.
-      - top crop (virga): the notehead above the stem -- the HIGHEST note.
+      - top crop: the HIGHEST note -- the notehead above a virga's stem, and
+        the top-left head of a clivis, which descends and so has its first
+        note and its highest note in the same place.
       - full bbox: an ink centroid over the whole shape, which belongs to no
         single note. Best available reading is the middle of the note span,
         so a fractional interval is returned. Single-note classes collapse to
-        0 here, and multi-note ones (clivis, oblique -- the classes with no
-        crop rule of their own) get the honest midpoint rather than a pretend
-        notehead.
+        0 here, and `neume.oblique*` -- the one multi-note class left without a
+        crop rule -- gets the honest midpoint rather than a pretend notehead,
+        which for a symmetric diagonal parallelogram is what its centroid
+        actually is.
     """
     lo, hi = float(min(intervals)), float(max(intervals))
     if region == REGION_BOTTOM_LEFT:
@@ -195,16 +199,22 @@ def _decompose(glyph: Glyph, stave: Stave, shapes: NeumeShapeTable,
     (see approximate_unknown_shape below); this only returns None in the (now
     rare) case where the stave has no line coverage at the glyph's x at all.
     """
-    intervals = shapes.intervals_for(glyph.class_name)
+    intervals, source = shapes.intervals_with_source(glyph.class_name)
     approx_flags = []
     if intervals is None:
-        # Not pitchless (that was already ruled out before _decompose is
-        # called) but not in the neume-shape CSV either -- rather than
-        # refusing outright, fall back to treating it as a single note
-        # (same as punctum/custos) and flag it so this is never mistaken for
-        # a confident, CSV-backed decomposition.
+        # Neither in the neume-shape CSV nor decodable from the class name
+        # (pitchless classes were already ruled out before _decompose is
+        # called) -- rather than refusing outright, fall back to treating it
+        # as a single note (same as punctum/custos) and flag it so this is
+        # never mistaken for a confident, CSV-backed decomposition.
         intervals = [0]
         approx_flags = ["approximate_unknown_shape"]
+    elif source == SOURCE_CLASS_NAME:
+        # Decomposed, but off the class name rather than the CSV's MEI. Worth
+        # saying out loud: neume.distropha's unison is still an open question
+        # in the plan doc, and this is the flag that finds every glyph whose
+        # answer depends on it.
+        approx_flags = ["shape_from_class_name"]
 
     if ref is not None:
         placement = _anchor_from_pixels(glyph, stave, intervals, ref)
@@ -291,6 +301,10 @@ def find_pitches(glyphs: list[Glyph], staves: list[Stave], shapes: NeumeShapeTab
     # rather than anchor on a sliver of ink.
     avg_punctum = average_punctum(glyphs) if image is not None else 0.0
     use_pixel_anchor = image is not None and avg_punctum > 0
+    # How deep one notehead is on this page, which is what sizes the
+    # first-head crop. Falls back to avg_punctum (a *width*) inside
+    # reference_region when the page has no punctum or inclinatum to measure.
+    notehead_h = notehead_height(glyphs) if use_pixel_anchor else 0.0
 
     # Pass 1: stave assignment + anchoring/decomposition (clef-independent).
     for g in glyphs:
@@ -308,7 +322,7 @@ def find_pitches(glyphs: list[Glyph], staves: list[Stave], shapes: NeumeShapeTab
         ref, ref_flags = None, []
         if image is not None:
             if use_pixel_anchor:
-                ref = reference_point(image, g, avg_punctum)
+                ref = reference_point(image, g, avg_punctum, notehead_h=notehead_h)
             if ref is None:
                 # Too small to analyze, off-image, or no ink in the crop.
                 # Geometry still works; say so rather than anchoring on a
