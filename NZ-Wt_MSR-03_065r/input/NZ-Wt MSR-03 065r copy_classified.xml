@@ -1,0 +1,1941 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gamera-database version="2.0">
+  <glyphs>
+    <glyph uly="767" ulx="295" nrows="39" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.271408"/>
+      </ids>
+      <data>0 53 2 2 1 1 2 2 19 1 21 4 19 5 18 7 16 9 14 13 11 14 11 12 12 11 13 11 13 9 15 8 16 7 17 7 17 7 18 6 12 4 1 64 3 1 4 7 17 7 17 7 17 7 18 6 18 6 18 6 18 6 18 6 17 7 17 6 18 5 19 4 21 2 22 2 64</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6153846153846154</feature>
+        <feature name="volume">0.36538461538461536</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.17379127168793607</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.36666666666666664 0.8166666666666667 0.4666666666666667 0.2 0.21666666666666667 1.0 0.36666666666666664 0.1 0.2833333333333333 1.0 0.2 0.15 0.07407407407407407 0.5185185185185185 0.0 0.0</feature>
+        <feature name="hu_moment">0.3502242705357833 0.04863689006932611 0.002730051417755893 3.6571626590980835e-05 4.75899716626058e-09 -8.016235405208338e-06 1.0530411852539842e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="260" ulx="182" nrows="39" ncols="30">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.255299"/>
+      </ids>
+      <data>0 30 1 1 4 4 16 3 43 3 25 5 24 7 22 8 21 10 7 1 11 11 6 2 11 11 4 3 11 2 1 15 11 1 3 13 17 12 18 11 19 10 20 9 21 8 22 7 23 7 23 7 23 8 3 3 3 1 4 60 8 8 22 7 23 7 24 6 24 6 24 6 24 5 25 4 26 3 26 3 28 2 169</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7692307692307693</feature>
+        <feature name="volume">0.28205128205128205</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">30.0</feature>
+        <feature name="compactness">0.1518502318852168</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.2 0.7125 0.17142857142857143 0.2 0.0375 0.9625 0.3142857142857143 0.0 0.2 0.8625 0.24285714285714285 0.21428571428571427 0.0 0.16666666666666666 0.0 0.0</feature>
+        <feature name="hu_moment">0.3307346745693853 0.017072530303710542 0.0012732685535573863 0.0006830036458363613 -4.8632357902772016e-08 1.3703985508597466e-05 -6.350748098760345e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="765" ulx="390" nrows="42" ncols="21">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.260141"/>
+      </ids>
+      <data>0 21 52 1 18 4 16 5 14 8 13 8 12 12 9 14 8 12 9 11 10 10 11 9 12 9 13 8 13 8 13 8 13 8 2 1 3 40 2 1 6 8 13 8 13 8 13 8 13 8 14 7 14 7 14 7 14 7 14 6 15 6 15 6 15 5 16 4 17 3 18 2 19 1 55 42</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5</feature>
+        <feature name="volume">0.3866213151927438</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.15943674464021038</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.19696969696969696 0.6909090909090909 0.4727272727272727 0.14545454545454545 0.24242424242424243 1.0 0.7272727272727273 0.18181818181818182 0.0 0.88 0.56 0.0 0.2 0.56 0.26 0.2</feature>
+        <feature name="hu_moment">0.44345771660776934 0.12257841229572874 0.0031925151817262425 0.005096961613176618 2.0451345507852808e-05 0.0017778727014089012 -2.115738791962339e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="661" ulx="347" nrows="37" ncols="35">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis4a" confidence="0.277640"/>
+      </ids>
+      <data>103 2 23 3 7 2 8 3 11 4 7 2 7 20 6 2 5 22 6 2 4 23 6 2 3 28 1 52 5 8 6 2 4 8 7 7 8 1 5 7 7 7 8 1 5 7 7 7 8 1 5 7 7 7 8 1 5 7 7 6 9 1 5 7 7 6 15 7 7 8 5 1 7 7 6 10 3 1 8 7 6 13 9 7 5 13 10 7 6 12 10 7 6 10 12 7 8 7 13 7 9 4 15 7 10 2 16 7 10 2 16 7 28 7 28 6 24 37 1 6 2 1 28 1 169</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9459459459459459</feature>
+        <feature name="volume">0.372972972972973</feature>
+        <feature name="nrows_feature">37.0</feature>
+        <feature name="ncols_feature">35.0</feature>
+        <feature name="compactness">0.14857426617291272</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.3 0.5222222222222223 0.5777777777777777 0.3375 0.5185185185185185 0.35802469135802467 0.8024691358024691 0.1388888888888889 0.4444444444444444 0.345679012345679 0.6296296296296297 0.1527777777777778 0.32098765432098764 0.18518518518518517 0.1111111111111111 0.1111111111111111</feature>
+        <feature name="hu_moment">0.2990860011405716 0.0041021531224846785 0.001192094841578846 0.0003843434232457941 -2.4275717671875855e-07 -2.448154492621972e-05 -9.354318658181038e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="898" ulx="564" nrows="18" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.292690"/>
+      </ids>
+      <data>36 2 2 9 14 1 15 4 12 6 11 7 10 1 1 6 13 6 12 6 12 6 12 7 11 6 12 5 14 3 62</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.23148148148148148</feature>
+        <feature name="nrows_feature">18.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.763158641851261</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.12 0.36 0.2 0.0 0.08 0.92 0.35 0.0 0.0 0.8 0.5 0.0 0.0 0.15 0.0 0.0</feature>
+        <feature name="hu_moment">0.24712059259259256 0.013783749726112503 0.001825745048046431 0.0008574546889076669 5.176549627561333e-07 5.683973930464872e-05 9.396962048151916e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="881" ulx="323" nrows="31" ncols="16">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.341550"/>
+      </ids>
+      <data>39 3 12 4 11 6 9 8 8 10 2 16 5 10 6 9 7 8 8 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 10 7 10 5 11 5 11 4 13 2 56</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5161290322580645</feature>
+        <feature name="volume">0.3165322580645161</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">16.0</feature>
+        <feature name="compactness">0.4362558337280093</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.125 0.5625 0.59375 0.1875 0.0 0.75 0.6875 0.1875 0.0 0.78125 0.53125 0.0 0.0 0.39285714285714285 0.17857142857142858 0.0</feature>
+        <feature name="hu_moment">0.3564599848109496 0.07995323165167727 0.009512102688149988 0.0030053333185248426 1.6053606946409127e-05 0.0008486436729881198 -6.932907773119991e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="231" ulx="283" nrows="41" ncols="23">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.273193"/>
+      </ids>
+      <data>54 2 20 4 18 6 16 8 14 14 5 48 2 15 1 2 6 11 12 8 15 8 15 8 15 7 16 7 16 7 16 7 16 7 16 8 16 6 17 6 17 6 17 6 17 6 17 6 16 7 16 7 11 17 2 15 2 4 2 4 5 6 17 6 17 5 18 3 20 3 19 3 21 2 108</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5609756097560976</feature>
+        <feature name="volume">0.31283138918345704</feature>
+        <feature name="nrows_feature">41.0</feature>
+        <feature name="ncols_feature">23.0</feature>
+        <feature name="compactness">0.22843111132152127</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.30303030303030304 0.7272727272727273 0.4393939393939394 0.23636363636363636 0.15 1.0 0.06666666666666667 0.0 0.25 0.9666666666666667 0.15 0.16 0.11666666666666667 0.25 0.0 0.0</feature>
+        <feature name="hu_moment">0.37012056734135423 0.05520328447600504 0.0034766485110667633 0.0017878023688640235 1.3585589490080801e-06 0.00031092715866016374 -4.245082304950096e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="757" ulx="345" nrows="41" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.282795"/>
+      </ids>
+      <data>74 4 17 5 15 8 14 9 12 13 5 62 9 12 10 10 12 10 12 8 14 8 14 8 14 8 14 8 14 7 16 6 16 7 15 7 15 6 16 6 16 7 15 7 15 7 9 59 13 6 16 5 17 4 18 3 19 2 21 1 102</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5365853658536586</feature>
+        <feature name="volume">0.34700665188470065</feature>
+        <feature name="nrows_feature">41.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.2609593458572563</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.3333333333333333 0.6818181818181818 0.41818181818181815 0.2 0.15 1.0 0.32 0.0 0.3 1.0 0.36 0.2 0.0 0.35 0.0 0.0</feature>
+        <feature name="hu_moment">0.325751801843036 0.04386508869196191 0.0007393037962327176 0.000648108813481721 2.590155476231175e-07 0.00012017830603021528 -3.6629937585053215e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="255" ulx="585" nrows="25" ncols="31">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.288512"/>
+      </ids>
+      <data>217 7 24 7 109 1 28 2 28 2 16 2 9 2 16 4 7 2 17 6 3 4 17 7 2 3 19 10 22 7 24 5 26 3 117</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.24</feature>
+        <feature name="volume">0.09548387096774194</feature>
+        <feature name="nrows_feature">25.0</feature>
+        <feature name="ncols_feature">31.0</feature>
+        <feature name="compactness">0.3058260106500079</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.0 0.0 0.2916666666666667 0.0 0.0625 0.0 0.375 0.3541666666666667 0.14583333333333334 0.0 0.22916666666666666 0.08333333333333333 0.0 0.0</feature>
+        <feature name="hu_moment">0.6437353167630738 0.03052567032903205 0.35066947625961625 0.0718492222386994 -0.0063383256302695055 -0.006279297175800495 -0.009481125792230613</feature>
+      </features>
+    </glyph>
+    <glyph uly="617" ulx="493" nrows="38" ncols="20">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.272561"/>
+      </ids>
+      <data>50 2 16 5 14 6 13 7 12 9 11 11 9 54 7 9 11 8 12 7 13 7 14 6 13 7 13 7 13 7 14 6 14 6 14 6 14 6 14 6 13 7 13 7 13 7 13 7 13 7 8 39 6 5 15 4 17 1 92</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5263157894736842</feature>
+        <feature name="volume">0.35</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">20.0</feature>
+        <feature name="compactness">0.26774456402901453</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.1 0.58 0.6 0.22 0.1 0.78 0.7 0.08 0.0 0.7111111111111111 0.6 0.0 0.2 0.4222222222222222 0.24444444444444444 0.2222222222222222</feature>
+        <feature name="hu_moment">0.35536703069789355 0.06398267904961477 0.0006691265696564177 0.0009777056196190149 7.62561221828256e-07 0.00024294685469107317 -2.0943733645905914e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="391" ulx="257" nrows="38" ncols="38">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.328913"/>
+      </ids>
+      <data>126 3 7 3 21 17 20 19 17 21 16 22 16 22 16 22 16 22 16 7 7 8 16 7 7 8 16 7 7 8 16 7 7 7 17 7 7 7 17 8 6 7 17 7 7 8 5 2 5 12 1 23 1 77 4 8 5 13 12 7 7 10 14 7 9 6 16 7 9 5 17 7 10 3 18 7 11 1 19 7 31 7 31 6 33 4 34 3 35 2 221</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.33102493074792244</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">38.0</feature>
+        <feature name="compactness">0.2295152026222477</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.28 0.63 0.4222222222222222 0.0 0.68 0.51 0.7 0.2111111111111111 0.6444444444444445 0.26666666666666666 0.5061728395061729 0.12345679012345678 0.16666666666666666 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.2520198808680304 0.002634776837146529 0.003927212144451899 0.00038420867259277393 -3.0716563256924484e-07 -1.5655055978493672e-05 3.5830564347708613e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="96" ulx="278" nrows="38" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.258875"/>
+      </ids>
+      <data>76 2 19 4 16 6 15 9 12 11 4 1 6 16 1 44 6 11 11 9 13 8 14 8 14 8 14 7 15 7 15 7 15 8 14 9 13 9 13 9 13 8 14 8 14 8 15 7 15 6 16 6 15 13 4 43 6 3 19 2 102</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5789473684210527</feature>
+        <feature name="volume">0.35526315789473684</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.26108188044786207</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.13333333333333333 0.5666666666666667 0.38 0.2 0.1 1.0 0.48 0.1 0.0 0.9444444444444444 0.4222222222222222 0.0 0.2037037037037037 0.42592592592592593 0.3333333333333333 0.26666666666666666</feature>
+        <feature name="hu_moment">0.3222853833562491 0.04082179768567128 0.00028551098198145746 0.0005468210517644653 1.663499869614587e-07 8.078871395139006e-05 -1.3787912702921866e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="502" ulx="347" nrows="39" ncols="23">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.297275"/>
+      </ids>
+      <data>56 1 20 4 18 5 16 8 14 10 13 11 12 16 7 15 8 14 10 12 11 11 12 8 15 8 15 8 15 8 10 1 1 1 1 12 1 44 5 3 5 7 16 7 16 7 16 7 16 7 16 6 17 6 17 6 17 6 17 5 18 4 19 3 20 2 21 2 112 1 1 7 1 2 2 5</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5897435897435898</feature>
+        <feature name="volume">0.3232998885172798</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">23.0</feature>
+        <feature name="compactness">0.290638302156318</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.15 0.6666666666666666 0.3 0.06 0.4 1.0 0.55 0.26 0.16666666666666666 0.9 0.0 0.0 0.09259259259259259 0.24074074074074073 0.05555555555555555 0.1111111111111111</feature>
+        <feature name="hu_moment">0.32917610398130304 0.03781512108577197 0.0041017245974829825 0.008684293113784592 4.38076341338525e-05 0.0014756020694323493 -2.7699936492669335e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="618" ulx="436" nrows="39" ncols="35">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.300299"/>
+      </ids>
+      <data>93 3 30 6 28 7 27 8 26 10 24 12 16 90 23 10 26 8 27 8 27 7 20 1 7 7 28 7 17 3 8 7 16 9 3 7 15 20 14 21 13 22 15 12 1 7 18 8 2 7 21 4 3 7 22 2 4 7 28 7 28 7 18 3 1 60 2 13 1 8 1 1 25 7 28 6 29 5 30 4 32 2 118</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8974358974358975</feature>
+        <feature name="volume">0.32967032967032966</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">35.0</feature>
+        <feature name="compactness">0.1427698151396058</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.1 0.2 0.6666666666666666 0.2375 0.16666666666666666 0.3111111111111111 0.8555555555555555 0.05 0.23333333333333334 0.6444444444444445 0.8444444444444444 0.2 0.08641975308641975 0.1111111111111111 0.3950617283950617 0.013888888888888888</feature>
+        <feature name="hu_moment">0.28760531138545964 0.0036927400886216594 0.0022628168621651344 9.458748554132462e-05 3.633678369079808e-08 -5.638872994280655e-06 2.4383546230590998e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="880" ulx="420" nrows="28" ncols="16">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.288876"/>
+      </ids>
+      <data>38 3 12 4 11 6 10 6 9 9 4 15 5 9 7 8 8 7 9 6 10 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 11 5 10 6 1 1 9 3 57</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5714285714285714</feature>
+        <feature name="volume">0.3080357142857143</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">16.0</feature>
+        <feature name="compactness">0.5087327647915791</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.03571428571428571 0.6071428571428571 0.35714285714285715 0.0 0.14285714285714285 1.0 0.6785714285714286 0.14285714285714285 0.0 1.0 0.25 0.0 0.03571428571428571 0.5357142857142857 0.14285714285714285 0.0</feature>
+        <feature name="hu_moment">0.32480312563734937 0.06297219629481421 0.005558944684055855 0.0018152375550905553 5.7251174726743935e-06 0.0004542855826882679 -6.878333124711131e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="640" ulx="312" nrows="38" ncols="36">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.271270"/>
+      </ids>
+      <data>164 3 19 7 5 5 18 19 17 19 15 22 4 1 2 2 2 68 2 2 2 22 15 7 3 11 15 7 6 8 15 7 7 6 16 7 7 6 16 7 7 6 16 7 6 8 4 1 10 7 6 9 1 3 10 7 5 13 11 6 6 12 12 6 7 10 13 6 8 7 15 6 9 5 16 6 10 3 17 6 11 2 17 6 30 6 30 6 30 6 28 68 1 2 2 4 210</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9473684210526315</feature>
+        <feature name="volume">0.3435672514619883</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">36.0</feature>
+        <feature name="compactness">0.14457537288047403</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.28888888888888886 0.4444444444444444 0.4 0.13333333333333333 0.7111111111111111 0.4777777777777778 0.7222222222222222 0.12222222222222222 0.6666666666666666 0.07407407407407407 0.4074074074074074 0.0 0.3333333333333333 0.2222222222222222 0.2222222222222222 0.20987654320987653</feature>
+        <feature name="hu_moment">0.3033175500611618 0.00029418020689806027 0.0002564613599945831 0.001504994615916706 -4.4486493725875786e-07 -2.5551789723586072e-05 8.223912388702933e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="880" ulx="443" nrows="30" ncols="17">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.318160"/>
+      </ids>
+      <data>42 2 13 4 12 6 10 8 9 10 1 2 4 10 1 2 4 9 3 1 5 7 4 1 5 6 5 1 5 5 12 5 12 5 6 1 5 5 12 5 12 5 12 5 12 5 12 5 12 5 12 5 12 5 5 1 1 1 3 7 4 1 6 4 13 3 15 1 61</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5666666666666667</feature>
+        <feature name="volume">0.2901960784313726</feature>
+        <feature name="nrows_feature">30.0</feature>
+        <feature name="ncols_feature">17.0</feature>
+        <feature name="compactness">0.439631435646634</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.075 0.625 0.46875 0.1875 0.025 1.0 0.4375 0.125 0.0 1.0 0.25 0.03571428571428571 0.05714285714285714 0.42857142857142855 0.07142857142857142 0.03571428571428571</feature>
+        <feature name="hu_moment">0.3581275418040392 0.06390953154633262 0.0055672499903704166 0.0022153059239757335 4.432059187681667e-06 0.0004731688794258875 -6.393968572726562e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="900" ulx="539" nrows="17" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.213314"/>
+      </ids>
+      <data>13 6 4 1 41 3 14 5 13 6 12 7 4 1 6 8 2 2 7 1 2 8 11 7 12 5 15 3 16 2 48 18 20</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1176470588235294</feature>
+        <feature name="volume">0.25696594427244585</feature>
+        <feature name="nrows_feature">17.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.3585470270000427</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.04 0.24 0.16 0.2 0.2 0.95 0.45 0.0625 0.0 0.65 0.2 0.0 0.25 0.25 0.25 0.1875</feature>
+        <feature name="hu_moment">0.4107333674952386 0.011532172809213254 0.006081690381721671 0.003325854348721146 -1.2442850622262437e-05 -0.00031200596682228723 -8.301234683895675e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="884" ulx="511" nrows="32" ncols="17">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.288967"/>
+      </ids>
+      <data>22 1 52 3 13 5 11 6 10 8 9 9 8 10 7 10 8 8 9 6 11 6 11 6 11 6 11 6 10 12 5 7 11 5 12 5 12 5 12 5 11 6 12 5 12 5 12 4 13 3 15 1 60 1</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.53125</feature>
+        <feature name="volume">0.28308823529411764</feature>
+        <feature name="nrows_feature">32.0</feature>
+        <feature name="ncols_feature">17.0</feature>
+        <feature name="compactness">0.4955533103560472</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.025 0.4375 0.25 0.0 0.075 1.0 0.75 0.0625 0.075 1.0 0.40625 0.09375 0.0 0.5 0.0625 0.03125</feature>
+        <feature name="hu_moment">0.31821741254191915 0.06078971175217468 0.001265613661757486 0.0014313015207781487 1.6010286775249844e-06 0.00034594640536254336 -1.071325309409495e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="875" ulx="205" nrows="37" ncols="31">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus3" confidence="0.286691"/>
+      </ids>
+      <data>48 3 27 5 25 7 24 9 22 12 19 13 18 12 19 11 20 10 21 7 24 6 25 6 22 1 2 6 12 2 1 1 2 1 1 11 1 2 1 1 2 3 10 1 4 5 20 2 4 5 19 2 5 5 19 2 5 5 18 4 4 5 17 4 5 5 16 7 3 5 15 16 15 16 16 15 18 13 20 11 25 6 25 6 25 5 12 13 1 11 1 1 3 1 14 5 26 4 28 2 107</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8378378378378378</feature>
+        <feature name="volume">0.27114210985178727</feature>
+        <feature name="nrows_feature">37.0</feature>
+        <feature name="ncols_feature">31.0</feature>
+        <feature name="compactness">0.23317716966961036</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.0875 0.775 0.18571428571428572 0.041666666666666664 0.3194444444444444 0.6111111111111112 0.06349206349206349 0.25 0.7361111111111112 0.5 0.0 0.1111111111111111 0.2222222222222222 0.2916666666666667 0.047619047619047616</feature>
+        <feature name="hu_moment">0.34817039802653105 0.04275603786494278 0.0045276537740131665 0.00011995243695793202 4.889448349272803e-08 1.9363829974378125e-05 7.364656011048253e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="641" ulx="163" nrows="47" ncols="37">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus3" confidence="0.492298"/>
+      </ids>
+      <data>135 3 32 5 31 7 29 8 28 12 25 17 1 74 5 3 11 15 23 12 25 9 28 8 29 8 29 8 29 8 29 8 30 7 29 8 30 7 30 7 30 7 20 1 9 7 19 2 9 7 18 2 10 7 17 2 11 7 16 5 9 7 15 12 3 8 8 74 2 35 3 25 20 8 2 8 22 4 3 8 29 7 30 7 31 6 31 5 32 4 33 3 34 2 161</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7872340425531915</feature>
+        <feature name="volume">0.2898217366302473</feature>
+        <feature name="nrows_feature">47.0</feature>
+        <feature name="ncols_feature">37.0</feature>
+        <feature name="compactness">0.15646896555041573</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.19166666666666668 0.16666666666666666 0.6296296296296297 0.32407407407407407 0.0 0.0 0.8518518518518519 0.046296296296296294 0.375 0.5740740740740741 0.8518518518518519 0.2777777777777778 0.0 0.0 0.3434343434343434 0.0</feature>
+        <feature name="hu_moment">0.3557691778945559 0.011366992346517267 0.0025872597200566985 0.0010145092561831132 -6.894579903223393e-07 -8.789843167361426e-05 1.492034497868966e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="881" ulx="362" nrows="29" ncols="15">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.296545"/>
+      </ids>
+      <data>36 4 10 5 9 7 8 7 7 12 4 10 5 8 7 7 8 6 9 6 9 6 9 6 9 6 9 6 9 6 9 6 9 6 9 6 9 5 10 5 10 5 10 6 1 2 6 4 11 2 13 2 39</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5172413793103449</feature>
+        <feature name="volume">0.3471264367816092</feature>
+        <feature name="nrows_feature">29.0</feature>
+        <feature name="ncols_feature">15.0</feature>
+        <feature name="compactness">0.5139275244876355</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.03125 0.65625 0.5625 0.20833333333333334 0.0 1.0 0.6071428571428571 0.0 0.0 1.0 0.42857142857142855 0.0 0.0 0.5714285714285714 0.14285714285714285 0.047619047619047616</feature>
+        <feature name="hu_moment">0.32937907045438636 0.07177305850943716 0.0023894078762917077 0.001105892907984584 1.690054769022773e-06 0.00028744992976339963 -6.12701807184941e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="249" ulx="329" nrows="44" ncols="26">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.259318"/>
+      </ids>
+      <data>116 2 22 5 19 7 17 9 16 10 15 12 10 23 3 26 2 1 4 15 11 14 12 13 13 12 15 9 17 8 18 8 18 8 18 8 18 8 18 8 18 8 18 8 18 8 18 7 20 6 20 6 19 7 19 7 11 15 11 56 4 7 19 6 20 5 21 4 22 3 24 2 119</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5909090909090909</feature>
+        <feature name="volume">0.3155594405594406</feature>
+        <feature name="nrows_feature">44.0</feature>
+        <feature name="ncols_feature">26.0</feature>
+        <feature name="compactness">0.23475306687310168</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.16883116883116883 0.5194805194805194 0.18181818181818182 0.045454545454545456 0.1038961038961039 0.922077922077922 0.6363636363636364 0.13636363636363635 0.18181818181818182 0.8571428571428571 0.30303030303030304 0.09090909090909091 0.14285714285714285 0.42857142857142855 0.10606060606060606 0.09090909090909091</feature>
+        <feature name="hu_moment">0.3329011948995068 0.04018252716134589 0.0004969056966017695 0.0006036899314255657 1.9788159402256107e-07 0.00012036559816310044 -2.648904304766716e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="522" ulx="174" nrows="42" ncols="39">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.285731"/>
+      </ids>
+      <data>0 39 14 5 37 2 71 5 7 3 21 11 3 4 19 20 18 21 17 22 16 23 16 23 16 8 1 14 16 7 5 11 16 7 9 7 16 7 9 7 16 7 9 7 16 7 8 7 17 7 8 7 17 7 8 7 5 3 8 15 1 113 1 19 7 8 7 11 14 6 10 8 15 6 11 4 18 6 11 4 18 6 12 2 19 6 33 6 33 6 33 5 34 4 35 3 36 2 274 1 4 4 2 13 3 5</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9285714285714286</feature>
+        <feature name="volume">0.34676434676434675</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">39.0</feature>
+        <feature name="compactness">0.13728365433033599</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.3181818181818182 0.7454545454545455 0.4727272727272727 0.09090909090909091 0.6818181818181818 0.4727272727272727 0.7545454545454545 0.30303030303030304 0.64 0.12 0.37 0.05555555555555555 0.1 0.06 0.1 0.06666666666666667</feature>
+        <feature name="hu_moment">0.30951296202128453 0.00013183284056619046 0.0001949592874368756 0.0020828576791076074 6.849178871319635e-07 -4.378550583858817e-06 1.136903696064737e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="507" ulx="113" nrows="36" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.273076"/>
+      </ids>
+      <data>97 7 14 10 10 13 8 14 7 14 8 13 9 6 2 4 10 6 4 1 11 6 16 6 3 6 1 2 4 18 4 18 4 18 4 15 7 13 9 12 10 6 3 2 11 6 16 6 16 6 16 6 16 5 17 5 17 5 17 5 17 5 17 5 17 5 17 4 18 3 14 1 4 2 14 2 7 15</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6111111111111112</feature>
+        <feature name="volume">0.37373737373737376</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.2483153175333341</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.05555555555555555 0.46296296296296297 0.5333333333333333 0.13333333333333333 0.3333333333333333 0.8518518518518519 0.7555555555555555 0.4666666666666667 0.3333333333333333 0.7037037037037037 0.24444444444444444 0.0 0.2962962962962963 0.42592592592592593 0.1111111111111111 0.17777777777777778</feature>
+        <feature name="hu_moment">0.3275717180497701 0.034391302637460416 0.002368644412433512 0.005812301544667161 1.769898145740364e-05 0.0008242340343039359 -1.2322493689329387e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="392" ulx="130" nrows="36" ncols="38">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.375720"/>
+      </ids>
+      <data>121 7 7 2 21 17 19 20 18 20 18 19 6 1 12 20 5 3 9 21 5 4 8 7 7 7 6 3 8 7 7 6 8 1 9 7 7 6 18 7 7 6 18 7 7 5 20 6 7 6 18 7 6 8 4 2 8 11 3 100 3 8 4 11 3 3 10 6 6 8 17 6 8 5 19 6 9 3 20 6 10 1 21 6 32 6 32 6 28 1 3 6 28 1 3 4 34 3 35 3 184</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0555555555555556</feature>
+        <feature name="volume">0.3230994152046784</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">38.0</feature>
+        <feature name="compactness">0.185836627819784</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.34444444444444444 0.6 0.24691358024691357 0.04938271604938271 0.7222222222222222 0.43333333333333335 0.4444444444444444 0.2222222222222222 0.7 0.4 0.38271604938271603 0.25925925925925924 0.24444444444444444 0.0 0.0 0.024691358024691357</feature>
+        <feature name="hu_moment">0.29072398190045246 0.006899496965186746 0.009247288375235722 0.001396110512569377 6.875448243909561e-07 -4.653527660282792e-06 4.968998009747392e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="390" ulx="211" nrows="40" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.246705"/>
+      </ids>
+      <data>2 22 32 3 20 4 18 6 17 8 16 10 14 12 12 14 10 13 11 11 13 11 13 11 4 3 6 10 6 3 5 9 7 3 5 9 15 9 16 8 15 10 10 1 2 69 4 10 5 1 8 9 15 8 16 8 16 8 16 7 18 6 18 5 19 5 19 4 20 4 20 3 160</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6</feature>
+        <feature name="volume">0.35104166666666664</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.2437672869315539</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.25 0.8 0.38333333333333336 0.1 0.35 1.0 0.38333333333333336 0.25 0.43333333333333335 0.9333333333333333 0.25 0.21666666666666667 0.06666666666666667 0.2 0.0 0.0</feature>
+        <feature name="hu_moment">0.280025113427299 0.01955488696030846 0.0012714628488472498 0.0001744624290286371 -3.579566829740029e-08 -7.010594933405677e-07 -7.396155986851607e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="239" ulx="212" nrows="72" ncols="14">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maxima" confidence="0.276305"/>
+      </ids>
+      <data>0 25 11 1 12 2 12 2 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 10 4 10 4 5 28 4 6 9 4 10 4 10 4 10 4 10 4 10 4 10 4 10 4 10 5 9 5 9 4 10 4 10 4 11 3 11 3 11 3 11 3 11 3 11 4 4 28 6 4 10 3 11 3 11 3 11 3 10 4 10 4 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 7 26 6 4 11 2 12 1 62</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.19444444444444445</feature>
+        <feature name="volume">0.30257936507936506</feature>
+        <feature name="nrows_feature">72.0</feature>
+        <feature name="ncols_feature">14.0</feature>
+        <feature name="compactness">0.09610813813679739</feature>
+        <feature name="nholes">6.0</feature>
+        <feature name="volume16regions">0.1111111111111111 0.5 0.4074074074074074 0.05555555555555555 0.1111111111111111 0.7916666666666666 0.46296296296296297 0.1111111111111111 0.1111111111111111 0.5833333333333334 0.4444444444444444 0.1111111111111111 0.08333333333333333 0.4166666666666667 0.3333333333333333 0.1111111111111111</feature>
+        <feature name="hu_moment">1.2971754992708642 1.5798193314974276 0.0001903905938017376 7.926586887916104e-05 9.212753046266869e-09 9.689672119217328e-05 3.153743919041368e-09</feature>
+      </features>
+    </glyph>
+    <glyph uly="263" ulx="547" nrows="38" ncols="21">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.235126"/>
+      </ids>
+      <data>0 21 12 9 29 2 18 3 16 6 14 8 12 9 12 12 9 14 7 13 9 10 11 10 11 9 12 8 13 7 5 1 8 7 5 2 7 7 14 7 11 11 4 1 4 42 4 8 13 7 14 7 14 7 14 7 14 7 14 7 14 6 15 5 16 5 16 4 17 3 19 1 78</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5526315789473685</feature>
+        <feature name="volume">0.36716791979949875</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.21725201917292367</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.3 0.7 0.4 0.22 0.4 1.0 0.3 0.08 0.48148148148148145 1.0 0.24444444444444444 0.2222222222222222 0.2037037037037037 0.28888888888888886 0.0 0.0</feature>
+        <feature name="hu_moment">0.3320642717507369 0.049181361603915605 0.00042881722815619653 0.0003490707075849161 2.7589255335232494e-08 3.3075311337681436e-05 -1.3220556962305325e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="636" ulx="111" nrows="42" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="clef.f2" confidence="0.206521"/>
+      </ids>
+      <data>73 1 44 8 18 11 15 13 13 15 11 16 10 16 11 14 13 7 3 3 14 7 20 7 9 6 5 22 5 22 5 17 10 15 12 14 13 13 14 7 20 6 21 6 21 6 21 6 21 6 21 6 21 6 21 6 21 6 14 2 5 5 14 3 5 5 12 5 5 4 12 6 5 2 13 7 20 7 4 23 3 24 21 6 22 5 22 5 22 5 22 5</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6428571428571429</feature>
+        <feature name="volume">0.35890652557319225</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.16923950508789018</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.06493506493506493 0.5584415584415584 0.5714285714285714 0.030303030303030304 0.2857142857142857 0.8571428571428571 0.5064935064935064 0.2878787878787879 0.2857142857142857 0.5428571428571428 0.0 0.16666666666666666 0.15714285714285714 0.22857142857142856 0.22857142857142856 0.9333333333333333</feature>
+        <feature name="hu_moment">0.396424795847672 0.0410324206456366 0.009167613562983082 0.007079701082813862 5.616966593568928e-05 0.001026094076371888 9.904340564888541e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="768" ulx="135" nrows="37" ncols="33">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.387170"/>
+      </ids>
+      <data>0 2 2 29 140 6 5 3 17 17 15 18 14 19 14 19 14 19 15 6 2 10 10 3 2 6 5 7 10 4 1 6 5 7 10 2 3 6 6 6 10 1 4 6 6 6 15 6 6 4 17 6 6 4 15 1 1 7 4 6 6 2 3 66 5 6 3 12 12 6 3 12 12 6 4 8 15 6 5 6 16 6 6 4 17 6 7 2 18 6 27 6 27 6 28 4 29 2 30 2 31 2 125</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8918918918918919</feature>
+        <feature name="volume">0.34234234234234234</feature>
+        <feature name="nrows_feature">37.0</feature>
+        <feature name="ncols_feature">33.0</feature>
+        <feature name="compactness">0.1562926251214049</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.2777777777777778 0.5625 0.4375 0.1 0.5925925925925926 0.4444444444444444 0.6805555555555556 0.027777777777777776 0.5679012345679012 0.5416666666666666 0.6805555555555556 0.25 0.20987654320987653 0.06944444444444445 0.0 0.0</feature>
+        <feature name="hu_moment">0.27264755712057254 0.0016599902045451418 0.0005825351959291539 0.0002065932861588794 -1.4807169286478723e-08 4.083259605476721e-06 -7.012338412093728e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="768" ulx="571" nrows="54" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.255365"/>
+      </ids>
+      <data>42 1 12 1 12 1 12 2 11 2 11 2 11 2 8 28 1 3 10 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 3 10 2 12 1 12 1 11 2 11 3 11 2 7 1 2 3 7 23 7 2 11 2 11 2 11 2 11 2 12 1 12 1 12 1 12 1 12 1 12 1 12 1 12 1 12 1 12 1 12 1 12 1 33 12 14</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.24074074074074073</feature>
+        <feature name="volume">0.19515669515669515</feature>
+        <feature name="nrows_feature">54.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.1317448972093366</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.3392857142857143 0.30952380952380953 0.14285714285714285 0.14285714285714285 0.21428571428571427 0.35714285714285715 0.0 0.0 0.21153846153846154 0.6410256410256411 0.15384615384615385 0.07692307692307693 0.07692307692307693 0.3076923076923077 0.07692307692307693 0.05128205128205128</feature>
+        <feature name="hu_moment">1.46668621538933 1.8566010216918027 0.4648411334076699 0.4273914880738183 0.19003794400445892 0.5789171789977797 -0.013235475441201551</feature>
+      </features>
+    </glyph>
+    <glyph uly="869" ulx="341" nrows="32" ncols="15">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.334454"/>
+      </ids>
+      <data>53 2 12 3 10 6 8 8 7 9 6 10 5 8 7 7 9 6 9 6 9 6 9 6 9 6 9 6 9 5 10 6 4 12 8 5 10 6 9 6 9 5 10 6 9 5 10 3 13 1 68</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.46875</feature>
+        <feature name="volume">0.3104166666666667</feature>
+        <feature name="nrows_feature">32.0</feature>
+        <feature name="ncols_feature">15.0</feature>
+        <feature name="compactness">0.4501868640939758</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.375 0.46875 0.041666666666666664 0.0 0.84375 0.8125 0.08333333333333333 0.125 0.78125 0.6875 0.0 0.0 0.3125 0.15625 0.0</feature>
+        <feature name="hu_moment">0.3139395438079608 0.06366316225879884 0.00046777813924219847 0.0002619466048217572 8.788013345106612e-08 6.607808491781613e-05 2.6168725759157573e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="105" ulx="302" nrows="40" ncols="20">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.257083"/>
+      </ids>
+      <data>0 40 28 2 16 4 15 6 13 7 13 8 11 9 11 10 10 14 6 13 8 11 9 10 10 9 11 8 13 7 13 6 14 6 14 6 13 8 3 45 5 6 8 1 5 6 14 6 14 6 14 6 13 7 13 7 13 7 13 6 14 5 15 4 16 3 17 3 17 2 74</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5</feature>
+        <feature name="volume">0.38</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">20.0</feature>
+        <feature name="compactness">0.18270860306485956</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.32 0.82 0.38 0.2 0.16 1.0 0.58 0.06 0.26 1.0 0.38 0.32 0.14 0.44 0.02 0.0</feature>
+        <feature name="hu_moment">0.36721341257836426 0.06984019219593417 0.0018277985246548862 2.7716800387112214e-07 4.644331989641208e-12 4.127761616936141e-08 4.1651909699834175e-12</feature>
+      </features>
+    </glyph>
+    <glyph uly="890" ulx="391" nrows="28" ncols="16">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.267458"/>
+      </ids>
+      <data>8 1 13 4 11 5 10 7 9 9 7 9 7 8 8 8 8 6 11 5 11 5 11 5 11 5 10 7 9 7 9 6 11 5 11 5 11 5 11 5 11 5 11 4 13 2 13 2 73</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5714285714285714</feature>
+        <feature name="volume">0.29017857142857145</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">16.0</feature>
+        <feature name="compactness">0.5094478244598147</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.75 0.7142857142857143 0.07142857142857142 0.0 0.8571428571428571 0.6071428571428571 0.0 0.0 0.8214285714285714 0.5357142857142857 0.0 0.0 0.25 0.03571428571428571 0.0</feature>
+        <feature name="hu_moment">0.318893946290396 0.07049687395958702 0.0022875144778934345 0.0009145393667382762 1.317975791717952e-06 0.00024240104174260232 -1.1256074773437487e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="881" ulx="234" nrows="31" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.289710"/>
+      </ids>
+      <data>62 1 16 3 14 5 12 7 10 12 2 18 5 10 8 9 9 8 10 6 12 6 12 6 12 6 12 6 12 6 13 5 13 5 13 5 13 5 13 5 13 5 8 3 2 10 1 1 6 4 14 3 15 2 17 1 46</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5806451612903226</feature>
+        <feature name="volume">0.2921146953405018</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.42503468124375776</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.025 0.45 0.21875 0.0625 0.125 1.0 0.59375 0.15625 0.0 0.85 0.25 0.0 0.08571428571428572 0.4 0.14285714285714285 0.10714285714285714</feature>
+        <feature name="hu_moment">0.3282759302263558 0.04902347763075145 0.003749144497297814 0.0019168356371002501 4.755105627641414e-06 0.0004045451408927169 -1.9478215818964925e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="637" ulx="402" nrows="42" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.275793"/>
+      </ids>
+      <data>75 2 18 5 16 6 15 8 13 10 12 12 10 14 5 43 5 11 11 9 13 8 14 8 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 14 39 4 8 16 3 19 2 146</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5238095238095238</feature>
+        <feature name="volume">0.3170995670995671</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.28883284831079425</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.18181818181818182 0.6515151515151515 0.3090909090909091 0.10909090909090909 0.15151515151515152 1.0 0.34545454545454546 0.09090909090909091 0.016666666666666666 1.0 0.28 0.1 0.13333333333333333 0.2833333333333333 0.1 0.1</feature>
+        <feature name="hu_moment">0.34802936197562856 0.05755088465134856 0.0007716239874037898 0.0012994354763966 7.983786930393223e-07 0.00026872644520670055 -1.0274443196384624e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="760" ulx="513" nrows="42" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.218772"/>
+      </ids>
+      <data>0 40 2 3 59 1 22 4 19 5 18 7 16 10 14 15 9 15 9 14 10 13 12 11 13 9 15 8 16 7 17 7 17 7 16 68 5 7 17 7 18 6 18 6 18 6 18 6 18 6 18 6 18 6 18 6 18 6 18 6 18 3 21 3 21 3 22 1 72 40</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5714285714285714</feature>
+        <feature name="volume">0.36507936507936506</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.12320998594373116</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.2878787878787879 0.696969696969697 0.36363636363636365 0.16666666666666666 0.36363636363636365 1.0 0.5454545454545454 0.2727272727272727 0.03333333333333333 1.0 0.0 0.0 0.1 0.5333333333333333 0.2 0.2</feature>
+        <feature name="hu_moment">0.4492428289635901 0.09709416611391915 0.004718629257778464 0.005759540974632261 2.5256060790071954e-05 0.001476900316338024 -1.6237608174810152e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="889" ulx="295" nrows="17" ncols="21">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.234969"/>
+      </ids>
+      <data>51 1 19 3 16 5 15 6 14 7 14 7 5 1 7 2 1 5 2 3 11 8 13 7 14 5 16 4 74 9 12</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2352941176470589</feature>
+        <feature name="volume">0.20448179271708683</feature>
+        <feature name="nrows_feature">17.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.4752377077567685</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.36 0.0 0.0 0.2916666666666667 1.0 0.15 0.05 0.0 0.95 0.25 0.0 0.25 0.15 0.0 0.0</feature>
+        <feature name="hu_moment">0.30350858702833033 0.013436673684886094 0.014304207399218519 0.005949287920895311 5.042763315679524e-05 0.0006854579699657257 -2.165825760827526e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="774" ulx="118" nrows="35" ncols="21">
+      <ids state="AUTOMATIC">
+        <id name="clef.c" confidence="0.198944"/>
+      </ids>
+      <data>0 2 19 2 19 2 19 3 18 3 6 4 8 3 5 9 4 3 3 14 1 2 3 18 3 14 2 3 1 7 1 6 3 2 2 6 5 2 4 2 2 6 11 3 1 12 4 4 1 20 1 20 1 13 4 3 1 12 5 3 1 11 6 3 2 6 10 3 2 5 11 3 2 6 10 3 2 6 10 3 2 6 10 3 2 6 10 3 2 5 11 3 2 6 10 2 3 6 10 2 3 6 10 2 3 6 10 2 3 5 11 2 3 4 12 2 4 2 13 2 19 2 6 1 12 2 5 14</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6</feature>
+        <feature name="volume">0.4707482993197279</feature>
+        <feature name="nrows_feature">35.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.13838524504386523</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.4444444444444444 0.4444444444444444 0.4888888888888889 0.28888888888888886 0.7962962962962963 0.9555555555555556 0.7555555555555555 0.3333333333333333 0.6481481481481481 0.9555555555555556 0.0 0.0 0.4166666666666667 0.6 0.125 0.125</feature>
+        <feature name="hu_moment">0.2970771915498664 0.01858037351304824 0.0034552014748811346 0.001329220307714895 2.171134714171251e-06 0.00014935696432137268 -1.8441044023797479e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="894" ulx="488" nrows="20" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.289997"/>
+      </ids>
+      <data>54 1 19 4 18 4 16 6 15 8 4 1 9 8 3 4 3 12 1 5 6 2 1 7 1 3 11 10 12 8 14 7 15 6 16 5 17 3 101</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1</feature>
+        <feature name="volume">0.23636363636363636</feature>
+        <feature name="nrows_feature">20.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.5064458891403839</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.3 0.0 0.0 0.3 1.0 0.44 0.24 0.0 0.9666666666666667 0.28 0.0 0.0 0.1 0.0 0.0</feature>
+        <feature name="hu_moment">0.2134711396222121 0.0018516851369111203 0.0017875480532787164 0.00022456442791603568 1.4128501167793558e-07 9.462417705363367e-06 -1.6787286849371207e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="499" ulx="520" nrows="20" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis3b" confidence="0.225150"/>
+      </ids>
+      <data>0 15 1 3 5 1 18 1 18 1 4 2 11 1 3 4 11 1 2 5 13 7 11 8 10 9 10 1 1 7 12 7 12 8 2 1 8 10 9 9 11 6 13 5 15 2 17 1 29 19</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.95</feature>
+        <feature name="volume">0.3526315789473684</feature>
+        <feature name="nrows_feature">20.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.2930811089913382</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.24 0.4 0.36 0.15 0.12 0.84 0.56 0.0 0.0 0.76 0.8 0.1 0.2 0.44 0.28 0.2</feature>
+        <feature name="hu_moment">0.35509271419689253 0.026868970194178825 0.00024591754888208915 2.039025077555058e-05 -1.3188185213750009e-10 -8.611308898777842e-07 -1.4378361281878173e-09</feature>
+      </features>
+    </glyph>
+    <glyph uly="789" ulx="548" nrows="23" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.281449"/>
+      </ids>
+      <data>108 2 20 4 18 6 17 8 16 8 15 10 7 1 5 59 3 2 6 1 5 7 1 3 13 10 14 8 17 6 18 5 19 3 22 2 83</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0434782608695652</feature>
+        <feature name="volume">0.26268115942028986</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.37142007260577997</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.05555555555555555 0.1111111111111111 0.0 0.19444444444444445 0.8888888888888888 0.6666666666666666 0.3611111111111111 0.19444444444444445 0.5277777777777778 0.75 0.1388888888888889 0.0 0.1 0.06666666666666667 0.0</feature>
+        <feature name="hu_moment">0.2323834515560294 0.007642492028250543 7.9294563260044e-05 1.4409467156675204e-06 8.217506051552312e-13 1.2588482771069796e-07 1.538064764463624e-11</feature>
+      </features>
+    </glyph>
+    <glyph uly="876" ulx="460" nrows="42" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus4" confidence="0.244107"/>
+      </ids>
+      <data>71 2 24 4 22 5 21 7 20 7 19 12 16 11 16 11 2 1 2 1 4 17 16 8 19 7 20 6 21 6 21 6 21 6 21 6 21 6 21 6 22 5 23 4 23 4 23 4 22 4 22 6 21 6 22 5 22 5 22 4 23 4 24 3 24 3 11 2 2 2 5 4 12 8 3 3 13 14 14 12 17 10 21 4 69 2 2 7 2 2 1 1 3 2 3</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6428571428571429</feature>
+        <feature name="volume">0.23368606701940034</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.2271368086340885</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.025974025974025976 0.09090909090909091 0.6883116883116883 0.24242424242424243 0.0 0.0 0.8441558441558441 0.015151515151515152 0.0 0.0 0.6428571428571429 0.0 0.24285714285714285 0.5285714285714286 0.2857142857142857 0.03333333333333333</feature>
+        <feature name="hu_moment">0.6121248547458641 0.25233197935858004 0.008106873276476476 0.01210572095511148 0.00011950458450865191 0.004862356193280516 1.0042684737845927e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="753" ulx="584" nrows="33" ncols="40">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.083349"/>
+      </ids>
+      <data>200 3 110 1 193 1 116 1 38 1 77 1 25 2 11 1 24 4 9 2 23 7 7 1 25 7 6 1 25 8 4 1 26 10 1 2 26 13 28 1 2 6 34 5 36 3 192</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2121212121212122</feature>
+        <feature name="volume">0.06212121212121212</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">40.0</feature>
+        <feature name="compactness">0.6242884397681702</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.03333333333333333 0.0 0.0 0.011111111111111112 0.0 0.0 0.0375 0.0 0.4625 0.1 0.025 0.0 0.3125 0.0375 0.0 0.0</feature>
+        <feature name="hu_moment">0.7375346411108368 0.08891028164083319 0.602862058963783 0.7653301636346744 0.06308064223949386 0.17264451327923278 -0.5160136132224367</feature>
+      </features>
+    </glyph>
+    <glyph uly="107" ulx="368" nrows="38" ncols="16">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.250805"/>
+      </ids>
+      <data>0 16 40 2 13 3 12 4 10 6 10 7 8 9 7 11 5 13 4 11 5 10 6 9 7 9 7 8 8 7 9 6 10 6 10 6 6 10 6 16 3 7 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 6 10 5 11 5 11 4 12 3 13 2 14 1 11</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.42105263157894735</feature>
+        <feature name="volume">0.41118421052631576</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">16.0</feature>
+        <feature name="compactness">0.29311858339311164</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.15 0.575 0.575 0.15 0.025 1.0 0.825 0.275 0.25 1.0 0.5555555555555556 0.1111111111111111 0.0 0.8333333333333334 0.2222222222222222 0.0</feature>
+        <feature name="hu_moment">0.39339328000000007 0.10869262274109444 0.002120530274138628 0.0001895883050406232 1.06141807995172e-07 5.44864563987217e-05 5.6429525118731534e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="412" ulx="310" nrows="22" ncols="25">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.194997"/>
+      </ids>
+      <data>85 1 22 4 19 6 18 8 16 9 7 1 8 9 6 1 11 8 4 1 12 8 3 1 13 12 14 9 16 8 17 7 19 4 21 3 64 9 1 2 12 28 2 3 4 3 4 1 6</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1363636363636365</feature>
+        <feature name="volume">0.26545454545454544</feature>
+        <feature name="nrows_feature">22.0</feature>
+        <feature name="ncols_feature">25.0</feature>
+        <feature name="compactness">0.2606039008630082</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.023809523809523808 0.2777777777777778 0.0 0.0 0.2619047619047619 1.0 0.25 0.05555555555555555 0.0 0.8333333333333334 0.2 0.0 0.5428571428571428 0.4 0.26666666666666666 0.23333333333333334</feature>
+        <feature name="hu_moment">0.3603907412786587 0.0026680946185600085 0.02062485530052538 0.004557514889530791 -2.1956276832627075e-05 0.00018018212767598977 3.834515196141116e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="264" ulx="480" nrows="48" ncols="12">
+      <ids state="AUTOMATIC">
+        <id name="clef.f2" confidence="0.222179"/>
+      </ids>
+      <data>102 1 11 1 11 1 11 1 11 1 11 1 11 1 10 2 10 2 7 1 2 2 5 24 5 4 8 3 9 3 9 3 9 3 9 3 10 2 10 2 10 2 10 2 10 2 10 2 10 2 10 2 10 2 10 2 10 2 11 1 10 2 10 3 3 4 1 7 6 2 10 2 10 2 52</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.25</feature>
+        <feature name="volume">0.17708333333333334</feature>
+        <feature name="nrows_feature">48.0</feature>
+        <feature name="ncols_feature">12.0</feature>
+        <feature name="compactness">0.20287877031572094</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.1111111111111111 0.0 0.19444444444444445 0.3611111111111111 0.5833333333333334 0.16666666666666666 0.0 0.05555555555555555 0.6666666666666666 0.0 0.08333333333333333 0.05555555555555555 0.4722222222222222 0.08333333333333333</feature>
+        <feature name="hu_moment">0.9442305372745022 0.7249434235237205 0.06466423679067222 0.05908181885713411 0.003633701680426158 0.05002923626425119 0.0003636157103371755</feature>
+      </features>
+    </glyph>
+    <glyph uly="379" ulx="424" nrows="19" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.253716"/>
+      </ids>
+      <data>47 3 15 4 13 6 12 8 10 9 10 9 9 10 5 16 1 41 6 8 12 6 13 4 15 2 67</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.3490304709141274</feature>
+        <feature name="nrows_feature">19.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.534636226623149</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.28 0.24 0.0 0.36 1.0 0.68 0.2 0.4 0.8 0.72 0.4 0.0 0.1 0.0 0.0</feature>
+        <feature name="hu_moment">0.2056873307818129 0.00408898739621784 0.0010692696705730457 7.167334497012837e-05 1.7820095084366553e-08 3.832087239876469e-06 -8.725797718121026e-09</feature>
+      </features>
+    </glyph>
+    <glyph uly="144" ulx="483" nrows="30" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="clef.f2" confidence="0.248810"/>
+      </ids>
+      <data>2 2 4 1 11 2 8 1 21 1 21 1 21 2 18 8 13 11 9 3 2 9 7 2 4 14 7 15 1 1 6 9 4 1 1 1 7 8 6 1 8 7 6 1 9 5 7 1 9 5 7 1 9 4 8 1 8 5 8 1 8 4 9 1 8 3 10 1 7 3 11 1 7 2 11 2 6 2 12 2 5 2 13 2 4 2 14 1 4 2 15 1 3 2 16 1 3 1 17 1 21 1 21 1 21</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7333333333333333</feature>
+        <feature name="volume">0.24545454545454545</feature>
+        <feature name="nrows_feature">30.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.22245252097537954</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.125 0.4583333333333333 0.275 0.05 0.16666666666666666 0.4375 0.9 0.275 0.21428571428571427 0.35714285714285715 0.17142857142857143 0.0 0.2857142857142857 0.07142857142857142 0.0 0.0</feature>
+        <feature name="hu_moment">0.43741191402244084 0.04181952031665496 0.038202191516119186 0.017548755520617305 0.00037869594433550017 0.0034720626441513006 0.0002510881478380082</feature>
+      </features>
+    </glyph>
+    <glyph uly="96" ulx="342" nrows="39" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.310716"/>
+      </ids>
+      <data>73 1 25 3 22 5 20 7 20 7 19 9 18 68 8 19 14 9 19 7 20 7 10 3 7 7 8 5 6 7 8 7 5 7 7 8 5 7 7 9 3 8 6 13 2 6 8 10 2 7 8 9 3 7 9 7 4 7 10 5 5 7 11 3 6 7 20 6 21 6 21 6 21 6 7 5 3 13 6 27 13 14 14 6 21 4 23 2 25 1 26 1 39</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6923076923076923</feature>
+        <feature name="volume">0.37511870845204176</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.15566717782823425</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.1 0.12857142857142856 0.6285714285714286 0.21666666666666667 0.42857142857142855 0.32857142857142857 0.9571428571428572 0.2833333333333333 0.37142857142857144 0.3 0.9285714285714286 0.0 0.19047619047619047 0.2222222222222222 0.5555555555555556 0.2222222222222222</feature>
+        <feature name="hu_moment">0.29381665953403274 0.008122786920976444 0.00357711014342365 8.206361094167715e-05 1.1825078602993863e-08 6.870266419404121e-06 4.2860997976330176e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="274" ulx="493" nrows="40" ncols="40">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.330720"/>
+      </ids>
+      <data>107 2 36 4 35 6 33 7 32 10 30 11 7 3 2 3 13 16 3 40 15 1 2 22 23 11 18 3 8 10 18 4 8 10 16 7 7 8 17 8 7 8 16 9 7 8 15 10 7 7 15 2 2 8 5 8 15 1 3 8 4 1 2 7 18 9 1 2 3 7 18 10 5 7 19 8 6 6 20 7 7 6 21 5 8 6 21 4 9 6 22 1 10 7 33 7 33 7 33 7 10 40 14 2 7 17 23 6 34 6 34 5 35 4 36 3 37 2 38 2 55</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.28875</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">40.0</feature>
+        <feature name="compactness">0.12601785911745672</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.16 0.1 0.54 0.22 0.15 0.48 0.74 0.24 0.02 0.43 0.65 0.02 0.1 0.12 0.45 0.2</feature>
+        <feature name="hu_moment">0.3286472496288654 0.00010852313153715125 0.007082560392444965 0.000385797326517464 -3.741591184312948e-07 1.1979557759386556e-06 -5.16429187985194e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="518" ulx="314" nrows="41" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.248709"/>
+      </ids>
+      <data>7 2 18 12 2 2 2 51 7 6 17 6 18 6 17 8 15 10 14 11 13 14 10 13 12 10 14 9 15 9 15 8 16 7 17 7 17 7 17 7 17 7 17 7 17 7 8 1 1 1 1 61 1 1 14 7 17 7 17 7 17 7 17 7 17 7 17 6 18 5 19 4 20 3 22 1 113</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5853658536585366</feature>
+        <feature name="volume">0.3567073170731707</feature>
+        <feature name="nrows_feature">41.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.21074910355336543</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.3333333333333333 0.9242424242424242 0.4393939393939394 0.24242424242424243 0.18333333333333332 1.0 0.21666666666666667 0.0 0.4166666666666667 1.0 0.23333333333333334 0.23333333333333334 0.08333333333333333 0.35 0.0 0.0</feature>
+        <feature name="hu_moment">0.3516105788814614 0.05072562203694466 0.0013929690373122858 0.00020292961449257024 -1.7145327097632353e-08 -4.491920151341536e-05 1.0652089826547969e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="400" ulx="167" nrows="40" ncols="30">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.341449"/>
+      </ids>
+      <data>138 3 26 4 24 7 21 9 20 12 6 3 2 85 2 2 3 1 6 15 16 10 20 10 10 2 8 7 11 5 7 7 10 7 6 7 9 8 6 7 8 10 5 7 8 12 2 8 9 21 10 12 1 7 11 9 3 7 12 7 4 7 13 5 5 7 14 2 7 7 23 7 23 7 23 7 23 7 8 11 4 10 3 13 4 6 8 1 15 5 25 3 27 2 28 2 29 1 73</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.75</feature>
+        <feature name="volume">0.35083333333333333</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">30.0</feature>
+        <feature name="compactness">0.16623291253416736</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.075 0.2 0.4714285714285714 0.11428571428571428 0.5875 0.3625 0.9285714285714286 0.34285714285714286 0.4375 0.4625 0.8571428571428571 0.0 0.2 0.1625 0.38571428571428573 0.07142857142857142</feature>
+        <feature name="hu_moment">0.2788862128903999 0.0027245399500062245 0.002023704811746542 0.00015572924260463255 3.122346708858714e-09 7.638881091143454e-06 8.736785548947361e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="273" ulx="461" nrows="22" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.252474"/>
+      </ids>
+      <data>54 2 18 5 16 6 15 8 13 9 12 10 9 1 1 12 6 45 7 12 10 10 13 8 14 7 15 6 16 5 18 3 98</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.30785123966942146</feature>
+        <feature name="nrows_feature">22.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.5544393542725978</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.4722222222222222 0.13333333333333333 0.0 0.5277777777777778 0.9722222222222222 0.7333333333333333 0.43333333333333335 0.0 0.7 0.6 0.0 0.0 0.1 0.0 0.0</feature>
+        <feature name="hu_moment">0.2077275072862369 0.003002161191934043 0.0001104015272412088 1.7284779460418057e-05 6.152604789428335e-10 8.36013617618752e-07 4.376927917418979e-10</feature>
+      </features>
+    </glyph>
+    <glyph uly="661" ulx="240" nrows="38" ncols="32">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.358912"/>
+      </ids>
+      <data>104 3 28 5 9 3 14 8 6 4 13 19 12 20 11 21 11 21 8 64 3 9 4 9 11 7 6 7 12 7 6 6 13 7 6 5 14 7 6 5 14 7 6 6 7 1 5 7 6 7 4 2 6 7 5 9 1 2 8 7 4 12 9 7 4 11 10 7 5 9 11 7 6 6 13 7 7 4 14 7 8 2 15 6 10 1 15 7 25 6 26 5 27 4 28 4 3 1 2 1 12 1 4 25 1 6 160</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8421052631578947</feature>
+        <feature name="volume">0.36019736842105265</feature>
+        <feature name="nrows_feature">38.0</feature>
+        <feature name="ncols_feature">32.0</feature>
+        <feature name="compactness">0.18054073949769694</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.25 0.5625 0.4875 0.0 0.6125 0.5125 0.85 0.2875 0.5 0.375 0.5138888888888888 0.08333333333333333 0.2777777777777778 0.1527777777777778 0.1111111111111111 0.1111111111111111</feature>
+        <feature name="hu_moment">0.27557851418280394 0.001044401463440431 0.0008151496011584232 0.0010459504383239472 -5.29285003425471e-07 5.883068182509755e-06 -8.078483416882658e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="661" ulx="279" nrows="23" ncols="29">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.237194"/>
+      </ids>
+      <data>98 3 24 5 23 7 21 8 21 8 20 10 6 1 11 11 4 4 5 52 1 1 3 1 8 9 1 2 18 10 19 9 21 7 22 6 24 4 159</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2608695652173914</feature>
+        <feature name="volume">0.2368815592203898</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">29.0</feature>
+        <feature name="compactness">0.3714337179788603</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.35714285714285715 0.0 0.0 0.4791666666666667 1.0 0.42857142857142855 0.30952380952380953 0.0 0.7857142857142857 0.3333333333333333 0.0 0.0 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.2585003417579542 0.01666619351101198 0.0020753773404657595 0.0010964387837469178 1.6354293940795209e-06 0.00013436968798633808 -2.4689238931146253e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="361" ulx="441" nrows="36" ncols="20">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus34" confidence="0.219959"/>
+      </ids>
+      <data>9 1 18 3 15 5 14 7 12 9 11 10 10 14 2 40 4 12 9 7 13 7 13 7 13 7 13 7 13 7 13 7 13 7 13 7 7 1 6 6 6 2 6 6 6 2 6 6 6 2 6 6 6 2 6 6 6 2 6 6 6 2 6 6 6 2 1 2 3 6 7 4 3 6 6 42 6 3 10 1 6 3 10 1 6 2 11 1 19 1 19 1 19 1</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5555555555555556</feature>
+        <feature name="volume">0.4097222222222222</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">20.0</feature>
+        <feature name="compactness">0.198383011380511</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.28888888888888886 0.8222222222222222 0.5777777777777777 0.28888888888888886 0.022222222222222223 1.0 0.4666666666666667 0.022222222222222223 0.044444444444444446 0.8222222222222222 0.4 0.35555555555555557 0.28888888888888886 0.4888888888888889 0.26666666666666666 0.4</feature>
+        <feature name="hu_moment">0.36283483705734293 0.04851718477712608 0.000764317368785111 0.0008822040052826707 -8.125796388780967e-08 0.00013605087803401109 7.198481838803793e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="889" ulx="184" nrows="31" ncols="17">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.239343"/>
+      </ids>
+      <data>41 2 14 3 12 6 10 8 9 10 7 10 8 8 9 8 9 7 10 6 11 5 12 5 12 5 11 6 8 17 3 6 11 6 11 6 11 6 11 6 12 5 12 4 13 3 78 17 17</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5483870967741935</feature>
+        <feature name="volume">0.31309297912713474</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">17.0</feature>
+        <feature name="compactness">0.33685516391379555</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.175 0.65625 0.34375 0.0 0.225 1.0 0.28125 0.0 0.425 0.96875 0.125 0.125 0.17142857142857143 0.21428571428571427 0.14285714285714285 0.14285714285714285</feature>
+        <feature name="hu_moment">0.39745599243119917 0.08328794728561796 0.002096117329509489 0.009825112935009794 4.457936590726937e-05 0.0025551995502996173 -8.569908793762182e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="138" ulx="166" nrows="24" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="clef.c" confidence="0.235217"/>
+      </ids>
+      <data>93 3 23 4 21 6 20 8 19 8 18 9 13 16 1 62 4 2 3 8 20 7 20 10 17 9 18 7 21 5 22 4 24 2 121</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.125</feature>
+        <feature name="volume">0.2623456790123457</feature>
+        <feature name="nrows_feature">24.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.3576650903453769</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.23809523809523808 0.07142857142857142 0.0 0.4523809523809524 0.9523809523809523 0.6190476190476191 0.5 0.047619047619047616 0.5714285714285714 0.5238095238095238 0.0 0.0 0.11904761904761904 0.023809523809523808 0.0</feature>
+        <feature name="hu_moment">0.2534341542845512 0.012459933038161381 0.000714333835796059 0.00016941668232967706 5.384975980554757e-08 1.692816812704684e-05 2.3952512576041683e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="139" ulx="206" nrows="23" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.209709"/>
+      </ids>
+      <data>63 2 24 3 22 6 20 7 18 9 19 8 15 23 1 45 1 4 13 6 4 2 15 7 2 2 16 9 18 8 19 7 20 5 22 4 24 2 126</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.173913043478261</feature>
+        <feature name="volume">0.2560386473429952</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.30395541526101305</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.07142857142857142 0.35714285714285715 0.0 0.0 0.6904761904761905 0.8571428571428571 0.5 0.3055555555555556 0.14285714285714285 0.7857142857142857 0.07142857142857142 0.0 0.0 0.05714285714285714 0.0 0.0</feature>
+        <feature name="hu_moment">0.273284010986947 0.014651024561803776 0.011884446663280177 0.004120443075222144 2.8634116645298137e-05 0.0004957426260839354 3.3894995514647565e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="489" ulx="491" nrows="36" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.274890"/>
+      </ids>
+      <data>13 1 35 1 4 3 9 4 5 1 8 5 13 6 12 8 10 10 9 52 6 10 9 9 10 8 11 7 12 7 12 7 12 7 12 7 13 6 13 6 13 6 12 7 12 7 12 7 12 7 12 7 12 6 13 7 6 38 6 5 15 2 67</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5277777777777778</feature>
+        <feature name="volume">0.38596491228070173</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.27550610197719244</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.0 0.4444444444444444 0.5555555555555556 0.2222222222222222 0.2222222222222222 0.8444444444444444 0.8 0.25 0.0 0.7333333333333333 0.6 0.0 0.2222222222222222 0.5333333333333333 0.35555555555555557 0.2222222222222222</feature>
+        <feature name="hu_moment">0.34940828524570783 0.061795289883631074 0.0009409486330323982 0.0006816056658328587 5.443436824278868e-07 0.000153367504450461 -4.068314863139259e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="488" ulx="538" nrows="42" ncols="20">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.329169"/>
+      </ids>
+      <data>43 1 27 2 16 4 8 1 6 5 13 7 7 1 4 9 11 9 4 1 2 59 6 10 10 9 11 9 11 8 12 7 13 7 13 7 13 6 14 6 14 6 14 6 14 6 13 7 13 7 13 7 13 6 14 6 14 11 4 40 5 6 14 6 14 5 15 5 15 3 17 2 19 1 73</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.47619047619047616</feature>
+        <feature name="volume">0.3547619047619048</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">20.0</feature>
+        <feature name="compactness">0.25098730513954126</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.21818181818181817 0.4909090909090909 0.5272727272727272 0.2 0.09090909090909091 0.8181818181818182 0.7090909090909091 0.10909090909090909 0.2 0.96 0.54 0.22 0.0 0.52 0.04 0.0</feature>
+        <feature name="hu_moment">0.36176147213877846 0.0670260239695083 0.0017911425518620896 0.0007846532021949968 8.947892593423366e-07 0.00020311421872749776 -2.542550109841826e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="777" ulx="259" nrows="39" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.245206"/>
+      </ids>
+      <data>85 2 20 4 19 5 17 8 15 9 15 11 13 14 3 5 2 17 2 2 3 17 8 16 8 10 3 3 8 9 15 7 17 6 18 6 18 6 18 6 18 6 17 7 17 8 16 7 17 7 17 7 17 7 17 7 17 6 18 6 18 7 4 3 3 60 1 23 2 10 2 2 3 2 87</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6153846153846154</feature>
+        <feature name="volume">0.3611111111111111</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.2343258516165117</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0 0.36666666666666664 0.4666666666666667 0.05 0.11666666666666667 0.7 0.6666666666666666 0.35 0.0 0.8166666666666667 0.31666666666666665 0.0 0.48148148148148145 0.5740740740740741 0.42592592592592593 0.5</feature>
+        <feature name="hu_moment">0.37119691808811994 0.04758249288744932 0.0018142277502080026 0.00016409177269675426 3.918199250461638e-09 1.2190081725767138e-05 8.944577417981164e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="887" ulx="113" nrows="33" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.218054"/>
+      </ids>
+      <data>103 4 13 9 9 11 8 10 9 10 9 5 3 1 10 5 13 9 10 11 8 11 8 11 8 11 1 3 4 6 13 5 14 5 14 5 14 5 14 5 14 4 15 4 7 2 5 4 6 4 5 4 6 5 4 3 6 7 3 3 1 1 1 10 3 1 6 9 10 1 2 6 14 5 15 3 1</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5757575757575758</feature>
+        <feature name="volume">0.34768740031897927</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.26757447188779787</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.35555555555555557 0.37777777777777777 0.027777777777777776 0.125 1.0 0.725 0.09375 0.2 0.775 0.0 0.0625 0.225 0.2 0.525 0.875</feature>
+        <feature name="hu_moment">0.37388902101806215 0.0520699283801101 0.00862379787242529 0.002790284393233598 1.3618718871066243e-05 0.0002688176168172738 -1.3697824021241027e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="361" ulx="392" nrows="36" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.211057"/>
+      </ids>
+      <data>46 3 14 5 13 7 11 9 9 12 4 38 3 13 7 10 9 10 10 8 11 8 11 8 11 7 12 7 12 7 12 8 11 8 11 8 11 7 12 7 12 7 4 1 7 6 4 1 8 6 13 6 11 54 5 4 14 4 15 3 17 2 17 1 32</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5277777777777778</feature>
+        <feature name="volume">0.4166666666666667</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.29722883252944093</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.28888888888888886 0.6888888888888889 0.4888888888888889 0.2222222222222222 0.08888888888888889 1.0 0.6222222222222222 0.027777777777777776 0.0 1.0 0.4 0.05555555555555555 0.3111111111111111 0.6 0.3333333333333333 0.3333333333333333</feature>
+        <feature name="hu_moment">0.3279507972763548 0.05231824683396325 0.00017699892777546148 0.00045389703657941726 4.4809760939702625e-08 0.00010227033696257974 -1.2059762867597063e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="240" ulx="240" nrows="42" ncols="23">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.281024"/>
+      </ids>
+      <data>0 10 1 2 1 3 1 5 33 1 21 3 19 4 17 7 15 8 15 10 13 15 8 14 9 13 10 12 11 12 11 11 12 8 15 8 15 8 16 7 15 8 10 46 5 8 15 8 16 7 16 7 16 7 16 7 16 7 16 7 16 6 17 6 17 5 18 4 19 3 20 2 21 1 111 3 2 4 4 2 3 1 1 23</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5476190476190477</feature>
+        <feature name="volume">0.3447204968944099</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">23.0</feature>
+        <feature name="compactness">0.17563488690170523</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.16666666666666666 0.7424242424242424 0.4090909090909091 0.14545454545454545 0.30303030303030304 1.0 0.48484848484848486 0.18181818181818182 0.016666666666666666 0.9833333333333333 0.11666666666666667 0.0 0.15 0.3333333333333333 0.13333333333333333 0.12</feature>
+        <feature name="hu_moment">0.430995018501444 0.09785113844981073 0.00899900135017581 0.011606317043511132 0.00011366011412025596 0.003445988036975053 -3.3924094671697296e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="476" ulx="561" nrows="39" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus23" confidence="0.189321"/>
+      </ids>
+      <data>3 1 18 1 36 1 3 3 11 1 1 5 12 5 12 6 11 8 9 10 8 13 5 12 7 10 8 9 9 8 10 7 11 7 11 7 11 7 11 6 12 6 12 6 8 15 2 37 4 6 12 5 12 6 8 1 3 6 7 2 3 6 6 3 3 6 6 3 3 6 6 3 3 5 7 3 3 3 9 3 3 2 10 3 15 3 15 3 15 3 15 3 15 3</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.46153846153846156</feature>
+        <feature name="volume">0.396011396011396</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.23321506173738804</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.14 0.6 0.375 0.05 0.22 1.0 0.425 0.025 0.52 0.9 0.3 0.475 0.17777777777777778 0.17777777777777778 0.0 0.75</feature>
+        <feature name="hu_moment">0.3690739918804566 0.06090162961095131 0.007443444026828043 0.0019967451446571516 7.6161848718070546e-06 0.00010514479896528345 -1.1184923301001319e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="360" ulx="408" nrows="36" ncols="21">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.236683"/>
+      </ids>
+      <data>52 2 17 5 15 6 14 8 12 11 1 1 8 14 2 42 4 12 11 8 13 8 14 7 14 7 14 7 14 7 14 7 14 7 14 7 14 7 14 7 14 6 15 6 8 1 6 6 15 6 7 1 7 6 7 1 7 5 7 5 3 57 7 3 18 2 75</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5833333333333334</feature>
+        <feature name="volume">0.376984126984127</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">21.0</feature>
+        <feature name="compactness">0.2547771201743619</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.14814814814814814 0.6222222222222222 0.5111111111111111 0.2 0.14814814814814814 0.8888888888888888 0.6888888888888889 0.1111111111111111 0.018518518518518517 0.8 0.4888888888888889 0.044444444444444446 0.2777777777777778 0.5333333333333333 0.35555555555555557 0.37777777777777777</feature>
+        <feature name="hu_moment">0.35129526493981955 0.04838216211001383 4.83633611918545e-05 0.0007316754752463823 -1.2913702808674832e-07 0.00015760047342992984 4.7619748590678013e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="103" ulx="501" nrows="47" ncols="32">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus4" confidence="0.168440"/>
+      </ids>
+      <data>0 7 25 7 25 7 12 1 12 6 11 4 11 5 11 5 13 2 11 7 24 10 9 6 7 15 3 29 5 2 2 26 2 1 11 11 6 1 1 2 11 10 8 1 13 9 9 1 13 7 25 7 25 7 25 7 26 6 26 6 26 6 26 6 26 6 26 6 26 6 26 6 26 6 26 6 26 6 11 21 4 1 6 32 14 18 10 1 3 7 19 2 4 7 17 3 5 6 16 4 6 6 15 4 7 5 14 7 6 5 13 10 4 5 13 12 2 4 14 16 17 14 19 13 21 11 23 5 28 3 86</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6808510638297872</feature>
+        <feature name="volume">0.32646276595744683</feature>
+        <feature name="nrows_feature">47.0</feature>
+        <feature name="ncols_feature">32.0</feature>
+        <feature name="compactness">0.11557530160320051</feature>
+        <feature name="nholes">5.0</feature>
+        <feature name="volume16regions">0.5729166666666666 0.2604166666666667 0.6666666666666666 0.20833333333333334 0.020833333333333332 0.17708333333333334 0.6458333333333334 0.0 0.2708333333333333 0.375 0.6458333333333334 0.17708333333333334 0.5795454545454546 0.5227272727272727 0.09090909090909091 0.0</feature>
+        <feature name="hu_moment">0.4630072570871402 0.06026146872367232 0.014723214167202108 0.002148828519677522 -4.320151237723239e-06 -0.0004898960361656495 -1.1288138073193386e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="532" ulx="130" nrows="23" ncols="30">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.218259"/>
+      </ids>
+      <data>99 3 26 5 24 6 23 7 22 9 20 10 5 3 11 18 9 60 2 28 2 1 4 10 20 8 23 6 24 5 25 4 27 1 140</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.3043478260869565</feature>
+        <feature name="volume">0.26666666666666666</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">30.0</feature>
+        <feature name="compactness">0.3769506446296244</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.020833333333333332 0.2708333333333333 0.0 0.0 0.625 0.8541666666666666 0.5238095238095238 0.3333333333333333 0.1875 0.7916666666666666 0.19047619047619047 0.16666666666666666 0.0 0.025 0.0 0.0</feature>
+        <feature name="hu_moment">0.3022974220740527 0.041715945621499606 0.012240545617234718 0.00578686556303047 4.8693273230634315e-05 0.0011818319627085812 -1.0266524880197434e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="773" ulx="457" nrows="22" ncols="31">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.203346"/>
+      </ids>
+      <data>72 3 27 4 25 6 24 8 22 9 21 10 8 3 9 79 12 1 5 7 2 2 20 10 21 8 24 6 25 5 26 4 28 1 30 1 114</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.4090909090909092</feature>
+        <feature name="volume">0.24486803519061584</feature>
+        <feature name="nrows_feature">22.0</feature>
+        <feature name="ncols_feature">31.0</feature>
+        <feature name="compactness">0.32225196493532177</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.0625 0.375 0.0 0.0 0.625 0.875 0.5 0.35714285714285715 0.05 0.75 0.025 0.0 0.0 0.05 0.0 0.0</feature>
+        <feature name="hu_moment">0.32142219916722903 0.04068221646435689 0.020432884347995787 0.010759272716670074 0.00015928087612321166 0.0021693868619177686 8.8912236338175e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="617" ulx="517" nrows="36" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.288930"/>
+      </ids>
+      <data>46 1 15 4 13 5 11 7 10 9 9 11 5 1 1 32 5 9 9 8 10 8 10 8 11 7 11 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 6 1 4 9 2 20 3 7 2 1 11 2 82</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5</feature>
+        <feature name="volume">0.35185185185185186</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.3142073860199704</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.08888888888888889 0.5555555555555556 0.5 0.1388888888888889 0.1111111111111111 0.9111111111111111 0.7222222222222222 0.1111111111111111 0.0 0.8 0.5 0.0 0.17777777777777778 0.4666666666666667 0.3055555555555556 0.16666666666666666</feature>
+        <feature name="hu_moment">0.3639995673432581 0.07573506402840574 0.0008349853931124575 0.0013767098976249568 1.460570148578701e-06 0.0003787584351753318 -2.1325743058519067e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="519" ulx="404" nrows="23" ncols="26">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.158669"/>
+      </ids>
+      <data>0 38 1 3 3 3 38 3 21 5 20 6 19 8 18 8 19 7 19 8 6 2 11 7 4 3 12 7 3 3 13 11 16 9 17 7 19 6 20 5 22 3 23 2 50 4 1 4 2 7 3 1 2 20 7 19</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1304347826086956</feature>
+        <feature name="volume">0.3494983277591973</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">26.0</feature>
+        <feature name="compactness">0.14969727706075794</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.40476190476190477 0.5714285714285714 0.25 0.2222222222222222 0.2857142857142857 0.7857142857142857 0.19444444444444445 0.027777777777777776 0.023809523809523808 0.8333333333333334 0.1388888888888889 0.0 0.05714285714285714 0.6 0.5333333333333333 0.6</feature>
+        <feature name="hu_moment">0.43436752032925974 0.03314890679472906 0.0019147943813747112 0.004073808841151138 -1.1185421351694994e-05 -0.0004603737226825124 -2.083966281618882e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="96" ulx="257" nrows="40" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.261625"/>
+      </ids>
+      <data>64 2 16 4 14 6 12 8 10 12 7 14 2 38 4 9 10 8 11 7 12 7 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 8 14 1 18 1 4 5 5 14 4 15 2 17 2 88</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.475</feature>
+        <feature name="volume">0.33421052631578946</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.28477199727400143</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.2 0.62 0.36 0.15 0.18 1.0 0.34 0.1 0.0 1.0 0.2 0.0 0.2 0.46 0.16 0.2</feature>
+        <feature name="hu_moment">0.38777794484722833 0.08228058123488277 0.0017830140042305964 0.0018355248323794905 2.664158504779504e-06 0.000478903924192094 -1.982096180114043e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="879" ulx="249" nrows="46" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.262590"/>
+      </ids>
+      <data>57 1 12 1 11 2 11 2 11 2 7 1 2 4 6 7 9 4 9 4 9 4 9 4 9 4 9 4 9 4 9 4 10 3 10 3 10 3 10 3 10 3 10 3 10 4 5 1 1 8 1 2 3 4 10 3 10 3 10 3 10 3 10 3 10 3 10 3 10 3 11 2 11 2 11 2 6 1 3 4 8 7 8 3 10 2 45</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.2826086956521739</feature>
+        <feature name="volume">0.22742474916387959</feature>
+        <feature name="nrows_feature">46.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.2355576783534541</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.14583333333333334 0.4722222222222222 0.0 0.0 0.14583333333333334 1.0 0.0 0.0 0.09090909090909091 1.0 0.12121212121212122 0.06060606060606061 0.045454545454545456 0.5757575757575758 0.15151515151515152 0.0</feature>
+        <feature name="hu_moment">0.8417106083350292 0.6422181620830427 0.005214787573988871 0.005766066598539443 3.155370817021637e-05 0.004536032893370431 -2.019174291315972e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="522" ulx="583" nrows="39" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.274438"/>
+      </ids>
+      <data>25 4 13 5 12 6 11 8 10 10 8 12 6 12 6 11 7 10 8 9 9 8 10 7 11 7 11 7 11 7 7 11 7 11 7 1 2 8 11 7 11 7 11 7 11 7 11 7 11 7 11 6 12 6 12 6 13 5 13 5 12 6 12 5 13 5 13 4 14 3 16 1 30 3 15 4 14</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.46153846153846156</feature>
+        <feature name="volume">0.36324786324786323</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.3679615145558231</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.12 0.84 0.625 0.125 0.4 1.0 0.325 0.0 0.16 1.0 0.125 0.0 0.26666666666666666 0.4222222222222222 0.0 0.0</feature>
+        <feature name="hu_moment">0.3923584141845895 0.11518018887526228 0.007627365113059151 0.005495701132488581 3.556530642781133e-05 0.001863597358521275 1.0670379013006002e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="105" ulx="569" nrows="41" ncols="23">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.217732"/>
+      </ids>
+      <data>77 2 20 4 18 6 15 8 15 11 8 17 6 21 4 1 1 19 5 10 13 9 14 7 16 7 16 7 16 7 16 6 17 7 17 5 18 5 18 5 18 5 17 6 18 5 17 6 11 1 5 6 9 3 5 6 8 16 6 30 2 19 5 6 5 7 5 5 9 4 5 5 9 4 5 4 10 2 7 3 21 1 108</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5609756097560976</feature>
+        <feature name="volume">0.3266171792152704</feature>
+        <feature name="nrows_feature">41.0</feature>
+        <feature name="ncols_feature">23.0</feature>
+        <feature name="compactness">0.21318996130566029</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.2878787878787879 0.6363636363636364 0.30303030303030304 0.14545454545454545 0.13333333333333333 0.95 0.08333333333333333 0.0 0.3333333333333333 0.8833333333333333 0.2 0.46 0.08333333333333333 0.31666666666666665 0.03333333333333333 0.3</feature>
+        <feature name="hu_moment">0.3929497908694443 0.0455429743168377 0.00417351812481256 0.0009148612259207365 1.7867734886815055e-06 -5.129846316820791e-05 5.6169075703469954e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="532" ulx="273" nrows="40" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.260063"/>
+      </ids>
+      <data>0 2 20 2 29 2 18 4 17 6 15 7 14 8 13 10 12 15 4 64 6 10 13 8 14 8 14 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 15 7 7 1 7 6 17 3 19 3 19 2 102</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.55</feature>
+        <feature name="volume">0.3181818181818182</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.35844353994892714</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.31666666666666665 0.7 0.22 0.12 0.35 1.0 0.28 0.16 0.16666666666666666 1.0 0.0 0.0 0.05 0.4166666666666667 0.0 0.02</feature>
+        <feature name="hu_moment">0.3339267037172011 0.05144771873675423 0.012142209685089153 0.0019620415258891164 9.104922511040634e-06 0.00044387113502909466 -2.968429340116051e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="890" ulx="160" nrows="33" ncols="17">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.291685"/>
+      </ids>
+      <data>25 1 14 4 12 6 10 8 9 9 2 1 5 12 5 11 7 8 9 7 10 5 12 5 12 5 12 5 7 16 5 6 2 5 5 5 12 5 12 5 12 5 12 5 12 5 11 6 12 5 12 4 13 3 15 1 10 1 3 1 1 2 15 5 1 5 68</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5151515151515151</feature>
+        <feature name="volume">0.3155080213903743</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">17.0</feature>
+        <feature name="compactness">0.3028564612325443</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.08888888888888889 0.7777777777777778 0.6111111111111112 0.16666666666666666 0.15 1.0 0.4375 0.21875 0.025 1.0 0.21875 0.0 0.05 0.28125 0.09375 0.125</feature>
+        <feature name="hu_moment">0.37068523540850307 0.0719692508041952 0.002704156722600845 0.004466990512121549 1.462992495679404e-05 0.0010976132627109143 -5.196012031466071e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="880" ulx="262" nrows="33" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.252930"/>
+      </ids>
+      <data>61 3 14 4 13 6 11 8 9 10 8 14 5 9 9 8 10 7 11 6 12 6 12 6 12 6 12 6 13 5 13 5 13 5 13 5 13 5 13 5 12 6 12 6 8 18 4 5 14 2 101</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5454545454545454</feature>
+        <feature name="volume">0.27946127946127947</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.41776727042884576</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.1111111111111111 0.6 0.2777777777777778 0.08333333333333333 0.2 1.0 0.1875 0.0 0.05 1.0 0.0 0.0 0.15 0.275 0.125 0.125</feature>
+        <feature name="hu_moment">0.3552889887318178 0.06753804811823921 0.0001444303596073193 0.0014757721571030042 5.716146896766914e-07 0.0002796626086477406 -3.7076774135217474e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="261" ulx="369" nrows="20" ncols="28">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.248863"/>
+      </ids>
+      <data>0 6 1 6 4 2 4 5 41 2 24 5 21 7 20 8 19 10 17 11 6 1 9 13 3 2 10 13 2 2 10 2 3 12 17 10 18 9 19 8 21 6 22 5 24 3 77 3 15 2</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.4</feature>
+        <feature name="volume">0.2732142857142857</feature>
+        <feature name="nrows_feature">20.0</feature>
+        <feature name="ncols_feature">28.0</feature>
+        <feature name="compactness">0.462272417492472</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.17142857142857143 0.42857142857142855 0.2 0.14285714285714285 0.14285714285714285 0.9714285714285714 0.4857142857142857 0.11428571428571428 0.05714285714285714 0.5714285714285714 0.7142857142857143 0.0 0.0 0.22857142857142856 0.08571428571428572 0.05714285714285714</feature>
+        <feature name="hu_moment">0.30379187715355555 0.001989533156631359 0.005346848817279109 0.001659057779289804 4.30959635981142e-06 -6.272288100758961e-05 -2.417400380437844e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="391" ulx="576" nrows="46" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="clef.f" confidence="0.218367"/>
+      </ids>
+      <data>0 17 82 2 19 3 18 5 15 8 14 9 13 11 11 11 11 10 12 9 13 8 14 7 15 7 16 6 16 6 16 6 16 6 8 18 4 16 14 6 16 6 16 6 16 6 16 6 16 6 16 6 16 6 16 6 16 6 16 6 16 5 17 5 17 5 17 4 18 3 19 3 9 2 9 1 9 3 18 20 1 7 15 5 17 4 19 2 24</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.4782608695652174</feature>
+        <feature name="volume">0.2964426877470356</feature>
+        <feature name="nrows_feature">46.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.17600053112243919</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.08333333333333333 0.5138888888888888 0.5166666666666667 0.03333333333333333 0.16666666666666666 0.7777777777777778 0.5333333333333333 0.016666666666666666 0.0 0.6666666666666666 0.36363636363636365 0.0 0.12121212121212122 0.3181818181818182 0.09090909090909091 0.45454545454545453</feature>
+        <feature name="hu_moment">0.5563220370370371 0.19969568195312076 0.003878884807589819 0.004939837743548243 1.3735465011579046e-05 0.0019769630540461057 1.670045408675598e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="616" ulx="534" nrows="36" ncols="26">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus33" confidence="0.207078"/>
+      </ids>
+      <data>90 3 21 6 7 2 9 10 3 4 8 18 6 20 6 73 5 21 5 7 6 7 6 7 6 7 6 7 7 5 8 6 7 5 8 6 7 5 8 6 6 8 6 6 6 8 5 7 5 9 5 7 5 9 5 7 6 8 5 6 8 5 7 6 9 4 7 6 10 2 8 6 20 6 20 5 21 4 17 3 1 48 5 2 123</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7222222222222222</feature>
+        <feature name="volume">0.42414529914529914</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">26.0</feature>
+        <feature name="compactness">0.17959343767358743</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.06349206349206349 0.5238095238095238 0.46296296296296297 0.4074074074074074 0.3968253968253968 0.8095238095238095 0.5 0.8518518518518519 0.2698412698412698 0.6349206349206349 0.2037037037037037 0.6296296296296297 0.30158730158730157 0.30158730158730157 0.2222222222222222 0.2222222222222222</feature>
+        <feature name="hu_moment">0.2785908686152878 0.0035910169142074583 0.0005266430827807183 0.0009026749215767488 3.8855405912936647e-07 4.905545768529512e-05 -4.861912649819659e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="118" ulx="131" nrows="40" ncols="30">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis4a" confidence="0.261638"/>
+      </ids>
+      <data>0 1 29 2 28 3 27 3 27 1 9 3 8 1 16 7 4 4 13 17 12 18 7 2 1 20 1 2 4 27 1 55 11 19 11 8 3 7 13 6 5 6 12 7 5 6 12 7 5 5 13 7 5 5 13 7 5 5 13 7 4 7 2 3 7 7 4 11 8 7 3 11 9 7 2 11 10 6 4 9 11 6 5 7 12 6 6 5 13 7 6 3 14 7 7 1 15 7 23 7 22 98 23 5 25 4 25 3 27 2 85</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.75</feature>
+        <feature name="volume">0.42916666666666664</feature>
+        <feature name="nrows_feature">40.0</feature>
+        <feature name="ncols_feature">30.0</feature>
+        <feature name="compactness">0.15105085168579963</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.375 0.525 0.4714285714285714 0.11428571428571428 0.5875 0.6 0.8571428571428571 0.14285714285714285 0.5 0.45 0.6142857142857143 0.08571428571428572 0.525 0.35 0.3 0.3</feature>
+        <feature name="hu_moment">0.27127853160029913 0.004767814377330495 0.0008238328233718396 0.00018893243354472193 -6.6451912584324635e-09 1.2807320607002284e-05 -7.42414675449189e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="508" ulx="475" nrows="56" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.292205"/>
+      </ids>
+      <data>59 1 11 2 11 2 11 2 11 2 11 2 5 28 4 2 11 2 11 2 11 2 11 1 12 1 12 1 6 2 4 1 12 1 11 2 11 2 11 2 11 2 11 2 11 2 12 1 11 2 12 1 7 2 2 2 5 27 5 2 12 1 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 6 1 4 5 2 1 39</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.23214285714285715</feature>
+        <feature name="volume">0.19917582417582416</feature>
+        <feature name="nrows_feature">56.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.11321431208912672</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.17857142857142858 0.30952380952380953 0.3333333333333333 0.14285714285714285 0.03571428571428571 0.47619047619047616 0.047619047619047616 0.0 0.17857142857142858 0.6666666666666666 0.14285714285714285 0.16666666666666666 0.017857142857142856 0.5238095238095238 0.07142857142857142 0.023809523809523808</feature>
+        <feature name="hu_moment">1.4228571897166757 1.7525652855977654 0.07822269439434955 0.049783632781834154 0.0030998223923285476 0.06454690155046092 -0.00020627709217720108</feature>
+      </features>
+    </glyph>
+    <glyph uly="410" ulx="348" nrows="24" ncols="31">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus34" confidence="0.180856"/>
+      </ids>
+      <data>0 62 25 2 29 2 17 2 10 2 15 4 10 2 13 7 9 2 12 8 9 1 12 9 9 1 11 10 9 1 11 2 1 8 5 1 2 1 10 2 2 8 4 2 18 7 2 3 19 10 21 9 22 7 24 6 26 3 28 2 80 62 7 4 2 2 2 2 12</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2916666666666667</feature>
+        <feature name="volume">0.34408602150537637</feature>
+        <feature name="nrows_feature">24.0</feature>
+        <feature name="ncols_feature">31.0</feature>
+        <feature name="compactness">0.10012386803041438</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.3333333333333333 0.4583333333333333 0.3333333333333333 0.5238095238095238 0.14583333333333334 0.9375 0.10416666666666667 0.14285714285714285 0.0 0.6875 0.25 0.0 0.3541666666666667 0.4791666666666667 0.375 0.3333333333333333</feature>
+        <feature name="hu_moment">0.4587669372558594 0.0031961754575604573 0.0011672673933047495 0.0011257066262670978 7.612075052228137e-08 -5.750012881161262e-05 1.2881488610005812e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="403" ulx="110" nrows="25" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="clef.f2" confidence="0.303192"/>
+      </ids>
+      <data>75 4 17 8 13 11 9 17 5 17 6 16 8 11 13 7 17 4 18 3 19 2 19 3 18 2 19 3 18 3 19 3 18 3 19 1 102</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.88</feature>
+        <feature name="volume">0.21454545454545454</feature>
+        <feature name="nrows_feature">25.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.4459622973221868</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.023809523809523808 0.42857142857142855 0.42857142857142855 0.17142857142857143 0.027777777777777776 0.5 0.9 0.4 0.0 0.3333333333333333 0.13333333333333333 0.0 0.0 0.1111111111111111 0.0 0.0</feature>
+        <feature name="hu_moment">0.2652054250921467 0.003638270397353539 0.016419768315074867 0.002822290768217349 1.873696923375426e-05 0.00011954284428076161 -4.2485279651291486e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="628" ulx="377" nrows="68" ncols="14">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.309431"/>
+      </ids>
+      <data>0 23 1 3 4 3 11 4 10 4 10 4 10 4 11 3 11 3 12 2 12 2 12 2 12 2 12 2 13 1 13 1 12 2 12 3 12 1 12 3 6 28 5 3 12 2 11 3 12 2 11 2 12 2 13 1 12 2 12 3 11 3 11 3 12 2 12 2 9 5 9 5 9 5 9 6 8 6 8 5 6 1 1 26 3 6 9 5 9 5 9 5 9 5 9 1 1 3 11 3 7 1 3 3 6 1 4 3 5 1 5 3 11 3 11 3 11 3 11 3 11 3 11 3 11 3 11 2 12 2 12 2 6 10 3 1 56</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.20588235294117646</feature>
+        <feature name="volume">0.2857142857142857</feature>
+        <feature name="nrows_feature">68.0</feature>
+        <feature name="ncols_feature">14.0</feature>
+        <feature name="compactness">0.10444190551251661</feature>
+        <feature name="nholes">5.0</feature>
+        <feature name="volume16regions">0.19117647058823528 0.6176470588235294 0.09803921568627451 0.09803921568627451 0.11764705882352941 0.6323529411764706 0.11764705882352941 0.11764705882352941 0.22058823529411764 0.8970588235294118 0.3137254901960784 0.11764705882352941 0.08823529411764706 0.4117647058823529 0.21568627450980393 0.0196078431372549</feature>
+        <feature name="hu_moment">1.3458300900512672 1.679080971255981 0.06723992969193039 0.0772344506697921 0.005564404015776119 0.1000593282461875 0.00012614127466132257</feature>
+      </features>
+    </glyph>
+    <glyph uly="361" ulx="114" nrows="34" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.190600"/>
+      </ids>
+      <data>65 4 20 11 14 15 11 16 10 18 9 23 4 5 4 14 4 5 6 4 2 2 3 1 4 5 21 6 8 1 12 6 7 2 12 6 7 2 12 7 5 2 13 8 4 1 14 12 15 11 16 10 18 8 19 7 21 4 164 11 4 1 11 16 11 16 108</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7941176470588235</feature>
+        <feature name="volume">0.28322440087145967</feature>
+        <feature name="nrows_feature">34.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.20198533992167378</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.19047619047619047 0.6349206349206349 0.6507936507936508 0.24074074074074073 0.5396825396825397 0.49206349206349204 0.20634920634920634 0.05555555555555555 0.21428571428571427 0.30357142857142855 0.0 0.0 0.0 0.16071428571428573 0.375 0.2916666666666667</feature>
+        <feature name="hu_moment">0.4097948907601276 0.015812518476573372 0.020088621812401203 0.015657901290382185 0.00020457822042439523 0.0011823592302061506 -0.0001877894314071799</feature>
+      </features>
+    </glyph>
+    <glyph uly="746" ulx="205" nrows="33" ncols="51">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus22" confidence="0.224100"/>
+      </ids>
+      <data>104 1 31 2 18 1 16 3 9 4 18 1 15 9 3 6 17 1 13 20 17 1 11 22 17 1 12 22 16 1 12 22 16 1 12 22 13 1 1 2 13 21 13 4 13 7 6 7 14 3 14 7 6 7 14 1 16 7 6 7 31 7 6 7 8 1 22 7 6 7 8 1 22 7 6 6 7 3 14 2 6 6 7 6 6 5 11 6 4 6 7 7 4 6 10 9 2 6 6 9 2 3 2 2 9 18 6 18 1 1 2 159 2 43 10 10 11 7 7 2 16 7 13 5 8 2 18 4 15 2 10 2 49 2 49 2 49 2 49 2 49 2 4</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.5454545454545454</feature>
+        <feature name="volume">0.3701723113487819</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">51.0</feature>
+        <feature name="compactness">0.15166895820390078</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.05982905982905983 0.42735042735042733 0.5128205128205128 0.0 0.11538461538461539 0.5865384615384616 0.625 0.052083333333333336 0.7019230769230769 0.7884615384615384 0.8076923076923077 0.7604166666666666 0.038461538461538464 0.16346153846153846 0.1346153846153846 0.16666666666666666</feature>
+        <feature name="hu_moment">0.3210001744922994 0.02693468098152706 0.007440859149394894 0.00047088933662995703 2.1219148193215255e-07 -2.3765897963819377e-05 -8.55511991529986e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="496" ulx="572" nrows="35" ncols="20">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis4a" confidence="0.161464"/>
+      </ids>
+      <data>20 4 2 2 1 2 1 4 4 40 28 2 16 5 14 6 13 8 12 9 2 2 7 12 8 11 9 10 10 8 12 8 12 7 13 7 13 7 13 7 14 6 14 6 13 13 3 38 6 7 13 7 13 7 13 7 7 2 4 7 6 3 4 7 5 4 4 6 5 5 4 5 6 5 4 3 8 5 4 3 8 5 4 2 9 5</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5714285714285714</feature>
+        <feature name="volume">0.45571428571428574</feature>
+        <feature name="nrows_feature">35.0</feature>
+        <feature name="ncols_feature">20.0</feature>
+        <feature name="compactness">0.17538410349059233</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.3333333333333333 0.6444444444444445 0.4 0.24444444444444444 0.2 1.0 0.5333333333333333 0.06666666666666667 0.3333333333333333 1.0 0.4666666666666667 0.2222222222222222 0.2 0.725 0.075 0.85</feature>
+        <feature name="hu_moment">0.3827032293598138 0.06254874596336678 0.002980169782907288 0.0006438672647777707 -8.592130386766777e-07 -0.0001358588302850069 2.392370780759608e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="370" ulx="457" nrows="36" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.223661"/>
+      </ids>
+      <data>8 2 4 1 114 2 8 1 9 4 6 7 3 6 5 17 4 18 3 19 3 19 3 19 3 9 3 6 4 7 5 7 3 7 5 7 3 7 5 7 4 6 5 8 2 7 5 41 2 9 3 6 6 7 3 6 6 6 4 6 7 3 6 6 8 1 7 6 16 6 16 6 16 6 16 6 16 5 17 4 18 3 82</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6111111111111112</feature>
+        <feature name="volume">0.4116161616161616</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.3043828568889847</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.05555555555555555 0.2777777777777778 0.17777777777777778 0.3111111111111111 0.6296296296296297 0.7592592592592593 0.7777777777777778 0.8 0.6296296296296297 0.5925925925925926 0.37777777777777777 0.6 0.3333333333333333 0.2222222222222222 0.0 0.0</feature>
+        <feature name="hu_moment">0.24773364733612918 0.006287897652152355 0.0019837094777405222 0.00031341585070053665 1.7623701835877606e-07 1.6853317777483655e-05 -1.7324071121757375e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="544" ulx="229" nrows="23" ncols="28">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.243346"/>
+      </ids>
+      <data>6 3 6 1 77 3 24 5 21 7 20 8 19 10 6 2 9 11 4 3 10 1 2 8 3 3 10 1 3 12 16 11 18 9 19 8 20 6 23 4 24 3 74 1 4 1 10 1 4 2 14 2 5 1 4 2 60</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2173913043478262</feature>
+        <feature name="volume">0.20031055900621117</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">28.0</feature>
+        <feature name="compactness">0.4811941791999412</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.047619047619047616 0.38095238095238093 0.023809523809523808 0.0 0.3333333333333333 0.9761904761904762 0.3333333333333333 0.023809523809523808 0.0 0.6428571428571429 0.07142857142857142 0.0 0.05714285714285714 0.05714285714285714 0.05714285714285714 0.11428571428571428</feature>
+        <feature name="hu_moment">0.2989096231452252 0.005203492493508147 0.0032868051519025186 0.00556990089758177 2.11113719405104e-05 0.00038599290123268596 1.1057493410407824e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="250" ulx="405" nrows="42" ncols="31">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.270859"/>
+      </ids>
+      <data>182 2 11 6 4 1 5 4 10 14 2 5 8 23 4 1 2 24 2 62 5 24 7 7 3 14 7 7 9 8 7 7 9 7 8 7 9 7 8 7 9 6 9 7 9 6 9 7 9 7 8 7 9 10 5 7 9 10 5 7 8 11 5 7 8 11 5 7 9 10 5 7 11 8 5 7 14 5 5 7 17 2 5 7 24 7 23 7 20 62 2 9 11 4 4 1 4 5 26 4 27 4 28 2 148</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.7380952380952381</feature>
+        <feature name="volume">0.3878648233486943</feature>
+        <feature name="nrows_feature">42.0</feature>
+        <feature name="ncols_feature">31.0</feature>
+        <feature name="compactness">0.17052346886796302</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.1590909090909091 0.4318181818181818 0.3522727272727273 0.36363636363636365 0.4318181818181818 0.6022727272727273 0.5454545454545454 0.7012987012987013 0.45 0.5375 0.25 0.6 0.35 0.15 0.125 0.14285714285714285</feature>
+        <feature name="hu_moment">0.297605425987163 0.002217039791579733 0.0011354531491133356 0.0005889494224797439 4.510670507115473e-08 1.003505956584958e-05 -4.794998520708036e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="895" ulx="586" nrows="24" ncols="34">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.186672"/>
+      </ids>
+      <data>549 1 31 4 29 5 28 7 27 5 31 2 97</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.4166666666666667</feature>
+        <feature name="volume">0.029411764705882353</feature>
+        <feature name="nrows_feature">24.0</feature>
+        <feature name="ncols_feature">34.0</feature>
+        <feature name="compactness">1.0560236756623296</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.09259259259259259 0.0 0.0 0.0 0.35185185185185186 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.17635995370370475 0.0038334306211954866 0.00011926095114927458 5.9365414634159865e-08 -1.674534739357538e-14 3.0070303190479547e-09 1.5707073401666038e-13</feature>
+      </features>
+    </glyph>
+    <glyph uly="233" ulx="115" nrows="31" ncols="55">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.142060"/>
+      </ids>
+      <data>6 10 23 1 20 13 5 4 11 2 19 15 2 19 18 14 4 20 16 14 4 21 16 5 3 6 3 22 16 5 5 4 2 37 2 5 4 44 2 5 5 30 14 8 3 2 4 7 9 7 15 9 2 1 5 7 9 7 15 11 6 7 9 7 16 9 7 6 10 6 17 8 8 6 10 6 18 6 9 6 10 6 21 1 11 6 10 8 31 6 10 9 3 2 25 6 9 10 2 2 26 7 8 13 27 7 8 12 16 2 10 6 10 8 18 4 9 6 11 7 17 7 7 6 12 5 17 10 5 6 13 3 18 12 3 6 34 21 32 1 1 21 19 2 11 54 1 54 8 17 41 11 33</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.7741935483870968</feature>
+        <feature name="volume">0.46099706744868035</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">55.0</feature>
+        <feature name="compactness">0.08994903783338677</feature>
+        <feature name="nholes">5.0</feature>
+        <feature name="volume16regions">0.6607142857142857 0.7053571428571429 0.7321428571428571 0.25 0.5535714285714286 0.5267857142857143 0.5446428571428571 0.0 0.20535714285714285 0.44642857142857145 0.5178571428571429 0.125 0.7040816326530612 0.7551020408163265 0.2857142857142857 0.3076923076923077</feature>
+        <feature name="hu_moment">0.3409872181759085 0.01488366583008455 0.0013705898391350166 0.000510148303529403 3.253833524984335e-08 2.812390217119575e-05 4.253351877957749e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="109" ulx="242" nrows="64" ncols="11">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.251921"/>
+      </ids>
+      <data>177 2 2 4 2 22 5 1 10 1 10 1 10 1 10 1 10 1 10 1 10 1 10 1 10 1 10 1 10 2 9 2 9 2 9 2 9 2 9 2 9 2 9 2 4 3 1 18 2 6 1 2 6 1 10 1 9 2 9 2 9 2 9 1 10 1 10 1 10 1 10 1 10 1 10 1 10 1 9 2 9 2 9 1 10 1 10 1 11 1 5 22 22</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.171875</feature>
+        <feature name="volume">0.1846590909090909</feature>
+        <feature name="nrows_feature">64.0</feature>
+        <feature name="ncols_feature">11.0</feature>
+        <feature name="compactness">0.1381882255039854</feature>
+        <feature name="nholes">5.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.0 0.0 0.16666666666666666 0.4166666666666667 0.22916666666666666 0.125 0.14583333333333334 0.3958333333333333 0.3958333333333333 0.1875 0.125 0.4166666666666667 0.125 0.125</feature>
+        <feature name="hu_moment">1.8193359126081023 2.9862575146439414 0.028512507029336737 0.022524598230749905 0.0005697067273854795 0.03631174910154557 3.57193419006101e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="103" ulx="534" nrows="43" ncols="26">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.262023"/>
+      </ids>
+      <data>64 1 24 3 21 6 19 8 17 10 15 16 9 16 5 22 4 26 8 18 8 8 18 7 19 7 19 7 19 7 19 7 19 7 19 7 19 7 19 6 21 5 21 5 21 5 20 7 19 7 19 7 19 6 12 15 11 26 6 1 1 18 8 6 20 4 22 3 24 1 198</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6046511627906976</feature>
+        <feature name="volume">0.27906976744186046</feature>
+        <feature name="nrows_feature">43.0</feature>
+        <feature name="ncols_feature">26.0</feature>
+        <feature name="compactness">0.20278539307286236</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.22077922077922077 0.6493506493506493 0.45454545454545453 0.16666666666666666 0.0 0.8571428571428571 0.24242424242424243 0.09090909090909091 0.19480519480519481 0.8441558441558441 0.24242424242424243 0.18181818181818182 0.0 0.11428571428571428 0.0 0.0</feature>
+        <feature name="hu_moment">0.3645553464109308 0.04250774888399237 0.0007111567812810639 0.0016502676018776076 1.1379171744884727e-06 0.000282165452203395 -1.3788778929766403e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="361" ulx="375" nrows="36" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.virga" confidence="0.231968"/>
+      </ids>
+      <data>27 1 15 3 14 5 11 8 10 8 10 10 4 36 4 13 5 12 6 11 7 10 8 9 10 7 11 7 11 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 12 6 11 8 2 3 1 36 5 5 13 4 15 2 64</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5</feature>
+        <feature name="volume">0.4074074074074074</feature>
+        <feature name="nrows_feature">36.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.3242628507564344</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.28888888888888886 0.7333333333333333 0.4722222222222222 0.2222222222222222 0.1111111111111111 1.0 0.6944444444444444 0.16666666666666666 0.0 1.0 0.25 0.0 0.24444444444444444 0.5777777777777777 0.2777777777777778 0.3055555555555556</feature>
+        <feature name="hu_moment">0.3437186408680468 0.06235293074103426 0.0010147372071271318 0.0013060673848346587 1.40513990861914e-06 0.00032110127089683606 -5.350891298307931e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="663" ulx="130" nrows="37" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.190895"/>
+      </ids>
+      <data>50 2 19 4 16 6 15 8 13 10 12 12 9 44 2 14 9 11 11 10 12 10 12 9 13 7 15 7 15 7 15 7 15 7 15 7 16 6 16 6 16 6 16 6 16 6 16 6 16 6 16 6 12 13 9 22 4 4 18 1 105</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5945945945945946</feature>
+        <feature name="volume">0.3316953316953317</feature>
+        <feature name="nrows_feature">37.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.2947823774547144</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.5 0.5833333333333334 0.22 0.2 0.5185185185185185 0.8518518518518519 0.17777777777777778 0.0 0.37037037037037035 0.6666666666666666 0.0 0.0 0.3148148148148148 0.3333333333333333 0.13333333333333333 0.1111111111111111</feature>
+        <feature name="hu_moment">0.3423192094701011 0.0429762679326983 0.003498528989246789 0.0027664554046228384 1.1968430370666866e-06 0.0003659687220525488 -8.522909168868224e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="114" ulx="584" nrows="30" ncols="36">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.070652"/>
+      </ids>
+      <data>0 6 30 8 167 1 33 2 33 2 67 2 68 1 34 1 33 1 34 1 33 2 24 2 7 1 24 4 5 2 24 5 4 2 24 6 2 3 22 12 24 11 26 9 30 5 31 4 32 2 174</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.2</feature>
+        <feature name="volume">0.08796296296296297</feature>
+        <feature name="nrows_feature">30.0</feature>
+        <feature name="ncols_feature">36.0</feature>
+        <feature name="compactness">0.3043718396416752</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.19444444444444445 0.0 0.0 0.06944444444444445 0.0 0.013888888888888888 0.09722222222222222 0.0 0.6825396825396826 0.2222222222222222 0.0 0.0 0.1746031746031746 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">1.1874360693978714 0.06048403323589596 1.3100682784151887 1.0900799482029906 -1.0684483044933086 0.2588278969965399 -0.7452301502084258</feature>
+      </features>
+    </glyph>
+    <glyph uly="519" ulx="453" nrows="23" ncols="26">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus32" confidence="0.213883"/>
+      </ids>
+      <data>0 26 21 3 38 2 22 5 20 6 19 7 18 8 17 1 1 7 8 3 5 1 3 6 7 2 11 6 5 2 13 7 3 2 14 11 15 10 16 8 19 5 21 4 22 3 64 2 1 56 2 2 3 1 14</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1304347826086956</feature>
+        <feature name="volume">0.3277591973244147</feature>
+        <feature name="nrows_feature">23.0</feature>
+        <feature name="ncols_feature">26.0</feature>
+        <feature name="compactness">0.15597371903055085</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.16666666666666666 0.47619047619047616 0.16666666666666666 0.25 0.14285714285714285 0.8809523809523809 0.1111111111111111 0.1388888888888889 0.0 0.7857142857142857 0.2222222222222222 0.0 0.5428571428571428 0.45714285714285713 0.4 0.4666666666666667</feature>
+        <feature name="hu_moment">0.45602849896726694 0.007749698419762753 0.004379275296544503 0.002004633018483343 -3.758267844457625e-06 -0.00013124837308979155 -4.599310902850813e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="276" ulx="103" nrows="33" ncols="28">
+      <ids state="AUTOMATIC">
+        <id name="clef.f2" confidence="0.208889"/>
+      </ids>
+      <data>41 6 22 7 21 9 19 10 18 10 4 1 13 15 13 15 14 10 18 9 22 5 23 4 24 3 24 3 25 3 24 3 25 2 25 2 25 2 25 2 25 2 25 2 25 1 26 2 25 1 99 2 25 4 25 3 86</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8484848484848485</feature>
+        <feature name="volume">0.14935064935064934</feature>
+        <feature name="nrows_feature">33.0</feature>
+        <feature name="ncols_feature">28.0</feature>
+        <feature name="compactness">0.33189547898075483</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.1111111111111111 0.8412698412698413 0.36507936507936506 0.0 0.0 0.5178571428571429 0.05357142857142857 0.0 0.19642857142857142 0.05357142857142857 0.0 0.0 0.0 0.0 0.16071428571428573</feature>
+        <feature name="hu_moment">0.4950374266762858 0.06351226794342318 0.029684663134831587 0.10983417384099117 0.006233851684058886 0.02725708142801168 0.000686267098059928</feature>
+      </features>
+    </glyph>
+    <glyph uly="114" ulx="111" nrows="39" ncols="24">
+      <ids state="AUTOMATIC">
+        <id name="clef.c" confidence="0.277975"/>
+      </ids>
+      <data>60 2 21 8 15 11 12 13 10 15 8 16 7 15 8 7 1 7 9 6 3 5 10 7 2 2 13 17 1 1 5 19 5 19 5 19 5 15 9 12 12 7 17 7 17 7 17 7 17 6 18 6 17 7 14 10 14 10 14 10 16 8 18 6 18 6 18 5 19 4 21 2 22 1 9 1 6 1 8 16 8 16 7 17 24</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6153846153846154</feature>
+        <feature name="volume">0.4017094017094017</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">24.0</feature>
+        <feature name="compactness">0.20089326527963094</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.016666666666666666 0.45 0.7166666666666667 0.38333333333333336 0.16666666666666666 0.9833333333333333 0.6833333333333333 0.43333333333333335 0.4166666666666667 0.8666666666666667 0.0 0.0 0.05555555555555555 0.5185185185185185 0.35185185185185186 0.35185185185185186</feature>
+        <feature name="hu_moment">0.35715613577314276 0.04593874585861081 0.005580713390258507 0.0058803496556749735 3.262010455463764e-05 0.0006610747058882866 -8.406908651343741e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="902" ulx="123" nrows="28" ncols="25">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.298823"/>
+      </ids>
+      <data>0 5 20 5 1 14 2 3 39 2 22 4 19 6 19 7 18 9 16 10 9 2 4 9 8 4 5 7 9 5 4 6 9 7 3 6 7 10 1 7 7 19 6 1 2 16 1 5 4 6 2 5 13 3 4 5 20 4 21 5 20 5 20 5 20 4 21 4 21 4 21 2 40 1 20</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8928571428571429</feature>
+        <feature name="volume">0.3171428571428571</feature>
+        <feature name="nrows_feature">28.0</feature>
+        <feature name="ncols_feature">25.0</feature>
+        <feature name="compactness">0.2238585311568076</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.22448979591836735 0.23809523809523808 0.5 0.09523809523809523 0.4489795918367347 0.40476190476190477 0.9285714285714286 0.09523809523809523 0.3469387755102041 0.5 0.7380952380952381 0.11904761904761904 0.02040816326530612 0.11904761904761904 0.3333333333333333 0.0</feature>
+        <feature name="hu_moment">0.30546598461134616 0.002239372481877469 0.001970434236482376 0.0006826374222873882 -9.804744128652946e-08 1.5403550676312338e-05 7.856152800906489e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="768" ulx="245" nrows="43" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.199026"/>
+      </ids>
+      <data>0 39 5 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 9 3 3 11 2 4 5 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 19 39</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.3023255813953488</feature>
+        <feature name="volume">0.29338103756708406</feature>
+        <feature name="nrows_feature">43.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.1120463660410191</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.2727272727272727 0.7575757575757576 0.2727272727272727 0.2727272727272727 0.11363636363636363 0.696969696969697 0.06060606060606061 0.18181818181818182 0.0 0.6666666666666666 0.0 0.0 0.3 0.7 0.3 0.3</feature>
+        <feature name="hu_moment">1.5039315847129324 1.9596852879032918 0.0065474036762017025 0.006527786650416889 4.224280853974232e-05 0.0089104953363785 -6.065002819886232e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="652" ulx="204" nrows="39" ncols="37">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus2" confidence="0.327486"/>
+      </ids>
+      <data>99 2 34 4 32 6 29 8 29 9 27 11 26 15 23 13 24 11 26 10 28 9 19 2 7 8 18 4 7 7 18 6 6 7 17 7 6 7 16 9 5 7 15 10 5 8 7 75 3 3 1 22 17 11 1 8 17 10 2 8 18 7 4 7 19 5 6 7 20 3 7 8 29 7 30 7 31 6 31 6 31 6 30 7 30 6 32 4 32 4 34 2 35 1 50</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9487179487179487</feature>
+        <feature name="volume">0.2841302841302841</feature>
+        <feature name="nrows_feature">39.0</feature>
+        <feature name="ncols_feature">37.0</feature>
+        <feature name="compactness">0.22385222816764253</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.5333333333333333 0.2222222222222222 0.16 0.45555555555555555 0.7222222222222222 0.3 0.16 0.5666666666666667 0.7555555555555555 0.24444444444444444 0.0 0.0 0.4074074074074074 0.037037037037037035</feature>
+        <feature name="hu_moment">0.27711160604170004 0.001319700626048003 0.011417576475873645 0.00023422945403498514 3.785485959701757e-07 -8.802202095492717e-07 -5.851533729510637e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="761" ulx="167" nrows="35" ncols="35">
+      <ids state="AUTOMATIC">
+        <id name="neume.podatus4" confidence="0.244888"/>
+      </ids>
+      <data>23 3 30 6 28 8 26 9 25 10 25 12 5 70 18 17 19 11 14 2 8 10 13 5 7 9 13 6 8 7 13 7 8 7 12 9 7 7 12 10 5 8 11 11 4 9 10 1 3 9 2 10 14 12 2 7 15 9 4 7 15 8 5 7 16 6 6 7 17 4 7 6 20 1 7 7 28 8 27 8 8 4 2 3 2 4 1 12 7 35 11 4 3 11 1 5 19 6 29 6 29 4 32 2 83</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0</feature>
+        <feature name="volume">0.38040816326530613</feature>
+        <feature name="nrows_feature">35.0</feature>
+        <feature name="ncols_feature">35.0</feature>
+        <feature name="compactness">0.1313762620910729</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.2222222222222222 0.2222222222222222 0.8518518518518519 0.4166666666666667 0.35802469135802467 0.3950617283950617 0.8765432098765432 0.08333333333333333 0.18518518518518517 0.4691358024691358 0.8148148148148148 0.013888888888888888 0.125 0.18055555555555555 0.5 0.234375</feature>
+        <feature name="hu_moment">0.2878736055494451 0.000857175158759991 0.0031423225575182108 7.792407296512141e-05 1.8800044461795248e-09 7.052296522834034e-07 -3.851377131600272e-08</feature>
+      </features>
+    </glyph>
+    <glyph uly="415" ulx="590" nrows="25" ncols="34">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.216138"/>
+      </ids>
+      <data>482 2 31 3 30 5 25 2 1 7 27 6 28 4 31 2 164</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.36</feature>
+        <feature name="volume">0.036470588235294116</feature>
+        <feature name="nrows_feature">25.0</feature>
+        <feature name="ncols_feature">34.0</feature>
+        <feature name="compactness">1.1106887454723962</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.4444444444444444 0.018518518518518517 0.0 0.0 0.1111111111111111 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.2071766640931818 0.005351373860949747 0.0010723839627401054 0.0005385173889201223 3.7561938454010755e-07 1.947489188834345e-05 1.6243427037732762e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="230" ulx="113" nrows="21" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="neume.torculus23" confidence="0.261876"/>
+      </ids>
+      <data>54 3 17 10 11 13 8 15 6 14 7 14 8 5 3 6 3 1 4 5 5 4 2 2 4 5 4 9 4 5 5 8 3 8 3 2 4 2 3 9 2 1 5 2 3 11 6 2 4 9 7 2 4 8 8 2 5 6 9 2 8 1 11 2 20 2 20 2</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.0476190476190477</feature>
+        <feature name="volume">0.4155844155844156</feature>
+        <feature name="nrows_feature">21.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.2532966446078708</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.4722222222222222 0.5333333333333333 0.26666666666666666 0.3 0.7 0.88 0.52 0.43333333333333335 0.8666666666666667 0.36 0.52 0.1 0.4 0.0 0.4</feature>
+        <feature name="hu_moment">0.25364741572627314 0.0018715136409807338 0.002131416546902623 0.0009484024026271529 8.85974855149127e-07 -1.0749284818690788e-05 1.0164978514606551e-06</feature>
+      </features>
+    </glyph>
+    <glyph uly="628" ulx="565" nrows="14" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="clef.c" confidence="0.207174"/>
+      </ids>
+      <data>21 3 2 1 5 6 1 1 4 7 1 1 6 7 5 5 2 1 3 10 2 10 3 5 8 3 59</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9285714285714286</feature>
+        <feature name="volume">0.32967032967032966</feature>
+        <feature name="nrows_feature">14.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.5526933375585532</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.125 0.25 0.6666666666666666 0.4166666666666667 0.3125 0.5833333333333334 1.0 0.8333333333333334 0.16666666666666666 0.5555555555555556 0.1111111111111111 0.0 0.0 0.0 0.0 0.0</feature>
+        <feature name="hu_moment">0.2648425925925925 0.013436753172153608 0.0014038807654860731 0.0024454615828157613 4.435464686757758e-06 0.0002215252449125945 9.26163329293756e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="96" ulx="486" nrows="30" ncols="27">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.297881"/>
+      </ids>
+      <data>148 4 22 8 17 12 14 13 13 14 12 14 12 6 3 5 13 6 5 2 14 5 22 6 1 1 2 6 11 21 6 6 5 2 2 6 6 6 5 1 15 7 3 2 15 8 1 1 17 10 17 8 20 7 21 4 177</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.9</feature>
+        <feature name="volume">0.23580246913580247</feature>
+        <feature name="nrows_feature">30.0</feature>
+        <feature name="ncols_feature">27.0</feature>
+        <feature name="compactness">0.26821280497357863</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.125 0.2857142857142857 0.020833333333333332 0.08928571428571429 0.8035714285714286 0.7142857142857143 0.1875 0.12244897959183673 0.8979591836734694 0.16326530612244897 0.14285714285714285 0.0 0.08163265306122448 0.0 0.0</feature>
+        <feature name="hu_moment">0.25327133639529215 0.005842230636630462 0.0016762807308554396 0.0004445826059908975 1.2274409468186115e-07 -2.8465910071451954e-05 3.6364043313335107e-07</feature>
+      </features>
+    </glyph>
+    <glyph uly="116" ulx="321" nrows="21" ncols="18">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.312779"/>
+      </ids>
+      <data>62 3 12 6 11 8 9 9 8 10 8 10 6 13 5 53 4 13 6 11 7 9 9 8 11 6 14 3 13 1 2 1 13 2 12</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.8571428571428571</feature>
+        <feature name="volume">0.43915343915343913</feature>
+        <feature name="nrows_feature">21.0</feature>
+        <feature name="ncols_feature">18.0</feature>
+        <feature name="compactness">0.6395177353744864</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.03333333333333333 0.4 0.16666666666666666 0.0 0.72 1.0 0.65 0.2 0.56 1.0 0.95 0.5 0.08 0.64 0.15 0.0</feature>
+        <feature name="hu_moment">0.17814325964039057 0.00010638436801668473 0.00016270172291931167 1.1036291952318184e-05 -2.6421610576689917e-10 1.0679470860727016e-07 3.8587089967324423e-10</feature>
+      </features>
+    </glyph>
+    <glyph uly="683" ulx="110" nrows="19" ncols="22">
+      <ids state="AUTOMATIC">
+        <id name="custos" confidence="0.249751"/>
+      </ids>
+      <data>35 1 20 2 19 2 19 2 19 3 19 2 19 2 20 2 18 7 3 6 5 17 5 2 19 4 17 1 1 3 20 2 20 2 20 2 18 4 17 5 14</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">1.1578947368421053</feature>
+        <feature name="volume">0.16985645933014354</feature>
+        <feature name="nrows_feature">19.0</feature>
+        <feature name="ncols_feature">22.0</feature>
+        <feature name="compactness">0.24695843444491064</feature>
+        <feature name="nholes">1.0</feature>
+        <feature name="volume16regions">0.0 0.1 0.16 0.0 0.0 0.5 0.08 0.2 0.2 0.43333333333333335 0.2 0.2 0.20833333333333334 0.3333333333333333 0.0 0.0</feature>
+        <feature name="hu_moment">0.5653919549832221 0.0715529637830676 0.08612046411067367 0.011238263755187607 0.00027905687297054467 -0.0009566469924958159 0.00021062915022991845</feature>
+      </features>
+    </glyph>
+    <glyph uly="738" ulx="199" nrows="27" ncols="14">
+      <ids state="AUTOMATIC">
+        <id name="neume.punctum" confidence="0.197829"/>
+      </ids>
+      <data>46 1 13 1 13 1 13 1 13 1 41 2 2 1 9 2 3 1 8 2 3 1 8 1 4 1 8 2 3 1 8 2 3 1 8 2 3 1 9 1 3 1 9 2 1 2 9 5 10 3 11 1 76 1</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.5185185185185185</feature>
+        <feature name="volume">0.10846560846560846</feature>
+        <feature name="nrows_feature">27.0</feature>
+        <feature name="ncols_feature">14.0</feature>
+        <feature name="compactness">0.40056888616205927</feature>
+        <feature name="nholes">0.0</feature>
+        <feature name="volume16regions">0.0 0.14285714285714285 0.0 0.0 0.0 0.2857142857142857 0.19047619047619047 0.0 0.0 0.5 0.42857142857142855 0.0 0.0 0.041666666666666664 0.0 0.05555555555555555</feature>
+        <feature name="hu_moment">0.7259035707549222 0.3151667508847833 0.07162103125358915 0.024542664304198696 0.0007602978772567854 0.008288330214282902 0.0006933448247812136</feature>
+      </features>
+    </glyph>
+    <glyph uly="107" ulx="382" nrows="59" ncols="10">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.274994"/>
+      </ids>
+      <data>0 10 4 2 9 1 9 1 8 3 8 2 8 1 9 1 9 1 9 1 4 2 3 1 4 1 4 1 9 1 8 2 8 3 8 2 8 2 8 2 8 2 8 2 8 3 2 10 4 3 8 1 9 1 9 1 9 1 8 2 8 2 9 1 8 2 8 2 8 2 8 2 8 2 8 1 9 1 19 2 8 1 9 1 9 1 5 20 4 1 9 1 9 1 9 1 9 1 9 1 9 1 9 1 9 1 65</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.1694915254237288</feature>
+        <feature name="volume">0.19491525423728814</feature>
+        <feature name="nrows_feature">59.0</feature>
+        <feature name="ncols_feature">10.0</feature>
+        <feature name="compactness">0.14021597971452301</feature>
+        <feature name="nholes">3.0</feature>
+        <feature name="volume16regions">0.13333333333333333 0.4666666666666667 0.16666666666666666 0.06666666666666667 0.06666666666666667 0.4444444444444444 0.3333333333333333 0.06666666666666667 0.13333333333333333 0.5333333333333333 0.13333333333333333 0.13333333333333333 0.0 0.19047619047619047 0.0 0.0</feature>
+        <feature name="hu_moment">2.09474808909345 4.1232571708607795 0.011942982581315972 0.007033534111251466 6.256362301010725e-05 0.010476691623267012 -1.5536785137991495e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="362" ulx="368" nrows="61" ncols="13">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.181236"/>
+      </ids>
+      <data>50 2 11 2 11 28 3 1 7 2 11 2 4 1 6 2 4 1 6 2 4 1 6 2 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 1 4 2 6 3 2 3 4 28 5 2 5 1 5 2 5 1 5 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 11 2 12 1 11 2 6 26 5 2 11 2 11 2 11 2 11 2 11 1 12 1 12 1 9 1 2 1 8 2 10 2 11</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.21311475409836064</feature>
+        <feature name="volume">0.2547288776796974</feature>
+        <feature name="nrows_feature">61.0</feature>
+        <feature name="ncols_feature">13.0</feature>
+        <feature name="compactness">0.08058172252110386</feature>
+        <feature name="nholes">4.0</feature>
+        <feature name="volume16regions">0.140625 0.3125 0.125 0.5208333333333334 0.16666666666666666 0.7333333333333333 0.13333333333333333 0.4444444444444444 0.0 0.6666666666666666 0.0 0.0 0.21666666666666667 0.5111111111111111 0.13333333333333333 0.13333333333333333</feature>
+        <feature name="hu_moment">1.3635626870205892 1.5698816246658165 0.09912070643403806 0.05671275540838423 0.004252056894030787 0.07105278667978338 -1.881042167360898e-05</feature>
+      </features>
+    </glyph>
+    <glyph uly="366" ulx="478" nrows="48" ncols="10">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.234754"/>
+      </ids>
+      <data>13 3 4 6 4 5 7 3 7 2 8 2 8 2 9 2 8 2 3 1 4 2 7 3 7 3 7 3 8 2 7 2 9 2 8 2 8 2 8 2 7 4 4 1 1 4 4 8 2 16 4 1 2 2 8 2 8 2 8 2 8 2 8 2 8 1 9 1 9 1 9 2 8 2 8 2 8 1 9 1 9 1 9 1 5 1 9 1 9 1 9 1 9 1 9 1 9 1 9 1</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.20833333333333334</feature>
+        <feature name="volume">0.24583333333333332</feature>
+        <feature name="nrows_feature">48.0</feature>
+        <feature name="ncols_feature">10.0</feature>
+        <feature name="compactness">0.1824887873318684</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.3055555555555556 0.5833333333333334 0.0 0.041666666666666664 0.3333333333333333 0.75 0.16666666666666666 0.08333333333333333 0.1111111111111111 0.6111111111111112 0.0 0.0 0.0 0.16666666666666666 0.0 0.3333333333333333</feature>
+        <feature name="hu_moment">1.231285817926857 1.3676217503443344 0.1514535731835731 0.1306365387681217 0.018372097216184137 0.13352342293046632 -0.0003482870062326057</feature>
+      </features>
+    </glyph>
+    <glyph uly="614" ulx="561" nrows="45" ncols="7">
+      <ids state="AUTOMATIC">
+        <id name="divisio.maior" confidence="0.245614"/>
+      </ids>
+      <data>37 2 5 2 5 2 5 2 5 2 5 2 3 5 2 5 5 2 5 1 6 1 6 2 5 2 5 2 4 3 3 4 2 5 2 1 2 1 6 1 6 1 6 1 6 1 6 1 6 1 6 1 6 1 3 5 2 4 5 2 6 1 5 2 5 1 6 1 53</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.15555555555555556</feature>
+        <feature name="volume">0.2222222222222222</feature>
+        <feature name="nrows_feature">45.0</feature>
+        <feature name="ncols_feature">7.0</feature>
+        <feature name="compactness">0.23690480097388392</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.08333333333333333 0.5833333333333334 0.041666666666666664 0.0 0.2727272727272727 0.6818181818181818 0.36363636363636365 0.0 0.18181818181818182 0.6363636363636364 0.045454545454545456 0.0 0.0 0.22727272727272727 0.0 0.0</feature>
+        <feature name="hu_moment">1.2327842565597669 1.4356361497760286 0.07340325295971609 0.07158905562468224 0.005187632562464755 0.08472764869855706 0.0001401338660413338</feature>
+      </features>
+    </glyph>
+    <glyph uly="250" ulx="436" nrows="31" ncols="19">
+      <ids state="AUTOMATIC">
+        <id name="neume.clivis2a" confidence="0.197892"/>
+      </ids>
+      <data>45 2 17 3 15 5 14 6 12 9 9 12 7 15 3 68 8 9 10 8 11 8 11 8 11 8 12 7 12 7 8 2 2 7 8 11 8 11 8 10 9 8 11 7 12 6 13 5 71</data>
+      <features scaling="1.0" version="ic-core/v1">
+        <feature name="aspect_ratio">0.6129032258064516</feature>
+        <feature name="volume">0.41086587436332767</feature>
+        <feature name="nrows_feature">31.0</feature>
+        <feature name="ncols_feature">19.0</feature>
+        <feature name="compactness">0.4465129312566622</feature>
+        <feature name="nholes">2.0</feature>
+        <feature name="volume16regions">0.025 0.575 0.3 0.03125 0.6 1.0 0.7 0.5 0.6 1.0 0.175 0.0 0.5714285714285714 0.17142857142857143 0.0 0.0</feature>
+        <feature name="hu_moment">0.25183058895516436 0.02358164167151927 0.0028368803335608664 0.0003415484899893454 2.7683076164709615e-07 4.444618473787564e-05 -1.9077702694154605e-07</feature>
+      </features>
+    </glyph>
+  </glyphs>
+</gamera-database>
