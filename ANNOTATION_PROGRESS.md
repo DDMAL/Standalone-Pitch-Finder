@@ -10,18 +10,18 @@ not a source of truth itself.
 
 | Folio | Style | Neume boxes (classId=2) | Staff-line boxes (classId=3) | Page folder built | Annotation progress |
 |---|---|---|---|---|---|
-| Antiphonal_12v_hfngl | Hufnagel | 101 | 24 | yes | 79 labeled (8 skipped) |
-| Antiphonal_1v_hfngl | Hufnagel | 116 | 36 | yes | 96 labeled (7 skipped) |
-| Antiphonal_44v_hfngl | Hufnagel | 113 | 28 | yes | 88 labeled (13 skipped) |
-| Antiphonale officii Windeshemense I p.009 | Hufnagel | 231 | 55 | yes | 167 labeled (22 skipped) |
-| CantusMA1537 p.22 | Hufnagel | 308 | 0 (staff-finding run ourselves) | yes | 38 labeled (0 skipped), in progress |
+| Antiphonal_12v_hfngl | Hufnagel | 101 | 24 | yes | 79 labeled (8 skipped), done |
+| Antiphonal_1v_hfngl | Hufnagel | 116 | 36 | yes | 96 labeled (7 skipped), done |
+| Antiphonal_44v_hfngl | Hufnagel | 113 | 28 | yes | 88 labeled (13 skipped), done |
+| Antiphonale officii Windeshemense I p.009 | Hufnagel | 231 | 55 | yes | 167 labeled (22 skipped), done |
+| CantusMA1537 p.22 | Hufnagel | 308 | 0 (staff-finding run ourselves) | yes | 38/249 labeled, in progress |
 | MS025a-01 | Hufnagel | 282 | 78 | no | - |
 | MS025a-02 | Hufnagel | 258 | 0 | no | - |
 | MS025b-01 | Hufnagel | 290 | 0 | no | - |
 | MS234 p.005 | Hufnagel | 177 | 43 | no | - |
-| NZ-Wt MSR-03 013r | Hufnagel | 102 | 28 | no | - |
-| NZ-Wt MSR-03 065r | Hufnagel | 121 | 35 | no | - |
-| NZ-Wt MSR-03 109v | Hufnagel | 112 | 24 | no | - |
+| NZ-Wt MSR-03 013r | Hufnagel | 102 | 28 | yes | 74 labeled (12 skipped), done |
+| NZ-Wt MSR-03 065r | Hufnagel | 121 | 35 | yes | 101 labeled (14 skipped), done |
+| NZ-Wt MSR-03 109v | Hufnagel | 112 | 24 | yes | 98 labeled (8 skipped), done |
 | A-Gu-30_032r | Square | 167 | 0 | no | - |
 | A-Gu-30_123v | Square | 216 | 0 | no | - |
 | A-Gu-30_144v | Square | 241 | 72 | no | - |
@@ -44,4 +44,4 @@ converting Gen's boxes.
 
 ## Total
 
-**631** human-annotated stave steps across 6 pages (4 done, 2 in progress).
+**904** human-annotated stave steps across 9 pages (7 done, 2 in progress).
