@@ -1,0 +1,2143 @@
+{
+  "0": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      6,
+      5
+    ]
+  },
+  "1": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "100": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      5,
+      6
+    ]
+  },
+  "101": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "103": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      1,
+      2
+    ]
+  },
+  "104": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "105": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "106": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "107": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      3,
+      2
+    ]
+  },
+  "108": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "109": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "11": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "111": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "112": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "113": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "114": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "115": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "116": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "117": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      5,
+      2
+    ]
+  },
+  "118": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus32",
+    "skipped": false,
+    "steps": [
+      2,
+      4,
+      3
+    ]
+  },
+  "119": {
+    "accepted_heuristic": false,
+    "class_name": "neume.tristropha",
+    "skipped": false,
+    "steps": [
+      6,
+      6,
+      6
+    ]
+  },
+  "120": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "121": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "122": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "124": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      4,
+      6,
+      4
+    ]
+  },
+  "125": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "126": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "127": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "128": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "13": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      5,
+      6
+    ]
+  },
+  "130": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "131": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "132": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "133": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "134": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "135": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      3,
+      4
+    ]
+  },
+  "136": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "137": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "138": {
+    "accepted_heuristic": false,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "139": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "14": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "140": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "141": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus32",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "143": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "144": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "145": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "146": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "147": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      4,
+      5,
+      4
+    ]
+  },
+  "148": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "149": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "15": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "151": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      4,
+      5,
+      4
+    ]
+  },
+  "152": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      5,
+      4
+    ]
+  },
+  "153": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      6,
+      3
+    ]
+  },
+  "155": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "156": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      3,
+      2
+    ]
+  },
+  "157": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "158": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "159": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      3,
+      2
+    ]
+  },
+  "16": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "160": {
+    "accepted_heuristic": false,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "161": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "162": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "164": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "165": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "166": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "167": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "168": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus32",
+    "skipped": false,
+    "steps": [
+      8
+    ]
+  },
+  "169": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "17": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      3,
+      4
+    ]
+  },
+  "172": {
+    "accepted_heuristic": false,
+    "class_name": "custos",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "173": {
+    "accepted_heuristic": true,
+    "class_name": "custos",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "175": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "177": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "178": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      -1
+    ]
+  },
+  "179": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "18": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "181": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      6,
+      6,
+      6
+    ]
+  },
+  "182": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "183": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "184": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "185": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "186": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis3a",
+    "skipped": false,
+    "steps": [
+      6,
+      4
+    ]
+  },
+  "187": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "188": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "189": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "19": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "190": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "191": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "192": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      0
+    ]
+  },
+  "193": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      2,
+      2
+    ]
+  },
+  "194": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      0
+    ]
+  },
+  "195": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "196": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "197": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "198": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "199": {
+    "accepted_heuristic": true,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "2": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "20": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "200": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "201": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "202": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "203": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "204": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "205": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "206": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "207": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      2,
+      2
+    ]
+  },
+  "208": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "209": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      2
+    ]
+  },
+  "21": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "210": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "211": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "212": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "213": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      -1
+    ]
+  },
+  "214": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "215": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis4a",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "216": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "217": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "218": {
+    "accepted_heuristic": false,
+    "class_name": "custos",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "219": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "22": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      5,
+      6
+    ]
+  },
+  "220": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "221": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      -1
+    ]
+  },
+  "222": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "223": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "224": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "225": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "227": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "228": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "229": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "23": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "230": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "231": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "232": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "233": {
+    "accepted_heuristic": true,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "234": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "235": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "236": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "237": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "24": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      3,
+      4
+    ]
+  },
+  "240": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "242": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "243": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "244": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "245": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "246": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "247": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "248": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis4a",
+    "skipped": false,
+    "steps": [
+      3,
+      4,
+      2
+    ]
+  },
+  "249": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "25": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "250": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "251": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "252": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "253": {
+    "accepted_heuristic": true,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "254": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "255": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "256": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "257": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "258": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "259": {
+    "accepted_heuristic": true,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "26": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "260": {
+    "accepted_heuristic": true,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "261": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "262": {
+    "accepted_heuristic": false,
+    "class_name": "neume.distropha",
+    "skipped": false,
+    "steps": [
+      4,
+      4
+    ]
+  },
+  "265": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "266": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "267": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "268": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "269": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "27": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      4,
+      6
+    ]
+  },
+  "270": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      5,
+      4
+    ]
+  },
+  "271": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "272": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "273": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "274": {
+    "accepted_heuristic": false,
+    "class_name": "neume.punctum",
+    "skipped": true,
+    "steps": []
+  },
+  "275": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "276": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      5
+    ]
+  },
+  "277": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "278": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      3
+    ]
+  },
+  "279": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "28": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "280": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      5,
+      6
+    ]
+  },
+  "29": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      1,
+      4,
+      3
+    ]
+  },
+  "3": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "30": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      4,
+      6
+    ]
+  },
+  "31": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "32": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "33": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      4,
+      5
+    ]
+  },
+  "35": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "36": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "37": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "40": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      1,
+      2
+    ]
+  },
+  "41": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis4a",
+    "skipped": false,
+    "steps": [
+      5,
+      2
+    ]
+  },
+  "42": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      0,
+      2
+    ]
+  },
+  "43": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      4,
+      5
+    ]
+  },
+  "44": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "45": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "46": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "47": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      1,
+      2
+    ]
+  },
+  "48": {
+    "accepted_heuristic": false,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "49": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      3,
+      4,
+      3
+    ]
+  },
+  "5": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "50": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "51": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "52": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "53": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "54": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "55": {
+    "accepted_heuristic": false,
+    "class_name": "neume.podatus4",
+    "skipped": false,
+    "steps": [
+      1,
+      4,
+      3
+    ]
+  },
+  "56": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "57": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "58": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "59": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      0,
+      2,
+      0
+    ]
+  },
+  "6": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "60": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      4,
+      6,
+      4
+    ]
+  },
+  "61": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      3,
+      4,
+      3
+    ]
+  },
+  "62": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      2,
+      4,
+      2
+    ]
+  },
+  "63": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "64": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "65": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "66": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "67": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "69": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      4,
+      6
+    ]
+  },
+  "70": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      4,
+      6
+    ]
+  },
+  "71": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus2",
+    "skipped": false,
+    "steps": [
+      3,
+      4
+    ]
+  },
+  "72": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "73": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  },
+  "74": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      6,
+      8
+    ]
+  },
+  "75": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "76": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "77": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "78": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "79": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "8": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "80": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "81": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2a",
+    "skipped": false,
+    "steps": [
+      5,
+      4
+    ]
+  },
+  "82": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "83": {
+    "accepted_heuristic": true,
+    "class_name": "neume.punctum",
+    "skipped": false,
+    "steps": [
+      4
+    ]
+  },
+  "84": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "85": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus33",
+    "skipped": false,
+    "steps": [
+      4,
+      6,
+      4
+    ]
+  },
+  "86": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      6
+    ]
+  },
+  "87": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "88": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      1
+    ]
+  },
+  "89": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "9": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis3b",
+    "skipped": false,
+    "steps": [
+      4,
+      2
+    ]
+  },
+  "90": {
+    "accepted_heuristic": false,
+    "class_name": "neume.torculus23",
+    "skipped": false,
+    "steps": [
+      4,
+      5,
+      4
+    ]
+  },
+  "91": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "92": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "93": {
+    "accepted_heuristic": true,
+    "class_name": "neume.torculus22",
+    "skipped": false,
+    "steps": [
+      1,
+      2,
+      1
+    ]
+  },
+  "94": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "95": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      4,
+      3
+    ]
+  },
+  "96": {
+    "accepted_heuristic": true,
+    "class_name": "neume.podatus3",
+    "skipped": false,
+    "steps": [
+      2,
+      4
+    ]
+  },
+  "97": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "98": {
+    "accepted_heuristic": true,
+    "class_name": "neume.virga",
+    "skipped": false,
+    "steps": [
+      2
+    ]
+  },
+  "99": {
+    "accepted_heuristic": true,
+    "class_name": "neume.clivis2b",
+    "skipped": false,
+    "steps": [
+      2,
+      1
+    ]
+  }
+}
