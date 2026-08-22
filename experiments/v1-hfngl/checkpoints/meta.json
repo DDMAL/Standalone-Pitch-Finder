@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "n_train_real": 958,
+  "n_test": 247,
+  "n_pseudo": 23,
+  "pages": [
+    "McGill_MS234-064",
+    "Antiphonal_12v_hfngl",
+    "Antiphonal_1v_hfngl",
+    "Antiphonal_44v_hfngl",
+    "Antiphonale_officii_Windeshemense_p009",
+    "CantusMA1537_p22",
+    "NZ-Wt_MSR-03_013r",
+    "NZ-Wt_MSR-03_065r",
+    "NZ-Wt_MSR-03_109v",
+    "MS025a-01",
+    "MS025a-02",
+    "MS025b-01",
+    "MS234_p005"
+  ]
+}
