@@ -394,11 +394,16 @@ class Annotator:
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     parser.add_argument("page", type=Path)
+    parser.add_argument("--no-regroup", dest="regroup_staves", action="store_false",
+                         help="Trust the staff JSON's own stave_id / within_stave_index instead of "
+                             "re-deriving them from line geometry -- needed for a page whose grouping "
+                             "was fixed by hand in fix_stafflines.py (see its manually_grouped flag). "
+                             "See run_pitch_finding.py's own --no-regroup for the same option.")
     args = parser.parse_args()
 
     inputs = resolve_page_inputs(args.page)
     glyphs = parse_ic_xml(inputs.ic_xml)
-    staves = load_staves(inputs.staff_json)
+    staves = load_staves(inputs.staff_json, regroup=args.regroup_staves)
     shapes = load_neume_shapes(DEFAULT_NEUME_CSV)
     image = cv2.imread(str(inputs.image))
     if image is None:
