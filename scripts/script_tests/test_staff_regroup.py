@@ -208,3 +208,29 @@ def test_empty_input():
     out, report = regroup_entries([])
     assert out == []
     assert (report.staves, report.columns, report.lines_kept) == (0, 0, 0)
+
+
+def test_degenerate_zero_width_entry_is_dropped_not_crashed_on():
+    # A detection too thin/spurious for staff-finding's own fit step to
+    # produce any y samples for -- real data from a re-run staff-finding
+    # pass, not a hypothetical: statistics.fmean([]) on this entry's empty
+    # y_values used to blow up regroup_entries outright before it ever got
+    # to decide the entry was unusable.
+    degenerate = {
+        "id": "degenerate0",
+        "source": "detected",
+        "centerline_page": {"x_start": 242, "x_end": 242, "y_values": []},
+        "fit": {"residual_mean": 1.0},
+        "quality": {"flags": []},
+        "scale_unit": 16.5,
+        "column_id": None,
+        "stave_id": None,
+        "within_stave_index": None,
+    }
+    entries = four_line_stave("A", 100.0, 100, 400) + [degenerate]
+
+    out, report = regroup_entries(entries)
+
+    assert report.lines_in == 5
+    assert all(e["id"] != "degenerate0" for e in out)
+    assert grouping(out) == {0: [0, 1, 2, 3]}

@@ -43,6 +43,15 @@ same file already carries (each line's x span and centerline y), in three steps:
 Near-duplicate entries (same line, overlapping x) are dropped; genuine
 fragments (same line, disjoint x) are all kept, since between them they cover
 more of the stave than either does alone.
+
+An entry with no y_values at all (a degenerate zero-width centerline -- seen
+from a detection too thin/spurious for staff-finding's own fit step to
+produce any samples for) is dropped before any of the above: every grouping
+step below reads a y from each entry, and one with nothing to average would
+otherwise fail outright rather than just being geometry staff-finding
+couldn't use. Such an entry already carries no stave_id of its own for the
+same reason, so dropping it here changes nothing for a caller that was going
+to discard it anyway once ungrouped.
 """
 
 from dataclasses import dataclass, field
@@ -286,6 +295,11 @@ def regroup_entries(entries: list[dict]) -> tuple[list[dict], RegroupReport]:
     if not entries:
         return [], RegroupReport(0, 0, 0, 0, 0.0)
 
+    lines_in = len(entries)
+    entries = [e for e in entries if e["centerline_page"]["y_values"]]
+    if not entries:
+        return [], RegroupReport(lines_in, 0, 0, 0, 0.0)
+
     gap = estimate_line_gap(entries) or 1.0
     columns = split_columns(entries)
 
@@ -310,7 +324,7 @@ def regroup_entries(entries: list[dict]) -> tuple[list[dict], RegroupReport]:
                 incomplete.append((stave_id, indices))
             stave_id += 1
 
-    report = RegroupReport(lines_in=len(entries), lines_kept=len(out),
+    report = RegroupReport(lines_in=lines_in, lines_kept=len(out),
                            columns=len(columns), staves=stave_id, line_gap=gap,
                            line_counts=counts, incomplete=incomplete)
     return out, report
