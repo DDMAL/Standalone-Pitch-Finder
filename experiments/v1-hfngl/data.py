@@ -1,7 +1,7 @@
 """Data loading for the v1 Hufnagel experiments -- shared by train.py and
 evaluate.py so both work from the exact same glyph/crop/label definitions.
 
-See ../README.md for what "real-labeled" / "pseudo" / "corrected" mean here.
+See ../README.md for what "real-labeled" / "corrected" mean here.
 """
 import json
 import sys
@@ -17,7 +17,7 @@ import numpy as np
 from ic_io import parse_ic_xml
 from staff_io import load_staves
 from page_inputs import resolve_page_inputs
-from annotate_notecenters import expanded_boxes, heuristic_steps, labels_path, expected_count
+from annotate_notecenters import expanded_boxes, heuristic_steps, labels_path
 from neume_shapes import load_neume_shapes
 from run_pitch_finding import DEFAULT_NEUME_CSV
 
@@ -46,17 +46,6 @@ MANUAL_STAFF_PAGES = {"CantusMA1537_p22", "MS025a-01", "MS025a-02", "MS025b-01",
 TRUE_ORIGINAL_OVERRIDE = {name: HERE / "staff_originals" / f"{name}_original_stafflines.json"
                            for name in MANUAL_STAFF_PAGES}
 
-# Pages with real Gen-provided staff-line boxes -- eligible pseudo-label
-# sources (pages whose staff came from our own uncertain detector are
-# excluded even once corrected, per the standing "no staff line = no pseudo"
-# rule). load_pseudo_page excludes any glyph with a real label, so a
-# fully-annotated page here just contributes 0.
-PSEUDO_ELIGIBLE_PAGES = [
-    "McGill_MS234-064", "Antiphonal_12v_hfngl", "Antiphonal_1v_hfngl", "Antiphonal_44v_hfngl",
-    "Antiphonale_officii_Windeshemense_p009", "NZ-Wt_MSR-03_013r", "NZ-Wt_MSR-03_065r",
-    "NZ-Wt_MSR-03_109v", "MS025a-01", "MS234_p005",
-]
-
 
 def staves_for(page_name, corrected: bool):
     if corrected or page_name not in MANUAL_STAFF_PAGES:
@@ -66,16 +55,20 @@ def staves_for(page_name, corrected: bool):
     return load_staves(TRUE_ORIGINAL_OVERRIDE[page_name], regroup=True)
 
 
-def crop_for(image, boxes, g):
-    if g.index not in boxes:
-        return None
-    top, bottom, _ = boxes[g.index]
+def crop_from_bounds(image, ulx, ncols, top, bottom):
     top, bottom = round(top), round(bottom)
-    crop = image[max(0, top):bottom, g.ulx:g.ulx + g.ncols]
+    crop = image[max(0, top):bottom, ulx:ulx + ncols]
     if crop.size == 0:
         return None
     crop = cv2.resize(crop, (IMG_W, IMG_H), interpolation=cv2.INTER_AREA)
     return crop.astype(np.float32) / 255.0
+
+
+def crop_for(image, boxes, g):
+    if g.index not in boxes:
+        return None
+    top, bottom, _ = boxes[g.index]
+    return crop_from_bounds(image, g.ulx, g.ncols, top, bottom)
 
 
 def load_real_labeled_page(page_name, shapes):
@@ -100,9 +93,10 @@ def load_real_labeled_page(page_name, shapes):
         if entry["skipped"] or len(entry["steps"]) != 1:
             continue
         g = by_index.get(int(key))
-        if g is None:
+        if g is None or g.index not in boxes:
             continue
-        crop = crop_for(image, boxes, g)
+        box_top, box_bottom, _ = boxes[g.index]
+        crop = crop_from_bounds(image, g.ulx, g.ncols, box_top, box_bottom)
         if crop is None:
             continue
         gc, gu = guess_c.get(g.index, []), guess_u.get(g.index, [])
@@ -111,39 +105,34 @@ def load_real_labeled_page(page_name, shapes):
             "truth": entry["steps"][0], "crop": crop,
             "heur_corrected": gc[0] if gc else float("nan"),
             "heur_uncorrected": gu[0] if gu else float("nan"),
+            # raw (pre-round) crop geometry, kept so augment.py can re-crop
+            # this exact glyph with jittered bounds without reloading images
+            "ulx": g.ulx, "ncols": g.ncols, "box_top": box_top, "box_bottom": box_bottom,
         })
     return rows
 
 
-def load_pseudo_page(page_name, shapes):
-    """Unlabeled single-note-class glyphs -> pseudo step = heuristic's own
-    rounded guess (best-available geometry). Real-labeled indices excluded."""
-    inputs = resolve_page_inputs(ROOT / page_name)
-    glyphs_all = parse_ic_xml(inputs.ic_xml)
-    image = cv2.imread(str(inputs.image), cv2.IMREAD_GRAYSCALE)
-    image_bgr = cv2.imread(str(inputs.image))
-    staves_c = staves_for(page_name, corrected=True)
-    boxes = expanded_boxes(glyphs_all, staves_c)
-    guesses = heuristic_steps(glyphs_all, staves_c, shapes, image_bgr)
-
-    lp = labels_path(inputs)
-    progress = json.loads(lp.read_text()) if lp.exists() else {}
-    labeled_indices = {int(k) for k, v in progress.items() if not v["skipped"] and len(v["steps"]) == 1}
-
-    rows = []
-    for g in glyphs_all:
-        if g.state == "UNCLASSIFIED" or shapes.is_pitchless(g.class_name) or shapes.is_clef(g.class_name):
-            continue
-        if g.index in labeled_indices or expected_count(shapes, g.class_name) != 1:
-            continue
-        guess = guesses.get(g.index, [])
-        if not guess:
-            continue
-        crop = crop_for(image, boxes, g)
-        if crop is None:
-            continue
-        rows.append({"page": page_name, "class_name": g.class_name, "step": round(guess[0]), "crop": crop})
-    return rows
+def uncorrected_crop_for_row(row, image_cache):
+    """Re-crop a real-labeled row's glyph under its page's TRUE
+    pre-correction staff geometry, for the robustness check in
+    evaluate_robustness.py. None if the page never needed correction (no
+    uncorrected alternative exists) or the glyph has no coverage there.
+    image_cache: {page_name: (grayscale_image, expanded_boxes_dict)},
+    filled lazily so each page's image/boxes are computed only once."""
+    page = row["page"]
+    if page not in MANUAL_STAFF_PAGES:
+        return None
+    if page not in image_cache:
+        inputs = resolve_page_inputs(ROOT / page)
+        glyphs_all = parse_ic_xml(inputs.ic_xml)
+        image = cv2.imread(str(inputs.image), cv2.IMREAD_GRAYSCALE)
+        staves_u = staves_for(page, corrected=False)
+        image_cache[page] = (image, expanded_boxes(glyphs_all, staves_u))
+    image, boxes_u = image_cache[page]
+    if row["glyph_index"] not in boxes_u:
+        return None
+    top, bottom, _ = boxes_u[row["glyph_index"]]
+    return crop_from_bounds(image, row["ulx"], row["ncols"], top, bottom)
 
 
 def load_shapes():

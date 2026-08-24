@@ -2,7 +2,7 @@
   "seed": 42,
   "n_train_real": 958,
   "n_test": 247,
-  "n_pseudo": 23,
+  "n_aug": 2874,
   "pages": [
     "McGill_MS234-064",
     "Antiphonal_12v_hfngl",
