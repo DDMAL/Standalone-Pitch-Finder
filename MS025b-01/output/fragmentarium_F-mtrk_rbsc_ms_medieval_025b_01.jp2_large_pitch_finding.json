@@ -101,7 +101,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.831704063459761,
+          "stave_step": 4.922631998020652,
           "center_x": 613.5,
           "center_y": 2154.9414519906322,
           "pitch": {
@@ -111,9 +111,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.8317040634597612,
+          "stave_step": 2.922631998020652,
           "center_x": 613.5,
-          "center_y": 2212.735527844469,
+          "center_y": 2210.6597450910367,
           "pitch": {
             "pname": "E",
             "oct": 3
@@ -125,7 +125,7 @@
         "region": "top",
         "x": 613.5,
         "y": 2154.9414519906322,
-        "stave_step": 4.831704063459761,
+        "stave_step": 4.922631998020652,
         "interval": 0.0
       },
       "clef_used": {
@@ -630,16 +630,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9314223868691967,
+          "stave_step": 1.9991020963810184,
           "center_x": 1905.5,
           "center_y": 2871.4302554027504,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.06857761313080335,
+          "stave_step": -0.0008979036189815659,
           "center_x": 1905.5,
-          "center_y": 2927.4932515994105,
+          "center_y": 2927.6481230280237,
           "pitch": null
         }
       ],
@@ -648,7 +648,7 @@
         "region": "top",
         "x": 1905.5,
         "y": 2871.4302554027504,
-        "stave_step": 1.9314223868691967,
+        "stave_step": 1.9991020963810184,
         "interval": 0.0
       },
       "clef_used": null,
@@ -1110,7 +1110,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.8668697837007819,
+          "stave_step": 0.8594509946735611,
           "center_x": 2282.5,
           "center_y": 2250.33125,
           "pitch": {
@@ -1120,9 +1120,9 @@
         },
         {
           "interval_from_first": 2,
-          "stave_step": 2.866869783700782,
+          "stave_step": 2.859450994673561,
           "center_x": 2282.5,
-          "center_y": 2195.1436485654144,
+          "center_y": 2195.364393326713,
           "pitch": {
             "pname": "E",
             "oct": 3
@@ -1130,7 +1130,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 0.8668697837007819,
+          "stave_step": 0.8594509946735611,
           "center_x": 2282.5,
           "center_y": 2250.33125,
           "pitch": {
@@ -1144,7 +1144,7 @@
         "region": "bottom_left",
         "x": 2282.5,
         "y": 2250.33125,
-        "stave_step": 0.8668697837007819,
+        "stave_step": 0.8594509946735611,
         "interval": 0.0
       },
       "clef_used": {
@@ -1170,21 +1170,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9072952397698053,
+          "stave_step": 1.991589762004823,
           "center_x": 1351.5,
           "center_y": 2881.9267605633804,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 3.9072952397698053,
+          "stave_step": 3.991589762004823,
           "center_x": 1351.5,
-          "center_y": 2826.714174296146,
+          "center_y": 2826.2171820976378,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 1.9072952397698053,
+          "stave_step": 1.991589762004823,
           "center_x": 1351.5,
           "center_y": 2881.9267605633804,
           "pitch": null
@@ -1195,7 +1195,7 @@
         "region": "bottom_left",
         "x": 1351.5,
         "y": 2881.9267605633804,
-        "stave_step": 1.9072952397698053,
+        "stave_step": 1.991589762004823,
         "interval": 0.0
       },
       "clef_used": null,
@@ -1355,16 +1355,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.944424187940441,
+          "stave_step": 5.965540089399056,
           "center_x": 913.5,
           "center_y": 2780.163430420712,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 3.9444241879404407,
+          "stave_step": 3.965540089399056,
           "center_x": 913.5,
-          "center_y": 2835.2540653401343,
+          "center_y": 2835.4711485040093,
           "pitch": null
         }
       ],
@@ -1373,7 +1373,7 @@
         "region": "top",
         "x": 913.5,
         "y": 2780.163430420712,
-        "stave_step": 5.944424187940441,
+        "stave_step": 5.965540089399056,
         "interval": 0.0
       },
       "clef_used": null,
@@ -1396,7 +1396,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.673810020508845,
+          "stave_step": 4.719396704367352,
           "center_x": 1473.5,
           "center_y": 2152.1756097560974,
           "pitch": {
@@ -1406,9 +1406,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.673810020508845,
+          "stave_step": 5.719396704367352,
           "center_x": 1473.5,
-          "center_y": 2123.951267722338,
+          "center_y": 2124.511346168278,
           "pitch": {
             "pname": "A",
             "oct": 3
@@ -1416,7 +1416,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 4.673810020508845,
+          "stave_step": 4.719396704367352,
           "center_x": 1473.5,
           "center_y": 2152.1756097560974,
           "pitch": {
@@ -1430,7 +1430,7 @@
         "region": "bottom_left",
         "x": 1473.5,
         "y": 2152.1756097560974,
-        "stave_step": 4.673810020508845,
+        "stave_step": 4.719396704367352,
         "interval": 0.0
       },
       "clef_used": {
@@ -1456,7 +1456,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.8315575266016708,
+          "stave_step": 1.827169979201611,
           "center_x": 2202.5,
           "center_y": 2224.5714285714284,
           "pitch": {
@@ -1466,9 +1466,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.16844247339832918,
+          "stave_step": -0.17283002079838905,
           "center_x": 2202.5,
-          "center_y": 2279.8841827303227,
+          "center_y": 2279.574542540043,
           "pitch": {
             "pname": "B",
             "oct": 2
@@ -1480,7 +1480,7 @@
         "region": "top",
         "x": 2202.5,
         "y": 2224.5714285714284,
-        "stave_step": 1.8315575266016708,
+        "stave_step": 1.827169979201611,
         "interval": 0.0
       },
       "clef_used": {
@@ -1506,7 +1506,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.16772337375516422,
+          "stave_step": 0.16377422155645682,
           "center_x": 2423.5,
           "center_y": 2267.913043478261,
           "pitch": {
@@ -1516,9 +1516,9 @@
         },
         {
           "interval_from_first": 2,
-          "stave_step": 2.167723373755164,
+          "stave_step": 2.163774221556457,
           "center_x": 2423.5,
-          "center_y": 2212.950548011906,
+          "center_y": 2213.0150716846306,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -1526,7 +1526,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 0.16772337375516422,
+          "stave_step": 0.16377422155645682,
           "center_x": 2423.5,
           "center_y": 2267.913043478261,
           "pitch": {
@@ -1540,7 +1540,7 @@
         "region": "bottom_left",
         "x": 2423.5,
         "y": 2267.913043478261,
-        "stave_step": 0.16772337375516422,
+        "stave_step": 0.16377422155645682,
         "interval": 0.0
       },
       "clef_used": {
@@ -1657,7 +1657,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.023019842057798,
+          "stave_step": 4.081458738084879,
           "center_x": 685.5,
           "center_y": 2177.659829059829,
           "pitch": {
@@ -1667,9 +1667,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.023019842057798,
+          "stave_step": 5.081458738084879,
           "center_x": 685.5,
-          "center_y": 2148.8191098588495,
+          "center_y": 2149.8169982925237,
           "pitch": {
             "pname": "G",
             "oct": 3
@@ -1681,7 +1681,7 @@
         "region": "bottom_left",
         "x": 685.5,
         "y": 2177.659829059829,
-        "stave_step": 4.023019842057798,
+        "stave_step": 4.081458738084879,
         "interval": 0.0
       },
       "clef_used": {
@@ -2050,7 +2050,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.7717147595833458,
+          "stave_step": 1.7655600242213945,
           "center_x": 2080.5,
           "center_y": 2227.5430327868853,
           "pitch": {
@@ -2060,9 +2060,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.2282852404166542,
+          "stave_step": -0.23443997577860554,
           "center_x": 2080.5,
-          "center_y": 2283.0466448503503,
+          "center_y": 2282.601439130873,
           "pitch": {
             "pname": "B",
             "oct": 2
@@ -2074,7 +2074,7 @@
         "region": "top",
         "x": 2080.5,
         "y": 2227.5430327868853,
-        "stave_step": 1.7717147595833458,
+        "stave_step": 1.7655600242213945,
         "interval": 0.0
       },
       "clef_used": {
@@ -2241,7 +2241,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.510049386877341,
+          "stave_step": 4.539146777060136,
           "center_x": 1779.5,
           "center_y": 2154.1508620689656,
           "pitch": {
@@ -2251,9 +2251,9 @@
         },
         {
           "interval_from_first": -3,
-          "stave_step": 1.5100493868773412,
+          "stave_step": 1.539146777060136,
           "center_x": 1779.5,
-          "center_y": 2238.105824414524,
+          "center_y": 2236.935626600485,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -2265,7 +2265,7 @@
         "region": "top",
         "x": 1779.5,
         "y": 2154.1508620689656,
-        "stave_step": 4.510049386877341,
+        "stave_step": 4.539146777060136,
         "interval": 0.0
       },
       "clef_used": {
@@ -2442,7 +2442,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.728832425235279,
+          "stave_step": 4.7869131207119215,
           "center_x": 1230.5,
           "center_y": 2152.6843910806174,
           "pitch": {
@@ -2452,9 +2452,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.728832425235279,
+          "stave_step": 5.7869131207119215,
           "center_x": 1230.5,
-          "center_y": 2124.2677112009956,
+          "center_y": 2124.9625710271985,
           "pitch": {
             "pname": "A",
             "oct": 3
@@ -2462,7 +2462,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 4.728832425235279,
+          "stave_step": 4.7869131207119215,
           "center_x": 1230.5,
           "center_y": 2152.6843910806174,
           "pitch": {
@@ -2476,7 +2476,7 @@
         "region": "bottom_left",
         "x": 1230.5,
         "y": 2152.6843910806174,
-        "stave_step": 4.728832425235279,
+        "stave_step": 4.7869131207119215,
         "interval": 0.0
       },
       "clef_used": {
@@ -2805,7 +2805,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.767850982828306,
+          "stave_step": 3.8104034952591332,
           "center_x": 927.5,
           "center_y": 2182.7853810264387,
           "pitch": {
@@ -2819,7 +2819,7 @@
         "region": "top",
         "x": 927.5,
         "y": 2182.7853810264387,
-        "stave_step": 3.767850982828306,
+        "stave_step": 3.8104034952591332,
         "interval": 0.0
       },
       "clef_used": {
@@ -2845,7 +2845,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7831137967183235,
+          "stave_step": 3.828959473195222,
           "center_x": 827.5,
           "center_y": 2183.2699029126215,
           "pitch": {
@@ -2855,9 +2855,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.7831137967183235,
+          "stave_step": 1.828959473195222,
           "center_x": 827.5,
-          "center_y": 2240.7291952289324,
+          "center_y": 2238.8912077480263,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -2869,7 +2869,7 @@
         "region": "top",
         "x": 827.5,
         "y": 2183.2699029126215,
-        "stave_step": 3.7831137967183235,
+        "stave_step": 3.828959473195222,
         "interval": 0.0
       },
       "clef_used": {
@@ -2997,7 +2997,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.852307039473981,
+          "stave_step": 3.8957082351536654,
           "center_x": 987.5,
           "center_y": 2179.8157480314962,
           "pitch": {
@@ -3011,7 +3011,7 @@
         "region": "top",
         "x": 987.5,
         "y": 2179.8157480314962,
-        "stave_step": 3.852307039473981,
+        "stave_step": 3.8957082351536654,
         "interval": 0.0
       },
       "clef_used": {
@@ -3079,16 +3079,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.921049266902208,
+          "stave_step": 3.9244372674281633,
           "center_x": 616.5,
           "center_y": 2842.4045801526718,
           "pitch": null
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.921049266902208,
+          "stave_step": 2.9244372674281633,
           "center_x": 616.5,
-          "center_y": 2869.9084118799083,
+          "center_y": 2869.921733265133,
           "pitch": null
         }
       ],
@@ -3097,7 +3097,7 @@
         "region": "top",
         "x": 616.5,
         "y": 2842.4045801526718,
-        "stave_step": 3.921049266902208,
+        "stave_step": 3.9244372674281633,
         "interval": 0.0
       },
       "clef_used": null,
@@ -3360,21 +3360,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0895718970226174,
+          "stave_step": 2.134134390567638,
           "center_x": 992.5,
           "center_y": 2884.6633663366338,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 4.089571897022617,
+          "stave_step": 4.134134390567638,
           "center_x": 992.5,
-          "center_y": 2829.5510140539027,
+          "center_y": 2829.2840840756403,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 2.0895718970226174,
+          "stave_step": 2.134134390567638,
           "center_x": 992.5,
           "center_y": 2884.6633663366338,
           "pitch": null
@@ -3385,7 +3385,7 @@
         "region": "bottom_left",
         "x": 992.5,
         "y": 2884.6633663366338,
-        "stave_step": 2.0895718970226174,
+        "stave_step": 2.134134390567638,
         "interval": 0.0
       },
       "clef_used": null,
@@ -3654,21 +3654,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.22858756692409354,
+          "stave_step": 0.3446574642384297,
           "center_x": 2400.5,
           "center_y": 2909.136752136752,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 2.2285875669240935,
+          "stave_step": 2.3446574642384297,
           "center_x": 2400.5,
-          "center_y": 2852.8060605783103,
+          "center_y": 2852.4656447194056,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 0.22858756692409354,
+          "stave_step": 0.3446574642384297,
           "center_x": 2400.5,
           "center_y": 2909.136752136752,
           "pitch": null
@@ -3679,7 +3679,7 @@
         "region": "bottom_left",
         "x": 2400.5,
         "y": 2909.136752136752,
-        "stave_step": 0.22858756692409354,
+        "stave_step": 0.3446574642384297,
         "interval": 0.0
       },
       "clef_used": null,
@@ -3702,7 +3702,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.650040972114252,
+          "stave_step": 3.66812145789467,
           "center_x": 1732.5,
           "center_y": 2178.6602564102564,
           "pitch": {
@@ -3712,9 +3712,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.650040972114252,
+          "stave_step": 1.66812145789467,
           "center_x": 1732.5,
-          "center_y": 2234.708282824464,
+          "center_y": 2233.876381988917,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -3726,7 +3726,7 @@
         "region": "top",
         "x": 1732.5,
         "y": 2178.6602564102564,
-        "stave_step": 3.650040972114252,
+        "stave_step": 3.66812145789467,
         "interval": 0.0
       },
       "clef_used": {
@@ -3902,7 +3902,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.090471644102097,
+          "stave_step": 4.126875287677809,
           "center_x": 1397.5,
           "center_y": 2169.322265625,
           "pitch": {
@@ -3912,9 +3912,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.090471644102097,
+          "stave_step": 2.1268752876778088,
           "center_x": 1397.5,
-          "center_y": 2225.8898447806123,
+          "center_y": 2224.6852372311996,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -3926,7 +3926,7 @@
         "region": "top",
         "x": 1397.5,
         "y": 2169.322265625,
-        "stave_step": 4.090471644102097,
+        "stave_step": 4.126875287677809,
         "interval": 0.0
       },
       "clef_used": {
@@ -4086,7 +4086,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.7839860184688954,
+          "stave_step": 0.849683649162416,
           "center_x": 1843.5,
           "center_y": 2904.857771260997,
           "pitch": null
@@ -4097,7 +4097,7 @@
         "region": "top",
         "x": 1843.5,
         "y": 2904.857771260997,
-        "stave_step": 0.7839860184688954,
+        "stave_step": 0.849683649162416,
         "interval": 0.0
       },
       "clef_used": null,
@@ -4120,16 +4120,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.066356860725206,
+          "stave_step": 4.142135836251912,
           "center_x": 1481.5,
           "center_y": 2819.481973434535,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.0663568607252056,
+          "stave_step": 2.142135836251912,
           "center_x": 1481.5,
-          "center_y": 2874.730755307284,
+          "center_y": 2875.3108255297707,
           "pitch": null
         }
       ],
@@ -4138,7 +4138,7 @@
         "region": "top",
         "x": 1481.5,
         "y": 2819.481973434535,
-        "stave_step": 4.066356860725206,
+        "stave_step": 4.142135836251912,
         "interval": 0.0
       },
       "clef_used": null,
@@ -4223,16 +4223,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.900921809837917,
+          "stave_step": 3.9523934729787085,
           "center_x": 1175.0,
           "center_y": 2830.7543103448274,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.900921809837917,
+          "stave_step": 1.9523934729787085,
           "center_x": 1175.0,
-          "center_y": 2885.9176149030145,
+          "center_y": 2886.3014931765683,
           "pitch": null
         }
       ],
@@ -4241,7 +4241,7 @@
         "region": "top",
         "x": 1175.0,
         "y": 2830.7543103448274,
-        "stave_step": 3.900921809837917,
+        "stave_step": 3.9523934729787085,
         "interval": 0.0
       },
       "clef_used": null,
@@ -4396,7 +4396,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 7.717465830488803,
+          "stave_step": 7.861726144967107,
           "center_x": 1124.5,
           "center_y": 2068.4082733812947,
           "pitch": {
@@ -4406,9 +4406,9 @@
         },
         {
           "interval_from_first": -3,
-          "stave_step": 4.717465830488803,
+          "stave_step": 4.861726144967107,
           "center_x": 1124.5,
-          "center_y": 2153.9070540597236,
+          "center_y": 2151.6457949160135,
           "pitch": {
             "pname": "G",
             "oct": 3
@@ -4420,7 +4420,7 @@
         "region": "top",
         "x": 1124.5,
         "y": 2068.4082733812947,
-        "stave_step": 7.717465830488803,
+        "stave_step": 7.861726144967107,
         "interval": 0.0
       },
       "clef_used": {
@@ -4606,7 +4606,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.6139707860305128,
+          "stave_step": 1.6038508748084865,
           "center_x": 1895.5,
           "center_y": 2233.9314516129034,
           "pitch": {
@@ -4616,9 +4616,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.3860292139694872,
+          "stave_step": -0.39614912519151346,
           "center_x": 1895.5,
-          "center_y": 2289.7199550596947,
+          "center_y": 2289.0687215556923,
           "pitch": {
             "pname": "B",
             "oct": 2
@@ -4630,7 +4630,7 @@
         "region": "top",
         "x": 1895.5,
         "y": 2233.9314516129034,
-        "stave_step": 1.6139707860305128,
+        "stave_step": 1.6038508748084865,
         "interval": 0.0
       },
       "clef_used": {
@@ -4698,7 +4698,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.153058034223042,
+          "stave_step": 4.202907711119503,
           "center_x": 1056.5,
           "center_y": 2170.599609375,
           "pitch": {
@@ -4708,9 +4708,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.153058034223042,
+          "stave_step": 5.202907711119503,
           "center_x": 1056.5,
-          "center_y": 2142.0468259076924,
+          "center_y": 2142.838359512913,
           "pitch": {
             "pname": "G",
             "oct": 3
@@ -4722,7 +4722,7 @@
         "region": "bottom_left",
         "x": 1056.5,
         "y": 2170.599609375,
-        "stave_step": 4.153058034223042,
+        "stave_step": 4.202907711119503,
         "interval": 0.0
       },
       "clef_used": {
@@ -4750,7 +4750,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.82574437087463,
+          "stave_step": 4.888846444757581,
           "center_x": 1179.5,
           "center_y": 2150.3577512776833,
           "pitch": {
@@ -4760,9 +4760,9 @@
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.82574437087463,
+          "stave_step": 2.888846444757581,
           "center_x": 1179.5,
-          "center_y": 2207.2663716070365,
+          "center_y": 2205.8195240136492,
           "pitch": {
             "pname": "E",
             "oct": 3
@@ -4774,7 +4774,7 @@
         "region": "top",
         "x": 1179.5,
         "y": 2150.3577512776833,
-        "stave_step": 4.82574437087463,
+        "stave_step": 4.888846444757581,
         "interval": 0.0
       },
       "clef_used": {
@@ -4800,7 +4800,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.8354527929928235,
+          "stave_step": 3.884839620070921,
           "center_x": 764.0,
           "center_y": 2182.350730688935,
           "pitch": {
@@ -4810,9 +4810,9 @@
         },
         {
           "interval_from_first": -3,
-          "stave_step": 0.8354527929928235,
+          "stave_step": 0.8848396200709212,
           "center_x": 764.0,
-          "center_y": 2268.6920723445096,
+          "center_y": 2265.829592831773,
           "pitch": {
             "pname": "C",
             "oct": 3
@@ -4824,7 +4824,7 @@
         "region": "top",
         "x": 764.0,
         "y": 2182.350730688935,
-        "stave_step": 3.8354527929928235,
+        "stave_step": 3.884839620070921,
         "interval": 0.0
       },
       "clef_used": {
@@ -5118,16 +5118,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.939346283768095,
+          "stave_step": 4.028333096010975,
           "center_x": 1624.5,
           "center_y": 2819.8897196261682,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.9393462837680948,
+          "stave_step": 2.028333096010975,
           "center_x": 1624.5,
-          "center_y": 2875.178038237249,
+          "center_y": 2875.848855224388,
           "pitch": null
         }
       ],
@@ -5136,7 +5136,7 @@
         "region": "top",
         "x": 1624.5,
         "y": 2819.8897196261682,
-        "stave_step": 3.939346283768095,
+        "stave_step": 4.028333096010975,
         "interval": 0.0
       },
       "clef_used": null,
@@ -5339,16 +5339,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9713467349152163,
+          "stave_step": 4.045160906671363,
           "center_x": 2082.5,
           "center_y": 2810.484375,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.9713467349152163,
+          "stave_step": 2.045160906671363,
           "center_x": 2082.5,
-          "center_y": 2866.6362579313545,
+          "center_y": 2866.8637207698175,
           "pitch": null
         }
       ],
@@ -5357,7 +5357,7 @@
         "region": "top",
         "x": 2082.5,
         "y": 2810.484375,
-        "stave_step": 3.9713467349152163,
+        "stave_step": 4.045160906671363,
         "interval": 0.0
       },
       "clef_used": null,
@@ -5470,7 +5470,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.8295158911469915,
+          "stave_step": 0.8118215091517111,
           "center_x": 1952.5,
           "center_y": 2255.166407465008,
           "pitch": {
@@ -5484,7 +5484,7 @@
         "region": "top",
         "x": 1952.5,
         "y": 2255.166407465008,
-        "stave_step": 0.8295158911469915,
+        "stave_step": 0.8118215091517111,
         "interval": 0.0
       },
       "clef_used": {
@@ -5946,14 +5946,14 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.0280555022648095,
+          "stave_step": 4.027060883053016,
           "center_x": 572.5,
           "center_y": 2837.8896103896104,
           "pitch": null
         },
         {
           "interval_from_first": -1,
-          "stave_step": 3.0280555022648095,
+          "stave_step": 3.027060883053016,
           "center_x": 572.5,
           "center_y": 2867.3896103896104,
           "pitch": null
@@ -5964,7 +5964,7 @@
         "region": "top",
         "x": 572.5,
         "y": 2837.8896103896104,
-        "stave_step": 4.0280555022648095,
+        "stave_step": 4.027060883053016,
         "interval": 0.0
       },
       "clef_used": null,
@@ -6141,16 +6141,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.892059547428527,
+          "stave_step": 4.942513364504281,
           "center_x": 1254.5,
           "center_y": 2801.68149882904,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.892059547428527,
+          "stave_step": 2.942513364504281,
           "center_x": 1254.5,
-          "center_y": 2856.8667991782704,
+          "center_y": 2857.3011633279343,
           "pitch": null
         }
       ],
@@ -6159,7 +6159,7 @@
         "region": "top",
         "x": 1254.5,
         "y": 2801.68149882904,
-        "stave_step": 4.892059547428527,
+        "stave_step": 4.942513364504281,
         "interval": 0.0
       },
       "clef_used": null,
@@ -6532,16 +6532,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.9671796018780228,
+          "stave_step": 1.0692832082488035,
           "center_x": 1431.5,
           "center_y": 2906.166015625,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": -1.0328203981219772,
+          "stave_step": -0.9307167917511965,
           "center_x": 1431.5,
-          "center_y": 2961.4008761110126,
+          "center_y": 2961.9489932473534,
           "pitch": null
         }
       ],
@@ -6550,7 +6550,7 @@
         "region": "top",
         "x": 1431.5,
         "y": 2906.166015625,
-        "stave_step": 0.9671796018780228,
+        "stave_step": 1.0692832082488035,
         "interval": 0.0
       },
       "clef_used": null,
@@ -6675,21 +6675,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.159226107076633,
+          "stave_step": 2.2478664316054626,
           "center_x": 2184.5,
           "center_y": 2859.2438356164384,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 4.159226107076633,
+          "stave_step": 4.247866431605463,
           "center_x": 2184.5,
-          "center_y": 2803.0345989745088,
+          "center_y": 2802.770905921942,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 2.159226107076633,
+          "stave_step": 2.2478664316054626,
           "center_x": 2184.5,
           "center_y": 2859.2438356164384,
           "pitch": null
@@ -6700,7 +6700,7 @@
         "region": "bottom_left",
         "x": 2184.5,
         "y": 2859.2438356164384,
-        "stave_step": 2.159226107076633,
+        "stave_step": 2.2478664316054626,
         "interval": 0.0
       },
       "clef_used": null,
@@ -6869,21 +6869,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.5834534019163335,
+          "stave_step": 1.6392020288923606,
           "center_x": 1069.5,
           "center_y": 2896.9323583180985,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 3.5834534019163335,
+          "stave_step": 3.6392020288923606,
           "center_x": 1069.5,
-          "center_y": 2841.7982886720583,
+          "center_y": 2841.4815118794095,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 1.5834534019163335,
+          "stave_step": 1.6392020288923606,
           "center_x": 1069.5,
           "center_y": 2896.9323583180985,
           "pitch": null
@@ -6894,7 +6894,7 @@
         "region": "bottom_left",
         "x": 1069.5,
         "y": 2896.9323583180985,
-        "stave_step": 1.5834534019163335,
+        "stave_step": 1.6392020288923606,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7097,21 +7097,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9489605084686126,
+          "stave_step": 2.043634925624656,
           "center_x": 2265.5,
           "center_y": 2863.486274509804,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 3.9489605084686126,
+          "stave_step": 4.043634925624656,
           "center_x": 2265.5,
-          "center_y": 2807.22085345229,
+          "center_y": 2806.938110679781,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 1.9489605084686126,
+          "stave_step": 2.043634925624656,
           "center_x": 2265.5,
           "center_y": 2863.486274509804,
           "pitch": null
@@ -7122,7 +7122,7 @@
         "region": "bottom_left",
         "x": 2265.5,
         "y": 2863.486274509804,
-        "stave_step": 1.9489605084686126,
+        "stave_step": 2.043634925624656,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7145,21 +7145,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.319310982127294,
+          "stave_step": 5.366412376416422,
           "center_x": 1668.0,
           "center_y": 2132.397610921502,
           "pitch": {
-            "pname": "A",
+            "pname": "G",
             "oct": 3
           }
         },
         {
           "interval_from_first": 3,
-          "stave_step": 8.319310982127295,
+          "stave_step": 8.366412376416422,
           "center_x": 1668.0,
-          "center_y": 2048.1776079429583,
+          "center_y": 2049.533309934457,
           "pitch": {
-            "pname": "D",
+            "pname": "C",
             "oct": 4
           }
         }
@@ -7169,7 +7169,7 @@
         "region": "bottom_left",
         "x": 1668.0,
         "y": 2132.397610921502,
-        "stave_step": 5.319310982127294,
+        "stave_step": 5.366412376416422,
         "interval": 0.0
       },
       "clef_used": {
@@ -7257,7 +7257,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.24433936467147888,
+          "stave_step": 0.19546030132246806,
           "center_x": 1360.5,
           "center_y": 2278.5605786618444,
           "pitch": {
@@ -7267,9 +7267,9 @@
         },
         {
           "interval_from_first": 3,
-          "stave_step": 3.244339364671479,
+          "stave_step": 3.195460301322468,
           "center_x": 1360.5,
-          "center_y": 2193.6155987884813,
+          "center_y": 2195.4834956589475,
           "pitch": {
             "pname": "E",
             "oct": 3
@@ -7281,7 +7281,7 @@
         "region": "bottom_left",
         "x": 1360.5,
         "y": 2278.5605786618444,
-        "stave_step": 0.24433936467147888,
+        "stave_step": 0.19546030132246806,
         "interval": 0.0
       },
       "clef_used": {
@@ -7349,16 +7349,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.1115918293564375,
+          "stave_step": 5.126157666705808,
           "center_x": 778.5,
           "center_y": 2806.0960784313725,
           "pitch": null
         },
         {
           "interval_from_first": -3,
-          "stave_step": 2.1115918293564375,
+          "stave_step": 2.126157666705808,
           "center_x": 778.5,
-          "center_y": 2888.675231552621,
+          "center_y": 2888.8704877069613,
           "pitch": null
         }
       ],
@@ -7367,7 +7367,7 @@
         "region": "top",
         "x": 778.5,
         "y": 2806.0960784313725,
-        "stave_step": 5.1115918293564375,
+        "stave_step": 5.126157666705808,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7452,16 +7452,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 8.221368280869,
+          "stave_step": 8.2268465411185,
           "center_x": 729.5,
           "center_y": 2721.5719626168225,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 6.221368280868999,
+          "stave_step": 6.2268465411184994,
           "center_x": 729.5,
-          "center_y": 2776.6113668330545,
+          "center_y": 2776.710862639915,
           "pitch": null
         }
       ],
@@ -7470,7 +7470,7 @@
         "region": "top",
         "x": 729.5,
         "y": 2721.5719626168225,
-        "stave_step": 8.221368280869,
+        "stave_step": 8.2268465411185,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7493,16 +7493,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.8944157805697186,
+          "stave_step": 1.979137786798872,
           "center_x": 2129.5,
           "center_y": 2867.8340163934427,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.1055842194302814,
+          "stave_step": -0.02086221320112802,
           "center_x": 2129.5,
-          "center_y": 2924.022965836856,
+          "center_y": 2924.2574016572266,
           "pitch": null
         }
       ],
@@ -7511,7 +7511,7 @@
         "region": "top",
         "x": 2129.5,
         "y": 2867.8340163934427,
-        "stave_step": 1.8944157805697186,
+        "stave_step": 1.979137786798872,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7799,7 +7799,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.760489453915569,
+          "stave_step": 3.9088419009012023,
           "center_x": 581.5,
           "center_y": 2183.5042492917846,
           "pitch": {
@@ -7813,7 +7813,7 @@
         "region": "f_clef_right",
         "x": 581.5,
         "y": 2183.5042492917846,
-        "stave_step": 3.760489453915569,
+        "stave_step": 3.9088419009012023,
         "interval": 0.0
       },
       "clef_used": {
@@ -7839,21 +7839,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9065533612883216,
+          "stave_step": 3.9726864443138066,
           "center_x": 1956.5,
           "center_y": 2814.9811827956987,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 5.906553361288322,
+          "stave_step": 5.972686444313807,
           "center_x": 1956.5,
-          "center_y": 2758.900148565643,
+          "center_y": 2758.717440697543,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 3.9065533612883216,
+          "stave_step": 3.9726864443138066,
           "center_x": 1956.5,
           "center_y": 2814.9811827956987,
           "pitch": null
@@ -7864,7 +7864,7 @@
         "region": "bottom_left",
         "x": 1956.5,
         "y": 2814.9811827956987,
-        "stave_step": 3.9065533612883216,
+        "stave_step": 3.9726864443138066,
         "interval": 0.0
       },
       "clef_used": null,
@@ -7908,7 +7908,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.074345106919537,
+          "stave_step": 4.103335997546733,
           "center_x": 1603.5,
           "center_y": 2167.9263565891474,
           "pitch": {
@@ -7918,9 +7918,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.074345106919537,
+          "stave_step": 5.103335997546733,
           "center_x": 1603.5,
-          "center_y": 2139.8037011438887,
+          "center_y": 2140.2915520537813,
           "pitch": {
             "pname": "G",
             "oct": 3
@@ -7932,7 +7932,7 @@
         "region": "bottom_left",
         "x": 1603.5,
         "y": 2167.9263565891474,
-        "stave_step": 4.074345106919537,
+        "stave_step": 4.103335997546733,
         "interval": 0.0
       },
       "clef_used": {
@@ -8099,7 +8099,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.718752655520971,
+          "stave_step": 5.726257795331424,
           "center_x": 692.0,
           "center_y": 2791.2824156305505,
           "pitch": null
@@ -8110,7 +8110,7 @@
         "region": "full",
         "x": 692.0,
         "y": 2791.2824156305505,
-        "stave_step": 5.718752655520971,
+        "stave_step": 5.726257795331424,
         "interval": 0.0
       },
       "clef_used": null,
@@ -8455,16 +8455,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.9438892231886902,
+          "stave_step": 1.9830918550774905,
           "center_x": 935.5,
           "center_y": 2889.885135135135,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": -0.056110776811309826,
+          "stave_step": -0.01690814492250947,
           "center_x": 935.5,
-          "center_y": 2944.981895464721,
+          "center_y": 2945.2130379865007,
           "pitch": null
         }
       ],
@@ -8473,7 +8473,7 @@
         "region": "top",
         "x": 935.5,
         "y": 2889.885135135135,
-        "stave_step": 1.9438892231886902,
+        "stave_step": 1.9830918550774905,
         "interval": 0.0
       },
       "clef_used": null,
@@ -8625,7 +8625,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.041574346945879,
+          "stave_step": 2.1474353665736015,
           "center_x": 1568.5,
           "center_y": 2873.5601023017903,
           "pitch": null
@@ -8636,7 +8636,7 @@
         "region": "full",
         "x": 1568.5,
         "y": 2873.5601023017903,
-        "stave_step": 2.041574346945879,
+        "stave_step": 2.1474353665736015,
         "interval": 0.0
       },
       "clef_used": null,
@@ -8982,21 +8982,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.057002767457721,
+          "stave_step": 4.129903997101888,
           "center_x": 1446.0,
           "center_y": 2820.5270935960593,
           "pitch": null
         },
         {
           "interval_from_first": 1,
-          "stave_step": 5.057002767457721,
+          "stave_step": 5.129903997101888,
           "center_x": 1446.0,
-          "center_y": 2792.9077143589097,
+          "center_y": 2792.629182358679,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 4.057002767457721,
+          "stave_step": 4.129903997101888,
           "center_x": 1446.0,
           "center_y": 2820.5270935960593,
           "pitch": null
@@ -9007,7 +9007,7 @@
         "region": "bottom_left",
         "x": 1446.0,
         "y": 2820.5270935960593,
-        "stave_step": 4.057002767457721,
+        "stave_step": 4.129903997101888,
         "interval": 0.0
       },
       "clef_used": null,
@@ -11224,7 +11224,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.898356487324537,
+          "stave_step": 2.9041922599352086,
           "center_x": 1823.5,
           "center_y": 2198.8180147058824,
           "pitch": {
@@ -11234,9 +11234,9 @@
         },
         {
           "interval_from_first": 2,
-          "stave_step": 4.898356487324537,
+          "stave_step": 4.904192259935209,
           "center_x": 1823.5,
-          "center_y": 2142.916873807213,
+          "center_y": 2143.648113197299,
           "pitch": {
             "pname": "G",
             "oct": 3
@@ -11244,7 +11244,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 2.898356487324537,
+          "stave_step": 2.9041922599352086,
           "center_x": 1823.5,
           "center_y": 2198.8180147058824,
           "pitch": {
@@ -11258,7 +11258,7 @@
         "region": "bottom_left",
         "x": 1823.5,
         "y": 2198.8180147058824,
-        "stave_step": 2.898356487324537,
+        "stave_step": 2.9041922599352086,
         "interval": 0.0
       },
       "clef_used": {
@@ -11284,7 +11284,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.7635150496532734,
+          "stave_step": 2.7685240277670893,
           "center_x": 1702.0,
           "center_y": 2203.8067885117493,
           "pitch": {
@@ -11294,9 +11294,9 @@
         },
         {
           "interval_from_first": 1,
-          "stave_step": 3.7635150496532734,
+          "stave_step": 3.7685240277670893,
           "center_x": 1702.0,
-          "center_y": 2175.7600491394837,
+          "center_y": 2176.193059524658,
           "pitch": {
             "pname": "F",
             "oct": 3
@@ -11304,7 +11304,7 @@
         },
         {
           "interval_from_first": 0,
-          "stave_step": 2.7635150496532734,
+          "stave_step": 2.7685240277670893,
           "center_x": 1702.0,
           "center_y": 2203.8067885117493,
           "pitch": {
@@ -11318,7 +11318,7 @@
         "region": "bottom_left",
         "x": 1702.0,
         "y": 2203.8067885117493,
-        "stave_step": 2.7635150496532734,
+        "stave_step": 2.7685240277670893,
         "interval": 0.0
       },
       "clef_used": {
@@ -11344,7 +11344,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.5948920084450755,
+          "stave_step": 4.628663574895845,
           "center_x": 1701.0,
           "center_y": 2152.451219512195,
           "pitch": {
@@ -11358,7 +11358,7 @@
         "region": "full",
         "x": 1701.0,
         "y": 2152.451219512195,
-        "stave_step": 4.5948920084450755,
+        "stave_step": 4.628663574895845,
         "interval": 0.0
       },
       "clef_used": {
@@ -11384,7 +11384,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.61454728563362,
+          "stave_step": 5.6735086409379765,
           "center_x": 1560.0,
           "center_y": 2124.9501965923982,
           "pitch": {
@@ -11398,7 +11398,7 @@
         "region": "top",
         "x": 1560.0,
         "y": 2124.9501965923982,
-        "stave_step": 5.61454728563362,
+        "stave_step": 5.6735086409379765,
         "interval": 0.0
       },
       "clef_used": {
@@ -11424,7 +11424,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7762516692057373,
+          "stave_step": 3.8084494005077554,
           "center_x": 1303.0,
           "center_y": 2179.083044982699,
           "pitch": {
@@ -11438,7 +11438,7 @@
         "region": "top",
         "x": 1303.0,
         "y": 2179.083044982699,
-        "stave_step": 3.7762516692057373,
+        "stave_step": 3.8084494005077554,
         "interval": 0.0
       },
       "clef_used": {
@@ -11464,7 +11464,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.7941248215722627,
+          "stave_step": 1.7796459689760935,
           "center_x": 1320.5,
           "center_y": 2235.109375,
           "pitch": {
@@ -11478,7 +11478,7 @@
         "region": "full",
         "x": 1320.5,
         "y": 2235.109375,
-        "stave_step": 1.7941248215722627,
+        "stave_step": 1.7796459689760935,
         "interval": 0.0
       },
       "clef_used": {
@@ -11504,7 +11504,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 0.8868248190566499,
+          "stave_step": 0.8515860061092182,
           "center_x": 1332.0,
           "center_y": 2260.690807799443,
           "pitch": {
@@ -11518,7 +11518,7 @@
         "region": "full",
         "x": 1332.0,
         "y": 2260.690807799443,
-        "stave_step": 0.8868248190566499,
+        "stave_step": 0.8515860061092182,
         "interval": 0.0
       },
       "clef_used": {
@@ -11544,7 +11544,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.9563260932114455,
+          "stave_step": 2.9753018181503483,
           "center_x": 789.5,
           "center_y": 2207.3980891719743,
           "pitch": {
@@ -11554,9 +11554,9 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 1.9563260932114455,
+          "stave_step": 1.9753018181503483,
           "center_x": 789.5,
-          "center_y": 2236.157459102153,
+          "center_y": 2235.217352697317,
           "pitch": {
             "pname": "D",
             "oct": 3
@@ -11568,7 +11568,7 @@
         "region": "top",
         "x": 789.5,
         "y": 2207.3980891719743,
-        "stave_step": 2.9563260932114455,
+        "stave_step": 2.9753018181503483,
         "interval": 0.0
       },
       "clef_used": {
@@ -11594,7 +11594,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.1784286109578765,
+          "stave_step": 2.1711041647525953,
           "center_x": 804.5,
           "center_y": 2229.6200787401576,
           "pitch": {
@@ -11608,7 +11608,7 @@
         "region": "full",
         "x": 804.5,
         "y": 2229.6200787401576,
-        "stave_step": 2.1784286109578765,
+        "stave_step": 2.1711041647525953,
         "interval": 0.0
       },
       "clef_used": {
@@ -11634,7 +11634,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9281037176290443,
+          "stave_step": 3.981689948064732,
           "center_x": 731.0,
           "center_y": 2179.984654731458,
           "pitch": {
@@ -11644,9 +11644,9 @@
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.9281037176290443,
+          "stave_step": 2.981689948064732,
           "center_x": 731.0,
-          "center_y": 2208.790914699371,
+          "center_y": 2207.818420179565,
           "pitch": {
             "pname": "E",
             "oct": 3
@@ -11658,7 +11658,7 @@
         "region": "top",
         "x": 731.0,
         "y": 2179.984654731458,
-        "stave_step": 3.9281037176290443,
+        "stave_step": 3.981689948064732,
         "interval": 0.0
       },
       "clef_used": {
@@ -11684,7 +11684,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.9398575121451973,
+          "stave_step": 2.958868917165761,
           "center_x": 735.0,
           "center_y": 2208.4128205128204,
           "pitch": {
@@ -11698,7 +11698,7 @@
         "region": "top",
         "x": 735.0,
         "y": 2208.4128205128204,
-        "stave_step": 2.9398575121451973,
+        "stave_step": 2.958868917165761,
         "interval": 0.0
       },
       "clef_used": {
@@ -11724,8 +11724,8 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 7.475059540601251,
-          "center_x": 559.5,
+          "stave_step": 7.536096833786041,
+          "center_x": 577.5,
           "center_y": 2082.462365591398,
           "pitch": {
             "pname": "C",
@@ -11736,9 +11736,9 @@
       "anchor": {
         "source": "pixel_centroid",
         "region": "full",
-        "x": 559.5,
+        "x": 577.5,
         "y": 2082.462365591398,
-        "stave_step": 7.475059540601251,
+        "stave_step": 7.536096833786041,
         "interval": 0.0
       },
       "clef_used": {
@@ -11747,7 +11747,7 @@
       },
       "reason": null,
       "flags": [
-        "sparse_stave_lines"
+        "anchor_x_fell_back_to_center"
       ]
     },
     {
@@ -12147,16 +12147,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.842246131251289,
+          "stave_step": 3.9263207686304815,
           "center_x": 2247.5,
           "center_y": 2810.6052173913044,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.8422461312512892,
+          "stave_step": 1.9263207686304815,
           "center_x": 2247.5,
-          "center_y": 2866.8605172057755,
+          "center_y": 2867.1368664110896,
           "pitch": null
         }
       ],
@@ -12165,7 +12165,7 @@
         "region": "top",
         "x": 2247.5,
         "y": 2810.6052173913044,
-        "stave_step": 3.842246131251289,
+        "stave_step": 3.9263207686304815,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12188,16 +12188,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0152453260797216,
+          "stave_step": 2.103800628712203,
           "center_x": 2181.0,
           "center_y": 2863.3675958188155,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 0.015245326079721622,
+          "stave_step": 0.10380062871220286,
           "center_x": 2181.0,
-          "center_y": 2919.5801838522107,
+          "center_y": 2919.8377730449392,
           "pitch": null
         }
       ],
@@ -12206,7 +12206,7 @@
         "region": "top",
         "x": 2181.0,
         "y": 2863.3675958188155,
-        "stave_step": 2.0152453260797216,
+        "stave_step": 2.103800628712203,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12229,21 +12229,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7718564015849214,
+          "stave_step": 3.84366857520898,
           "center_x": 2038.5,
           "center_y": 2817.018648018648,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 5.771856401584921,
+          "stave_step": 5.84366857520898,
           "center_x": 2038.5,
-          "center_y": 2760.8915059036203,
+          "center_y": 2760.6796717849666,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 3.7718564015849214,
+          "stave_step": 3.84366857520898,
           "center_x": 2038.5,
           "center_y": 2817.018648018648,
           "pitch": null
@@ -12254,7 +12254,7 @@
         "region": "bottom_left",
         "x": 2038.5,
         "y": 2817.018648018648,
-        "stave_step": 3.7718564015849214,
+        "stave_step": 3.84366857520898,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12277,21 +12277,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.0356026465482646,
+          "stave_step": 3.1324242498086257,
           "center_x": 1592.5,
           "center_y": 2845.5677083333335,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 5.035602646548265,
+          "stave_step": 5.132424249808626,
           "center_x": 1592.5,
-          "center_y": 2790.288299409764,
+          "center_y": 2789.637932397758,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 3.0356026465482646,
+          "stave_step": 3.1324242498086257,
           "center_x": 1592.5,
           "center_y": 2845.5677083333335,
           "pitch": null
@@ -12302,7 +12302,7 @@
         "region": "bottom_left",
         "x": 1592.5,
         "y": 2845.5677083333335,
-        "stave_step": 3.0356026465482646,
+        "stave_step": 3.1324242498086257,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12325,7 +12325,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 1.2021844580841563,
+          "stave_step": 1.3148316915384761,
           "center_x": 1544.5,
           "center_y": 2897.2727272727275,
           "pitch": null
@@ -12336,7 +12336,7 @@
         "region": "top",
         "x": 1544.5,
         "y": 2897.2727272727275,
-        "stave_step": 1.2021844580841563,
+        "stave_step": 1.3148316915384761,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12359,16 +12359,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.9899066653012083,
+          "stave_step": 4.070310935082709,
           "center_x": 1528.0,
           "center_y": 2820.5890410958905,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.9899066653012083,
+          "stave_step": 2.070310935082709,
           "center_x": 1528.0,
-          "center_y": 2875.850630644437,
+          "center_y": 2876.4600977061773,
           "pitch": null
         }
       ],
@@ -12377,7 +12377,7 @@
         "region": "top",
         "x": 1528.0,
         "y": 2820.5890410958905,
-        "stave_step": 3.9899066653012083,
+        "stave_step": 4.070310935082709,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12400,16 +12400,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.9316011796603973,
+          "stave_step": 3.024025563204857,
           "center_x": 1533.0,
           "center_y": 2849.7223796033995,
           "pitch": null
         },
         {
           "interval_from_first": -1,
-          "stave_step": 1.9316011796603973,
+          "stave_step": 2.024025563204857,
           "center_x": 1533.0,
-          "center_y": 2877.3538704470097,
+          "center_y": 2877.660201632187,
           "pitch": null
         }
       ],
@@ -12418,7 +12418,7 @@
         "region": "top",
         "x": 1533.0,
         "y": 2849.7223796033995,
-        "stave_step": 2.9316011796603973,
+        "stave_step": 3.024025563204857,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12441,16 +12441,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.81752324632391,
+          "stave_step": 4.872954530029817,
           "center_x": 1313.0,
           "center_y": 2802.4425612052733,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.81752324632391,
+          "stave_step": 2.8729545300298174,
           "center_x": 1313.0,
-          "center_y": 2857.644288790853,
+          "center_y": 2858.1163575821683,
           "pitch": null
         }
       ],
@@ -12459,7 +12459,7 @@
         "region": "top",
         "x": 1313.0,
         "y": 2802.4425612052733,
-        "stave_step": 4.81752324632391,
+        "stave_step": 4.872954530029817,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12482,16 +12482,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.7843524399071464,
+          "stave_step": 3.8412983473138134,
           "center_x": 1229.0,
           "center_y": 2832.791457286432,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.7843524399071464,
+          "stave_step": 1.8412983473138134,
           "center_x": 1229.0,
-          "center_y": 2887.969796942294,
+          "center_y": 2888.3881845488854,
           "pitch": null
         }
       ],
@@ -12500,7 +12500,7 @@
         "region": "top",
         "x": 1229.0,
         "y": 2832.791457286432,
-        "stave_step": 3.7843524399071464,
+        "stave_step": 3.8412983473138134,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12523,16 +12523,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.1009862819793366,
+          "stave_step": 3.1610027495328357,
           "center_x": 1207.0,
           "center_y": 2852.122807017544,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 1.1009862819793366,
+          "stave_step": 1.1610027495328357,
           "center_x": 1207.0,
-          "center_y": 2907.2950212632422,
+          "center_y": 2907.6993495119295,
           "pitch": null
         }
       ],
@@ -12541,7 +12541,7 @@
         "region": "top",
         "x": 1207.0,
         "y": 2852.122807017544,
-        "stave_step": 3.1009862819793366,
+        "stave_step": 3.1610027495328357,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12564,21 +12564,21 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 2.0918358380195734,
+          "stave_step": 2.149348748196936,
           "center_x": 1113.5,
           "center_y": 2881.968253968254,
           "pitch": null
         },
         {
           "interval_from_first": 2,
-          "stave_step": 4.091835838019573,
+          "stave_step": 4.149348748196936,
           "center_x": 1113.5,
-          "center_y": 2826.8219335018857,
+          "center_y": 2826.477037993429,
           "pitch": null
         },
         {
           "interval_from_first": 0,
-          "stave_step": 2.0918358380195734,
+          "stave_step": 2.149348748196936,
           "center_x": 1113.5,
           "center_y": 2881.968253968254,
           "pitch": null
@@ -12589,7 +12589,7 @@
         "region": "bottom_left",
         "x": 1113.5,
         "y": 2881.968253968254,
-        "stave_step": 2.0918358380195734,
+        "stave_step": 2.149348748196936,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12612,16 +12612,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 3.965646680849388,
+          "stave_step": 3.996232763483607,
           "center_x": 934.0,
           "center_y": 2834.232673267327,
           "pitch": null
         },
         {
           "interval_from_first": -1,
-          "stave_step": 2.965646680849388,
+          "stave_step": 2.996232763483607,
           "center_x": 934.0,
-          "center_y": 2861.7807750043853,
+          "center_y": 2861.895707203552,
           "pitch": null
         }
       ],
@@ -12630,7 +12630,7 @@
         "region": "top",
         "x": 934.0,
         "y": 2834.232673267327,
-        "stave_step": 3.965646680849388,
+        "stave_step": 3.996232763483607,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12653,16 +12653,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.1378236176699765,
+          "stave_step": 4.161865817456304,
           "center_x": 864.0,
           "center_y": 2831.02004454343,
           "pitch": null
         },
         {
           "interval_from_first": -2,
-          "stave_step": 2.1378236176699765,
+          "stave_step": 2.161865817456304,
           "center_x": 864.0,
-          "center_y": 2886.0967580761157,
+          "center_y": 2886.2818881538456,
           "pitch": null
         }
       ],
@@ -12671,7 +12671,7 @@
         "region": "top",
         "x": 864.0,
         "y": 2831.02004454343,
-        "stave_step": 4.1378236176699765,
+        "stave_step": 4.161865817456304,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12694,16 +12694,16 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 5.0069235752131505,
+          "stave_step": 5.029667562345526,
           "center_x": 886.5,
           "center_y": 2806.6027777777776,
           "pitch": null
         },
         {
           "interval_from_first": -1,
-          "stave_step": 4.0069235752131505,
+          "stave_step": 4.029667562345526,
           "center_x": 886.5,
-          "center_y": 2834.1441972492025,
+          "center_y": 2834.2437919670197,
           "pitch": null
         }
       ],
@@ -12712,7 +12712,7 @@
         "region": "top",
         "x": 886.5,
         "y": 2806.6027777777776,
-        "stave_step": 5.0069235752131505,
+        "stave_step": 5.029667562345526,
         "interval": 0.0
       },
       "clef_used": null,
@@ -12735,7 +12735,7 @@
       "note_components": [
         {
           "interval_from_first": 0,
-          "stave_step": 4.830897678661703,
+          "stave_step": 4.8379460520858775,
           "center_x": 670.5,
           "center_y": 2816.194366197183,
           "pitch": null
@@ -12746,7 +12746,7 @@
         "region": "full",
         "x": 670.5,
         "y": 2816.194366197183,
-        "stave_step": 4.830897678661703,
+        "stave_step": 4.8379460520858775,
         "interval": 0.0
       },
       "clef_used": null,
