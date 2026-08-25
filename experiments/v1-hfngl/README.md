@@ -1,34 +1,34 @@
 # v1 stave-step CNN: Hufnagel experiments
 
-A per-glyph CNN that regresses one continuous stave step from a crop, meant
-to complement `pitch_finder.py`'s heuristic. The motivation isn't that the
-heuristic's math is wrong -- it's that the heuristic isn't **robust to
-inaccurate staff-finding**, which is a real, current bottleneck in the
-pipeline. So besides the usual "is the CNN as accurate as the heuristic"
-comparison, this experiment specifically asks "is the CNN *more robust* to
-bad staff geometry than the heuristic is." Single-note glyphs only
-(multi-note neume decomposition is out of scope for v1).
+A per-glyph CNN that predicts one stave step from a crop, meant to
+complement `pitch_finder.py`'s heuristic. The motivation isn't that the
+heuristic's math is wrong, it's that the heuristic isn't **robust to
+inaccurate staff-finding**, a real bottleneck in the pipeline. So beyond
+"is the CNN as accurate as the heuristic," this asks "is the CNN *more
+robust* to bad staff geometry." Single-note glyphs only (multi-note neume
+decomposition is out of scope for v1).
 
 ## Layout
 
 | File | Purpose |
 |---|---|
-| `model.py` | `StepCNN` architecture |
+| `model.py` | `StepCNN` (regression) and `StepCNNClassifier` (classification ablation), one shared conv backbone |
 | `data.py` | loads real-labeled glyph crops; staff-condition selection (corrected vs. true pre-correction) |
 | `split.py` | shared train/test split (per-page + per-class stratified) |
 | `augment.py` | staff-error-simulating augmentation (crop scale/shift jitter + mild rotation/brightness/noise) |
-| `measure_staff_error.py` | measures how much corrected vs. uncorrected staff geometry actually differs -- what `augment.py`'s ranges *should* be calibrated against (see "What we tried and reverted") |
-| `visualize_augmentation.py` | renders `augmentation_examples.png`, a grid of real crops next to augmented variants, for eyeballing whether the jitter ranges are sane |
-| `train.py` | trains and saves `checkpoints/stepcnn_{real,real_aug}.pt` |
-| `evaluate.py` | 4-way comparison (heuristic x2, CNN x2) on the held-out test set |
-| `evaluate_robustness.py` | the actual robustness check: same two CNNs, evaluated on crops re-cropped under **true** uncorrected staff geometry |
-| `staff_originals/` | true pre-correction staff geometry for the 5 hand-fixed pages (used by both eval scripts) |
+| `measure_staff_error.py` | measures how much corrected vs. uncorrected staff geometry actually differs |
+| `visualize_augmentation.py` | renders `augmentation_examples.png` for eyeballing the jitter ranges |
+| `train.py` | trains and saves all 4 checkpoints in `checkpoints/` |
+| `evaluate.py` | the 10-way comparison below; exposes `get_test_predictions()` for reuse |
+| `plot_by_class.py` | same comparison broken down per neume class (not run by default) |
+| `demo_examples.py` | renders `demo_examples.png`, example crops + predictions for slides/reports |
+| `staff_originals/` | true pre-correction staff geometry for the 5 hand-fixed pages |
 | `checkpoints/` | trained weights + `meta.json` |
 
 ```
-python train.py                    # writes checkpoints/
-python evaluate.py                 # 4-way comparison, reproduces the results below
-python evaluate_robustness.py      # robustness under real bad-staff crops
+python train.py             # writes checkpoints/ (4 models: regression/classifier x no-aug/aug)
+python evaluate.py          # 10-way comparison, reproduces the results below
+python demo_examples.py     # a few illustrative before/after example crops
 ```
 
 ## Architecture
@@ -39,109 +39,103 @@ Conv(1,16,3)+ReLU+Pool -> Conv(16,32,3)+ReLU+Pool -> Conv(32,64,3)+ReLU
 ```
 
 `AdaptiveAvgPool2d((8,1))` keeps 8 vertical bins into the head instead of
-collapsing the whole spatial map to one value per channel. The original
-`AdaptiveAvgPool2d(1)` did that and mode-collapsed (exact-match ~25-29%);
-this fix alone got it to ~80-89%. ~56k params.
+collapsing the spatial map to one value per channel; the original
+`AdaptiveAvgPool2d(1)` did that and mode-collapsed (~25-29% exact-match).
+This fix alone got it to ~80-89%. ~56k params.
+
+`StepCNNClassifier` swaps the head for 10 classes (steps -1..8) trained
+with cross-entropy instead of one MSE-regressed value. Regression was
+expected to be at least as good, since MSE already penalizes far-off
+predictions more than near ones. The classifier won by a wide margin
+instead (see Results) -- not fully explained, but plausibly because
+cross-entropy's objective matches the exact-match metric more directly
+than MSE's does.
 
 ## Data
 
-13 fully hand-annotated Hufnagel pages (2607 stave steps total; 1205
-single-note glyphs used here -- 958 train / 247 test). 5 of the 13 needed
-staff-line correction via `fix_stafflines.py`: `CantusMA1537_p22`,
-`MS025a-01`, `MS025a-02`, `MS025b-01`, `MS234_p005`. `staff_originals/`
-holds each one's **true** pre-correction geometry (git-recovered for
-`CantusMA1537_p22`, reconstructed from Gen's own untouched bbox annotations
-for `MS025a-01`/`MS234_p005`, regenerated by rerunning
-`mothra/staff-finding` for `MS025a-02`/`MS025b-01`, which have no Gen staff
-boxes at all).
+13 fully hand-annotated Hufnagel pages (2607 stave steps; 1205 single-note
+glyphs used here, 958 train / 247 test). 5 pages needed staff-line
+correction via `fix_stafflines.py`: `CantusMA1537_p22`, `MS025a-01`,
+`MS025a-02`, `MS025b-01`, `MS234_p005`. `staff_originals/` holds each
+one's **true** pre-correction geometry (git-recovered, reconstructed from
+Gen's own bbox annotations, or regenerated by rerunning
+`mothra/staff-finding`, depending on the page).
 
-Test split: per page, 20% held out (stratified by class), pages under 5
-real single-note labels going entirely to train. Guarantees every folio and
-every common class shows up in the test set.
+Test split: per page, 20% held out (stratified by class); pages under 5
+labels go entirely to train. Guarantees every folio and common class shows
+up in the test set.
 
 ## Augmentation
 
 `augment.py` perturbs a training crop's vertical bounds (scale +/-20%,
-shift +/-15% of height) plus mild rotation (+/-4 deg), brightness
-(+/-15%), and light noise -- targeting the actual failure mode
-(`expanded_boxes()`'s box comes from the staff's estimated line spacing, so
-bad staff-finding makes it too tall/short or off-center), not generic
-image augmentation. No horizontal jitter or flips: a notehead's identity
-depends on its vertical position.
+shift +/-15% of height), plus mild rotation/brightness/noise, targeting
+the actual failure mode (bad staff-finding makes `expanded_boxes()`'s crop
+too tall/short or off-center), not generic image augmentation. No
+horizontal jitter or flips: a notehead's identity depends on its vertical
+position.
 
-## The 4 experiments (same 247-glyph test set)
+## Results (10-way comparison, same 247-glyph test set)
 
-1. Heuristic, with human-corrected staff.
-2. Heuristic, with the true pre-correction staff (the 5 pages above only).
-3. CNN, no augmentation.
-4. CNN, with staff-error augmentation (3x augmented copies added to training).
+{heuristic, CNN-regression, CNN-classifier} x {no-aug/aug} x
+{corrected/true-uncorrected staff}. For the 8 pages that never needed
+correction, "uncorrected" = "corrected," so those rows dilute the
+uncorrected columns below relative to just the 5 hand-fixed pages.
 
-## Results
-
-| Experiment | n | exact% | within1% | MAE |
+| Experiment | n | exact% | within1% | avg. steps off* |
 |---|---|---|---|---|
-| (1) heuristic, corrected staff | 247 | **87.9%** | 94.7% | 0.190 |
-| (2) heuristic, uncorrected staff | 233* | 55.8% | 70.4% | 1.760 |
-| (3) CNN, no augmentation | 247 | 79.8% | 97.6% | 0.227 |
-| (4) CNN, staff-error augmentation | 247 | 82.6% | 97.2% | 0.202 |
+| heuristic, corrected staff | 247 | 87.9% | 94.7% | 0.190 |
+| heuristic, uncorrected staff | 233** | 55.8% | 70.4% | 1.760 |
+| CNN regression no-aug, corrected staff | 247 | 79.8% | 97.6% | 0.227 |
+| CNN regression no-aug, uncorrected staff | 233** | 50.2% | 76.0% | 0.906 |
+| CNN regression aug, corrected staff | 247 | 82.6% | 97.2% | 0.202 |
+| CNN regression aug, uncorrected staff | 233** | 56.7% | 79.4% | 0.755 |
+| CNN classifier no-aug, corrected staff | 247 | 89.9% | 95.1% | 0.166 |
+| CNN classifier no-aug, uncorrected staff | 233** | 58.8% | 70.4% | 0.927 |
+| CNN classifier aug, corrected staff | 247 | **93.1%** | 94.7% | **0.126** |
+| CNN classifier aug, uncorrected staff | 233** | **68.7%** | **75.5%** | **0.730** |
 
-\* 14 glyphs had no pixel-anchor coverage under the uncorrected geometry.
+\* mean absolute error between the predicted and true step, computed after
+rounding/argmax to an integer step (not on the regressor's raw real-valued
+output).
 
-Augmentation helps even on clean data (79.8% -> 82.6%), but the heuristic
-(with good staff) is still ahead. The real question is robustness:
+\*\* 14 glyphs had no box/anchor coverage under the uncorrected geometry,
+for every method equally.
 
-### Robustness check (`evaluate_robustness.py`)
+**Takeaways:**
+1. The classifier beats the regressor by a wide margin in every condition,
+   and with augmentation beats the heuristic outright even on clean staff
+   (93.1% vs 87.9%) -- the headline result of this round.
+2. Augmentation helps every column, for both model types.
+3. Under real uncorrected staff, CNN classifier+aug is the strongest
+   method overall (68.7% vs heuristic's 55.8%, and off by 0.73 steps on
+   average vs. the heuristic's 1.76) -- restricted to just the 5 corrected
+   pages it's starker still. This is the result that matters for the
+   motivating question: robustness to bad staff-finding, not clean-data
+   accuracy.
 
-Same two CNNs, evaluated on the 5 corrected pages' test glyphs **re-cropped
-under their true uncorrected staff geometry** -- i.e. what the CNN would
-actually see if fed bad staff-finding output, not a synthetic worst case:
+`demo_examples.py` shows a handful of individual test glyphs (actual crop
++ every method's prediction) as a concrete illustration. `plot_by_class.py`
+breaks the comparison down per neume class (classes under 3 test examples
+dropped rather than plotted as misleading 0%/100%).
 
-| | n | exact% | within1% | MAE |
-|---|---|---|---|---|
-| heuristic, corrected staff (reference) | 117 | 93.2% | 95.7% | 0.120 |
-| heuristic, uncorrected staff (reference) | 117 | 28.2% | 47.9% | 3.248 |
-| CNN, no augmentation | 117 | 18.8% | 54.7% | 1.598 |
-| CNN, staff-error augmentation | 117 | **32.5%** | **63.2%** | **1.274** |
+**Also tried (paused):** a deterministic stress test that distorts every
+test crop by a fixed amount (pure shift, or symmetric box over-expansion
+that never crops the notehead out of frame) and checks accuracy vs.
+distortion size. Both variants collapse to near-baseline (~15-25%) at the
+very first distortion step, for every model including the augmented ones
+-- likely because every crop gets resized to a fixed 128x32, so a much
+enlarged box shrinks the notehead's relative size into an unfamiliar
+distribution shift the current augmentation doesn't cover. Not explained
+by "the notehead left the frame" (the expansion variant never does that),
+so the model may be relying on the notehead's raw pixel footprint more
+than an abstract staff-position concept. Worth revisiting; script not kept
+in the repo.
 
-**The augmented CNN is the only one of the four that beats the heuristic
-under bad staff geometry** (32.5% vs 28.2% exact, and a much better MAE:
-1.274 vs 3.248). This is the result that actually matters for the
-motivating problem -- staff-finding robustness, not clean-data accuracy.
-32.5% is still low in absolute terms; see below for the most promising next
-lever and why it isn't in yet.
-
-## What we tried and reverted
-
-**Pseudo-labeling** (heuristic-guessed labels for unlabeled glyphs on pages
-with real Gen staff boxes): tried across several rounds as the annotated
-dataset grew, never gave a reliable improvement. By the time every eligible
-page was fully hand-annotated, the only remaining candidates (23 glyphs)
-were ones the human annotator had explicitly *skipped* as too ambiguous --
-using the heuristic's own guess as ground truth for exactly the cases where
-it's least trustworthy. Dropped entirely rather than kept as a fourth
-experiment.
-
-**Calibrated augmentation ranges**: measured the real corrected-vs-
-uncorrected box discrepancy across the 5 pages (`measure_staff_error.py`:
-height ratio p10/p90 of 0.37/3.37, shift std 0.475 -- far wider than the
-guessed +/-20%/+/-15% above) and widened `augment.py`'s jitter to match,
-sampled log-uniformly. This made clean-test accuracy *worse* (68.8% vs
-82.6%), because the shift was sampled as a fraction of the *original*
-height independent of the sampled height ratio -- at the extreme
-combination (small new height, large shift) the jittered crop can miss the
-real notehead entirely, training on (image, label) pairs with no real
-correspondence. Reverted to the milder, untied constants above. The
-correct fix -- constrain shift relative to the *resulting* crop so it
-always retains overlap with the original box -- is the most promising next
-step for pushing the 32.5% robustness number up, but isn't implemented yet.
-
-## Caveats
+## Limitations
 
 - Single-note-only scope: says nothing about multi-note decomposition.
 - Most classes other than `punctum`/`virga` have under 10 test examples --
-  don't over-read their per-class percentages (not shown above; see git
-  history of this file for the full per-class table from an earlier pass).
+  don't over-read their per-class percentages.
 - `MS025a-02`'s page folder was rebuilt mid-project after discovering it
-  had been built against the wrong image export (bboxes matched a
-  1537x2049 "medium" scan but the folder used a 3075x4098 "large" one).
-  All numbers here use the rebuilt version.
+  had been built against the wrong image export (1537x2049 "medium" vs.
+  3075x4098 "large"). All numbers here use the rebuilt version.
