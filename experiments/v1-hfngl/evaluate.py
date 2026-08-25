@@ -1,23 +1,37 @@
-"""4-way comparison on one shared test split -- see ../README.md for what
-each experiment means. Loads checkpoints from train.py if present
-(training reproduces the same split from the same seed, so a checkpoint
-trained separately is still evaluated on the right held-out set); trains
-fresh otherwise.
+"""10-way comparison on one shared 247-glyph test split: {heuristic,
+CNN-regression no-aug, CNN-regression aug, CNN-classifier no-aug,
+CNN-classifier aug} x {corrected staff, true uncorrected staff}. See
+../README.md for what each means. For the 8 pages that never needed staff
+correction, "uncorrected" is identical to "corrected" (there was nothing to
+fix), so those rows are the same in both columns -- only the 5
+hand-corrected pages' rows actually differ, same convention the heuristic
+columns already used.
+
+Loads checkpoints from train.py if present (training reproduces the same
+split from the same seed, so a checkpoint trained separately is still
+evaluated on the right held-out set); trains fresh otherwise.
+
+get_test_predictions() is the reusable part -- plot_by_class.py imports it
+too, so both work from the exact same test rows/predictions.
 
     python evaluate.py
 """
-from pathlib import Path
-
 import numpy as np
 import torch
 
-from model import StepCNN
-from data import REAL_LABELED_PAGES, load_real_labeled_page, load_shapes
+from model import StepCNN, StepCNNClassifier, STEP_MIN
+from data import REAL_LABELED_PAGES, MANUAL_STAFF_PAGES, load_real_labeled_page, load_shapes, uncorrected_crop_for_row
 from split import build_split
 from augment import build_augmented_rows
-from train import train_cnn, CKPT_DIR, N_AUG, SEED
+from train import train_cnn, train_classifier, CKPT_DIR, N_AUG, SEED
 
-HERE = Path(__file__).resolve().parent
+METHODS = [
+    "heuristic (corrected staff)", "heuristic (uncorrected staff)",
+    "CNN regression no-aug (corrected staff)", "CNN regression no-aug (uncorrected staff)",
+    "CNN regression aug (corrected staff)", "CNN regression aug (uncorrected staff)",
+    "CNN classifier no-aug (corrected staff)", "CNN classifier no-aug (uncorrected staff)",
+    "CNN classifier aug (corrected staff)", "CNN classifier aug (uncorrected staff)",
+]
 
 
 def summarize(errs):
@@ -28,20 +42,78 @@ def summarize(errs):
             "exact": float((errs == 0).mean()), "within1": float((errs <= 1).mean())}
 
 
-def load_model(ckpt_name):
-    model = StepCNN()
+def load_model(ckpt_name, cls=StepCNN):
+    model = cls()
     model.load_state_dict(torch.load(CKPT_DIR / ckpt_name, map_location="cpu"))
     model.eval()
     return model
 
 
-def main():
+def _augmented_train_set(X_train, y_train, aug_rows):
+    X_aug = np.stack([r["crop"] for r in aug_rows])[:, None, :, :]
+    y_aug = np.array([r["truth"] for r in aug_rows], dtype=np.float32)
+    return np.concatenate([X_train, X_aug], axis=0), np.concatenate([y_train, y_aug], axis=0)
+
+
+def load_or_train_cnn(ckpt_name, X_train, y_train, aug_rows=None):
+    if (CKPT_DIR / ckpt_name).exists():
+        print(f"  loaded {ckpt_name}")
+        return load_model(ckpt_name)
+    print(f"  no {ckpt_name}, training fresh...")
+    if aug_rows is not None:
+        X_train, y_train = _augmented_train_set(X_train, y_train, aug_rows)
+    model = train_cnn(X_train, y_train)
+    CKPT_DIR.mkdir(exist_ok=True)
+    torch.save(model.state_dict(), CKPT_DIR / ckpt_name)
+    return model
+
+
+def load_or_train_classifier(ckpt_name, X_train, y_train, aug_rows=None):
+    if (CKPT_DIR / ckpt_name).exists():
+        print(f"  loaded {ckpt_name}")
+        return load_model(ckpt_name, cls=StepCNNClassifier)
+    print(f"  no {ckpt_name}, training fresh...")
+    if aug_rows is not None:
+        X_train, y_train = _augmented_train_set(X_train, y_train, aug_rows)
+    model = train_classifier(X_train, y_train)
+    CKPT_DIR.mkdir(exist_ok=True)
+    torch.save(model.state_dict(), CKPT_DIR / ckpt_name)
+    return model
+
+
+def uncorrected_crops(test_rows):
+    """(crops, valid) -- per-row crop under the TRUE uncorrected staff
+    geometry. Falls back to the row's own (corrected-geometry) crop for the
+    8 pages that never needed correction, since that IS what "uncorrected"
+    means there (valid=True). For one of the 5 corrected pages, valid=False
+    marks a glyph with no box at all under the uncorrected geometry -- a
+    placeholder crop is still emitted (never used once masked to NaN) so
+    the array stays rectangular."""
+    image_cache = {}
+    crops, valid = [], np.ones(len(test_rows), dtype=bool)
+    for i, r in enumerate(test_rows):
+        if r["page"] not in MANUAL_STAFF_PAGES:
+            crops.append(r["crop"])
+            continue
+        crop = uncorrected_crop_for_row(r, image_cache)
+        if crop is None:
+            crops.append(r["crop"])  # placeholder; masked out via `valid`
+            valid[i] = False
+        else:
+            crops.append(crop)
+    return np.stack(crops)[:, None, :, :], valid
+
+
+def get_test_predictions():
+    """(test_rows, y_test, preds) -- preds is {method_name: array aligned
+    1:1 with test_rows}, NaN where that method has no guess (heuristic with
+    no pixel-anchor coverage, or a glyph with no coverage under the
+    uncorrected geometry). CNN predictions are already rounded."""
     shapes = load_shapes()
     print("loading real-labeled pages...")
     all_rows = []
     for page in REAL_LABELED_PAGES:
-        rows = load_real_labeled_page(page, shapes)
-        all_rows += rows
+        all_rows += load_real_labeled_page(page, shapes)
 
     print("building split (must match train.py's)...")
     train_rows, test_rows = build_split(all_rows)
@@ -55,61 +127,48 @@ def main():
 
     heur_c = np.array([r["heur_corrected"] for r in test_rows], dtype=np.float32)
     heur_u = np.array([r["heur_uncorrected"] for r in test_rows], dtype=np.float32)
-    valid_c, valid_u = ~np.isnan(heur_c), ~np.isnan(heur_u)
-    errs_c = np.abs(heur_c[valid_c] - y_test[valid_c])
-    errs_u = np.abs(heur_u[valid_u] - y_test[valid_u])
 
-    print("\nloading/training CNN checkpoints...")
-    if (CKPT_DIR / "stepcnn_real.pt").exists():
-        model_real = load_model("stepcnn_real.pt")
-        print("  loaded stepcnn_real.pt")
-    else:
-        print("  no stepcnn_real.pt, training fresh...")
-        model_real = train_cnn(X_train, y_train)
-        CKPT_DIR.mkdir(exist_ok=True)
-        torch.save(model_real.state_dict(), CKPT_DIR / "stepcnn_real.pt")
+    print("building uncorrected-staff crops for the CNN columns...")
+    X_test_u, valid_u_crop = uncorrected_crops(test_rows)
 
-    if (CKPT_DIR / "stepcnn_real_aug.pt").exists():
-        model_aug = load_model("stepcnn_real_aug.pt")
-        print("  loaded stepcnn_real_aug.pt")
-    else:
-        print(f"  no stepcnn_real_aug.pt, building {N_AUG}x augmented copies and training fresh...")
-        aug_rows = build_augmented_rows(train_rows, N_AUG, seed=SEED)
-        X_aug = np.stack([r["crop"] for r in aug_rows])[:, None, :, :]
-        y_aug = np.array([r["truth"] for r in aug_rows], dtype=np.float32)
-        model_aug = train_cnn(np.concatenate([X_train, X_aug], axis=0),
-                               np.concatenate([y_train, y_aug], axis=0))
-        CKPT_DIR.mkdir(exist_ok=True)
-        torch.save(model_aug.state_dict(), CKPT_DIR / "stepcnn_real_aug.pt")
+    print("loading/training CNN checkpoints...")
+    aug_rows = build_augmented_rows(train_rows, N_AUG, seed=SEED)
+    model_real = load_or_train_cnn("stepcnn_real.pt", X_train, y_train)
+    model_aug = load_or_train_cnn("stepcnn_real_aug.pt", X_train, y_train, aug_rows=aug_rows)
+    model_cls = load_or_train_classifier("stepcnn_cls.pt", X_train, y_train)
+    model_cls_aug = load_or_train_classifier("stepcnn_cls_aug.pt", X_train, y_train, aug_rows=aug_rows)
+
+    def classify(model, X):
+        logits = model(torch.tensor(X))
+        return (torch.argmax(logits, dim=1).numpy() + STEP_MIN).astype(np.float32)
 
     with torch.no_grad():
-        pred_real = model_real(torch.tensor(X_test)).numpy()
-        pred_aug = model_aug(torch.tensor(X_test)).numpy()
-    errs_real = np.abs(np.round(pred_real) - y_test)
-    errs_aug = np.abs(np.round(pred_aug) - y_test)
+        pred_real_c = np.round(model_real(torch.tensor(X_test)).numpy())
+        pred_real_u = np.round(model_real(torch.tensor(X_test_u)).numpy())
+        pred_aug_c = np.round(model_aug(torch.tensor(X_test)).numpy())
+        pred_aug_u = np.round(model_aug(torch.tensor(X_test_u)).numpy())
+        pred_cls_c = classify(model_cls, X_test)
+        pred_cls_u = classify(model_cls, X_test_u)
+        pred_cls_aug_c = classify(model_cls_aug, X_test)
+        pred_cls_aug_u = classify(model_cls_aug, X_test_u)
+    for pred_u in [pred_real_u, pred_aug_u, pred_cls_u, pred_cls_aug_u]:
+        pred_u[~valid_u_crop] = np.nan
 
-    print(f"\n{'experiment':38s} {'n':>5s} {'exact%':>7s} {'within1%':>9s} {'MAE':>6s}")
-    for name, errs, n in [
-        ("(1) heuristic, corrected staff", errs_c, valid_c.sum()),
-        ("(2) heuristic, uncorrected staff", errs_u, valid_u.sum()),
-        ("(3) CNN, no augmentation", errs_real, len(errs_real)),
-        ("(4) CNN, staff-error augmentation", errs_aug, len(errs_aug)),
-    ]:
+    preds = dict(zip(METHODS, [
+        heur_c, heur_u, pred_real_c, pred_real_u, pred_aug_c, pred_aug_u,
+        pred_cls_c, pred_cls_u, pred_cls_aug_c, pred_cls_aug_u,
+    ]))
+    return test_rows, y_test, preds
+
+
+def main():
+    test_rows, y_test, preds = get_test_predictions()
+    print(f"\n{'experiment':32s} {'n':>5s} {'exact%':>7s} {'within1%':>9s} {'MAE':>6s}")
+    for name, pred in preds.items():
+        valid = ~np.isnan(pred)
+        errs = np.abs(pred[valid] - y_test[valid])
         s = summarize(errs)
-        print(f"  {name:38s} {n:5d} {100*s['exact']:6.1f}% {100*s['within1']:8.1f}% {s['mae']:6.3f}")
-
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(1, 2, figsize=(10, 5))
-    for ax, pred, title in [(axes[0], pred_real, "no augmentation"), (axes[1], pred_aug, "staff-error augmentation")]:
-        ax.scatter(y_test, np.round(pred), alpha=0.6, color="red")
-        ax.plot([-1, 8], [-1, 8], "k--", linewidth=1)
-        ax.set_xlabel("annotated step (truth)"); ax.set_ylabel("model predicted step (rounded)")
-        ax.set_title(title)
-    fig.tight_layout()
-    fig.savefig(HERE / "scatter.png", dpi=130)
-    print(f"\nsaved scatter to {HERE / 'scatter.png'}")
+        print(f"  {name:32s} {valid.sum():5d} {100*s['exact']:6.1f}% {100*s['within1']:8.1f}% {s['mae']:6.3f}")
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from model import StepCNN
+from model import StepCNN, StepCNNClassifier, STEP_MIN
 from data import REAL_LABELED_PAGES, load_real_labeled_page, load_shapes
 from split import build_split, SEED
 from augment import build_augmented_rows
@@ -53,6 +53,34 @@ def train_cnn(Xtr, ytr, seed=SEED, log_every=20):
     return model
 
 
+def train_classifier(Xtr, ytr, seed=SEED, log_every=20):
+    """Same training loop as train_cnn, but for StepCNNClassifier: labels
+    are step values shifted into 0..NUM_CLASSES-1 class indices, and the
+    loss is cross-entropy instead of MSE."""
+    set_seed(seed)
+    model = StepCNNClassifier()
+    opt = torch.optim.Adam(model.parameters(), lr=LR, weight_decay=1e-4)
+    loss_fn = nn.CrossEntropyLoss()
+    Xtr_t = torch.tensor(Xtr)
+    ytr_t = torch.tensor((ytr - STEP_MIN).astype("int64"))
+    n = len(Xtr_t)
+    for epoch in range(EPOCHS):
+        model.train()
+        perm = torch.randperm(n)
+        total_loss = 0.0
+        for i in range(0, n, BATCH):
+            b = perm[i:i + BATCH]
+            opt.zero_grad()
+            pred = model(Xtr_t[b])
+            loss = loss_fn(pred, ytr_t[b])
+            loss.backward()
+            opt.step()
+            total_loss += loss.item() * len(b)
+        if (epoch + 1) % log_every == 0 or epoch == 0:
+            print(f"    epoch {epoch+1:4d}/{EPOCHS}  train CE={total_loss/n:.4f}", flush=True)
+    return model
+
+
 def main():
     set_seed(SEED)
     shapes = load_shapes()
@@ -88,6 +116,14 @@ def main():
     print(f"training (real + {N_AUG}x augmented, staff-error-robustness variant)...", flush=True)
     model_aug = train_cnn(X_train_aug, y_train_aug)
     torch.save(model_aug.state_dict(), CKPT_DIR / "stepcnn_real_aug.pt")
+
+    print("training classifier (real-only, ablation: classification vs regression)...", flush=True)
+    model_cls = train_classifier(X_train, y_train)
+    torch.save(model_cls.state_dict(), CKPT_DIR / "stepcnn_cls.pt")
+
+    print("training classifier (real + augmented)...", flush=True)
+    model_cls_aug = train_classifier(X_train_aug, y_train_aug)
+    torch.save(model_cls_aug.state_dict(), CKPT_DIR / "stepcnn_cls_aug.pt")
 
     meta = {
         "seed": SEED, "n_train_real": len(train_rows), "n_test": len(test_rows),

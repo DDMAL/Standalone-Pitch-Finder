@@ -114,9 +114,9 @@ def load_real_labeled_page(page_name, shapes):
 
 def uncorrected_crop_for_row(row, image_cache):
     """Re-crop a real-labeled row's glyph under its page's TRUE
-    pre-correction staff geometry, for the robustness check in
-    evaluate_robustness.py. None if the page never needed correction (no
-    uncorrected alternative exists) or the glyph has no coverage there.
+    pre-correction staff geometry, for evaluate.py's uncorrected-staff
+    columns. None if the page never needed correction (no uncorrected
+    alternative exists) or the glyph has no coverage there.
     image_cache: {page_name: (grayscale_image, expanded_boxes_dict)},
     filled lazily so each page's image/boxes are computed only once."""
     page = row["page"]
