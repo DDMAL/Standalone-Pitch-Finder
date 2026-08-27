@@ -3,7 +3,9 @@ evaluate.py so both work from the exact same glyph/crop/label definitions.
 
 See ../README.md for what "real-labeled" / "corrected" mean here.
 """
+import functools
 import json
+import statistics
 import sys
 from pathlib import Path
 
@@ -108,20 +110,70 @@ def load_real_labeled_page(page_name, shapes):
             # raw (pre-round) crop geometry, kept so augment.py can re-crop
             # this exact glyph with jittered bounds without reloading images
             "ulx": g.ulx, "ncols": g.ncols, "box_top": box_top, "box_bottom": box_bottom,
+            # the glyph's own IC bbox (pre-expansion), same in both staff
+            # conditions -- for demo_examples.py to show how much margin the
+            # expanded crop added
+            "bbox_uly": g.uly, "bbox_lry": g.uly + g.nrows,
         })
     return rows
 
 
+# --- hybrid uncorrected-staff crop -----------------------------------
+#
+# Finalized after several rejected alternatives (see git history of this
+# file / README for the full story):
+#   - comparing a stave's local half_gap to the page's OWN median: doesn't
+#     work, because a bad page is bad uniformly, so nothing looks like an
+#     outlier relative to its own (also-bad) neighbours.
+#   - always replacing the crop with one sized from the glyph's own IC
+#     bbox (staff-independent): also doesn't work applied indiscriminately
+#     -- it discards real signal on the ~80% of glyphs whose uncorrected
+#     crop was actually fine, net-negative overall (measured: -9pts exact
+#     match for the classifier+aug model, tested on the full 233-glyph
+#     uncorrected-eligible set).
+#   - the fix that actually nets positive: keep the real uncorrected-staff
+#     crop by default, and only override it with a bbox-height-based crop
+#     when its height is off by more than HYBRID_ANOMALY_FACTOR from what
+#     the glyph's own bbox predicts. HYBRID_ANOMALY_FACTOR=3.0 (chosen by
+#     sweeping 2.0-5.0 against the full eligible set) flags ~21% of
+#     manually-corrected-page glyphs and improved exact-match on all 4 CNN
+#     checkpoints (e.g. classifier+aug: 68.7% -> 69.5%).
+HYBRID_HEIGHT_PERCENTILE = 80  # of the corrected-crop-height/bbox-height ratio distribution
+HYBRID_ANOMALY_FACTOR = 3.0
+
+
+@functools.lru_cache(maxsize=1)
+def bbox_height_ratio():
+    """(expanded corrected-crop height / glyph's own IC bbox height) at
+    HYBRID_HEIGHT_PERCENTILE, across every real-labeled glyph on every
+    page -- a page/stave-independent reference for "how much taller than
+    the notehead itself a good crop usually is". Cached: this scans every
+    page's labels, not cheap to recompute per call."""
+    shapes = load_shapes()
+    ratios = []
+    for page in REAL_LABELED_PAGES:
+        for r in load_real_labeled_page(page, shapes):
+            bbox_h = r["bbox_lry"] - r["bbox_uly"]
+            crop_h = r["box_bottom"] - r["box_top"]
+            if bbox_h > 0:
+                ratios.append(crop_h / bbox_h)
+    return float(np.percentile(ratios, HYBRID_HEIGHT_PERCENTILE))
+
+
 def uncorrected_crop_for_row(row, image_cache):
-    """Re-crop a real-labeled row's glyph under its page's TRUE
-    pre-correction staff geometry, for evaluate.py's uncorrected-staff
-    columns. None if the page never needed correction (no uncorrected
-    alternative exists) or the glyph has no coverage there.
-    image_cache: {page_name: (grayscale_image, expanded_boxes_dict)},
-    filled lazily so each page's image/boxes are computed only once."""
+    """(crop, top, bottom, overridden) for evaluate.py's uncorrected-staff
+    columns: re-crops a real-labeled row's glyph under its page's TRUE
+    pre-correction staff geometry, EXCEPT when that crop's height is
+    anomalous relative to the glyph's own bbox (see HYBRID_* above), in
+    which case a bbox-centered crop is substituted instead --
+    `overridden` reports which of the two happened. (None, None, None,
+    None) if the page never needed correction (no uncorrected alternative
+    exists) or the glyph has no coverage there at all. image_cache:
+    {page_name: (grayscale_image, expanded_boxes_dict)}, filled lazily so
+    each page's image/boxes are computed only once."""
     page = row["page"]
     if page not in MANUAL_STAFF_PAGES:
-        return None
+        return None, None, None, None
     if page not in image_cache:
         inputs = resolve_page_inputs(ROOT / page)
         glyphs_all = parse_ic_xml(inputs.ic_xml)
@@ -130,9 +182,48 @@ def uncorrected_crop_for_row(row, image_cache):
         image_cache[page] = (image, expanded_boxes(glyphs_all, staves_u))
     image, boxes_u = image_cache[page]
     if row["glyph_index"] not in boxes_u:
-        return None
+        return None, None, None, None
     top, bottom, _ = boxes_u[row["glyph_index"]]
-    return crop_from_bounds(image, row["ulx"], row["ncols"], top, bottom)
+
+    bbox_h = row["bbox_lry"] - row["bbox_uly"]
+    expected_h = bbox_h * bbox_height_ratio()
+    current_h = bottom - top
+    overridden = current_h < expected_h / HYBRID_ANOMALY_FACTOR or current_h > expected_h * HYBRID_ANOMALY_FACTOR
+    if overridden:
+        bbox_mid = (row["bbox_uly"] + row["bbox_lry"]) / 2
+        top, bottom = bbox_mid - expected_h / 2, bbox_mid + expected_h / 2
+
+    return crop_from_bounds(image, row["ulx"], row["ncols"], top, bottom), top, bottom, overridden
+
+
+def page_y_to_crop_row(y, top, bottom):
+    """Map a page-pixel y into the resized IMG_H-tall crop's row
+    coordinate, given the (top, bottom) page-pixel bounds that crop was
+    cut from. Shared by staff_line_crop_rows below and demo_examples.py's
+    original-bbox overlay."""
+    return (y - top) / (bottom - top) * IMG_H
+
+
+def staff_line_crop_rows(page_name, corrected, ulx, ncols, top, bottom):
+    """Row positions (in the resized IMG_H-tall crop's coordinate system)
+    where each detected staff line of this page, under the given staff
+    condition, crosses this crop's horizontal center -- for drawing the
+    actual staff lines over a demo crop. Only lines within one crop-height
+    of [top, bottom] are considered: staff lines usually span nearly the
+    full page width, so without this a page's *other* staves (physically
+    far away) would also "cross" x_center and get pulled in."""
+    staves = staves_for(page_name, corrected)
+    x_center = ulx + ncols / 2
+    height = bottom - top
+    margin = height  # one crop-height of slack on each side
+    rows = []
+    for stave in staves:
+        for line in stave.lines:
+            y = line.y_at_x(x_center)
+            if y is None or y < top - margin or y > bottom + margin:
+                continue
+            rows.append(page_y_to_crop_row(y, top, bottom))
+    return rows
 
 
 def load_shapes():

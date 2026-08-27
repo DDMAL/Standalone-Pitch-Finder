@@ -1,11 +1,19 @@
 """10-way comparison on one shared 247-glyph test split: {heuristic,
 CNN-regression no-aug, CNN-regression aug, CNN-classifier no-aug,
-CNN-classifier aug} x {corrected staff, true uncorrected staff}. See
+CNN-classifier aug} x {corrected staff, uncorrected staff}. See
 ../README.md for what each means. For the 8 pages that never needed staff
 correction, "uncorrected" is identical to "corrected" (there was nothing to
 fix), so those rows are the same in both columns -- only the 5
 hand-corrected pages' rows actually differ, same convention the heuristic
 columns already used.
+
+For the CNN columns specifically, "uncorrected staff" means the finalized
+HYBRID crop from data.uncorrected_crop_for_row(): the true pre-correction
+crop by default, overridden with a bbox-height-based crop only when its
+height looks anomalous (see data.py's HYBRID_* constants for why a pure
+"always trust the bad staff" or "never trust it" rule both measured worse).
+The heuristic's own "uncorrected staff" column is unaffected by this --
+it never used expanded-box crops in the first place.
 
 Loads checkpoints from train.py if present (training reproduces the same
 split from the same seed, so a checkpoint trained separately is still
@@ -82,26 +90,35 @@ def load_or_train_classifier(ckpt_name, X_train, y_train, aug_rows=None):
 
 
 def uncorrected_crops(test_rows):
-    """(crops, valid) -- per-row crop under the TRUE uncorrected staff
-    geometry. Falls back to the row's own (corrected-geometry) crop for the
-    8 pages that never needed correction, since that IS what "uncorrected"
-    means there (valid=True). For one of the 5 corrected pages, valid=False
-    marks a glyph with no box at all under the uncorrected geometry -- a
-    placeholder crop is still emitted (never used once masked to NaN) so
-    the array stays rectangular."""
+    """(crops, valid, tops, bottoms, overridden) -- per-row crop under the
+    TRUE uncorrected staff geometry, plus the page-pixel (top, bottom)
+    bounds that crop was cut from (needed to overlay staff lines on it
+    later), plus whether the hybrid rule replaced that crop with a
+    bbox-centered one (see data.uncorrected_crop_for_row). Falls back to
+    the row's own (corrected-geometry) crop/bounds for the 8 pages that
+    never needed correction, since that IS what "uncorrected" means there
+    (valid=True, overridden=False). For one of the 5 corrected pages,
+    valid=False marks a glyph with no box at all under the uncorrected
+    geometry -- a placeholder crop is still emitted (never used once
+    masked to NaN) so the array stays rectangular."""
     image_cache = {}
     crops, valid = [], np.ones(len(test_rows), dtype=bool)
+    tops, bottoms, overridden = [], [], np.zeros(len(test_rows), dtype=bool)
     for i, r in enumerate(test_rows):
         if r["page"] not in MANUAL_STAFF_PAGES:
             crops.append(r["crop"])
+            tops.append(r["box_top"]); bottoms.append(r["box_bottom"])
             continue
-        crop = uncorrected_crop_for_row(r, image_cache)
+        crop, top, bottom, over = uncorrected_crop_for_row(r, image_cache)
         if crop is None:
             crops.append(r["crop"])  # placeholder; masked out via `valid`
+            tops.append(r["box_top"]); bottoms.append(r["box_bottom"])
             valid[i] = False
         else:
             crops.append(crop)
-    return np.stack(crops)[:, None, :, :], valid
+            tops.append(top); bottoms.append(bottom)
+            overridden[i] = over
+    return np.stack(crops)[:, None, :, :], valid, np.array(tops), np.array(bottoms), overridden
 
 
 def get_test_predictions():
@@ -129,7 +146,7 @@ def get_test_predictions():
     heur_u = np.array([r["heur_uncorrected"] for r in test_rows], dtype=np.float32)
 
     print("building uncorrected-staff crops for the CNN columns...")
-    X_test_u, valid_u_crop = uncorrected_crops(test_rows)
+    X_test_u, valid_u_crop, _, _, _ = uncorrected_crops(test_rows)
 
     print("loading/training CNN checkpoints...")
     aug_rows = build_augmented_rows(train_rows, N_AUG, seed=SEED)
