@@ -180,9 +180,19 @@ def get_test_predictions():
 
 def main():
     test_rows, y_test, preds = get_test_predictions()
+
+    # 14 glyphs have no valid prediction from SOME method under uncorrected
+    # staff (no box/anchor coverage there at all -- see README). Restrict
+    # every row, corrected columns included, to the glyphs where every
+    # method has a prediction in both conditions, so "corrected" and
+    # "uncorrected" for the same method are a true paired comparison
+    # instead of comparing 247 glyphs against a different 233.
+    uncorrected_preds = [p for name, p in preds.items() if "uncorrected" in name]
+    eligible = np.all([~np.isnan(p) for p in uncorrected_preds], axis=0)
+
     print(f"\n{'experiment':32s} {'n':>5s} {'exact%':>7s} {'within1%':>9s} {'MAE':>6s}")
     for name, pred in preds.items():
-        valid = ~np.isnan(pred)
+        valid = eligible & ~np.isnan(pred)
         errs = np.abs(pred[valid] - y_test[valid])
         s = summarize(errs)
         print(f"  {name:32s} {valid.sum():5d} {100*s['exact']:6.1f}% {100*s['within1']:8.1f}% {s['mae']:6.3f}")
