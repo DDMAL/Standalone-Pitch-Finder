@@ -1,10 +1,13 @@
 """Illustrative demo: for a handful of test glyphs, show the actual crop
 image fed to the models (corrected-staff version and, for the 5 hand-fixed
-pages, the true-uncorrected-staff version of the same glyph) next to every
-method's prediction vs. the true label. Meant for a slide/report figure,
-not analysis -- picks a spread of examples (robust cases, augmentation
-rescues, classifier-beats-regression cases, general failures) rather than
-a single repeated story.
+pages, the uncorrected-staff version of the same glyph -- which is the
+finalized HYBRID crop from data.uncorrected_crop_for_row, not always the
+raw pre-correction geometry) next to every method's prediction vs. the
+true label. Meant for a slide/report figure, not analysis -- picks a
+spread of examples (robust cases, augmentation rescues, classifier-beats-
+regression cases, general failures, and cases where the hybrid rule
+actually overrode the crop) rather than a single repeated story. Each
+uncorrected panel is labelled "[hybrid override]" when that happened.
 
     python demo_examples.py
 """
@@ -13,7 +16,7 @@ from pathlib import Path
 import numpy as np
 
 from evaluate import get_test_predictions, uncorrected_crops
-from data import MANUAL_STAFF_PAGES
+from data import MANUAL_STAFF_PAGES, staff_line_crop_rows, page_y_to_crop_row
 
 HERE = Path(__file__).resolve().parent
 
@@ -35,11 +38,12 @@ UNCORRECTED_METHODS = [m for m in SHORT_NAMES if "uncorrected" in m]
 PER_CATEGORY = 2
 
 
-def pick_examples(test_rows, y_test, preds):
+def pick_examples(test_rows, y_test, preds, overridden_u):
     """A mixed set of examples, not just total-failure cases: some where
     everything is robust across both conditions, some where augmentation
     specifically rescues a prediction, some where the classifier succeeds
-    and regression doesn't, and some general disagreement/failure cases --
+    and regression doesn't, some general disagreement/failure cases, and
+    some where the finalized hybrid rule actually replaced the crop --
     each category sampled separately so the figure shows a spread of
     stories rather than one repeated pattern."""
     rng = np.random.default_rng(0)
@@ -78,16 +82,21 @@ def pick_examples(test_rows, y_test, preds):
     pool = [i for i in np.where(on_manual_page)[0] if not np.isnan(reg_aug_u[i]) and reg_aug_c[i] != reg_aug_u[i]]
     chosen += sample(pool, set(chosen))
 
+    # E: the finalized hybrid rule actually kicked in and replaced the crop
+    pool = list(np.where(on_manual_page & overridden_u)[0])
+    chosen += sample(pool, set(chosen))
+
     return chosen
 
 
-def main():
-    test_rows, y_test, preds = get_test_predictions()
-    X_test_u, valid_u = uncorrected_crops(test_rows)
-
-    idx = pick_examples(test_rows, y_test, preds)
-    print(f"selected {len(idx)} example glyphs: {[test_rows[i]['page'] for i in idx]}")
-
+def render_grid(test_rows, y_test, preds, X_test_u, tops_u, bottoms_u, overridden_u, idx, out_path):
+    """Render one image: one row per index in idx, corrected crop + preds
+    on the left, uncorrected crop + preds on the right, with the actual
+    detected staff lines overlaid in magenta and the glyph's own
+    pre-expansion IC bbox in cyan. The uncorrected panel's title is tagged
+    "[hybrid override]" when data.uncorrected_crop_for_row replaced that
+    glyph's crop (see overridden_u). Shared by the curated demo (below)
+    and demo_examples_all.py's full paginated render."""
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -100,26 +109,49 @@ def main():
         r = test_rows[i]
         truth = y_test[i]
 
-        for col, (crop, methods, cond_label) in enumerate([
-            (r["crop"], CORRECTED_METHODS, "corrected staff"),
-            (X_test_u[i, 0], UNCORRECTED_METHODS, "uncorrected staff"),
+        for col, (crop, methods, cond_label, corrected) in enumerate([
+            (r["crop"], CORRECTED_METHODS, "corrected staff", True),
+            (X_test_u[i, 0], UNCORRECTED_METHODS, "uncorrected staff", False),
         ]):
             ax = axes[row, col]
             ax.imshow(crop, cmap="gray", aspect="equal")
             ax.set_xticks([]); ax.set_yticks([])
+            xlim, ylim = ax.get_xlim(), ax.get_ylim()  # restore below: axhline autoscale
+
+            top, bottom = (r["box_top"], r["box_bottom"]) if corrected else (tops_u[i], bottoms_u[i])
+            for line_row in staff_line_crop_rows(r["page"], corrected, r["ulx"], r["ncols"], top, bottom):
+                ax.axhline(line_row, color="magenta", linewidth=0.8, alpha=0.7)
+            # the glyph's own IC bbox (pre-expansion) -- same page-pixel
+            # bounds in both panels, but a different position/size once
+            # mapped into each panel's own (possibly differently-sized) crop
+            for edge in (r["bbox_uly"], r["bbox_lry"]):
+                ax.axhline(page_y_to_crop_row(edge, top, bottom), color="cyan", linewidth=1.0, alpha=0.9)
+            ax.set_xlim(xlim); ax.set_ylim(ylim)
+
             lines = [f"truth: {truth:.0f}"]
             for m in methods:
                 p = preds[m][i]
                 mark = "n/a" if np.isnan(p) else f"{p:.0f}" + (" ok" if p == truth else " X")
                 lines.append(f"{SHORT_NAMES[m]}: {mark}")
-            ax.set_title(f"{cond_label}\n{r['page']}, {r['class_name']}", fontsize=8)
+            tag = " [hybrid override]" if (not corrected and overridden_u[i]) else ""
+            ax.set_title(f"{cond_label}{tag}\n{r['page']}, {r['class_name']}", fontsize=8)
             ax.text(1.05, 0.5, "\n".join(lines), transform=ax.transAxes,
                     fontsize=8, va="center", family="monospace")
 
     fig.tight_layout()
-    out_path = HERE / "demo_examples.png"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_path, dpi=130, bbox_inches="tight")
     print(f"saved {out_path}")
+
+
+def main():
+    test_rows, y_test, preds = get_test_predictions()
+    X_test_u, valid_u, tops_u, bottoms_u, overridden_u = uncorrected_crops(test_rows)
+
+    idx = pick_examples(test_rows, y_test, preds, overridden_u)
+    print(f"selected {len(idx)} example glyphs: {[test_rows[i]['page'] for i in idx]}")
+    render_grid(test_rows, y_test, preds, X_test_u, tops_u, bottoms_u, overridden_u, idx,
+                HERE / "figures" / "demo_examples.png")
 
 
 if __name__ == "__main__":

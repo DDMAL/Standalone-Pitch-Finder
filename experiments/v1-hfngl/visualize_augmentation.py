@@ -76,7 +76,8 @@ def main():
         cv2.putText(grid_bgr, text, (x0, 20), cv2.FONT_HERSHEY_SIMPLEX,
                     0.5, (0, 200, 0), 1, cv2.LINE_AA)
 
-    out_path = ROOT / "experiments" / "v1-hfngl" / "augmentation_examples.png"
+    out_path = ROOT / "experiments" / "v1-hfngl" / "figures" / "augmentation_examples.png"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(str(out_path), grid_bgr)
     print(f"saved {out_path}")
 
