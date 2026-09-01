@@ -26,6 +26,24 @@ text_music_detector_fulldata.pt     Phase-1 YOLO weights
 render_mei.py                       unrelated standalone tool, needs its own MEI file
 ```
 
+## Data provenance
+
+Not everything under a page folder is equally trustworthy. IC XML (glyph
+bboxes + `class_name`/`confidence`) and staff-finding JSON (stave-line
+geometry) are both **model output**, not ground truth: IC's own bboxes are
+documented as noisy/imprecise, and staff-finding is wrong often enough that
+5 of the 13 hand-labeled pages needed their stave grouping manually fixed
+(`scripts/fix_stafflines.py`). The only **human-verified ground truth**
+anywhere in this repo is the per-glyph stave **step** recorded in
+`<page>/labels/human_annotated_stave_steps.json`, for the 13 pages listed
+as `REAL_LABELED_PAGES` in `experiments/v1-hfngl/data.py` -- produced by a
+human clicking through each glyph via `scripts/annotate_notecenters.py`
+(see `experiments/v1-hfngl/README.md` for the train/test split built from
+it). `staff_finding_rerun/` at the repo root holds a from-scratch rerun of
+the staff-finding model against all 13 labeled pages' images, kept
+separate from each page's own `input/` so later experiments can reuse a
+known-fresh detection run without re-invoking the external model.
+
 ## Setup
 
 ```bash
