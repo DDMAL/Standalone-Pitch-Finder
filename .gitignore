@@ -5,3 +5,11 @@ __pycache__/
 *.pt
 !experiments/*/checkpoints/*.pt
 data/*
+
+# staff_finding_rerun/ keeps only the flattened, reusable outputs
+# (detected_stafflines/ JSON, detected_stafflines_viz/ PNGs); the raw
+# per-page pipeline dirs (YOLO txt + nested intermediate output) are
+# regeneratable from the same command and not worth tracking.
+staff_finding_rerun/*/
+!staff_finding_rerun/detected_stafflines/
+!staff_finding_rerun/detected_stafflines_viz/
