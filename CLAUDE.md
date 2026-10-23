@@ -7,9 +7,13 @@ staff position, and a pitch (or the reason there isn't one), plus debug overlays
 
 Two independent algorithms live here: `pitch_finder.py` (**algorithm #1**, ours,
 decomposes multi-note neumes) and `rodan_pitch_finder.py` (**algorithm #2**, a
-reimplementation of Rodan's heuristic pitch finder, one pitch per glyph). Neither
-is validated against ground truth — there is none yet. See `README.md` for the
-narrative version and `PLAN-neume-anchors.md` for design rationale.
+reimplementation of Rodan's heuristic pitch finder, one pitch per glyph). The only
+ground truth is hand-labeled **stave steps** on 13 Hufnagel pages (2607 notes, in
+`<page>/labels/human_annotated_stave_steps.json`). Algorithm #1 scores 81.6% per
+note against it. Algorithm #2 is unscored, and no pitch-name or MEI ground truth
+exists. See `README.md` for the narrative version, `PLAN-neume-anchors.md` for
+design rationale, `PROGRESS.md` for status, open questions and who did what, and
+`ANNOTATION_PROGRESS.md` for per-page numbers.
 
 ## Commands
 
@@ -22,19 +26,30 @@ python -m pytest script_tests/ -v
 ```
 
 Verify deps before running anything (`python -c "import cv2, numpy"`) — the
-`pitch-finding` env has been found missing `cv2`/`pytest`.
+`pitch-finding` env has been found missing `cv2`/`pytest`. On this Intel Mac a
+plain `pip install opencv-python` tries to build OpenCV 5 from source and fails,
+because conda's Python reports macOS 10.16 and pip skips the newer wheels.
+`pip install "numpy<2" "opencv-python==4.9.0.80" pytest` works. Use the
+non-headless package, because the labeling GUIs need `cv2.imshow`.
 
-Sample page folders: `McGill_MS234-064` (single column), `Breviarium_ad_usum`
-and `Breviarium_ad_usum_crop` (two columns — the regrouping test case),
-`GentAnt1475_0017_AC_rightcrop` (smaller notation).
+Page folders: the 13 labeled Hufnagel pages (listed as `REAL_LABELED_PAGES` in
+`experiments/v1-hfngl/data.py`; `McGill_MS234-064` is one of them), plus three
+unlabeled samples: `Breviarium_ad_usum` and `Breviarium_ad_usum_crop` (two
+columns, the regrouping test case) and `GentAnt1475_0017_AC_rightcrop` (smaller
+notation).
 
 ## Layout convention
 
 A page folder holds `input/` (image, IC XML, `*stafflines*.json`) and takes
-artifacts in `output/`. Discovery never looks inside `output/`, which is what
-lets a page be re-run without a previous run's renders becoming candidate
-inputs. Older folders keep all three files flat at the top level; discovery
-still handles those.
+artifacts in `output/`. Labeled pages also have `labels/`. Discovery never looks
+inside `output/`, which is what lets a page be re-run without a previous run's
+renders becoming candidate inputs. Older folders keep all three files flat at the
+top level; discovery still handles those.
+
+Labels are keyed by glyph **index**, meaning the order of `<glyph>` elements in
+the IC XML. If a labeled page's IC XML is replaced or reclassified, its labels
+stop matching the glyphs, and nothing raises an error. Check that `class_name`
+still matches before trusting any score.
 
 ---
 
@@ -98,6 +113,15 @@ from the line geometry the same file carries:
    fragments an initial splits a line into, and **leaves a hole** at the index of
    an undetected line instead of renumbering the lines below it (which would
    shift every pitch on that stave by a step).
+
+Before grouping, entries with no `y_values` are dropped (zero-width detections
+used to crash it).
+
+**Hand-fixed pages need `--no-regroup`.** On five pages (`CantusMA1537_p22`,
+`MS025a-01`, `MS025a-02`, `MS025b-01`, `MS234_p005`), `fix_stafflines.py` wrote
+explicit `stave_id`/`within_stave_index` values and a `manually_grouped` flag into
+the staff JSON. Nothing reads that flag. With `regroup=True` (the default), those
+values are rebuilt from the line geometry and the fix is lost without any warning.
 
 **`staff_io.py`** then builds `Stave` objects. Step convention: bottom-most
 *detected* line is step 0, each line index 2 steps apart. `pitch_finder` queries
@@ -328,14 +352,61 @@ Downloads page images from a IIIF manifest (Presentation API v2/v3 and IIP).
 `--pages 1-3,7`, `--max-dim`, `--timeout`, `--user-agent`. Sends a browser UA by
 default because some hosts (Gallica/BnF) 403 the `python-requests` default. Needs
 `requests`, `tqdm`, `Pillow`, `cv2`. Raw downloads land in `data/`
-(`data/Hufnagel/`, `data/Square/`) — neither `data/` nor `tools/` is committed
-yet.
+(`data/Hufnagel/`, `data/Square/`). `tools/` is committed, but `data/*` is
+gitignored.
+
+### Ground-truth tooling (GUIs: need a display, cannot run headless)
+
+- **`annotate_notecenters.py <page> [--no-regroup]`** steps through each glyph.
+  It pre-fills one integer stave step per expected note from algorithm #1
+  (`heuristic_steps()`), and the human nudges them with Up/Down (k/j) and adds or
+  removes notes with `+`/`-`. Results are saved to
+  `labels/human_annotated_stave_steps.json` after each glyph. The crop it shows
+  comes from `expanded_boxes()`, which is the same crop the CNN is fed.
+  `heuristic_steps()` is also the function every heuristic-accuracy number in the
+  repo is computed from.
+- **`fix_stafflines.py <page>`** lets you drag, add and delete staff lines and
+  assign each one to a stave group. It saves explicit grouping plus the
+  `manually_grouped` flag (see the `--no-regroup` note under section 4).
+- **`check_stafflines.py <page>`** is not a GUI. It flags line pairs that cross or
+  sit closer than a fraction of `scale_unit`. Run it after `fix_stafflines.py`.
+- **`score_stave_steps.py [page ...]`** is not a GUI. It scores `heuristic_steps()`
+  against the labels for each page and prints a total. With no arguments it
+  scores every folder that has `labels/`. It reports **per note** (position-wise
+  match over labeled notes) and **per glyph** (whole step list equal) as separate
+  columns. It also reports "wrong count", the glyphs whose note count differs
+  from the label. It reads the staff JSON's `manually_grouped` flag to choose
+  `regroup=False`. It counts glyphs whose `class_name` differs from the label's,
+  and warns about them instead of scoring silently. Its two helpers,
+  `score_glyph` and `is_manually_grouped`, are unit-tested.
+
+The three GUIs have no unit tests.
+
+### `experiments/v1-hfngl/` — stave-step CNN
+
+Has its own README. It is a per-glyph CNN (regression and 10-way classifier) for
+**single-note** glyphs, trained on the 13 labeled pages. It reuses
+`annotate_notecenters.expanded_boxes`/`heuristic_steps` and `staff_io` from
+`scripts/`. The comparison it is built for is accuracy under uncorrected staff
+lines: `staff_originals/` holds the true pre-correction staff geometry of the 5
+hand-fixed pages. Checkpoints are committed (`*.pt` is gitignored except
+`experiments/*/checkpoints/*.pt`). It needs `torch`, which the `pitch-finding`
+env does not have.
+
+### Data folders
+
+- `bbox-ground-truths/`: Gen's neume-splitting bbox annotations (18 folios, 12
+  Hufnagel and 6 square). The labeled page folders were built from them. Square
+  folios have no page folders yet.
+- `staff_finding_rerun/`: a fresh mothra staff-finding run on the 13 labeled
+  pages (`detected_stafflines/` JSON + `_viz/` PNGs). Raw per-page pipeline
+  directories are gitignored.
 
 ### `script_tests/`
 
-Unit tests for the nine library modules (not the CLIs or `viz_utils`), run
-with pytest from `scripts/`. `test_neume_shapes.py` is the one worth knowing
-about: it cross-checks the whole CSV
+Unit tests for the nine library modules plus `score_stave_steps`'s metric
+(not the other CLIs or `viz_utils`), run with pytest from `scripts/`; 157 pass. `test_neume_shapes.py` is the one worth
+knowing about: it cross-checks the whole CSV
 interval table against intervals derived independently from the class names,
 which is what pins the accumulate-don't-read-absolute convention permanently.
 
@@ -343,8 +414,11 @@ which is what pins the accumulate-don't-read-absolute convention permanently.
 
 ## Working notes
 
-- **Both algorithms are predictions.** No human-verified pitch/MEI ground truth
-  exists. Run both and compare debug images; don't treat either as correct.
+- **Measure stave steps against the labels. Pitch names are still predictions.**
+  Score any change to algorithm #1 with `python score_stave_steps.py` against the
+  2607 labeled steps, before and after. Quote per-note and per-glyph numbers
+  separately (ANNOTATION_PROGRESS.md once mixed them). Pitch names and octaves
+  have no ground truth, so compare those using the debug images.
 - **Never silently degrade.** The established pattern is to flag and count:
   `pixel_anchor_unavailable`, `anchor_x_fell_back_to_center`,
   `approximate_unknown_shape`, `shape_from_class_name`, `sparse_stave_lines`,

@@ -4,6 +4,25 @@ Given IC (Interactive Classifier) output and staff-finding output for a
 manuscript page, assigns each glyph to a stave/line/space and computes its
 pitch when a clef is available.
 
+## Status
+
+Algorithm #1's stave steps are now measured against hand labels. On 13 Hufnagel
+pages, 81.6% of 2607 labeled notes land on the right line or space, and 73.0% of
+glyphs get every note right. There is still no pitch-name or MEI ground truth.
+[PROGRESS.md](PROGRESS.md) has the current state, open questions, and who did what.
+[ANNOTATION_PROGRESS.md](ANNOTATION_PROGRESS.md) has the numbers for each page.
+
+To recompute the numbers after changing algorithm #1:
+
+```bash
+cd scripts
+python score_stave_steps.py                  # every labeled page, plus a total
+python score_stave_steps.py ../MS025b-01     # one page
+```
+
+The script detects the five hand-fixed pages and loads them without regrouping.
+It also warns about any page whose IC XML no longer matches its labels.
+
 ## Layout
 
 ```
@@ -18,13 +37,26 @@ scripts/
   render_ic_debug.py              visualize IC's raw classification only
   page_inputs.py                  find a page folder's image / IC XML / staff JSON
   viz_utils.py                    shared drawing helpers
+  annotate_notecenters.py         GUI: hand-label each glyph's stave steps (the ground truth)
+  fix_stafflines.py               GUI: hand-correct a page's staff lines and their stave grouping
+  check_stafflines.py             flag crossing / near-duplicate staff lines
+  score_stave_steps.py            score algorithm #1's stave steps against the hand labels
   script_tests/                   pytest unit tests
+<page folders>/                    input/ (image + IC XML + staff JSON), output/, and labels/ on labeled pages
+experiments/v1-hfngl/              stave-step CNN experiment (see its own README)
+bbox-ground-truths/                Gen's neume-splitting bbox annotations (18 folios) the labeled pages were built from
+staff_finding_rerun/               fresh staff-finding run on the 13 labeled pages
 neumes-cheatsheet/                 neume class -> MEI/interval lookup CSV
-GentAnt1475_0017_AC_rightcrop/, McGill_MS234-064/, Breviarium_ad_usum/   sample pages (image + IC XML + staff JSON)
-CH-E-611_Einsiedeln/                raw scans, not annotated yet
-text_music_detector_fulldata.pt     Phase-1 YOLO weights
-render_mei.py                       unrelated standalone tool, needs its own MEI file
+tools/iiif_dl.py                   download page images from a IIIF manifest (into data/, gitignored)
+ANNOTATION_PROGRESS.md             per-page labeling status and algorithm #1 accuracy
+PROGRESS.md                        project status, open questions, contributions
+PLAN-neume-anchors.md              design notes and measurements for algorithm #1's notehead anchoring
+render_mei.py                      unrelated standalone tool, needs its own MEI file
 ```
+
+Page folders: the 13 labeled pages listed in ANNOTATION_PROGRESS.md (which
+includes `McGill_MS234-064`), plus three unlabeled sample pages:
+`GentAnt1475_0017_AC_rightcrop`, `Breviarium_ad_usum` and `Breviarium_ad_usum_crop`.
 
 ## Data provenance
 
@@ -52,6 +84,16 @@ conda activate pitch-finding
 pip install numpy opencv-python pytest
 ```
 
+On an Intel Mac, that `pip install` fails. Conda's Python reports macOS 10.16, so
+pip skips OpenCV's newer x86_64 wheels and tries to build OpenCV from source
+instead. Pin the last wheel pip will accept, which also needs NumPy 1.x:
+
+```bash
+pip install "numpy<2" "opencv-python==4.9.0.80" pytest
+```
+
+Use `opencv-python`, not `-headless`, because the two labeling GUIs open windows.
+
 ## Quick start
 
 Each page folder holds its image + IC XML + staff JSON in `input/`, so
@@ -69,6 +111,16 @@ python run_pitch_finding.py ../McGill_MS234-064 --debug-viz
 
 Keeping inputs and artifacts in separate folders is what lets a page be re-run
 without a previous run's renders becoming candidate inputs.
+
+**Hand-fixed staff lines need `--no-regroup`.** On the five pages whose staff
+lines were corrected with `fix_stafflines.py` (`CantusMA1537_p22`, `MS025a-01`,
+`MS025a-02`, `MS025b-01`, `MS234_p005`), the corrected stave grouping is stored in
+the staff JSON. Without `--no-regroup`, the grouping is rebuilt from the line
+geometry and the correction is lost without any warning:
+
+```bash
+python run_pitch_finding.py ../MS025b-01 --no-regroup --debug-viz
+```
 
 Pass the page image instead of the folder to pick one of two pages sharing a
 folder, and `--image` / `--ic-xml` / `--staff-json` / `--output` to override
@@ -209,12 +261,16 @@ only in what they do with it: algorithm #2 reports that one point as the
 glyph's one pitch, algorithm #1 uses it to place every note of the neume,
 against its own stave assignment and per-stave clef resolution.
 
-Both are predictions, not checked against ground truth — run both and compare debug images rather than treating either as "correct".
+Algorithm #1's stave steps have been checked against the hand labels (81.6% of
+notes right, per page in ANNOTATION_PROGRESS.md). Algorithm #2 has not been
+scored yet. Neither algorithm's pitch names have been checked, because the labels
+record stave steps, not pitches. Run both and compare the debug images, rather
+than treating either one as correct.
 
 ## Tests
 
 ```bash
-cd scripts && python -m pytest script_tests/ -v   # 94 passing
+cd scripts && python -m pytest script_tests/ -v   # 157 passing
 ```
 
 ## Known limitations
@@ -226,4 +282,7 @@ cd scripts && python -m pytest script_tests/ -v   # 94 passing
 - Column detection assumes some stave crosses the gap a decorated initial leaves
   inside a stave; a crop holding one interrupted stave and nothing else would
   have that stave split as if it were two columns.
-- No human-verified pitch/MEI ground truth exists yet.
+- The hand labels cover stave steps on 13 Hufnagel pages only. There is no
+  pitch-name or MEI ground truth, and no square-notation page is labeled.
+- The stave grouping saved by `fix_stafflines.py` is only used with
+  `--no-regroup`. Nothing reads its `manually_grouped` flag automatically.

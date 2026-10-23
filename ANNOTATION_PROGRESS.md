@@ -1,34 +1,35 @@
 # Stave-step annotation progress
 
 Tracks progress on hand-labeling ground-truth stave steps (via
-`scripts/annotate_notecenters.py`) for the CNN-based pitch finder. Update by
-re-running the checks below rather than editing this file by hand -- it's a
-snapshot of `labels/human_annotated_stave_steps.json` files across pages,
-not a source of truth itself.
+`scripts/annotate_notecenters.py`) for the CNN-based pitch finder. To update the
+accuracy columns, re-run `scripts/score_stave_steps.py` and copy its output
+here; don't edit the numbers by hand. This file is a snapshot of the
+`labels/human_annotated_stave_steps.json` files across pages, not a source of
+truth itself.
 
 ## Gen's bbox ground truth folios (`bbox-ground-truths/`)
 
-| Folio | Style | Neume boxes (classId=2) | Staff-line boxes (classId=3) | Staff manually corrected | Page folder built | Annotation progress | Heuristic accuracy (current) |
-|---|---|---|---|---|---|---|---|
-| Antiphonal_12v_hfngl | Hufnagel | 101 | 24 | no (wasn't needed) | yes | 79 labeled (8 skipped), done | 91.4% (96/105) |
-| Antiphonal_1v_hfngl | Hufnagel | 116 | 36 | no (wasn't needed) | yes | 96 labeled (7 skipped), done | 82.6% (90/109) |
-| Antiphonal_44v_hfngl | Hufnagel | 113 | 28 | no (wasn't needed) | yes | 88 labeled (13 skipped), done | 88.0% (81/92) |
-| Antiphonale officii Windeshemense I p.009 | Hufnagel | 231 | 55 | no (wasn't needed) | yes | 167 labeled (22 skipped), done | 61.3% (106/173) |
-| CantusMA1537 p.22 | Hufnagel | 308 | 0 (staff-finding run ourselves) | **yes** | yes | 230 labeled (19 skipped), done | 82.2% (189/230) |
-| MS025a-01 | Hufnagel | 282 | 78 | **yes** | yes | 253 labeled (1 skipped), done | 83.8% (212/253) |
-| MS025a-02 | Hufnagel | 258 | 0 | **yes** (rebuilt on correct image, then re-fixed) | yes | 213 labeled (8 skipped), done | 73.7% (157/213) |
-| MS025b-01 | Hufnagel | 290 | 0 | **yes** | yes | 272 labeled (9 skipped), done | 38.2% (104/272) |
-| MS234 p.005 | Hufnagel | 177 | 43 | **yes** | yes | 123 labeled (14 skipped), done | 65.0% (80/123) |
-| NZ-Wt MSR-03 013r | Hufnagel | 102 | 28 | no (wasn't needed) | yes | 74 labeled (12 skipped), done | 93.4% (71/76) |
-| NZ-Wt MSR-03 065r | Hufnagel | 121 | 35 | no (wasn't needed) | yes | 101 labeled (14 skipped), done | 63.1% (70/111) |
-| NZ-Wt MSR-03 109v | Hufnagel | 112 | 24 | no (wasn't needed) | yes | 98 labeled (8 skipped), done | 87.0% (100/115) |
-| A-Gu-30_032r | Square | 167 | 0 | no | no | - | - |
-| A-Gu-30_123v | Square | 216 | 0 | no | no | - | - |
-| A-Gu-30_144v | Square | 241 | 72 | no | no | - | - |
-| Aarau_MsMurF2_14v | Square | 140 | 28 | no | no | - | - |
-| CH-Fco Ms. 2_006r | Square | 398 | 56 | no | no | - | - |
-| Einsiedeln Codex 611, 045v | Square | 526 | 84 | no | no | - | - |
-| **Total** | | **3899** | | | | | |
+| Folio | Style | Neume boxes (classId=2) | Staff-line boxes (classId=3) | Staff manually corrected | Page folder built | Annotation progress | Heuristic, per note | Heuristic, per glyph |
+|---|---|---|---|---|---|---|---|---|
+| Antiphonal_12v_hfngl | Hufnagel | 101 | 24 | no (wasn't needed) | yes | 79 labeled (8 skipped), done | 91.4% (96/105) | 88.7% (63/71) |
+| Antiphonal_1v_hfngl | Hufnagel | 116 | 36 | no (wasn't needed) | yes | 96 labeled (7 skipped), done | 83.8% (93/111) | 80.9% (72/89) |
+| Antiphonal_44v_hfngl | Hufnagel | 113 | 28 | no (wasn't needed) | yes | 88 labeled (13 skipped), done | 97.8% (90/92) | 85.3% (64/75) |
+| Antiphonale officii Windeshemense I p.009 | Hufnagel | 231 | 55 | no (wasn't needed) | yes | 167 labeled (22 skipped), done | 63.8% (113/177) | 55.9% (81/145) |
+| CantusMA1537 p.22 | Hufnagel | 308 | 0 (staff-finding run ourselves) | **yes** | yes | 230 labeled (19 skipped), done | 83.2% (258/310) | 82.2% (189/230) |
+| MS025a-01 | Hufnagel | 282 | 78 | **yes** | yes | 253 labeled (1 skipped), done | 88.2% (321/364) | 83.8% (212/253) |
+| MS025a-02 | Hufnagel | 258 | 0 | **yes** (rebuilt on correct image, then re-fixed) | yes | 213 labeled (8 skipped), done | 84.4% (282/334) | 73.7% (157/213) |
+| MS025b-01 | Hufnagel | 290 | 0 | **yes** | yes | 272 labeled (9 skipped), done | 66.7% (280/420) | 38.2% (104/272) |
+| MS234 p.005 | Hufnagel | 177 | 43 | **yes** | yes | 123 labeled (14 skipped), done | 77.7% (129/166) | 65.0% (80/123) |
+| NZ-Wt MSR-03 013r | Hufnagel | 102 | 28 | no (wasn't needed) | yes | 74 labeled (12 skipped), done | 92.3% (72/78) | 91.9% (57/62) |
+| NZ-Wt MSR-03 065r | Hufnagel | 121 | 35 | no (wasn't needed) | yes | 101 labeled (14 skipped), done | 67.5% (77/114) | 60.9% (53/87) |
+| NZ-Wt MSR-03 109v | Hufnagel | 112 | 24 | no (wasn't needed) | yes | 98 labeled (8 skipped), done | 87.9% (102/116) | 85.6% (77/90) |
+| A-Gu-30_032r | Square | 167 | 0 | no | no | - | - | - |
+| A-Gu-30_123v | Square | 216 | 0 | no | no | - | - | - |
+| A-Gu-30_144v | Square | 241 | 72 | no | no | - | - | - |
+| Aarau_MsMurF2_14v | Square | 140 | 28 | no | no | - | - | - |
+| CH-Fco Ms. 2_006r | Square | 398 | 56 | no | no | - | - | - |
+| Einsiedeln Codex 611, 045v | Square | 526 | 84 | no | no | - | - | - |
+| **Total** | | **3899** | | | | | | |
 
 All Hufnagel folios are now processed into page folders; every one whose
 staff-line quality needed fixing has been (CantusMA1537 p.22, MS025a-01,
@@ -41,25 +42,42 @@ A folio with 0 staff-line boxes has none in Gen's own JSON -- its stafflines
 were generated by running `mothra/staff-finding` ourselves instead of
 converting Gen's boxes.
 
-"Heuristic accuracy (current)" is freshly recomputed against each page's
-*current* staff-line file (loading with `regroup=False` for the manually-
-corrected ones, since that's what makes their fix take effect) -- not the
-`accepted_heuristic` snapshot stored in the labels JSON at annotation time,
-which for `CantusMA1537 p.22` would still show its pre-fix 2.6%. Two pages
-remain clear outliers despite good staff-line boxes and no known grouping
-problem: `Antiphonale officii Windeshemense I p.009` (61.3%) and
-`NZ-Wt MSR-03 065r` (63.1%) -- cause not dug into yet.
+The two "Heuristic" columns come from `scripts/score_stave_steps.py`, which
+compares `annotate_notecenters.heuristic_steps()` (algorithm #1 in pixel mode,
+each step rounded) with the labels. They were recomputed on 2026-10-16 from the
+committed code, IC XML and staff files, and skipped glyphs are left out. The manually corrected pages are loaded with
+`regroup=False`, because otherwise their fix is ignored. These numbers are not
+the `accepted_heuristic` snapshot stored in the labels JSON at annotation time,
+which for `CantusMA1537 p.22` would still show its pre-fix 2.6%.
+
+- **Per note**: labeled notes whose step matches the heuristic's note at the same
+  position, divided by all labeled notes.
+- **Per glyph**: glyphs whose whole list of steps matches the labels exactly,
+  including the number of notes.
+
+Across all 13 pages: 81.6% per note (2127/2607) and 73.0% per glyph (1367/1873).
+Before 2026-10-16 this file had a single accuracy column. It held per-note numbers
+for the eight uncorrected pages and per-glyph numbers for the five corrected ones,
+so pages could not be compared with each other. For example, MS025b-01's 38.2% is
+a per-glyph number; per note it is 66.7%.
+
+Three pages are clear outliers, despite good staff-line boxes and no known
+grouping problem: `Antiphonale officii Windeshemense I p.009` (63.8% per note),
+`NZ-Wt MSR-03 065r` (67.5%) and `MS025b-01` (66.7%).
 
 `MS025b-01`'s stave 7 fragment-doubling and its one crossing-line pair have
-since been fixed (all 9 staves are now a clean 5 lines each,
-`check_stafflines.py` reports nothing). Accuracy did **not** move
-(38.2% before and after), so the low number isn't a staff-grouping artifact --
-per-glyph inspection shows real heuristic misses instead: some neume classes
-get decomposed into the wrong *number* of notes for this page's IC
-classifications, and a few multi-note anchors land 1-2 steps off. `MS025b-01`
-joins `Antiphonale officii Windeshemense I p.009` (61.3%) and
-`NZ-Wt MSR-03 065r` (63.1%) as an outlier with good staff data and no known
-grouping problem -- cause not dug into yet.
+since been fixed (all 9 staves are now a clean 5 lines each, and
+`check_stafflines.py` reports nothing). Accuracy did **not** move (38.2% per glyph
+before and after), so the low number isn't caused by staff grouping. Per-glyph
+inspection shows real heuristic misses instead: some neume classes are split into
+the wrong *number* of notes for this page's IC classifications, and a few
+multi-note anchors land 1-2 steps off. Counting confirms that the number of notes
+is the main problem. On 117 of 272 labeled glyphs the heuristic outputs a
+different number of notes than the label has. In 107 of those it outputs more,
+mostly on glyphs that IC classified as `neume.torculus33` (46) or `neume.clivis3a`
+(31). That points at the IC classification of this page, not at notehead finding.
+Windeshemense shows the same pattern on 28 of 145 glyphs. `065r` has not been
+examined yet.
 
 `MS025a-02` was found to have a much more fundamental problem than staff
 grouping: the page folder had been built against the *large* export of the
@@ -81,11 +99,11 @@ since been fixed by hand and re-annotated from scratch: 45 lines,
 
 ## Original repo sample pages
 
-| Page | Annotation progress | Heuristic accuracy (current) |
-|---|---|---|
-| McGill_MS234-064 | 163 labeled (0 skipped), done | 97.7% (214/219) |
-| GentAnt1475_0017_AC_rightcrop | not started | - |
-| Breviarium_ad_usum_crop | not started | - |
+| Page | Annotation progress | Heuristic, per note | Heuristic, per glyph |
+|---|---|---|---|
+| McGill_MS234-064 | 163 labeled (0 skipped), done | 97.3% (214/220) | 96.9% (158/163) |
+| GentAnt1475_0017_AC_rightcrop | not started | - | - |
+| Breviarium_ad_usum_crop | not started | - | - |
 
 ## Total
 
