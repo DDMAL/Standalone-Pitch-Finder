@@ -28,6 +28,7 @@ the page. The un-augmented model input is the central IMG_H rows.
 
     python build_crops.py [--workers 6]
     python build_crops.py --mode bbox --img-h 256 --single-note-only
+    python build_crops.py --manuscripts ms73     # after a change to one manuscript's notes
 """
 import argparse
 import csv
@@ -184,13 +185,15 @@ def main():
     ap.add_argument("--mode", choices=("staff", "bbox", "icbox"), default="staff")
     ap.add_argument("--img-h", type=int, default=IMG_H, help="model window height in px")
     ap.add_argument("--single-note-only", action="store_true")
+    ap.add_argument("--manuscripts", nargs="+", default=["einsiedeln", "ms73"],
+                    help="rebuild only these manuscripts' caches; the others' files are left as they are")
     args = ap.parse_args()
     out_dir = OUT if args.mode == "staff" else DATA / f"v2_crops_{args.mode}{args.img_h}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     by_page = collections.defaultdict(list)
     for r in csv.DictReader(open(HERE / "notes.csv")):
-        if r["kind"] == "nc" and not r["exclude"]:
+        if r["kind"] == "nc" and not r["exclude"] and r["manuscript"] in args.manuscripts:
             by_page[(r["manuscript"], r["image"])].append(r)
     jobs = [(ms, img, rows, args.mode, args.img_h, args.single_note_only) for (ms, img), rows in sorted(by_page.items())]
     print(f"{sum(len(j[2]) for j in jobs)} notes on {len(jobs)} pages", flush=True)

@@ -15,10 +15,13 @@ Sources (fetch them first with fetch_sources.py; all land in gitignored data/):
               its own geometry (c_convention) and oct is raised by 1 under C clefs
               where it is C3 (oct_shift = 1). Image check: check_reviewed_once.py.
               Coordinates are image pixels.
-  MS73        'Processed' (no Reviewed folder exists). Coordinates are half the
-              image size, so everything is scaled by MS73_SCALE. Zero-height note
-              zones get the page's median note size at their recorded top-left
-              corner (box_repaired = 1).
+  MS73        'Processed' (no Reviewed folder exists). Coordinates are mostly half
+              the image size; each page is scaled by its image size over its MEI
+              <surface> size (2.00 on 277 pages; 1.00 on 142, 3.23 on 40/94/102,
+              2.01-2.04 on 39/166 -- a flat x2 left those boxes off the notes, or
+              off the page). Zero-height note zones get the page's median note size
+              at their recorded top-left corner (box_repaired = 1). Pages in
+              MISALIGNED were annotated on another scan: their notes are excluded.
 
 Split: by page, so no page contributes to two splits; per manuscript,
 SPLIT_FRACS of the eligible pages, shuffled with a manuscript-specific seed
@@ -36,6 +39,7 @@ import collections
 import csv
 import io
 import json
+import math
 import random
 import re
 import sys
@@ -44,6 +48,7 @@ from contextlib import redirect_stdout
 from pathlib import Path
 
 import numpy as np
+from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parents[2] / "data"
@@ -55,7 +60,11 @@ CLEF_REF = {"C": 4 * 7 + LETTERS.index("c"), "F": 3 * 7 + LETTERS.index("f")}  #
 # Einsiedeln notes outside (-8..-5, 13), each on a different staff, are
 # annotation errors; v1's classifier covered -1..8.
 STEP_RANGE = (-3, 10)
-MS73_SCALE = 2.0  # MS73 Processed README; measured 2.00 x 2.00 on the 11 pages checked
+# MEI drawn on a different scan of the page than the one on HF: on MS73 page 23
+# the boxes sit ~1000 px above their notes whatever the scale, with the right
+# horizontal layout. Its notes are excluded (page_misaligned); the page keeps
+# its split slot, so excluding it moves no other page.
+MISALIGNED = {"ms73": {23}}
 # Einsiedeln note-zone centres sit this many steps below where their pitch puts
 # them (uniform, measured on images and in the MEI geometry); the right C-clef
 # reading reproduces it, the wrong one is 7 steps away
@@ -192,7 +201,29 @@ def ms73_image(page, names):
 # ---------------------------------------------------------------- per page
 
 def box_px(z, scale):
-    return tuple(round(v * scale, 1) for v in z[:4])
+    sx, sy = scale
+    return tuple(round(v * s, 1) for v, s in zip(z[:4], (sx, sy, sx, sy)))
+
+
+def rotate_px(deg, scale):
+    """A staff zone's rotation after scaling x and y by different factors (its slope scales by sy/sx)."""
+    sx, sy = scale
+    return deg if sx == sy else math.degrees(math.atan(math.tan(math.radians(deg)) * sy / sx))
+
+
+def image_scale(path, surface):
+    """(x, y) factors from MEI coordinates to the image's pixels; reads the image header only.
+    An image k times the surface up to integer division (9067 px over 4533) is exactly k."""
+    if not path.exists():
+        raise FileNotFoundError(f"{path}: needed for its size (python fetch_sources.py --images)")
+    Image.MAX_IMAGE_PIXELS = None  # MS73 scans are ~120 Mpx
+    with Image.open(path) as im:
+        size = im.size
+    out = []
+    for n, m in zip(size, surface):
+        k = round(n / m)
+        out.append(float(k) if k >= 1 and abs(n - k * m) <= k else n / m)
+    return tuple(out)
 
 
 def einsiedeln_pages():
@@ -208,7 +239,7 @@ def einsiedeln_pages():
             r["repaired"] = r["oct_shift"] = 0
         yield dict(manuscript="einsiedeln", page=folio, source="reviewed", c_convention="C4",
                    mei=f"einsiedeln/reviewed/{path.name}", image=einsiedeln_image(folio, names),
-                   surface=surface, scale=1.0), recs
+                   surface=surface, scale=(1.0, 1.0)), recs
     done = {p.name for p in reviewed}
     for path in sorted((DATA / "mei/einsiedeln/reviewed_once").glob("*.mei")):
         if path.name in done:  # 253r is in both; the fully reviewed version wins
@@ -225,7 +256,7 @@ def einsiedeln_pages():
         yield dict(manuscript="einsiedeln", page=folio, source="reviewed_once",
                    c_convention="unclear" if conv is None else conv,
                    mei=f"einsiedeln/reviewed_once/{path.name}", image=einsiedeln_image(folio, names),
-                   surface=surface, scale=1.0), recs
+                   surface=surface, scale=(1.0, 1.0)), recs
 
 
 def ms73_pages():
@@ -257,9 +288,10 @@ def ms73_pages():
                 z = (z[0], z[1], z[0] + wz, z[1] + hz, z[4])
             r["zone"] = z
             r["sb_zone"] = zones.get(r["sb_facs"])
+        image = ms73_image(page, names)  # no image: the page is excluded, its scale is only nominal
         yield dict(manuscript="ms73", page=page, source="processed", c_convention="C4",
-                   mei=f"ms73/processed/{path.name}",
-                   image=ms73_image(page, names), surface=surface, scale=MS73_SCALE), recs
+                   mei=f"ms73/processed/{path.name}", image=image, surface=surface,
+                   scale=image_scale(DATA / "images" / "ms73" / image, surface) if image else (2.0, 2.0)), recs
 
 
 # ---------------------------------------------------------------- split
@@ -304,6 +336,12 @@ def report(pages, notes):
         for p in P:
             if not p["split"]:
                 print(f"  excluded page {p['page']}: {p['split_note']}")
+            elif p["split_note"] == "box_misaligned":
+                print(f"  page {p['page']} keeps its {p['split']} slot, notes excluded: box_misaligned")
+        rescaled = [f"{p['page']} x{p['scale'][0]:.2f}/{p['scale'][1]:.2f}" for p in P
+                    if p["manuscript"] == "ms73" and p["scale"] != (2.0, 2.0)]
+        if rescaled:
+            print(f"pages not at half the image size: {', '.join(rescaled)}")
         print(f"pitched elements: nc {len(nc)}, custos {len(N) - len(nc)}")
         reasons = collections.Counter(n["exclude"] for n in nc if n["exclude"])
         usable = [n for n in nc if not n["exclude"]]
@@ -359,7 +397,7 @@ def main():
             elif r["zone"][3] - r["zone"][1] < 1:
                 why = why or "zero_height_box"
             z = box_px(r["zone"], s) if r["zone"] else ("",) * 4
-            sz = box_px(r["sb_zone"], s) + (r["sb_zone"][4],) if r["sb_zone"] else ("",) * 5
+            sz = box_px(r["sb_zone"], s) + (rotate_px(r["sb_zone"][4], s),) if r["sb_zone"] else ("",) * 5
             notes.append(dict(
                 manuscript=meta["manuscript"], page=meta["page"], source=meta["source"], image=meta["image"],
                 id=r["id"], kind=r["kind"],
@@ -382,11 +420,17 @@ def main():
             if dup:
                 raise ValueError(f"{ms}: {key} used by more than one MEI page: {sorted(dup)}")
     assign_splits(pages)
+    bad = {(ms, pg) for ms, pgs in MISALIGNED.items() for pg in pgs}
+    for p in pages:  # after the split, so that dropping these pages moves no other page
+        if (p["manuscript"], p["page"]) in bad:
+            p["split_note"], p["n_usable"] = "box_misaligned", 0
     split_of = {(p["manuscript"], p["page"]): p["split"] for p in pages}
     for n in notes:
         n["split"] = split_of[(n["manuscript"], n["page"])]
         if not n["split"] and not n["exclude"]:
             n["exclude"] = "page_excluded"
+        elif (n["manuscript"], n["page"]) in bad and not n["exclude"]:
+            n["exclude"] = "page_misaligned"
 
     with open(HERE / "notes.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=["split"] + [k for k in notes[0] if k != "split"])
@@ -395,11 +439,12 @@ def main():
     with open(HERE / "pages.csv", "w", newline="") as f:
         cols = ["manuscript", "page", "source", "c_convention", "split", "split_note", "image", "mei",
                 "n_nc", "n_usable", "n_staves",
-                "surface_w", "surface_h", "scale"]
+                "surface_w", "surface_h", "scale_x", "scale_y"]
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         for p in pages:
-            w.writerow(dict({k: p.get(k, "") for k in cols}, surface_w=p["surface"][0], surface_h=p["surface"][1]))
+            w.writerow(dict({k: p.get(k, "") for k in cols}, surface_w=p["surface"][0], surface_h=p["surface"][1],
+                            scale_x=f"{p['scale'][0]:.4f}", scale_y=f"{p['scale'][1]:.4f}"))
 
     buf = io.StringIO()
     with redirect_stdout(buf):

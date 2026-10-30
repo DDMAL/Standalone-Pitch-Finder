@@ -20,7 +20,7 @@ are odd.
 |---|---|
 | `fetch_sources.py` | downloads the MEI (`e2e-omr-resources`) and, with `--images`, the page images (HF `DDMAL-lab/All-Images`, private) into the repo's gitignored `data/` |
 | `build_dataset.py` | one row per note (box, staff, label) in `notes.csv`, one per page in `pages.csv`, the page-level split, `stats.txt` |
-| `build_crops.py` | caches one crop per note in `data/v2_crops*/`: `--mode staff` (v1's rule), `bbox` (staff-free) or `icbox` (staff-free on IC-style boxes, plus a box mask) |
+| `build_crops.py` | caches one crop per note in `data/v2_crops*/`: `--mode staff` (v1's rule), `bbox` (staff-free) or `icbox` (staff-free on IC-style boxes, plus a box mask); `--manuscripts` rebuilds only some manuscripts' caches |
 | `show_crops.py` | sample grid of cached crops, to eyeball them before training |
 
 **Model** (this folder):
@@ -47,7 +47,7 @@ dataset), except the two in `figures/readme/` used below.
 | Manuscript | MEI (`e2e-omr-resources/resulting_mei_files/`) | Pages | Usable notes |
 |---|---|---|---|
 | Einsiedeln, CH-E 611 | `Reviewed no pitch correction needed` (pitches) + `Processed` (boxes), and `Reviewed_once` | 552 | 285,614 |
-| MS73, CDN-Mlr MS73 | `Processed` | 282 | 29,029 |
+| MS73, CDN-Mlr MS73 | `Processed` | 282 | 28,915 |
 
 What the checks found (details in `mei_groundtruth_check/README.md`):
 
@@ -58,8 +58,11 @@ What the checks found (details in `mei_groundtruth_check/README.md`):
 - `Reviewed_once` (264 more Einsiedeln pages) still reads C clefs as C3 but
   was never dragged; `build_dataset.py` reads each page's convention off its
   own geometry and raises the octave where needed.
-- MS73's coordinates are half the image size, and half its boxes have zero
-  height (given the page's median size).
+- MS73's coordinates are half the image size on 277 pages; each page is
+  scaled by its own image size over its MEI size (1.0 on page 142, 3.23 on
+  40 / 94 / 102, 2.01-2.04 on 39 / 166), and page 23, whose MEI was drawn on
+  another scan, has its notes excluded. Half its boxes have zero height (given
+  the page's median size).
 - Under 0.5% of notes are dropped (invalid clef lines, no box, implausible
   steps), plus one MS73 page uploaded twice.
 
@@ -70,7 +73,7 @@ round uses single-note neumes:
 |---|---|---|---|
 | Einsiedeln pages | 386 | 83 | 83 |
 | MS73 pages | 198 | 42 | 42 |
-| Single-note neumes | 76,243 | 15,868 | 15,589 |
+| Single-note neumes | 76,218 | 15,868 | 15,589 |
 
 ## Input
 
@@ -110,36 +113,36 @@ Test set, exact step, single-note neumes (15,589):
 
 | Model | All | Einsiedeln | MS73 | Within 1 step |
 |---|---|---|---|---|
-| Staff-based regression | 98.2% | 98.4% | 95.9% | 99.7% |
-| Staff-based regression + aug | 97.7% | 97.8% | 96.2% | 99.7% |
-| Staff-based classification | 99.0% | 99.1% | 98.3% | 99.7% |
-| **Staff-based classification + aug** | **99.1%** | 99.2% | 98.7% | 99.7% |
-| Staff-free, ±0.5-step box jitter | 98.7% | 99.1% | 94.5% | 99.4% |
-| Staff-free, same at 256 × 32 | 98.8% | 99.2% | 94.0% | 99.4% |
-| **Staff-free, ±1.5-step box jitter** | **98.7%** | 98.9% | 95.6% | 99.4% |
-| Staff-free, simulated IC boxes | 98.5% | 98.7% | 96.4% | 99.3% |
-| Staff-free, IC boxes + box-mask channel | 98.5% | 98.8% | 93.8% | 99.2% |
+| Staff-based regression | 98.1% | 98.1% | 97.4% | 99.7% |
+| Staff-based regression + aug | 97.8% | 97.8% | 97.7% | 99.7% |
+| Staff-based classification | 99.2% | 99.2% | 99.4% | 99.8% |
+| **Staff-based classification + aug** | **99.1%** | 99.1% | 99.5% | 99.8% |
+| Staff-free, ±0.5-step box jitter | 98.9% | 99.2% | 95.6% | 99.5% |
+| Staff-free, same at 256 × 32 | 99.0% | 99.3% | 95.4% | 99.5% |
+| **Staff-free, ±1.5-step box jitter** | **98.8%** | 99.0% | 96.6% | 99.4% |
+| Staff-free, simulated IC boxes | 98.6% | 98.7% | 97.2% | 99.4% |
+| Staff-free, IC boxes + box-mask channel | 98.5% | 98.8% | 94.7% | 99.3% |
 
 **Robustness** (`eval_robustness.py`, test set, all notes):
 
 | Staff-based classification + aug, staff error | Accuracy |
 |---|---|
 | none | 99.1% |
-| shifted 0.5 / 1 step | 98.9% / 98.9% |
-| shifted 2 steps | 37.9% |
-| line spacing ×0.8 / ×1.2 / ×1.5 | 97.8% / 98.1% / 64.2% |
-| top / bottom line missed | 94.3% / 96.2% |
+| shifted 0.5 / 1 step | 99.0% / 99.0% |
+| shifted 2 steps | 37.6% |
+| line spacing ×0.8 / ×1.2 / ×1.5 | 98.3% / 98.2% / 51.5% |
+| top / bottom line missed | 96.1% / 95.7% |
 
 | Staff-free, box error | none | 0.5 step | 1 step | scale ×0.8 / ×1.2 |
 |---|---|---|---|---|
-| ±0.5-step jitter | 98.7% | 98.3% | 93.8% | 98.2% / 97.7% |
-| ±1.5-step jitter | 98.7% | 98.5% | 98.5% | 97.3% / 96.8% |
-| simulated IC boxes | 98.5% | 98.2% | 95.6% | 97.4% / 97.1% |
-| IC boxes + box mask | 98.5% | 97.1% | 80.0% | 96.9% / 96.8% |
+| ±0.5-step jitter | 98.9% | 98.4% | 92.9% | 98.3% / 97.9% |
+| ±1.5-step jitter | 98.8% | 98.6% | 98.4% | 97.1% / 97.2% |
+| simulated IC boxes | 98.6% | 98.4% | 96.9% | 97.6% / 97.2% |
+| IC boxes + box mask | 98.5% | 97.5% | 82.4% | 97.2% / 97.0% |
 
 **Unseen manuscript** (`eval_ood.py`): Salzinnes (CDN-Hsmu M2149.L4), 6 pages,
 574 single-note neumes. Staff-based classification + aug 100%, staff-free
-±1.5-step 99.8%; no model scores below its test result.
+±1.5-step 100%; no model scores below its test result.
 
 **Takeaways**
 

@@ -1,129 +1,320 @@
-device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5851}, 'val': {'einsiedeln': 14683, 'ms73': 1185}}
-training reg
-  reg epoch  1  loss 1.3422  val exact 80.44% (E 81.36, M 69.11)  12.7s *
-  reg epoch  2  loss 0.4087  val exact 85.46% (E 86.10, M 77.47)  11.6s *
-  reg epoch  3  loss 0.3243  val exact 89.64% (E 90.04, M 84.73)  11.5s *
-  reg epoch  4  loss 0.2599  val exact 90.72% (E 91.18, M 85.06)  11.6s *
-  reg epoch  5  loss 0.1951  val exact 94.85% (E 95.41, M 87.93)  11.6s *
-  reg epoch  6  loss 0.1467  val exact 96.75% (E 97.22, M 90.89)  12.1s *
-  reg epoch  7  loss 0.1296  val exact 97.16% (E 97.60, M 91.73)  12.0s *
-  reg epoch  8  loss 0.1175  val exact 96.86% (E 97.21, M 92.57)  11.9s
-  reg epoch  9  loss 0.1079  val exact 97.51% (E 97.83, M 93.50)  12.1s *
-  reg epoch 10  loss 0.1018  val exact 97.77% (E 98.05, M 94.35)  12.2s *
-  reg epoch 11  loss 0.0944  val exact 97.81% (E 98.14, M 93.67)  12.2s *
-  reg epoch 12  loss 0.0886  val exact 97.70% (E 98.04, M 93.50)  12.0s
-  reg epoch 13  loss 0.0850  val exact 97.86% (E 98.14, M 94.43)  12.5s *
-  reg epoch 14  loss 0.0766  val exact 97.98% (E 98.22, M 95.02)  12.4s *
-  reg epoch 15  loss 0.0705  val exact 98.22% (E 98.42, M 95.70)  13.0s *
-  reg epoch 16  loss 0.0649  val exact 98.15% (E 98.32, M 95.95)  13.7s
-  reg epoch 17  loss 0.0614  val exact 98.32% (E 98.60, M 94.85)  13.5s *
-  reg epoch 18  loss 0.0571  val exact 98.11% (E 98.30, M 95.78)  13.9s
-  reg epoch 19  loss 0.0558  val exact 98.33% (E 98.53, M 95.86)  13.7s *
-  reg epoch 20  loss 0.0532  val exact 98.53% (E 98.69, M 96.54)  13.6s *
-  reg epoch 21  loss 0.0507  val exact 98.63% (E 98.78, M 96.79)  13.7s *
-  reg epoch 22  loss 0.0482  val exact 98.55% (E 98.66, M 97.22)  19.1s
-  reg epoch 23  loss 0.0477  val exact 98.58% (E 98.73, M 96.79)  19.4s
-  reg epoch 24  loss 0.0475  val exact 98.83% (E 98.93, M 97.55)  19.2s *
-  reg epoch 25  loss 0.0448  val exact 98.70% (E 98.84, M 96.96)  19.2s
-  reg epoch 26  loss 0.0428  val exact 98.73% (E 98.83, M 97.47)  19.4s
-  reg epoch 27  loss 0.0419  val exact 98.76% (E 98.88, M 97.22)  19.9s
-  reg epoch 28  loss 0.0414  val exact 98.53% (E 98.67, M 96.79)  20.0s
-  reg epoch 29  loss 0.0394  val exact 98.75% (E 98.85, M 97.47)  20.2s
-  reg epoch 30  loss 0.0391  val exact 98.88% (E 99.02, M 97.22)  21.1s *
-  reg: best val exact 98.88% at epoch 30
-training reg_aug
-  reg_aug epoch  1  loss 1.9362  val exact 64.56% (E 67.28, M 30.89)  22.7s *
-  reg_aug epoch  2  loss 0.9221  val exact 66.90% (E 66.54, M 71.39)  23.6s *
-  reg_aug epoch  3  loss 0.7575  val exact 48.88% (E 47.26, M 69.03)  22.9s
-  reg_aug epoch  4  loss 0.6609  val exact 80.72% (E 82.69, M 56.29)  22.9s *
-  reg_aug epoch  5  loss 0.5633  val exact 87.38% (E 88.38, M 74.94)  23.1s *
-  reg_aug epoch  6  loss 0.5066  val exact 87.62% (E 88.24, M 79.83)  22.1s *
-  reg_aug epoch  7  loss 0.4665  val exact 88.73% (E 89.41, M 80.34)  21.8s *
-  reg_aug epoch  8  loss 0.4106  val exact 89.91% (E 90.47, M 82.95)  21.9s *
-  reg_aug epoch  9  loss 0.3747  val exact 90.88% (E 91.63, M 81.60)  21.6s *
-  reg_aug epoch 10  loss 0.3271  val exact 92.18% (E 92.76, M 84.98)  21.2s *
-  reg_aug epoch 11  loss 0.2927  val exact 94.04% (E 94.57, M 87.59)  22.6s *
-  reg_aug epoch 12  loss 0.2646  val exact 93.16% (E 93.48, M 89.20)  23.4s
-  reg_aug epoch 13  loss 0.2317  val exact 95.63% (E 96.11, M 89.62)  25.1s *
-  reg_aug epoch 14  loss 0.2160  val exact 96.64% (E 97.03, M 91.81)  23.7s *
-  reg_aug epoch 15  loss 0.2025  val exact 96.68% (E 96.98, M 93.00)  24.0s *
-  reg_aug epoch 16  loss 0.1902  val exact 96.90% (E 97.12, M 94.18)  24.5s *
-  reg_aug epoch 17  loss 0.1797  val exact 97.38% (E 97.70, M 93.42)  24.2s *
-  reg_aug epoch 18  loss 0.1681  val exact 97.44% (E 97.71, M 94.09)  20.8s *
-  reg_aug epoch 19  loss 0.1610  val exact 97.42% (E 97.81, M 92.49)  15.3s
-  reg_aug epoch 20  loss 0.1521  val exact 97.86% (E 98.08, M 95.19)  15.1s *
-  reg_aug epoch 21  loss 0.1466  val exact 97.83% (E 98.02, M 95.53)  15.0s
-  reg_aug epoch 22  loss 0.1491  val exact 98.07% (E 98.19, M 96.54)  15.4s *
-  reg_aug epoch 23  loss 0.1424  val exact 97.79% (E 97.90, M 96.54)  15.3s
-  reg_aug epoch 24  loss 0.1371  val exact 98.09% (E 98.20, M 96.71)  14.9s *
-  reg_aug epoch 25  loss 0.1316  val exact 97.86% (E 97.98, M 96.37)  15.3s
-  reg_aug epoch 26  loss 0.1328  val exact 98.15% (E 98.24, M 96.96)  15.5s *
-  reg_aug epoch 27  loss 0.1298  val exact 98.32% (E 98.41, M 97.22)  14.7s *
-  reg_aug epoch 28  loss 0.1252  val exact 97.15% (E 97.60, M 91.56)  14.5s
-  reg_aug epoch 29  loss 0.1195  val exact 98.21% (E 98.31, M 96.96)  15.1s
-  reg_aug epoch 30  loss 0.1203  val exact 98.32% (E 98.41, M 97.22)  14.4s *
-  reg_aug: best val exact 98.32% at epoch 30
-training cls
-  cls epoch  1  loss 0.3739  val exact 98.91% (E 98.94, M 98.48)  14.2s *
-  cls epoch  2  loss 0.0757  val exact 98.88% (E 99.05, M 96.71)  13.6s
-  cls epoch  3  loss 0.0662  val exact 99.09% (E 99.13, M 98.65)  13.9s *
-  cls epoch  4  loss 0.0594  val exact 99.22% (E 99.24, M 99.07)  13.8s *
-  cls epoch  5  loss 0.0545  val exact 99.26% (E 99.31, M 98.73)  13.8s *
-  cls epoch  6  loss 0.0519  val exact 99.34% (E 99.37, M 98.99)  13.8s *
-  cls epoch  7  loss 0.0498  val exact 99.37% (E 99.39, M 99.07)  13.9s *
-  cls epoch  8  loss 0.0473  val exact 99.43% (E 99.46, M 99.07)  13.7s *
-  cls epoch  9  loss 0.0450  val exact 99.38% (E 99.43, M 98.73)  13.8s
-  cls epoch 10  loss 0.0445  val exact 99.42% (E 99.46, M 98.99)  13.8s
-  cls epoch 11  loss 0.0428  val exact 99.56% (E 99.58, M 99.24)  14.1s *
-  cls epoch 12  loss 0.0420  val exact 99.42% (E 99.52, M 98.23)  14.1s
-  cls epoch 13  loss 0.0407  val exact 99.36% (E 99.45, M 98.23)  14.2s
-  cls epoch 14  loss 0.0392  val exact 99.41% (E 99.48, M 98.48)  14.2s
-  cls epoch 15  loss 0.0395  val exact 99.52% (E 99.55, M 99.16)  14.3s
-  cls epoch 16  loss 0.0383  val exact 99.51% (E 99.54, M 99.16)  14.2s
-  cls epoch 17  loss 0.0391  val exact 99.45% (E 99.54, M 98.40)  14.7s
-  cls epoch 18  loss 0.0376  val exact 99.46% (E 99.48, M 99.16)  16.4s
-  cls epoch 19  loss 0.0371  val exact 99.41% (E 99.52, M 98.06)  14.9s
-  cls epoch 20  loss 0.0363  val exact 99.50% (E 99.55, M 98.82)  14.7s
-  cls epoch 21  loss 0.0360  val exact 99.51% (E 99.52, M 99.32)  15.7s
-  cls epoch 22  loss 0.0353  val exact 99.54% (E 99.59, M 98.90)  14.5s
-  cls epoch 23  loss 0.0349  val exact 99.42% (E 99.50, M 98.40)  14.2s
-  cls epoch 24  loss 0.0345  val exact 99.55% (E 99.55, M 99.49)  14.0s
-  cls epoch 25  loss 0.0343  val exact 99.52% (E 99.55, M 99.16)  13.9s
-  cls epoch 26  loss 0.0347  val exact 99.53% (E 99.56, M 99.16)  13.7s
-  cls epoch 27  loss 0.0335  val exact 99.53% (E 99.58, M 98.90)  13.8s
-  cls epoch 28  loss 0.0339  val exact 99.56% (E 99.58, M 99.24)  14.0s
-  cls epoch 29  loss 0.0330  val exact 99.55% (E 99.58, M 99.16)  13.6s
-  cls epoch 30  loss 0.0321  val exact 99.52% (E 99.54, M 99.24)  13.4s
-  cls: best val exact 99.56% at epoch 11
-training cls_aug
-  cls_aug epoch  1  loss 1.1790  val exact 83.92% (E 84.94, M 71.22)  13.8s *
-  cls_aug epoch  2  loss 0.8157  val exact 89.72% (E 90.75, M 76.96)  14.0s *
-  cls_aug epoch  3  loss 0.4946  val exact 97.95% (E 98.26, M 94.09)  14.1s *
-  cls_aug epoch  4  loss 0.2700  val exact 98.41% (E 98.66, M 95.27)  14.3s *
-  cls_aug epoch  5  loss 0.2144  val exact 98.81% (E 98.92, M 97.47)  14.3s *
-  cls_aug epoch  6  loss 0.1889  val exact 98.90% (E 99.05, M 97.05)  14.5s *
-  cls_aug epoch  7  loss 0.1725  val exact 99.05% (E 99.16, M 97.72)  15.2s *
-  cls_aug epoch  8  loss 0.1572  val exact 99.06% (E 99.13, M 98.23)  15.0s *
-  cls_aug epoch  9  loss 0.1465  val exact 99.11% (E 99.17, M 98.40)  15.8s *
-  cls_aug epoch 10  loss 0.1352  val exact 99.09% (E 99.16, M 98.23)  15.1s
-  cls_aug epoch 11  loss 0.1282  val exact 99.37% (E 99.43, M 98.65)  15.0s *
-  cls_aug epoch 12  loss 0.1192  val exact 99.28% (E 99.31, M 98.82)  15.0s
-  cls_aug epoch 13  loss 0.1127  val exact 99.10% (E 99.13, M 98.73)  15.0s
-  cls_aug epoch 14  loss 0.1099  val exact 99.39% (E 99.40, M 99.24)  15.0s *
-  cls_aug epoch 15  loss 0.1044  val exact 99.40% (E 99.39, M 99.49)  14.9s *
-  cls_aug epoch 16  loss 0.0998  val exact 99.37% (E 99.38, M 99.24)  14.9s
-  cls_aug epoch 17  loss 0.0960  val exact 99.48% (E 99.49, M 99.32)  15.0s *
-  cls_aug epoch 18  loss 0.0912  val exact 99.41% (E 99.43, M 99.24)  14.9s
-  cls_aug epoch 19  loss 0.0908  val exact 99.47% (E 99.48, M 99.32)  14.9s
-  cls_aug epoch 20  loss 0.0889  val exact 99.56% (E 99.56, M 99.58)  14.9s *
-  cls_aug epoch 21  loss 0.0842  val exact 99.49% (E 99.49, M 99.49)  15.0s
-  cls_aug epoch 22  loss 0.0830  val exact 99.43% (E 99.42, M 99.58)  14.9s
-  cls_aug epoch 23  loss 0.0806  val exact 99.57% (E 99.56, M 99.66)  15.0s *
-  cls_aug epoch 24  loss 0.0801  val exact 99.55% (E 99.53, M 99.75)  15.4s
-  cls_aug epoch 25  loss 0.0770  val exact 99.33% (E 99.32, M 99.41)  14.9s
-  cls_aug epoch 26  loss 0.0771  val exact 99.55% (E 99.54, M 99.66)  14.8s
-  cls_aug epoch 27  loss 0.0745  val exact 99.57% (E 99.56, M 99.66)  14.9s *
-  cls_aug epoch 28  loss 0.0760  val exact 99.62% (E 99.63, M 99.58)  14.9s *
-  cls_aug epoch 29  loss 0.0740  val exact 99.60% (E 99.58, M 99.83)  14.9s
-  cls_aug epoch 30  loss 0.0741  val exact 99.56% (E 99.56, M 99.58)  14.9s
-  cls_aug: best val exact 99.62% at epoch 28
+training reg on v2_crops (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  reg epoch  1  loss 1.4177  val exact 78.95% (E 79.64, M 70.38)  12.7s *
+  reg epoch  2  loss 0.3089  val exact 91.73% (E 92.06, M 87.68)  11.7s *
+  reg epoch  3  loss 0.1835  val exact 91.39% (E 92.06, M 83.04)  11.8s
+  reg epoch  4  loss 0.1509  val exact 96.14% (E 96.52, M 91.48)  11.7s *
+  reg epoch  5  loss 0.1352  val exact 96.19% (E 96.69, M 89.96)  11.8s *
+  reg epoch  6  loss 0.1240  val exact 96.91% (E 97.23, M 93.00)  11.8s *
+  reg epoch  7  loss 0.1113  val exact 97.26% (E 97.66, M 92.41)  11.7s *
+  reg epoch  8  loss 0.1063  val exact 96.18% (E 96.51, M 92.15)  11.8s
+  reg epoch  9  loss 0.0997  val exact 97.32% (E 97.62, M 93.67)  11.9s *
+  reg epoch 10  loss 0.0907  val exact 97.30% (E 97.60, M 93.67)  13.1s
+  reg epoch 11  loss 0.0872  val exact 97.72% (E 98.00, M 94.18)  13.7s *
+  reg epoch 12  loss 0.0801  val exact 97.44% (E 97.74, M 93.67)  14.0s
+  reg epoch 13  loss 0.0757  val exact 97.73% (E 97.96, M 94.85)  14.9s *
+  reg epoch 14  loss 0.0685  val exact 97.79% (E 98.05, M 94.51)  16.0s *
+  reg epoch 15  loss 0.0663  val exact 97.83% (E 98.08, M 94.77)  16.9s *
+  reg epoch 16  loss 0.0620  val exact 98.03% (E 98.31, M 94.51)  16.8s *
+  reg epoch 17  loss 0.0575  val exact 98.15% (E 98.35, M 95.61)  16.9s *
+  reg epoch 18  loss 0.0563  val exact 98.10% (E 98.28, M 95.78)  15.8s
+  reg epoch 19  loss 0.0546  val exact 98.14% (E 98.27, M 96.54)  15.3s
+  reg epoch 20  loss 0.0511  val exact 98.07% (E 98.26, M 95.70)  14.9s
+  reg epoch 21  loss 0.0490  val exact 98.27% (E 98.45, M 96.03)  15.0s *
+  reg epoch 22  loss 0.0461  val exact 97.91% (E 98.04, M 96.37)  15.1s
+  reg epoch 23  loss 0.0437  val exact 98.30% (E 98.37, M 97.55)  14.8s *
+  reg epoch 24  loss 0.0446  val exact 98.54% (E 98.64, M 97.22)  14.5s *
+  reg epoch 25  loss 0.0427  val exact 98.55% (E 98.67, M 97.13)  15.0s *
+  reg epoch 26  loss 0.0397  val exact 98.68% (E 98.77, M 97.55)  16.1s *
+  reg epoch 27  loss 0.0381  val exact 98.60% (E 98.69, M 97.47)  15.2s
+  reg epoch 28  loss 0.0366  val exact 98.46% (E 98.53, M 97.55)  15.4s
+  reg epoch 29  loss 0.0365  val exact 98.68% (E 98.72, M 98.23)  14.8s *
+  reg epoch 30  loss 0.0343  val exact 98.73% (E 98.81, M 97.72)  15.4s *
+  reg: best val exact 98.73% at epoch 30
+training reg_aug on v2_crops (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  reg_aug epoch  1  loss 1.7000  val exact 69.23% (E 72.69, M 26.33)  15.7s *
+  reg_aug epoch  2  loss 0.8520  val exact 80.44% (E 81.65, M 65.49)  15.7s *
+  reg_aug epoch  3  loss 0.6789  val exact 81.86% (E 82.46, M 74.35)  15.9s *
+  reg_aug epoch  4  loss 0.5922  val exact 84.77% (E 85.92, M 70.46)  16.1s *
+  reg_aug epoch  5  loss 0.5264  val exact 87.53% (E 88.40, M 76.79)  16.0s *
+  reg_aug epoch  6  loss 0.4853  val exact 89.19% (E 89.79, M 81.69)  15.8s *
+  reg_aug epoch  7  loss 0.4388  val exact 90.32% (E 90.91, M 83.04)  15.7s *
+  reg_aug epoch  8  loss 0.3951  val exact 91.14% (E 91.82, M 82.70)  15.8s *
+  reg_aug epoch  9  loss 0.3653  val exact 92.05% (E 92.45, M 87.00)  15.7s *
+  reg_aug epoch 10  loss 0.3415  val exact 92.73% (E 93.07, M 88.52)  15.7s *
+  reg_aug epoch 11  loss 0.3120  val exact 93.24% (E 93.71, M 87.43)  15.5s *
+  reg_aug epoch 12  loss 0.2752  val exact 94.14% (E 94.44, M 90.46)  15.6s *
+  reg_aug epoch 13  loss 0.2523  val exact 94.72% (E 95.06, M 90.46)  15.6s *
+  reg_aug epoch 14  loss 0.2307  val exact 95.09% (E 95.37, M 91.65)  15.7s *
+  reg_aug epoch 15  loss 0.2141  val exact 95.92% (E 96.13, M 93.33)  15.6s *
+  reg_aug epoch 16  loss 0.2018  val exact 96.88% (E 97.19, M 93.08)  15.6s *
+  reg_aug epoch 17  loss 0.1853  val exact 96.20% (E 96.40, M 93.67)  15.6s
+  reg_aug epoch 18  loss 0.1686  val exact 97.31% (E 97.60, M 93.76)  15.7s *
+  reg_aug epoch 19  loss 0.1641  val exact 95.41% (E 95.46, M 94.85)  17.4s
+  reg_aug epoch 20  loss 0.1546  val exact 97.71% (E 97.94, M 94.77)  18.0s *
+  reg_aug epoch 21  loss 0.1465  val exact 97.93% (E 98.13, M 95.53)  16.6s *
+  reg_aug epoch 22  loss 0.1405  val exact 97.70% (E 97.77, M 96.88)  16.7s
+  reg_aug epoch 23  loss 0.1324  val exact 96.89% (E 97.25, M 92.41)  16.2s
+  reg_aug epoch 24  loss 0.1308  val exact 97.99% (E 98.11, M 96.54)  16.2s *
+  reg_aug epoch 25  loss 0.1245  val exact 98.01% (E 98.14, M 96.37)  17.3s *
+  reg_aug epoch 26  loss 0.1221  val exact 98.30% (E 98.40, M 97.05)  16.3s *
+  reg_aug epoch 27  loss 0.1205  val exact 98.33% (E 98.40, M 97.47)  15.9s *
+  reg_aug epoch 28  loss 0.1152  val exact 98.29% (E 98.41, M 96.79)  16.5s
+  reg_aug epoch 29  loss 0.1180  val exact 98.49% (E 98.63, M 96.71)  17.6s *
+  reg_aug epoch 30  loss 0.1099  val exact 98.29% (E 98.40, M 96.88)  16.8s
+  reg_aug: best val exact 98.49% at epoch 29
+training cls on v2_crops (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls epoch  1  loss 0.3383  val exact 98.86% (E 98.88, M 98.57)  17.5s *
+  cls epoch  2  loss 0.0599  val exact 98.99% (E 99.05, M 98.23)  15.9s *
+  cls epoch  3  loss 0.0528  val exact 98.97% (E 99.01, M 98.48)  15.7s
+  cls epoch  4  loss 0.0476  val exact 99.04% (E 99.06, M 98.82)  15.6s *
+  cls epoch  5  loss 0.0433  val exact 99.28% (E 99.31, M 98.90)  15.5s *
+  cls epoch  6  loss 0.0417  val exact 99.27% (E 99.27, M 99.24)  15.6s
+  cls epoch  7  loss 0.0393  val exact 99.34% (E 99.35, M 99.24)  15.5s *
+  cls epoch  8  loss 0.0375  val exact 99.32% (E 99.36, M 98.82)  15.2s
+  cls epoch  9  loss 0.0365  val exact 99.33% (E 99.37, M 98.73)  15.1s
+  cls epoch 10  loss 0.0353  val exact 99.36% (E 99.40, M 98.82)  15.0s *
+  cls epoch 11  loss 0.0342  val exact 99.40% (E 99.43, M 98.99)  15.1s *
+  cls epoch 12  loss 0.0325  val exact 99.47% (E 99.50, M 99.16)  15.0s *
+  cls epoch 13  loss 0.0326  val exact 99.38% (E 99.42, M 98.90)  15.1s
+  cls epoch 14  loss 0.0327  val exact 99.39% (E 99.41, M 99.07)  15.0s
+  cls epoch 15  loss 0.0313  val exact 99.43% (E 99.47, M 98.99)  15.3s
+  cls epoch 16  loss 0.0297  val exact 99.46% (E 99.46, M 99.41)  15.0s
+  cls epoch 17  loss 0.0302  val exact 99.37% (E 99.44, M 98.48)  15.1s
+  cls epoch 18  loss 0.0298  val exact 99.50% (E 99.51, M 99.41)  15.1s *
+  cls epoch 19  loss 0.0287  val exact 99.46% (E 99.52, M 98.73)  15.0s
+  cls epoch 20  loss 0.0289  val exact 99.46% (E 99.52, M 98.73)  14.9s
+  cls epoch 21  loss 0.0277  val exact 99.48% (E 99.52, M 98.99)  14.9s
+  cls epoch 22  loss 0.0281  val exact 99.54% (E 99.56, M 99.24)  15.1s *
+  cls epoch 23  loss 0.0272  val exact 99.54% (E 99.55, M 99.41)  15.0s
+  cls epoch 24  loss 0.0273  val exact 99.46% (E 99.48, M 99.24)  16.2s
+  cls epoch 25  loss 0.0265  val exact 99.49% (E 99.51, M 99.24)  16.0s
+  cls epoch 26  loss 0.0265  val exact 99.58% (E 99.58, M 99.49)  15.9s *
+  cls epoch 27  loss 0.0261  val exact 99.52% (E 99.58, M 98.73)  15.3s
+  cls epoch 28  loss 0.0261  val exact 99.54% (E 99.54, M 99.49)  15.7s
+  cls epoch 29  loss 0.0258  val exact 99.46% (E 99.46, M 99.49)  15.6s
+  cls epoch 30  loss 0.0255  val exact 99.55% (E 99.55, M 99.49)  15.4s
+  cls: best val exact 99.58% at epoch 26
+training cls_aug on v2_crops (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug epoch  1  loss 1.1524  val exact 87.34% (E 88.15, M 77.30)  16.6s *
+  cls_aug epoch  2  loss 0.6978  val exact 96.80% (E 97.37, M 89.70)  16.2s *
+  cls_aug epoch  3  loss 0.3452  val exact 98.21% (E 98.45, M 95.19)  16.3s *
+  cls_aug epoch  4  loss 0.2362  val exact 98.72% (E 98.95, M 95.86)  16.2s *
+  cls_aug epoch  5  loss 0.1904  val exact 98.72% (E 98.92, M 96.29)  16.6s
+  cls_aug epoch  6  loss 0.1643  val exact 98.53% (E 98.62, M 97.30)  17.1s
+  cls_aug epoch  7  loss 0.1503  val exact 98.97% (E 99.09, M 97.38)  16.2s *
+  cls_aug epoch  8  loss 0.1381  val exact 99.06% (E 99.19, M 97.47)  16.3s *
+  cls_aug epoch  9  loss 0.1250  val exact 99.18% (E 99.30, M 97.72)  16.2s *
+  cls_aug epoch 10  loss 0.1173  val exact 99.10% (E 99.16, M 98.31)  16.1s
+  cls_aug epoch 11  loss 0.1101  val exact 99.26% (E 99.37, M 97.89)  16.2s *
+  cls_aug epoch 12  loss 0.1051  val exact 99.43% (E 99.48, M 98.73)  16.2s *
+  cls_aug epoch 13  loss 0.0966  val exact 99.30% (E 99.35, M 98.65)  16.2s
+  cls_aug epoch 14  loss 0.0940  val exact 99.40% (E 99.43, M 99.07)  16.2s
+  cls_aug epoch 15  loss 0.0899  val exact 99.28% (E 99.31, M 98.99)  16.1s
+  cls_aug epoch 16  loss 0.0876  val exact 99.44% (E 99.53, M 98.31)  16.0s *
+  cls_aug epoch 17  loss 0.0840  val exact 99.40% (E 99.43, M 98.99)  16.0s
+  cls_aug epoch 18  loss 0.0805  val exact 99.42% (E 99.44, M 99.16)  16.2s
+  cls_aug epoch 19  loss 0.0783  val exact 99.56% (E 99.58, M 99.24)  15.9s *
+  cls_aug epoch 20  loss 0.0767  val exact 99.50% (E 99.55, M 98.90)  15.9s
+  cls_aug epoch 21  loss 0.0745  val exact 99.55% (E 99.58, M 99.16)  16.0s
+  cls_aug epoch 22  loss 0.0725  val exact 99.55% (E 99.54, M 99.66)  17.7s
+  cls_aug epoch 23  loss 0.0713  val exact 99.54% (E 99.54, M 99.49)  18.5s
+  cls_aug epoch 24  loss 0.0703  val exact 99.57% (E 99.56, M 99.58)  19.1s *
+  cls_aug epoch 25  loss 0.0696  val exact 99.53% (E 99.53, M 99.58)  17.4s
+  cls_aug epoch 26  loss 0.0688  val exact 99.60% (E 99.61, M 99.49)  16.8s *
+  cls_aug epoch 27  loss 0.0691  val exact 99.53% (E 99.53, M 99.49)  16.5s
+  cls_aug epoch 28  loss 0.0660  val exact 99.59% (E 99.63, M 99.07)  16.9s
+  cls_aug epoch 29  loss 0.0666  val exact 99.58% (E 99.63, M 98.90)  16.6s
+  cls_aug epoch 30  loss 0.0646  val exact 99.62% (E 99.62, M 99.58)  16.7s *
+  cls_aug: best val exact 99.62% at epoch 30
+training cls_aug_bbox128 on v2_crops_bbox128 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_bbox128 epoch  1  loss 1.1167  val exact 85.78% (E 88.99, M 46.08)  16.4s *
+  cls_aug_bbox128 epoch  2  loss 0.4578  val exact 97.04% (E 98.03, M 84.73)  16.4s *
+  cls_aug_bbox128 epoch  3  loss 0.2201  val exact 97.98% (E 98.63, M 89.96)  16.3s *
+  cls_aug_bbox128 epoch  4  loss 0.1611  val exact 98.51% (E 98.94, M 93.08)  16.2s *
+  cls_aug_bbox128 epoch  5  loss 0.1333  val exact 98.71% (E 99.07, M 94.35)  16.3s *
+  cls_aug_bbox128 epoch  6  loss 0.1205  val exact 98.91% (E 99.24, M 94.77)  16.1s *
+  cls_aug_bbox128 epoch  7  loss 0.1082  val exact 98.93% (E 99.23, M 95.27)  16.1s *
+  cls_aug_bbox128 epoch  8  loss 0.1011  val exact 99.06% (E 99.33, M 95.78)  16.1s *
+  cls_aug_bbox128 epoch  9  loss 0.0964  val exact 99.11% (E 99.35, M 96.20)  16.2s *
+  cls_aug_bbox128 epoch 10  loss 0.0911  val exact 99.14% (E 99.35, M 96.46)  16.0s *
+  cls_aug_bbox128 epoch 11  loss 0.0871  val exact 99.13% (E 99.39, M 95.95)  16.1s
+  cls_aug_bbox128 epoch 12  loss 0.0867  val exact 99.22% (E 99.38, M 97.22)  16.1s *
+  cls_aug_bbox128 epoch 13  loss 0.0808  val exact 99.21% (E 99.40, M 96.79)  16.0s
+  cls_aug_bbox128 epoch 14  loss 0.0781  val exact 99.31% (E 99.46, M 97.47)  16.2s *
+  cls_aug_bbox128 epoch 15  loss 0.0764  val exact 99.26% (E 99.43, M 97.13)  16.3s
+  cls_aug_bbox128 epoch 16  loss 0.0744  val exact 99.23% (E 99.39, M 97.22)  16.1s
+  cls_aug_bbox128 epoch 17  loss 0.0726  val exact 99.25% (E 99.39, M 97.47)  16.0s
+  cls_aug_bbox128 epoch 18  loss 0.0715  val exact 99.30% (E 99.44, M 97.55)  15.9s
+  cls_aug_bbox128 epoch 19  loss 0.0704  val exact 99.29% (E 99.43, M 97.55)  16.3s
+  cls_aug_bbox128 epoch 20  loss 0.0688  val exact 99.28% (E 99.47, M 96.96)  16.1s
+  cls_aug_bbox128 epoch 21  loss 0.0685  val exact 99.32% (E 99.45, M 97.72)  16.1s *
+  cls_aug_bbox128 epoch 22  loss 0.0666  val exact 99.28% (E 99.41, M 97.64)  16.3s
+  cls_aug_bbox128 epoch 23  loss 0.0658  val exact 99.33% (E 99.47, M 97.55)  15.9s *
+  cls_aug_bbox128 epoch 24  loss 0.0657  val exact 99.34% (E 99.50, M 97.30)  16.0s *
+  cls_aug_bbox128 epoch 25  loss 0.0618  val exact 99.36% (E 99.49, M 97.72)  16.2s *
+  cls_aug_bbox128 epoch 26  loss 0.0624  val exact 99.36% (E 99.51, M 97.55)  16.4s *
+  cls_aug_bbox128 epoch 27  loss 0.0636  val exact 99.33% (E 99.49, M 97.30)  17.2s
+  cls_aug_bbox128 epoch 28  loss 0.0615  val exact 99.40% (E 99.52, M 97.89)  16.9s *
+  cls_aug_bbox128 epoch 29  loss 0.0607  val exact 99.38% (E 99.52, M 97.72)  16.9s
+  cls_aug_bbox128 epoch 30  loss 0.0589  val exact 99.31% (E 99.44, M 97.64)  16.6s
+  cls_aug_bbox128: best val exact 99.40% at epoch 28
+training cls_aug_bbox256 on v2_crops_bbox256 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_bbox256 epoch  1  loss 0.9707  val exact 91.54% (E 94.78, M 51.39)  32.3s *
+  cls_aug_bbox256 epoch  2  loss 0.3203  val exact 97.74% (E 98.93, M 82.95)  32.4s *
+  cls_aug_bbox256 epoch  3  loss 0.1693  val exact 98.41% (E 98.98, M 91.39)  31.7s *
+  cls_aug_bbox256 epoch  4  loss 0.1335  val exact 98.53% (E 99.07, M 91.73)  32.4s *
+  cls_aug_bbox256 epoch  5  loss 0.1173  val exact 98.85% (E 99.26, M 93.76)  31.6s *
+  cls_aug_bbox256 epoch  6  loss 0.1059  val exact 98.87% (E 99.23, M 94.35)  32.5s *
+  cls_aug_bbox256 epoch  7  loss 0.0990  val exact 98.93% (E 99.35, M 93.84)  32.5s *
+  cls_aug_bbox256 epoch  8  loss 0.0929  val exact 99.01% (E 99.35, M 94.77)  32.4s *
+  cls_aug_bbox256 epoch  9  loss 0.0864  val exact 98.99% (E 99.35, M 94.51)  31.4s
+  cls_aug_bbox256 epoch 10  loss 0.0839  val exact 99.04% (E 99.33, M 95.53)  31.2s *
+  cls_aug_bbox256 epoch 11  loss 0.0794  val exact 99.17% (E 99.41, M 96.20)  31.2s *
+  cls_aug_bbox256 epoch 12  loss 0.0761  val exact 99.05% (E 99.33, M 95.61)  31.1s
+  cls_aug_bbox256 epoch 13  loss 0.0743  val exact 99.25% (E 99.42, M 97.13)  31.1s *
+  cls_aug_bbox256 epoch 14  loss 0.0707  val exact 99.18% (E 99.41, M 96.37)  31.1s
+  cls_aug_bbox256 epoch 15  loss 0.0684  val exact 99.14% (E 99.35, M 96.62)  32.5s
+  cls_aug_bbox256 epoch 16  loss 0.0664  val exact 99.19% (E 99.48, M 95.70)  33.8s
+  cls_aug_bbox256 epoch 17  loss 0.0645  val exact 99.27% (E 99.42, M 97.38)  32.7s *
+  cls_aug_bbox256 epoch 18  loss 0.0634  val exact 99.29% (E 99.46, M 97.22)  33.6s *
+  cls_aug_bbox256 epoch 19  loss 0.0611  val exact 99.29% (E 99.50, M 96.79)  32.5s *
+  cls_aug_bbox256 epoch 20  loss 0.0618  val exact 99.39% (E 99.51, M 97.89)  31.7s *
+  cls_aug_bbox256 epoch 21  loss 0.0593  val exact 99.30% (E 99.49, M 96.96)  31.4s
+  cls_aug_bbox256 epoch 22  loss 0.0587  val exact 99.34% (E 99.48, M 97.64)  31.8s
+  cls_aug_bbox256 epoch 23  loss 0.0581  val exact 99.37% (E 99.52, M 97.47)  31.5s
+  cls_aug_bbox256 epoch 24  loss 0.0572  val exact 99.34% (E 99.51, M 97.30)  31.7s
+  cls_aug_bbox256 epoch 25  loss 0.0550  val exact 99.38% (E 99.52, M 97.55)  31.3s
+  cls_aug_bbox256 epoch 26  loss 0.0545  val exact 99.33% (E 99.43, M 98.06)  31.6s
+  cls_aug_bbox256 epoch 27  loss 0.0543  val exact 99.38% (E 99.53, M 97.47)  31.2s
+  cls_aug_bbox256 epoch 28  loss 0.0527  val exact 99.47% (E 99.54, M 98.65)  31.1s *
+  cls_aug_bbox256 epoch 29  loss 0.0530  val exact 99.45% (E 99.55, M 98.23)  31.3s
+  cls_aug_bbox256 epoch 30  loss 0.0512  val exact 99.47% (E 99.58, M 98.14)  31.3s
+  cls_aug_bbox256: best val exact 99.47% at epoch 28
+training cls_aug_bbox128_shift15 on v2_crops_bbox128 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_bbox128_shift15 epoch  1  loss 1.3047  val exact 82.75% (E 84.65, M 59.24)  16.3s *
+  cls_aug_bbox128_shift15 epoch  2  loss 0.7397  val exact 90.35% (E 91.76, M 72.91)  16.2s *
+  cls_aug_bbox128_shift15 epoch  3  loss 0.5246  val exact 96.40% (E 97.28, M 85.40)  16.5s *
+  cls_aug_bbox128_shift15 epoch  4  loss 0.2806  val exact 98.03% (E 98.48, M 92.41)  17.1s *
+  cls_aug_bbox128_shift15 epoch  5  loss 0.2049  val exact 98.25% (E 98.68, M 92.91)  18.7s *
+  cls_aug_bbox128_shift15 epoch  6  loss 0.1791  val exact 98.57% (E 98.86, M 94.94)  16.8s *
+  cls_aug_bbox128_shift15 epoch  7  loss 0.1627  val exact 98.71% (E 98.99, M 95.36)  16.9s *
+  cls_aug_bbox128_shift15 epoch  8  loss 0.1507  val exact 98.75% (E 98.99, M 95.70)  16.6s *
+  cls_aug_bbox128_shift15 epoch  9  loss 0.1386  val exact 98.83% (E 99.04, M 96.20)  16.5s *
+  cls_aug_bbox128_shift15 epoch 10  loss 0.1328  val exact 98.82% (E 99.05, M 95.86)  16.5s
+  cls_aug_bbox128_shift15 epoch 11  loss 0.1259  val exact 98.81% (E 98.99, M 96.54)  16.4s
+  cls_aug_bbox128_shift15 epoch 12  loss 0.1231  val exact 98.83% (E 99.03, M 96.37)  16.3s *
+  cls_aug_bbox128_shift15 epoch 13  loss 0.1171  val exact 99.12% (E 99.26, M 97.38)  16.6s *
+  cls_aug_bbox128_shift15 epoch 14  loss 0.1113  val exact 99.17% (E 99.32, M 97.38)  16.2s *
+  cls_aug_bbox128_shift15 epoch 15  loss 0.1099  val exact 99.09% (E 99.23, M 97.38)  16.5s
+  cls_aug_bbox128_shift15 epoch 16  loss 0.1065  val exact 99.06% (E 99.21, M 97.22)  16.3s
+  cls_aug_bbox128_shift15 epoch 17  loss 0.1002  val exact 99.18% (E 99.30, M 97.72)  16.4s *
+  cls_aug_bbox128_shift15 epoch 18  loss 0.1015  val exact 99.16% (E 99.30, M 97.47)  16.4s
+  cls_aug_bbox128_shift15 epoch 19  loss 0.0974  val exact 99.31% (E 99.43, M 97.81)  16.7s *
+  cls_aug_bbox128_shift15 epoch 20  loss 0.0941  val exact 99.21% (E 99.33, M 97.81)  16.6s
+  cls_aug_bbox128_shift15 epoch 21  loss 0.0933  val exact 99.34% (E 99.43, M 98.23)  16.3s *
+  cls_aug_bbox128_shift15 epoch 22  loss 0.0927  val exact 99.33% (E 99.41, M 98.23)  16.8s
+  cls_aug_bbox128_shift15 epoch 23  loss 0.0904  val exact 99.22% (E 99.37, M 97.47)  16.4s
+  cls_aug_bbox128_shift15 epoch 24  loss 0.0881  val exact 99.21% (E 99.36, M 97.38)  16.2s
+  cls_aug_bbox128_shift15 epoch 25  loss 0.0853  val exact 99.34% (E 99.42, M 98.31)  16.4s
+  cls_aug_bbox128_shift15 epoch 26  loss 0.0834  val exact 99.35% (E 99.44, M 98.23)  16.4s *
+  cls_aug_bbox128_shift15 epoch 27  loss 0.0838  val exact 99.28% (E 99.39, M 97.97)  16.3s
+  cls_aug_bbox128_shift15 epoch 28  loss 0.0822  val exact 99.31% (E 99.43, M 97.89)  16.3s
+  cls_aug_bbox128_shift15 epoch 29  loss 0.0818  val exact 99.27% (E 99.38, M 97.89)  16.4s
+  cls_aug_bbox128_shift15 epoch 30  loss 0.0803  val exact 99.32% (E 99.40, M 98.31)  16.5s
+  cls_aug_bbox128_shift15: best val exact 99.35% at epoch 26
+training cls_aug_ic128 on v2_crops_icbox128 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_ic128 epoch  1  loss 1.3535  val exact 75.08% (E 76.83, M 53.33)  16.5s *
+  cls_aug_ic128 epoch  2  loss 0.7834  val exact 86.97% (E 88.92, M 62.78)  16.5s *
+  cls_aug_ic128 epoch  3  loss 0.5973  val exact 91.03% (E 92.56, M 72.15)  16.3s *
+  cls_aug_ic128 epoch  4  loss 0.4214  val exact 96.50% (E 97.36, M 85.82)  16.2s *
+  cls_aug_ic128 epoch  5  loss 0.2628  val exact 97.25% (E 97.89, M 89.28)  16.3s *
+  cls_aug_ic128 epoch  6  loss 0.2150  val exact 97.57% (E 98.08, M 91.22)  16.1s *
+  cls_aug_ic128 epoch  7  loss 0.1855  val exact 97.98% (E 98.41, M 92.66)  16.1s *
+  cls_aug_ic128 epoch  8  loss 0.1707  val exact 98.14% (E 98.60, M 92.41)  16.1s *
+  cls_aug_ic128 epoch  9  loss 0.1553  val exact 98.24% (E 98.67, M 92.91)  15.9s *
+  cls_aug_ic128 epoch 10  loss 0.1446  val exact 98.39% (E 98.80, M 93.33)  16.0s *
+  cls_aug_ic128 epoch 11  loss 0.1358  val exact 98.41% (E 98.82, M 93.33)  16.0s *
+  cls_aug_ic128 epoch 12  loss 0.1292  val exact 98.27% (E 98.66, M 93.42)  16.3s
+  cls_aug_ic128 epoch 13  loss 0.1224  val exact 98.66% (E 98.96, M 94.94)  16.1s *
+  cls_aug_ic128 epoch 14  loss 0.1167  val exact 98.74% (E 99.05, M 94.85)  16.2s *
+  cls_aug_ic128 epoch 15  loss 0.1137  val exact 98.79% (E 99.03, M 95.86)  16.2s *
+  cls_aug_ic128 epoch 16  loss 0.1087  val exact 98.78% (E 99.03, M 95.70)  17.2s
+  cls_aug_ic128 epoch 17  loss 0.1046  val exact 98.92% (E 99.14, M 96.20)  16.9s *
+  cls_aug_ic128 epoch 18  loss 0.1013  val exact 99.02% (E 99.23, M 96.37)  16.8s *
+  cls_aug_ic128 epoch 19  loss 0.0985  val exact 98.97% (E 99.17, M 96.54)  17.3s
+  cls_aug_ic128 epoch 20  loss 0.0956  val exact 98.89% (E 99.13, M 95.95)  17.6s
+  cls_aug_ic128 epoch 21  loss 0.0933  val exact 99.02% (E 99.24, M 96.29)  16.6s
+  cls_aug_ic128 epoch 22  loss 0.0925  val exact 99.09% (E 99.24, M 97.22)  16.6s *
+  cls_aug_ic128 epoch 23  loss 0.0892  val exact 99.14% (E 99.33, M 96.79)  16.5s *
+  cls_aug_ic128 epoch 24  loss 0.0847  val exact 99.11% (E 99.31, M 96.54)  16.9s
+  cls_aug_ic128 epoch 25  loss 0.0843  val exact 99.11% (E 99.28, M 97.05)  16.4s
+  cls_aug_ic128 epoch 26  loss 0.0818  val exact 99.10% (E 99.26, M 97.05)  16.2s
+  cls_aug_ic128 epoch 27  loss 0.0833  val exact 99.19% (E 99.31, M 97.72)  16.5s *
+  cls_aug_ic128 epoch 28  loss 0.0823  val exact 99.17% (E 99.31, M 97.47)  16.2s
+  cls_aug_ic128 epoch 29  loss 0.0794  val exact 99.22% (E 99.37, M 97.38)  16.0s *
+  cls_aug_ic128 epoch 30  loss 0.0792  val exact 99.16% (E 99.28, M 97.64)  16.1s
+  cls_aug_ic128: best val exact 99.22% at epoch 29
+training cls_aug_ic128_mask on v2_crops_icbox128 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_ic128_mask epoch  1  loss 1.4314  val exact 71.85% (E 74.14, M 43.46)  16.8s *
+  cls_aug_ic128_mask epoch  2  loss 0.8530  val exact 85.25% (E 87.67, M 55.36)  17.4s *
+  cls_aug_ic128_mask epoch  3  loss 0.6223  val exact 90.99% (E 92.63, M 70.72)  17.1s *
+  cls_aug_ic128_mask epoch  4  loss 0.4277  val exact 95.99% (E 97.19, M 81.10)  17.2s *
+  cls_aug_ic128_mask epoch  5  loss 0.2520  val exact 97.58% (E 98.28, M 88.95)  17.0s *
+  cls_aug_ic128_mask epoch  6  loss 0.1992  val exact 98.11% (E 98.74, M 90.30)  17.0s *
+  cls_aug_ic128_mask epoch  7  loss 0.1657  val exact 98.44% (E 98.93, M 92.32)  16.9s *
+  cls_aug_ic128_mask epoch  8  loss 0.1511  val exact 98.43% (E 98.90, M 92.66)  17.0s
+  cls_aug_ic128_mask epoch  9  loss 0.1385  val exact 98.59% (E 99.01, M 93.33)  16.8s *
+  cls_aug_ic128_mask epoch 10  loss 0.1301  val exact 98.71% (E 99.07, M 94.26)  16.8s *
+  cls_aug_ic128_mask epoch 11  loss 0.1229  val exact 98.71% (E 99.03, M 94.77)  16.8s *
+  cls_aug_ic128_mask epoch 12  loss 0.1165  val exact 98.60% (E 98.94, M 94.43)  16.9s
+  cls_aug_ic128_mask epoch 13  loss 0.1092  val exact 98.88% (E 99.16, M 95.44)  16.6s *
+  cls_aug_ic128_mask epoch 14  loss 0.1083  val exact 98.93% (E 99.26, M 94.77)  16.7s *
+  cls_aug_ic128_mask epoch 15  loss 0.1047  val exact 98.88% (E 99.17, M 95.36)  16.6s
+  cls_aug_ic128_mask epoch 16  loss 0.0987  val exact 99.00% (E 99.27, M 95.61)  16.6s *
+  cls_aug_ic128_mask epoch 17  loss 0.0980  val exact 99.02% (E 99.34, M 95.11)  16.6s *
+  cls_aug_ic128_mask epoch 18  loss 0.0959  val exact 98.96% (E 99.28, M 95.02)  16.5s
+  cls_aug_ic128_mask epoch 19  loss 0.0926  val exact 99.04% (E 99.30, M 95.78)  16.8s *
+  cls_aug_ic128_mask epoch 20  loss 0.0910  val exact 99.02% (E 99.28, M 95.78)  16.7s
+  cls_aug_ic128_mask epoch 21  loss 0.0882  val exact 99.16% (E 99.34, M 96.88)  16.6s *
+  cls_aug_ic128_mask epoch 22  loss 0.0874  val exact 99.17% (E 99.39, M 96.37)  17.0s *
+  cls_aug_ic128_mask epoch 23  loss 0.0860  val exact 99.17% (E 99.39, M 96.46)  16.6s *
+  cls_aug_ic128_mask epoch 24  loss 0.0829  val exact 99.22% (E 99.39, M 97.05)  16.5s *
+  cls_aug_ic128_mask epoch 25  loss 0.0829  val exact 99.20% (E 99.42, M 96.46)  16.6s
+  cls_aug_ic128_mask epoch 26  loss 0.0812  val exact 99.21% (E 99.39, M 97.05)  17.2s
+  cls_aug_ic128_mask epoch 27  loss 0.0803  val exact 99.24% (E 99.43, M 96.88)  17.3s *
+  cls_aug_ic128_mask epoch 28  loss 0.0794  val exact 99.22% (E 99.40, M 97.05)  16.8s
+  cls_aug_ic128_mask epoch 29  loss 0.0790  val exact 99.20% (E 99.39, M 96.88)  16.7s
+  cls_aug_ic128_mask epoch 30  loss 0.0753  val exact 99.14% (E 99.31, M 96.96)  17.1s
+  cls_aug_ic128_mask: best val exact 99.24% at epoch 27
+training cls_aug_ic128_mask_shift15 on v2_crops_icbox128 (device mps; single-note crops {'train': {'einsiedeln': 70392, 'ms73': 5826}, 'val': {'einsiedeln': 14683, 'ms73': 1185}})
+  cls_aug_ic128_mask_shift15 epoch  1  loss 1.5065  val exact 73.66% (E 75.76, M 47.59)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch  2  loss 0.9217  val exact 81.51% (E 84.15, M 48.78)  16.7s *
+  cls_aug_ic128_mask_shift15 epoch  3  loss 0.6661  val exact 90.30% (E 91.98, M 69.54)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch  4  loss 0.4441  val exact 96.23% (E 97.34, M 82.36)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch  5  loss 0.2676  val exact 97.42% (E 98.28, M 86.75)  16.7s *
+  cls_aug_ic128_mask_shift15 epoch  6  loss 0.2103  val exact 97.75% (E 98.41, M 89.54)  17.0s *
+  cls_aug_ic128_mask_shift15 epoch  7  loss 0.1783  val exact 98.20% (E 98.71, M 91.90)  17.1s *
+  cls_aug_ic128_mask_shift15 epoch  8  loss 0.1653  val exact 98.36% (E 98.86, M 92.15)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch  9  loss 0.1486  val exact 98.49% (E 98.94, M 92.83)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch 10  loss 0.1413  val exact 98.66% (E 99.05, M 93.92)  16.8s *
+  cls_aug_ic128_mask_shift15 epoch 11  loss 0.1331  val exact 98.71% (E 99.09, M 94.01)  16.6s *
+  cls_aug_ic128_mask_shift15 epoch 12  loss 0.1265  val exact 98.76% (E 99.07, M 94.94)  16.7s *
+  cls_aug_ic128_mask_shift15 epoch 13  loss 0.1201  val exact 98.84% (E 99.11, M 95.44)  16.6s *
+  cls_aug_ic128_mask_shift15 epoch 14  loss 0.1181  val exact 98.82% (E 99.16, M 94.60)  18.7s
+  cls_aug_ic128_mask_shift15 epoch 15  loss 0.1135  val exact 98.92% (E 99.25, M 94.77)  17.1s *
+  cls_aug_ic128_mask_shift15 epoch 16  loss 0.1087  val exact 98.91% (E 99.18, M 95.53)  17.0s
+  cls_aug_ic128_mask_shift15 epoch 17  loss 0.1064  val exact 98.83% (E 99.12, M 95.19)  17.1s
+  cls_aug_ic128_mask_shift15 epoch 18  loss 0.1052  val exact 98.91% (E 99.17, M 95.70)  17.2s
+  cls_aug_ic128_mask_shift15 epoch 19  loss 0.1004  val exact 98.94% (E 99.22, M 95.44)  17.4s *
+  cls_aug_ic128_mask_shift15 epoch 20  loss 0.0973  val exact 98.95% (E 99.20, M 95.95)  17.1s *
+  cls_aug_ic128_mask_shift15 epoch 21  loss 0.0961  val exact 99.01% (E 99.23, M 96.29)  17.1s *
+  cls_aug_ic128_mask_shift15 epoch 22  loss 0.0939  val exact 99.10% (E 99.31, M 96.54)  17.5s *
+  cls_aug_ic128_mask_shift15 epoch 23  loss 0.0933  val exact 99.06% (E 99.31, M 96.03)  17.2s
+  cls_aug_ic128_mask_shift15 epoch 24  loss 0.0911  val exact 99.09% (E 99.27, M 96.88)  17.3s
+  cls_aug_ic128_mask_shift15 epoch 25  loss 0.0907  val exact 99.06% (E 99.25, M 96.71)  17.1s
+  cls_aug_ic128_mask_shift15 epoch 26  loss 0.0877  val exact 99.09% (E 99.27, M 96.79)  17.7s
+  cls_aug_ic128_mask_shift15 epoch 27  loss 0.0864  val exact 99.04% (E 99.25, M 96.46)  17.0s
+  cls_aug_ic128_mask_shift15 epoch 28  loss 0.0863  val exact 99.11% (E 99.29, M 96.79)  17.4s *
+  cls_aug_ic128_mask_shift15 epoch 29  loss 0.0840  val exact 99.15% (E 99.33, M 96.96)  17.0s *
+  cls_aug_ic128_mask_shift15 epoch 30  loss 0.0828  val exact 99.16% (E 99.33, M 97.05)  16.9s *
+  cls_aug_ic128_mask_shift15: best val exact 99.16% at epoch 30
