@@ -1,0 +1,256 @@
+training neume_shift15 on v2_neumes128 (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_shift15 epoch  1  loss 2.9591  val neumes right 62.10% (multi-note 34.45; E 64.25, M 39.41)  44.4s *
+  neume_shift15 epoch  2  loss 1.8621  val neumes right 73.74% (multi-note 53.93; E 76.15, M 48.33)  43.6s *
+  neume_shift15 epoch  3  loss 1.3971  val neumes right 85.35% (multi-note 71.22; E 87.04, M 67.44)  48.2s *
+  neume_shift15 epoch  4  loss 0.9609  val neumes right 89.57% (multi-note 78.93; E 90.77, M 76.89)  57.6s *
+  neume_shift15 epoch  5  loss 0.7485  val neumes right 91.40% (multi-note 82.67; E 92.39, M 80.93)  57.5s *
+  neume_shift15 epoch  6  loss 0.6311  val neumes right 92.72% (multi-note 85.14; E 93.60, M 83.41)  56.6s *
+  neume_shift15 epoch  7  loss 0.5594  val neumes right 93.47% (multi-note 86.58; E 94.24, M 85.33)  56.1s *
+  neume_shift15 epoch  8  loss 0.5032  val neumes right 94.20% (multi-note 88.36; E 94.80, M 87.86)  56.5s *
+  neume_shift15 epoch  9  loss 0.4632  val neumes right 94.49% (multi-note 88.83; E 95.07, M 88.30)  56.5s *
+  neume_shift15 epoch 10  loss 0.4366  val neumes right 94.87% (multi-note 89.70; E 95.48, M 88.39)  56.5s *
+  neume_shift15 epoch 11  loss 0.4114  val neumes right 95.28% (multi-note 90.72; E 95.75, M 90.30)  57.5s *
+  neume_shift15 epoch 12  loss 0.3939  val neumes right 95.46% (multi-note 90.65; E 95.96, M 90.18)  57.8s *
+  neume_shift15 epoch 13  loss 0.3745  val neumes right 95.61% (multi-note 91.21; E 96.03, M 91.08)  58.0s *
+  neume_shift15 epoch 14  loss 0.3641  val neumes right 95.77% (multi-note 91.34; E 96.23, M 90.95)  58.0s *
+  neume_shift15 epoch 15  loss 0.3485  val neumes right 95.85% (multi-note 91.52; E 96.30, M 91.12)  58.3s *
+  neume_shift15 epoch 16  loss 0.3405  val neumes right 95.99% (multi-note 91.70; E 96.46, M 90.95)  58.8s *
+  neume_shift15 epoch 17  loss 0.3306  val neumes right 96.09% (multi-note 92.12; E 96.49, M 91.89)  58.4s *
+  neume_shift15 epoch 18  loss 0.3235  val neumes right 96.19% (multi-note 92.43; E 96.56, M 92.22)  58.3s *
+  neume_shift15 epoch 19  loss 0.3158  val neumes right 96.24% (multi-note 92.40; E 96.58, M 92.62)  58.7s *
+  neume_shift15 epoch 20  loss 0.3082  val neumes right 96.29% (multi-note 92.44; E 96.65, M 92.58)  58.7s *
+  neume_shift15 epoch 21  loss 0.3024  val neumes right 96.35% (multi-note 92.50; E 96.72, M 92.42)  59.6s *
+  neume_shift15 epoch 22  loss 0.2997  val neumes right 96.31% (multi-note 92.43; E 96.70, M 92.26)  59.4s
+  neume_shift15 epoch 23  loss 0.2894  val neumes right 96.47% (multi-note 92.80; E 96.85, M 92.42)  58.7s *
+  neume_shift15 epoch 24  loss 0.2886  val neumes right 96.57% (multi-note 92.91; E 96.89, M 93.15)  58.8s *
+  neume_shift15 epoch 25  loss 0.2860  val neumes right 96.63% (multi-note 93.18; E 96.94, M 93.36)  58.7s *
+  neume_shift15 epoch 26  loss 0.2846  val neumes right 96.51% (multi-note 92.85; E 96.87, M 92.71)  59.4s
+  neume_shift15 epoch 27  loss 0.2769  val neumes right 96.64% (multi-note 93.20; E 96.97, M 93.19)  59.5s *
+  neume_shift15 epoch 28  loss 0.2760  val neumes right 96.67% (multi-note 93.24; E 97.02, M 93.03)  59.1s *
+  neume_shift15 epoch 29  loss 0.2714  val neumes right 96.71% (multi-note 93.54; E 96.95, M 94.13)  59.4s *
+  neume_shift15 epoch 30  loss 0.2694  val neumes right 96.77% (multi-note 93.52; E 97.12, M 93.11)  59.7s *
+  neume_shift15: best val neumes right 96.77% at epoch 30
+training neume_shift05 on v2_neumes128 (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_shift05 epoch  1  loss 2.6497  val neumes right 67.60% (multi-note 42.84; E 70.64, M 35.53)  65.6s *
+  neume_shift05 epoch  2  loss 1.5216  val neumes right 81.34% (multi-note 63.60; E 83.71, M 56.23)  61.0s *
+  neume_shift05 epoch  3  loss 1.0150  val neumes right 87.81% (multi-note 75.52; E 89.69, M 67.89)  60.4s *
+  neume_shift05 epoch  4  loss 0.7583  val neumes right 90.50% (multi-note 80.72; E 91.98, M 74.82)  60.5s *
+  neume_shift05 epoch  5  loss 0.6189  val neumes right 91.94% (multi-note 83.49; E 93.15, M 79.18)  60.6s *
+  neume_shift05 epoch  6  loss 0.5249  val neumes right 93.14% (multi-note 85.93; E 94.19, M 82.03)  60.2s *
+  neume_shift05 epoch  7  loss 0.4682  val neumes right 94.10% (multi-note 87.92; E 95.02, M 84.39)  60.1s *
+  neume_shift05 epoch  8  loss 0.4199  val neumes right 94.59% (multi-note 88.88; E 95.41, M 85.98)  60.6s *
+  neume_shift05 epoch  9  loss 0.3893  val neumes right 95.05% (multi-note 89.80; E 95.78, M 87.29)  60.1s *
+  neume_shift05 epoch 10  loss 0.3673  val neumes right 95.17% (multi-note 90.17; E 95.88, M 87.73)  59.6s *
+  neume_shift05 epoch 11  loss 0.3460  val neumes right 95.42% (multi-note 90.74; E 96.03, M 88.96)  60.0s *
+  neume_shift05 epoch 12  loss 0.3287  val neumes right 95.49% (multi-note 90.62; E 96.16, M 88.43)  60.0s *
+  neume_shift05 epoch 13  loss 0.3146  val neumes right 95.67% (multi-note 91.05; E 96.30, M 89.04)  59.9s *
+  neume_shift05 epoch 14  loss 0.3047  val neumes right 95.91% (multi-note 91.54; E 96.51, M 89.57)  60.0s *
+  neume_shift05 epoch 15  loss 0.2922  val neumes right 96.10% (multi-note 92.00; E 96.64, M 90.34)  60.6s *
+  neume_shift05 epoch 16  loss 0.2839  val neumes right 96.08% (multi-note 91.95; E 96.63, M 90.30)  60.0s
+  neume_shift05 epoch 17  loss 0.2754  val neumes right 96.52% (multi-note 92.90; E 97.01, M 91.28)  60.0s *
+  neume_shift05 epoch 18  loss 0.2693  val neumes right 96.38% (multi-note 92.65; E 96.88, M 91.08)  59.7s
+  neume_shift05 epoch 19  loss 0.2626  val neumes right 96.35% (multi-note 92.54; E 96.82, M 91.40)  60.1s
+  neume_shift05 epoch 20  loss 0.2585  val neumes right 96.40% (multi-note 92.64; E 96.92, M 90.87)  60.3s
+  neume_shift05 epoch 21  loss 0.2524  val neumes right 96.63% (multi-note 93.04; E 97.04, M 92.30)  60.6s *
+  neume_shift05 epoch 22  loss 0.2480  val neumes right 96.57% (multi-note 92.90; E 97.07, M 91.28)  60.1s
+  neume_shift05 epoch 23  loss 0.2437  val neumes right 96.61% (multi-note 93.03; E 97.13, M 91.12)  59.9s
+  neume_shift05 epoch 24  loss 0.2396  val neumes right 96.81% (multi-note 93.44; E 97.23, M 92.34)  60.3s *
+  neume_shift05 epoch 25  loss 0.2378  val neumes right 96.86% (multi-note 93.67; E 97.25, M 92.83)  60.1s *
+  neume_shift05 epoch 26  loss 0.2340  val neumes right 96.90% (multi-note 93.75; E 97.25, M 93.11)  59.9s *
+  neume_shift05 epoch 27  loss 0.2316  val neumes right 96.85% (multi-note 93.59; E 97.34, M 91.73)  59.9s
+  neume_shift05 epoch 28  loss 0.2264  val neumes right 96.97% (multi-note 93.92; E 97.36, M 92.87)  59.7s *
+  neume_shift05 epoch 29  loss 0.2242  val neumes right 96.88% (multi-note 93.64; E 97.27, M 92.75)  59.8s
+  neume_shift05 epoch 30  loss 0.2233  val neumes right 96.95% (multi-note 93.74; E 97.40, M 92.18)  60.8s
+  neume_shift05: best val neumes right 96.97% at epoch 28
+training neume_shift15_hjit on v2_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_shift15_hjit epoch  1  loss 3.1168  val neumes right 61.63% (multi-note 33.79; E 64.05, M 36.02)  46.0s *
+  neume_shift15_hjit epoch  2  loss 2.0460  val neumes right 73.64% (multi-note 54.00; E 76.07, M 47.84)  46.7s *
+  neume_shift15_hjit epoch  3  loss 1.5886  val neumes right 80.36% (multi-note 63.83; E 82.31, M 59.70)  49.1s *
+  neume_shift15_hjit epoch  4  loss 1.2518  val neumes right 86.54% (multi-note 72.60; E 88.22, M 68.79)  54.4s *
+  neume_shift15_hjit epoch  5  loss 1.0020  val neumes right 89.22% (multi-note 79.13; E 90.63, M 74.29)  64.8s *
+  neume_shift15_hjit epoch  6  loss 0.8383  val neumes right 91.56% (multi-note 82.95; E 92.60, M 80.52)  63.3s *
+  neume_shift15_hjit epoch  7  loss 0.7320  val neumes right 92.70% (multi-note 85.06; E 93.63, M 82.76)  61.2s *
+  neume_shift15_hjit epoch  8  loss 0.6505  val neumes right 93.29% (multi-note 86.98; E 94.06, M 85.17)  60.5s *
+  neume_shift15_hjit epoch  9  loss 0.6018  val neumes right 93.53% (multi-note 86.81; E 94.15, M 86.92)  60.0s *
+  neume_shift15_hjit epoch 10  loss 0.5575  val neumes right 94.02% (multi-note 87.88; E 94.63, M 87.61)  61.3s *
+  neume_shift15_hjit epoch 11  loss 0.5230  val neumes right 94.61% (multi-note 89.25; E 95.19, M 88.39)  61.5s *
+  neume_shift15_hjit epoch 12  loss 0.4999  val neumes right 94.90% (multi-note 89.69; E 95.55, M 88.06)  61.2s *
+  neume_shift15_hjit epoch 13  loss 0.4825  val neumes right 94.96% (multi-note 89.88; E 95.56, M 88.67)  61.0s *
+  neume_shift15_hjit epoch 14  loss 0.4674  val neumes right 95.30% (multi-note 90.32; E 95.87, M 89.28)  60.8s *
+  neume_shift15_hjit epoch 15  loss 0.4517  val neumes right 95.42% (multi-note 90.81; E 95.92, M 90.10)  61.2s *
+  neume_shift15_hjit epoch 16  loss 0.4378  val neumes right 95.60% (multi-note 91.04; E 96.23, M 89.00)  61.4s *
+  neume_shift15_hjit epoch 17  loss 0.4260  val neumes right 95.85% (multi-note 91.66; E 96.37, M 90.34)  61.6s *
+  neume_shift15_hjit epoch 18  loss 0.4155  val neumes right 95.88% (multi-note 91.73; E 96.41, M 90.22)  62.1s *
+  neume_shift15_hjit epoch 19  loss 0.4097  val neumes right 95.79% (multi-note 91.59; E 96.26, M 90.83)  61.9s
+  neume_shift15_hjit epoch 20  loss 0.4007  val neumes right 96.12% (multi-note 92.35; E 96.57, M 91.36)  61.8s *
+  neume_shift15_hjit epoch 21  loss 0.3914  val neumes right 96.00% (multi-note 92.18; E 96.41, M 91.69)  63.1s
+  neume_shift15_hjit epoch 22  loss 0.3859  val neumes right 96.02% (multi-note 91.82; E 96.50, M 90.99)  62.6s
+  neume_shift15_hjit epoch 23  loss 0.3826  val neumes right 96.23% (multi-note 92.34; E 96.75, M 90.67)  62.4s *
+  neume_shift15_hjit epoch 24  loss 0.3772  val neumes right 96.27% (multi-note 92.68; E 96.68, M 91.89)  61.6s *
+  neume_shift15_hjit epoch 25  loss 0.3740  val neumes right 96.31% (multi-note 92.78; E 96.71, M 92.05)  62.5s *
+  neume_shift15_hjit epoch 26  loss 0.3636  val neumes right 96.33% (multi-note 92.85; E 96.72, M 92.26)  63.1s *
+  neume_shift15_hjit epoch 27  loss 0.3627  val neumes right 96.44% (multi-note 92.97; E 96.84, M 92.22)  62.6s *
+  neume_shift15_hjit epoch 28  loss 0.3568  val neumes right 96.53% (multi-note 93.20; E 96.89, M 92.75)  62.3s *
+  neume_shift15_hjit epoch 29  loss 0.3506  val neumes right 96.58% (multi-note 93.24; E 96.95, M 92.62)  62.0s *
+  neume_shift15_hjit epoch 30  loss 0.3501  val neumes right 96.37% (multi-note 92.81; E 96.77, M 92.22)  61.7s
+  neume_shift15_hjit: best val neumes right 96.58% at epoch 29
+training neume_shift15_hjit_hscale on v3_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_shift15_hjit_hscale epoch  1  loss 3.3004  val neumes right 58.65% (multi-note 27.34; E 61.15, M 32.27)  47.6s *
+  neume_shift15_hjit_hscale epoch  2  loss 2.1308  val neumes right 73.01% (multi-note 50.61; E 75.59, M 45.64)  45.4s *
+  neume_shift15_hjit_hscale epoch  3  loss 1.6468  val neumes right 79.00% (multi-note 61.81; E 81.20, M 55.75)  46.0s *
+  neume_shift15_hjit_hscale epoch  4  loss 1.3880  val neumes right 84.18% (multi-note 68.81; E 85.93, M 65.69)  48.4s *
+  neume_shift15_hjit_hscale epoch  5  loss 1.1703  val neumes right 87.17% (multi-note 74.22; E 88.65, M 71.52)  50.7s *
+  neume_shift15_hjit_hscale epoch  6  loss 0.9876  val neumes right 89.89% (multi-note 79.59; E 91.03, M 77.83)  54.7s *
+  neume_shift15_hjit_hscale epoch  7  loss 0.8500  val neumes right 91.34% (multi-note 82.55; E 92.27, M 81.50)  56.2s *
+  neume_shift15_hjit_hscale epoch  8  loss 0.7666  val neumes right 92.26% (multi-note 84.41; E 93.10, M 83.41)  53.2s *
+  neume_shift15_hjit_hscale epoch  9  loss 0.7060  val neumes right 92.64% (multi-note 85.26; E 93.38, M 84.84)  53.3s *
+  neume_shift15_hjit_hscale epoch 10  loss 0.6632  val neumes right 92.94% (multi-note 85.49; E 93.63, M 85.66)  55.0s *
+  neume_shift15_hjit_hscale epoch 11  loss 0.6267  val neumes right 93.65% (multi-note 87.45; E 94.32, M 86.59)  58.0s *
+  neume_shift15_hjit_hscale epoch 12  loss 0.6000  val neumes right 93.93% (multi-note 87.41; E 94.59, M 86.96)  58.5s *
+  neume_shift15_hjit_hscale epoch 13  loss 0.5738  val neumes right 94.04% (multi-note 88.50; E 94.66, M 87.53)  59.6s *
+  neume_shift15_hjit_hscale epoch 14  loss 0.5595  val neumes right 94.61% (multi-note 88.88; E 95.27, M 87.65)  57.8s *
+  neume_shift15_hjit_hscale epoch 15  loss 0.5396  val neumes right 94.70% (multi-note 89.17; E 95.23, M 89.08)  62.3s *
+  neume_shift15_hjit_hscale epoch 16  loss 0.5239  val neumes right 95.13% (multi-note 90.19; E 95.73, M 88.79)  58.3s *
+  neume_shift15_hjit_hscale epoch 17  loss 0.5098  val neumes right 95.01% (multi-note 89.90; E 95.55, M 89.36)  57.1s
+  neume_shift15_hjit_hscale epoch 18  loss 0.5040  val neumes right 95.29% (multi-note 90.58; E 95.83, M 89.49)  56.4s *
+  neume_shift15_hjit_hscale epoch 19  loss 0.4939  val neumes right 95.07% (multi-note 90.09; E 95.61, M 89.41)  56.6s
+  neume_shift15_hjit_hscale epoch 20  loss 0.4802  val neumes right 95.46% (multi-note 90.81; E 95.99, M 89.89)  56.4s *
+  neume_shift15_hjit_hscale epoch 21  loss 0.4740  val neumes right 95.44% (multi-note 90.93; E 95.94, M 90.14)  56.8s
+  neume_shift15_hjit_hscale epoch 22  loss 0.4702  val neumes right 95.59% (multi-note 91.25; E 96.13, M 89.85)  56.5s *
+  neume_shift15_hjit_hscale epoch 23  loss 0.4608  val neumes right 95.67% (multi-note 91.16; E 96.20, M 89.98)  56.8s *
+  neume_shift15_hjit_hscale epoch 24  loss 0.4510  val neumes right 95.79% (multi-note 91.55; E 96.26, M 90.83)  56.6s *
+  neume_shift15_hjit_hscale epoch 25  loss 0.4469  val neumes right 95.56% (multi-note 91.20; E 96.01, M 90.87)  56.5s
+  neume_shift15_hjit_hscale epoch 26  loss 0.4396  val neumes right 95.85% (multi-note 91.85; E 96.28, M 91.24)  56.6s *
+  neume_shift15_hjit_hscale epoch 27  loss 0.4374  val neumes right 95.95% (multi-note 91.97; E 96.40, M 91.20)  57.1s *
+  neume_shift15_hjit_hscale epoch 28  loss 0.4319  val neumes right 95.97% (multi-note 92.13; E 96.34, M 92.09)  57.2s *
+  neume_shift15_hjit_hscale epoch 29  loss 0.4272  val neumes right 96.10% (multi-note 92.26; E 96.49, M 92.01)  57.3s *
+  neume_shift15_hjit_hscale epoch 30  loss 0.4180  val neumes right 96.06% (multi-note 92.15; E 96.54, M 90.95)  57.2s
+  neume_shift15_hjit_hscale: best val neumes right 96.10% at epoch 29
+training neume_pairs_w03 on v3_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_pairs_w03 epoch  1  loss 6.5439  val neumes right 56.18% (multi-note 22.93; E 58.72, M 29.34)  50.9s *
+  neume_pairs_w03 epoch  2  loss 4.7492  val neumes right 67.71% (multi-note 44.56; E 70.11, M 42.34)  47.8s *
+  neume_pairs_w03 epoch  3  loss 3.9968  val neumes right 76.60% (multi-note 57.56; E 78.69, M 54.48)  52.1s *
+  neume_pairs_w03 epoch  4  loss 3.5874  val neumes right 80.70% (multi-note 65.66; E 82.65, M 60.07)  58.9s *
+  neume_pairs_w03 epoch  5  loss 3.2938  val neumes right 85.30% (multi-note 71.82; E 86.89, M 68.50)  64.7s *
+  neume_pairs_w03 epoch  6  loss 3.0309  val neumes right 87.36% (multi-note 77.14; E 88.77, M 72.45)  59.3s *
+  neume_pairs_w03 epoch  7  loss 2.8164  val neumes right 89.88% (multi-note 80.21; E 90.99, M 78.16)  61.0s *
+  neume_pairs_w03 epoch  8  loss 2.6097  val neumes right 90.73% (multi-note 82.64; E 91.82, M 79.18)  65.2s *
+  neume_pairs_w03 epoch  9  loss 2.4484  val neumes right 91.66% (multi-note 84.10; E 92.54, M 82.44)  61.1s *
+  neume_pairs_w03 epoch 10  loss 2.3425  val neumes right 92.70% (multi-note 85.80; E 93.57, M 83.46)  62.9s *
+  neume_pairs_w03 epoch 11  loss 2.2266  val neumes right 93.01% (multi-note 86.72; E 93.78, M 84.88)  63.2s *
+  neume_pairs_w03 epoch 12  loss 2.1306  val neumes right 93.40% (multi-note 87.64; E 94.11, M 85.82)  61.0s *
+  neume_pairs_w03 epoch 13  loss 2.0652  val neumes right 93.66% (multi-note 88.35; E 94.29, M 87.00)  58.6s *
+  neume_pairs_w03 epoch 14  loss 1.9949  val neumes right 93.86% (multi-note 88.46; E 94.42, M 87.94)  58.0s *
+  neume_pairs_w03 epoch 15  loss 1.9518  val neumes right 94.38% (multi-note 89.54; E 94.99, M 87.90)  61.0s *
+  neume_pairs_w03 epoch 16  loss 1.8923  val neumes right 94.45% (multi-note 89.72; E 95.10, M 87.65)  61.1s *
+  neume_pairs_w03 epoch 17  loss 1.8631  val neumes right 94.55% (multi-note 89.87; E 95.11, M 88.63)  59.7s *
+  neume_pairs_w03 epoch 18  loss 1.8193  val neumes right 94.95% (multi-note 90.57; E 95.53, M 88.83)  58.3s *
+  neume_pairs_w03 epoch 19  loss 1.7877  val neumes right 94.80% (multi-note 90.47; E 95.34, M 89.00)  57.9s
+  neume_pairs_w03 epoch 20  loss 1.7578  val neumes right 95.07% (multi-note 90.93; E 95.58, M 89.69)  58.0s *
+  neume_pairs_w03 epoch 21  loss 1.7233  val neumes right 95.39% (multi-note 91.43; E 96.00, M 88.96)  64.9s *
+  neume_pairs_w03 epoch 22  loss 1.6853  val neumes right 94.69% (multi-note 90.29; E 95.29, M 88.30)  60.8s
+  neume_pairs_w03 epoch 23  loss 1.6577  val neumes right 95.43% (multi-note 91.74; E 96.00, M 89.41)  61.0s *
+  neume_pairs_w03 epoch 24  loss 1.6513  val neumes right 95.51% (multi-note 91.70; E 96.09, M 89.41)  66.7s *
+  neume_pairs_w03 epoch 25  loss 1.6206  val neumes right 95.63% (multi-note 92.01; E 96.16, M 89.98)  65.3s *
+  neume_pairs_w03 epoch 26  loss 1.5792  val neumes right 95.65% (multi-note 91.91; E 96.19, M 89.98)  65.4s *
+  neume_pairs_w03 epoch 27  loss 1.5782  val neumes right 95.83% (multi-note 92.20; E 96.28, M 91.04)  64.0s *
+  neume_pairs_w03 epoch 28  loss 1.5527  val neumes right 95.37% (multi-note 91.85; E 95.93, M 89.36)  61.5s
+  neume_pairs_w03 epoch 29  loss 1.5325  val neumes right 95.88% (multi-note 92.31; E 96.40, M 90.38)  59.8s *
+  neume_pairs_w03 epoch 30  loss 1.5146  val neumes right 95.86% (multi-note 92.35; E 96.40, M 90.22)  61.0s
+  neume_pairs_w03: best val neumes right 95.88% at epoch 29
+training neume_c16 on v3_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_c16 epoch  1  loss 3.0584  val neumes right 61.00% (multi-note 30.10; E 63.20, M 37.82)  82.4s *
+  neume_c16 epoch  2  loss 1.9965  val neumes right 73.77% (multi-note 53.94; E 75.80, M 52.36)  64.4s *
+  neume_c16 epoch  3  loss 1.5511  val neumes right 81.91% (multi-note 65.39; E 83.72, M 62.80)  63.4s *
+  neume_c16 epoch  4  loss 1.2490  val neumes right 87.41% (multi-note 74.52; E 88.91, M 71.56)  70.0s *
+  neume_c16 epoch  5  loss 0.9911  val neumes right 89.54% (multi-note 79.50; E 90.68, M 77.38)  64.5s *
+  neume_c16 epoch  6  loss 0.8225  val neumes right 91.52% (multi-note 82.52; E 92.53, M 80.85)  62.3s *
+  neume_c16 epoch  7  loss 0.7267  val neumes right 92.51% (multi-note 84.56; E 93.30, M 84.19)  62.6s *
+  neume_c16 epoch  8  loss 0.6624  val neumes right 93.28% (multi-note 86.47; E 94.00, M 85.62)  77.8s *
+  neume_c16 epoch  9  loss 0.6163  val neumes right 93.55% (multi-note 86.94; E 94.17, M 86.96)  63.9s *
+  neume_c16 epoch 10  loss 0.5751  val neumes right 94.01% (multi-note 87.75; E 94.67, M 87.00)  63.4s *
+  neume_c16 epoch 11  loss 0.5460  val neumes right 94.11% (multi-note 87.96; E 94.74, M 87.53)  62.2s *
+  neume_c16 epoch 12  loss 0.5255  val neumes right 94.64% (multi-note 89.25; E 95.25, M 88.22)  63.2s *
+  neume_c16 epoch 13  loss 0.5034  val neumes right 94.92% (multi-note 89.68; E 95.46, M 89.20)  62.2s *
+  neume_c16 epoch 14  loss 0.4862  val neumes right 95.23% (multi-note 90.55; E 95.74, M 89.77)  61.8s *
+  neume_c16 epoch 15  loss 0.4744  val neumes right 95.02% (multi-note 90.29; E 95.55, M 89.41)  61.7s
+  neume_c16 epoch 16  loss 0.4627  val neumes right 95.20% (multi-note 90.57; E 95.73, M 89.65)  61.6s
+  neume_c16 epoch 17  loss 0.4535  val neumes right 95.50% (multi-note 91.03; E 95.97, M 90.51)  62.4s *
+  neume_c16 epoch 18  loss 0.4457  val neumes right 95.56% (multi-note 91.16; E 96.04, M 90.46)  62.6s *
+  neume_c16 epoch 19  loss 0.4294  val neumes right 95.64% (multi-note 91.25; E 96.11, M 90.67)  60.7s *
+  neume_c16 epoch 20  loss 0.4260  val neumes right 95.74% (multi-note 91.52; E 96.19, M 91.04)  60.0s *
+  neume_c16 epoch 21  loss 0.4201  val neumes right 95.79% (multi-note 91.48; E 96.28, M 90.59)  60.0s *
+  neume_c16 epoch 22  loss 0.4190  val neumes right 95.84% (multi-note 91.66; E 96.31, M 90.91)  60.0s *
+  neume_c16 epoch 23  loss 0.4110  val neumes right 95.97% (multi-note 91.81; E 96.41, M 91.28)  60.0s *
+  neume_c16 epoch 24  loss 0.4031  val neumes right 96.12% (multi-note 92.22; E 96.51, M 91.97)  59.9s *
+  neume_c16 epoch 25  loss 0.3986  val neumes right 95.97% (multi-note 91.96; E 96.40, M 91.48)  59.6s
+  neume_c16 epoch 26  loss 0.3987  val neumes right 95.95% (multi-note 91.90; E 96.49, M 90.26)  59.7s
+  neume_c16 epoch 27  loss 0.3910  val neumes right 96.09% (multi-note 92.11; E 96.50, M 91.77)  60.1s
+  neume_c16 epoch 28  loss 0.3869  val neumes right 96.01% (multi-note 91.80; E 96.38, M 92.09)  61.7s
+  neume_c16 epoch 29  loss 0.3876  val neumes right 96.19% (multi-note 92.45; E 96.59, M 92.01)  62.3s *
+  neume_c16 epoch 30  loss 0.3828  val neumes right 95.76% (multi-note 91.74; E 96.16, M 91.44)  62.1s
+  neume_c16: best val neumes right 96.19% at epoch 29
+training neume_pairs_w03_c16 on v3_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_pairs_w03_c16 epoch  1  loss 6.2220  val neumes right 61.67% (multi-note 33.74; E 64.42, M 32.64)  47.9s *
+  neume_pairs_w03_c16 epoch  2  loss 4.4041  val neumes right 74.40% (multi-note 55.22; E 76.78, M 49.14)  49.1s *
+  neume_pairs_w03_c16 epoch  3  loss 3.6510  val neumes right 81.14% (multi-note 66.75; E 83.24, M 59.01)  48.6s *
+  neume_pairs_w03_c16 epoch  4  loss 3.2560  val neumes right 85.63% (multi-note 72.95; E 87.34, M 67.52)  52.9s *
+  neume_pairs_w03_c16 epoch  5  loss 2.9223  val neumes right 88.61% (multi-note 78.33; E 89.93, M 74.69)  57.2s *
+  neume_pairs_w03_c16 epoch  6  loss 2.6468  val neumes right 90.86% (multi-note 82.12; E 92.06, M 78.16)  70.3s *
+  neume_pairs_w03_c16 epoch  7  loss 2.4210  val neumes right 92.18% (multi-note 85.02; E 93.15, M 81.91)  56.4s *
+  neume_pairs_w03_c16 epoch  8  loss 2.2392  val neumes right 92.88% (multi-note 86.33; E 93.65, M 84.76)  55.2s *
+  neume_pairs_w03_c16 epoch  9  loss 2.0979  val neumes right 93.43% (multi-note 87.17; E 94.24, M 84.88)  55.5s *
+  neume_pairs_w03_c16 epoch 10  loss 1.9902  val neumes right 94.20% (multi-note 89.27; E 94.89, M 86.88)  56.1s *
+  neume_pairs_w03_c16 epoch 11  loss 1.9211  val neumes right 94.02% (multi-note 88.75; E 94.67, M 87.20)  56.7s
+  neume_pairs_w03_c16 epoch 12  loss 1.8331  val neumes right 94.69% (multi-note 90.17; E 95.32, M 88.10)  57.6s *
+  neume_pairs_w03_c16 epoch 13  loss 1.7724  val neumes right 94.93% (multi-note 90.15; E 95.55, M 88.30)  58.2s *
+  neume_pairs_w03_c16 epoch 14  loss 1.7150  val neumes right 95.17% (multi-note 90.99; E 95.74, M 89.20)  59.0s *
+  neume_pairs_w03_c16 epoch 15  loss 1.6658  val neumes right 94.63% (multi-note 90.13; E 95.30, M 87.49)  59.0s
+  neume_pairs_w03_c16 epoch 16  loss 1.6213  val neumes right 95.26% (multi-note 91.21; E 95.87, M 88.75)  60.8s *
+  neume_pairs_w03_c16 epoch 17  loss 1.6058  val neumes right 95.27% (multi-note 91.53; E 95.81, M 89.53)  60.1s *
+  neume_pairs_w03_c16 epoch 18  loss 1.5484  val neumes right 95.15% (multi-note 91.13; E 95.66, M 89.77)  60.3s
+  neume_pairs_w03_c16 epoch 19  loss 1.5306  val neumes right 95.67% (multi-note 92.11; E 96.25, M 89.57)  61.0s *
+  neume_pairs_w03_c16 epoch 20  loss 1.5014  val neumes right 95.58% (multi-note 91.77; E 96.09, M 90.22)  60.9s
+  neume_pairs_w03_c16 epoch 21  loss 1.4608  val neumes right 95.95% (multi-note 92.44; E 96.52, M 89.85)  60.8s *
+  neume_pairs_w03_c16 epoch 22  loss 1.4592  val neumes right 95.94% (multi-note 92.58; E 96.44, M 90.63)  61.7s
+  neume_pairs_w03_c16 epoch 23  loss 1.4181  val neumes right 95.91% (multi-note 92.33; E 96.47, M 89.93)  62.9s
+  neume_pairs_w03_c16 epoch 24  loss 1.4093  val neumes right 96.04% (multi-note 92.64; E 96.59, M 90.26)  62.3s *
+  neume_pairs_w03_c16 epoch 25  loss 1.3982  val neumes right 95.79% (multi-note 92.32; E 96.35, M 89.89)  62.0s
+  neume_pairs_w03_c16 epoch 26  loss 1.3824  val neumes right 95.62% (multi-note 92.63; E 96.22, M 89.28)  62.1s
+  neume_pairs_w03_c16 epoch 27  loss 1.3531  val neumes right 96.00% (multi-note 92.72; E 96.54, M 90.22)  66.2s
+  neume_pairs_w03_c16 epoch 28  loss 1.3402  val neumes right 96.27% (multi-note 93.02; E 96.78, M 90.87)  66.6s *
+  neume_pairs_w03_c16 epoch 29  loss 1.3120  val neumes right 95.87% (multi-note 92.93; E 96.27, M 91.65)  66.7s
+  neume_pairs_w03_c16 epoch 30  loss 1.3170  val neumes right 96.06% (multi-note 92.79; E 96.57, M 90.63)  67.4s
+  neume_pairs_w03_c16: best val neumes right 96.27% at epoch 28
+training neume_pairs_w02_c16 on v3_neumes128_ctx (device mps; neumes {'train': {'einsiedeln': 119459, 'ms73': 11518}, 'val': {'einsiedeln': 25967, 'ms73': 2454}})
+  neume_pairs_w02_c16 epoch  1  loss 5.2955  val neumes right 58.70% (multi-note 35.39; E 61.01, M 34.27)  112.6s *
+  neume_pairs_w02_c16 epoch  2  loss 3.7713  val neumes right 72.78% (multi-note 51.86; E 75.23, M 46.86)  71.6s *
+  neume_pairs_w02_c16 epoch  3  loss 3.1138  val neumes right 78.84% (multi-note 62.81; E 80.86, M 57.50)  68.4s *
+  neume_pairs_w02_c16 epoch  4  loss 2.7843  val neumes right 85.16% (multi-note 72.13; E 86.93, M 66.42)  68.8s *
+  neume_pairs_w02_c16 epoch  5  loss 2.4754  val neumes right 88.14% (multi-note 76.99; E 89.55, M 73.19)  68.8s *
+  neume_pairs_w02_c16 epoch  6  loss 2.2095  val neumes right 90.44% (multi-note 81.53; E 91.60, M 78.12)  68.0s *
+  neume_pairs_w02_c16 epoch  7  loss 2.0191  val neumes right 92.04% (multi-note 84.50; E 92.97, M 82.15)  68.5s *
+  neume_pairs_w02_c16 epoch  8  loss 1.8585  val neumes right 92.43% (multi-note 85.07; E 93.25, M 83.70)  69.5s *
+  neume_pairs_w02_c16 epoch  9  loss 1.7422  val neumes right 93.55% (multi-note 87.51; E 94.30, M 85.70)  69.1s *
+  neume_pairs_w02_c16 epoch 10  loss 1.6399  val neumes right 93.98% (multi-note 88.39; E 94.73, M 86.02)  69.1s *
+  neume_pairs_w02_c16 epoch 11  loss 1.5814  val neumes right 94.11% (multi-note 88.66; E 94.81, M 86.76)  68.4s *
+  neume_pairs_w02_c16 epoch 12  loss 1.5152  val neumes right 94.39% (multi-note 89.24; E 95.04, M 87.53)  68.6s *
+  neume_pairs_w02_c16 epoch 13  loss 1.4581  val neumes right 94.92% (multi-note 90.10; E 95.60, M 87.78)  68.5s *
+  neume_pairs_w02_c16 epoch 14  loss 1.4227  val neumes right 94.84% (multi-note 90.02; E 95.44, M 88.51)  68.0s
+  neume_pairs_w02_c16 epoch 15  loss 1.3771  val neumes right 95.11% (multi-note 90.97; E 95.62, M 89.77)  68.2s *
+  neume_pairs_w02_c16 epoch 16  loss 1.3381  val neumes right 95.46% (multi-note 91.22; E 96.01, M 89.69)  69.7s *
+  neume_pairs_w02_c16 epoch 17  loss 1.3270  val neumes right 95.08% (multi-note 90.67; E 95.69, M 88.63)  72.2s
+  neume_pairs_w02_c16 epoch 18  loss 1.2899  val neumes right 95.59% (multi-note 91.37; E 96.20, M 89.16)  69.3s *
+  neume_pairs_w02_c16 epoch 19  loss 1.2824  val neumes right 95.16% (multi-note 90.85; E 95.70, M 89.45)  68.6s
+  neume_pairs_w02_c16 epoch 20  loss 1.2455  val neumes right 95.68% (multi-note 91.88; E 96.18, M 90.42)  69.1s *
+  neume_pairs_w02_c16 epoch 21  loss 1.2333  val neumes right 95.71% (multi-note 91.78; E 96.26, M 89.85)  70.4s *
+  neume_pairs_w02_c16 epoch 22  loss 1.2093  val neumes right 95.28% (multi-note 91.02; E 95.80, M 89.73)  68.5s
+  neume_pairs_w02_c16 epoch 23  loss 1.2010  val neumes right 95.63% (multi-note 91.61; E 96.21, M 89.45)  68.1s
+  neume_pairs_w02_c16 epoch 24  loss 1.1791  val neumes right 95.95% (multi-note 92.42; E 96.41, M 91.16)  68.6s *
+  neume_pairs_w02_c16 epoch 25  loss 1.1686  val neumes right 96.05% (multi-note 92.66; E 96.48, M 91.44)  68.8s *
+  neume_pairs_w02_c16 epoch 26  loss 1.1496  val neumes right 95.61% (multi-note 91.64; E 96.08, M 90.63)  68.6s
+  neume_pairs_w02_c16 epoch 27  loss 1.1414  val neumes right 96.17% (multi-note 92.52; E 96.67, M 90.83)  71.1s *
+  neume_pairs_w02_c16 epoch 28  loss 1.1318  val neumes right 96.18% (multi-note 92.69; E 96.63, M 91.44)  81.1s *
+  neume_pairs_w02_c16 epoch 29  loss 1.1121  val neumes right 96.49% (multi-note 93.20; E 96.94, M 91.73)  74.0s *
+  neume_pairs_w02_c16 epoch 30  loss 1.1042  val neumes right 96.40% (multi-note 93.23; E 96.78, M 92.38)  68.3s
+  neume_pairs_w02_c16: best val neumes right 96.49% at epoch 29

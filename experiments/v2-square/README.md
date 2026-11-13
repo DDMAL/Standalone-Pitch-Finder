@@ -1,7 +1,7 @@
 # v2 stave-step CNN: square notation
 
 **Status: first round done** (issue #5). Single-note neumes only; multi-note
-neumes are #6.
+neumes are in `../v3-multinote/` (#6).
 
 v1 (`../v1-hfngl/`) trained a small CNN to predict a note's stave step from an
 image crop, on 13 hand-labelled Hufnagel pages. v2 moves it to square notation,
@@ -186,5 +186,5 @@ run without retraining.
   needs testing on real IC boxes.
 - No comparison with other methods yet: running the heuristic pitch finder on
   MEI boxes would be unfair, since their positions encode the pitch.
-- Single-note neumes only (#6).
+- Single-note neumes only; multi-note neumes are in `../v3-multinote/` (#6).
 - The rarest positions (step 8: 11 test notes) are not learned.
