@@ -58,8 +58,8 @@ CONFIGS = {
 }
 
 
-def build_model(name):
-    c = CONFIGS[name]
+def build_model(name, cfg=None):
+    c = cfg or CONFIGS[name]
     return StepCNNClassifier(c["pool"], 2 if c["mask"] else 1) if c["classifier"] else StepCNN()
 
 
@@ -92,12 +92,13 @@ def exact_by_manuscript(pred, d):
             for ms in MANUSCRIPTS}
 
 
-def train_one(name, tr, va, dev):
-    c = CONFIGS[name]
+def train_one(name, tr, va, dev, cfg=None, ckpt_dir=CKPT):
+    """Train one configuration (CONFIGS[name], or cfg) and save its best-on-val epoch in ckpt_dir."""
+    c = cfg or CONFIGS[name]
     classifier, augment = c["classifier"], c["augment"]
     set_seed(SEED)
     rng = np.random.default_rng(SEED)
-    model = build_model(name).to(dev)
+    model = build_model(name, c).to(dev)
     opt = torch.optim.Adam(model.parameters(), lr=LR, weight_decay=WD)
     loss_fn = nn.CrossEntropyLoss() if classifier else nn.MSELoss()
     X = torch.tensor(model_input(tr, c["mask"]), device=dev)
@@ -123,7 +124,7 @@ def train_one(name, tr, va, dev):
         flag = ""
         if acc > best[0]:
             best = (acc, epoch)
-            torch.save(model.state_dict(), CKPT / f"{name}.pt")
+            torch.save(model.state_dict(), Path(ckpt_dir) / f"{name}.pt")
             flag = " *"
         print(f"  {name} epoch {epoch:2d}  loss {total / len(X):.4f}  val exact {100 * acc:5.2f}% "
               f"(E {100 * per['einsiedeln']:5.2f}, M {100 * per['ms73']:5.2f})  {time.time() - t0:4.1f}s{flag}", flush=True)

@@ -42,7 +42,7 @@ def load(manuscripts, split, single_note_only=True, crops_dir=CROPS):
     return {k: np.concatenate([p[k] for p in parts]) for k in parts[0]}
 
 
-def affine(n, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_JITTER):
+def affine(n, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_JITTER, out_w=IMG_W):
     """(n, 2, 3) affine_grid thetas mapping the model window into the context crop.
     shift_jitter: max centre shift as a fraction of the window. v1's 0.15 suits staff
     crops (a misplaced staff); a staff-free crop is centred on its note, so a large
@@ -56,7 +56,7 @@ def affine(n, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_J
         a = np.where(aug, np.radians(rng.uniform(-ROTATION_DEG, ROTATION_DEG, n)), 0.0)
     # rotation is in output *pixels* (as v1's post-resize warpAffine), so the
     # normalized axes are rescaled by the window's aspect ratio around it
-    c, si, ar = np.cos(a), np.sin(a), out_h / IMG_W
+    c, si, ar = np.cos(a), np.sin(a), out_h / out_w
     theta = np.zeros((n, 2, 3), np.float32)
     theta[:, 0, 0], theta[:, 0, 1] = c, -si * ar
     theta[:, 1, 0], theta[:, 1, 1] = s / CONTEXT * si / ar, s / CONTEXT * c
@@ -64,15 +64,16 @@ def affine(n, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_J
     return torch.tensor(theta, device=device)
 
 
-def batch_input(crops_u8, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_JITTER):
-    """uint8 (B, ctx_h, IMG_W) or (B, C, ctx_h, IMG_W) tensor on device -> float
-    (B, C, out_h, IMG_W) model input. Channel 0 is the image; any further channel
-    (the box mask) gets the same geometry but no brightness or noise."""
+def batch_input(crops_u8, rng=None, device="cpu", out_h=IMG_H, shift_jitter=VERTICAL_SHIFT_JITTER, out_w=IMG_W):
+    """uint8 (B, ctx_h, out_w) or (B, C, ctx_h, out_w) tensor on device -> float
+    (B, C, out_h, out_w) model input. Channel 0 is the image; any further channel
+    (the box mask) gets the same geometry but no brightness or noise. out_w is the
+    crops' width: IMG_W for a note, wider for a whole neume (../v3-multinote)."""
     x = crops_u8.to(device).float() / 255.0
     if x.dim() == 3:
         x = x.unsqueeze(1)
-    theta = affine(len(x), rng, device, out_h, shift_jitter)
-    grid = F.affine_grid(theta, (len(x), x.shape[1], out_h, IMG_W), align_corners=False)
+    theta = affine(len(x), rng, device, out_h, shift_jitter, out_w)
+    grid = F.affine_grid(theta, (len(x), x.shape[1], out_h, out_w), align_corners=False)
     x = F.grid_sample(x, grid, mode="bilinear", padding_mode="border", align_corners=False)
     if rng is not None:
         aug = torch.tensor(rng.random(len(x)) < AUG_PROB, device=device).view(-1, 1, 1, 1)

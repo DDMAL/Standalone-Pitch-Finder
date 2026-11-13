@@ -13,14 +13,15 @@ STEP_MIN, STEP_MAX = -3, 9
 NUM_CLASSES = STEP_MAX - STEP_MIN + 1
 
 
-def _features(pool_rows=8, in_ch=1):
+def _features(pool_rows=8, in_ch=1, pool_cols=1):
     """Identical to v1's backbone, including AdaptiveAvgPool2d((8,1)): keeping
-    8 vertical bins is what stopped v1 from mode-collapsing."""
+    8 vertical bins is what stopped v1 from mode-collapsing. pool_cols > 1 keeps
+    horizontal bins too (../v3-multinote's NeumeCNN: where along a neume each note sits)."""
     return nn.Sequential(
         nn.Conv2d(in_ch, 16, 3, padding=1), nn.ReLU(), nn.MaxPool2d(2),  # 128x32 -> 64x16
         nn.Conv2d(16, 32, 3, padding=1), nn.ReLU(), nn.MaxPool2d(2),  # 64x16 -> 32x8
         nn.Conv2d(32, 64, 3, padding=1), nn.ReLU(),
-        nn.AdaptiveAvgPool2d((pool_rows, 1)),                         # 32x8 -> 8x1 at 128 px
+        nn.AdaptiveAvgPool2d((pool_rows, pool_cols)),                 # 32x8 -> 8x1 at 128 px
     )
 
 

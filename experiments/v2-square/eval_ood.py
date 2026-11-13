@@ -63,6 +63,7 @@ def page_rows(mei_path, image_path):
             dropped[why] += 1
             continue
         rows.append(dict(id=r["id"], staff=r["staff"], step=step, tilt=r["tilt"], neume_size=str(r["neume_size"]),
+                         neume_id=r["neume_id"], nc_index=r["nc_index"], ligated=r["ligated"],
                          pname=r["pname"], oct=r["oct"],
                          box_ulx=z[0] * sx, box_uly=z[1] * sy, box_lrx=z[2] * sx, box_lry=z[3] * sy,
                          staff_ulx=sb[0] * sx, staff_uly=sb[1] * sy, staff_lrx=sb[2] * sx, staff_lry=sb[3] * sy,
